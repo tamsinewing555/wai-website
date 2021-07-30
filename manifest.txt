@@ -235,8 +235,6 @@
 /business-case/fr.html
 /business-case/index.html
 /cognitive/index.html
-/content-images/EasyChecks/easy-checks-accessibility-cc.vtt
-/content-images/EasyChecks/video-thumb-easy-checks.png
 /content-images/home/wcag21-release.png
 /content-images/preliminary/alt-ff-missing.png
 /content-images/preliminary/alt-ie.png
@@ -323,6 +321,8 @@
 /content-images/wai-components/relate.png
 /content-images/wai-components/specs.png
 /content-images/wai-conformance-eval-overview/conformance-evaluation-cc.vtt
+/content-images/wai-easy-checks/easy-checks-accessibility-cc.vtt
+/content-images/wai-easy-checks/video-thumb-easy-checks.png
 /content-images/wai-eval-overview/conformance-evaluation-cc.vtt
 /content-images/wai-eval-overview/conformance-evaluation-fr.vtt
 /content-images/wai-eval-overview/easy-checks-accessibility-cc.vtt
