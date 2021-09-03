@@ -199,6 +199,8 @@
 /assets/images/social-sharing-default.jpg
 /assets/images/w3c.sketch
 /assets/images/w3c.svg
+/assets/images/w3c2.svg
+/assets/images/wai.svg
 /assets/scripts/details4everybody.js
 /assets/scripts/jquery.min.js
 /assets/scripts/lang/ar.js
