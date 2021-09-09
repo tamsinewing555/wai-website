@@ -16,7 +16,9 @@
 /about/participating/index.html
 /about/projects/easy-reading/index.html
 /about/projects/index.html
+/about/projects/wai-coop/Title_of_the_Contribution_-_Submission_for_WAI-CooP_and_W3C_APA_Symposium.html
 /about/projects/wai-coop/index.html
+/about/projects/wai-coop/symposium1/index.html
 /about/projects/wai-core-2015/index.html
 /about/projects/wai-core-ford/index.html
 /about/projects/wai-guide/index.html
