@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1632145436410449677";
+      element.src = "/WAI/assets/scripts/main.js?1632617450188918049";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632145436410449677">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632617450188918049">
 
 <title> meta viewport allows for zoom | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -108,49 +108,9 @@
         meta viewport allows for zoom
       
       </h1></header>
-    <dl>
-  <dt>Rule Type:</dt>
-  <dd>atomic</dd>
-  <dt>Rule ID:</dt>
-  <dd>b4f0c3</dd>
-  <dt>Last Modified:</dt>
-  <dd>Oct 1, 2020</dd>
-  <dt>Accessibility Requirements Mapping:</dt>
-  <dd><a href="https://www.w3.org/TR/WCAG21/#resize-text">1.4.4 Resize text (Level AA)</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: success criterion is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: success criterion needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: success criterion needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dd><a href="https://www.w3.org/TR/WCAG21/#reflow">1.4.10 Reflow (Level AA)</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WCAG 2.1 on level AA and higher</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: success criterion is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: success criterion needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: success criterion needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dt>Input Aspects:</dt>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></dd>
-</dl>
+    <h2 id="applicability">Applicability</h2>
 
-<h2 id="description">Description</h2>
-
-<p>This rule checks that the <code class="language-plaintext highlighter-rouge">meta</code> element retains the user agent ability to zoom.</p>
-
-<h2 id="applicability">Applicability</h2>
-
-<p>The rule applies to each <code class="language-plaintext highlighter-rouge">meta</code> element with a <code class="language-plaintext highlighter-rouge">name</code> attribute whose value is a <a href="https://infra.spec.whatwg.org/#ascii-case-insensitive" title="ASCII case-insensitive">case-insensitive</a> match for <code class="language-plaintext highlighter-rouge">viewport</code> and has a <code class="language-plaintext highlighter-rouge">content</code> attribute.</p>
+<p>This rule applies to each <code class="language-plaintext highlighter-rouge">meta</code> element with a <code class="language-plaintext highlighter-rouge">name</code> attribute whose value is a <a href="https://infra.spec.whatwg.org/#ascii-case-insensitive" title="ASCII case-insensitive">case-insensitive</a> match for <code class="language-plaintext highlighter-rouge">viewport</code> and has a <code class="language-plaintext highlighter-rouge">content</code> attribute.</p>
 
 <h2 id="expectation">Expectation</h2>
 
@@ -163,7 +123,7 @@
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>If any of the following is false, this rule can fail while Success Criteria <a href="https://www.w3.org/TR/WCAG21/#resize-text" title="Success Criterion 1.4.4 Resize text">1.4.4 Resize text</a> and <a href="https://www.w3.org/TR/WCAG21/#reflow" title="Success Criterion 1.4.10 Reflow">1.4.10 Reflow</a> can still be satisfied:</p>
+<p>If any of the following is false, this rule can fail while Success Criteria <a href="https://www.w3.org/TR/WCAG21/#resize-text" title="WCAG 2.1 Success Criterion 1.4.4 Resize text">1.4.4 Resize text</a> and <a href="https://www.w3.org/TR/WCAG21/#reflow" title="WCAG 2.1 Success Criterion 1.4.10 Reflow">1.4.10 Reflow</a> can still be satisfied:</p>
 
 <ul>
   <li>The <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s" title="Web page">page</a> has <a href="#visible" title="Definition of visible">visible</a> <a href="https://www.w3.org/TR/WCAG21/#dfn-content" title="content (Web content)">content</a>.</li>
@@ -176,6 +136,8 @@
 <p>Desktop browsers ignore the viewport <code class="language-plaintext highlighter-rouge">meta</code> element, and most modern mobile browsers either ignore it by default or have an accessibility option which will allow zooming. This rule is not relevant for desktop browsers, nor for most modern mobile browsers. Only users with older mobile browsers can experience issues tested by this rule.</p>
 
 <h2 id="background">Background</h2>
+
+<p>This rule is designed specifically for <a href="https://www.w3.org/TR/WCAG21/#resize-text" title="WCAG 2.1 Success Criterion 1.4.4 Resize text">1.4.4 Resize text</a>, which requires that text can be resized up to 200%. Because text that can not be resized up to 200% can not fit in an area of 320 by 256 <a href="https://www.w3.org/TR/css3-values/#reference-pixel" title="CSS 3 definition, reference pixel">CSS pixels</a>, this rule maps to <a href="https://www.w3.org/TR/WCAG21/#reflow" title="WCAG 2.1 Success Criterion 1.4.10 Reflow">1.4.10 Reflow</a> as well. All passed examples in this rule satisfy both success criteria.</p>
 
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text">Understanding Success Criterion 1.4.4: Resize text</a></li>
@@ -351,8 +313,8 @@
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
-		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
-		<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"10; URL='https://github.com'"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Lorem ipsum<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
 	<span class="nt">&lt;/head&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
 		<span class="nt">&lt;p&gt;</span>
@@ -405,17 +367,47 @@
 
 <p>For more details, see <a href="https://act-rules.github.io/pages/examples/visible/">examples of visible</a>.</p>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="implementations">Implementations</h2>
 
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>, 
-with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This section is not part of the official rule. It is populated dynamically and 
+not accounted for in the change history or the last modified date.</p>
 
-<h3 id="authors">Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/audreymaniez">Audrey Maniez</a></li>
-  <li><a href="https://github.com/jkodu">Jey Nandakumar</a></li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Implementation</th>
+      <th>Consistency</th>
+      <th>Complete</th>
+      <th>Report</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alfa</td>
+      <td>Consistent</td>
+      <td>No</td>
+      <td><a href="https://act-rules.github.io/implementation/alfa#id-b4f0c3">View Report</a></td>
+    </tr>
+    <tr>
+      <td>Axe-core</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/alfa#id-b4f0c3">View Report</a></td>
+    </tr>
+    <tr>
+      <td>QualWeb</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/qualweb#id-b4f0c3">View Report</a></td>
+    </tr>
+    <tr>
+      <td>SortSite</td>
+      <td>Consistent</td>
+      <td>No</td>
+      <td><a href="https://act-rules.github.io/implementation/sortsite#id-b4f0c3">View Report</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="changelog">Changelog</h2>
 
@@ -435,6 +427,15 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
 </div>
 
 
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+<p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+</div>
+  </footer>
   
 
 
@@ -468,9 +469,9 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1632617450188918049"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1632617450188918049"></script>
 <script>
   svg4everybody();
 </script><script>

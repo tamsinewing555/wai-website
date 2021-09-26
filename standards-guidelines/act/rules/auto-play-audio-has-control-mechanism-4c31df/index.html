@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1632145436410449677";
+      element.src = "/WAI/assets/scripts/main.js?1632617450188918049";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632145436410449677">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632617450188918049">
 
 <title> audio or video that plays automatically has a control mechanism | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -108,51 +108,7 @@
         audio or video that plays automatically has a control mechanism
       
       </h1></header>
-    <aside class="box">
-  <header class="box-h ">Proposed rule</header>
-  <div class="box-i">
-    <p>
-      This rule is awaiting implementations by testing tools and methodologies. 
-      Find information about 
-      <a href="https://act-rules.github.io/pages/implementations/overview/">
-        providing implementations
-      </a>.
-    </p>
-  </div>
-</aside>
-
-<dl>
-  <dt>Rule Type:</dt>
-  <dd>atomic</dd>
-  <dt>Rule ID:</dt>
-  <dd>4c31df</dd>
-  <dt>Last Modified:</dt>
-  <dd>June 3, 2021</dd>
-  <dt>Accessibility Requirements Mapping:</dt>
-  <dd><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G170">G170: Providing a control near the beginning of the Web page that turns off sounds that play automatically</a>
-    <ul>
-      <li>Not required to conformance to any W3C accessibility recommendation.</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: technique is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: technique needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: technique needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dt>Input Aspects:</dt>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></dd>
-  <dd>Audio output</dd>
-  <dd>Visual output</dd>
-</dl>
-
-<h2 id="description">Description</h2>
-
-<p>audio or video that plays automatically must have a control mechanism.</p>
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <code class="language-plaintext highlighter-rouge">audio</code> or <code class="language-plaintext highlighter-rouge">video</code> element for which all the following are true:</p>
 
@@ -403,7 +359,7 @@
 
 <p>For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in <a href="https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation">HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)</a> and <a href="https://www.w3.org/TR/svg-aam/#mapping_additional">SVG Accessibility API Mappings, Name and Description (working draft)</a>.</p>
 
-<p>For more details, see <a href="/pages/examples/accessible-name/">examples of accessible name</a>.</p>
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/accessible-name/">examples of accessible name</a>.</p>
 
 <p><strong>Note:</strong> As per the <a href="https://www.w3.org/TR/accname" title="Accessible Name and Description Computation">accessible name and description computation</a>, each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (<code class="language-plaintext highlighter-rouge">""</code>) one.</p>
 
@@ -438,9 +394,10 @@
 
 <p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings (working draft)</a>.</p>
 
-<p>For more details, see <a href="/pages/examples/included-in-the-accessibility-tree/">examples of included in the accessibility tree</a>.</p>
+<p>For more details, see [examples of included in the accessibility tree][].</p>
 
-<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/</p>
 
 <h3 id="instrument-to-achieve-an-objective">Instrument to achieve an objective</h3>
 
@@ -504,17 +461,12 @@
   </li>
 </ul>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="implementations">Implementations</h2>
 
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>, 
-with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
-
-<h3 id="authors">Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/annethyme">Anne Thyme Nørregaard</a></li>
-  <li><a href="https://github.com/brynanders">Bryn Anderson</a></li>
-</ul>
+<p>There are currently no known implementations for this rule. If you would like to 
+contribute an implementation, please read the 
+<a href="https://act-rules.github.io/pages/implementations/overview/">ACT Implementations page</a> 
+for details.</p>
 
 <h2 id="changelog">Changelog</h2>
 
@@ -534,6 +486,15 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
 </div>
 
 
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+<p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+</div>
+  </footer>
   
 
 
@@ -567,9 +528,9 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1632617450188918049"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1632617450188918049"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1632145436410449677";
+      element.src = "/WAI/assets/scripts/main.js?1632617450188918049";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632145436410449677">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632617450188918049">
 
 <title> HTML page language subtag matches default language | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -108,63 +108,7 @@
         HTML page language subtag matches default language
       
       </h1></header>
-    <aside class="box">
-  <header class="box-h ">Proposed rule</header>
-  <div class="box-i">
-    <p>
-      This rule is awaiting implementations by testing tools and methodologies. 
-      Find information about 
-      <a href="https://act-rules.github.io/pages/implementations/overview/">
-        providing implementations
-      </a>.
-    </p>
-  </div>
-</aside>
-
-<dl>
-  <dt>Rule Type:</dt>
-  <dd>atomic</dd>
-  <dt>Rule ID:</dt>
-  <dd>ucwvc8</dd>
-  <dt>Last Modified:</dt>
-  <dd>June 14, 2021</dd>
-  <dt>Accessibility Requirements Mapping:</dt>
-  <dd><a href="https://www.w3.org/TR/WCAG21/#language-of-page">3.1.1 Language of Page (Level A)</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: success criterion is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: success criterion is satisfied</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: success criterion needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dd><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">H57: Using language attributes on the html element</a>
-    <ul>
-      <li>Not required to conformance to any W3C accessibility recommendation.</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: technique is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: technique is satisfied</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: technique is satisfied</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dt>Input Aspects:</dt>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility">Accessibility tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-text">Language</a></dd>
-</dl>
-
-<h2 id="description">Description</h2>
-
-<p>This rule checks that the primary language subtag of the page language matches the default language of the page</p>
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="https://dom.spec.whatwg.org/#document-element" title="DOM document element, as of 2020/06/05">document element</a> if it is an <code class="language-plaintext highlighter-rouge">html</code> element for which all of the following are true:</p>
 
@@ -434,7 +378,7 @@
 
 <p>For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in <a href="https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation">HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)</a> and <a href="https://www.w3.org/TR/svg-aam/#mapping_additional">SVG Accessibility API Mappings, Name and Description (working draft)</a>.</p>
 
-<p>For more details, see <a href="/pages/examples/accessible-name/">examples of accessible name</a>.</p>
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/accessible-name/">examples of accessible name</a>.</p>
 
 <p><strong>Note:</strong> As per the <a href="https://www.w3.org/TR/accname" title="Accessible Name and Description Computation">accessible name and description computation</a>, each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (<code class="language-plaintext highlighter-rouge">""</code>) one.</p>
 
@@ -463,7 +407,7 @@
 
 <p>The <em>default language of a <a href="#web-page-html" title="Definition of Web Page (HTML)">web page</a></em> is the <a href="#most-common-element-language" title="Definition of Most Common Language of an Element">most common language</a> of its <a href="https://html.spec.whatwg.org/#top-level-browsing-context">top-level browsing context</a> <a href="https://dom.spec.whatwg.org/#document-element" title="DOM document element, as of 2020/06/05">document</a>, if it is unique. If this <a href="https://dom.spec.whatwg.org/#document-element" title="DOM document element, as of 2020/06/05">document</a> has either no or several <a href="#most-common-element-language" title="Definition of Most Common Language of an Element">most common languages</a>, then it has no default language.</p>
 
-<p>For more details, see <a href="/pages/examples/element-language/">examples of default language</a>.</p>
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/element-language/">examples of default language</a>.</p>
 
 <h3 id="focusable">Focusable</h3>
 
@@ -475,15 +419,16 @@
 
 <p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings (working draft)</a>.</p>
 
-<p>For more details, see <a href="/pages/examples/included-in-the-accessibility-tree/">examples of included in the accessibility tree</a>.</p>
+<p>For more details, see [examples of included in the accessibility tree][].</p>
 
-<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/</p>
 
 <h3 id="most-common-element-language">Most Common Language of an Element</h3>
 
-<p>The <em>most common language of an element</em> is determined by counting the number of <em>words</em> in the <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from this element that are part of any of the languages in the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a>. The same word can be part of multiple languages. In case of ties, the element has several most common languages. If there are no words in the <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the element, then it has no most common language.</p>
+<p>The <em>most common language of an element</em> is determined by counting the number of <em>words</em> in the <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from this element that are part of any of the languages in the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry" title="Language Subtag Registry">language subtag registry</a>. The same word can be part of multiple languages. In case of ties, the element has several most common languages. If there are no words in the <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the element, then it has no most common language.</p>
 
-<p>For more details, see <a href="/pages/examples/element-language/">examples of most common language</a>.</p>
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/element-language/">examples of most common language</a>.</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -509,7 +454,7 @@
   <li><strong>page title</strong>: the value of the <a href="https://html.spec.whatwg.org/multipage/dom.html#document.title" title="HTML document title, as of 2020/06/05">document title</a>, only if E is a <a href="https://dom.spec.whatwg.org/#document-element" title="DOM document element, as of 2020/06/05">document</a> in a <a href="https://html.spec.whatwg.org/#top-level-browsing-context" title="HTML top-level browsing context, as of 2020/06/05">top-level browsing context</a>.</li>
 </ul>
 
-<p>An element F is an <em>element inheriting its programmatic language</em> from an element E if one of the following conditions is true (recursively):</p>
+<p>An element F is an <em>element inheriting its programmatic language</em> from an element E if at least one of the following conditions is true (recursively):</p>
 
 <ul>
   <li>F is E itself (an element always inherits its programmatic language from itself); or</li>
@@ -519,11 +464,11 @@
 
 <h3 id="valid-language-tag">Valid Language Tag</h3>
 
-<p>A <a href="https://tools.ietf.org/html/bcp47#section-2.1">language tag</a> is <em>valid</em> if its <a href="https://tools.ietf.org/html/bcp47#section-2.2.1">primary language subtag</a> exists in the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a> with a <a href="https://tools.ietf.org/html/bcp47#section-3.1.3">Type field</a> whose field-body value is <code class="language-plaintext highlighter-rouge">language</code>.</p>
+<p>A <a href="https://tools.ietf.org/html/bcp47#section-2.1">language tag</a> is <em>valid</em> if its <a href="https://tools.ietf.org/html/bcp47#section-2.2.1">primary language subtag</a> exists in the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry" title="Language Subtag Registry">language subtag registry</a> with a <a href="https://tools.ietf.org/html/bcp47#section-3.1.3">Type field</a> whose field-body value is <code class="language-plaintext highlighter-rouge">language</code>.</p>
 
 <p>A “language tag” is here to be understood as in the first paragraph of the <a href="https://tools.ietf.org/html/bcp47#section-2.1">BCP 47 language tag syntax</a>, i.e. a sequence of subtags separated by hyphens, where a subtag is any sequence of alphanumerical characters. Thus, this definition intentionally differs from the strict <a href="https://tools.ietf.org/html/bcp47#section-2.1">BCP 47 syntax</a> (and ABNF grammar) as user agents and assistive technologies are more lenient in what they accept. The definition is however consistent with the behavior of the <code class="language-plaintext highlighter-rouge">:lang()</code> pseudo-selector as defined by <a href="https://drafts.csswg.org/selectors-3/#lang-pseudo">Selectors Level 3</a>. For example, <code class="language-plaintext highlighter-rouge">de-hello</code> would be an accepted way to indicate German in current user agents and assistive technologies, despite not being valid according to <a href="https://tools.ietf.org/html/bcp47#section-2.1">BCP 47 grammar</a>. As a consequence of this definition, however, <a href="https://tools.ietf.org/html/bcp47#section-2.2.8">grandfathered tags</a> are not correctly recognized as valid language subtags.</p>
 
-<p>Subtags, notably the <a href="https://tools.ietf.org/html/bcp47#section-2.2.1">primary language subtag</a>, are <a href="https://tools.ietf.org/html/bcp47#section-2.1.1">case insensitive</a>. Hence comparison with the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a> must be done in a case insensitive way.</p>
+<p>Subtags, notably the <a href="https://tools.ietf.org/html/bcp47#section-2.2.1">primary language subtag</a>, are <a href="https://tools.ietf.org/html/bcp47#section-2.1.1">case insensitive</a>. Hence comparison with the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry" title="Language Subtag Registry">language subtag registry</a> must be done in a case insensitive way.</p>
 
 <h3 id="visible">Visible</h3>
 
@@ -545,16 +490,12 @@
 
 <p><strong>Note:</strong> Although web pages as defined here are sets of <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> (and do not contain other kind of nodes), one can abusively write that any node is “in a web page” if it is a <a href="https://dom.spec.whatwg.org/#concept-shadow-including-descendant">shadow-including descendant</a> of a <a href="https://dom.spec.whatwg.org/#concept-document">document</a> that is part of that web page.</p>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="implementations">Implementations</h2>
 
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>, 
-with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
-
-<h3 id="authors">Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/wilcofiers">Wilco Fiers</a></li>
-</ul>
+<p>There are currently no known implementations for this rule. If you would like to 
+contribute an implementation, please read the 
+<a href="https://act-rules.github.io/pages/implementations/overview/">ACT Implementations page</a> 
+for details.</p>
 
 <h2 id="changelog">Changelog</h2>
 
@@ -574,6 +515,15 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
 </div>
 
 
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+<p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+</div>
+  </footer>
   
 
 
@@ -607,9 +557,9 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1632617450188918049"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1632617450188918049"></script>
 <script>
   svg4everybody();
 </script><script>

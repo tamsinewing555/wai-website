@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1632145436410449677";
+      element.src = "/WAI/assets/scripts/main.js?1632617450188918049";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632145436410449677">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632617450188918049">
 
 <title> Audio or video that plays automatically has no audio that lasts more than 3 seconds | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -108,59 +108,15 @@
         Audio or video that plays automatically has no audio that lasts more than 3 seconds
       
       </h1></header>
-    <aside class="box">
-  <header class="box-h ">Proposed rule</header>
-  <div class="box-i">
-    <p>
-      This rule is awaiting implementations by testing tools and methodologies. 
-      Find information about 
-      <a href="https://act-rules.github.io/pages/implementations/overview/">
-        providing implementations
-      </a>.
-    </p>
-  </div>
-</aside>
-
-<dl>
-  <dt>Rule Type:</dt>
-  <dd>atomic</dd>
-  <dt>Rule ID:</dt>
-  <dd>aaa1bf</dd>
-  <dt>Last Modified:</dt>
-  <dd>June 3, 2021</dd>
-  <dt>Accessibility Requirements Mapping:</dt>
-  <dd><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G60">G60: Playing a sound that turns off automatically within three seconds</a>
-    <ul>
-      <li>Not required to conformance to any W3C accessibility recommendation.</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: technique is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: technique needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: technique needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dt>Input Aspects:</dt>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></dd>
-  <dd>Audio output</dd>
-  <dd>Visual output</dd>
-</dl>
-
-<h2 id="description">Description</h2>
-
-<p><code class="language-plaintext highlighter-rouge">audio</code> or <code class="language-plaintext highlighter-rouge">video</code> that plays automatically does not output audio for more than 3 seconds.</p>
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <code class="language-plaintext highlighter-rouge">audio</code> or <code class="language-plaintext highlighter-rouge">video</code> element for which all the following are true:</p>
 
 <ul>
-  <li>(<strong>autoplay</strong>) the element has an <code class="language-plaintext highlighter-rouge">autoplay</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">true</code>; and</li>
-  <li>(<strong>not muted</strong>) the element has a <code class="language-plaintext highlighter-rouge">muted</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">false</code>; and</li>
-  <li>(<strong>not paused</strong>) the element has a <code class="language-plaintext highlighter-rouge">paused</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">false</code>; and</li>
-  <li>(<strong>duration</strong>) the element has a <a href="https://html.spec.whatwg.org/multipage/media.html#media-resource" title="HTML Specification of Media Resource">media resource</a> lasting more than 3 seconds and that contains audio.</li>
+  <li><strong>autoplay</strong>: the element has an <code class="language-plaintext highlighter-rouge">autoplay</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">true</code>; and</li>
+  <li><strong>not muted</strong>: the element has a <code class="language-plaintext highlighter-rouge">muted</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">false</code>; and</li>
+  <li><strong>not paused</strong>: the element has a <code class="language-plaintext highlighter-rouge">paused</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">false</code>; and</li>
+  <li><strong>duration</strong>: the element has a <a href="https://html.spec.whatwg.org/multipage/media.html#media-resource" title="HTML Specification of Media Resource">media resource</a> lasting more than 3 seconds that contains audio.</li>
 </ul>
 
 <h2 id="expectation">Expectation</h2>
@@ -175,7 +131,7 @@
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
-<p>There are no major accessibility support issues known for this rule.</p>
+<p><em>There are no major accessibility support issues known for this rule.</em></p>
 
 <h2 id="background">Background</h2>
 
@@ -290,17 +246,12 @@
 
 <p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="implementations">Implementations</h2>
 
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>, 
-with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
-
-<h3 id="authors">Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/annethyme">Anne Thyme Nørregaard</a></li>
-  <li><a href="https://github.com/brynanders">Bryn Anderson</a></li>
-</ul>
+<p>There are currently no known implementations for this rule. If you would like to 
+contribute an implementation, please read the 
+<a href="https://act-rules.github.io/pages/implementations/overview/">ACT Implementations page</a> 
+for details.</p>
 
 <h2 id="changelog">Changelog</h2>
 
@@ -320,6 +271,15 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
 </div>
 
 
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+<p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+</div>
+  </footer>
   
 
 
@@ -353,9 +313,9 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1632617450188918049"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1632617450188918049"></script>
 <script>
   svg4everybody();
 </script><script>

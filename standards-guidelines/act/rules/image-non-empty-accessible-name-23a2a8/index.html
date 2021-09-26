@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1632145436410449677";
+      element.src = "/WAI/assets/scripts/main.js?1632617450188918049";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632145436410449677">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632617450188918049">
 
 <title> Image has non-empty accessible name | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -108,63 +108,9 @@
         Image has non-empty accessible name
       
       </h1></header>
-    <dl>
-  <dt>Rule Type:</dt>
-  <dd>atomic</dd>
-  <dt>Rule ID:</dt>
-  <dd>23a2a8</dd>
-  <dt>Last Modified:</dt>
-  <dd>Oct 1, 2020</dd>
-  <dt>Accessibility Requirements Mapping:</dt>
-  <dd><a href="https://www.w3.org/TR/WCAG21/#non-text-content">1.1.1 Non-text Content (Level A)</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: success criterion is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: success criterion needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: success criterion needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dd><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G94">G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</a>
-    <ul>
-      <li>Not required to conformance to any W3C accessibility recommendation.</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: technique is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: technique needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: technique needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dd><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G95">G95: Providing short text alternatives that provide a brief description of the non-text content</a>
-    <ul>
-      <li>Not required to conformance to any W3C accessibility recommendation.</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: technique is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: technique needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: technique needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dt>Input Aspects:</dt>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility">Accessibility Tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></dd>
-</dl>
+    <h2 id="applicability">Applicability</h2>
 
-<h2 id="description">Description</h2>
-
-<p>This rule checks that each image either has a non-empty accessible name or is marked up as decorative.</p>
-
-<h2 id="applicability">Applicability</h2>
-
-<p>The rule applies to HTML <code class="language-plaintext highlighter-rouge">img</code> elements and HTML elements with the <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">img</code>, except if the element has a <a href="#hidden-state" title="Definition of hidden state">hidden state</a> of “true”.</p>
+<p>This rule applies to HTML <code class="language-plaintext highlighter-rouge">img</code> elements and HTML elements with the <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">img</code>, except if the element has a <a href="#hidden-state" title="Definition of hidden state">hidden state</a> of “true”.</p>
 
 <h2 id="expectation">Expectation</h2>
 
@@ -364,7 +310,7 @@
 
 <p>For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in <a href="https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation">HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)</a> and <a href="https://www.w3.org/TR/svg-aam/#mapping_additional">SVG Accessibility API Mappings, Name and Description (working draft)</a>.</p>
 
-<p>For more details, see <a href="/pages/examples/accessible-name/">examples of accessible name</a>.</p>
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/accessible-name/">examples of accessible name</a>.</p>
 
 <p><strong>Note:</strong> As per the <a href="https://www.w3.org/TR/accname" title="Accessible Name and Description Computation">accessible name and description computation</a>, each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (<code class="language-plaintext highlighter-rouge">""</code>) one.</p>
 
@@ -407,13 +353,14 @@
 
 <p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings (working draft)</a>.</p>
 
-<p>For more details, see <a href="/pages/examples/included-in-the-accessibility-tree/">examples of included in the accessibility tree</a>.</p>
+<p>For more details, see [examples of included in the accessibility tree][].</p>
 
-<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/</p>
 
 <h3 id="marked-as-decorative">Marked as decorative</h3>
 
-<p>An element is <em>marked as decorative</em> if one of the following conditions is true:</p>
+<p>An element is <em>marked as decorative</em> if one or more of the following conditions is true:</p>
 
 <ul>
   <li>it has an <a href="#explicit-role" title="Definition of explicit role">explicit role</a> of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">presentation</code>; or</li>
@@ -460,23 +407,47 @@
 
 <p><strong>Note:</strong> depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.</p>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="implementations">Implementations</h2>
 
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>, 
-with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This section is not part of the official rule. It is populated dynamically and 
+not accounted for in the change history or the last modified date.</p>
 
-<h3 id="authors">Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/wilcofiers">Wilco Fiers</a></li>
-</ul>
-
-<h3 id="previous-authors">Previous Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/annethyme">Anne Thyme Nørregaard</a></li>
-  <li><a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a></li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Implementation</th>
+      <th>Consistency</th>
+      <th>Complete</th>
+      <th>Report</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alfa</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/alfa#id-23a2a8">View Report</a></td>
+    </tr>
+    <tr>
+      <td>Axe-core</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/alfa#id-23a2a8">View Report</a></td>
+    </tr>
+    <tr>
+      <td>QualWeb</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/qualweb#id-23a2a8">View Report</a></td>
+    </tr>
+    <tr>
+      <td>SortSite</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/sortsite#id-23a2a8">View Report</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="changelog">Changelog</h2>
 
@@ -496,6 +467,15 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
 </div>
 
 
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+<p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. <em>Previous Authors:</em> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+</div>
+  </footer>
   
 
 
@@ -529,9 +509,9 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1632617450188918049"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1632617450188918049"></script>
 <script>
   svg4everybody();
 </script><script>

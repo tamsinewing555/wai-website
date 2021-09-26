@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1632145436410449677";
+      element.src = "/WAI/assets/scripts/main.js?1632617450188918049";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632145436410449677">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632617450188918049">
 
 <title> Link has non-empty accessible name | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -108,75 +108,9 @@
         Link has non-empty accessible name
       
       </h1></header>
-    <dl>
-  <dt>Rule Type:</dt>
-  <dd>atomic</dd>
-  <dt>Rule ID:</dt>
-  <dd>c487ae</dd>
-  <dt>Last Modified:</dt>
-  <dd>Oct 12, 2020</dd>
-  <dt>Accessibility Requirements Mapping:</dt>
-  <dd><a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2 Name, Role, Value (Level A)</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: success criterion is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: success criterion needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: success criterion needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dd><a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context">2.4.4 Link Purpose (In Context) (Level A)</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: success criterion is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: success criterion needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: success criterion needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dd><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">2.4.9 Link Purpose (Link Only) (Level AAA)</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: success criterion is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: success criterion needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: success criterion needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dd><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G91">G91: Providing link text that describes the purpose of a link</a>
-    <ul>
-      <li>Not required to conformance to any W3C accessibility recommendation.</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: technique is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: technique needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: technique needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dt>Input Aspects:</dt>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility">Accessibility Tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></dd>
-</dl>
+    <h2 id="applicability">Applicability</h2>
 
-<h2 id="description">Description</h2>
-
-<p>This rule checks that each link has a non-empty accessible name.</p>
-
-<h2 id="applicability">Applicability</h2>
-
-<p>The rule applies to any HTML element with the <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">link</code> that is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
+<p>This rule applies to any HTML element with the <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">link</code> that is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
 
 <h2 id="expectation">Expectation</h2>
 
@@ -197,6 +131,7 @@
 <h2 id="background">Background</h2>
 
 <ul>
+  <li><a href="https://act-rules.github.io/rules/5effbb">Link in context is descriptive</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context">Understanding Success Criterion 2.4.4: Link Purpose (In Context)</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA7">ARIA7: Using aria-labelledby for link purpose</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA8">ARIA8: Using aria-label for link purpose</a></li>
@@ -219,7 +154,16 @@
 
 <p>This <code class="language-plaintext highlighter-rouge">div</code> element has an <a href="#explicit-role">explicit semantic role</a> of <code class="language-plaintext highlighter-rouge">link</code> and an <a href="#accessible-name" title="Definition of accessible name">accessible name</a> from its content.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"link"</span> <span class="na">onclick=</span><span class="s">"window.location.href='https://www.w3.org/WAI/'"</span><span class="nt">&gt;</span>Web Accessibility Initiative (WAI)<span class="nt">&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"link"</span> <span class="na">onclick=</span><span class="s">"openLink(event)"</span> <span class="na">onkeyup=</span><span class="s">"openLink(event)"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+	Web Accessibility Initiative (WAI)
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+	<span class="kd">function</span> <span class="nx">openLink</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">type</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">click</span><span class="dl">'</span> <span class="o">||</span> <span class="p">[</span><span class="dl">'</span><span class="s1">Enter</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">].</span><span class="nx">includes</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">key</span><span class="p">))</span> <span class="p">{</span>
+			<span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">https://www.w3.org/WAI/</span><span class="dl">'</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-3">Passed Example 3</h4>
@@ -437,7 +381,7 @@
 
 <p>For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in <a href="https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation">HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)</a> and <a href="https://www.w3.org/TR/svg-aam/#mapping_additional">SVG Accessibility API Mappings, Name and Description (working draft)</a>.</p>
 
-<p>For more details, see <a href="/pages/examples/accessible-name/">examples of accessible name</a>.</p>
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/accessible-name/">examples of accessible name</a>.</p>
 
 <p><strong>Note:</strong> As per the <a href="https://www.w3.org/TR/accname" title="Accessible Name and Description Computation">accessible name and description computation</a>, each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (<code class="language-plaintext highlighter-rouge">""</code>) one.</p>
 
@@ -499,13 +443,14 @@
 
 <p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings (working draft)</a>.</p>
 
-<p>For more details, see <a href="/pages/examples/included-in-the-accessibility-tree/">examples of included in the accessibility tree</a>.</p>
+<p>For more details, see [examples of included in the accessibility tree][].</p>
 
-<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/</p>
 
 <h3 id="marked-as-decorative">Marked as decorative</h3>
 
-<p>An element is <em>marked as decorative</em> if one of the following conditions is true:</p>
+<p>An element is <em>marked as decorative</em> if one or more of the following conditions is true:</p>
 
 <ul>
   <li>it has an <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a> of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">presentation</code>; or</li>
@@ -514,7 +459,7 @@
 
 <p>Elements are marked as decorative as a way to convey the intention of the author that they are <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a>. It is different from the element actually being <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a> as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a> may overwrite this intention.</p>
 
-<p>Elements can also be ignored by assistive technologies if their <a href="#hidden-state" title="Definition of hidden state">hidden state</a> is true. This is different from marking the element as decorative and does not convey the same intention. Notably, the <a href="#hidden-state" title="Definition of hidden state">hidden state</a> of an element may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.</p>
+<p>Elements can also be ignored by assistive technologies if their <a href="#hidden-state" title="Definition of Hidden State">hidden state</a> is true. This is different from marking the element as decorative and does not convey the same intention. Notably, the <a href="#hidden-state" title="Definition of Hidden State">hidden state</a> of an element may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -535,7 +480,7 @@
 <p>The <em>semantic role</em> of an element is determined by the first of these cases that applies:</p>
 
 <ol>
-  <li><strong>Conflict</strong> If the element is <a href="#marked-as-decorative" title="Definition of Marked as Decorative">marked as decorative</a>, but the element is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>; or would be <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a> when its <a href="#hidden-state" title="Definition of hidden state">hidden state</a> is false, then its <em>semantic role</em> is its <strong><a href="#implicit-role" title="Definition of Implicit Role">implicit role</a></strong>.</li>
+  <li><strong>Conflict</strong> If the element is <a href="#marked-as-decorative" title="Definition of Marked as Decorative">marked as decorative</a>, but the element is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>; or would be <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a> when its <a href="#hidden-state" title="Definition of Hidden State">hidden state</a> is false, then its <em>semantic role</em> is its <strong><a href="#implicit-role" title="Definition of Implicit Role">implicit role</a></strong>.</li>
   <li><strong>Explicit</strong> If the element has an <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>, then its <em>semantic role</em> is its <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>.</li>
   <li><strong>Implicit</strong> The <em>semantic role</em> of the element is its <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a>.</li>
 </ol>
@@ -552,23 +497,47 @@
 
 <p><strong>Note:</strong> depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.</p>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="implementations">Implementations</h2>
 
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>, 
-with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This section is not part of the official rule. It is populated dynamically and 
+not accounted for in the change history or the last modified date.</p>
 
-<h3 id="authors">Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/annethyme">Anne Thyme Nørregaard</a></li>
-  <li><a href="https://github.com/wilcofiers">Wilco Fiers</a></li>
-</ul>
-
-<h3 id="image">Image</h3>
-
-<ul>
-  <li>Image used in passed example 10 and failed example 9 is courtesy of NASA/JPL-Caltech.</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Implementation</th>
+      <th>Consistency</th>
+      <th>Complete</th>
+      <th>Report</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alfa</td>
+      <td>Consistent</td>
+      <td>No</td>
+      <td><a href="https://act-rules.github.io/implementation/alfa#id-c487ae">View Report</a></td>
+    </tr>
+    <tr>
+      <td>Axe-core</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/alfa#id-c487ae">View Report</a></td>
+    </tr>
+    <tr>
+      <td>QualWeb</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/qualweb#id-c487ae">View Report</a></td>
+    </tr>
+    <tr>
+      <td>SortSite</td>
+      <td>Consistent</td>
+      <td>No</td>
+      <td><a href="https://act-rules.github.io/implementation/sortsite#id-c487ae">View Report</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="changelog">Changelog</h2>
 
@@ -588,6 +557,16 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
 </div>
 
 
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+<p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p><strong>Assets:</strong> test cases use assets from the following sources: Image used in passed example 10 and failed example 9 is courtesy of NASA/JPL-Caltech..</p>
+</div>
+  </footer>
   
 
 
@@ -621,9 +600,9 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1632617450188918049"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1632617450188918049"></script>
 <script>
   svg4everybody();
 </script><script>

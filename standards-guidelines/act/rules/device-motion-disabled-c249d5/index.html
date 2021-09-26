@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1632145436410449677";
+      element.src = "/WAI/assets/scripts/main.js?1632617450188918049";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632145436410449677">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632617450188918049">
 
 <title> Device motion based changes to the content can be disabled | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -108,56 +108,13 @@
         Device motion based changes to the content can be disabled
       
       </h1></header>
-    <aside class="box">
-  <header class="box-h ">Proposed rule</header>
-  <div class="box-i">
-    <p>
-      This rule is awaiting implementations by testing tools and methodologies. 
-      Find information about 
-      <a href="https://act-rules.github.io/pages/implementations/overview/">
-        providing implementations
-      </a>.
-    </p>
-  </div>
-</aside>
-
-<dl>
-  <dt>Rule Type:</dt>
-  <dd>atomic</dd>
-  <dt>Rule ID:</dt>
-  <dd>c249d5</dd>
-  <dt>Last Modified:</dt>
-  <dd>June 3, 2021</dd>
-  <dt>Accessibility Requirements Mapping:</dt>
-  <dd><a href="https://www.w3.org/TR/WCAG21/#motion-actuation">2.5.4 Motion Actuation (Level A)</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WCAG 2.1 on level A and higher</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: success criterion is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: success criterion needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: success criterion needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dt>Input Aspects:</dt>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility">Accessibility tree</a></dd>
-</dl>
-
-<h2 id="description">Description</h2>
-
-<p>This rule checks that it is possible to disable any changes to the content of the web page resulting from device motion based events.</p>
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to an <a href="https://dom.spec.whatwg.org/#concept-document">HTML document</a> with an associated <a href="https://html.spec.whatwg.org/multipage/window-object.html#dom-window">Window object</a> that has an <a href="https://dom.spec.whatwg.org/#eventtarget-event-listener-list">event listener list</a> with one or more <a href="https://dom.spec.whatwg.org/#concept-event-listener">event listeners</a> for <a href="https://www.w3.org/TR/orientation-event/#deviceorientation" title="Definition of device orientation event">device orientation events</a> or <a href="https://www.w3.org/TR/orientation-event/#devicemotion" title="Definition of device motion event">device motion events</a>.</p>
 
 <h2 id="expectation">Expectation</h2>
 
-<p>For each registered <a href="https://www.w3.org/TR/orientation-event/#deviceorientation" title="Definition of device orientation event">device orientation event</a> or <a href="https://www.w3.org/TR/orientation-event/#devicemotion" title="Definition of device motion event">device motion event</a> in the test target one of the following is true:</p>
+<p>For each registered <a href="https://www.w3.org/TR/orientation-event/#deviceorientation" title="Definition of device orientation event">device orientation event</a> or <a href="https://www.w3.org/TR/orientation-event/#devicemotion" title="Definition of device motion event">device motion event</a> in the test target at least one of the following is true:</p>
 
 <ul>
   <li><strong>no changes:</strong> The registered event does not cause <a href="#changes-in-content" title="Definition of changes in content">changes to the content</a> of the <a href="#web-page-html" title="Definition of web page">web page</a> within a 1 minute time span of the <a href="https://dom.spec.whatwg.org/#concept-event-fire">event firing</a>; or</li>
@@ -181,6 +138,8 @@
 <p><em>There are no major accessibility support issues known for this rule.</em></p>
 
 <h2 id="background">Background</h2>
+
+<p>The <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a>. These extra requirements are left out of this rule, and should be tested separately.</p>
 
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html">Understanding Success Criterion 2.5.4: Motion Actuation</a></li>
@@ -353,15 +312,22 @@
   <li>If the <a href="#web-page-html" title="Definition of web page">web page</a> is rendering time-based media, rendered pixels and audio will be changing as part of the playback. The comparison in this instance should compare the pixels and audio that are rendered if the event is not fired, with the ones that are rendered if the event is fired.</li>
 </ul>
 
+<p><strong>Assumptions:</strong></p>
+
+<ul>
+  <li>This definition assumes that there are no changes in the content of the <a href="#web-page-html" title="Definition of web page">web page</a> caused by another <a href="https://dom.spec.whatwg.org/#concept-event" title="Definition of event">event</a>. If this is not the case, changes may be attributed to the wrong event.</li>
+  <li>This definition assumes that the changes happen within a 1 minute time span after the event firing and therefore the comparison between the page before and after the event firing can be made at any time after that time span elapses. If there are changes after this time span, this definition may not detect them. The arbitrary 1 minute time span, selected so that testing this rule would not be impractical, is not included in WCAG.</li>
+</ul>
+
 <h3 id="clearly-labeled-location">Clearly labeled location</h3>
 
 <p>Secondary information and alternative controls of functionality are often not displayed together with primary information or functionality. For example, an option to change a web page to dark mode may be placed on an options page instead of being available on every page and page state of a website. Another example is a maps application, where, instead of using GPS, an option is available in a dropdown menu to set the current location of the device. Such content should be placed in a clearly labeled location.</p>
 
-<p>The location of a target is said to be <em>clearly labeled</em> when the target can be found by activating “identifiable” <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instruments</a> which either lead the user to find the target, or to another <a href="#web-page-html" title="Definition of web page">page</a> or page state from which this action can be repeated until the target is found.</p>
+<p>The location of a target is said to be <em>clearly labeled</em> when the target can be found by activating “identifiable” <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> which either lead the user to find the target, or to another <a href="#web-page-html" title="Definition of web page">page</a> or page state from which this action can be repeated until the target is found.</p>
 
 <p>Whether or not the content is “clearly labeled” depends on the starting point of the search. If page A has a link which clearly “identifies” some piece of content, then the location of the content is clearly labeled. Page B, which can be in the same website, may not have such a link or may have a link with a link text that does not “identify” target content or which can be interpreted to “identify” more than one target, and so the location of the content starting from page B is not clearly labeled.</p>
 
-<p>For the purpose of this definition, an <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instrument</a> is <em>identifiable</em> if any text or other content with a <a href="https://www.w3.org/TR/WCAG21/#dfn-text-alternative" title="Definition of text alternative">text alternative</a>, allows any user to identify an element with a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> that inherits from <code class="language-plaintext highlighter-rouge">widget</code>.</p>
+<p>For the purpose of this definition, an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> is <em>identifiable</em> if any text or other content with a <a href="https://www.w3.org/TR/WCAG21/#dfn-text-alternative" title="Definition of text alternative">text alternative</a>, allows any user to identify an element with a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> that inherits from <code class="language-plaintext highlighter-rouge">widget</code>.</p>
 
 <p>A <a href="#web-page-html" title="Definition of web page">web page</a> changes state when the <a href="https://html.spec.whatwg.org/#dom-document-body">document’s body</a> changes without a change in the <a href="https://url.spec.whatwg.org/#concept-url">document’s URL</a>.</p>
 
@@ -402,9 +368,10 @@
 
 <p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings (working draft)</a>.</p>
 
-<p>For more details, see <a href="/pages/examples/included-in-the-accessibility-tree/">examples of included in the accessibility tree</a>.</p>
+<p>For more details, see [examples of included in the accessibility tree][].</p>
 
-<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/</p>
 
 <h3 id="instrument-to-achieve-an-objective">Instrument to achieve an objective</h3>
 
@@ -414,7 +381,7 @@
 
 <h3 id="marked-as-decorative">Marked as decorative</h3>
 
-<p>An element is <em>marked as decorative</em> if one of the following conditions is true:</p>
+<p>An element is <em>marked as decorative</em> if one or more of the following conditions is true:</p>
 
 <ul>
   <li>it has an <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a> of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">presentation</code>; or</li>
@@ -423,7 +390,7 @@
 
 <p>Elements are marked as decorative as a way to convey the intention of the author that they are <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a>. It is different from the element actually being <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a> as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a> may overwrite this intention.</p>
 
-<p>Elements can also be ignored by assistive technologies if their <a href="#hidden-state" title="Definition of hidden state">hidden state</a> is true. This is different from marking the element as decorative and does not convey the same intention. Notably, the <a href="#hidden-state" title="Definition of hidden state">hidden state</a> of an element may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.</p>
+<p>Elements can also be ignored by assistive technologies if their <a href="#hidden-state" title="Definition of Hidden State">hidden state</a> is true. This is different from marking the element as decorative and does not convey the same intention. Notably, the <a href="#hidden-state" title="Definition of Hidden State">hidden state</a> of an element may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -444,14 +411,14 @@
 <p>The <em>semantic role</em> of an element is determined by the first of these cases that applies:</p>
 
 <ol>
-  <li><strong>Conflict</strong> If the element is <a href="#marked-as-decorative" title="Definition of Marked as Decorative">marked as decorative</a>, but the element is <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>; or would be <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> when its <a href="#hidden-state" title="Definition of hidden state">hidden state</a> is false, then its <em>semantic role</em> is its <strong><a href="#implicit-role" title="Definition of Implicit Role">implicit role</a></strong>.</li>
+  <li><strong>Conflict</strong> If the element is <a href="#marked-as-decorative" title="Definition of Marked as Decorative">marked as decorative</a>, but the element is <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>; or would be <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> when its <a href="#hidden-state" title="Definition of Hidden State">hidden state</a> is false, then its <em>semantic role</em> is its <strong><a href="#implicit-role" title="Definition of Implicit Role">implicit role</a></strong>.</li>
   <li><strong>Explicit</strong> If the element has an <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>, then its <em>semantic role</em> is its <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>.</li>
   <li><strong>Implicit</strong> The <em>semantic role</em> of the element is its <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a>.</li>
 </ol>
 
 <h3 id="set-of-clearly-labeled-instruments">Set of clearly labeled instruments</h3>
 
-<p>A <em>set of clearly labeled instruments</em> is a set of <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instruments</a>, where each <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instrument</a> is in the same <a href="#web-page-html" title="Definition of web page">web page</a> as the test target or can be found in a <a href="#clearly-labeled-location" title="Definition of clearly labeled location">clearly labeled location</a> from that <a href="#web-page-html" title="Definition of web page">web page</a>.</p>
+<p>A <em>set of clearly labeled instruments</em> is a set of <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a>, where each <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> is in the same <a href="#web-page-html" title="Definition of web page">web page</a> as the test target or can be found in a <a href="#clearly-labeled-location" title="Definition of clearly labeled location">clearly labeled location</a> from that <a href="#web-page-html" title="Definition of web page">web page</a>.</p>
 
 <h3 id="wai-aria-specifications">WAI-ARIA specifications</h3>
 
@@ -475,17 +442,12 @@
 
 <p><strong>Note:</strong> Although web pages as defined here are sets of <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> (and do not contain other kind of nodes), one can abusively write that any node is “in a web page” if it is a <a href="https://dom.spec.whatwg.org/#concept-shadow-including-descendant">shadow-including descendant</a> of a <a href="https://dom.spec.whatwg.org/#concept-document">document</a> that is part of that web page.</p>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="implementations">Implementations</h2>
 
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>, 
-with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
-
-<h3 id="authors">Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/carlosapaduarte">Carlos Duarte</a></li>
-  <li><a href="https://github.com/joao-vicente">João Vicente</a></li>
-</ul>
+<p>There are currently no known implementations for this rule. If you would like to 
+contribute an implementation, please read the 
+<a href="https://act-rules.github.io/pages/implementations/overview/">ACT Implementations page</a> 
+for details.</p>
 
 <h2 id="changelog">Changelog</h2>
 
@@ -505,6 +467,15 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
 </div>
 
 
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+<p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+</div>
+  </footer>
   
 
 
@@ -538,9 +509,9 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1632617450188918049"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1632617450188918049"></script>
 <script>
   svg4everybody();
 </script><script>

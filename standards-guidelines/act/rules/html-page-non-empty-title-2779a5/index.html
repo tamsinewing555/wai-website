@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1632145436410449677";
+      element.src = "/WAI/assets/scripts/main.js?1632617450188918049";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632145436410449677">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632617450188918049">
 
 <title> HTML page has non-empty title | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -108,61 +108,9 @@
         HTML page has non-empty title
       
       </h1></header>
-    <dl>
-  <dt>Rule Type:</dt>
-  <dd>atomic</dd>
-  <dt>Rule ID:</dt>
-  <dd>2779a5</dd>
-  <dt>Last Modified:</dt>
-  <dd>Oct 1, 2020</dd>
-  <dt>Accessibility Requirements Mapping:</dt>
-  <dd><a href="https://www.w3.org/TR/WCAG21/#page-titled">2.4.2 Page Titled (Level A)</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: success criterion is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: success criterion needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: success criterion needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dd><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G88">G88: Providing descriptive titles for Web pages</a>
-    <ul>
-      <li>Not required to conformance to any W3C accessibility recommendation.</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: technique is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: technique needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: technique needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dd><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H25">H25: Providing a title using the title element</a>
-    <ul>
-      <li>Not required to conformance to any W3C accessibility recommendation.</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: technique is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: technique needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: technique needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dt>Input Aspects:</dt>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></dd>
-</dl>
+    <h2 id="applicability">Applicability</h2>
 
-<h2 id="description">Description</h2>
-
-<p>This rule checks that a non-embedded HTML page has a non-empty title.</p>
-
-<h2 id="applicability">Applicability</h2>
-
-<p>The root element of the <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web page</a>, if it is an <code class="language-plaintext highlighter-rouge">html</code> element.</p>
+<p>This rule applies to the root element of the <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web page</a>, if it is an <code class="language-plaintext highlighter-rouge">html</code> element.</p>
 
 <h2 id="expectation-1">Expectation 1</h2>
 
@@ -185,6 +133,7 @@
 <p>This rule is only applicable to non-embedded HTML pages. HTML pages embedded into other documents, such as through <code class="language-plaintext highlighter-rouge">iframe</code> or <code class="language-plaintext highlighter-rouge">object</code> elements are not applicable because they are not <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web pages</a> according to the definition in WCAG.</p>
 
 <ul>
+  <li><a href="https://act-rules.github.io/rules/c4a8a4">HTML page title is descriptive</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/page-titled">Understanding Success Criterion 2.4.2: Page Titled</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G88">G88: Providing descriptive titles for Web pages</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H25">H25: Providing a title using the title element</a></li>
@@ -354,34 +303,58 @@
   </li>
 </ul>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="implementations">Implementations</h2>
 
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>, 
-with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This section is not part of the official rule. It is populated dynamically and 
+not accounted for in the change history or the last modified date.</p>
 
-<h3 id="authors">Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/annethyme">Anne Thyme Nørregaard</a></li>
-  <li><a href="https://github.com/brynanders">Bryn Anderson</a></li>
-  <li><a href="https://github.com/jkodu">Jey Nandakumar</a></li>
-  <li><a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a></li>
-  <li><a href="https://github.com/wilcofiers">Wilco Fiers</a></li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Implementation</th>
+      <th>Consistency</th>
+      <th>Complete</th>
+      <th>Report</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alfa</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/alfa#id-2779a5">View Report</a></td>
+    </tr>
+    <tr>
+      <td>Axe-core</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/alfa#id-2779a5">View Report</a></td>
+    </tr>
+    <tr>
+      <td>QualWeb</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/qualweb#id-2779a5">View Report</a></td>
+    </tr>
+    <tr>
+      <td>RGAA 3.0</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/rgaa-3.0#id-2779a5">View Report</a></td>
+    </tr>
+    <tr>
+      <td>SortSite</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/sortsite#id-2779a5">View Report</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="changelog">Changelog</h2>
 
-<ul>
-  <li><strong>October 1st, 2020</strong>
-    <ul>
-      <li>Added mapping to Technique G88 and H25</li>
-      <li>Moved a note to the background</li>
-      <li>Added first assumption</li>
-      <li>Removed Passed example 6, as it does not satisfy success criterion 2.4.2</li>
-      <li>Editorial improvements to example descriptions</li>
-    </ul>
-  </li>
-</ul>
+<p>This is the first version of this ACT rule.</p>
+
 
 
     <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20HTML%20page%20has%20non-empty%20title">wai-eo-editors@w3.org</a> or via GitHub.</p>
@@ -396,6 +369,15 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
 </div>
 
 
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+<p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+</div>
+  </footer>
   
 
 
@@ -429,9 +411,9 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1632617450188918049"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1632617450188918049"></script>
 <script>
   svg4everybody();
 </script><script>

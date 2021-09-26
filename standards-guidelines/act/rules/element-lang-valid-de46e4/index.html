@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1632145436410449677";
+      element.src = "/WAI/assets/scripts/main.js?1632617450188918049";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632145436410449677">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632617450188918049">
 
 <title> Element with lang attribute has valid language tag | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -108,69 +108,14 @@
         Element with lang attribute has valid language tag
       
       </h1></header>
-    <aside class="box">
-  <header class="box-h ">Proposed rule</header>
-  <div class="box-i">
-    <p>
-      This rule is awaiting implementations by testing tools and methodologies. 
-      Find information about 
-      <a href="https://act-rules.github.io/pages/implementations/overview/">
-        providing implementations
-      </a>.
-    </p>
-  </div>
-</aside>
-
-<dl>
-  <dt>Rule Type:</dt>
-  <dd>atomic</dd>
-  <dt>Rule ID:</dt>
-  <dd>de46e4</dd>
-  <dt>Last Modified:</dt>
-  <dd>June 3, 2021</dd>
-  <dt>Accessibility Requirements Mapping:</dt>
-  <dd><a href="https://www.w3.org/TR/WCAG21/#language-of-parts">3.1.2 Language of Parts (Level AA)</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: success criterion is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: success criterion needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: success criterion needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dd><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H58">H58: Using language attributes to identify changes in the human language</a>
-    <ul>
-      <li>Not required to conformance to any W3C accessibility recommendation.</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: technique is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: technique needs further testing</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: technique needs further testing</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dt>Input Aspects:</dt>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility">Accessibility Tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></dd>
-</dl>
-
-<h2 id="description">Description</h2>
-
-<p>This rule checks that a non-empty <code class="language-plaintext highlighter-rouge">lang</code> attribute of an element in the page body has a language tag with a known primary language subtag.</p>
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rules applies to any HTML element with a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> that is not empty (<code class="language-plaintext highlighter-rouge">""</code>) and for which all of the following is true:</p>
 
 <ul>
-  <li>the element is a <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree">flat tree</a> of a <code class="language-plaintext highlighter-rouge">body</code> element; and</li>
-  <li>the element has a <a href="https://dom.spec.whatwg.org/#concept-node-document">node document</a> with a <a href="https://dom.spec.whatwg.org/#concept-document-content-type">content type</a> of <code class="language-plaintext highlighter-rouge">text/html</code>; and</li>
-  <li>the element has a <a href="https://dom.spec.whatwg.org/#text">text node</a> as a <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree">flat tree</a> that is <a href="#visible" title="Definition of visible">visible</a> or <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</li>
+  <li><strong>descendant</strong>: the element is an <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant" title="DOM definition of Inclusive Descendant">inclusive descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree">flat tree</a> of a <code class="language-plaintext highlighter-rouge">body</code> element; and</li>
+  <li><strong>content type</strong>: the element has an associated <a href="https://dom.spec.whatwg.org/#concept-node-document">node document</a> with a <a href="https://dom.spec.whatwg.org/#concept-document-content-type">content type</a> of <code class="language-plaintext highlighter-rouge">text/html</code>; and</li>
+  <li><strong>text</strong>: there is some non-empty <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the element.</li>
 </ul>
 
 <h2 id="expectation">Expectation</h2>
@@ -247,6 +192,34 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
+<h4 id="passed-example-4">Passed Example 4</h4>
+
+<p>This <code class="language-plaintext highlighter-rouge">div</code> element has a valid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">article</code> element, therefore its <code class="language-plaintext highlighter-rouge">lang</code> attribute is not considered by the rule.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;article</span> <span class="na">lang=</span><span class="s">"invalid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/article&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-5">Passed Example 5</h4>
+
+<p>This <code class="language-plaintext highlighter-rouge">div</code> element has a valid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. The <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> of the image is <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">div</code> element.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/fireworks.jpg"</span> <span class="na">alt=</span><span class="s">"Fireworks over Paris"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed Example 1</h4>
@@ -318,6 +291,34 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
+<h4 id="failed-example-6">Failed Example 6</h4>
+
+<p>This <code class="language-plaintext highlighter-rouge">div</code> element has an invalid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">article</code> element, therefore its <code class="language-plaintext highlighter-rouge">lang</code> attribute is not considered by the rule.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;article</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"invalid"</span><span class="nt">&gt;</span>
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/article&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-7">Failed Example 7</h4>
+
+<p>This <code class="language-plaintext highlighter-rouge">div</code> element has an invalid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. The <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> of the image is <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">div</code> element.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"invalid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/fireworks.jpg"</span> <span class="na">alt=</span><span class="s">"Fireworks over Paris"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
@@ -359,7 +360,34 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
+<h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
+
+<p>There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from this <code class="language-plaintext highlighter-rouge">div</code> element.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"invalid"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/fireworks.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
 <h2 id="glossary">Glossary</h2>
+
+<h3 id="accessible-name">Accessible Name</h3>
+
+<p>The <em>accessible name</em> is the programmatically determined name of a user interface element that is <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
+
+<p>The accessible name is calculated using the <a href="https://www.w3.org/TR/accname" title="Accessible Name and Description Computation">accessible name and description computation</a>.</p>
+
+<p>For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in <a href="https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation">HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)</a> and <a href="https://www.w3.org/TR/svg-aam/#mapping_additional">SVG Accessibility API Mappings, Name and Description (working draft)</a>.</p>
+
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/accessible-name/">examples of accessible name</a>.</p>
+
+<p><strong>Note:</strong> As per the <a href="https://www.w3.org/TR/accname" title="Accessible Name and Description Computation">accessible name and description computation</a>, each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (<code class="language-plaintext highlighter-rouge">""</code>) one.</p>
+
+<p><strong>Note:</strong> As per the <a href="https://www.w3.org/TR/accname" title="Accessible Name and Description Computation">accessible name and description computation</a>, accessible names are <a href="https://www.w3.org/TR/accname-1.1/#terminology">flat string</a> trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.</p>
 
 <h3 id="attribute-value">Attribute value</h3>
 
@@ -390,9 +418,10 @@
 
 <p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings (working draft)</a>.</p>
 
-<p>For more details, see <a href="/pages/examples/included-in-the-accessibility-tree/">examples of included in the accessibility tree</a>.</p>
+<p>For more details, see [examples of included in the accessibility tree][].</p>
 
-<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -407,6 +436,24 @@
 <p><strong>Note:</strong> A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> will have one or more outcomes.</p>
 
 <p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
+
+<h3 id="text-inheriting-language">Text Inheriting its Programmatic Language from an Element</h3>
+
+<p>The <em>text inheriting its programmatic language</em> from an element E is composed of all the following texts:</p>
+
+<ul>
+  <li><strong>text nodes</strong>: the value of any <a href="https://dom.spec.whatwg.org/#text" title="DOM text, as of 2020/06/05">text nodes</a> that are <a href="#visible" title="Definition of visible">visible</a> or <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> and children of an element inheriting its programmatic language from E;</li>
+  <li><strong>accessible text</strong>: the <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> and <a href="https://www.w3.org/TR/accname-1.1/#dfn-accessible-description" title="Definition of Accessible description">accessible description</a> of any element inheriting its programmatic language from E, and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>;</li>
+  <li><strong>page title</strong>: the value of the <a href="https://html.spec.whatwg.org/multipage/dom.html#document.title" title="HTML document title, as of 2020/06/05">document title</a>, only if E is a <a href="https://dom.spec.whatwg.org/#document-element" title="DOM document element, as of 2020/06/05">document</a> in a <a href="https://html.spec.whatwg.org/#top-level-browsing-context" title="HTML top-level browsing context, as of 2020/06/05">top-level browsing context</a>.</li>
+</ul>
+
+<p>An element F is an <em>element inheriting its programmatic language</em> from an element E if at least one of the following conditions is true (recursively):</p>
+
+<ul>
+  <li>F is E itself (an element always inherits its programmatic language from itself); or</li>
+  <li>F does not have a non-empty <code class="language-plaintext highlighter-rouge">lang</code> attribute, and is the child in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree">flat tree</a> of an element inheriting its programmatic language from E; or</li>
+  <li>F is a <a href="https://html.spec.whatwg.org/#fully-active" title="HTML definition of Fully Active Document">fully active</a> <a href="https://dom.spec.whatwg.org/#document-element" title="DOM document element, as of 2020/06/05">document</a> element, has no non-empty <code class="language-plaintext highlighter-rouge">lang</code> attribute, and its <a href="https://html.spec.whatwg.org/#browsing-context-container" title="HTML Definition of Browsing Context Container">browsing context container</a> is an element inheriting its programmatic language from E.</li>
+</ul>
 
 <h3 id="valid-language-tag">Valid Language Tag</h3>
 
@@ -448,17 +495,29 @@
   </li>
 </ul>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="implementations">Implementations</h2>
 
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>, 
-with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This section is not part of the official rule. It is populated dynamically and 
+not accounted for in the change history or the last modified date.</p>
 
-<h3 id="authors">Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/brynanders">Bryn Anderson</a></li>
-  <li><a href="https://github.com/jkodu">Jey Nandakumar</a></li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Implementation</th>
+      <th>Consistency</th>
+      <th>Complete</th>
+      <th>Report</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SortSite</td>
+      <td>Consistent</td>
+      <td>No</td>
+      <td><a href="https://act-rules.github.io/implementation/sortsite#id-de46e4">View Report</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="changelog">Changelog</h2>
 
@@ -478,6 +537,15 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
 </div>
 
 
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+<p><strong>Authors:</strong> <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+</div>
+  </footer>
   
 
 
@@ -511,9 +579,9 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1632617450188918049"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1632617450188918049"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1632145436410449677";
+      element.src = "/WAI/assets/scripts/main.js?1632617450188918049";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632145436410449677">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1632617450188918049">
 
 <title> ARIA state or property has valid value | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -108,64 +108,17 @@
         ARIA state or property has valid value
       
       </h1></header>
-    <aside class="box">
-  <header class="box-h ">Proposed rule</header>
-  <div class="box-i">
-    <p>
-      This rule is awaiting implementations by testing tools and methodologies. 
-      Find information about 
-      <a href="https://act-rules.github.io/pages/implementations/overview/">
-        providing implementations
-      </a>.
-    </p>
-  </div>
-</aside>
+    <h2 id="applicability">Applicability</h2>
 
-<dl>
-  <dt>Rule Type:</dt>
-  <dd>atomic</dd>
-  <dt>Rule ID:</dt>
-  <dd>6a7281</dd>
-  <dt>Last Modified:</dt>
-  <dd>June 14, 2021</dd>
-  <dt>Accessibility Requirements Mapping:</dt>
-  <dd><a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_values">ARIA 1.1, 6.3 Values for States and Properties</a>
-    <ul>
-      <li><strong>Required for conformance</strong> to WAI-ARIA 1.1 author requirements</li>
-      <li><a href="#outcome">Outcome</a> mapping:
-        <ul>
-          <li>Any <code class="language-plaintext highlighter-rouge">failed</code> outcomes: WAI-ARIA requirement is not satisfied</li>
-          <li>All <code class="language-plaintext highlighter-rouge">passed</code> outcomes: WAI-ARIA requirement is satisfied</li>
-          <li>An <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome: WAI-ARIA requirement is satisfied</li>
-        </ul>
-      </li>
-    </ul>
-  </dd>
-  <dt>Input Aspects:</dt>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></dd>
-  <dd><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></dd>
-</dl>
-
-<h2 id="description">Description</h2>
-
-<p>This rule checks that each ARIA state or property has a valid value.</p>
-
-<h2 id="applicability">Applicability</h2>
-
-<p>This rule applies to any <a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_def">WAI-ARIA 1.1 state or property</a> that is not empty (“”), and that is specified on an HTML or SVG element.</p>
+<p>This rule applies to any <a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_def">WAI-ARIA 1.1 state or property</a> that is not empty (“”), and that is specified on an <a href="#namespaced-element">HTML or SVG element</a>.</p>
 
 <h2 id="expectation">Expectation</h2>
 
 <p>Each test target has a valid value according to its <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value">WAI-ARIA 1.1 value type</a>.</p>
 
-<p>For value types <code class="language-plaintext highlighter-rouge">ID Reference</code> and <code class="language-plaintext highlighter-rouge">ID Reference List</code> for <a href="https://www.w3.org/TR/wai-aria-1.1/#requiredState">WAI-ARIA required properties</a> at least one of the elements with the given ids exists in the same <a href="https://dom.spec.whatwg.org/#document-trees">document tree</a> or <a href="https://dom.spec.whatwg.org/#shadow-trees">shadow tree</a> as the element that specifies the target attribute.</p>
+<p>For value types <code class="language-plaintext highlighter-rouge">ID Reference</code> and <code class="language-plaintext highlighter-rouge">ID Reference List</code> for <a href="https://www.w3.org/TR/wai-aria-1.1/#requiredState">WAI-ARIA required properties</a> at least one of the elements with the given ids exists in the same <a href="https://dom.spec.whatwg.org/#document-trees">document tree</a> or in the same <a href="https://dom.spec.whatwg.org/#shadow-trees">shadow tree</a> as the element that specifies the target attribute.</p>
 
 <p>For value type <code class="language-plaintext highlighter-rouge">URI</code> the value matches the <a href="https://www.ietf.org/rfc/rfc3986.txt">generic URI syntax</a>.</p>
-
-<p><strong>Note:</strong> Only for <a href="https://www.w3.org/TR/wai-aria-1.1/#requiredState">WAI-ARIA required properties</a> with value types <code class="language-plaintext highlighter-rouge">ID Reference</code> and <code class="language-plaintext highlighter-rouge">ID Reference List</code> is there a requirement that the elements with the given ids actually exists. For non-required properties, this is not a requirement.</p>
-
-<p><strong>Note:</strong>
-For value type <code class="language-plaintext highlighter-rouge">URI</code>, this rule does not require that the destination URI exists.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -176,6 +129,10 @@ For value type <code class="language-plaintext highlighter-rouge">URI</code>, th
 <p>Some user agents treat the value of <code class="language-plaintext highlighter-rouge">aria-*</code> attribute as case-sensitive (even when these are not ID) while some treat them as case-insensitive.</p>
 
 <h2 id="background">Background</h2>
+
+<p>Only for <a href="https://www.w3.org/TR/wai-aria-1.1/#requiredState">WAI-ARIA required properties</a> with value types <code class="language-plaintext highlighter-rouge">ID Reference</code> and <code class="language-plaintext highlighter-rouge">ID Reference List</code> is there a requirement that the elements with the given ids actually exists. For non-required properties, this is not a requirement. For example, the value of the <code class="language-plaintext highlighter-rouge">aria-errormessage</code> attribute on an <code class="language-plaintext highlighter-rouge">input</code> does not need to reference an <code class="language-plaintext highlighter-rouge">id</code> that exists within the same document, because an <a href="https://html.spec.whatwg.org/#htmlelement">HTML element</a> with such and <code class="language-plaintext highlighter-rouge">id</code> may be created in response to an <a href="https://dom.spec.whatwg.org/#event">event</a> that may or may not happen.</p>
+
+<p>For value type <code class="language-plaintext highlighter-rouge">URI</code>, this rule does not require that the destination URI exists.</p>
 
 <ul>
   <li><a href="https://act-rules.github.io/rules/5c01ea">ARIA state or property is permitted</a></li>
@@ -379,12 +336,18 @@ For value type <code class="language-plaintext highlighter-rouge">URI</code>, th
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
-<p><code class="language-plaintext highlighter-rouge">aria-hidden</code> state on an element that is not an HTML or SVG element</p>
+<p><code class="language-plaintext highlighter-rouge">aria-hidden</code> state on an element that is not an <a href="#namespaced-element">HTML or SVG element</a>.</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;math</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/math&gt;</span>
 </code></pre></div></div>
 
 <h2 id="glossary">Glossary</h2>
+
+<h3 id="namespaced-element">Namespaced Element</h3>
+
+<p>An <a href="https://dom.spec.whatwg.org/#element" title="DOM element, 2021/05/31">element</a> with a specific <a href="https://dom.spec.whatwg.org/#dom-element-namespaceuri" title="DOM Element namespaceURI, 2021/05/31">namespaceURI</a> value from <a href="https://infra.spec.whatwg.org/#namespaces" title="HTML namespace, 2021/05/31">HTML namespaces</a>. For example an “SVG element” is any element with the “SVG namespace”, which is <code class="language-plaintext highlighter-rouge">http://www.w3.org/2000/svg</code>.</p>
+
+<p>Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">title</code> have a different namespace depending on where they are used. For example a <code class="language-plaintext highlighter-rouge">title</code> in an HTML page usually has the HTML namespace. When used in an <code class="language-plaintext highlighter-rouge">svg</code> element, a <code class="language-plaintext highlighter-rouge">title</code> element has the SVG namespace instead.</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -412,17 +375,41 @@ For value type <code class="language-plaintext highlighter-rouge">URI</code>, th
 
 <p><strong>Note:</strong> depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.</p>
 
-<h2 id="acknowledgements">Acknowledgements</h2>
+<h2 id="implementations">Implementations</h2>
 
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>, 
-with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This section is not part of the official rule. It is populated dynamically and 
+not accounted for in the change history or the last modified date.</p>
 
-<h3 id="authors">Authors</h3>
-
-<ul>
-  <li><a href="https://github.com/annethyme">Anne Thyme Nørregaard</a></li>
-  <li><a href="https://github.com/wilcofiers">Wilco Fiers</a></li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Implementation</th>
+      <th>Consistency</th>
+      <th>Complete</th>
+      <th>Report</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alfa</td>
+      <td>Partially-consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/alfa#id-6a7281">View Report</a></td>
+    </tr>
+    <tr>
+      <td>QualWeb</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/qualweb#id-6a7281">View Report</a></td>
+    </tr>
+    <tr>
+      <td>SortSite</td>
+      <td>Consistent</td>
+      <td>Yes</td>
+      <td><a href="https://act-rules.github.io/implementation/sortsite#id-6a7281">View Report</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="changelog">Changelog</h2>
 
@@ -442,6 +429,15 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
 </div>
 
 
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      >
+      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+<p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+</div>
+  </footer>
   
 
 
@@ -475,9 +471,9 @@ with the support of the EU-funded <a href="https://www.w3.org/WAI/about/projects
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1632617450188918049"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1632145436410449677"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1632617450188918049"></script>
 <script>
   svg4everybody();
 </script><script>
