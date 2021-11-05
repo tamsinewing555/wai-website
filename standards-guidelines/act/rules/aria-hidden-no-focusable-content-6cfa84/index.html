@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+      element.src = "/WAI/assets/scripts/main.js?1636123959580451239";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1636123959580451239">
 
 <title> Element with aria-hidden has no focusable content | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","headline":"Element with aria-hidden has no focusable content","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/aria-hidden-no-focusable-content-6cfa84/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
+{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/aria-hidden-no-focusable-content-6cfa84/","headline":"Element with aria-hidden has no focusable content","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,7 +108,35 @@
         Element with aria-hidden has no focusable content
       
       </h1></header>
-    <h2 id="applicability">Applicability</h2>
+    
+
+<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
+  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
+  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
+  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
+  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
+  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">true</code>.</p>
 
@@ -137,7 +165,7 @@
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value">Understanding Success Criterion 4.1.2: Name, Role, Value</a></li>
   <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-hidden"><code class="language-plaintext highlighter-rouge">aria-hidden</code> (state)</a></li>
-  <li><a href="https://www.w3.org/TR/using-aria/#fourth">Fourth rule of ARIA use (work in progress)</a></li>
+  <li><a href="https://www.w3.org/TR/using-aria/#fourth">Fourth rule of ARIA use</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -184,15 +212,6 @@
 	<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>
 		<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
-<h4 id="passed-example-6">Passed Example 6</h4>
-
-<p>Content taken out of sequential focus order using <code class="language-plaintext highlighter-rouge">tabindex</code>.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-2"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
@@ -382,7 +401,7 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+      <p><strong>Date:</strong> Updated 22 October 2021</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 </div>
@@ -420,9 +439,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1636123959580451239"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1636123959580451239"></script>
 <script>
   svg4everybody();
 </script><script>

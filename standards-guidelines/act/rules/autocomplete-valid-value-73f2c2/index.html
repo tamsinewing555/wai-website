@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+      element.src = "/WAI/assets/scripts/main.js?1636123959580451239";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1636123959580451239">
 
 <title> autocomplete attribute has valid value | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","headline":"autocomplete attribute has valid value","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
+{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/","headline":"autocomplete attribute has valid value","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,9 +108,37 @@
         autocomplete attribute has valid value
       
       </h1></header>
-    <h2 id="applicability">Applicability</h2>
+    
 
-<p>This rule applies to any HTML <code class="language-plaintext highlighter-rouge">input</code>, <code class="language-plaintext highlighter-rouge">select</code> and <code class="language-plaintext highlighter-rouge">textarea</code> element with an <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> that is neither empty (<code class="language-plaintext highlighter-rouge">""</code>) nor only <a href="https://infra.spec.whatwg.org/#ascii-whitespace" title="HTML ASCII whitespace 2020/08/12">ASCII whitespace</a>, except if one or more of the following is true:</p>
+<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
+  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
+  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
+  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
+  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
+  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="applicability">Applicability</h2>
+
+<p>This rule applies to any <a href="#namespaced-element">HTML</a> <code class="language-plaintext highlighter-rouge">input</code>, <code class="language-plaintext highlighter-rouge">select</code> and <code class="language-plaintext highlighter-rouge">textarea</code> element with an <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> that is neither empty (<code class="language-plaintext highlighter-rouge">""</code>) nor only <a href="https://infra.spec.whatwg.org/#ascii-whitespace" title="HTML ASCII whitespace 2020/08/12">ASCII whitespace</a>, except if one or more of the following is true:</p>
 
 <ul>
   <li><strong>toggle</strong>: the <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute consists of a single token that is an <a href="https://infra.spec.whatwg.org/#ascii-case-insensitive" title="definition of ASCII case-insensitive">ASCII case-insensitive</a> match for the string <code class="language-plaintext highlighter-rouge">off</code> or the string <code class="language-plaintext highlighter-rouge">on</code>; or</li>
@@ -135,7 +163,7 @@
 
 <p>The <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute is used on form fields that correspond to <a href="https://www.w3.org/TR/WCAG21/#input-purposes">Input Purposes for User Interface Components</a> and collect information about the user.</p>
 
-<p>If the <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute is used to describe “custom” taxonomy, for example <code class="language-plaintext highlighter-rouge">&lt;input type="text" autocomplete="banner" /&gt;</code>, success Criterion <a href="https://www.w3.org/TR/WCAG21/#identify-input-purpose" title="WCAG 2.1 success criterion 1.3.5 Identify Input Purpose">1.3.5 Identify Input Purpose</a> may be satisfied even if this rule failed.</p>
+<p>If the <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute is used to describe “custom” taxonomy, for example using the custom autocomplete value “banner” (<code class="language-plaintext highlighter-rouge">&lt;input type="text" autocomplete="banner" /&gt;</code>), success Criterion <a href="https://www.w3.org/TR/WCAG21/#identify-input-purpose" title="WCAG 2.1 success criterion 1.3.5 Identify Input Purpose">1.3.5 Identify Input Purpose</a> may be satisfied even if this rule failed.</p>
 
 <p>The <code class="language-plaintext highlighter-rouge">aria-disabled</code> state is used on <code class="language-plaintext highlighter-rouge">input</code> elements which are not part of <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/08/12">sequential focus navigation</a> and are not otherwise <a href="https://www.w3.org/TR/wai-aria-1.2/#dfn-operable">operable</a>. If this is not the case, this rule may be inapplicable on elements that are still operable and require a valid <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute to satisfy success criterion <a href="https://www.w3.org/TR/WCAG21/#identify-input-purpose" title="WCAG 2.1 success criterion 1.3.5 Identify Input Purpose">1.3.5 Identify Input Purpose</a>.</p>
 
@@ -177,7 +205,7 @@
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p>The <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of this <code class="language-plaintext highlighter-rouge">select</code> element has the required token “bday-month”. Even though the element’s <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner">form owner</a> has <code class="language-plaintext highlighter-rouge">autocomplete="off"</code>. This prevents the user agent from completing it, but does not prevent the <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> from being programmatically identifiable.</p>
+<p>The <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of this <code class="language-plaintext highlighter-rouge">select</code> element has the required token “bday-month”. The element’s <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner">form owner</a> has <code class="language-plaintext highlighter-rouge">autocomplete="off"</code>, which prevents the user agent from completing it. It does not prevent the <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> from being programmatically identifiable.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;label</span>
@@ -201,7 +229,7 @@
 
 <p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> list includes a <code class="language-plaintext highlighter-rouge">work</code> token, allowed because it is used before <code class="language-plaintext highlighter-rouge">email</code>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Work email<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"Work Email"</span><span class="nt">/&gt;&lt;/label&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Work email<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"work email"</span><span class="nt">/&gt;&lt;/label&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-5">Passed Example 5</h4>
@@ -238,7 +266,7 @@
 
 <p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> has an unknown term that is not a <a href="#correct-autocomplete-field" title="Definition of Correct autocomplete field">correct autocomplete field</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"badterm"</span><span class="nt">/&gt;&lt;/label&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"badname"</span><span class="nt">/&gt;&lt;/label&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
@@ -289,28 +317,28 @@
 
 <p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is on an element that is not <a href="#visible" title="Definition of Visible">visible</a> through <code class="language-plaintext highlighter-rouge">display:none</code>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"username"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">/&gt;&lt;/label&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"badname"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">/&gt;&lt;/label&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
 <p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute is on an <code class="language-plaintext highlighter-rouge">input</code> element that has the <code class="language-plaintext highlighter-rouge">disabled</code> attribute.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"username"</span> <span class="na">disabled</span><span class="nt">/&gt;&lt;/label&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"badname"</span> <span class="na">disabled</span><span class="nt">/&gt;&lt;/label&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-5">Inapplicable Example 5</h4>
 
 <p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute is on an <code class="language-plaintext highlighter-rouge">input</code> element that has the <code class="language-plaintext highlighter-rouge">aria-disabled</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">true</code>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"username"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">/&gt;&lt;/label&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"badname"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">/&gt;&lt;/label&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-6">Inapplicable Example 6</h4>
 
 <p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute is ignored because it is on an element with a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">none</code>. The <code class="language-plaintext highlighter-rouge">disabled</code> attribute is required to ensure <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a> does not cause the <code class="language-plaintext highlighter-rouge">none</code> role to be ignored.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">role=</span><span class="s">"none"</span> <span class="na">disabled</span> <span class="na">autocomplete=</span><span class="s">"username"</span><span class="nt">/&gt;&lt;/label&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">role=</span><span class="s">"none"</span> <span class="na">disabled</span> <span class="na">autocomplete=</span><span class="s">"badname"</span><span class="nt">/&gt;&lt;/label&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-7">Inapplicable Example 7</h4>
@@ -375,19 +403,6 @@
 
 <p>Elements that can become the target of keyboard input as described in the <a href="https://www.w3.org/TR/html">HTML</a> specification of <a href="https://html.spec.whatwg.org/#focusable-area">focusable</a> and <a href="https://html.spec.whatwg.org/#specially-focusable">can be focused</a>.</p>
 
-<h3 id="hidden-state">Hidden State</h3>
-
-<p>An HTML element’s <em>hidden state</em> is “true” if at least one of the following is true for itself or any of its <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="Definition Ancestor">ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>:</p>
-
-<ul>
-  <li>has a <code class="language-plaintext highlighter-rouge">hidden</code> attribute; or</li>
-  <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
-  <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> of <code class="language-plaintext highlighter-rouge">hidden</code>; or</li>
-  <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
-</ul>
-
-<p>In any other case, the element’s <em>hidden state</em> is “false”.</p>
-
 <h3 id="implicit-role">Implicit Semantic Role</h3>
 
 <p>The <em>implicit semantic role</em> of an element is a pre-defined value given by the host language which depends on the element and its ancestors.</p>
@@ -396,14 +411,13 @@
 
 <h3 id="included-in-the-accessibility-tree">Included in the accessibility tree</h3>
 
-<p>Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.</p>
+<p>Elements included in the accessibility tree of platform specific accessibility APIs are exposed to assistive technologies. This allows users of assistive technology to access the elements in a way that meets the requirements of the individual user.</p>
 
 <p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings (working draft)</a>.</p>
 
-<p>For more details, see [examples of included in the accessibility tree][].</p>
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/">examples of included in the accessibility tree</a>.</p>
 
-<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
-[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/</p>
+<p><a href="#programmatically-hidden">Programmatically hidden</a> elements are removed from the accessibility tree. However, some browsers will leave <a href="#focusable">focusable</a> elements with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code> in the accessibility tree. Because they are hidden, these elements are considered <strong>not</strong> included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.</p>
 
 <h3 id="marked-as-decorative">Marked as decorative</h3>
 
@@ -416,7 +430,13 @@
 
 <p>Elements are marked as decorative as a way to convey the intention of the author that they are <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a>. It is different from the element actually being <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a> as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a> may overwrite this intention.</p>
 
-<p>Elements can also be ignored by assistive technologies if their <a href="#hidden-state" title="Definition of Hidden State">hidden state</a> is true. This is different from marking the element as decorative and does not convey the same intention. Notably, the <a href="#hidden-state" title="Definition of Hidden State">hidden state</a> of an element may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.</p>
+<p>Elements can also be ignored by assistive technologies if they are <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a>. This is different from marking the element as decorative and does not convey the same intention. Notably, being <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a> may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.</p>
+
+<h3 id="namespaced-element">Namespaced Element</h3>
+
+<p>An <a href="https://dom.spec.whatwg.org/#element" title="DOM element, 2021/05/31">element</a> with a specific <a href="https://dom.spec.whatwg.org/#dom-element-namespaceuri" title="DOM Element namespaceURI, 2021/05/31">namespaceURI</a> value from <a href="https://infra.spec.whatwg.org/#namespaces" title="HTML namespace, 2021/05/31">HTML namespaces</a>. For example an “SVG element” is any element with the “SVG namespace”, which is <code class="language-plaintext highlighter-rouge">http://www.w3.org/2000/svg</code>.</p>
+
+<p>Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">title</code> have a different namespace depending on where they are used. For example a <code class="language-plaintext highlighter-rouge">title</code> in an HTML page usually has the HTML namespace. When used in an <code class="language-plaintext highlighter-rouge">svg</code> element, a <code class="language-plaintext highlighter-rouge">title</code> element has the SVG namespace instead.</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -432,15 +452,29 @@
 
 <p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
 
+<h3 id="programmatically-hidden">Programmatically Hidden</h3>
+
+<p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>:</p>
+
+<ul>
+  <li>has a <code class="language-plaintext highlighter-rouge">hidden</code> attribute; or</li>
+  <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
+  <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
+</ul>
+
+<p><strong>Note</strong>: Contrarily to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
+
 <h3 id="semantic-role">Semantic Role</h3>
 
 <p>The <em>semantic role</em> of an element is determined by the first of these cases that applies:</p>
 
 <ol>
-  <li><strong>Conflict</strong> If the element is <a href="#marked-as-decorative" title="Definition of Marked as Decorative">marked as decorative</a>, but the element is <a href="#included-in-the-accessibility-tree" title="Definition of Included in the accessibility tree">included in the accessibility tree</a>; or would be <a href="#included-in-the-accessibility-tree" title="Definition of Included in the accessibility tree">included in the accessibility tree</a> when its <a href="#hidden-state" title="Definition of Hidden State">hidden state</a> is false, then its <em>semantic role</em> is its <strong><a href="#implicit-role" title="Definition of Implicit Role">implicit role</a></strong>.</li>
+  <li><strong>Conflict</strong> If the element is <a href="#marked-as-decorative" title="Definition of Marked as Decorative">marked as decorative</a>, but the element is <a href="#included-in-the-accessibility-tree" title="Definition of Included in the accessibility tree">included in the accessibility tree</a>; or would be <a href="#included-in-the-accessibility-tree" title="Definition of Included in the accessibility tree">included in the accessibility tree</a> when it is not <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a>, then its <em>semantic role</em> is its <strong><a href="#implicit-role" title="Definition of Implicit Role">implicit role</a></strong>.</li>
   <li><strong>Explicit</strong> If the element has an <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>, then its <em>semantic role</em> is its <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>.</li>
   <li><strong>Implicit</strong> The <em>semantic role</em> of the element is its <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a>.</li>
 </ol>
+
+<p>This definition can be used in expressions such as “semantic <code class="language-plaintext highlighter-rouge">button</code>” meaning any element with a semantic role of <code class="language-plaintext highlighter-rouge">button</code>.</p>
 
 <h3 id="visible">Visible</h3>
 
@@ -522,7 +556,7 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+      <p><strong>Date:</strong> Updated 22 October 2021</p>
 <p><strong>Authors:</strong> <a href="https://github.com/ajanec01">Aron Janecki</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 </div>
@@ -560,9 +594,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1636123959580451239"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1636123959580451239"></script>
 <script>
   svg4everybody();
 </script><script>

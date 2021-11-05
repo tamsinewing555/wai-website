@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+      element.src = "/WAI/assets/scripts/main.js?1636123959580451239";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1636123959580451239">
 
 <title> HTML page has lang attribute | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","headline":"HTML page has lang attribute","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-lang-b5c3f8/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
+{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-lang-b5c3f8/","headline":"HTML page has lang attribute","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -137,7 +137,35 @@
         HTML page has lang attribute
       
       </h1></header>
-    <h2 id="applicability">Applicability</h2>
+    
+
+<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
+  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
+  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
+  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
+  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
+  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="https://dom.spec.whatwg.org/#document-element">document element</a> if it is an <code class="language-plaintext highlighter-rouge">html</code> element that:</p>
 
@@ -150,7 +178,7 @@
 
 <h2 id="expectation">Expectation</h2>
 
-<p>Each test target has a <code class="language-plaintext highlighter-rouge">lang</code> attribute that is neither empty (<code class="language-plaintext highlighter-rouge">""</code>) nor only <a href="https://infra.spec.whatwg.org/#ascii-whitespace">ASCII whitespace</a>.</p>
+<p>Each test target has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value">attribute value</a> that is neither empty (<code class="language-plaintext highlighter-rouge">""</code>) nor only <a href="https://infra.spec.whatwg.org/#ascii-whitespace">ASCII whitespace</a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -167,7 +195,7 @@
   <li><a href="https://act-rules.github.io/rules/ucwvc8">HTML page language subtag matches default language</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">Understanding Success Criterion 3.1.1: Language of Page</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">H57: Using language attributes on the html element</a></li>
-  <li><a href="https://www.ietf.org/rfc/bcp/bcp47.txt">BCP 47: Tags for Identifying Languages</a></li>
+  <li><a href="https://www.rfc-editor.org/rfc/rfc5646.html">RFC 5646: Tags for Identifying Languages</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/dom.html#the-lang-and-xml:lang-attributes">The <code class="language-plaintext highlighter-rouge">lang</code> and <code class="language-plaintext highlighter-rouge">xml:lang</code> attributes</a></li>
 </ul>
 
@@ -229,6 +257,25 @@
 </code></pre></div></div>
 
 <h2 id="glossary">Glossary</h2>
+
+<h3 id="attribute-value">Attribute value</h3>
+
+<p>The <em>attribute value</em> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.</p>
+
+<p>Some notable case of attribute value, among others:</p>
+
+<ul>
+  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute" title="HTML Specification of Enumerated Attribute">enumerated attributes</a>, the <em>attribute value</em> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus <code class="language-plaintext highlighter-rouge">&lt;input type="image" /&gt;</code> has an attribute value of either <code class="language-plaintext highlighter-rouge">Image Button</code> (the state) or <code class="language-plaintext highlighter-rouge">image</code> (the keyword mapping to it), both formulations having the same meaning; similarly, “an input element with a <code class="language-plaintext highlighter-rouge">type</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">Text</code>” can be either <code class="language-plaintext highlighter-rouge">&lt;input type="text" /&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;input /&gt;</code> (missing value default), or <code class="language-plaintext highlighter-rouge">&lt;input type="invalid" /&gt;</code> (invalid value default).</li>
+  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes" title="HTML Specification of Boolean Attribute">boolean attributes</a>, the <em>attribute value</em> is <code class="language-plaintext highlighter-rouge">true</code> when the attribute is present and <code class="language-plaintext highlighter-rouge">false</code> otherwise. Thus <code class="language-plaintext highlighter-rouge">&lt;button disabled&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;button disabled="disabled"&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;button disabled=""&gt;</code> all have a <code class="language-plaintext highlighter-rouge">disabled</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">true</code>.</li>
+  <li>For attributes whose value is used in a case-insensitive context, the <em>attribute value</em> is the lowercase version of the value written in the HTML code.</li>
+  <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <em>attribute value</em> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
+  <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <em>attribute value</em> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <em>attribute value</em> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+</ul>
+
+<p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
+
+<p>The <em>attribute value</em> of an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> is the value returned on getting it. Note that when an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes" title="HTML specification of Reflecting Content Attributes in IDL Attributes">reflects</a> a content attribute, they have the same attribute value.</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -302,7 +349,7 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+      <p><strong>Date:</strong> Updated 1 October 2021</p>
 <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. <em>Previous Authors:</em> <a href="https://github.com/annika-FTB">Annika Nietzio</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 </div>
@@ -340,9 +387,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1636123959580451239"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1636123959580451239"></script>
 <script>
   svg4everybody();
 </script><script>

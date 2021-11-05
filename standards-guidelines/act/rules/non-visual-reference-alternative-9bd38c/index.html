@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+      element.src = "/WAI/assets/scripts/main.js?1636123959580451239";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1636123959580451239">
 
 <title> Content has alternative for visual reference | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","headline":"Content has alternative for visual reference","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/non-visual-reference-alternative-9bd38c/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
+{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/non-visual-reference-alternative-9bd38c/","headline":"Content has alternative for visual reference","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,7 +108,35 @@
         Content has alternative for visual reference
       
       </h1></header>
-    <h2 id="applicability">Applicability</h2>
+    
+
+<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
+  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
+  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
+  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
+  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
+  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="https://dom.spec.whatwg.org/#text" title="Specification of Text Node">text node</a> that is either <a href="#visible" title="Definition of Visible">visible</a> or <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>.</p>
 
@@ -579,14 +607,13 @@
 
 <h3 id="included-in-the-accessibility-tree">Included in the accessibility tree</h3>
 
-<p>Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.</p>
+<p>Elements included in the accessibility tree of platform specific accessibility APIs are exposed to assistive technologies. This allows users of assistive technology to access the elements in a way that meets the requirements of the individual user.</p>
 
 <p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings (working draft)</a>.</p>
 
-<p>For more details, see [examples of included in the accessibility tree][].</p>
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/">examples of included in the accessibility tree</a>.</p>
 
-<p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute with a value of <code class="language-plaintext highlighter-rouge">true</code>. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
-[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/</p>
+<p><a href="#programmatically-hidden">Programmatically hidden</a> elements are removed from the accessibility tree. However, some browsers will leave <a href="#focusable">focusable</a> elements with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code> in the accessibility tree. Because they are hidden, these elements are considered <strong>not</strong> included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -602,6 +629,18 @@
 
 <p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
 
+<h3 id="programmatically-hidden">Programmatically Hidden</h3>
+
+<p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>:</p>
+
+<ul>
+  <li>has a <code class="language-plaintext highlighter-rouge">hidden</code> attribute; or</li>
+  <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
+  <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
+</ul>
+
+<p><strong>Note</strong>: Contrarily to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
+
 <h3 id="visible">Visible</h3>
 
 <p>Content perceivable through sight.</p>
@@ -614,7 +653,7 @@
 
 <h3 id="visible-text-content">Visible Text Content</h3>
 
-<p>The <em>visible text content</em> of an <a href="https://dom.spec.whatwg.org/#element" title="DOM element, 2020/08/18">element</a> is a set of all <a href="#visible" title="Definition of Visible">visible</a> <a href="https://dom.spec.whatwg.org/#text" title="DOM text, 2020/08/18">text nodes</a> that are <a href="https://dom.spec.whatwg.org/#concept-tree-descendant" title="DOM tree descendant, 2020/08/18">descendants</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/08/18">flat tree</a> of this element</p>
+<p>The <em>visible text content</em> of an <a href="https://dom.spec.whatwg.org/#element" title="DOM element, 2020/08/18">element</a> is a set of all <a href="#visible" title="Definition of Visible">visible</a> <a href="https://dom.spec.whatwg.org/#text" title="DOM text, 2020/08/18">text nodes</a> that are <a href="https://dom.spec.whatwg.org/#concept-tree-descendant" title="DOM tree descendant, 2020/08/18">descendants</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> of this element</p>
 
 <h3 id="visual-reference-words">Visual Reference Words</h3>
 
@@ -798,7 +837,7 @@ for details.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+      <p><strong>Date:</strong> Updated 22 October 2021</p>
 <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/danistr">Daniël Strik</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 </div>
@@ -836,9 +875,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1636123959580451239"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1636123959580451239"></script>
 <script>
   svg4everybody();
 </script><script>

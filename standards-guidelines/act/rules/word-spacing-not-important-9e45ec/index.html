@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1633578570351143841";
+      element.src = "/WAI/assets/scripts/main.js?1636123959580451239";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1633578570351143841">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1636123959580451239">
 
 <title> Word spacing in style attributes is not !important | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","headline":"Word spacing in style attributes is not !important","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/word-spacing-not-important-9e45ec/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
+{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/word-spacing-not-important-9e45ec/","headline":"Word spacing in style attributes is not !important","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,9 +108,37 @@
         Word spacing in style attributes is not !important
       
       </h1></header>
-    <h2 id="applicability">Applicability</h2>
+    
 
-<p>This rule applies to any HTML element that is [visible][] and for which the <code class="language-plaintext highlighter-rouge">style</code> attribute <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declares</a> the [word-spacing][] CSS property.</p>
+<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
+  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
+  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
+  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
+  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
+  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="applicability">Applicability</h2>
+
+<p>This rule applies to any [HTML element][] that is [visible][] and for which the <code class="language-plaintext highlighter-rouge">style</code> attribute <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declares</a> the [word-spacing][] CSS property.</p>
 
 <h2 id="expectation">Expectation</h2>
 
@@ -142,7 +170,7 @@
 
 <h2 id="background">Background</h2>
 
-<p>When a style is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in the <code class="language-plaintext highlighter-rouge">style</code> attribute with an [important][] declaration, it “wins” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over any other style from <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>, i.e. it cannot be overridden by any of these. On the other hand, if such a style is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in a style sheet, it can still “lose” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> to declarations with higher [specificity][] or simply coming from a later style sheet (such as ones injected by assistive technologies). This rule ensures that the element is not in the first case and that the style can be overridden by users, unless it is already at least the minimum recommended threshold. [Important][] styles that are declared with the [user][user origin] or [user agent][user agent origin] origin can win the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>.</p>
+<p>When a style is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in the <code class="language-plaintext highlighter-rouge">style</code> attribute with an [important][] declaration, it “wins” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over any other style from <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>, i.e. it cannot be overridden by any of these. On the other hand, if such a style is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in a style sheet, it can still “lose” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> to declarations with higher [specificity][] or simply coming from a later style sheet (such as ones injected by assistive technologies). This rule ensures that the element is not in the first case and that the style can be overridden by users, unless it is already at least the minimum required threshold. [Important][] styles that are declared with the [user][user origin] or [user agent][user agent origin] origin can win the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>.</p>
 
 <p>CSS specifications define each declaration as being either [important][] (if is as the <code class="language-plaintext highlighter-rouge">!important</code> annotation) or [normal][]. Given that <code class="language-plaintext highlighter-rouge">normal</code> is also a keyword for this property, and that <code class="language-plaintext highlighter-rouge">!important</code> is wider known that this distinction, this rule rather uses “[important][]”/”not [important][]” to avoid confusion.</p>
 
@@ -248,7 +276,7 @@
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">word-spacing</code> of only 0.1 times the font size, which is below the recommended minimum.</p>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">word-spacing</code> of only 0.1 times the font size, which is below the required minimum.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"word-spacing: 0.1em !important"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
@@ -257,7 +285,7 @@
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">word-spacing</code> of <code class="language-plaintext highlighter-rouge">2px</code> which is only 0.1 times the font size (<code class="language-plaintext highlighter-rouge">20px</code>), thus below the recommended minimum.</p>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">word-spacing</code> of <code class="language-plaintext highlighter-rouge">2px</code> which is only 0.1 times the font size (<code class="language-plaintext highlighter-rouge">20px</code>), thus below the required minimum.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
 	<span class="nt">p</span> <span class="p">{</span>
@@ -328,6 +356,12 @@
 
 <h2 id="glossary">Glossary</h2>
 
+<h3 id="namespaced-element">Namespaced Element</h3>
+
+<p>An <a href="https://dom.spec.whatwg.org/#element" title="DOM element, 2021/05/31">element</a> with a specific [namespaceURI][] value from [HTML namespaces][]. For example an “SVG element” is any element with the “SVG namespace”, which is <code class="language-plaintext highlighter-rouge">http://www.w3.org/2000/svg</code>.</p>
+
+<p>Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">title</code> have a different namespace depending on where they are used. For example a <code class="language-plaintext highlighter-rouge">title</code> in an HTML page usually has the HTML namespace. When used in an <code class="language-plaintext highlighter-rouge">svg</code> element, a <code class="language-plaintext highlighter-rouge">title</code> element has the SVG namespace instead.</p>
+
 <h3 id="outcome">Outcome</h3>
 
 <p>An <em>outcome</em> is a conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> or one of its constituent <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. An outcome can be one of the three following types:</p>
@@ -387,8 +421,11 @@ not accounted for in the change history or the last modified date.</p>
 <p>This is the first version of this ACT rule.</p>
 
 <p>[font-size]: https://www.w3.org/TR/css-fonts-4/#propdef-font-size ‘CSS Fonts Module Level 4 (Working draft) - Font size
+[html element]: #namespaced-element
+[html namespaces]: https://infra.spec.whatwg.org/#namespaces ‘HTML namespace, 2021/05/31’
 [important]: https://www.w3.org/TR/css-cascade-4/#importance ‘CSS Cascading and Inheritance Level 4 (Working draft) - Importance’
 [inherited]: https://www.w3.org/TR/css-cascade-4/#inheriting ‘CSS Cascading and Inheritance Level 4 (Working draft) - Inherited Values’
+[namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri ‘DOM Element namespaceURI, 2021/05/31’
 [normal]: https://www.w3.org/TR/css-cascade-4/#normal ‘CSS Cascading and Inheritance Level 4 (Working draft) - Normal declarations’
 [sc1412]: https://www.w3.org/TR/WCAG21/#text-spacing ‘Success Criterion 1.4.12 Text Spacing’
 [sc148]: https://www.w3.org/TR/WCAG21/#visual-presentation ‘Success Criterion 1.4.8 Visual Presentation’
@@ -415,7 +452,7 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated August 24th, 2021</p>
+      <p><strong>Date:</strong> Updated 22 October 2021</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 </div>
@@ -453,9 +490,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1633578570351143841"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1636123959580451239"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1633578570351143841"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1636123959580451239"></script>
 <script>
   svg4everybody();
 </script><script>
