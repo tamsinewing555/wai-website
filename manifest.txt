@@ -540,7 +540,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -688,11 +687,16 @@
 /news/2021-05-18/pronunciation/index.html
 /news/2021-05-20/gaad/index.html
 /news/2021-05-25/RAUR/index.html
+/news/2021-06-01/WAI-CooP-meeting/index.html
+/news/2021-06-08/wcag3/index.html
+/news/2021-10-12/NAUR/index.html
+/news/2021-10-14/remote-meetings/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
 /news/24/index.html
 /news/25/index.html
+/news/26/index.html
 /news/3/index.html
 /news/4/index.html
 /news/5/index.html
