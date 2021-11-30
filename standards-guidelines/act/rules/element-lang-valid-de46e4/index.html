@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1637291244284666652";
+      element.src = "/WAI/assets/scripts/main.js?1638241861971504749";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1637291244284666652">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1638241861971504749">
 
 <title> Element with lang attribute has valid language tag | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/element-lang-valid-de46e4/","headline":"Element with lang attribute has valid language tag","@context":"https://schema.org"}</script>
+{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/element-lang-valid-de46e4/","headline":"Element with lang attribute has valid language tag","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -142,13 +142,13 @@
 
 <ul>
   <li><strong>descendant</strong>: the element is an <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant" title="DOM definition of Inclusive Descendant">inclusive descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree">flat tree</a> of a <code class="language-plaintext highlighter-rouge">body</code> element; and</li>
-  <li><strong>content type</strong>: the element has an associated [node document][] with a <a href="https://dom.spec.whatwg.org/#concept-document-content-type">content type</a> of <code class="language-plaintext highlighter-rouge">text/html</code>; and</li>
-  <li><strong>text</strong>: there is some non-empty [text inheriting its programmatic language][] from the element.</li>
+  <li><strong>content type</strong>: the element has an associated <a href="https://dom.spec.whatwg.org/#concept-node-document">node document</a> with a <a href="https://dom.spec.whatwg.org/#concept-document-content-type">content type</a> of <code class="language-plaintext highlighter-rouge">text/html</code>; and</li>
+  <li><strong>text</strong>: there is some non-empty <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the element.</li>
 </ul>
 
 <h2 id="expectation">Expectation</h2>
 
-<p>For each test target, the <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is a [valid language tag][].</p>
+<p>For each test target, the <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is a <a href="#valid-language-tag">valid language tag</a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -157,10 +157,10 @@
     <p>This rule assumes that the <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is used to indicate the language of a section of the content. If the <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is used for something else (for example to indicate the programming language of a <code class="language-plaintext highlighter-rouge">code</code> element), the content may still conform to WCAG despite failing this rule.</p>
   </li>
   <li>
-    <p>This rule assumes that user agents and assistive technologies can programmatically determine <a href="#valid-language-tag">valid language tags</a> even if these do not conform to the [RFC 5646][] syntax.</p>
+    <p>This rule assumes that user agents and assistive technologies can programmatically determine <a href="#valid-language-tag">valid language tags</a> even if these do not conform to the <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">RFC 5646</a> syntax.</p>
   </li>
   <li>
-    <p>This rule assumes that only [valid language tags][valid language tag] are enough to satisfy [Success Criterion 3.1.2 Language of Parts][sc312]; this notably excludes <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> and [ISO 639.2][] three-letters codes, both having poor support in assistive technologies.</p>
+    <p>This rule assumes that only <a href="#valid-language-tag">valid language tags</a> are enough to satisfy <a href="https://www.w3.org/TR/WCAG21/#language-of-parts" title="Success Criterion 3.1.2 Language of Parts">Success Criterion 3.1.2 Language of Parts</a>; this notably excludes <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> and <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2">ISO 639.2</a> three-letters codes, both having poor support in assistive technologies.</p>
   </li>
 </ul>
 
@@ -183,7 +183,7 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which has a [valid language tag][].</p>
+<p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which has a <a href="#valid-language-tag">valid language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -196,7 +196,7 @@
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">blockquote</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which has a [valid language tag][]. The region section (“CH”) in the value is ignored by the rule (and the definition of [valid language tag][]).</p>
+<p>This <code class="language-plaintext highlighter-rouge">blockquote</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which has a <a href="#valid-language-tag">valid language tag</a>. The region section (“CH”) in the value is ignored by the rule (and the definition of <a href="#valid-language-tag">valid language tag</a>).</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -209,7 +209,7 @@
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which has a [valid language tag][], but a syntactically invalid region subtag which is ignored by the rule.</p>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which has a <a href="#valid-language-tag">valid language tag</a>, but a syntactically invalid region subtag which is ignored by the rule.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -222,7 +222,7 @@
 
 <h4 id="passed-example-4">Passed Example 4</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">div</code> element has a valid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. There is no [text inheriting its programmatic language][] from the <code class="language-plaintext highlighter-rouge">article</code> element, therefore its <code class="language-plaintext highlighter-rouge">lang</code> attribute is not considered by the rule.</p>
+<p>This <code class="language-plaintext highlighter-rouge">div</code> element has a valid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">article</code> element, therefore its <code class="language-plaintext highlighter-rouge">lang</code> attribute is not considered by the rule.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -237,7 +237,7 @@
 
 <h4 id="passed-example-5">Passed Example 5</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">div</code> element has a valid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. The <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> of the image is [text inheriting its programmatic language][] from the <code class="language-plaintext highlighter-rouge">div</code> element.</p>
+<p>This <code class="language-plaintext highlighter-rouge">div</code> element has a valid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. The <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> of the image is <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">div</code> element.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -252,7 +252,7 @@
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which does not have a [valid language tag][] because its primary language subtag does not exist in the [language subtag registry][].</p>
+<p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which does not have a <a href="#valid-language-tag">valid language tag</a> because its primary language subtag does not exist in the <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -265,7 +265,7 @@
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which is not a [valid language tag][].</p>
+<p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which is not a <a href="#valid-language-tag">valid language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -278,7 +278,7 @@
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which consists of only [whitespace][] and thus is not a [valid language tag][].</p>
+<p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which consists of only <a href="#whitespace" title="Definition of Whitespace">whitespace</a> and thus is not a <a href="#valid-language-tag">valid language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -291,7 +291,7 @@
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> does not have a valid language tag. The <code class="language-plaintext highlighter-rouge">lang</code> attribute must be valid because the content is [visible][].</p>
+<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> does not have a valid language tag. The <code class="language-plaintext highlighter-rouge">lang</code> attribute must be valid because the content is <a href="#visible" title="Definition of visible">visible</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -306,7 +306,7 @@
 
 <h4 id="failed-example-5">Failed Example 5</h4>
 
-<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> does not have a valid language tag, and its <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> is not [visible][] though it is still <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
+<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> does not have a valid language tag, and its <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> is not <a href="#visible" title="Definition of visible">visible</a> though it is still <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -321,7 +321,7 @@
 
 <h4 id="failed-example-6">Failed Example 6</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">div</code> element has an invalid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. There is no [text inheriting its programmatic language][] from the <code class="language-plaintext highlighter-rouge">article</code> element, therefore its <code class="language-plaintext highlighter-rouge">lang</code> attribute is not considered by the rule.</p>
+<p>This <code class="language-plaintext highlighter-rouge">div</code> element has an invalid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">article</code> element, therefore its <code class="language-plaintext highlighter-rouge">lang</code> attribute is not considered by the rule.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -336,7 +336,7 @@
 
 <h4 id="failed-example-7">Failed Example 7</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">div</code> element has an invalid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. The <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> of the image is [text inheriting its programmatic language][] from the <code class="language-plaintext highlighter-rouge">div</code> element.</p>
+<p>This <code class="language-plaintext highlighter-rouge">div</code> element has an invalid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. The <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> of the image is <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">div</code> element.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -349,7 +349,7 @@
 
 <h4 id="failed-example-8">Failed Example 8</h4>
 
-<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of this <code class="language-plaintext highlighter-rouge">p</code> element is an [iso 639.2][] three letters code, hence not a [valid language tag][].</p>
+<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of this <code class="language-plaintext highlighter-rouge">p</code> element is an <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2">iso 639.2</a> three letters code, hence not a <a href="#valid-language-tag">valid language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -360,7 +360,7 @@
 
 <h4 id="failed-example-9">Failed Example 9</h4>
 
-<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of this <code class="language-plaintext highlighter-rouge">p</code> element is a <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tag</a>, hence not a [valid language tag][].</p>
+<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of this <code class="language-plaintext highlighter-rouge">p</code> element is a <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tag</a>, hence not a <a href="#valid-language-tag">valid language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"lb"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -397,7 +397,7 @@
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
-<p>There is no element with a [text node][] as a <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree">flat tree</a> that is either [visible][] or <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
+<p>There is no element with a <a href="https://dom.spec.whatwg.org/#text">text node</a> as a <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree">flat tree</a> that is either <a href="#visible" title="Definition of visible">visible</a> or <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -412,7 +412,7 @@
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
-<p>There is no [text inheriting its programmatic language][] from this <code class="language-plaintext highlighter-rouge">div</code> element.</p>
+<p>There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from this <code class="language-plaintext highlighter-rouge">div</code> element.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -449,14 +449,14 @@
   <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute" title="HTML Specification of Enumerated Attribute">enumerated attributes</a>, the <em>attribute value</em> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus <code class="language-plaintext highlighter-rouge">&lt;input type="image" /&gt;</code> has an attribute value of either <code class="language-plaintext highlighter-rouge">Image Button</code> (the state) or <code class="language-plaintext highlighter-rouge">image</code> (the keyword mapping to it), both formulations having the same meaning; similarly, “an input element with a <code class="language-plaintext highlighter-rouge">type</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">Text</code>” can be either <code class="language-plaintext highlighter-rouge">&lt;input type="text" /&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;input /&gt;</code> (missing value default), or <code class="language-plaintext highlighter-rouge">&lt;input type="invalid" /&gt;</code> (invalid value default).</li>
   <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes" title="HTML Specification of Boolean Attribute">boolean attributes</a>, the <em>attribute value</em> is <code class="language-plaintext highlighter-rouge">true</code> when the attribute is present and <code class="language-plaintext highlighter-rouge">false</code> otherwise. Thus <code class="language-plaintext highlighter-rouge">&lt;button disabled&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;button disabled="disabled"&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;button disabled=""&gt;</code> all have a <code class="language-plaintext highlighter-rouge">disabled</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">true</code>.</li>
   <li>For attributes whose value is used in a case-insensitive context, the <em>attribute value</em> is the lowercase version of the value written in the HTML code.</li>
-  <li>For attributes that accept [numbers][], the <em>attribute value</em> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
-  <li>For attributes that accept sets of tokens, whether [space separated][] or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <em>attribute value</em> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
-  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <em>attribute value</em> is computed as indicated in the [WAI-ARIA specification][] and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+  <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <em>attribute value</em> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
+  <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <em>attribute value</em> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <em>attribute value</em> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
 </ul>
 
 <p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
 
-<p>The <em>attribute value</em> of an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> is the value returned on getting it. Note that when an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> [reflects][reflect] a content attribute, they have the same attribute value.</p>
+<p>The <em>attribute value</em> of an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> is the value returned on getting it. Note that when an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes" title="HTML specification of Reflecting Content Attributes in IDL Attributes">reflects</a> a content attribute, they have the same attribute value.</p>
 
 <h3 id="focusable">Focusable</h3>
 
@@ -474,7 +474,7 @@
 
 <h3 id="namespaced-element">Namespaced Element</h3>
 
-<p>An <a href="https://dom.spec.whatwg.org/#element" title="DOM element, 2021/05/31">element</a> with a specific [namespaceURI][] value from <a href="https://infra.spec.whatwg.org/#namespaces" title="HTML namespace, 2021/05/31">HTML namespaces</a>. For example an “SVG element” is any element with the “SVG namespace”, which is <code class="language-plaintext highlighter-rouge">http://www.w3.org/2000/svg</code>.</p>
+<p>An <a href="https://dom.spec.whatwg.org/#element" title="DOM element, 2021/05/31">element</a> with a specific <a href="https://dom.spec.whatwg.org/#dom-element-namespaceuri" title="DOM Element namespaceURI, 2021/05/31">namespaceURI</a> value from <a href="https://infra.spec.whatwg.org/#namespaces" title="HTML namespace, 2021/05/31">HTML namespaces</a>. For example an “SVG element” is any element with the “SVG namespace”, which is <code class="language-plaintext highlighter-rouge">http://www.w3.org/2000/svg</code>.</p>
 
 <p>Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">title</code> have a different namespace depending on where they are used. For example a <code class="language-plaintext highlighter-rouge">title</code> in an HTML page usually has the HTML namespace. When used in an <code class="language-plaintext highlighter-rouge">svg</code> element, a <code class="language-plaintext highlighter-rouge">title</code> element has the SVG namespace instead.</p>
 
@@ -509,9 +509,9 @@
 <p>The <em>text inheriting its programmatic language</em> from an element E is composed of all the following texts:</p>
 
 <ul>
-  <li><strong>text nodes</strong>: the value of any [text nodes][] that are [visible][] or <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> and children of an element inheriting its programmatic language from E;</li>
+  <li><strong>text nodes</strong>: the value of any <a href="https://dom.spec.whatwg.org/#text" title="DOM text, as of 2020/06/05">text nodes</a> that are <a href="#visible" title="Definition of visible">visible</a> or <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> and children of an element inheriting its programmatic language from E;</li>
   <li><strong>accessible text</strong>: the <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> and <a href="https://www.w3.org/TR/accname-1.1/#dfn-accessible-description" title="Definition of Accessible description">accessible description</a> of any element inheriting its programmatic language from E, and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>;</li>
-  <li><strong>page title</strong>: the value of the <a href="https://html.spec.whatwg.org/multipage/dom.html#document.title" title="HTML document title, as of 2020/06/05">document title</a>, only if E is a <a href="https://dom.spec.whatwg.org/#document-element" title="DOM document element, as of 2020/06/05">document</a> in a [top-level browsing context][].</li>
+  <li><strong>page title</strong>: the value of the <a href="https://html.spec.whatwg.org/multipage/dom.html#document.title" title="HTML document title, as of 2020/06/05">document title</a>, only if E is a <a href="https://dom.spec.whatwg.org/#document-element" title="DOM document element, as of 2020/06/05">document</a> in a <a href="https://html.spec.whatwg.org/#top-level-browsing-context" title="HTML top-level browsing context, as of 2020/06/05">top-level browsing context</a>.</li>
 </ul>
 
 <p>An element F is an <em>element inheriting its programmatic language</em> from an element E if at least one of the following conditions is true (recursively):</p>
@@ -524,11 +524,11 @@
 
 <h3 id="valid-language-tag">Valid Language Tag</h3>
 
-<p>A [language tag][] is <em>valid</em> if its [primary language subtag][] exists in the [language subtag registry][] with a [Type field][] whose field-body value is <code class="language-plaintext highlighter-rouge">language</code>.</p>
+<p>A <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">language tag</a> is <em>valid</em> if its <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.1">primary language subtag</a> exists in the <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a> with a <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-3.1.3">Type field</a> whose field-body value is <code class="language-plaintext highlighter-rouge">language</code>.</p>
 
-<p>A “language tag” is here to be understood as in the first paragraph of the [RFC 5646 language tag syntax][language tag], i.e. a sequence of subtags separated by hyphens, where a subtag is any sequence of alphanumerical characters. Thus, this definition intentionally differs from the strict [RFC 5646 syntax][language tag] (and ABNF grammar) as user agents and assistive technologies are more lenient in what they accept. The definition is however consistent with the behavior of the <code class="language-plaintext highlighter-rouge">:lang()</code> pseudo-selector as defined by [Selectors Level 3][]. For example, <code class="language-plaintext highlighter-rouge">de-hello</code> would be an accepted way to indicate German in current user agents and assistive technologies, despite not being valid according to [RFC 5646 grammar][language tag]. As a consequence of this definition, however, <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> are not correctly recognized as valid language subtags.</p>
+<p>A “language tag” is here to be understood as in the first paragraph of the <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">RFC 5646 language tag syntax</a>, i.e. a sequence of subtags separated by hyphens, where a subtag is any sequence of alphanumerical characters. Thus, this definition intentionally differs from the strict <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">RFC 5646 syntax</a> (and ABNF grammar) as user agents and assistive technologies are more lenient in what they accept. The definition is however consistent with the behavior of the <code class="language-plaintext highlighter-rouge">:lang()</code> pseudo-selector as defined by <a href="https://drafts.csswg.org/selectors-3/#lang-pseudo">Selectors Level 3</a>. For example, <code class="language-plaintext highlighter-rouge">de-hello</code> would be an accepted way to indicate German in current user agents and assistive technologies, despite not being valid according to <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">RFC 5646 grammar</a>. As a consequence of this definition, however, <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> are not correctly recognized as valid language subtags.</p>
 
-<p>Subtags, notably the [primary language subtag][], are <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1.1">case insensitive</a>. Hence comparison with the [language subtag registry][] must be done in a case insensitive way.</p>
+<p>Subtags, notably the <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.1">primary language subtag</a>, are <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1.1">case insensitive</a>. Hence comparison with the <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a> must be done in a case insensitive way.</p>
 
 <h3 id="visible">Visible</h3>
 
@@ -590,27 +590,6 @@ not accounted for in the change history or the last modified date.</p>
 
 <p>This is the first version of this ACT rule.</p>
 
-<p>[iso 639.2]: https://www.loc.gov/standards/iso639-2/php/code_list.php ‘ISO 639.2
-[language subtag registry]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
-[language tag]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1
-[namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri ‘DOM Element namespaceURI, 2021/05/31’
-[node document]: https://dom.spec.whatwg.org/#concept-node-document
-[numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers ‘HTML Specification of Number Parsing’
-[primary language subtag]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.1
-[reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes ‘HTML specification of Reflecting Content Attributes in IDL Attributes’
-[rfc 5646]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1
-[sc312]: https://www.w3.org/TR/WCAG21/#language-of-parts ‘Success Criterion 3.1.2 Language of Parts’
-[selectors level 3]: https://drafts.csswg.org/selectors-3/#lang-pseudo
-[space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens ‘HTML Specification of Space Separated Tokens’
-[text inheriting its programmatic language]: #text-inheriting-language ‘Definition of Text Inheriting its Programmatic Language from an Element’
-[text node]: https://dom.spec.whatwg.org/#text
-[text nodes]: https://dom.spec.whatwg.org/#text ‘DOM text, as of 2020/06/05’
-[top-level browsing context]: https://html.spec.whatwg.org/#top-level-browsing-context ‘HTML top-level browsing context, as of 2020/06/05’
-[type field]: https://www.rfc-editor.org/rfc/rfc5646.html#section-3.1.3
-[valid language tag]: #valid-language-tag
-[visible]: #visible ‘Definition of visible’
-[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value ‘WAI-ARIA Specification of States and Properties Value’
-[whitespace]: #whitespace ‘Definition of Whitespace’</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Element%20with%20lang%20attribute%20has%20valid%20language%20tag">wai-eo-editors@w3.org</a> or via GitHub.</p>
@@ -667,9 +646,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1637291244284666652"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1638241861971504749"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1637291244284666652"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1638241861971504749"></script>
 <script>
   svg4everybody();
 </script><script>
