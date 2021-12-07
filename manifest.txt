@@ -25,6 +25,7 @@
 /about/projects/wai-coop/paper106.html
 /about/projects/wai-coop/paper107.html
 /about/projects/wai-coop/symposium1/index.html
+/about/projects/wai-coop/transcript1.html
 /about/projects/wai-core-2015/index.html
 /about/projects/wai-core-ford/index.html
 /about/projects/wai-guide/index.html
