@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> HTML page lang attribute has valid language tag | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-lang-valid-bf051a/","headline":"HTML page lang attribute has valid language tag","@context":"https://schema.org"}</script>
+{"headline":"HTML page lang attribute has valid language tag","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-lang-valid-bf051a/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -137,37 +137,9 @@
         HTML page lang attribute has valid language tag
       
       </h1></header>
-    
+    <h2 id="applicability">Applicability</h2>
 
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
-
-<p>This rule applies to any <a href="https://dom.spec.whatwg.org/#document-element">document element</a> if it is an <code class="language-plaintext highlighter-rouge">html</code> element that:</p>
+<p>This rule applies to any <a href="https://dom.spec.whatwg.org/#document-element">document element</a> if it is an <code class="language-plaintext highlighter-rouge">html</code> element for which all the following are true:</p>
 
 <ul>
   <li>has a <code class="language-plaintext highlighter-rouge">lang</code> attribute that is neither empty (“”) nor only <a href="https://infra.spec.whatwg.org/#ascii-whitespace">ASCII whitespace</a>; and</li>
@@ -177,7 +149,7 @@
 
 <h2 id="expectation">Expectation</h2>
 
-<p>For each test target, the <code class="language-plaintext highlighter-rouge">lang</code> attribute has a <a href="#valid-language-tag" title="Definition of valid language tag">valid language tag</a>.</p>
+<p>For each test target, the <code class="language-plaintext highlighter-rouge">lang</code> attribute has a <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -186,10 +158,10 @@
     <p>The language of the page can be set by other methods than the <code class="language-plaintext highlighter-rouge">lang</code> attribute, for example using HTTP headers or the <code class="language-plaintext highlighter-rouge">meta</code> element. These methods are not supported by all assistive technologies. This rule assumes that these other methods are insufficient to satisfying <a href="https://www.w3.org/TR/WCAG21/#language-of-page">Success Criterion 3.1.1: Language of Page</a>.</p>
   </li>
   <li>
-    <p>This rule assumes that user agents and assistive technologies can programmatically determine <a href="#valid-language-tag">valid language tags</a> even if these do not conform to the <a href="https://tools.ietf.org/html/bcp47#section-2.1">BCP 47</a> syntax.</p>
+    <p>This rule assumes that user agents and assistive technologies can programmatically determine <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tags</a> even if these do not conform to the <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">RFC 5646</a> syntax.</p>
   </li>
   <li>
-    <p>This rule assumes that <a href="https://tools.ietf.org/html/bcp47#section-2.2.8">grandfathered tags</a> are not used as these will not be recognized as <a href="#valid-language-tag">valid language tags</a>.</p>
+    <p>This rule assumes that only <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tags</a> are enough to satisfy <a href="https://www.w3.org/TR/WCAG21/#language-of-page" title="Success Criterion 3.1.1 Language of Page">Success Criterion 3.1.1 Language of Page</a>; this notably excludes <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> and <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2: Codes for the Representation of Names of Languages">ISO 639.2</a> three-letters codes, both having poor support in assistive technologies.</p>
   </li>
 </ul>
 
@@ -201,13 +173,57 @@
 
 <p>This rule is only applicable to non-embedded HTML pages. HTML pages embedded into other documents, such as through <code class="language-plaintext highlighter-rouge">iframe</code> or <code class="language-plaintext highlighter-rouge">object</code> elements are not applicable because they are not <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web pages</a> according to the definition in WCAG.</p>
 
+<h3 id="related-rules">Related rules</h3>
+
 <ul>
   <li><a href="https://act-rules.github.io/rules/b5c3f8">HTML page has <code class="language-plaintext highlighter-rouge">lang</code> attribute</a></li>
   <li><a href="https://act-rules.github.io/rules/ucwvc8">HTML page language subtag matches default language</a></li>
+</ul>
+
+<h3 id="bibliography">Bibliography</h3>
+
+<ul>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">Understanding Success Criterion 3.1.1: Language of Page</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">H57: Using language attributes on the html element</a></li>
-  <li><a href="https://www.ietf.org/rfc/bcp/bcp47.txt">BCP 47: Tags for Identifying Languages</a></li>
+  <li><a href="https://www.rfc-editor.org/rfc/rfc5646.html">RFC 5646: Tags for Identifying Languages</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/dom.html#the-lang-and-xml:lang-attributes">The <code class="language-plaintext highlighter-rouge">lang</code> and <code class="language-plaintext highlighter-rouge">xml:lang</code> attributes</a></li>
+</ul>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>3.1.1 Language of Page (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#language-of-page">Learn more about 3.1.1 Language of Page</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>H57: Using language attributes on the html element</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">Learn more about technique H57</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -216,14 +232,14 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute whose value is a <a href="#valid-language-tag" title="Definition of valid language tag">valid</a> <a href="https://tools.ietf.org/html/bcp47#section-2.2.1" title="Definition of primary language subtag">primary language subtag</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute with a <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;&lt;/html&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute value that is a <a href="#valid-language-tag" title="Definition of valid language tag">valid language tag</a> even though the <a href="https://tools.ietf.org/html/bcp47#section-2.2.4" title="Definition of region subtag">region subtag</a> is not.</p>
+<p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute with a <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a> even though the <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.4" title="Definition of region subtag">region subtag</a> is not.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en-US-GB"</span><span class="nt">&gt;&lt;/html&gt;</span>
 </code></pre></div></div>
@@ -232,16 +248,38 @@
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute whose value is not a <a href="#valid-language-tag" title="Definition of valid language tag">valid language tag</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute with a <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"em-US"</span><span class="nt">&gt;&lt;/html&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute whose value is not a <a href="#valid-language-tag" title="Definition of valid language tag">valid language tag</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute with a <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"#1"</span><span class="nt">&gt;&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-3">Failed Example 3</h4>
+
+<p>The <code class="language-plaintext highlighter-rouge">lang</code> attribute of this page is an <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2: Codes for the Representation of Names of Languages">iso 639.2</a> three letters code, which has no <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"eng"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>I love ACT rules!<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-4">Failed Example 4</h4>
+
+<p>The <code class="language-plaintext highlighter-rouge">lang</code> attribute of this page is a <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tag</a>, which has no <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"i-lux"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"lb"</span><span class="nt">&gt;</span>Lëtzebuerg ass e Land an Europa.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
 <h3 id="inapplicable">Inapplicable</h3>
@@ -254,6 +292,18 @@
 </code></pre>
 
 <h2 id="glossary">Glossary</h2>
+
+<h3 id="known-primary-language-tag">Known Primary Language Tag</h3>
+
+<p>A language tag has a <em>known primary language tag</em> if its <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.1">primary language subtag</a> exists in the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a> with a <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-3.1.3">Type field</a> whose field-body value is <code class="language-plaintext highlighter-rouge">language</code>.</p>
+
+<p>A “language tag” is here to be understood as in the first paragraph of the <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">RFC 5646 language tag syntax</a>, i.e. a sequence of subtags separated by hyphens, where a subtag is any sequence of alphanumerical characters. <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">Language tag</a> that are not valid according to the stricter <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">RFC 5646 syntax</a> (and ABNF grammar) definition can still have a known primary language tag. User agents and assistive technologies are more lenient in what they accept. This definition is consistent with the behavior of the <code class="language-plaintext highlighter-rouge">:lang()</code> pseudo-selector as defined by <a href="https://drafts.csswg.org/selectors-3/#lang-pseudo">Selectors Level 3</a>.</p>
+
+<p>As an example, <code class="language-plaintext highlighter-rouge">de-hello</code> would be an accepted way to indicate German in current user agents and assistive technologies, despite not being valid according to <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">RFC 5646 grammar</a>. It has a known primary language tag (namely, <code class="language-plaintext highlighter-rouge">de</code>).</p>
+
+<p>As a consequence of this definition, however, <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> do not have a known primary language tag.</p>
+
+<p>Subtags, notably the <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.1">primary language subtag</a>, are <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1.1">case insensitive</a>. Comparison with the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a> must be done in a case insensitive way.</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -268,14 +318,6 @@
 <p><strong>Note:</strong> A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> will have one or more outcomes.</p>
 
 <p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
-
-<h3 id="valid-language-tag">Valid Language Tag</h3>
-
-<p>A <a href="https://tools.ietf.org/html/bcp47#section-2.1">language tag</a> is <em>valid</em> if its <a href="https://tools.ietf.org/html/bcp47#section-2.2.1" title="Definition of primary language subtag">primary language subtag</a> exists in the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a> with a <a href="https://tools.ietf.org/html/bcp47#section-3.1.3">Type field</a> whose field-body value is <code class="language-plaintext highlighter-rouge">language</code>.</p>
-
-<p>A “language tag” is here to be understood as in the first paragraph of the <a href="https://tools.ietf.org/html/bcp47#section-2.1">BCP 47 language tag syntax</a>, i.e. a sequence of subtags separated by hyphens, where a subtag is any sequence of alphanumerical characters. Thus, this definition intentionally differs from the strict <a href="https://tools.ietf.org/html/bcp47#section-2.1">BCP 47 syntax</a> (and ABNF grammar) as user agents and assistive technologies are more lenient in what they accept. The definition is however consistent with the behavior of the <code class="language-plaintext highlighter-rouge">:lang()</code> pseudo-selector as defined by <a href="https://drafts.csswg.org/selectors-3/#lang-pseudo">Selectors Level 3</a>. For example, <code class="language-plaintext highlighter-rouge">de-hello</code> would be an accepted way to indicate German in current user agents and assistive technologies, despite not being valid according to <a href="https://tools.ietf.org/html/bcp47#section-2.1">BCP 47 grammar</a>. As a consequence of this definition, however, <a href="https://tools.ietf.org/html/bcp47#section-2.2.8">grandfathered tags</a> are not correctly recognized as valid language subtags.</p>
-
-<p>Subtags, notably the <a href="https://tools.ietf.org/html/bcp47#section-2.2.1" title="Definition of primary language subtag">primary language subtag</a>, are <a href="https://tools.ietf.org/html/bcp47#section-2.1.1">case insensitive</a>. Hence comparison with the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a> must be done in a case insensitive way.</p>
 
 <h2 id="implementations">Implementations</h2>
 
@@ -341,9 +383,10 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 24 August 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> bf051a</p>
 <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. <em>Previous Authors:</em> <a href="https://github.com/annika-FTB">Annika Nietzio</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 </div>
   </footer>
   
@@ -379,9 +422,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

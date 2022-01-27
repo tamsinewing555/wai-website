@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> headers attribute specified on a cell refers to cells in the same table element | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/table-headers-attribute-refer-to-data-cells-a25f45/","headline":"headers attribute specified on a cell refers to cells in the same table element","@context":"https://schema.org"}</script>
+{"headline":"headers attribute specified on a cell refers to cells in the same table element","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/table-headers-attribute-refer-to-data-cells-a25f45/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,36 +108,7 @@
         headers attribute specified on a cell refers to cells in the same table element
       
       </h1></header>
-    
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation-1" id="markdown-toc-expectation-1">Expectation 1</a></li>
-  <li><a href="#expectation-2" id="markdown-toc-expectation-2">Expectation 2</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <code class="language-plaintext highlighter-rouge">headers</code> attribute specified on a <a href="https://html.spec.whatwg.org/#concept-cell" title="Definition of cell"><code class="language-plaintext highlighter-rouge">cell</code></a> within a <a href="https://html.spec.whatwg.org/#concept-table" title="Definition of table"><code class="language-plaintext highlighter-rouge">table</code></a> element, where the <a href="https://html.spec.whatwg.org/#concept-table" title="Definition of table"><code class="language-plaintext highlighter-rouge">table</code></a> element is <a href="#visible" title="Definition of visible">visible</a> and <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
 
@@ -145,19 +116,16 @@
 
 <p>Each target’s <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is a <a href="https://html.spec.whatwg.org/#set-of-space-separated-tokens" title="Space separated tokens">set of space separated tokens</a>. Each token is the value of the <code class="language-plaintext highlighter-rouge">id</code> attribute of an element, that is a <a href="https://html.spec.whatwg.org/#concept-cell" title="Definition of cell"><code class="language-plaintext highlighter-rouge">cell</code></a> of the same <a href="https://html.spec.whatwg.org/#concept-table" title="Definition of table"><code class="language-plaintext highlighter-rouge">table</code></a>.</p>
 
-<p><strong>Note:</strong> <code class="language-plaintext highlighter-rouge">headers</code> attribute referencing elements that are non-existent or not in the table are ignored when <a href="https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells">assigning header cells (step 3, first case, point 2)</a>.</p>
-
 <h2 id="expectation-2">Expectation 2</h2>
 
 <p>Each target’s <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is a <a href="https://html.spec.whatwg.org/#set-of-space-separated-tokens" title="Space separated tokens">set of space separated tokens</a>, and none of these tokens is the <code class="language-plaintext highlighter-rouge">id</code> of the element on which the test target is specified.</p>
-
-<p><strong>Note:</strong> <code class="language-plaintext highlighter-rouge">headers</code> attribute referencing to the cell itself are ignored when <a href="https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells">assigning header cells (step 3, first case, point 2)</a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
 <ul>
   <li>This rule assumes that the <code class="language-plaintext highlighter-rouge">headers</code> attribute is only used to identify table headers. If other information is included in the <code class="language-plaintext highlighter-rouge">headers</code> attribute, the rule may fail on issues that are not accessibility concerns. For example, if <code class="language-plaintext highlighter-rouge">headers</code> is used to include information for scripts, this rule may not be accurate.</li>
   <li>This rule assumes that the <code class="language-plaintext highlighter-rouge">headers</code> attribute is required to express the relationship between data and table header cells in the same <code class="language-plaintext highlighter-rouge">table</code>. If the browser <a href="https://html.spec.whatwg.org/multipage/tables.html#header-and-data-cell-semantics" title="Forming relationships between data cells and header cells">computes an adequate fallback header</a> for cells that have the <code class="language-plaintext highlighter-rouge">headers</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> that does not correspond to the <code class="language-plaintext highlighter-rouge">id</code> of any one cell in the same <code class="language-plaintext highlighter-rouge">table</code>, success Criterion <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships" title="WCAG 2.1 success criterion 1.3.1 Info and Relationships">1.3.1 Info and Relationships</a> may be satisfied even if this rule failed.</li>
+  <li>This rule assumes that the id values on the <code class="language-plaintext highlighter-rouge">headers</code> attribute are unique.</li>
 </ul>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
@@ -166,10 +134,54 @@
 
 <h2 id="background">Background</h2>
 
+<h3 id="bibliography">Bibliography</h3>
+
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html">Understanding Success Criterion 1.3.1: Information and relationships</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html">Understanding Success Criterion 1.3.1: Info and Relationships</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H43">H43: Using id and headers attributes to associate data cells with header cells in data tables</a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F90">F90: Incorrectly associating table headers and content via the headers and id attributes</a></li>
+  <li>
+    <p><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F90">F90: Incorrectly associating table headers and content via the headers and id attributes</a></p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">headers</code> attribute referencing elements that are non-existent or not in the table are ignored when <a href="https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells">assigning header cells (step 3, first case, point 2)</a>.</li>
+  <li><code class="language-plaintext highlighter-rouge">headers</code> attribute referencing to the cell itself are ignored when <a href="https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells">assigning header cells (step 3, first case, point 2)</a>.</li>
+</ul>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>H43: Using id and headers attributes to associate data cells with header cells in data tables</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H43">Learn more about technique H43</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -607,9 +619,10 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> a25f45</p>
 <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 </div>
   </footer>
   
@@ -645,9 +658,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

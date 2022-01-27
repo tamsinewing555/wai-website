@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> ARIA required owned elements | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/aria-required-owned-element-bc4a75/","headline":"ARIA required owned elements","@context":"https://schema.org"}</script>
+{"headline":"ARIA required owned elements","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/aria-required-owned-element-bc4a75/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,35 +108,7 @@
         ARIA required owned elements
       
       </h1></header>
-    
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="#namespaced-element">HTML or SVG element</a> that is <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> and has a <a href="https://www.w3.org/TR/wai-aria-1.1/">WAI-ARIA 1.1</a> <a href="#explicit-role">explicit semantic role</a> with <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a>, except if one or more of the following is true:</p>
 
@@ -174,10 +146,39 @@
 
 <p><strong>Note:</strong> <a href="https://www.w3.org/TR/wai-aria-1.1/#subclassroles">Subclass roles</a> of <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> are not automatically included as possible <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a>. For example, the <code class="language-plaintext highlighter-rouge">treeitem</code> role is not a <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <a href="https://www.w3.org/TR/wai-aria-1.1/#list"><code class="language-plaintext highlighter-rouge">list</code></a>, even though <code class="language-plaintext highlighter-rouge">treeitem</code> is a <a href="https://www.w3.org/TR/wai-aria-1.1/#subclassroles">subclass role</a> of <code class="language-plaintext highlighter-rouge">listitem</code>.</p>
 
+<h3 id="bibliography">Bibliography</h3>
+
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html">Understanding Success Criterion 1.3.1: Info and Relationships</a></li>
   <li><a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain">Required Owned Element</a></li>
   <li><a href="https://www.w3.org/TR/wai-aria-1.1/#dfn-owned-element">Owned Element</a></li>
+</ul>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility">Accessibility tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS styling</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -250,6 +251,21 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
+<h4 id="passed-example-7">Passed Example 7</h4>
+
+<p>This element with the <code class="language-plaintext highlighter-rouge">menu</code> role only owns an element with a <code class="language-plaintext highlighter-rouge">group</code> role. The <code class="language-plaintext highlighter-rouge">group</code> in turn owns an element with the <code class="language-plaintext highlighter-rouge">menuitem</code> role, and an element with the <code class="language-plaintext highlighter-rouge">group</code> role, in which each element has the <code class="language-plaintext highlighter-rouge">menuitem</code> role. ARIA <code class="language-plaintext highlighter-rouge">group</code> roles are allowed to own other elements with a <code class="language-plaintext highlighter-rouge">group</code> role.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>Item 1<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>Item 2<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>Item 3<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed Example 1</h4>
@@ -309,6 +325,21 @@
 	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Item 1<span class="nt">&lt;/span&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Item 2<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-7">Failed Example 7</h4>
+
+<p>This element with the <code class="language-plaintext highlighter-rouge">menu</code> role only owns an element with a <code class="language-plaintext highlighter-rouge">group</code> role. The <code class="language-plaintext highlighter-rouge">group</code> in turn owns an element with the <code class="language-plaintext highlighter-rouge">menuitem</code> role, and an element with the <code class="language-plaintext highlighter-rouge">group</code> role, in which each element has the <code class="language-plaintext highlighter-rouge">treeitem</code> role. ARIA <code class="language-plaintext highlighter-rouge">group</code> roles are allowed to own other elements with a <code class="language-plaintext highlighter-rouge">group</code> role, but those nested <code class="language-plaintext highlighter-rouge">group</code> nodes must still meet the requirements.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"menuitem"</span><span class="nt">&gt;</span>Item 1<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"treeitem"</span><span class="nt">&gt;</span>Item 1<span class="nt">&lt;/span&gt;</span>
+			<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"treeitem"</span><span class="nt">&gt;</span>Item 2<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
@@ -538,9 +569,10 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> bc4a75</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. <em>Previous Authors:</em> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 </div>
   </footer>
   
@@ -576,9 +608,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

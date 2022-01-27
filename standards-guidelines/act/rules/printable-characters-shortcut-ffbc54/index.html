@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> No keyboard shortcut uses only printable characters | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/printable-characters-shortcut-ffbc54/","headline":"No keyboard shortcut uses only printable characters","@context":"https://schema.org"}</script>
+{"headline":"No keyboard shortcut uses only printable characters","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/printable-characters-shortcut-ffbc54/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,35 +108,7 @@
         No keyboard shortcut uses only printable characters
       
       </h1></header>
-    
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="https://www.w3.org/TR/uievents/#events-keyboardevents">keyboard event</a> for which all of the following is true:</p>
 
@@ -173,10 +145,37 @@ This rule allows <a href="#changes-in-content" title="Definition of changes in c
 
 <p>The “Turn off” and “Remap” requirements from <a href="https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html">Success Criterion 2.1.4</a> are combined in the <strong>disable/remap</strong> item of the Expectation section. For the disable requirement, <a href="#changes-in-content" title="Definition of changes in content">changes in content</a> that are made through <a href="https://www.w3.org/TR/uievents/#events-keyboardevents">keyboard events</a> with a <a href="#printable-characters" title="Definition of printable characters">printable character</a> value for the <code class="language-plaintext highlighter-rouge">key</code> attribute and a <code class="language-plaintext highlighter-rouge">getModifierState</code> return value of <code class="language-plaintext highlighter-rouge">false</code> for each of the <a href="https://www.w3.org/TR/uievents-key/#keys-modifier" title="Definition of modifier keys">valid modifier keys</a> effectively need to be <a href="#blocked-event" title="Definition of blocked event">blocked</a> (in other words, turned off or disabled). The remap requirement unblocks the events if the <code class="language-plaintext highlighter-rouge">getModifierState</code> query returns <code class="language-plaintext highlighter-rouge">true</code> for at least one of the <a href="https://www.w3.org/TR/uievents-key/#keys-modifier" title="Definition of modifier keys">valid modifier keys</a>. Once the <code class="language-plaintext highlighter-rouge">getModifierState</code> returns <code class="language-plaintext highlighter-rouge">true</code> for at least one of the <a href="https://www.w3.org/TR/uievents-key/#keys-modifier" title="Definition of modifier keys">valid modifier keys</a> of a <a href="https://www.w3.org/TR/uievents/#events-keyboardevents">keyboard event</a>, such <a href="https://www.w3.org/TR/uievents/#events-keyboardevents">keyboard event</a> is no longer applicable for the rule and it passes the “Remap” requirement from <a href="https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html">Success Criterion 2.1.4</a>.</p>
 
+<h3 id="bibliography">Bibliography</h3>
+
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html">Understanding Success Criterion 2.1.4: Character Key Shortcuts</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G217">G217 Providing a mechanism to allow users to remap or turn off character key shortcuts</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F99">F99 Failure of Success Criterion 2.1.4 due to implementing character key shortcuts that cannot be turned off or remapped</a></li>
+</ul>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>2.1.4 Character Key Shortcuts (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts">Learn more about 2.1.4 Character Key Shortcuts</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.1 on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion is satisfied</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -688,9 +687,10 @@ for details.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> ffbc54</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 </div>
   </footer>
   
@@ -726,9 +726,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

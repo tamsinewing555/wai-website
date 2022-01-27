@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> Block of repeated content is collapsible | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/block-collapsible-3e12e1/","headline":"Block of repeated content is collapsible","@context":"https://schema.org"}</script>
+{"headline":"Block of repeated content is collapsible","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/block-collapsible-3e12e1/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,35 +108,7 @@
         Block of repeated content is collapsible
       
       </h1></header>
-    
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a>.</p>
 
@@ -145,7 +117,7 @@
 <p>For each <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> in each test target, which is before (in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Definition of Flat Tree">flat tree</a>) at least one node of <a href="#non-repeated-content" title="Definition of Non-Repeated Content after Repeated Content">non-repeated content after repeated content</a>, all the following are true:</p>
 
 <ul>
-  <li>there exists an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> to make all nodes in this <a href="#block-of-content" title="Definition of Block of Content">block</a> not [visible][]; and</li>
+  <li>there exists an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> to make all nodes in this <a href="#block-of-content" title="Definition of Block of Content">block</a> not <a href="#visible" title="Definition of Visible">visible</a>; and</li>
   <li>there exists an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> to remove all nodes in this <a href="#block-of-content" title="Definition of Block of Content">block</a> from the <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">accessibility tree</a>.</li>
 </ul>
 
@@ -159,15 +131,42 @@
 
 <h2 id="background">Background</h2>
 
-<p>Usually the same <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> removes both [visibility][visible] and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a> of a <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>. That <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> may remove all <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">blocks of repeated content</a>. If there is no <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> before the non-repeated content the rule passes.</p>
+<p>Usually the same <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> removes both <a href="#visible" title="Definition of Visible">visibility</a> and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a> of a <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>. That <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> may remove all <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">blocks of repeated content</a>. If there is no <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> before the non-repeated content the rule passes.</p>
 
-<p>[Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28] does not have any requirements concerning the location of the <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> in relation to the <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> they control, hence this rule doesn’t. It is likely a good idea to either keep each <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> close to the start of the <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> it controls; or to group them all in one place near the start of the document. Notably, <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> located after (in reading order) the block they collapse are likely not satisfying [Success Criterion 2.4.1 Bypass blocks][sc241], which this rule is designed for. Thus, it is possible to pass this rule without satisfying [Success Criterion 2.4.1 Bypass blocks][sc241].</p>
+<p><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28" title="Technique SCR28: Using an Expandable and Collapsible Menu to Bypass Block of Content">Technique SCR28: Using an expandable and collapsible menu to bypass block of content</a> does not have any requirements concerning the location of the <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> in relation to the <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> they control, hence this rule doesn’t. It is likely a good idea to either keep each <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> close to the start of the <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> it controls; or to group them all in one place near the start of the document. Notably, <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> located after (in reading order) the block they collapse are likely not satisfying <a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" title="Success Criterion 2.4.1 Bypass Blocks">Success Criterion 2.4.1 Bypass blocks</a>, which this rule is designed for. Thus, it is possible to pass this rule without satisfying <a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" title="Success Criterion 2.4.1 Bypass Blocks">Success Criterion 2.4.1 Bypass blocks</a>.</p>
+
+<h3 id="bibliography">Bibliography</h3>
 
 <ul>
-  <li>[Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28]</li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28" title="Technique SCR28: Using an Expandable and Collapsible Menu to Bypass Block of Content">Technique SCR28: Using an expandable and collapsible menu to bypass block of content</a></li>
 </ul>
 
-<p>To avoid using landmarks for the non-repeated content, which would satisfy [Success Criterion 2.4.1 Bypass Block][sc241], which this rule is designed for, this rule uses <code class="language-plaintext highlighter-rouge">&lt;div id="main"&gt;</code> in its test cases to indicate where non-repeating content exists. It is recommended to use the <code class="language-plaintext highlighter-rouge">main</code> landmark instead. The <code class="language-plaintext highlighter-rouge">aside</code> and <code class="language-plaintext highlighter-rouge">nav</code> elements are each a <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> due to the link inside the <code class="language-plaintext highlighter-rouge">nav</code> element to a page with similar <a href="#block-of-content" title="Definition of Block of Content">blocks of content</a>.</p>
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>SCR28: Using an expandable and collapsible menu to bypass block of content</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28">Learn more about technique SCR28</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility">Accessibility Tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></li>
+</ul>
 
 <h2 id="test-cases">Test Cases</h2>
 
@@ -175,7 +174,7 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p>This document has a link at the start of the document to toggle the [visibility][visible] and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a> of the navigational <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>.</p>
+<p>This document has a link at the start of the document to toggle the <a href="#visible" title="Definition of Visible">visibility</a> and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a> of the navigational <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -204,7 +203,7 @@
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p>This document has a button at the start of the document to toggle the [visibility][visible] and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a> of both the complementary and the navigational <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">blocks of repeated content</a>.</p>
+<p>This document has a button at the start of the document to toggle the <a href="#visible" title="Definition of Visible">visibility</a> and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a> of both the complementary and the navigational <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">blocks of repeated content</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -237,7 +236,7 @@
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
-<p>This document has two dedicated <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> to toggle the [visibility][visible] and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a> of the complementary and the navigational <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">blocks of repeated content</a> respectively.</p>
+<p>This document has two dedicated <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> to toggle the <a href="#visible" title="Definition of Visible">visibility</a> and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a> of the complementary and the navigational <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">blocks of repeated content</a> respectively.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -271,7 +270,7 @@
 
 <h4 id="passed-example-4">Passed Example 4</h4>
 
-<p>This document has a button at the start of the document to toggle the [visibility][visible] and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a> of the navigational <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>. The button is only [visible][] when <a href="https://html.spec.whatwg.org/#focused" title="HTML definition of Focused">focused</a>.</p>
+<p>This document has a button at the start of the document to toggle the <a href="#visible" title="Definition of Visible">visibility</a> and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a> of the navigational <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>. The button is only <a href="#visible" title="Definition of Visible">visible</a> when <a href="https://html.spec.whatwg.org/#focused" title="HTML definition of Focused">focused</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -329,7 +328,7 @@
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p>This document has an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> to toggle [visibility][visible] of the navigational <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>, but none to toggle its <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a>.</p>
+<p>This document has an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> to toggle <a href="#visible" title="Definition of Visible">visibility</a> of the navigational <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>, but none to toggle its <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion in the accessibility tree</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -359,7 +358,7 @@
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p>This document has an instrument to toggle the <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion on the accessibility tree</a> of the <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>, but none to toggle its [visibility][visible].</p>
+<p>This document has an instrument to toggle the <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">inclusion on the accessibility tree</a> of the <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>, but none to toggle its <a href="#visible" title="Definition of Visible">visibility</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -415,7 +414,7 @@
 <p>A <a href="#block-of-content" title="Definition of Block of Content">block of content</a> B, inside an <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> P, is a <em>block of repeated content</em> if both the following are true:</p>
 
 <ul>
-  <li><strong>distance 1</strong>: there exist an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> in P which leads the user to another <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> P’ whose URL has a different <a href="https://url.spec.whatwg.org/#concept-url-host" title="URL specification of Host">host</a>, <a href="https://url.spec.whatwg.org/#concept-url-port" title="URL specification of Port">port</a> (including <a href="https://url.spec.whatwg.org/#default-port" title="URL specification of Default Port">default port</a> for [special URL][]), or <a href="https://url.spec.whatwg.org/#concept-url-path" title="URL specification of Path">path</a>; and</li>
+  <li><strong>distance 1</strong>: there exist an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> in P which leads the user to another <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> P’ whose URL has a different <a href="https://url.spec.whatwg.org/#concept-url-host" title="URL specification of Host">host</a>, <a href="https://url.spec.whatwg.org/#concept-url-port" title="URL specification of Port">port</a> (including <a href="https://url.spec.whatwg.org/#default-port" title="URL specification of Default Port">default port</a> for <a href="https://url.spec.whatwg.org/#is-special" title="URL specification of Special URL">special URL</a>), or <a href="https://url.spec.whatwg.org/#concept-url-path" title="URL specification of Path">path</a>; and</li>
   <li><strong>repeated</strong>: there exist a <a href="#block-of-content" title="Definition of Block of Content">block of content</a> in P’ which is <a href="#equivalent-resource" title="Definition of Equivalent Resource">equivalent</a> to B.</li>
 </ul>
 
@@ -442,7 +441,7 @@
 
 <p>The <em>explicit semantic role</em> of an element is determined by its <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> (if any).</p>
 
-<p>The <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a>, or if it has one with no valid role, then this element has no explicit semantic role.</p>
+<p>The <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from <a href="#wai-aria-specifications" title="Definition of WAI-ARIA specifications">WAI-ARIA Specifications</a>. If the element has no <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a>, or if it has one with no valid role, then this element has no explicit semantic role.</p>
 
 <p>Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the <a href="https://www.w3.org/TR/WCAG-EM/#step1c" title="Definition of accessibility support base line">accessibility support base line</a>. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.</p>
 
@@ -492,7 +491,7 @@
 <ul>
   <li>the node is <a href="#perceivable-content" title="Definition of Perceivable Content">perceivable content</a>; and</li>
   <li>the node is not part of any <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>; and</li>
-  <li>the node is after (in [tree order][] in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Definition of Flat Tree">flat tree</a>) at least one <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>.</li>
+  <li>the node is after (in <a href="https://dom.spec.whatwg.org/#concept-tree-order" title="DOM specification of Tree Order">tree order</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Definition of Flat Tree">flat tree</a>) at least one <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>.</li>
 </ul>
 
 <h3 id="outcome">Outcome</h3>
@@ -515,8 +514,8 @@
 
 <ul>
   <li>the node is <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML specification of palpable content">palpable content</a>; and</li>
-  <li>the node is either [visible][] or <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>; and</li>
-  <li>if the node is an element, it does not have a [semantic role][] of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">presentation</code>.</li>
+  <li>the node is either <a href="#visible" title="Definition of Visible">visible</a> or <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>; and</li>
+  <li>if the node is an element, it does not have a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">presentation</code>.</li>
 </ul>
 
 <p>Perceivable content corresponds to nodes that contain information and are perceived by some categories of users.</p>
@@ -588,16 +587,6 @@ for details.</p>
 
 <p>This is the first version of this ACT rule.</p>
 
-<p>[sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships ‘Success Criterion 1.3.1
-[sc211]: https://www.w3.org/TR/WCAG21/#keyboard ‘Success Criterion 2.1.1 Keyboard’
-[sc241]: https://www.w3.org/TR/WCAG21/#bypass-blocks ‘Success Criterion 2.4.1 Bypass Blocks’
-[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value ‘Success Criterion 4.1.2 Name, Role, Value’
-[semantic role]: #semantic-role ‘Definition of semantic role’
-[special url]: https://url.spec.whatwg.org/#is-special ‘URL specification of Special URL’
-[tech scr28]: https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28 ‘Technique SCR28
-[tree order]: https://dom.spec.whatwg.org/#concept-tree-order ‘DOM specification of Tree Order’
-[visible]: #visible ‘Definition of Visible’
-[wai-aria specifications]: #wai-aria-specifications ‘Definition of WAI-ARIA specifications’</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Block%20of%20repeated%20content%20is%20collapsible">wai-eo-editors@w3.org</a> or via GitHub.</p>
@@ -616,9 +605,10 @@ for details.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> 3e12e1</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 <p><strong>Assets:</strong> test cases use assets from the following sources: _The Three Kingdoms_ by Luo Guanzhong, translation by Yu Sumei (Tuttle publishing, 2014, ISBN 9780804843935).</p>
 </div>
   </footer>
@@ -655,9 +645,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

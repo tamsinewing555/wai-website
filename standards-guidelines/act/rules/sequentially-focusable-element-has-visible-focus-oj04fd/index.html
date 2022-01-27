@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> Element in sequential focus order has visible focus | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/sequentially-focusable-element-has-visible-focus-oj04fd/","headline":"Element in sequential focus order has visible focus","@context":"https://schema.org"}</script>
+{"headline":"Element in sequential focus order has visible focus","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/sequentially-focusable-element-has-visible-focus-oj04fd/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,45 +108,17 @@
         Element in sequential focus order has visible focus
       
       </h1></header>
-    
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>The rule applies to any element which is part of <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML specification of Sequential focus navigation">sequential focus navigation</a> in an <a href="https://html.spec.whatwg.org/#document">HTML document</a> with at least two elements in its <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML specification of Sequential focus navigation">sequential focus navigation order</a>.</p>
 
 <h2 id="expectation">Expectation</h2>
 
-<p>For each target element, there is at least one device pixel inside the <a href="https://drafts.csswg.org/cssom-view/#scrolling-area" title="CSS specification of Scrolling Area">scrolling area</a> of the [viewport][] whose <a href="https://www.w3.org/TR/css-color-3/#hsl-color">HSL color value</a> is different when the element is <a href="#focused" title="Definition of Focused">focused</a> from when it is not.</p>
+<p>For each target element, there is at least one device pixel inside the <a href="https://drafts.csswg.org/cssom-view/#scrolling-area" title="CSS specification of Scrolling Area">scrolling area</a> of the <a href="https://drafts.csswg.org/css2/#viewport" title="CSS definition of Viewport">viewport</a> whose <a href="https://www.w3.org/TR/css-color-3/#hsl-color">HSL color value</a> is different when the element is <a href="#focused" title="Definition of Focused">focused</a> from when it is not.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>This rule assumes that documents with only one focusable element automatically satisfy <a href="https://www.w3.org/TR/WCAG21/#focus-visible" title="Success Criterion 2.4.7 Focus Visible">Success Criterion 2.4.7 Focus Visible</a>, as stated in [Understanding Success Criterion 2.4.7: Focus Visible][usc247]: “if there is only one keyboard actionable control on the screen, the success criterion would be met”.</p>
+<p>This rule assumes that documents with only one focusable element automatically satisfy <a href="https://www.w3.org/TR/WCAG21/#focus-visible" title="Success Criterion 2.4.7 Focus Visible">Success Criterion 2.4.7 Focus Visible</a>, as stated in <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html" title="Understanding Success Criterion 2.4.7: Focus Visible">Understanding Success Criterion 2.4.7: Focus Visible</a>: “if there is only one keyboard actionable control on the screen, the success criterion would be met”.</p>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
@@ -160,16 +132,44 @@
 
 <p>WCAG has no clear requirement of unicity of the focus indicator for each <a href="#focusable" title="Definition of Focusable">focusable</a> element. Therefore, this rule can pass even if several focus indicators are identical. Such a situation may nonetheless cause confusion and all Examples in this rule avoid it.</p>
 
+<h3 id="bibliography">Bibliography</h3>
+
 <ul>
   <li><a href="https://www.w3.org/TR/WCAG21/#focus-visible" title="Success Criterion 2.4.7 Focus Visible">Success Criterion 2.4.7 Focus Visible</a></li>
   <li><a href="https://www.w3.org/TR/WCAG22/#focus-appearance-minimum" title="Success Criterion 2.4.11 Focus Appearance (Minimum)">Success Criterion 2.4.11 Focus Appearance (Minimum)</a></li>
   <li><a href="https://www.w3.org/TR/WCAG22/#focus-appearance-enhanced" title="Success Criterion 2.4.12 Focus Appearance (Enhanced)">Success Criterion 2.4.12 Focus Appearance (Enhanced)</a></li>
-  <li>[Understanding Success Criterion 2.4.7: Focus Visible][usc247]</li>
-  <li>[Understanding Success Criterion 2.4.11: Focus Appearance (Minimum)][usc2411]</li>
-  <li>[Understanding Success Criterion 2.4.12: Focus Appearance (Enhanced)][usc2412]</li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html" title="Understanding Success Criterion 2.4.7: Focus Visible">Understanding Success Criterion 2.4.7: Focus Visible</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-minimum.html" title="Understanding Success Criterion 2.4.11: Focus Appearance (Minimum)">Understanding Success Criterion 2.4.11: Focus Appearance (Minimum)</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-enhanced.html" title="Understanding Success Criterion 2.4.12: Focus Appearance (Enhanced)">Understanding Success Criterion 2.4.12: Focus Appearance (Enhanced)</a></li>
 </ul>
 
 <p>Due to the Applicability of this rule, test cases must have at least two elements in their <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML specification of Sequential focus navigation">sequential focus navigation order</a>. In order to keep the test case focused on one aspect of the rule, most of them include a button labeled “Dummy button” whose sole purpose is to make the other element applicable. This dummy button is passing the rule (due to default User Agent’s styling) for the Passed test cases, and failing it for the Failed test cases; and it is never mentioned further in the test cases descriptions.</p>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>2.4.7 Focus Visible (Level AA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#focus-visible">Learn more about 2.4.7 Focus Visible</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS styling</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM tree</a></li>
+</ul>
 
 <h2 id="test-cases">Test Cases</h2>
 
@@ -341,10 +341,6 @@ not accounted for in the change history or the last modified date.</p>
 
 <p>This is the first version of this ACT rule.</p>
 
-<p>[usc2411]: https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-minimum.html ‘Understanding Success Criterion 2.4.11
-[usc2412]: https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-enhanced.html ‘Understanding Success Criterion 2.4.12
-[usc247]: https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html ‘Understanding Success Criterion 2.4.7
-[viewport]: https://drafts.csswg.org/css2/#viewport ‘CSS definition of Viewport’</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Element%20in%20sequential%20focus%20order%20has%20visible%20focus">wai-eo-editors@w3.org</a> or via GitHub.</p>
@@ -363,9 +359,10 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> oj04fd</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 </div>
   </footer>
   
@@ -401,9 +398,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

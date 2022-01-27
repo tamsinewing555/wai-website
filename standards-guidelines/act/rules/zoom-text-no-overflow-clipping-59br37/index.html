@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> Zoomed text node is not clipped with CSS overflow | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/zoom-text-no-overflow-clipping-59br37/","headline":"Zoomed text node is not clipped with CSS overflow","@context":"https://schema.org"}</script>
+{"headline":"Zoomed text node is not clipped with CSS overflow","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/zoom-text-no-overflow-clipping-59br37/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,57 +108,29 @@
         Zoomed text node is not clipped with CSS overflow
       
       </h1></header>
-    
+    <h2 id="applicability">Applicability</h2>
 
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
-
-<p>This rule applies to any <a href="https://dom.spec.whatwg.org/#text">text node</a> for which all of the following is true when in a [viewport size][] of 640 by 512:</p>
+<p>This rule applies to any <a href="https://dom.spec.whatwg.org/#text">text node</a> for which all of the following is true when in a <a href="#viewport-size">viewport size</a> of 640 by 512:</p>
 
 <ul>
-  <li>The <a href="https://dom.spec.whatwg.org/#text">text node</a> is [visible][]; and</li>
+  <li>The <a href="https://dom.spec.whatwg.org/#text">text node</a> is <a href="#visible">visible</a>; and</li>
   <li>The <a href="https://dom.spec.whatwg.org/#text">text node</a> has an <a href="#namespaced-element">HTML element</a> as a <a href="https://dom.spec.whatwg.org/#concept-tree-parent" title="DOM parent, as of 2020/02/14">parent</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/02/14">flat tree</a>; and</li>
   <li>The <a href="https://dom.spec.whatwg.org/#text">text node</a> has an <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM ancestor, 2020/02/13">ancestor</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/02/14">flat tree</a> with a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/CSS22/visufx.html#overflow">overflow-x</a> or <a href="https://www.w3.org/TR/CSS22/visufx.html#overflow">overflow-y</a> of <code class="language-plaintext highlighter-rouge">hidden</code> or <code class="language-plaintext highlighter-rouge">clip</code>; and</li>
   <li>The <a href="https://dom.spec.whatwg.org/#text">text node</a> does not have an <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM ancestor, 2020/02/13">ancestor</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/02/14">flat tree</a> with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">true</code>.</li>
 </ul>
 
-<p><strong>Note</strong>: A [viewport size][] of 640 by 512 is equivalent to a [viewport size][] of 1280 by 1024 zoomed 200%.</p>
+<p><strong>Note</strong>: A <a href="#viewport-size">viewport size</a> of 640 by 512 is equivalent to a <a href="#viewport-size">viewport size</a> of 1280 by 1024 zoomed 200%.</p>
 
 <h2 id="expectation">Expectation</h2>
 
-<p>Each test target is not <a href="#clipped-by-overflow">clipped by overflow</a> of an <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM ancestor, 2020/02/13">ancestor</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/02/14">flat tree</a> when in a [viewport size][] of 640 by 512, except if the <a href="#clipped-by-overflow">clipping</a> <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM ancestor, 2020/02/13">ancestor</a> has at least one of the following:</p>
+<p>Each test target is not <a href="#clipped-by-overflow">clipped by overflow</a> of an <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM ancestor, 2020/02/13">ancestor</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/02/14">flat tree</a> when in a <a href="#viewport-size">viewport size</a> of 640 by 512, except if the <a href="#clipped-by-overflow">clipping</a> <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM ancestor, 2020/02/13">ancestor</a> has at least one of the following:</p>
 
 <ul>
   <li>
-    <p><strong>text-overflow</strong>: A <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> [white-space][] of <code class="language-plaintext highlighter-rouge">nowrap</code>, and a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/css-ui-3/#text-overflow">text-overflow</a> that is not <code class="language-plaintext highlighter-rouge">clip</code>; or</p>
+    <p><strong>text-overflow</strong>: A <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/CSS22/text.html#propdef-white-space">white-space</a> of <code class="language-plaintext highlighter-rouge">nowrap</code>, and a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/css-ui-3/#text-overflow">text-overflow</a> that is not <code class="language-plaintext highlighter-rouge">clip</code>; or</p>
   </li>
   <li>
-    <p><strong>line wrapping</strong>: A [used]<a href="https://www.w3.org/TR/CSS22/visudet.html#propdef-line-height"></a>[] equal to or greater than the height of its <a href="https://www.w3.org/TR/css-ui-3/#valdef-box-sizing-border-box">bounding box</a>, or in case of a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/CSS22/visufx.html#overflow">overflow</a> of <code class="language-plaintext highlighter-rouge">clip</code>, its <a href="https://www.w3.org/TR/css-ui-3/#valdef-box-sizing-content-box">content box</a>.</p>
+    <p><strong>line wrapping</strong>: A <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> <a href="https://www.w3.org/TR/CSS22/visudet.html#propdef-line-height">line-height</a> equal to or greater than the height of its <a href="https://www.w3.org/TR/css-ui-3/#valdef-box-sizing-border-box">bounding box</a>, or in case of a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/CSS22/visufx.html#overflow">overflow</a> of <code class="language-plaintext highlighter-rouge">clip</code>, its <a href="https://www.w3.org/TR/css-ui-3/#valdef-box-sizing-content-box">content box</a>.</p>
   </li>
 </ul>
 
@@ -174,7 +146,7 @@
     <p><a href="https://dom.spec.whatwg.org/#text">Text nodes</a> can not be <a href="#clipped-by-overflow">clipped by overflow</a> without loss of information, except for <a href="https://dom.spec.whatwg.org/#text">text nodes</a> with an <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM ancestor, 2020/02/13">ancestor</a> with <code class="language-plaintext highlighter-rouge">aria-hidden</code> set to <code class="language-plaintext highlighter-rouge">true</code>, or when specific styles have been applied to ensure text is clipped cleanly (text-overflow, line wrapping or hidden text).</p>
   </li>
   <li>
-    <p>While <a href="https://www.w3.org/TR/WCAG21/#resize-text">success criterion 1.4.4 Resize text</a> does not explicitly mention which viewport size has to be resized up to 200%, it is assumed that a [viewport size][] of 1280 by 1024 is applicable. A 1280 by 1024 [viewport size][] is explicitly mentioned under <a href="https://www.w3.org/TR/WCAG21/#reflow">success criterion 1.4.10 Reflow</a>.</p>
+    <p>While <a href="https://www.w3.org/TR/WCAG21/#resize-text">success criterion 1.4.4 Resize text</a> does not explicitly mention which viewport size has to be resized up to 200%, it is assumed that a <a href="#viewport-size">viewport size</a> of 1280 by 1024 is applicable. A 1280 by 1024 <a href="#viewport-size">viewport size</a> is explicitly mentioned under <a href="https://www.w3.org/TR/WCAG21/#reflow">success criterion 1.4.10 Reflow</a>.</p>
   </li>
 </ul>
 
@@ -184,11 +156,39 @@
 
 <h2 id="background">Background</h2>
 
-<p>When the <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> value of the <code class="language-plaintext highlighter-rouge">line-height</code> property is <code class="language-plaintext highlighter-rouge">normal</code>, the [used][] value depends on font specific metrics. <a href="https://drafts.csswg.org/css2/#valdef-line-height-normal" title="CSS 2.2 (Editor's draft) - normal line-height">CSS specifications</a> recommend that the [used][] value is between 1.0 and 1.2 and major browsers are effectively using values close to 1.2.</p>
+<p>When the <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> value of the <code class="language-plaintext highlighter-rouge">line-height</code> property is <code class="language-plaintext highlighter-rouge">normal</code>, the <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value depends on font specific metrics. <a href="https://drafts.csswg.org/css2/#valdef-line-height-normal" title="CSS 2.2 (Editor's draft) - normal line-height">CSS specifications</a> recommend that the <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value is between 1.0 and 1.2 and major browsers are effectively using values close to 1.2.</p>
+
+<h3 id="bibliography">Bibliography</h3>
 
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html">Understanding Success Criterion 1.4.4: Resize text</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G142">G42: Using a technology that has commonly-available user agents that support zoom</a></li>
+</ul>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>1.4.4 Resize text (Level AA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#resize-text">Learn more about 1.4.4 Resize text</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -197,7 +197,7 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is fully [visible][] at a [viewport size][] of 640 by 512.</p>
+<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is fully <a href="#visible">visible</a> at a <a href="#viewport-size">viewport size</a> of 640 by 512.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"white-space: nowrap; overflow: hidden; font-size: 16px;"</span><span class="nt">&gt;</span>
 	Once upon a midnight dreary, while I pondered, weak and weary,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
@@ -211,7 +211,7 @@
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is <a href="#clipped-by-overflow">clipped</a> using <code class="language-plaintext highlighter-rouge">text-overflow: ellipsis</code> at a [viewport size][] of 640 by 512. A link to a full version of the poem is also provided.</p>
+<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is <a href="#clipped-by-overflow">clipped</a> using <code class="language-plaintext highlighter-rouge">text-overflow: ellipsis</code> at a <a href="#viewport-size">viewport size</a> of 640 by 512. A link to a full version of the poem is also provided.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 16px;"</span><span class="nt">&gt;</span>
 	Once upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten
@@ -242,7 +242,7 @@
 
 <h4 id="passed-example-4">Passed Example 4</h4>
 
-<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is not <a href="#clipped-by-overflow">clipped</a> with <code class="language-plaintext highlighter-rouge">overflow: hidden</code> because it has a parent with <code class="language-plaintext highlighter-rouge">overflow: auto</code> at a [viewport size][] of 640 by 512.</p>
+<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is not <a href="#clipped-by-overflow">clipped</a> with <code class="language-plaintext highlighter-rouge">overflow: hidden</code> because it has a parent with <code class="language-plaintext highlighter-rouge">overflow: auto</code> at a <a href="#viewport-size">viewport size</a> of 640 by 512.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"overflow: hidden; height: 2em; font-size: 16px;"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"overflow: auto; height: 2em;"</span><span class="nt">&gt;</span>
@@ -266,7 +266,7 @@
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is <a href="#clipped-by-overflow">clipped</a> because its height is relative to the viewport height, leaving insufficient space for the page to be zoomed to 200% at a [viewport size][] of 1280 by 1024.</p>
+<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is <a href="#clipped-by-overflow">clipped</a> because its height is relative to the viewport height, leaving insufficient space for the page to be zoomed to 200% at a <a href="#viewport-size">viewport size</a> of 1280 by 1024.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"overflow: hidden; height: 16vh; font-size: 16px;"</span><span class="nt">&gt;</span>
 	Once upon a midnight dreary, while I pondered, weak and weary,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
@@ -280,7 +280,7 @@
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is <a href="#clipped-by-overflow">clipped</a> by style that is applied at a [viewport size][] width of 640.</p>
+<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is <a href="#clipped-by-overflow">clipped</a> by style that is applied at a <a href="#viewport-size">viewport size</a> width of 640.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
 	<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">640px</span><span class="p">)</span> <span class="p">{</span>
@@ -303,7 +303,7 @@
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
-<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is not [visible][] at a [viewport size][] of 640 by 512.</p>
+<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> is not <a href="#visible">visible</a> at a <a href="#viewport-size">viewport size</a> of 640 by 512.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"display:none;"</span><span class="nt">&gt;</span>Last updated 2020/03/27 10:52pm<span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
@@ -336,7 +336,7 @@
 
 <h4 id="inapplicable-example-5">Inapplicable Example 5</h4>
 
-<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> with the text “Web Content Accessibility Guidelines 2.1” is fully hidden in a [viewport size][] of 640 by 512.</p>
+<p>This <a href="https://dom.spec.whatwg.org/#text">text node</a> with the text “Web Content Accessibility Guidelines 2.1” is fully hidden in a <a href="#viewport-size">viewport size</a> of 640 by 512.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
 	<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">640px</span><span class="p">)</span> <span class="p">{</span>
@@ -366,7 +366,7 @@
   <li>For attributes whose value is used in a case-insensitive context, the <em>attribute value</em> is the lowercase version of the value written in the HTML code.</li>
   <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <em>attribute value</em> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
   <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <em>attribute value</em> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
-  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <em>attribute value</em> is computed as indicated in the [WAI-ARIA specification][] and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <em>attribute value</em> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
 </ul>
 
 <p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
@@ -376,7 +376,7 @@
 <h3 id="clipped-by-overflow">Clipped by Overflow</h3>
 
 <p>A <a href="https://dom.spec.whatwg.org/#node" title="DOM node, as of 2019/02/14">node</a> with an <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM ancestor, 2020/02/13">ancestor</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/02/14">flat tree</a> with a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/CSS22/visufx.html#overflow">overflow</a> of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">clipped</code>, where
-changing the <a href="https://www.w3.org/TR/CSS22/visufx.html#overflow">overflow</a> of all such <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM ancestor, 2020/02/13">ancestors</a> to <code class="language-plaintext highlighter-rouge">visible</code> would cause more of the <a href="https://dom.spec.whatwg.org/#node" title="DOM node, as of 2019/02/14">node</a> to become [visible][].</p>
+changing the <a href="https://www.w3.org/TR/CSS22/visufx.html#overflow">overflow</a> of all such <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM ancestor, 2020/02/13">ancestors</a> to <code class="language-plaintext highlighter-rouge">visible</code> would cause more of the <a href="https://dom.spec.whatwg.org/#node" title="DOM node, as of 2019/02/14">node</a> to become <a href="#visible">visible</a>.</p>
 
 <h3 id="namespaced-element">Namespaced Element</h3>
 
@@ -400,7 +400,7 @@ changing the <a href="https://www.w3.org/TR/CSS22/visufx.html#overflow">overflow
 
 <h3 id="viewport-size">viewport size</h3>
 
-<p>The viewport size is the width and height at which a page is rendered. The viewport size is equal to the <a href="https://drafts.csswg.org/cssom-view/#dom-window-innerwidth" title="CSS working draft, window.innerWidth, 2020/03/30">innerWidth</a> and <a href="https://drafts.csswg.org/cssom-view/#dom-window-innerheight" title="CSS working draft, window.innerHeight, 2020/03/30">innerHeight</a> of the [window][] of the [top-level browsing context][].</p>
+<p>The viewport size is the width and height at which a page is rendered. The viewport size is equal to the <a href="https://drafts.csswg.org/cssom-view/#dom-window-innerwidth" title="CSS working draft, window.innerWidth, 2020/03/30">innerWidth</a> and <a href="https://drafts.csswg.org/cssom-view/#dom-window-innerheight" title="CSS working draft, window.innerHeight, 2020/03/30">innerHeight</a> of the <a href="https://html.spec.whatwg.org/#window" title="HTML: window object, 2020/03/30">window</a> of the <a href="https://html.spec.whatwg.org/#top-level-browsing-context" title="DOM: top-level browsing context, 2020/03/30">top-level browsing context</a>.</p>
 
 <p><strong>Note</strong>: The viewport size is not to be confused with the “resolution” of the operating system. Often a browser will be a single window in the operating system, with a width and height different from the resolution of the operating system. Often browsers also include additional user interface components, such as a URL bar, tab bar, and a bookmarks bar. None of these are included in the viewport size. In full screen mode the viewport size might be the same as the resolution of the operating system.</p>
 
@@ -444,13 +444,6 @@ not accounted for in the change history or the last modified date.</p>
 
 <p>This is the first version of this ACT rule.</p>
 
-<p>[top-level browsing context]: https://html.spec.whatwg.org/#top-level-browsing-context ‘DOM
-[used]: https://www.w3.org/TR/css-cascade-4/#used ‘CSS Cascading and Inheritance Level 4 (Working draft) - Used Values’
-[viewport size]: #viewport-size
-[visible]: #visible
-[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value ‘WAI-ARIA Specification of States and Properties Value’
-[white-space]: https://www.w3.org/TR/CSS22/text.html#propdef-white-space
-[window]: https://html.spec.whatwg.org/#window ‘HTML</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Zoomed%20text%20node%20is%20not%20clipped%20with%20CSS%20overflow">wai-eo-editors@w3.org</a> or via GitHub.</p>
@@ -469,9 +462,10 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> 59br37</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 <p><strong>Assets:</strong> test cases use assets from the following sources: The Raven, poem by Edgar Allan Poe.</p>
 </div>
   </footer>
@@ -508,9 +502,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

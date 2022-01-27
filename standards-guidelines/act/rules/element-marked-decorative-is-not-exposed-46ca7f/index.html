@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> Element marked as decorative is not exposed | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/element-marked-decorative-is-not-exposed-46ca7f/","headline":"Element marked as decorative is not exposed","@context":"https://schema.org"}</script>
+{"headline":"Element marked as decorative is not exposed","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/element-marked-decorative-is-not-exposed-46ca7f/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,35 +108,7 @@
         Element marked as decorative is not exposed
       
       </h1></header>
-    
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any element which is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a>.</p>
 
@@ -158,7 +130,21 @@
 
 <p>Whenever such a conflict occurs, this indicates at the very least mismatching intentions. Such a conflict should be avoided.</p>
 
-<p>When these conflicts arise on <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure decoration">decorative</a> <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG definition of Non-text content">non-text content</a>, this is also a failure of <a href="https://www.w3.org/TR/WCAG21/#non-text-content" title="Success Criterion 1.1.1">Success Criterion 1.1.1: Non-text Content</a> because <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure decoration">decorative</a> <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG definition of Non-text content">non-text content</a> must be implemented in a way that allows assistive technologies to ignore it. When these conflicts arise on text content, or on content which is not <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure decoration">decorative</a>, this is not a failure of WCAG. Therefore this rule is not mapping to any specific WCAG Success Criterion, and is not an accessibility requirement for WCAG.</p>
+<p>When these conflicts arise on <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure decoration">decorative</a> <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG definition of Non-text content">non-text content</a>, this is also a failure of <a href="https://www.w3.org/TR/WCAG21/#non-text-content" title="Success Criterion 1.1.1: Non-text Content">Success Criterion 1.1.1: Non-text Content</a> because <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure decoration">decorative</a> <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG definition of Non-text content">non-text content</a> must be implemented in a way that allows assistive technologies to ignore it. When these conflicts arise on text content, or on content which is not <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure decoration">decorative</a>, this is not a failure of WCAG. Therefore this rule is not mapping to any specific WCAG Success Criterion, and is not an accessibility requirement for WCAG.</p>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<p>This rule is not required for conformance.</p>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility">Accessibility tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS styling</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM tree</a></li>
+</ul>
 
 <h2 id="test-cases">Test Cases</h2>
 
@@ -166,39 +152,39 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">alt</code> attribute and is not <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> because of the <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
-</code></pre></div></div>
-
-<h4 id="passed-example-2">Passed Example 2</h4>
-
-<p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">alt</code> attribute and is not <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> because it is <code class="language-plaintext highlighter-rouge">hidden</code> to everyone.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">hidden</span> <span class="nt">/&gt;</span>
-</code></pre></div></div>
-
-<h4 id="passed-example-3">Passed Example 3</h4>
-
-<p>This <code class="language-plaintext highlighter-rouge">nav</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">role</code> attribute and has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">none</code>.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://act-rules.github.io/"</span> <span class="na">aria-label=</span><span class="s">"ACT rules"</span><span class="nt">&gt;</span>ACT rules<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/nav&gt;</span>
-</code></pre></div></div>
-
-<h4 id="passed-example-4">Passed Example 4</h4>
-
 <p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its empty <code class="language-plaintext highlighter-rouge">alt</code> attribute and has <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">none</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
+<h4 id="passed-example-2">Passed Example 2</h4>
+
+<p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its empty <code class="language-plaintext highlighter-rouge">alt</code> attribute and is not <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> because of the <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-3">Passed Example 3</h4>
+
+<p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its empty <code class="language-plaintext highlighter-rouge">alt</code> attribute and is not <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> because it is <code class="language-plaintext highlighter-rouge">hidden</code> to everyone.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">hidden</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-4">Passed Example 4</h4>
+
+<p>This <code class="language-plaintext highlighter-rouge">nav</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">role</code> attribute and has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">presentation</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://act-rules.github.io/"</span> <span class="na">aria-label=</span><span class="s">"ACT rules"</span><span class="nt">&gt;</span>ACT rules<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div></div>
+
 <h4 id="passed-example-5">Passed Example 5</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">role</code> attribute and has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">none</code> because own attributes are not required to be exposed and thus do not trigger the <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">role</code> attribute and has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">presentation</code> because own attributes are not required to be exposed and thus do not trigger the <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">role=</span><span class="s">"none"</span> <span class="na">alt=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">alt=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-6">Passed Example 6</h4>
@@ -216,7 +202,7 @@
 
 <p>This <code class="language-plaintext highlighter-rouge">nav</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">role</code> attribute but has a non-empty <code class="language-plaintext highlighter-rouge">aria-label</code> attribute causing it to be <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> with its <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a> of <code class="language-plaintext highlighter-rouge">navigation</code>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"none"</span> <span class="na">aria-label=</span><span class="s">"global"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">aria-label=</span><span class="s">"global"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://act-rules.github.io/"</span> <span class="na">aria-label=</span><span class="s">"ACT rules"</span><span class="nt">&gt;</span>ACT rules<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/nav&gt;</span>
 </code></pre></div></div>
@@ -397,9 +383,10 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> 46ca7f</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 </div>
   </footer>
   
@@ -435,9 +422,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

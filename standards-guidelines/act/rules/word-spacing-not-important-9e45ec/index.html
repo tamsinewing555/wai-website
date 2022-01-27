@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> Word spacing in style attributes is not !important | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/word-spacing-not-important-9e45ec/","headline":"Word spacing in style attributes is not !important","@context":"https://schema.org"}</script>
+{"headline":"Word spacing in style attributes is not !important","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/word-spacing-not-important-9e45ec/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,53 +108,25 @@
         Word spacing in style attributes is not !important
       
       </h1></header>
-    
+    <h2 id="applicability">Applicability</h2>
 
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
-
-<p>This rule applies to any <a href="#namespaced-element">HTML element</a> that is <a href="#visible" title="Definition of visible">visible</a> and for which the <code class="language-plaintext highlighter-rouge">style</code> attribute <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declares</a> the <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing">word-spacing</a> CSS property.</p>
+<p>This rule applies to any <a href="#namespaced-element">HTML element</a> that is <a href="#visible" title="Definition of visible">visible</a> and for which the <code class="language-plaintext highlighter-rouge">style</code> attribute <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declares</a> the <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing: the word-spacing property">word-spacing</a> CSS property.</p>
 
 <h2 id="expectation">Expectation</h2>
 
 <p>For each test target, at least one of the following is true:</p>
 
 <ul>
-  <li><strong>not important</strong>: the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing">word-spacing</a> property is not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>; or</li>
-  <li><strong>wide enough</strong>: the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing">word-spacing</a> property is at least 0.16 times the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <a href="https://www.w3.org/TR/css-fonts-4/#propdef-font-size" title="CSS Fonts Module Level 4 (Working draft) - Font size">font-size</a> property; or</li>
-  <li><strong>cascade</strong>: the <a href="https://www.w3.org/TR/css-cascade-4/#cascaded" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascaded Values">cascaded</a> value of its <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing">word-spacing</a> property is not a value <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in its <code class="language-plaintext highlighter-rouge">style</code> attribute.</li>
+  <li><strong>not important</strong>: the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing: the word-spacing property">word-spacing</a> property is not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>; or</li>
+  <li><strong>wide enough</strong>: the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing: the word-spacing property">word-spacing</a> property is at least 0.16 times the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <a href="https://www.w3.org/TR/css-fonts-4/#propdef-font-size" title="CSS Fonts Module Level 4 (Working draft) - Font size: the font-size property">font-size</a> property; or</li>
+  <li><strong>cascade</strong>: the <a href="https://www.w3.org/TR/css-cascade-4/#cascaded" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascaded Values">cascaded</a> value of its <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing: the word-spacing property">word-spacing</a> property is not a value <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in its <code class="language-plaintext highlighter-rouge">style</code> attribute.</li>
 </ul>
 
 <h2 id="assumptions">Assumptions</h2>
 
 <ul>
   <li>
-    <p>There is no mechanism available on the page to adjust <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing">word-spacing</a>. If there is such a mechanism, it is possible to fail this rule while <a href="https://www.w3.org/TR/WCAG21/#text-spacing" title="Success Criterion 1.4.12 Text Spacing">Success Criterion 1.4.12 Text Spacing</a> is still satisfied.</p>
+    <p>There is no mechanism available on the page to adjust <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing: the word-spacing property">word-spacing</a>. If there is such a mechanism, it is possible to fail this rule while <a href="https://www.w3.org/TR/WCAG21/#text-spacing" title="Success Criterion 1.4.12 Text Spacing">Success Criterion 1.4.12 Text Spacing</a> is still satisfied.</p>
   </li>
   <li>
     <p>This rule assumes that WCAG’s meaning for the “Word spacing style property” is the value of the CSS <code class="language-plaintext highlighter-rouge">word-spacing</code> property rather than the actual space between words. The value of the CSS property is <em>added</em> to whichever spacing already exist (for example, the size of the space character). Thus, the actual space between words is larger than the value of the <code class="language-plaintext highlighter-rouge">word-spacing</code> property. If <a href="https://www.w3.org/TR/WCAG21/#text-spacing" title="Success Criterion 1.4.12 Text Spacing">Success Criterion 1.4.12 Text Spacing</a> is concerned by the actual space between words, then this rule may fail (with the <code class="language-plaintext highlighter-rouge">word-spacing</code> property being too small) while the Success Criterion is still satisfied (with the actual space being enough).</p>
@@ -166,7 +138,7 @@
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
-<p>While some assistive technologies are able to set <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-user" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin">user origin</a> or <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin">user agent origin</a> styles, others, such as browser extensions, are only able to set styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>. Such assistive technologies cannot create styles “winning” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over a <code class="language-plaintext highlighter-rouge">style</code> attribute with an <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> declaration. If accessibility support does not include assistive technologies that override <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing">word-spacing</a> through <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>, this rule should not be used.</p>
+<p>While some assistive technologies are able to set <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-user" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin">user origin</a> or <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin">user agent origin</a> styles, others, such as browser extensions, are only able to set styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>. Such assistive technologies cannot create styles “winning” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over a <code class="language-plaintext highlighter-rouge">style</code> attribute with an <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> declaration. If accessibility support does not include assistive technologies that override <a href="https://www.w3.org/TR/css-text-3/#word-spacing-property" title="CSS Text Module Level 3 - Word Spacing: the word-spacing property">word-spacing</a> through <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>, this rule should not be used.</p>
 
 <h2 id="background">Background</h2>
 
@@ -174,10 +146,38 @@
 
 <p>CSS specifications define each declaration as being either <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> (if is as the <code class="language-plaintext highlighter-rouge">!important</code> annotation) or <a href="https://www.w3.org/TR/css-cascade-4/#normal" title="CSS Cascading and Inheritance Level 4 (Working draft) - Normal declarations">normal</a>. Given that <code class="language-plaintext highlighter-rouge">normal</code> is also a keyword for this property, and that <code class="language-plaintext highlighter-rouge">!important</code> is wider known that this distinction, this rule rather uses “<a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>”/”not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>” to avoid confusion.</p>
 
+<h3 id="bibliography">Bibliography</h3>
+
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html">Understanding Success Criterion 1.4.12: Text Spacing</a></li>
   <li><a href="https://www.w3.org/TR/css-text-3/#spacing">CSS Text Module Level 3 - Spacing</a></li>
   <li><a href="https://drafts.csswg.org/css2/visudet.html">CSS Visual formatting model details</a></li>
+</ul>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>1.4.12 Text Spacing (Level AA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#text-spacing">Learn more about 1.4.12 Text Spacing</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.1 on level AA and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -438,9 +438,10 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> 9e45ec</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 </div>
   </footer>
   
@@ -476,9 +477,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

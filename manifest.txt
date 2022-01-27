@@ -1095,7 +1095,7 @@
 /standards-guidelines/act/rules/iframe-non-empty-accessible-name-cae760/index.html
 /standards-guidelines/act/rules/iframe-not-focusable-has-no-interactive-content-akn7bn/index.html
 /standards-guidelines/act/rules/image-accessible-name-descriptive-qt1vmo/index.html
-/standards-guidelines/act/rules/image-button-accessible-name-59796f/index.html
+/standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/index.html
 /standards-guidelines/act/rules/image-no-text-0va7u6/index.html
 /standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/index.html
 /standards-guidelines/act/rules/image-not-in-acc-tree-is-decorative-e88epe/index.html

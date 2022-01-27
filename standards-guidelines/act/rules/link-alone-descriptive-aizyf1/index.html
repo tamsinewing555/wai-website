@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> Link is descriptive | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/link-alone-descriptive-aizyf1/","headline":"Link is descriptive","@context":"https://schema.org"}</script>
+{"headline":"Link is descriptive","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/link-alone-descriptive-aizyf1/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,35 +108,7 @@
         Link is descriptive
       
       </h1></header>
-    
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="#inheriting-semantic" title="Definition of Inheriting Semantic Role">inheriting semantic</a> <code class="language-plaintext highlighter-rouge">link</code> for which all the following is true:</p>
 
@@ -152,27 +124,62 @@
 <h2 id="assumptions">Assumptions</h2>
 
 <ul>
-  <li>This rule assumes that the purpose of the link is not ambiguous to users in general when seen in context on the web page, which is the exception mentioned in [Success Criterion 2.4.9 Link Purpose (Link Only)][sc249]. If the link is ambiguous to users in general, users of assistive technologies are not at a disadvantage when viewing the link out of context.</li>
-  <li>This rule assumes that all [semantic][semantic role] <code class="language-plaintext highlighter-rouge">link</code> elements are used as links. An element marked up as a link, but that does not behave as a link would not fail [Success Criterion 2.4.9 Link Purpose (Link Only)][sc249].</li>
+  <li>This rule assumes that the purpose of the link is not ambiguous to users in general when seen in context on the web page, which is the exception mentioned in <a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only" title="Success Criterion 2.4.9: Link Purpose (Link Only)">Success Criterion 2.4.9 Link Purpose (Link Only)</a>. If the link is ambiguous to users in general, users of assistive technologies are not at a disadvantage when viewing the link out of context.</li>
+  <li>This rule assumes that all <a href="#semantic-role" title="Definition of Semantic Role">semantic</a> <code class="language-plaintext highlighter-rouge">link</code> elements are used as links. An element marked up as a link, but that does not behave as a link would not fail <a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only" title="Success Criterion 2.4.9: Link Purpose (Link Only)">Success Criterion 2.4.9 Link Purpose (Link Only)</a>.</li>
   <li>This rule assumes that the language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.</li>
 </ul>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
 <ul>
-  <li>Implementation of <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">Presentational Roles Conflict Resolution</a> varies from one browser or assistive technology to another. Depending on this, some [semantic][semantic role] <code class="language-plaintext highlighter-rouge">link</code> elements can fail this rule with some technology but users of other technologies would not experience any accessibility issue.</li>
+  <li>Implementation of <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">Presentational Roles Conflict Resolution</a> varies from one browser or assistive technology to another. Depending on this, some <a href="#semantic-role" title="Definition of Semantic Role">semantic</a> <code class="language-plaintext highlighter-rouge">link</code> elements can fail this rule with some technology but users of other technologies would not experience any accessibility issue.</li>
 </ul>
 
 <h2 id="background">Background</h2>
 
+<h3 id="related-rules">Related rules</h3>
+
 <ul>
   <li><a href="https://act-rules.github.io/rules/c487ae">Link has non-empty accessible name</a></li>
-  <li>[Understanding Success Criterion 2.4.9: Link Purpose (Link Only)][usc249]</li>
+</ul>
+
+<h3 id="bibliography">Bibliography</h3>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only.html" title="Understanding Success Criterion 2.4.9: Link Purpose (Link Only)">Understanding Success Criterion 2.4.9: Link Purpose (Link Only)</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G91">G91: Providing link text that describes the purpose of a link</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H30">H30: Providing link text that describes the purpose of a link for anchor elements</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H24">H24: Providing text alternatives for the area elements of image maps</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA7">ARIA7: Using aria-labelledby for link purpose</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA8">ARIA8: Using aria-label for link purpose</a></li>
+</ul>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>2.4.9 Link Purpose (Link Only) (Level AAA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility">Accessibility Tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-text">Language</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -342,7 +349,7 @@
 
 <p>The <em>explicit semantic role</em> of an element is determined by its <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> (if any).</p>
 
-<p>The <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a>, or if it has one with no valid role, then this element has no explicit semantic role.</p>
+<p>The <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from <a href="#wai-aria-specifications" title="Definition of WAI-ARIA specifications">WAI-ARIA Specifications</a>. If the element has no <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a>, or if it has one with no valid role, then this element has no explicit semantic role.</p>
 
 <p>Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the <a href="https://www.w3.org/TR/WCAG-EM/#step1c" title="Definition of accessibility support base line">accessibility support base line</a>. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.</p>
 
@@ -368,9 +375,9 @@
 
 <h3 id="inheriting-semantic">Inheriting Semantic Role</h3>
 
-<p>An element with an <em>inheriting semantic role</em> of X is any element with a non-<a href="https://www.w3.org/TR/wai-aria-1.1/#isAbstract" title="ARIA Definition for Abstract Roles">abstract</a> [semantic role][] that inherits from X, or is the same as X.</p>
+<p>An element with an <em>inheriting semantic role</em> of X is any element with a non-<a href="https://www.w3.org/TR/wai-aria-1.1/#isAbstract" title="ARIA Definition for Abstract Roles">abstract</a> <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> that inherits from X, or is the same as X.</p>
 
-<p><strong>Example</strong>: An “inheriting semantic link” is any element that either has the [semantic role][] of <a href="https://www.w3.org/TR/wai-aria/#link" title="ARIA Definition of the link Role"><code class="language-plaintext highlighter-rouge">link</code></a> or a [semantic role][] that inherits from the <a href="https://www.w3.org/TR/wai-aria/#link" title="ARIA Definition of the link Role"><code class="language-plaintext highlighter-rouge">link</code></a> role, such as <a href="https://www.w3.org/TR/dpub-aria-1.0/#doc-biblioref" title="DPUB ARIA Definition of doc-biblioref">doc-biblioref</a>.</p>
+<p><strong>Example</strong>: An “inheriting semantic link” is any element that either has the <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <a href="https://www.w3.org/TR/wai-aria/#link" title="ARIA Definition of the link Role"><code class="language-plaintext highlighter-rouge">link</code></a> or a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> that inherits from the <a href="https://www.w3.org/TR/wai-aria/#link" title="ARIA Definition of the link Role"><code class="language-plaintext highlighter-rouge">link</code></a> role, such as <a href="https://www.w3.org/TR/dpub-aria-1.0/#doc-biblioref" title="DPUB ARIA Definition of doc-biblioref">doc-biblioref</a>.</p>
 
 <h3 id="marked-as-decorative">Marked as decorative</h3>
 
@@ -446,10 +453,6 @@ for details.</p>
 
 <p>This is the first version of this ACT rule.</p>
 
-<p>[sc249]: https://www.w3.org/TR/WCAG21/#link-purpose-link-only ‘Success Criterion 2.4.9
-[semantic role]: #semantic-role ‘Definition of Semantic Role’
-[usc249]: https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only.html ‘Understanding Success Criterion 2.4.9
-[wai-aria specifications]: #wai-aria-specifications ‘Definition of WAI-ARIA specifications’</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Link%20is%20descriptive">wai-eo-editors@w3.org</a> or via GitHub.</p>
@@ -468,9 +471,10 @@ for details.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> aizyf1</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 </div>
   </footer>
   
@@ -506,9 +510,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

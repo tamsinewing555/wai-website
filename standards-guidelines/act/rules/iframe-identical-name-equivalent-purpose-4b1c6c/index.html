@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> iframe elements with identical accessible names have equivalent purpose | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/iframe-identical-name-equivalent-purpose-4b1c6c/","headline":"iframe elements with identical accessible names have equivalent purpose","@context":"https://schema.org"}</script>
+{"headline":"iframe elements with identical accessible names have equivalent purpose","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/iframe-identical-name-equivalent-purpose-4b1c6c/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,40 +108,12 @@
         iframe elements with identical accessible names have equivalent purpose
       
       </h1></header>
-    
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any set of any two or more <code class="language-plaintext highlighter-rouge">iframe</code> elements which:</p>
 
 <ul>
-  <li>are in the same [web page (HTML)][]; and</li>
+  <li>are in the same <a href="#web-page-html" title="Definition of web page (HTML)">web page (HTML)</a>; and</li>
   <li>are <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in an accessibility tree</a>; and</li>
   <li>that have <a href="#matching-characters" title="Definition of matching characters">matching</a> <a href="#accessible-name" title="Definition of accessible name">accessible names</a> that are not empty (<code class="language-plaintext highlighter-rouge">""</code>).</li>
 </ul>
@@ -159,16 +131,45 @@
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
-<p>This rule assumes that assistive technologies are exposing all <code class="language-plaintext highlighter-rouge">iframe</code> elements on the page in the same way no matter which <a href="https://dom.spec.whatwg.org/#document-trees">document tree</a> they are in. If an assistive technology requires the user to “enter” an <code class="language-plaintext highlighter-rouge">iframe</code> or a [shadow tree][] before exposing its content (notably nested <code class="language-plaintext highlighter-rouge">iframe</code>), then it is possible for two <code class="language-plaintext highlighter-rouge">iframe</code> to have identical name but embed different resources without failing [Success Criterion 4.1.2: Name, Role, Value][sc412] (if said <code class="language-plaintext highlighter-rouge">iframe</code> are in separate <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">documents</a> or [shadow trees][shadow tree])</p>
+<p>This rule assumes that assistive technologies are exposing all <code class="language-plaintext highlighter-rouge">iframe</code> elements on the page in the same way no matter which <a href="https://dom.spec.whatwg.org/#document-trees">document tree</a> they are in. If an assistive technology requires the user to “enter” an <code class="language-plaintext highlighter-rouge">iframe</code> or a <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow tree</a> before exposing its content (notably nested <code class="language-plaintext highlighter-rouge">iframe</code>), then it is possible for two <code class="language-plaintext highlighter-rouge">iframe</code> to have identical name but embed different resources without failing <a href="https://www.w3.org/TR/WCAG21/#name-role-value" title="Success Criterion 4.1.2: Name, Role, Value">Success Criterion 4.1.2: Name, Role, Value</a> (if said <code class="language-plaintext highlighter-rouge">iframe</code> are in separate <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">documents</a> or <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow trees</a>)</p>
 
 <h2 id="background">Background</h2>
 
 <p>When determining if target elements embed the same resource, resolving the embedded resource includes any redirects that are instant.</p>
 
+<h3 id="bibliography">Bibliography</h3>
+
 <ul>
   <li><a href="https://drafts.csswg.org/css-scoping/">CSS Scoping Module Level 1 (editor’s draft)</a></li>
   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H64">H64: Using the title attribute of the frame and iframe elements</a></li>
-  <li>[Understanding Success Criterion 4.1.2: Name, Role, Value][usc412]</li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html" title="Understanding Success Criterion 4.1.2: Name, Role, Value">Understanding Success Criterion 4.1.2: Name, Role, Value</a></li>
+</ul>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-aspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-text">Language</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -267,7 +268,7 @@
 
 <h4 id="passed-example-9">Passed Example 9</h4>
 
-<p>All three <code class="language-plaintext highlighter-rouge">iframe</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a>. The second <code class="language-plaintext highlighter-rouge">iframe</code> (with <code class="language-plaintext highlighter-rouge">id</code> <code class="language-plaintext highlighter-rouge">"light"</code> ) is only part of the <a href="https://dom.spec.whatwg.org/#concept-light-tree" title="Definition of light tree">light tree</a>. When the [shadow tree][] is attached to <code class="language-plaintext highlighter-rouge">host</code> and flattened, this <code class="language-plaintext highlighter-rouge">iframe</code> is overwritten and therefore not part of the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>. Hence, only the first and third <code class="language-plaintext highlighter-rouge">iframe</code> are considered by this rule and they both point to the <a href="#same-resource" title="Definition of same resource">same resource</a>.</p>
+<p>All three <code class="language-plaintext highlighter-rouge">iframe</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a>. The second <code class="language-plaintext highlighter-rouge">iframe</code> (with <code class="language-plaintext highlighter-rouge">id</code> <code class="language-plaintext highlighter-rouge">"light"</code> ) is only part of the <a href="https://dom.spec.whatwg.org/#concept-light-tree" title="Definition of light tree">light tree</a>. When the <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow tree</a> is attached to <code class="language-plaintext highlighter-rouge">host</code> and flattened, this <code class="language-plaintext highlighter-rouge">iframe</code> is overwritten and therefore not part of the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>. Hence, only the first and third <code class="language-plaintext highlighter-rouge">iframe</code> are considered by this rule and they both point to the <a href="#same-resource" title="Definition of same resource">same resource</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">id=</span><span class="s">"always"</span> <span class="na">title=</span><span class="s">"List of Contributors"</span> <span class="na">src=</span><span class="s">"/test-assets/iframe-unique-name-4b1c6c/page-one.html"</span><span class="nt">&gt;</span> <span class="nt">&lt;/iframe&gt;</span>
 
@@ -285,7 +286,7 @@
 
 <h4 id="passed-example-10">Passed Example 10</h4>
 
-<p>The <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the <code class="language-plaintext highlighter-rouge">iframe</code> with <code class="language-plaintext highlighter-rouge">id</code> <code class="language-plaintext highlighter-rouge">"container"</code> has the <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the main <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">document</a> as an <a href="https://html.spec.whatwg.org/#ancestor-browsing-context" title="Definition of ancestor browsing context">ancestor browsing context</a>. Hence, they share the same [top-level browsing context][] (namely, the <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the main <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">document</a>) and are part of the same [web page (HTML)][]. Therefore, both <code class="language-plaintext highlighter-rouge">iframe</code> with <code class="language-plaintext highlighter-rouge">id</code> <code class="language-plaintext highlighter-rouge">"top-level"</code> and <code class="language-plaintext highlighter-rouge">"nested"</code> are considered and, since they embed the same document, the rule passes.</p>
+<p>The <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the <code class="language-plaintext highlighter-rouge">iframe</code> with <code class="language-plaintext highlighter-rouge">id</code> <code class="language-plaintext highlighter-rouge">"container"</code> has the <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the main <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">document</a> as an <a href="https://html.spec.whatwg.org/#ancestor-browsing-context" title="Definition of ancestor browsing context">ancestor browsing context</a>. Hence, they share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context" title="Definition of top level browsing context">top-level browsing context</a> (namely, the <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the main <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">document</a>) and are part of the same <a href="#web-page-html" title="Definition of web page (HTML)">web page (HTML)</a>. Therefore, both <code class="language-plaintext highlighter-rouge">iframe</code> with <code class="language-plaintext highlighter-rouge">id</code> <code class="language-plaintext highlighter-rouge">"top-level"</code> and <code class="language-plaintext highlighter-rouge">"nested"</code> are considered and, since they embed the same document, the rule passes.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">id=</span><span class="s">"top-level"</span> <span class="na">title=</span><span class="s">"List of Contributors"</span> <span class="na">src=</span><span class="s">"/test-assets/iframe-unique-name-4b1c6c/page-one.html"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/iframe&gt;</span>
@@ -333,7 +334,7 @@
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p>The <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the <code class="language-plaintext highlighter-rouge">iframe</code> with <code class="language-plaintext highlighter-rouge">id</code> <code class="language-plaintext highlighter-rouge">"container"</code> has the <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the main <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">document</a> as an <a href="https://html.spec.whatwg.org/#ancestor-browsing-context" title="Definition of ancestor browsing context">ancestor browsing context</a>. Hence, they share the same [top-level browsing context][] (namely, the <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the main <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">document</a>) and are part of the same [web page (HTML)][]. Therefore, both <code class="language-plaintext highlighter-rouge">iframe</code> with <code class="language-plaintext highlighter-rouge">id</code> <code class="language-plaintext highlighter-rouge">"top-level"</code> and <code class="language-plaintext highlighter-rouge">"nested"</code> are considered and the rule fails.</p>
+<p>The <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the <code class="language-plaintext highlighter-rouge">iframe</code> with <code class="language-plaintext highlighter-rouge">id</code> <code class="language-plaintext highlighter-rouge">"container"</code> has the <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the main <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">document</a> as an <a href="https://html.spec.whatwg.org/#ancestor-browsing-context" title="Definition of ancestor browsing context">ancestor browsing context</a>. Hence, they share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context" title="Definition of top level browsing context">top-level browsing context</a> (namely, the <a href="https://html.spec.whatwg.org/#browsing-context" title="Definition of browsing context">browsing context</a> of the main <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">document</a>) and are part of the same <a href="#web-page-html" title="Definition of web page (HTML)">web page (HTML)</a>. Therefore, both <code class="language-plaintext highlighter-rouge">iframe</code> with <code class="language-plaintext highlighter-rouge">id</code> <code class="language-plaintext highlighter-rouge">"top-level"</code> and <code class="language-plaintext highlighter-rouge">"nested"</code> are considered and the rule fails.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">id=</span><span class="s">"top-level"</span> <span class="na">title=</span><span class="s">"List of Contributors"</span> <span class="na">src=</span><span class="s">"/test-assets/iframe-unique-name-4b1c6c/page-one.html"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/iframe&gt;</span>
@@ -589,11 +590,6 @@ not accounted for in the change history or the last modified date.</p>
 
 <p>This is the first version of this ACT rule.</p>
 
-<p>[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value ‘Success Criterion 4.1.2
-[shadow tree]: https://dom.spec.whatwg.org/#shadow-tree ‘Definition of shadow tree’
-[top-level browsing context]: https://html.spec.whatwg.org/#top-level-browsing-context ‘Definition of top level browsing context’
-[usc412]: https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html ‘Understanding Success Criterion 4.1.2
-[web page (html)]: #web-page-html ‘Definition of web page (HTML)’</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20iframe%20elements%20with%20identical%20accessible%20names%20have%20equivalent%20purpose">wai-eo-editors@w3.org</a> or via GitHub.</p>
@@ -612,9 +608,10 @@ not accounted for in the change history or the last modified date.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> 4b1c6c</p>
 <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 </div>
   </footer>
   
@@ -650,9 +647,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>

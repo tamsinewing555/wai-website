@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1641913350965413553";
+      element.src = "/WAI/assets/scripts/main.js?1643311836806996101";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1641913350965413553">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1643311836806996101">
 
 <title> Bypass Blocks of Repeated Content | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -32,7 +32,7 @@
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"url":"https://www.w3.org/WAI/standards-guidelines/act/rules/bypass-blocks-cf77f2/","headline":"Bypass Blocks of Repeated Content","@context":"https://schema.org"}</script>
+{"headline":"Bypass Blocks of Repeated Content","description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/bypass-blocks-cf77f2/","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -108,35 +108,7 @@
         Bypass Blocks of Repeated Content
       
       </h1></header>
-    
-
-<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
-  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
-  <div class="box-i">
-
-
-
-
-<ul id="markdown-toc">
-  <li><a href="#applicability" id="markdown-toc-applicability">Applicability</a></li>
-  <li><a href="#expectation" id="markdown-toc-expectation">Expectation</a></li>
-  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
-  <li><a href="#accessibility-support" id="markdown-toc-accessibility-support">Accessibility Support</a></li>
-  <li><a href="#background" id="markdown-toc-background">Background</a></li>
-  <li><a href="#test-cases" id="markdown-toc-test-cases">Test Cases</a></li>
-  <li><a href="#glossary" id="markdown-toc-glossary">Glossary</a></li>
-  <li><a href="#implementations" id="markdown-toc-implementations">Implementations</a></li>
-  <li><a href="#changelog" id="markdown-toc-changelog">Changelog</a></li>
-</ul>
-
-
-
-  </div>
-</nav>
-
-
-
-<h2 id="applicability">Applicability</h2>
+    <h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a>.</p>
 
@@ -154,44 +126,134 @@
 <h2 id="assumptions">Assumptions</h2>
 
 <ul>
-  <li>This rule assumes that the mean to bypass blocks is included in the content of the <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a>. For example, server-side scripting, or a global “settings” page, can provide a functionality similar to <a href="https://act-rules.github.io/rules/3e12e1" title="Rule Block of Repeated Content is Collapsible"><em>Block of repeated content is collapsible</em></a> by serving a modified version of the page; in which case this rule would fail but [Success Criterion 2.4.1 Bypass blocks][sc241] could nonetheless be satisfied.</li>
-  <li>This rule assumes that <code class="language-plaintext highlighter-rouge">frame</code> and <code class="language-plaintext highlighter-rouge">frameset</code> elements are not used, given that they are deprecated in HTML5. They can be used to organize content as per <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H70">H70: Using frame elements to group blocks of repeated material</a> and <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H64">H64: Using the title attribute of the frame and iframe elements</a>, in that case, this rule would fail but [Success Criterion 2.4.1 Bypass blocks][sc241] could nonetheless be satisfied.</li>
-  <li>This rule assumes that completely removing <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">blocks of repeated content</a> is sufficient to pass [Success Criterion 2.4.1 Bypass blocks][sc241]. However, providing an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> to remove them without providing one to show them again is likely going to create other unrelated issues.</li>
-  <li>This rule assumes that repeated content that is at the end of the page (and not followed any non-repeated content) can be bypassed by means provided by user agents (such as pressing the “End” key to scroll to the bottom of the page). Therefore, they do not need any other way of being bypassed and are ignored by this rule. If there isn’t a way to bypass them, this rule may pass while [Success Criterion 2.4.1 Bypass blocks][sc241] is not satisfied.</li>
+  <li>This rule assumes that the mean to bypass blocks is included in the content of the <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a>. For example, server-side scripting, or a global “settings” page, can provide a functionality similar to <a href="https://act-rules.github.io/rules/3e12e1" title="Rule Block of Repeated Content is Collapsible"><em>Block of repeated content is collapsible</em></a> by serving a modified version of the page; in which case this rule would fail but <a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" title="Success Criterion 2.4.1 Bypass Blocks">Success Criterion 2.4.1 Bypass blocks</a> could nonetheless be satisfied.</li>
+  <li>This rule assumes that <code class="language-plaintext highlighter-rouge">frame</code> and <code class="language-plaintext highlighter-rouge">frameset</code> elements are not used, given that they are deprecated in HTML5. They can be used to organize content as per <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H70">H70: Using frame elements to group blocks of repeated material</a> and <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H64">H64: Using the title attribute of the frame and iframe elements</a>, in that case, this rule would fail but <a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" title="Success Criterion 2.4.1 Bypass Blocks">Success Criterion 2.4.1 Bypass blocks</a> could nonetheless be satisfied.</li>
+  <li>This rule assumes that completely removing <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">blocks of repeated content</a> is sufficient to pass <a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" title="Success Criterion 2.4.1 Bypass Blocks">Success Criterion 2.4.1 Bypass blocks</a>. However, providing an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> to remove them without providing one to show them again is likely going to create other unrelated issues.</li>
+  <li>This rule assumes that repeated content that is at the end of the page (and not followed any non-repeated content) can be bypassed by means provided by user agents (such as pressing the “End” key to scroll to the bottom of the page). Therefore, they do not need any other way of being bypassed and are ignored by this rule. If there isn’t a way to bypass them, this rule may pass while <a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" title="Success Criterion 2.4.1 Bypass Blocks">Success Criterion 2.4.1 Bypass blocks</a> is not satisfied.</li>
   <li>This rule assumes that the language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.</li>
 </ul>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
-<p>Techniques and solutions that identify blocks of content are sufficient ways of passing [Success Criterion 2.4.1 Bypass blocks][sc241]. They are, however, only beneficial for users who have ways of navigating with this information. For example, adding headings to a document will only help users who can “jump” from heading to heading (such a possibility can be provided by browsers, browsers plugins, screen readers, or other assistive technologies). Techniques and solutions based on links will benefit all users (for example, sighted keyboard users with no other assistive technology) and are therefore recommended.</p>
+<p>Techniques and solutions that identify blocks of content are sufficient ways of passing <a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" title="Success Criterion 2.4.1 Bypass Blocks">Success Criterion 2.4.1 Bypass blocks</a>. They are, however, only beneficial for users who have ways of navigating with this information. For example, adding headings to a document will only help users who can “jump” from heading to heading (such a possibility can be provided by browsers, browsers plugins, screen readers, or other assistive technologies). Techniques and solutions based on links will benefit all users (for example, sighted keyboard users with no other assistive technology) and are therefore recommended.</p>
 
 <p>If the <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> used to pass some of the atomic rules are not keyboard accessible, or not <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>, passing this rule can still leave many users without a way to bypass blocks of repeated content. WCAG’s definition of <a href="https://www.w3.org/TR/WCAG21/#dfn-mechanism" title="WCAG definition of Mechanism">mechanism</a> has a note saying that it “needs to meet all success criteria for the conformance level claimed”. This includes <a href="https://www.w3.org/TR/WCAG21/#keyboard-accessible">Success Criterion 2.1.1 Keyboard</a> and <a href="https://www.w3.org/TR/WCAG21/#name-role-value">Success Criterion 4.1.2 Name, Role, Value</a> which are both at level A.</p>
 
-<p>This rule only checks if there is a way to bypass at least one section of repeated content. On pages with several interleaved repeated and non-repeated content, this is not sufficient to satisfy [Success Criterion 2.4.1 Bypass blocks][sc241]. Checking for more sections to bypass was considered but rejected due to both the added complexity it would create, and the risk of failing on pages that might be correct.</p>
+<p>This rule only checks if there is a way to bypass at least one section of repeated content. On pages with several interleaved repeated and non-repeated content, this is not sufficient to satisfy <a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" title="Success Criterion 2.4.1 Bypass Blocks">Success Criterion 2.4.1 Bypass blocks</a>. Checking for more sections to bypass was considered but rejected due to both the added complexity it would create, and the risk of failing on pages that might be correct.</p>
 
 <h2 id="background">Background</h2>
 
-<p>The <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy [Success Criterion 2.4.1 Bypass Block][sc241]. These extra requirements are left out of this rule, and should be tested separately.</p>
+<p>The <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy <a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" title="Success Criterion 2.4.1 Bypass Blocks">Success Criterion 2.4.1 Bypass Block</a>. These extra requirements are left out of this rule, and should be tested separately.</p>
+
+<h3 id="bibliography">Bibliography</h3>
 
 <ul>
-  <li>[Understanding Success Criterion 2.4.1: Bypass Blocks][usc241]</li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html" title="Understanding Success Criterion 2.4.1: Bypass Blocks">Understanding Success Criterion 2.4.1: Bypass Blocks</a></li>
   <li>Creating links to skip blocks of content:
     <ul>
-      <li>[Technique G1: Adding a link at the top of each page that goes directly to the main content area][tech g1]</li>
-      <li>[Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block][tech g123]</li>
-      <li>[Technique G124: Adding links at the top of the page to each area of the content][tech g124]</li>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G1" title="Technique G1: Adding a Link at the Top of each Page that Goes Directly to the Main Content Area">Technique G1: Adding a link at the top of each page that goes directly to the main content area</a></li>
+      <li><a href="(https://www.w3.org/WAI/WCAG21/Techniques/general/G123)" title="Technique G123: Adding a Link at the Beginning of a Block of Repeated Content to Go to the End of the Block">Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G124" title="Technique G124: Adding Links at the Top of the Page to each Area of the Content">Technique G124: Adding links at the top of the page to each area of the content</a></li>
     </ul>
   </li>
   <li>Grouping and identifying blocks of content:
     <ul>
-      <li>[Technique ARIA11: Using ARIA landmarks to identify regions of a page][tech aria11]</li>
-      <li>[Technique H69: Providing heading elements at the beginning of each section of content][tech h69]</li>
-      <li>[Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28]</li>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA11" title="Technique ARIA11: Using ARIA Landmarks to Identify Regions of a Page">Technique ARIA11: Using ARIA landmarks to identify regions of a page</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H69" title="Technique H69: Providing Heading Elements at the Beginning of each Section of Content">Technique H69: Providing heading elements at the beginning of each section of content</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28" title="Technique SCR28: Using an Expandable and Collapsible Menu to Bypass Block of Content">Technique SCR28: Using an expandable and collapsible menu to bypass block of content</a></li>
     </ul>
   </li>
 </ul>
 
-<p>To avoid using landmarks for the non-repeated content, which would satisfy [Success Criterion 2.4.1 Bypass Block][sc241], this rule uses <code class="language-plaintext highlighter-rouge">&lt;div id="main"&gt;</code> in its test cases to indicate where non-repeating content exists. It is recommended to use the <code class="language-plaintext highlighter-rouge">main</code> landmark instead. The <code class="language-plaintext highlighter-rouge">aside</code> and <code class="language-plaintext highlighter-rouge">nav</code> elements are each a <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> due to the link inside the <code class="language-plaintext highlighter-rouge">nav</code> element to a page with similar <a href="#block-of-content" title="Definition of Block of Content">blocks of content</a>.</p>
+<p>To avoid using landmarks for the non-repeated content, which would satisfy <a href="https://www.w3.org/TR/WCAG21/#bypass-blocks" title="Success Criterion 2.4.1 Bypass Blocks">Success Criterion 2.4.1 Bypass Block</a>, this rule uses <code class="language-plaintext highlighter-rouge">&lt;div id="main"&gt;</code> in its test cases to indicate where non-repeating content exists. It is recommended to use the <code class="language-plaintext highlighter-rouge">main</code> landmark instead. The <code class="language-plaintext highlighter-rouge">aside</code> and <code class="language-plaintext highlighter-rouge">nav</code> elements are each a <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> due to the link inside the <code class="language-plaintext highlighter-rouge">nav</code> element to a page with similar <a href="#block-of-content" title="Definition of Block of Content">blocks of content</a>.</p>
+
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>2.4.1 Bypass Blocks (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#bypass-blocks">Learn more about 2.4.1 Bypass Blocks</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>G1: Adding a link at the top of each page that goes directly to the main content area</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G1">Learn more about technique G1</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>G123: Adding a link at the beginning of a block of repeated content to go to the end of the block</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G123">Learn more about technique G123</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>G124: Adding links at the top of the page to each area of the content</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G124">Learn more about technique G124</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>H69: Providing heading elements at the beginning of each section of content</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H69">Learn more about technique H69</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>SCR28: Using an expandable and collapsible menu to bypass block of content</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28">Learn more about technique SCR28</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="input-rules">Input Rules</h2>
+
+<p>Outcomes of the following rules are required as input for this rule.</p>
+
+<ul>
+  <li><a href="/WAI/standards-guidelines/act/rules/document-has-headings-for-non-repeated-content-047fe0/">Document has heading for non-repeated content</a></li>
+  <li><a href="/WAI/standards-guidelines/act/rules/document-has-landmark-with-non-repeated-content-b40fd1/">Document has a landmark with non-repeated content</a></li>
+  <li><a href="/WAI/standards-guidelines/act/rules/block-collapsible-3e12e1/">Block of repeated content is collapsible</a></li>
+  <li><a href="/WAI/standards-guidelines/act/rules/document-has-instrument-to-non-repeated-content-ye5d6e/">Document has an instrument to move focus to non-repeated content</a></li>
+</ul>
 
 <h2 id="test-cases">Test Cases</h2>
 
@@ -369,7 +431,7 @@
 
 <h4 id="passed-example-7">Passed Example 7</h4>
 
-<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/3e12e1" title="Rule Block of Repeated Content is Collapsible"><em>Block of repeated content is collapsible</em></a> because it has no <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> before non-repeated <a href="#perceivable-content" title="Definition of Perceivable Content">perceivable content</a>. Note that this does not pass [Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28] because the <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> which is after the non-repeated content cannot be toggled.</p>
+<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/3e12e1" title="Rule Block of Repeated Content is Collapsible"><em>Block of repeated content is collapsible</em></a> because it has no <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> before non-repeated <a href="#perceivable-content" title="Definition of Perceivable Content">perceivable content</a>. Note that this does not pass <a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28" title="Technique SCR28: Using an Expandable and Collapsible Menu to Bypass Block of Content">Technique SCR28: Using an expandable and collapsible menu to bypass block of content</a> because the <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a> which is after the non-repeated content cannot be toggled.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -394,7 +456,7 @@
 
 <h4 id="passed-example-8">Passed Example 8</h4>
 
-<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/ye5d6e" title="Rule Document Has an Instrument to Move Focus to Non-Repeated Content"><em>Document has an instrument to move focus to non-repeated content</em></a> because the button is such an instrument. Note that it does not pass [Technique G1: Adding a link at the top of each page that goes directly to the main content area][tech g1] nor [Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block][tech g123] because the <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> is a button, not a link.</p>
+<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/ye5d6e" title="Rule Document Has an Instrument to Move Focus to Non-Repeated Content"><em>Document has an instrument to move focus to non-repeated content</em></a> because the button is such an instrument. Note that it does not pass <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G1" title="Technique G1: Adding a Link at the Top of each Page that Goes Directly to the Main Content Area">Technique G1: Adding a link at the top of each page that goes directly to the main content area</a> nor <a href="(https://www.w3.org/WAI/WCAG21/Techniques/general/G123)" title="Technique G123: Adding a Link at the Beginning of a Block of Repeated Content to Go to the End of the Block">Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block</a> because the <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> is a button, not a link.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -420,7 +482,7 @@
 
 <h4 id="passed-example-9">Passed Example 9</h4>
 
-<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/ye5d6e" title="Rule Document Has an Instrument to Move Focus to Non-Repeated Content"><em>Document has an instrument to move focus to non-repeated content</em></a> because the link with target <code class="language-plaintext highlighter-rouge">#brewitt-taylor</code> moves focus <a href="#just-before" title="Definition of Just Before">just before</a> some <a href="#non-repeated-content" title="Definition of Non-Repeated Content after repeated content">non-repeated content after repeated content</a>. Note that it does not necessarily pass Technique [G124: Adding links at the top of the page to each area of the content][tech g124] because the <code class="language-plaintext highlighter-rouge">&lt;div id="main"&gt;</code> element is arguably a single “area of the content”, and the technique requires only one link per such area.</p>
+<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/ye5d6e" title="Rule Document Has an Instrument to Move Focus to Non-Repeated Content"><em>Document has an instrument to move focus to non-repeated content</em></a> because the link with target <code class="language-plaintext highlighter-rouge">#brewitt-taylor</code> moves focus <a href="#just-before" title="Definition of Just Before">just before</a> some <a href="#non-repeated-content" title="Definition of Non-Repeated Content after repeated content">non-repeated content after repeated content</a>. Note that it does not necessarily pass Technique <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G124" title="Technique G124: Adding Links at the Top of the Page to each Area of the Content">G124: Adding links at the top of the page to each area of the content</a> because the <code class="language-plaintext highlighter-rouge">&lt;div id="main"&gt;</code> element is arguably a single “area of the content”, and the technique requires only one link per such area.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -464,7 +526,7 @@
 
 <h4 id="passed-example-10">Passed Example 10</h4>
 
-<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/ye5d6e" title="Rule Document Has an Instrument to Move Focus to Non-Repeated Content"><em>Document has an instrument to move focus to non-repeated content</em></a>. Note that it does not necessarily pass Technique [G124: Adding links at the top of the page to each area of the content][tech g124] because the both the <code class="language-plaintext highlighter-rouge">nav</code> and <code class="language-plaintext highlighter-rouge">aside</code> elements are arguably different “areas of the content”, and the technique requires exactly one link per such area.</p>
+<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/ye5d6e" title="Rule Document Has an Instrument to Move Focus to Non-Repeated Content"><em>Document has an instrument to move focus to non-repeated content</em></a>. Note that it does not necessarily pass Technique <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G124" title="Technique G124: Adding Links at the Top of the Page to each Area of the Content">G124: Adding links at the top of the page to each area of the content</a> because the both the <code class="language-plaintext highlighter-rouge">nav</code> and <code class="language-plaintext highlighter-rouge">aside</code> elements are arguably different “areas of the content”, and the technique requires exactly one link per such area.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -493,7 +555,7 @@
 
 <h4 id="passed-example-11">Passed Example 11</h4>
 
-<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/3e12e1" title="Rule Block of Repeated Content is Collapsible"><em>Block of repeated content is collapsible</em></a>. Note that it does not pass [Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28] because the technique requires that the blocks can be toggled on and off, but here they can only be removed.</p>
+<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/3e12e1" title="Rule Block of Repeated Content is Collapsible"><em>Block of repeated content is collapsible</em></a>. Note that it does not pass <a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28" title="Technique SCR28: Using an Expandable and Collapsible Menu to Bypass Block of Content">Technique SCR28: Using an expandable and collapsible menu to bypass block of content</a> because the technique requires that the blocks can be toggled on and off, but here they can only be removed.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -522,7 +584,7 @@
 
 <h4 id="passed-example-12">Passed Example 12</h4>
 
-<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/ye5d6e" title="Rule Document Has an Instrument to Move Focus to Non-Repeated Content"><em>Document has an instrument to move focus to non-repeated content</em></a> because the second link is such an instrument. Note that it does not pass [Technique G1: Adding a link at the top of each page that goes directly to the main content area][tech g1] because the skip link is not the first <a href="#focusable" title="Definition of Focusable">focusable</a> element on the page.</p>
+<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/ye5d6e" title="Rule Document Has an Instrument to Move Focus to Non-Repeated Content"><em>Document has an instrument to move focus to non-repeated content</em></a> because the second link is such an instrument. Note that it does not pass <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G1" title="Technique G1: Adding a Link at the Top of each Page that Goes Directly to the Main Content Area">Technique G1: Adding a link at the top of each page that goes directly to the main content area</a> because the skip link is not the first <a href="#focusable" title="Definition of Focusable">focusable</a> element on the page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -549,7 +611,7 @@
 
 <h4 id="passed-example-13">Passed Example 13</h4>
 
-<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/047fe0" title="Rule Document Has Heading for Non-Repeated Content"><em>Document has heading for non-repeated content</em></a>. Note that it arguably does not pass [Technique H69: Providing heading elements at the beginning of each section of content][tech h69] because the <code class="language-plaintext highlighter-rouge">nav</code> element can be considered as a section of content and does not start with a heading.</p>
+<p>This <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> is passing rule <a href="https://act-rules.github.io/rules/047fe0" title="Rule Document Has Heading for Non-Repeated Content"><em>Document has heading for non-repeated content</em></a>. Note that it arguably does not pass <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H69" title="Technique H69: Providing Heading Elements at the Beginning of each Section of Content">Technique H69: Providing heading elements at the beginning of each section of content</a> because the <code class="language-plaintext highlighter-rouge">nav</code> element can be considered as a section of content and does not start with a heading.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -631,7 +693,7 @@
 <p>A <a href="#block-of-content" title="Definition of Block of Content">block of content</a> B, inside an <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> P, is a <em>block of repeated content</em> if both the following are true:</p>
 
 <ul>
-  <li><strong>distance 1</strong>: there exist an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> in P which leads the user to another <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> P’ whose URL has a different <a href="https://url.spec.whatwg.org/#concept-url-host" title="URL specification of Host">host</a>, <a href="https://url.spec.whatwg.org/#concept-url-port" title="URL specification of Port">port</a> (including <a href="https://url.spec.whatwg.org/#default-port" title="URL specification of Default Port">default port</a> for [special URL][]), or <a href="https://url.spec.whatwg.org/#concept-url-path" title="URL specification of Path">path</a>; and</li>
+  <li><strong>distance 1</strong>: there exist an <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instrument</a> in P which leads the user to another <a href="#web-page-html" title="Definition of Web Page (HTML)">HTML web page</a> P’ whose URL has a different <a href="https://url.spec.whatwg.org/#concept-url-host" title="URL specification of Host">host</a>, <a href="https://url.spec.whatwg.org/#concept-url-port" title="URL specification of Port">port</a> (including <a href="https://url.spec.whatwg.org/#default-port" title="URL specification of Default Port">default port</a> for <a href="https://url.spec.whatwg.org/#is-special" title="URL specification of Special URL">special URL</a>), or <a href="https://url.spec.whatwg.org/#concept-url-path" title="URL specification of Path">path</a>; and</li>
   <li><strong>repeated</strong>: there exist a <a href="#block-of-content" title="Definition of Block of Content">block of content</a> in P’ which is <a href="#equivalent-resource" title="Definition of Equivalent Resource">equivalent</a> to B.</li>
 </ul>
 
@@ -658,7 +720,7 @@
 
 <p>The <em>explicit semantic role</em> of an element is determined by its <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> (if any).</p>
 
-<p>The <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a>, or if it has one with no valid role, then this element has no explicit semantic role.</p>
+<p>The <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from <a href="#wai-aria-specifications" title="Definition of WAI-ARIA specifications">WAI-ARIA Specifications</a>. If the element has no <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a>, or if it has one with no valid role, then this element has no explicit semantic role.</p>
 
 <p>Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the <a href="https://www.w3.org/TR/WCAG-EM/#step1c" title="Definition of accessibility support base line">accessibility support base line</a>. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.</p>
 
@@ -694,7 +756,7 @@
 
 <ul>
   <li>N and P are the same node; or</li>
-  <li>N is not <a href="#perceivable-content" title="Definition of Perceivable Content">perceivable content</a> and there is no node of <a href="#perceivable-content" title="Definition of Perceivable Content">perceivable content</a> between N and P (in [tree order][] in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Definition of Flat Tree">flat tree</a>).</li>
+  <li>N is not <a href="#perceivable-content" title="Definition of Perceivable Content">perceivable content</a> and there is no node of <a href="#perceivable-content" title="Definition of Perceivable Content">perceivable content</a> between N and P (in <a href="https://dom.spec.whatwg.org/#concept-tree-order" title="DOM specification of Tree Order">tree order</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Definition of Flat Tree">flat tree</a>).</li>
 </ul>
 
 <p>Several nodes may be just before a given node, especially if there are several non-<a href="#perceivable-content" title="Definition of Perceivable Content">perceivable content</a> nodes next to each other.</p>
@@ -719,7 +781,7 @@
 <ul>
   <li>the node is <a href="#perceivable-content" title="Definition of Perceivable Content">perceivable content</a>; and</li>
   <li>the node is not part of any <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>; and</li>
-  <li>the node is after (in [tree order][] in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Definition of Flat Tree">flat tree</a>) at least one <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>.</li>
+  <li>the node is after (in <a href="https://dom.spec.whatwg.org/#concept-tree-order" title="DOM specification of Tree Order">tree order</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Definition of Flat Tree">flat tree</a>) at least one <a href="#block-of-repeated-content" title="Definition of Block of Repeated Content">block of repeated content</a>.</li>
 </ul>
 
 <h3 id="outcome">Outcome</h3>
@@ -742,8 +804,8 @@
 
 <ul>
   <li>the node is <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML specification of palpable content">palpable content</a>; and</li>
-  <li>the node is either [visible][] or <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>; and</li>
-  <li>if the node is an element, it does not have a [semantic role][] of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">presentation</code>.</li>
+  <li>the node is either <a href="#visible" title="Definition of visible">visible</a> or <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>; and</li>
+  <li>if the node is an element, it does not have a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">presentation</code>.</li>
 </ul>
 
 <p>Perceivable content corresponds to nodes that contain information and are perceived by some categories of users.</p>
@@ -815,22 +877,6 @@ for details.</p>
 
 <p>This is the first version of this ACT rule.</p>
 
-<p>[sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships ‘Success Criterion 1.3.1
-[sc211]: https://www.w3.org/TR/WCAG21/#keyboard ‘Success Criterion 2.1.1 Keyboard’
-[sc241]: https://www.w3.org/TR/WCAG21/#bypass-blocks ‘Success Criterion 2.4.1 Bypass Blocks’
-[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value ‘Success Criterion 4.1.2 Name, Role, Value’
-[semantic role]: #semantic-role ‘Definition of semantic role’
-[special url]: https://url.spec.whatwg.org/#is-special ‘URL specification of Special URL’
-[tech aria11]: https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA11 ‘Technique ARIA11
-[tech g123]: (https://www.w3.org/WAI/WCAG21/Techniques/general/G123) ‘Technique G123
-[tech g124]: https://www.w3.org/WAI/WCAG21/Techniques/general/G124 ‘Technique G124
-[tech g1]: https://www.w3.org/WAI/WCAG21/Techniques/general/G1 ‘Technique G1
-[tech h69]: https://www.w3.org/WAI/WCAG21/Techniques/html/H69 ‘Technique H69
-[tech scr28]: https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28 ‘Technique SCR28
-[tree order]: https://dom.spec.whatwg.org/#concept-tree-order ‘DOM specification of Tree Order’
-[usc241]: https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html ‘Understanding Success Criterion 2.4.1
-[visible]: #visible ‘Definition of visible’
-[wai-aria specifications]: #wai-aria-specifications ‘Definition of WAI-ARIA specifications’</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=[en]%20Bypass%20Blocks%20of%20Repeated%20Content">wai-eo-editors@w3.org</a> or via GitHub.</p>
@@ -849,9 +895,10 @@ for details.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner" 
       >
-      <p><strong>Date:</strong> Updated 22 October 2021</p>
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> cf77f2</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 <p><strong>Assets:</strong> test cases use assets from the following sources: _Romance of the Three Kingdoms_ by Luo Guanzhong, translation by Charles Henry Brewitt-Taylor (Tuttle Publishing, 1925, ISBN 9780804834674). _Three Kingdoms_ by Luo Guanzhong, translation by Moss Roberts (Foreign Language Press, 1976, ISBN 7-119-00590-1). _The Three Kingdoms_ by Luo Guanzhong, translation by Yu Sumei (Tuttle publishing, 2014, ISBN 9780804843935).</p>
 </div>
   </footer>
@@ -888,9 +935,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1643311836806996101"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1641913350965413553"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1643311836806996101"></script>
 <script>
   svg4everybody();
 </script><script>
