@@ -541,7 +541,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -714,6 +713,7 @@
 /older-users/img/captcha.png
 /older-users/index.html
 /older-users/literature/index.html
+/pages/test-eval/wai-eval-report-templates.html
 /pages/wai-components/Gemfile
 /pages/wai-components/Gemfile.lock
 /pages/wai-components/README.md
@@ -1216,7 +1216,6 @@
 /test-evaluate/involving-users/fr.html
 /test-evaluate/involving-users/index.html
 /test-evaluate/preliminary/index.html
-/test-evaluate/report-template/index.html
 /test-evaluate/tools/fr.html
 /test-evaluate/tools/index.html
 /test-evaluate/tools/selecting/index.html
