@@ -819,6 +819,7 @@
 /pages/wcag-act-rules/implementations/97a4e1.md
 /pages/wcag-act-rules/implementations/9bd38c.md
 /pages/wcag-act-rules/implementations/9e45ec.md
+/pages/wcag-act-rules/implementations/9eb3f6.md
 /pages/wcag-act-rules/implementations/a1b64e.md
 /pages/wcag-act-rules/implementations/a25f45.md
 /pages/wcag-act-rules/implementations/aaa1bf.md
@@ -865,6 +866,7 @@
 /pages/wcag-act-rules/implementations/ffbc54.md
 /pages/wcag-act-rules/implementations/ffd0e9.md
 /pages/wcag-act-rules/implementations/m6b1q3.md
+/pages/wcag-act-rules/implementations/off6ek.md
 /pages/wcag-act-rules/implementations/oj04fd.md
 /pages/wcag-act-rules/implementations/qt1vmo.md
 /pages/wcag-act-rules/implementations/ucwvc8.md
@@ -1074,6 +1076,7 @@
 /standards-guidelines/act/rules/document-has-headings-for-non-repeated-content-047fe0/index.html
 /standards-guidelines/act/rules/document-has-instrument-to-non-repeated-content-ye5d6e/index.html
 /standards-guidelines/act/rules/document-has-landmark-with-non-repeated-content-b40fd1/index.html
+/standards-guidelines/act/rules/element-lang-matches-default-language-off6ek/index.html
 /standards-guidelines/act/rules/element-lang-valid-de46e4/index.html
 /standards-guidelines/act/rules/element-marked-decorative-is-not-exposed-46ca7f/index.html
 /standards-guidelines/act/rules/explicit-SVG-image-non-empty-accessible-name-7d6734/index.html
@@ -1096,6 +1099,7 @@
 /standards-guidelines/act/rules/iframe-not-focusable-has-no-interactive-content-akn7bn/index.html
 /standards-guidelines/act/rules/image-accessible-name-descriptive-qt1vmo/index.html
 /standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/index.html
+/standards-guidelines/act/rules/image-filename-as-accessible-name-9eb3f6/index.html
 /standards-guidelines/act/rules/image-no-text-0va7u6/index.html
 /standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/index.html
 /standards-guidelines/act/rules/image-not-in-acc-tree-is-decorative-e88epe/index.html
