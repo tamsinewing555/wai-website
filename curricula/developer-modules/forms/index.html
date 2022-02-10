@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1644497934985312705";
+      element.src = "/WAI/assets/scripts/main.js?1644509050924685614";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1644497934985312705">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1644509050924685614">
 
 <title> Module 5: Forms | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.1" />
@@ -112,7 +112,15 @@
               <li>
   <a lang="en" href="/WAI/curricula/developer-modules/forms/" aria-current="page" class="page-link"><span>Forms</span></a></li><li>
   <a lang="en" href="/WAI/curricula/developer-modules/custom-widgets/" class="page-link"><span>Custom Widgets</span></a></li><li>
-  <a lang="en" href="/WAI/curricula/developer-modules/rich-applications/" class="page-link"><span>Rich Applications</span></a></li></ul></li></ul></li><li>
+  <a lang="en" href="/WAI/curricula/developer-modules/rich-applications/" class="page-link"><span>Rich Applications</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/" aria-current="location" class="page-link"><span>Designer Modules</span></a><ul><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/visual-design/" class="page-link"><span>Visual Design</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/information-design/" class="page-link"><span>Information Design</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/navigation-design/" class="page-link"><span>Navigation Design</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/interaction-design/" class="page-link"><span>Interaction Design</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/images-and-graphics/" class="page-link"><span>Images and Graphics</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/multimedia-and-animations/" class="page-link"><span>Multimedia and Animations</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/forms-design/" class="page-link"><span>Forms Design</span></a></li></ul></li></ul></li><li>
   <a lang="en" href="/WAI/teach-advocate/accessibility-training/" class="page-link"><span>Develop Accessibility Training</span></a><ul><li>
   <a lang="en" href="/WAI/teach-advocate/accessibility-training/topics/" class="page-link"><span>Topics</span></a></li><li>
   <a lang="en" href="/WAI/teach-advocate/accessibility-training/presentation-outlines/" class="page-link"><span>Presentation Outlines</span></a></li><li>
@@ -174,8 +182,8 @@
   <div>
 
     <ul>
-      <li><a href="/WAI/curricula/developer-modules/#prerequisites-for-students">Prerequisites for Students</a></li>
-      <li><a href="/curricula/curriculum-for-developers">Developer Modules</a>
+      <li><a href="/WAI/curricula/developer-modules/#foundation-prerequisites">Foundation Prerequisites</a></li>
+      <li><a href="/curricula/developer-modules">Developer Modules</a>
         <ul>
           <li><a href="/WAI/curricula/developer-modules/page-structure/">Module 1: Page Structure</a></li>
         </ul>
@@ -221,8 +229,8 @@
       </li>
       <li>In-depth knowledge of:
         <ul>
-          <li><a href="/WAI/curricula/developer-modules/#prerequisites-for-students">Prerequisites for Students</a></li>
-          <li><a href="/WAI/curricula/developer-modules/page-structure/">Page Structure</a></li>
+          <li><a href="/WAI/curricula/developer-modules/#foundation-prerequisites">Foundation Prerequisites</a></li>
+          <li><a href="/WAI/curricula/developer-modules/page-structure/">Developer Module 1: Page Structure</a></li>
         </ul>
       </li>
     </ul>
@@ -241,7 +249,7 @@
   </summary>
   <div>
 
-    <p>Explain the use of HTML elements and, if necessary, WAI-ARIA attributes to provide form controls and labels for form controls. Demonstrate how these semantics benefit different users in different situations, such as people using screen readers, screen magnification, voice interaction, and other assistive technologies. Non-standard form controls are addressed in <a href="/WAI/curricula/developer-modules/custom-widgets/">Module 6: Custom Widgets</a>.</p>
+    <p>Explain the use of HTML elements and, if necessary, WAI-ARIA attributes to provide form controls and labels for form controls. Demonstrate how these semantics benefit different users in different situations, such as people using screen readers, screen magnification, voice interaction, and other assistive technologies. Non-standard form controls are addressed in <a href="/WAI/curricula/developer-modules/custom-widgets/">Developer Module 6: Custom Widgets</a>.</p>
 
     <h4 id="learning-outcomes-for-topic">Learning Outcomes for Topic</h4>
 
@@ -268,7 +276,7 @@
 
     <ul>
       <li>Provide examples of explicit and implicit associations using the <code class="language-plaintext highlighter-rouge">label</code> element. Explain that an implicit association can be achieved by wrapping the <code class="language-plaintext highlighter-rouge">label</code> element and its content around the form control. Explain explicit associations by means of the <code class="language-plaintext highlighter-rouge">for</code> attribute and indicate that its value must be a unique identifier of the form control that the label refers to. Explain the use of other explicit associations using the HTML attribute <code class="language-plaintext highlighter-rouge">title</code>, the WAI-ARIA attributes <code class="language-plaintext highlighter-rouge">aria-label</code> and <code class="language-plaintext highlighter-rouge">aria-labelledby</code>. Explain that use of <code class="language-plaintext highlighter-rouge">placeholder</code> for labels should be avoided as its value disappears once the user has entered a value. Examples of how to label form controls are provided in the WAI tutorials on <a href="https://www.w3.org/WAI/tutorials/forms/labels/">Labeling controls</a>.</li>
-      <li>Show examples of form controls that are related to each other, such as check boxes and radio buttons to select possible answers for a given question. Mention that the <code class="language-plaintext highlighter-rouge">fieldset</code> element is used to group them all, and that the <code class="language-plaintext highlighter-rouge">legend</code> element provides the label they share. Examples of how to group form controls are provided in the WAI tutorials on <a href="https://www.w3.org/WAI/tutorials/forms/grouping/">Grouping controls</a>.</li>
+      <li>Show examples of form controls that are related to each other, such as checkboxes and radio buttons to select possible answers for a given question. Mention that the <code class="language-plaintext highlighter-rouge">fieldset</code> element is used to group them all, and that the <code class="language-plaintext highlighter-rouge">legend</code> element provides the label they share. Examples of how to group form controls are provided in the WAI tutorials on <a href="https://www.w3.org/WAI/tutorials/forms/grouping/">Grouping controls</a>.</li>
       <li>Invite students to navigate form controls using the keyboard only. Demonstrate the use of the tab key to move through different form controls. Demonstrate the use of the arrow keys to select options from combo boxes and lists.</li>
       <li>Demonstrate the use of voice commands, keystrokes, and gestures provided by assistive technologies and adaptive strategies to navigate through form controls. Explore advanced functionality that some tools provide, such as  presenting all form controls in a list where users can select the form control they are interested in. Examples of how people with disabilities interact with the Web are provided in <a href="https://www.w3.org/WAI/people-use-web/">How People with Disabilities Use the Web</a>.</li>
       <li>Demonstrate how people with mobility impairments or with low vision can click the label element to activate a specific form control if both are associated with each other.</li>
@@ -418,6 +426,7 @@
 <p>Suggested resources to support your teaching:</p>
 
 <ul>
+  <li><a href="/WAI/tips/designing/">Designing for Web Accessibility</a> — Tips for user interface and visual design.</li>
   <li><a href="https://www.w3.org/WAI/tutorials/forms">Forms (WAI Web Accessibility Tutorials)</a> — Shows how to develop forms that are accessible to people with disabilities.</li>
   <li><a href="/WAI/people-use-web/">How People with Disabilities Use the Web</a> — Provides stories of people with disabilities using the Web; describes types of disabilities and some of the barriers that people encounter using the Web; and introduces types of assistive technologies and adaptive strategies that some people use.</li>
   <li><a href="https://www.w3.org/WAI/perspective-videos/notifications/">Notifications and Feedback (Web Accessibility Perspectives)</a> — Is one of the Web accessibility perspectives videos that show accessibility features and how they impact people with disabilities.</li>
@@ -499,9 +508,9 @@
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1644497934985312705"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1644509050924685614"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1644497934985312705"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1644509050924685614"></script>
 <script>
   svg4everybody();
 </script><script>

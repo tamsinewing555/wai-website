@@ -489,6 +489,14 @@
 /content-images/wai-wcag-em-overview/video-thumb-conformance.png
 /curricula/acknowledgements/index.html
 /curricula/changelog/index.html
+/curricula/designer-modules/forms-design/index.html
+/curricula/designer-modules/images-and-graphics/index.html
+/curricula/designer-modules/index.html
+/curricula/designer-modules/information-design/index.html
+/curricula/designer-modules/interaction-design/index.html
+/curricula/designer-modules/multimedia-and-animations/index.html
+/curricula/designer-modules/navigation-design/index.html
+/curricula/designer-modules/visual-design/index.html
 /curricula/developer-modules/custom-widgets/index.html
 /curricula/developer-modules/forms/index.html
 /curricula/developer-modules/images/index.html
@@ -541,6 +549,7 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
+/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
