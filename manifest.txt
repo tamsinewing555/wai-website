@@ -1239,6 +1239,7 @@
 /tutorials/tables/one-header/index.html
 /tutorials/tables/tips/index.html
 /tutorials/tables/two-headers/index.html
+/update/index.html
 /videos/standards-and-benefits/ar.html
 /videos/standards-and-benefits/changelog/index.html
 /videos/standards-and-benefits/cs.html
