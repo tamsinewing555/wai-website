@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1647017022884544449";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647017022884544449">
+
+<title> Heading is descriptive | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Heading is descriptive" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative." />
+<meta property="og:description" content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative." />
+<link rel="canonical" href="https://www.w3.org/WAI/standards-guidelines/act/rules/b49b2e/proposed/" />
+<meta property="og:url" content="https://www.w3.org/WAI/standards-guidelines/act/rules/b49b2e/proposed/" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Heading is descriptive" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","headline":"Heading is descriptive","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/b49b2e/proposed/"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-heading-is-descriptive ">
+
+    <a href="#main" class="button button--skip-link">Skip to content</a>
+
+    <div class="minimal-header-container default-grid">
+      
+      <div id="site-header" class="minimal-header">
+  <span class="minimal-header-name">
+    WCAG 2 Test Rules
+    
+  </span>
+  <div class="minimal-header-logo">
+    <a href="http://w3.org/">
+      <img alt="W3C" src="/WAI/assets/images/w3c2.svg" width="92" height="44" />
+    </a>
+    <a href="/WAI/">
+      <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg" />
+    </a>
+  </div>
+</div>
+
+
+
+
+      
+    </div>
+
+    <div class="default-grid nav-container">
+      
+      <nav class="nav" aria-label="Context for this document">
+        <ul>
+          
+          
+            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/">All Rules</a></li>
+          
+            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/about/">About Rules</a></li>
+          
+          <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
+            All WCAG 2 Guidance
+            <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg>
+          </a></li>
+        </ul>
+      </nav>
+      
+    </div>
+
+    <div class="default-grid with-gap leftcol">
+
+<style>
+.nav-hack {
+  font-size: .85rem;
+}
+.nav-hack ul {
+    list-style: none;
+    border-bottom: 1px solid #BCBCBC;
+    padding-left: 1rem
+}
+.nav-hack li:not(:first-child){
+    padding-top: 0.4em;
+    line-height: 1.2;
+    border-top: 1px solid #BCBCBC;
+}
+.nav-hack li a {
+    text-decoration: none;
+}
+.nav-hack h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.nav-hack p {
+  margin: 0;
+}
+
+.nav-hack .nav-indent {
+  margin-left: 1rem;
+}
+.nav-hack .nav-indent2 {
+  margin-left: 2rem;
+}
+
+/* skip link */
+.button--skip-link {
+  background-color: var(--gold) !important;
+  border-color: var(--gold) !important;
+  outline-color: currentColor !important;
+  color: var(--off-black) !important;
+  font-weight: 600;
+  font-size: larger;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: 0.5em;
+  width: 10em;
+  opacity: 1;
+  transition: transform 0.1875s ease-out, opacity 0.1875s ease-out;
+}
+
+.button--skip-link:not(:focus):not(:hover) {
+  transform: translateY(-4em);
+  opacity: 0;
+}
+</style>
+     
+
+    
+    
+    
+      <nav class="nav-hack your-report your-report--expanded sidebar standalone-resource__sidebar">
+          
+          
+          <h3>This Page Contents</h3>
+            <ul>
+            
+            
+              <li><a href="#applicability">Applicability</a></li>
+            
+              <li><a href="#expectation1">Expectation 1</a></li>
+            
+              <li><a href="#expectation2">Expectation 2</a></li>
+            
+              <li><a href="#assumptions">Assumptions</a></li>
+            
+              <li><a href="#accessibilitysupport">Accessibility Support</a></li>
+            
+              <li><a href="#background">Background</a></li>
+            
+              <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
+            
+              <li><a href="#inputaspects">Input Aspects</a></li>
+            
+              <li><a href="#testcases">Test Cases</a></li>
+            
+              <li><a href="#glossary">Glossary</a></li>
+            
+              <li><a href="#implementations">Implementations</a></li>
+            
+              <li><a href="#changelog">Changelog</a></li>
+            
+            </ul>
+          
+                <p><em>Test Rules describe ways to test conformance to WCAG success criteria. They are <a href="../about">for evaluation</a>.</em></p>
+          
+      </nav>
+      
+
+    <main id="main" lang="en" class="standalone-resource__main">
+        <header>
+          <h1>
+            
+            <span class="standalone-resource__type-of-guidance">
+              
+                Proposed
+              
+              
+              Test Rule:
+            </span>
+            
+            Heading is descriptive
+          </h1>
+
+          
+          <aside class="box"> 
+            <header class="box-h box-h-icon"> 
+              Rule Mapping 
+            </header>
+            <div class="box-i"> 
+             <p>This is an 
+              <strong>Atomic rule</strong> 
+              
+              to test 
+              
+              <strong>2.4.6: Headings and Labels (Level AA)</strong>
+              
+              
+            </p> 
+            </div>
+           </aside>
+          
+        </header>
+
+        
+        <h2>Description</h2>
+        <p>This rule checks that headings describe the topic or purpose of the content.</p>
+
+        
+
+        <h2 id="applicability">Applicability</h2>
+
+<p>This rule applies to any <a href="#semantic-role" title="Definition of semantic role">semantic</a> <code class="language-plaintext highlighter-rouge">heading</code> element that is either <a href="#visible" title="Definition of visible">visible</a> or <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
+
+<h2 id="expectation1">Expectation 1</h2>
+
+<p>For each target element at least one of the following is true:</p>
+
+<ul>
+  <li>the target element is not <a href="#visible" title="Definition of visible">visible</a>; or</li>
+  <li>the target element describes the topic or purpose of the first <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a> which is non-<a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure decoration">decorative</a>, <a href="#visible" title="Definition of visible">visible</a>, and after the target element in tree order in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>.</li>
+</ul>
+
+<h2 id="expectation2">Expectation 2</h2>
+
+<p>For each target element at least one of the following is true:</p>
+
+<ul>
+  <li>the target element is not <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>; or</li>
+  <li>the target element describes the topic or purpose of the first <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a> which is non-<a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure decoration">decorative</a>, <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>, and after the target element in tree order in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>.</li>
+</ul>
+
+<p><strong>Note:</strong> Headings do not need to be lengthy. A word, or even a single character, may suffice.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>This rule assumes that the language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.</li>
+  <li>This rule assumes that the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> order is close to the reading order, as elements are rendered on the page. Due to positioning, it is possible to render a document in a order that greatly differ from the tree order, in which case the content which is visually associated with a heading might not be the content following it in tree order and this rule might fail while <a href="https://www.w3.org/TR/WCAG21/#headings-and-labels" title="Success Criterion 2.4.6 Headings and Labels">Success Criterion 2.4.6 Headings and Label</a> is still satisfied.</li>
+</ul>
+
+<h2 id="accessibilitysupport">Accessibility Support</h2>
+
+<p>Implementation of <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">Presentational Roles Conflict Resolution</a> varies from one browser or assistive technology to another. Depending on this, some <a href="#semantic-role" title="Definition of semantic role">semantic</a> <code class="language-plaintext highlighter-rouge">heading</code> elements can fail this rule with some technology but users of other technologies would not experience any accessibility issue.</p>
+
+<h2 id="background">Background</h2>
+
+<h3 id="bibliography">Bibliography</h3>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html">Understanding Success Criterion 2.4.6: Headings and Labels</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G130">G130: Providing descriptive headings</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H42">H42: Using h1-h6 to identify headings</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA12">ARIA12: Using role=heading to identify headings</a></li>
+  <li><a href="https://html.spec.whatwg.org/#heading-content">HTML Specification - Heading content</a></li>
+</ul>
+
+<h2 id="accessibilityrequirementsmapping">Accessibility Requirements Mapping</h2>
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>2.4.6 Headings and Labels (Level AA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">Learn more about 2.4.6 Headings and Labels</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+<h2 id="inputaspects">Input Aspects</h2>
+
+<p>The following aspects are required in using this rule.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility">Accessibility Tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom">DOM Tree</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></li>
+  <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-text">Language</a></li>
+</ul>
+
+<h2 id="testcases">Test Cases</h2>
+
+<h3 id="passed">Passed</h3>
+
+<h4 id="passed-example-1">Passed Example 1</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">h1</code> element that describes the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h1&gt;</span>Opening Hours<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-2">Passed Example 2</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">role="heading"</code> that describes the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"heading"</span> <span class="na">aria-level=</span><span class="s">"1"</span><span class="nt">&gt;</span>Opening Hours<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-3">Passed Example 3</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">role="heading"</code> that describes the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>, with a default aria-level assigned.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"heading"</span><span class="nt">&gt;</span>Opening Hours<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-4">Passed Example 4</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">h1</code> element with an image that describes the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h1&gt;</span>
+		<span class="nt">&lt;img</span> <span class="na">scr=</span><span class="s">"/test-assets/descriptive-heading-b49b2e/opening_hours_icon.png"</span> <span class="na">alt=</span><span class="s">"Opening hours"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-5">Passed Example 5</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">h1</code> element that is a single character that describes the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h1&gt;</span>A<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;dl&gt;</span>
+		<span class="nt">&lt;dt&gt;</span>airplane<span class="nt">&lt;/dt&gt;</span>
+		<span class="nt">&lt;dd&gt;</span>
+			a powered flying vehicle with fixed wings and a weight greater than that of the air it displaces.
+		<span class="nt">&lt;/dd&gt;</span>
+		<span class="nt">&lt;dt&gt;</span>apple<span class="nt">&lt;/dt&gt;</span>
+		<span class="nt">&lt;dd&gt;</span>
+			the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.
+		<span class="nt">&lt;/dd&gt;</span>
+	<span class="nt">&lt;/dl&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-6">Passed Example 6</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">role="heading"</code> that describes the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>. The heading is positioned off screen and is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"heading"</span> <span class="na">aria-level=</span><span class="s">"1"</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>Opening Hours<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>
+		We are open Monday through Friday from 10 to 16
+	<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-7">Passed Example 7</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">h1</code> element that describes the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>. The heading is <a href="#visible" title="Definition of visible">visible</a>, but is not <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h1</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Opening Hours<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-8">Passed Example 8</h4>
+
+<p>This heading describes the first <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a> after it (the first <code class="language-plaintext highlighter-rouge">p</code> element). The next <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a> (the second <code class="language-plaintext highlighter-rouge">p</code> element) is not considered by this rule.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h1&gt;</span>Opening Hours<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Saturday from 10 to 13<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h3 id="failed">Failed</h3>
+
+<h4 id="failed-example-1">Failed Example 1</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">h1</code> element that does not describe the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h1&gt;</span>Weather<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-2">Failed Example 2</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">role="heading"</code> that does not describe the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"heading"</span> <span class="na">aria-level=</span><span class="s">"1"</span><span class="nt">&gt;</span>Weather<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-3">Failed Example 3</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">role="heading"</code> that does not describe the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>. The heading is positioned off screen and is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"heading"</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>Weather<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>
+		We are open Monday through Friday from 10 to 16
+	<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-4">Failed Example 4</h4>
+
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">h1</code> element that does not describe the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>. The heading is <a href="#visible" title="Definition of visible">visible</a>, but is not <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h1</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Weather<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-5">Failed Example 5</h4>
+
+<p>This heading does not describe the first <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a> after it (the first <code class="language-plaintext highlighter-rouge">p</code> element). The next <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a> (the second <code class="language-plaintext highlighter-rouge">p</code> element) is not considered by this rule.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h1&gt;</span>Weather<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>It is going to rain tomorrow<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h3 id="inapplicable">Inapplicable</h3>
+
+<h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
+
+<p>No heading.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
+
+<p>Heading that is neither <a href="#visible" title="Definition of visible">visible</a> to users, nor <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>Opening hours<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
+
+<p>Empty heading marked up with <code class="language-plaintext highlighter-rouge">h1</code> is not <a href="#visible" title="Definition of visible">visible</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h1&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
+
+<p>Empty heading marked up with <code class="language-plaintext highlighter-rouge">role="heading"</code> is not <a href="#visible" title="Definition of visible">visible</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;p</span> <span class="na">role=</span><span class="s">"heading"</span> <span class="na">aria-level=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="glossary">Glossary</h2>
+
+<h3 id="explicit-role">Explicit Semantic Role</h3>
+
+<p>The <em>explicit semantic role</em> of an element is determined by its <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> (if any).</p>
+
+<p>The <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a> takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from <a href="#wai-aria-specifications" title="Definition of WAI-ARIA specifications">WAI-ARIA Specifications</a>. If the element has no <a href="https://www.w3.org/TR/role-attribute/" title="Specification of the role attribute">role attribute</a>, or if it has one with no valid role, then this element has no explicit semantic role.</p>
+
+<p>Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the <a href="https://www.w3.org/TR/WCAG-EM/#step1c" title="Definition of accessibility support base line">accessibility support base line</a>. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.</p>
+
+<h3 id="focusable">Focusable</h3>
+
+<p>Elements that can become the target of keyboard input as described in the <a href="https://www.w3.org/TR/html">HTML</a> specification of <a href="https://html.spec.whatwg.org/#focusable-area">focusable</a> and <a href="https://html.spec.whatwg.org/#specially-focusable">can be focused</a>.</p>
+
+<h3 id="implicit-role">Implicit Semantic Role</h3>
+
+<p>The <em>implicit semantic role</em> of an element is a pre-defined value given by the host language which depends on the element and its ancestors.</p>
+
+<p>Implicit roles for HTML and SVG, are documented in the <a href="https://www.w3.org/TR/html-aam/#html-element-role-mappings">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/#mapping_role_table">SVG accessibility API mappings (working draft)</a>.</p>
+
+<h3 id="included-in-the-accessibility-tree">Included in the accessibility tree</h3>
+
+<p>Elements included in the accessibility tree of platform specific accessibility APIs are exposed to assistive technologies. This allows users of assistive technology to access the elements in a way that meets the requirements of the individual user.</p>
+
+<p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings (working draft)</a>.</p>
+
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/">examples of included in the accessibility tree</a>.</p>
+
+<p><a href="#programmatically-hidden">Programmatically hidden</a> elements are removed from the accessibility tree. However, some browsers will leave <a href="#focusable">focusable</a> elements with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code> in the accessibility tree. Because they are hidden, these elements are considered <strong>not</strong> included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.</p>
+
+<h3 id="marked-as-decorative">Marked as decorative</h3>
+
+<p>An element is <em>marked as decorative</em> if one or more of the following conditions is true:</p>
+
+<ul>
+  <li>it has an <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a> of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">presentation</code>; or</li>
+  <li>it is an <code class="language-plaintext highlighter-rouge">img</code> element with an <code class="language-plaintext highlighter-rouge">alt</code> attribute whose value is the empty string (<code class="language-plaintext highlighter-rouge">alt=""</code>), and with no <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>.</li>
+</ul>
+
+<p>Elements are marked as decorative as a way to convey the intention of the author that they are <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a>. It is different from the element actually being <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a> as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a> may overwrite this intention.</p>
+
+<p>Elements can also be ignored by assistive technologies if they are <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a>. This is different from marking the element as decorative and does not convey the same intention. Notably, being <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a> may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.</p>
+
+<h3 id="outcome">Outcome</h3>
+
+<p>An <em>outcome</em> is a conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> or one of its constituent <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. An outcome can be one of the three following types:</p>
+
+<ul>
+  <li><strong>Inapplicable:</strong> No part of the test subject matches the applicability</li>
+  <li><strong>Passed:</strong> A <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a> meets all expectations</li>
+  <li><strong>Failed:</strong> A <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a> does not meet all expectations</li>
+</ul>
+
+<p><strong>Note:</strong> A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> will have one or more outcomes.</p>
+
+<p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
+
+<h3 id="programmatically-hidden">Programmatically Hidden</h3>
+
+<p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>:</p>
+
+<ul>
+  <li>has a <code class="language-plaintext highlighter-rouge">hidden</code> attribute; or</li>
+  <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
+  <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
+</ul>
+
+<p><strong>Note</strong>: Contrarily to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
+
+<h3 id="semantic-role">Semantic Role</h3>
+
+<p>The <em>semantic role</em> of an element is determined by the first of these cases that applies:</p>
+
+<ol>
+  <li><strong>Conflict</strong> If the element is <a href="#marked-as-decorative" title="Definition of Marked as Decorative">marked as decorative</a>, but the element is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>; or would be <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a> when it is not <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a>, then its <em>semantic role</em> is its <strong><a href="#implicit-role" title="Definition of Implicit Role">implicit role</a></strong>.</li>
+  <li><strong>Explicit</strong> If the element has an <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>, then its <em>semantic role</em> is its <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>.</li>
+  <li><strong>Implicit</strong> The <em>semantic role</em> of the element is its <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a>.</li>
+</ol>
+
+<p>This definition can be used in expressions such as “semantic <code class="language-plaintext highlighter-rouge">button</code>” meaning any element with a semantic role of <code class="language-plaintext highlighter-rouge">button</code>.</p>
+
+<h3 id="visible">Visible</h3>
+
+<p>Content perceivable through sight.</p>
+
+<p>Content is considered <em>visible</em> if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>
+
+<p><a href="https://www.w3.org/TR/WCAG21/#dfn-content">Content is defined in WCAG</a>.</p>
+
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/visible/">examples of visible</a>.</p>
+
+<h3 id="wai-aria-specifications">WAI-ARIA specifications</h3>
+
+<p>The <em>WAI ARIA Specifications</em> group both the WAI ARIA W3C Recommendation and ARIA modules, namely:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
+  <li><a href="https://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA Graphics Module 1.0</a></li>
+  <li><a href="https://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a></li>
+</ul>
+
+<p><strong>Note:</strong> depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.</p>
+
+<h2 id="implementations">Implementations</h2>
+
+<p>There are currently no known implementations for this rule. If you would like to 
+contribute an implementation, please read the 
+<a href="https://act-rules.github.io/pages/implementations/overview/">ACT Implementations page</a> 
+for details.</p>
+
+<h2 id="changelog">Changelog</h2>
+
+<p>This is the first version of this ACT rule.</p>
+
+ 
+
+      </main>
+    
+  </div>
+
+    <div class="default-grid with-gap leftcol">
+      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-wcag-act@w3.org?subject=[en]%20Heading%20is%20descriptive">public-wcag-act@w3.org</a> or via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:public-wcag-act@w3.org?subject=[en]%20Heading%20is%20descriptive&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
+    <a href="https://github.com/w3c/wcag-act-rules/edit/master/content/rules/b49b2e/proposed.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag-act-rules/issues/new" class="button"><span>New GitHub Issue</span></a>
+</div></div></aside>
+      </div>
+    </div>
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
+  </div>
+  
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" 
+      
+        style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
+      >
+      <p><strong>Rule Identifier:</strong> b49b2e</p>
+<p><strong>Date:</strong> Updated 28 January 2022</p>
+<p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+</div>
+  </footer>
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright &#xA9; 2022 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1647017022884544449"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1647017022884544449"></script>
+<script>
+  svg4everybody();
+</script><script>
+  var translationStrings = {};
+</script>
+<!-- Matomo -->
+<script>
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.w3.org/analytics/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '328']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+  </body>
+</html>
