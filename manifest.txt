@@ -1,3 +1,4 @@
+/WCAG2/supplemental/index.html
 /WCAG2A-Conformance.html
 /WCAG2AA-Conformance.html
 /WCAG2AAA-Conformance.html
