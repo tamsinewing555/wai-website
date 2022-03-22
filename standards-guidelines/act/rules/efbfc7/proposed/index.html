@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
 <head>
@@ -10,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1647636865441836596";
+      element.src = "/WAI/assets/scripts/main.js?1647979321465010436";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647636865441836596">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647979321465010436">
 
-<title> Text content that changes automatically can be paused, stopped or hidden | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647636865441836596"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Text content that changes automatically can be paused, stopped or hidden[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647979321465010436"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Text content that changes automatically can be paused, stopped or hidden" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -41,17 +40,19 @@
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-text-content-that-changes-automatically-can-be-paused-stopped-or-hidden ">
-
+  <body id="top" class="page-text-content-that-changes-automatically-can-be-paused-stopped-or-hidden  tight-page">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
-    <div class="minimal-header-container default-grid">
-      
+   <div class="minimal-header-container default-grid">
       <div class="minimal-header" id="site-header">
     <div class="minimal-header-name">
         WCAG 2 Test Rules
     </div>
     
+        <div class="minimal-header-subtitle">For developers of evaluation tools and test methodologies</div>
+    
+    
+        <a class="minimal-header-link" href="/WAI/standards-guidelines/act/rules/about/">About WCAG 2 Test Rules</a>
     
     <div class="minimal-header-logo">
         <a href="http://w3.org/">
@@ -63,38 +64,121 @@
     </div>
 </div>
 
-      
     </div>
 
     <div class="default-grid nav-container">
-      
-      <nav class="nav" aria-label="Context for this document">
-        <ul>
+        <div class="nav" >
           
           
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/">All Rules</a></li>
-          
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/about/">About Rules</a></li>
-          
-          <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
-            All WCAG 2 Guidance
-            <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg>
-          </a></li>
-        </ul>
-      </nav>
-      
-    </div>
+          <nav class="nav standalone-resource-pager" aria-label="Item navigation">
+            <ul>
+                <li class="nav__item">
+                    <a href="/standards-guidelines/act/rules/">All Test Rules</a>
+                
+                </li>
 
+                
+            </ul>
+          </nav>
+        
+        </div>
+    </div>
     <div class="default-grid with-gap leftcol">
 
 <style>
+.nav {
+  background: none;
+}
+
+.nav-related-info { /* blue bar with the "About:" links */
+  background: #005a9c;
+  color: #fff;
+}
+
+.nav-related-info a {
+  color: #fff !important;
+}
+
+.nav-page-specific { /* light blue bar with page/section specific navigation/pager */
+  margin-bottom: 1.25em;
+}
+
+.nav a:link, .nav a:visited {
+  color: #036;
+  color: var(--w3c-blue);
+}
+
+.nav a:hover, .nav a:active {
+    color: var(--dk-blue);
+}
+
+.nav-hack.sidebar a:hover,
+.nav-hack.sidebar a:active
+ {
+    color: var(--dk-blue);
+    text-decoration: underline;
+}
+
+.standalone-resource-about, .standalone-resource-pager {
+  margin: 0;
+}
+
+nav.standalone-resource-about {
+  padding: .5em 0 1.5em 0;
+  font-style: italic;
+}
+
+
+.nav .standalone-resource-pager ul {
+  align-items: center;
+}
+
+.nav .standalone-resource-pager a,
+.nav .standalone-resource-pager span {
+
+  margin-left: 0;
+  margin-right: 1.5em;
+  padding: .5em;
+}
+
+
+.pager-icon {
+  vertical-align: middle;
+  padding: 0 0 0.15em 0;
+  margin: 0 -0.4em;
+  width: 1.65em;
+  height: 2em;
+  fill: var(--dk-blue)
+}
+
+.category-icon {
+  vertical-align: middle;
+  padding: 0 0.25em 0.25em 0.25em;
+  width: 2em;
+  height: 2em;
+}
+
+.zstandalone-resource-pager {
+  padding: .7em 0;
+}
+
+.standalone-resource-pager zul {
+  display: block;
+}
+
+.standalone-resource-pager zul li {
+  display: inline;
+}
+
 .nav-hack {
   font-size: .85rem;
+  /*justify-self: end;*/
+  align-self: start;
 }
 .nav-hack ul {
     list-style: none;
     border-bottom: 1px solid #BCBCBC;
-    padding-left: 1rem
+    padding-left: 0
 }
 .nav-hack li:not(:first-child){
     padding-top: 0.4em;
@@ -113,12 +197,6 @@
   margin: 0;
 }
 
-.nav-hack .nav-indent {
-  margin-left: 1rem;
-}
-.nav-hack .nav-indent2 {
-  margin-left: 2rem;
-}
 
 /* skip link */
 .button--skip-link {
@@ -143,90 +221,104 @@
   transform: translateY(-4em);
   opacity: 0;
 }
+
+.standalone-resource-navrule {
+    border:none;
+    border-top: 1px solid grey
+}
+
+.standalone-resource-about ul,
+.standalone-resource-pager ul {
+    list-style: none;
+}
+
+.standalone-resource-about a,
+.standalone-resource-pager a,
+.standalone-resource-about span,
+.standalone-resource-pager span 
+{
+    margin-left:.8em;
+    margin-right:.8em;
+}
+
 </style>
-     
 
     
     
     
-      <nav class="nav-hack your-report your-report--expanded sidebar standalone-resource__sidebar">
-          
-          
-          <h3>This Page Contents</h3>
-            <ul>
+        <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+            <header class="box-h ">Page Contents</header>
             
-            
-              <li><a href="#applicability">Applicability</a></li>
-            
-              <li><a href="#expectation">Expectation</a></li>
-            
-              <li><a href="#assumptions">Assumptions</a></li>
-            
-              <li><a href="#accessibilitysupport">Accessibility Support</a></li>
-            
-              <li><a href="#background">Background</a></li>
-            
-              <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
-            
-              <li><a href="#inputaspects">Input Aspects</a></li>
-            
-              <li><a href="#testcases">Test Cases</a></li>
-            
-              <li><a href="#glossary">Glossary</a></li>
-            
-              <li><a href="#implementations">Implementations</a></li>
-            
-              <li><a href="#changelog">Changelog</a></li>
-            
-            </ul>
-          
-                <p><em>Test Rules describe ways to test conformance to WCAG success criteria. They are <a href="../about">for evaluation</a>.</em></p>
-          
-      </nav>
-      
+            <div class="box-i">
+                <ul>
+                
+                
+                <li><a href="#description">Description</a></li>
+                
+                <li><a href="#applicability">Applicability</a></li>
+                
+                <li><a href="#expectation">Expectation</a></li>
+                
+                <li><a href="#assumptions">Assumptions</a></li>
+                
+                <li><a href="#accessibilitysupport">Accessibility Support</a></li>
+                
+                <li><a href="#background">Background</a></li>
+                
+                <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
+                
+                <li><a href="#inputaspects">Input Aspects</a></li>
+                
+                <li><a href="#testcases">Test Cases</a></li>
+                
+                <li><a href="#glossary">Glossary</a></li>
+                
+                <li><a href="#implementations">Implementations</a></li>
+                
+                <li><a href="#changelog">Changelog</a></li>
+                
+                </ul>
+            </div>
+        </aside>
+    
 
     <main id="main" lang="en" class="standalone-resource__main">
         <header>
-          <h1>
-            
-            <span class="standalone-resource__type-of-guidance">
+            <h1>
               
-                Proposed
+              <span class="standalone-resource__type-of-guidance">
+                
+                  Proposed
+                
+                Test Rule:
+              </span>
               
-              
-              Test Rule:
-            </span>
-            
-            Text content that changes automatically can be paused, stopped or hidden
-          </h1>
+              Text content that changes automatically can be paused, stopped or hidden
+            </h1>
+        </header>    
 
-          
-          <aside class="box"> 
-            <header class="box-h box-h-icon"> 
-              Rule Mapping 
-            </header>
-            <div class="box-i"> 
-             <p>This is an 
-              <strong>Atomic rule</strong> 
-              
-              to test 
-              
-              <strong>2.2.2: Pause, Stop, Hide (Level A)</strong>
-              
-              
-            </p> 
-            </div>
-           </aside>
-          
-        </header>
+        <aside class="box"> 
+  <header class="box-h box-h-icon"> 
+    Rule Mapping 
+  </header>
+  <div class="box-i"> 
+   <p>This is an 
+    <strong>Atomic rule</strong> 
+    
+    to test 
+    
+    <strong>2.2.2: Pause, Stop, Hide (Level A)</strong>
+    
+    
+  </p> 
+  </div>
+ </aside>
 
-        
-        <h2>Description</h2>
-        <p>This rule checks that for any text content that regularly changes automatically, there are instruments to pause, stop, or hide it or to control its changing frequency.</p>
+<h2 id="description">Description</h2>
+<p>This rule checks that for any text content that regularly changes automatically, there are instruments to pause, stop, or hide it or to control its changing frequency.</p>
 
-        
 
-        <h2 id="applicability">Applicability</h2>
+<h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="#namespaced-element">HTML element</a> that has a <a href="#visible" title="Definition of visible">visible</a> <a href="https://dom.spec.whatwg.org/#text">text node</a> as a <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>, for which all the following is true:</p>
 
@@ -256,7 +348,7 @@
   <li>The content being changed automatically is information. If the automatically changing content is not information (for example, an ASCII rendered spinning icon that does not provide information on what time is left for a process to end or how much progress has been made) the rule might fail but the success criterion might still be satisfied.</li>
   <li>Any <a href="https://www.w3.org/TR/WCAG21/#dfn-content">content</a> changes are enabled by the content of the <a href="https://dom.spec.whatwg.org/#html-document">HTML document</a> the test target belongs to. Changes originating from any other sources (e.g. browser shortcuts, browser extensions, browser settings, user agents, external browser applications) are not considered.</li>
   <li>All user actions are transmitted by the user agent to the <a href="https://dom.spec.whatwg.org/#html-document">HTML document</a>. If there are other event sources that result from a user action this rule might fail but the success criterion might still be satisfied.</li>
-  <li>Available mechanisms for controlling the content changes rely on <a href="https://html.spec.whatwg.org/#activation">activation</a>. If there are other mechanisms that do not rely on <a href="https://html.spec.whatwg.org/#activation">activation</a> then the rule might fail but the success criterion might still be satisfied.</li>
+  <li>Available <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instruments</a> for controlling the content changes rely on <a href="https://html.spec.whatwg.org/#activation">activation</a>. If there are other <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instruments</a> that do not rely on <a href="https://html.spec.whatwg.org/#activation">activation</a> then the rule might fail but the success criterion might still be satisfied.</li>
   <li>If there are other ways to control the automatically changing content that do not require the user to interact with the web page, failing this rule might not be a failure of the success criterion.</li>
   <li>This rule does not check that the pausing instrument does not tie up the user focus. If that happens, then this rule might pass but the success criterion would not be satisfied.</li>
 </ul>
@@ -323,6 +415,8 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
+<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/fd32eba89caf3d650173b950eca075414f205494.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element contains text content that is automatically <strong>changed</strong> multiple times without user intervention and there is a button available to stop the automatic changes. The rule is not applicable to the second <code class="language-plaintext highlighter-rouge">p</code> element because it has a <strong>child changed</strong> (the <code class="language-plaintext highlighter-rouge">span</code> element).</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">"startUpdates()"</span><span class="nt">&gt;</span>
@@ -339,6 +433,8 @@
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
+
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/18adb94ce561c2d1f29dec32d91f3dd39a8e45b2.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element contains text content that is automatically <strong>changed</strong> multiple times without user intervention and there is a button available to pause and resume the automatic changes. The rule is not applicable to the second <code class="language-plaintext highlighter-rouge">p</code> element because it has a <strong>child changed</strong> (the <code class="language-plaintext highlighter-rouge">span</code> element).</p>
 
@@ -357,6 +453,8 @@
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
+<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/337477ac8e969c4d134079babf891b0f1fd33eba.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element contains text content that is automatically <strong>changed</strong> multiple times without user intervention and there is a button available to hide the automatically updating content. The rule is not applicable to the second <code class="language-plaintext highlighter-rouge">p</code> element because it has a <strong>child changed</strong> (the <code class="language-plaintext highlighter-rouge">span</code> element).</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">"startUpdates()"</span><span class="nt">&gt;</span>
@@ -373,6 +471,8 @@
 </code></pre></div></div>
 
 <h4 id="passed-example-4">Passed Example 4</h4>
+
+<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/a17f7d747d85f4a7e1f071b6278e7234e445ac13.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element contains text content that is automatically <strong>changed</strong> multiple times without user intervention and there is an <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instrument</a> available to modify the frequency of the changes. The rule is not applicable to the second <code class="language-plaintext highlighter-rouge">p</code> element because it has a <strong>child changed</strong> (the <code class="language-plaintext highlighter-rouge">span</code> element).</p>
 
@@ -392,6 +492,8 @@
 </code></pre></div></div>
 
 <h4 id="passed-example-5">Passed Example 5</h4>
+
+<p><a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/9f538bf383d5cffaacb52ef47102b7b00ac9b5f4.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element contains text content that is automatically <strong>changed</strong> multiple times without user intervention and the location of an <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instrument</a> to control the changes is clearly available.</p>
 
@@ -440,6 +542,8 @@
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
+<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/8f0a05348afb0a218f3934157dad1b4d1673ea6a.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element contains text content that is automatically <strong>changed</strong> multiple times without user intervention and there is no <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instrument</a> available to stop, pause, hide or alter the frequency of the automatic changes.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">"startUpdates()"</span><span class="nt">&gt;</span>
@@ -458,6 +562,8 @@
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
+<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/37668beb45f00408309f73569e36e63dc9327620.html">Open in a new tab</a></p>
+
 <p>This document does not have any visible text node.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
@@ -469,6 +575,8 @@
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
 
+<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/7e37318b6f7708dd98b0a86e72c501eeaf6ef721.html">Open in a new tab</a></p>
+
 <p>This document does not have text content that is automatically <strong>changed</strong>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
@@ -478,6 +586,8 @@
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
+
+<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/49cc7da7458fa7eb1033fc6e0f12e4a6a6d70803.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element changes color but not its <code class="language-plaintext highlighter-rouge">innerText</code> property.</p>
 
@@ -513,6 +623,8 @@
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
+<p><a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/5345dc33f3218e816b0ef0ce8fd62985ef2a71ce.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element contains text content that is automatically <strong>changed</strong> but only as a result of the user activating a button on the page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
@@ -529,6 +641,8 @@
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-5">Inapplicable Example 5</h4>
+
+<p><a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/0d1564a1311c77d8693a9f839e1d752df501d441.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element with text content that automatically changes multiple times is <strong>alone</strong> in the document.</p>
 
@@ -563,7 +677,21 @@
 
 <h3 id="focusable">Focusable</h3>
 
-<p>Elements that can become the target of keyboard input as described in the <a href="https://www.w3.org/TR/html">HTML</a> specification of <a href="https://html.spec.whatwg.org/#focusable-area">focusable</a> and <a href="https://html.spec.whatwg.org/#specially-focusable">can be focused</a>.</p>
+<p>An element is <em>focusable</em> if one or both of the following are true:</p>
+
+<ul>
+  <li>the element is part of <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>; or</li>
+  <li>the element has a <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> that is not null.</li>
+</ul>
+
+<p><strong>Exception</strong>: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered <em>focusable</em>.</p>
+
+<p>Notes:</p>
+
+<ul>
+  <li>The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.</li>
+  <li>The <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> of an element is the value of the <a href="https://html.spec.whatwg.org/#attr-tabindex">tabindex attribute</a> parsed using the <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">rules for parsing integers</a>. For the <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> to be different from null, it needs to be <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">parsed</a> without errors.</li>
+</ul>
 
 <h3 id="implicit-role">Implicit Semantic Role</h3>
 
@@ -625,12 +753,13 @@
 <p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>:</p>
 
 <ul>
-  <li>has a <code class="language-plaintext highlighter-rouge">hidden</code> attribute; or</li>
   <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
   <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
 </ul>
 
 <p><strong>Note</strong>: Contrarily to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
+
+<p><strong>Note</strong>: The <a href="https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements">HTML standard suggests</a> rendering elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute with a CSS rule that applies the value <code class="language-plaintext highlighter-rouge">none</code> to the CSS property <code class="language-plaintext highlighter-rouge">display</code> of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the <code class="language-plaintext highlighter-rouge">display</code> property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.</p>
 
 <h3 id="semantic-role">Semantic Role</h3>
 
@@ -733,15 +862,19 @@ for details.</p>
     </div>
     <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
   </div>
+
+
   
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
+      
+        style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> efbfc7</p>
-<p><strong>Date:</strong> Updated 28 January 2022</p>
+<p><strong>Date:</strong> Updated 16 March 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
   </footer>
   
@@ -780,9 +913,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1647979321465010436"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1647979321465010436"></script>
 <script>
   svg4everybody();
 </script><script>
@@ -806,5 +939,8 @@ for details.</p>
 <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
 
+
+    
   </body>
+
 </html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
 <head>
@@ -10,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1647636865441836596";
+      element.src = "/WAI/assets/scripts/main.js?1647979321465010436";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647636865441836596">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647979321465010436">
 
-<title> Focusable element has no keyboard trap | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647636865441836596"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Focusable element has no keyboard trap[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647979321465010436"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Focusable element has no keyboard trap" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -41,17 +40,19 @@
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-focusable-element-has-no-keyboard-trap ">
-
+  <body id="top" class="page-focusable-element-has-no-keyboard-trap  tight-page">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
-    <div class="minimal-header-container default-grid">
-      
+   <div class="minimal-header-container default-grid">
       <div class="minimal-header" id="site-header">
     <div class="minimal-header-name">
         WCAG 2 Test Rules
     </div>
     
+        <div class="minimal-header-subtitle">For developers of evaluation tools and test methodologies</div>
+    
+    
+        <a class="minimal-header-link" href="/WAI/standards-guidelines/act/rules/about/">About WCAG 2 Test Rules</a>
     
     <div class="minimal-header-logo">
         <a href="http://w3.org/">
@@ -63,38 +64,121 @@
     </div>
 </div>
 
-      
     </div>
 
     <div class="default-grid nav-container">
-      
-      <nav class="nav" aria-label="Context for this document">
-        <ul>
+        <div class="nav" >
           
           
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/">All Rules</a></li>
-          
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/about/">About Rules</a></li>
-          
-          <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
-            All WCAG 2 Guidance
-            <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg>
-          </a></li>
-        </ul>
-      </nav>
-      
-    </div>
+          <nav class="nav standalone-resource-pager" aria-label="Item navigation">
+            <ul>
+                <li class="nav__item">
+                    <a href="/standards-guidelines/act/rules/">All Test Rules</a>
+                
+                </li>
 
+                
+            </ul>
+          </nav>
+        
+        </div>
+    </div>
     <div class="default-grid with-gap leftcol">
 
 <style>
+.nav {
+  background: none;
+}
+
+.nav-related-info { /* blue bar with the "About:" links */
+  background: #005a9c;
+  color: #fff;
+}
+
+.nav-related-info a {
+  color: #fff !important;
+}
+
+.nav-page-specific { /* light blue bar with page/section specific navigation/pager */
+  margin-bottom: 1.25em;
+}
+
+.nav a:link, .nav a:visited {
+  color: #036;
+  color: var(--w3c-blue);
+}
+
+.nav a:hover, .nav a:active {
+    color: var(--dk-blue);
+}
+
+.nav-hack.sidebar a:hover,
+.nav-hack.sidebar a:active
+ {
+    color: var(--dk-blue);
+    text-decoration: underline;
+}
+
+.standalone-resource-about, .standalone-resource-pager {
+  margin: 0;
+}
+
+nav.standalone-resource-about {
+  padding: .5em 0 1.5em 0;
+  font-style: italic;
+}
+
+
+.nav .standalone-resource-pager ul {
+  align-items: center;
+}
+
+.nav .standalone-resource-pager a,
+.nav .standalone-resource-pager span {
+
+  margin-left: 0;
+  margin-right: 1.5em;
+  padding: .5em;
+}
+
+
+.pager-icon {
+  vertical-align: middle;
+  padding: 0 0 0.15em 0;
+  margin: 0 -0.4em;
+  width: 1.65em;
+  height: 2em;
+  fill: var(--dk-blue)
+}
+
+.category-icon {
+  vertical-align: middle;
+  padding: 0 0.25em 0.25em 0.25em;
+  width: 2em;
+  height: 2em;
+}
+
+.zstandalone-resource-pager {
+  padding: .7em 0;
+}
+
+.standalone-resource-pager zul {
+  display: block;
+}
+
+.standalone-resource-pager zul li {
+  display: inline;
+}
+
 .nav-hack {
   font-size: .85rem;
+  /*justify-self: end;*/
+  align-self: start;
 }
 .nav-hack ul {
     list-style: none;
     border-bottom: 1px solid #BCBCBC;
-    padding-left: 1rem
+    padding-left: 0
 }
 .nav-hack li:not(:first-child){
     padding-top: 0.4em;
@@ -113,12 +197,6 @@
   margin: 0;
 }
 
-.nav-hack .nav-indent {
-  margin-left: 1rem;
-}
-.nav-hack .nav-indent2 {
-  margin-left: 2rem;
-}
 
 /* skip link */
 .button--skip-link {
@@ -143,90 +221,104 @@
   transform: translateY(-4em);
   opacity: 0;
 }
+
+.standalone-resource-navrule {
+    border:none;
+    border-top: 1px solid grey
+}
+
+.standalone-resource-about ul,
+.standalone-resource-pager ul {
+    list-style: none;
+}
+
+.standalone-resource-about a,
+.standalone-resource-pager a,
+.standalone-resource-about span,
+.standalone-resource-pager span 
+{
+    margin-left:.8em;
+    margin-right:.8em;
+}
+
 </style>
-     
 
     
     
     
-      <nav class="nav-hack your-report your-report--expanded sidebar standalone-resource__sidebar">
-          
-          
-          <h3>This Page Contents</h3>
-            <ul>
+        <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+            <header class="box-h ">Page Contents</header>
             
-            
-              <li><a href="#applicability">Applicability</a></li>
-            
-              <li><a href="#expectation">Expectation</a></li>
-            
-              <li><a href="#assumptions">Assumptions</a></li>
-            
-              <li><a href="#accessibilitysupport">Accessibility Support</a></li>
-            
-              <li><a href="#background">Background</a></li>
-            
-              <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
-            
-              <li><a href="#inputrules">Input Rules</a></li>
-            
-              <li><a href="#testcases">Test Cases</a></li>
-            
-              <li><a href="#glossary">Glossary</a></li>
-            
-              <li><a href="#implementations">Implementations</a></li>
-            
-              <li><a href="#changelog">Changelog</a></li>
-            
-            </ul>
-          
-                <p><em>Test Rules describe ways to test conformance to WCAG success criteria. They are <a href="../about">for evaluation</a>.</em></p>
-          
-      </nav>
-      
+            <div class="box-i">
+                <ul>
+                
+                
+                <li><a href="#description">Description</a></li>
+                
+                <li><a href="#applicability">Applicability</a></li>
+                
+                <li><a href="#expectation">Expectation</a></li>
+                
+                <li><a href="#assumptions">Assumptions</a></li>
+                
+                <li><a href="#accessibilitysupport">Accessibility Support</a></li>
+                
+                <li><a href="#background">Background</a></li>
+                
+                <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
+                
+                <li><a href="#inputrules">Input Rules</a></li>
+                
+                <li><a href="#testcases">Test Cases</a></li>
+                
+                <li><a href="#glossary">Glossary</a></li>
+                
+                <li><a href="#implementations">Implementations</a></li>
+                
+                <li><a href="#changelog">Changelog</a></li>
+                
+                </ul>
+            </div>
+        </aside>
+    
 
     <main id="main" lang="en" class="standalone-resource__main">
         <header>
-          <h1>
-            
-            <span class="standalone-resource__type-of-guidance">
+            <h1>
               
-                Proposed
+              <span class="standalone-resource__type-of-guidance">
+                
+                  Proposed
+                
+                Test Rule:
+              </span>
               
-              
-              Test Rule:
-            </span>
-            
-            Focusable element has no keyboard trap
-          </h1>
+              Focusable element has no keyboard trap
+            </h1>
+        </header>    
 
-          
-          <aside class="box"> 
-            <header class="box-h box-h-icon"> 
-              Rule Mapping 
-            </header>
-            <div class="box-i"> 
-             <p>This is a 
-              <strong>Composite rule</strong> 
-              
-              to test 
-              
-              <strong>2.1.2: No Keyboard Trap (Level A)</strong>
-              
-              
-            </p> 
-            </div>
-           </aside>
-          
-        </header>
+        <aside class="box"> 
+  <header class="box-h box-h-icon"> 
+    Rule Mapping 
+  </header>
+  <div class="box-i"> 
+   <p>This is a 
+    <strong>Composite rule</strong> 
+    
+    to test 
+    
+    <strong>2.1.2: No Keyboard Trap (Level A)</strong>
+    
+    
+  </p> 
+  </div>
+ </aside>
 
-        
-        <h2>Description</h2>
-        <p>This rule checks for keyboard traps. This includes use of both standard and non-standard keyboard navigation to navigate through all content without becoming trapped.</p>
+<h2 id="description">Description</h2>
+<p>This rule checks for keyboard traps. This includes use of both standard and non-standard keyboard navigation to navigate through all content without becoming trapped.</p>
 
-        
 
-        <h2 id="applicability">Applicability</h2>
+<h2 id="applicability">Applicability</h2>
 
 <p>This rule only applies to any <a href="#namespaced-element">HTML or SVG element</a> that is <a href="#focusable" title="Definition of focusable">focusable</a>.</p>
 
@@ -305,8 +397,8 @@
 <p>Outcomes of the following rules are required as input for this rule.</p>
 
 <ul>
-  <li><a href="/WAI/standards-guidelines/act/rules/80af7b/">Focusable element has no keyboard trap via standard navigation</a></li>
-  <li><a href="/WAI/standards-guidelines/act/rules/80af7b/">Focusable element has no keyboard trap via non-standard navigation</a></li>
+  <li><a href="/WAI/standards-guidelines/act/rules/focusable-no-keyboard-trap-standard-nav-a1b64e/">Focusable element has no keyboard trap via standard navigation</a></li>
+  <li><a href="/WAI/standards-guidelines/act/rules/focusable-no-keyboard-trap-non-standard-nav-ebe86a/">Focusable element has no keyboard trap via non-standard navigation</a></li>
 </ul>
 
 <h2 id="testcases">Test Cases</h2>
@@ -315,12 +407,16 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
+<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/96eb4b26010e8c598cb659108dbc34ca0abd82f9.html">Open in a new tab</a></p>
+
 <p>No trap for keyboard navigation.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;button&gt;</span>Button1<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
+
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html">Open in a new tab</a></p>
 
 <p>Using <code class="language-plaintext highlighter-rouge">tabindex="1"</code>.</p>
 
@@ -329,12 +425,16 @@
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
+<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/4b93a866e14ad4c9ed8efa13c080a1e05350fa2f.html">Open in a new tab</a></p>
+
 <p>Using <code class="language-plaintext highlighter-rouge">tabindex="-1"</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-4">Passed Example 4</h4>
+
+<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/2e5b21696d8d78553aef73c00c2c4118a123ce53.html">Open in a new tab</a></p>
 
 <p>Keyboard trap with help information in a paragraph before, and where the method advised works.</p>
 
@@ -359,6 +459,8 @@
 
 <h4 id="passed-example-5">Passed Example 5</h4>
 
+<p><a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/7aa9d83ec176f011c1646a8977070c2b1c5209b6.html">Open in a new tab</a></p>
+
 <p>Keyboard trap with help information within the trap, and where the method advised works.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
@@ -381,6 +483,8 @@
 </code></pre></div></div>
 
 <h4 id="passed-example-6">Passed Example 6</h4>
+
+<p><a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/3432e1dfefcc17bea67a25de3c42a9a4bec73d7c.html">Open in a new tab</a></p>
 
 <p>Keyboard trap with “help” link that once clicked exposes the instructions.</p>
 
@@ -410,6 +514,8 @@
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
+<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/780388a837915960bca7651bd80743fb2cafdbcb.html">Open in a new tab</a></p>
+
 <p>Keyboard trap one element.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
@@ -419,6 +525,8 @@
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
+
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html">Open in a new tab</a></p>
 
 <p>Keyboard trap group.</p>
 
@@ -435,6 +543,8 @@
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
+<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html">Open in a new tab</a></p>
+
 <p>A <a href="#focusable" title="Definition of focusable">focusable</a> element between keyboard traps.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">onblur=</span><span class="s">"setTimeout(() =&gt; this.focus(), 10)"</span><span class="nt">&gt;</span>Button 1<span class="nt">&lt;/button&gt;</span>
@@ -443,6 +553,8 @@
 </code></pre></div></div>
 
 <h4 id="failed-example-4">Failed Example 4</h4>
+
+<p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/5e4c0baac1de5da1325348d49892a01b92f8fb0c.html">Open in a new tab</a></p>
 
 <p>Keyboard trap with no instructions.</p>
 
@@ -465,6 +577,8 @@
 </code></pre></div></div>
 
 <h4 id="failed-example-5">Failed Example 5</h4>
+
+<p><a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/e9885e3c626b0f50853075e86e0b2f82d723bd24.html">Open in a new tab</a></p>
 
 <p>Keyboard trap with instructions that doesn’t give advise on the method for proceeding.</p>
 
@@ -489,6 +603,8 @@
 
 <h4 id="failed-example-6">Failed Example 6</h4>
 
+<p><a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/5cbf445372b50a5ff8e428c6b8b00506b1decddb.html">Open in a new tab</a></p>
+
 <p>Keyboard trap with help text, where the method advised doesn’t work.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
@@ -510,12 +626,16 @@
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
+<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/16dddd8ac5c419caba2c709b1b1f49cc5759e63c.html">Open in a new tab</a></p>
+
 <p>No <a href="#focusable" title="Definition of focusable">focusable</a> element.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Page 1<span class="nt">&lt;/h1&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
+
+<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/6e3dcc2f3612826dd3d8589c4e2951ad7a3e4dd7.html">Open in a new tab</a></p>
 
 <p>Disabled element.</p>
 
@@ -524,12 +644,16 @@
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
+<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/9d47dcc67abbcb177876ce082ae073947cc7135d.html">Open in a new tab</a></p>
+
 <p>Hidden element using <code class="language-plaintext highlighter-rouge">display:none</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">style=</span><span class="s">"display:none;"</span><span class="nt">&gt;</span>Click Me!<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
+
+<p><a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/30ffb2991af4d1727223409c9f1235e44acc1c13.html">Open in a new tab</a></p>
 
 <p>Hidden element using <code class="language-plaintext highlighter-rouge">visibility:hidden</code>.</p>
 
@@ -540,7 +664,21 @@
 
 <h3 id="focusable">Focusable</h3>
 
-<p>Elements that can become the target of keyboard input as described in the <a href="https://www.w3.org/TR/html">HTML</a> specification of <a href="https://html.spec.whatwg.org/#focusable-area">focusable</a> and <a href="https://html.spec.whatwg.org/#specially-focusable">can be focused</a>.</p>
+<p>An element is <em>focusable</em> if one or both of the following are true:</p>
+
+<ul>
+  <li>the element is part of <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>; or</li>
+  <li>the element has a <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> that is not null.</li>
+</ul>
+
+<p><strong>Exception</strong>: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered <em>focusable</em>.</p>
+
+<p>Notes:</p>
+
+<ul>
+  <li>The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.</li>
+  <li>The <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> of an element is the value of the <a href="https://html.spec.whatwg.org/#attr-tabindex">tabindex attribute</a> parsed using the <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">rules for parsing integers</a>. For the <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> to be different from null, it needs to be <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">parsed</a> without errors.</li>
+</ul>
 
 <h3 id="namespaced-element">Namespaced Element</h3>
 
@@ -589,15 +727,19 @@ for details.</p>
     </div>
     <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
   </div>
+
+
   
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
+      
+        style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 80af7b</p>
-<p><strong>Date:</strong> Updated 28 January 2022</p>
+<p><strong>Date:</strong> Updated 16 March 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
   </footer>
   
@@ -636,9 +778,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1647979321465010436"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1647979321465010436"></script>
 <script>
   svg4everybody();
 </script><script>
@@ -662,5 +804,8 @@ for details.</p>
 <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
 
+
+    
   </body>
+
 </html>

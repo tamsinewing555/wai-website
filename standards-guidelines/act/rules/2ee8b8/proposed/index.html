@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
 <head>
@@ -10,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1647636865441836596";
+      element.src = "/WAI/assets/scripts/main.js?1647979321465010436";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647636865441836596">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647979321465010436">
 
-<title> Visible label is part of accessible name | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647636865441836596"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Visible label is part of accessible name[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647979321465010436"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Visible label is part of accessible name" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -41,17 +40,19 @@
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-visible-label-is-part-of-accessible-name ">
-
+  <body id="top" class="page-visible-label-is-part-of-accessible-name  tight-page">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
-    <div class="minimal-header-container default-grid">
-      
+   <div class="minimal-header-container default-grid">
       <div class="minimal-header" id="site-header">
     <div class="minimal-header-name">
         WCAG 2 Test Rules
     </div>
     
+        <div class="minimal-header-subtitle">For developers of evaluation tools and test methodologies</div>
+    
+    
+        <a class="minimal-header-link" href="/WAI/standards-guidelines/act/rules/about/">About WCAG 2 Test Rules</a>
     
     <div class="minimal-header-logo">
         <a href="http://w3.org/">
@@ -63,38 +64,121 @@
     </div>
 </div>
 
-      
     </div>
 
     <div class="default-grid nav-container">
-      
-      <nav class="nav" aria-label="Context for this document">
-        <ul>
+        <div class="nav" >
           
           
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/">All Rules</a></li>
-          
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/about/">About Rules</a></li>
-          
-          <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
-            All WCAG 2 Guidance
-            <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg>
-          </a></li>
-        </ul>
-      </nav>
-      
-    </div>
+          <nav class="nav standalone-resource-pager" aria-label="Item navigation">
+            <ul>
+                <li class="nav__item">
+                    <a href="/standards-guidelines/act/rules/">All Test Rules</a>
+                
+                </li>
 
+                
+            </ul>
+          </nav>
+        
+        </div>
+    </div>
     <div class="default-grid with-gap leftcol">
 
 <style>
+.nav {
+  background: none;
+}
+
+.nav-related-info { /* blue bar with the "About:" links */
+  background: #005a9c;
+  color: #fff;
+}
+
+.nav-related-info a {
+  color: #fff !important;
+}
+
+.nav-page-specific { /* light blue bar with page/section specific navigation/pager */
+  margin-bottom: 1.25em;
+}
+
+.nav a:link, .nav a:visited {
+  color: #036;
+  color: var(--w3c-blue);
+}
+
+.nav a:hover, .nav a:active {
+    color: var(--dk-blue);
+}
+
+.nav-hack.sidebar a:hover,
+.nav-hack.sidebar a:active
+ {
+    color: var(--dk-blue);
+    text-decoration: underline;
+}
+
+.standalone-resource-about, .standalone-resource-pager {
+  margin: 0;
+}
+
+nav.standalone-resource-about {
+  padding: .5em 0 1.5em 0;
+  font-style: italic;
+}
+
+
+.nav .standalone-resource-pager ul {
+  align-items: center;
+}
+
+.nav .standalone-resource-pager a,
+.nav .standalone-resource-pager span {
+
+  margin-left: 0;
+  margin-right: 1.5em;
+  padding: .5em;
+}
+
+
+.pager-icon {
+  vertical-align: middle;
+  padding: 0 0 0.15em 0;
+  margin: 0 -0.4em;
+  width: 1.65em;
+  height: 2em;
+  fill: var(--dk-blue)
+}
+
+.category-icon {
+  vertical-align: middle;
+  padding: 0 0.25em 0.25em 0.25em;
+  width: 2em;
+  height: 2em;
+}
+
+.zstandalone-resource-pager {
+  padding: .7em 0;
+}
+
+.standalone-resource-pager zul {
+  display: block;
+}
+
+.standalone-resource-pager zul li {
+  display: inline;
+}
+
 .nav-hack {
   font-size: .85rem;
+  /*justify-self: end;*/
+  align-self: start;
 }
 .nav-hack ul {
     list-style: none;
     border-bottom: 1px solid #BCBCBC;
-    padding-left: 1rem
+    padding-left: 0
 }
 .nav-hack li:not(:first-child){
     padding-top: 0.4em;
@@ -113,12 +197,6 @@
   margin: 0;
 }
 
-.nav-hack .nav-indent {
-  margin-left: 1rem;
-}
-.nav-hack .nav-indent2 {
-  margin-left: 2rem;
-}
 
 /* skip link */
 .button--skip-link {
@@ -143,90 +221,104 @@
   transform: translateY(-4em);
   opacity: 0;
 }
+
+.standalone-resource-navrule {
+    border:none;
+    border-top: 1px solid grey
+}
+
+.standalone-resource-about ul,
+.standalone-resource-pager ul {
+    list-style: none;
+}
+
+.standalone-resource-about a,
+.standalone-resource-pager a,
+.standalone-resource-about span,
+.standalone-resource-pager span 
+{
+    margin-left:.8em;
+    margin-right:.8em;
+}
+
 </style>
-     
 
     
     
     
-      <nav class="nav-hack your-report your-report--expanded sidebar standalone-resource__sidebar">
-          
-          
-          <h3>This Page Contents</h3>
-            <ul>
+        <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+            <header class="box-h ">Page Contents</header>
             
-            
-              <li><a href="#applicability">Applicability</a></li>
-            
-              <li><a href="#expectation">Expectation</a></li>
-            
-              <li><a href="#assumptions">Assumptions</a></li>
-            
-              <li><a href="#accessibilitysupport">Accessibility Support</a></li>
-            
-              <li><a href="#background">Background</a></li>
-            
-              <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
-            
-              <li><a href="#inputaspects">Input Aspects</a></li>
-            
-              <li><a href="#testcases">Test Cases</a></li>
-            
-              <li><a href="#glossary">Glossary</a></li>
-            
-              <li><a href="#implementations">Implementations</a></li>
-            
-              <li><a href="#changelog">Changelog</a></li>
-            
-            </ul>
-          
-                <p><em>Test Rules describe ways to test conformance to WCAG success criteria. They are <a href="../about">for evaluation</a>.</em></p>
-          
-      </nav>
-      
+            <div class="box-i">
+                <ul>
+                
+                
+                <li><a href="#description">Description</a></li>
+                
+                <li><a href="#applicability">Applicability</a></li>
+                
+                <li><a href="#expectation">Expectation</a></li>
+                
+                <li><a href="#assumptions">Assumptions</a></li>
+                
+                <li><a href="#accessibilitysupport">Accessibility Support</a></li>
+                
+                <li><a href="#background">Background</a></li>
+                
+                <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
+                
+                <li><a href="#inputaspects">Input Aspects</a></li>
+                
+                <li><a href="#testcases">Test Cases</a></li>
+                
+                <li><a href="#glossary">Glossary</a></li>
+                
+                <li><a href="#implementations">Implementations</a></li>
+                
+                <li><a href="#changelog">Changelog</a></li>
+                
+                </ul>
+            </div>
+        </aside>
+    
 
     <main id="main" lang="en" class="standalone-resource__main">
         <header>
-          <h1>
-            
-            <span class="standalone-resource__type-of-guidance">
+            <h1>
               
-                Proposed
+              <span class="standalone-resource__type-of-guidance">
+                
+                  Proposed
+                
+                Test Rule:
+              </span>
               
-              
-              Test Rule:
-            </span>
-            
-            Visible label is part of accessible name
-          </h1>
+              Visible label is part of accessible name
+            </h1>
+        </header>    
 
-          
-          <aside class="box"> 
-            <header class="box-h box-h-icon"> 
-              Rule Mapping 
-            </header>
-            <div class="box-i"> 
-             <p>This is an 
-              <strong>Atomic rule</strong> 
-              
-              to test 
-              
-              <strong>2.5.3: Label in Name (Level A)</strong>
-              
-              
-            </p> 
-            </div>
-           </aside>
-          
-        </header>
+        <aside class="box"> 
+  <header class="box-h box-h-icon"> 
+    Rule Mapping 
+  </header>
+  <div class="box-i"> 
+   <p>This is an 
+    <strong>Atomic rule</strong> 
+    
+    to test 
+    
+    <strong>2.5.3: Label in Name (Level A)</strong>
+    
+    
+  </p> 
+  </div>
+ </aside>
 
-        
-        <h2>Description</h2>
-        <p>This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.</p>
+<h2 id="description">Description</h2>
+<p>This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.</p>
 
-        
 
-        <h2 id="applicability">Applicability</h2>
+<h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any element for which all the following is true:</p>
 
@@ -306,12 +398,16 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
+<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/326f6768ecbf60ca31149e65ab2853c138095fd7.html">Open in a new tab</a></p>
+
 <p>This link has <a href="#visible" title="Definition of visible">visible</a> text that matches the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://act-rules.github.io/"</span> <span class="na">aria-label=</span><span class="s">"ACT rules"</span><span class="nt">&gt;</span>ACT rules<span class="nt">&lt;/a&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
+
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/02f6608c4242efccba3ceeb8b73cc6b1255e362d.html">Open in a new tab</a></p>
 
 <p>This link has <a href="#visible" title="Definition of visible">visible</a> text that, ignoring trailing whitespace, matches the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
 
@@ -320,12 +416,16 @@
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
+<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/71c4a612a2e00a8abd3d33b4a66ca8e5079fff1b.html">Open in a new tab</a></p>
+
 <p>This link has <a href="#visible" title="Definition of visible">visible</a> text that, ignoring case, matches the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://act-rules.github.io/"</span> <span class="na">aria-label=</span><span class="s">"act rules"</span><span class="nt">&gt;</span>ACT rules<span class="nt">&lt;/a&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-4">Passed Example 4</h4>
+
+<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/f88ac89cc14d59302666047a0da91bbc51d27bb2.html">Open in a new tab</a></p>
 
 <p>This button has <a href="#visible" title="Definition of visible">visible</a> text that is contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
 
@@ -334,12 +434,16 @@
 
 <h4 id="passed-example-5">Passed Example 5</h4>
 
+<p><a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html">Open in a new tab</a></p>
+
 <p>This button has <a href="#visible" title="Definition of visible">visible</a> text that does not need to be contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>, because the “x” text node is <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"close"</span><span class="nt">&gt;</span>X<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-6">Passed Example 6</h4>
+
+<p><a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/efa9543339cdad5412c7719b266a633a29ce149e.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">button</code> element has the text “search” rendered as an magnifying glass icon by the font. Because the text is rendered as <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>, the text does not need to be contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
 
@@ -356,6 +460,8 @@
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
+<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/4ee91039726503da19c9bc58e08e800464d94d82.html">Open in a new tab</a></p>
+
 <p>This link has <a href="#visible" title="Definition of visible">visible</a> text that is different from the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://act-rules.github.io/"</span> <span class="na">aria-label=</span><span class="s">"WCAG"</span><span class="nt">&gt;</span>ACT rules<span class="nt">&lt;/a&gt;</span>
@@ -363,12 +469,16 @@
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/8db20b5fa0a59906a7b182c5698d6a9ce7e85f10.html">Open in a new tab</a></p>
+
 <p>This button has <a href="#visible" title="Definition of visible">visible</a> text that is only partially contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"the full"</span><span class="nt">&gt;</span>The full label<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-3">Failed Example 3</h4>
+
+<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html">Open in a new tab</a></p>
 
 <p>This link has <a href="#visible" title="Definition of visible">visible</a> text with mathematical symbols, that does not match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> because the mathematical symbols were written out in the accessible name. This is <a href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name#mathematical-expressions-and-formulae">explicitly mentioned in WCAG</a>.</p>
 
@@ -379,12 +489,16 @@
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
+<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/cf98c9678e70f160afcd5af246c0070550ad7398.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">nav</code> is not a widget, so the <a href="#visible" title="Definition of visible">visible</a> text does not need to match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"main nav"</span><span class="nt">&gt;</span>W3C navigation<span class="nt">&lt;/nav&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
+
+<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/87e3c42fdc98d63d89a6a0d984f44f00adf02015.html">Open in a new tab</a></p>
 
 <p>This email text field does not need to have its <a href="#visible" title="Definition of visible">visible</a> text match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>. The content of a textfield shows its value instead of its label; it does not <a href="https://www.w3.org/TR/wai-aria-1.1/#namefromcontent" title="Definition of Supports name from contents">support name from content</a>. The label is usually adjacent to the textfield instead.</p>
 
@@ -394,12 +508,16 @@
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
+<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/f02ba15667ff1b80a269e5ce66f152e93396c029.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">div</code> element does not have a widget role, so the <a href="#visible" title="Definition of visible">visible</a> text does not need to match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tooltip"</span> <span class="na">aria-label=</span><span class="s">"OK"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
+
+<p><a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/8c26a3506e424766019341f3b86d2f758ca1aced.html">Open in a new tab</a></p>
 
 <p>This link has no <a href="#visible-text-content" title="Definition of Visible text content">visible text content</a>.</p>
 
@@ -434,7 +552,21 @@
 
 <h3 id="focusable">Focusable</h3>
 
-<p>Elements that can become the target of keyboard input as described in the <a href="https://www.w3.org/TR/html">HTML</a> specification of <a href="https://html.spec.whatwg.org/#focusable-area">focusable</a> and <a href="https://html.spec.whatwg.org/#specially-focusable">can be focused</a>.</p>
+<p>An element is <em>focusable</em> if one or both of the following are true:</p>
+
+<ul>
+  <li>the element is part of <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>; or</li>
+  <li>the element has a <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> that is not null.</li>
+</ul>
+
+<p><strong>Exception</strong>: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered <em>focusable</em>.</p>
+
+<p>Notes:</p>
+
+<ul>
+  <li>The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.</li>
+  <li>The <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> of an element is the value of the <a href="https://html.spec.whatwg.org/#attr-tabindex">tabindex attribute</a> parsed using the <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">rules for parsing integers</a>. For the <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> to be different from null, it needs to be <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">parsed</a> without errors.</li>
+</ul>
 
 <h3 id="implicit-role">Implicit Semantic Role</h3>
 
@@ -484,12 +616,13 @@
 <p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>:</p>
 
 <ul>
-  <li>has a <code class="language-plaintext highlighter-rouge">hidden</code> attribute; or</li>
   <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
   <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
 </ul>
 
 <p><strong>Note</strong>: Contrarily to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
+
+<p><strong>Note</strong>: The <a href="https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements">HTML standard suggests</a> rendering elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute with a CSS rule that applies the value <code class="language-plaintext highlighter-rouge">none</code> to the CSS property <code class="language-plaintext highlighter-rouge">display</code> of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the <code class="language-plaintext highlighter-rouge">display</code> property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.</p>
 
 <h3 id="semantic-role">Semantic Role</h3>
 
@@ -607,15 +740,19 @@ not accounted for in the change history or the last modified date.</p>
     </div>
     <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
   </div>
+
+
   
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
+      
+        style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 2ee8b8</p>
-<p><strong>Date:</strong> Updated 28 January 2022</p>
+<p><strong>Date:</strong> Updated 16 March 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
   </footer>
   
@@ -654,9 +791,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1647979321465010436"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1647979321465010436"></script>
 <script>
   svg4everybody();
 </script><script>
@@ -680,5 +817,8 @@ not accounted for in the change history or the last modified date.</p>
 <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
 
+
+    
   </body>
+
 </html>

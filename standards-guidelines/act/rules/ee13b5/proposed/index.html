@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
 <head>
@@ -10,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1647636865441836596";
+      element.src = "/WAI/assets/scripts/main.js?1647979321465010436";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647636865441836596">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647979321465010436">
 
-<title> video element visual-only content has transcript | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647636865441836596"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> video element visual-only content has transcript[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647979321465010436"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="video element visual-only content has transcript" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -41,17 +40,19 @@
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-video-element-visual-only-content-has-transcript ">
-
+  <body id="top" class="page-video-element-visual-only-content-has-transcript  tight-page">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
-    <div class="minimal-header-container default-grid">
-      
+   <div class="minimal-header-container default-grid">
       <div class="minimal-header" id="site-header">
     <div class="minimal-header-name">
         WCAG 2 Test Rules
     </div>
     
+        <div class="minimal-header-subtitle">For developers of evaluation tools and test methodologies</div>
+    
+    
+        <a class="minimal-header-link" href="/WAI/standards-guidelines/act/rules/about/">About WCAG 2 Test Rules</a>
     
     <div class="minimal-header-logo">
         <a href="http://w3.org/">
@@ -63,38 +64,121 @@
     </div>
 </div>
 
-      
     </div>
 
     <div class="default-grid nav-container">
-      
-      <nav class="nav" aria-label="Context for this document">
-        <ul>
+        <div class="nav" >
           
           
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/">All Rules</a></li>
-          
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/about/">About Rules</a></li>
-          
-          <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
-            All WCAG 2 Guidance
-            <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg>
-          </a></li>
-        </ul>
-      </nav>
-      
-    </div>
+          <nav class="nav standalone-resource-pager" aria-label="Item navigation">
+            <ul>
+                <li class="nav__item">
+                    <a href="/standards-guidelines/act/rules/">All Test Rules</a>
+                
+                </li>
 
+                
+            </ul>
+          </nav>
+        
+        </div>
+    </div>
     <div class="default-grid with-gap leftcol">
 
 <style>
+.nav {
+  background: none;
+}
+
+.nav-related-info { /* blue bar with the "About:" links */
+  background: #005a9c;
+  color: #fff;
+}
+
+.nav-related-info a {
+  color: #fff !important;
+}
+
+.nav-page-specific { /* light blue bar with page/section specific navigation/pager */
+  margin-bottom: 1.25em;
+}
+
+.nav a:link, .nav a:visited {
+  color: #036;
+  color: var(--w3c-blue);
+}
+
+.nav a:hover, .nav a:active {
+    color: var(--dk-blue);
+}
+
+.nav-hack.sidebar a:hover,
+.nav-hack.sidebar a:active
+ {
+    color: var(--dk-blue);
+    text-decoration: underline;
+}
+
+.standalone-resource-about, .standalone-resource-pager {
+  margin: 0;
+}
+
+nav.standalone-resource-about {
+  padding: .5em 0 1.5em 0;
+  font-style: italic;
+}
+
+
+.nav .standalone-resource-pager ul {
+  align-items: center;
+}
+
+.nav .standalone-resource-pager a,
+.nav .standalone-resource-pager span {
+
+  margin-left: 0;
+  margin-right: 1.5em;
+  padding: .5em;
+}
+
+
+.pager-icon {
+  vertical-align: middle;
+  padding: 0 0 0.15em 0;
+  margin: 0 -0.4em;
+  width: 1.65em;
+  height: 2em;
+  fill: var(--dk-blue)
+}
+
+.category-icon {
+  vertical-align: middle;
+  padding: 0 0.25em 0.25em 0.25em;
+  width: 2em;
+  height: 2em;
+}
+
+.zstandalone-resource-pager {
+  padding: .7em 0;
+}
+
+.standalone-resource-pager zul {
+  display: block;
+}
+
+.standalone-resource-pager zul li {
+  display: inline;
+}
+
 .nav-hack {
   font-size: .85rem;
+  /*justify-self: end;*/
+  align-self: start;
 }
 .nav-hack ul {
     list-style: none;
     border-bottom: 1px solid #BCBCBC;
-    padding-left: 1rem
+    padding-left: 0
 }
 .nav-hack li:not(:first-child){
     padding-top: 0.4em;
@@ -113,12 +197,6 @@
   margin: 0;
 }
 
-.nav-hack .nav-indent {
-  margin-left: 1rem;
-}
-.nav-hack .nav-indent2 {
-  margin-left: 2rem;
-}
 
 /* skip link */
 .button--skip-link {
@@ -143,85 +221,99 @@
   transform: translateY(-4em);
   opacity: 0;
 }
+
+.standalone-resource-navrule {
+    border:none;
+    border-top: 1px solid grey
+}
+
+.standalone-resource-about ul,
+.standalone-resource-pager ul {
+    list-style: none;
+}
+
+.standalone-resource-about a,
+.standalone-resource-pager a,
+.standalone-resource-about span,
+.standalone-resource-pager span 
+{
+    margin-left:.8em;
+    margin-right:.8em;
+}
+
 </style>
-     
 
     
     
     
-      <nav class="nav-hack your-report your-report--expanded sidebar standalone-resource__sidebar">
-          
-          
-          <h3>This Page Contents</h3>
-            <ul>
+        <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+            <header class="box-h ">Page Contents</header>
             
-            
-              <li><a href="#applicability">Applicability</a></li>
-            
-              <li><a href="#expectation">Expectation</a></li>
-            
-              <li><a href="#assumptions">Assumptions</a></li>
-            
-              <li><a href="#accessibilitysupport">Accessibility Support</a></li>
-            
-              <li><a href="#background">Background</a></li>
-            
-              <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
-            
-              <li><a href="#inputaspects">Input Aspects</a></li>
-            
-              <li><a href="#testcases">Test Cases</a></li>
-            
-              <li><a href="#glossary">Glossary</a></li>
-            
-              <li><a href="#implementations">Implementations</a></li>
-            
-              <li><a href="#changelog">Changelog</a></li>
-            
-            </ul>
-          
-                <p><em>Test Rules describe ways to test conformance to WCAG success criteria. They are <a href="../about">for evaluation</a>.</em></p>
-          
-      </nav>
-      
+            <div class="box-i">
+                <ul>
+                
+                
+                <li><a href="#description">Description</a></li>
+                
+                <li><a href="#applicability">Applicability</a></li>
+                
+                <li><a href="#expectation">Expectation</a></li>
+                
+                <li><a href="#assumptions">Assumptions</a></li>
+                
+                <li><a href="#accessibilitysupport">Accessibility Support</a></li>
+                
+                <li><a href="#background">Background</a></li>
+                
+                <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
+                
+                <li><a href="#inputaspects">Input Aspects</a></li>
+                
+                <li><a href="#testcases">Test Cases</a></li>
+                
+                <li><a href="#glossary">Glossary</a></li>
+                
+                <li><a href="#implementations">Implementations</a></li>
+                
+                <li><a href="#changelog">Changelog</a></li>
+                
+                </ul>
+            </div>
+        </aside>
+    
 
     <main id="main" lang="en" class="standalone-resource__main">
         <header>
-          <h1>
-            
-            <span class="standalone-resource__type-of-guidance">
+            <h1>
               
-                Proposed
+              <span class="standalone-resource__type-of-guidance">
+                
+                  Proposed
+                
+                Test Rule:
+              </span>
               
-              
-              Test Rule:
-            </span>
-            
-            video element visual-only content has transcript
-          </h1>
+              video element visual-only content has transcript
+            </h1>
+        </header>    
 
-          
-          <aside class="box"> 
-            <header class="box-h box-h-icon"> 
-              Rule Mapping 
-            </header>
-            <div class="box-i"> 
-             <p>This is an 
-              <strong>Atomic rule</strong> 
-              
-            </p> 
-            </div>
-           </aside>
-          
-        </header>
+        <aside class="box"> 
+  <header class="box-h box-h-icon"> 
+    Rule Mapping 
+  </header>
+  <div class="box-i"> 
+   <p>This is an 
+    <strong>Atomic rule</strong> 
+    
+  </p> 
+  </div>
+ </aside>
 
-        
-        <h2>Description</h2>
-        <p>Non-streaming <code class="language-plaintext highlighter-rouge">video</code> elements without audio must have all visual information available in a transcript.</p>
+<h2 id="description">Description</h2>
+<p>Non-streaming <code class="language-plaintext highlighter-rouge">video</code> elements without audio must have all visual information available in a transcript.</p>
 
-        
 
-        <h2 id="applicability">Applicability</h2>
+<h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="#non-streaming-media-element">non-streaming</a> <code class="language-plaintext highlighter-rouge">video</code> element that is <a href="#visible" title="Definition of visible">visible</a> where the video does not contain audio.</p>
 
@@ -286,6 +378,8 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
+<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/ce350e33e78f587703aa35b78fa319b9efe9291d.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">video</code> element, which has no audio, has a text transcript available on the same page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -300,6 +394,8 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
+
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/6c6ed7e366a868cd4f7b7a9189d5c9d42a7860d3.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">video</code> element, which has no audio, has a transcript which conveys information included in the video-only content. The transcript is available through a link on the same page.</p>
 
@@ -316,6 +412,8 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
+<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/85f2613e6d1b419d8677126efa09efb26f31c34e.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">video</code> element, which has no audio, has an incorrect text transcript available on the same page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -331,6 +429,8 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/5ed3a98f771c2069c1d4581ff5f85cc38d9b5ec0.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">video</code> element, which has no audio, has an incorrect text transcript available through a link on the same page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -343,6 +443,8 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-3">Failed Example 3</h4>
+
+<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/2c65fa349cb946546f44966db62c0664cf94fffd.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">video</code> element, which has no audio, has a text transcript available on the same page, but the transcript is not <a href="#visible" title="Definition of visible">visible</a>.</p>
 
@@ -358,6 +460,8 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-4">Failed Example 4</h4>
+
+<p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/2f30ed0681d28bdd6f5535c844b7747880beb5e7.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">video</code> element, which has no audio, has a text transcript available on the same page, but the transcript is not <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
 
@@ -376,6 +480,8 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
+<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/c2b01e0d7fd2bfa875d2f3395f57f831745f03de.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">video</code> element has audio.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -388,6 +494,8 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
+
+<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/413a36ac05a2f6d50722a7614a86184c664053b4.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">video</code> element is not <a href="#visible" title="Definition of visible">visible</a>.</p>
 
@@ -404,7 +512,21 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
 
 <h3 id="focusable">Focusable</h3>
 
-<p>Elements that can become the target of keyboard input as described in the <a href="https://www.w3.org/TR/html">HTML</a> specification of <a href="https://html.spec.whatwg.org/#focusable-area">focusable</a> and <a href="https://html.spec.whatwg.org/#specially-focusable">can be focused</a>.</p>
+<p>An element is <em>focusable</em> if one or both of the following are true:</p>
+
+<ul>
+  <li>the element is part of <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>; or</li>
+  <li>the element has a <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> that is not null.</li>
+</ul>
+
+<p><strong>Exception</strong>: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered <em>focusable</em>.</p>
+
+<p>Notes:</p>
+
+<ul>
+  <li>The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.</li>
+  <li>The <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> of an element is the value of the <a href="https://html.spec.whatwg.org/#attr-tabindex">tabindex attribute</a> parsed using the <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">rules for parsing integers</a>. For the <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> to be different from null, it needs to be <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">parsed</a> without errors.</li>
+</ul>
 
 <h3 id="included-in-the-accessibility-tree">Included in the accessibility tree</h3>
 
@@ -439,12 +561,13 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
 <p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>:</p>
 
 <ul>
-  <li>has a <code class="language-plaintext highlighter-rouge">hidden</code> attribute; or</li>
   <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
   <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
 </ul>
 
 <p><strong>Note</strong>: Contrarily to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
+
+<p><strong>Note</strong>: The <a href="https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements">HTML standard suggests</a> rendering elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute with a CSS rule that applies the value <code class="language-plaintext highlighter-rouge">none</code> to the CSS property <code class="language-plaintext highlighter-rouge">display</code> of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the <code class="language-plaintext highlighter-rouge">display</code> property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.</p>
 
 <h3 id="visible">Visible</h3>
 
@@ -483,15 +606,19 @@ for details.</p>
     </div>
     <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
   </div>
+
+
   
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
+      
+        style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> ee13b5</p>
-<p><strong>Date:</strong> Updated 28 January 2022</p>
+<p><strong>Date:</strong> Updated 16 March 2022</p>
 <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
   </footer>
   
@@ -530,9 +657,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1647979321465010436"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1647979321465010436"></script>
 <script>
   svg4everybody();
 </script><script>
@@ -556,5 +683,8 @@ for details.</p>
 <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
 
+
+    
   </body>
+
 </html>

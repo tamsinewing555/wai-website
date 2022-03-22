@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
 <head>
@@ -10,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1647636865441836596";
+      element.src = "/WAI/assets/scripts/main.js?1647979321465010436";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647636865441836596">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647979321465010436">
 
-<title> Line height in style attributes is not !important | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647636865441836596"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Line height in style attributes is not !important[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647979321465010436"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Line height in style attributes is not !important" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -41,17 +40,19 @@
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-line-height-in-style-attributes-is-not-important ">
-
+  <body id="top" class="page-line-height-in-style-attributes-is-not-important  tight-page">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
-    <div class="minimal-header-container default-grid">
-      
+   <div class="minimal-header-container default-grid">
       <div class="minimal-header" id="site-header">
     <div class="minimal-header-name">
         WCAG 2 Test Rules
     </div>
     
+        <div class="minimal-header-subtitle">For developers of evaluation tools and test methodologies</div>
+    
+    
+        <a class="minimal-header-link" href="/WAI/standards-guidelines/act/rules/about/">About WCAG 2 Test Rules</a>
     
     <div class="minimal-header-logo">
         <a href="http://w3.org/">
@@ -63,38 +64,121 @@
     </div>
 </div>
 
-      
     </div>
 
     <div class="default-grid nav-container">
-      
-      <nav class="nav" aria-label="Context for this document">
-        <ul>
+        <div class="nav" >
           
           
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/">All Rules</a></li>
-          
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/about/">About Rules</a></li>
-          
-          <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
-            All WCAG 2 Guidance
-            <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg>
-          </a></li>
-        </ul>
-      </nav>
-      
-    </div>
+          <nav class="nav standalone-resource-pager" aria-label="Item navigation">
+            <ul>
+                <li class="nav__item">
+                    <a href="/standards-guidelines/act/rules/">All Test Rules</a>
+                
+                </li>
 
+                
+            </ul>
+          </nav>
+        
+        </div>
+    </div>
     <div class="default-grid with-gap leftcol">
 
 <style>
+.nav {
+  background: none;
+}
+
+.nav-related-info { /* blue bar with the "About:" links */
+  background: #005a9c;
+  color: #fff;
+}
+
+.nav-related-info a {
+  color: #fff !important;
+}
+
+.nav-page-specific { /* light blue bar with page/section specific navigation/pager */
+  margin-bottom: 1.25em;
+}
+
+.nav a:link, .nav a:visited {
+  color: #036;
+  color: var(--w3c-blue);
+}
+
+.nav a:hover, .nav a:active {
+    color: var(--dk-blue);
+}
+
+.nav-hack.sidebar a:hover,
+.nav-hack.sidebar a:active
+ {
+    color: var(--dk-blue);
+    text-decoration: underline;
+}
+
+.standalone-resource-about, .standalone-resource-pager {
+  margin: 0;
+}
+
+nav.standalone-resource-about {
+  padding: .5em 0 1.5em 0;
+  font-style: italic;
+}
+
+
+.nav .standalone-resource-pager ul {
+  align-items: center;
+}
+
+.nav .standalone-resource-pager a,
+.nav .standalone-resource-pager span {
+
+  margin-left: 0;
+  margin-right: 1.5em;
+  padding: .5em;
+}
+
+
+.pager-icon {
+  vertical-align: middle;
+  padding: 0 0 0.15em 0;
+  margin: 0 -0.4em;
+  width: 1.65em;
+  height: 2em;
+  fill: var(--dk-blue)
+}
+
+.category-icon {
+  vertical-align: middle;
+  padding: 0 0.25em 0.25em 0.25em;
+  width: 2em;
+  height: 2em;
+}
+
+.zstandalone-resource-pager {
+  padding: .7em 0;
+}
+
+.standalone-resource-pager zul {
+  display: block;
+}
+
+.standalone-resource-pager zul li {
+  display: inline;
+}
+
 .nav-hack {
   font-size: .85rem;
+  /*justify-self: end;*/
+  align-self: start;
 }
 .nav-hack ul {
     list-style: none;
     border-bottom: 1px solid #BCBCBC;
-    padding-left: 1rem
+    padding-left: 0
 }
 .nav-hack li:not(:first-child){
     padding-top: 0.4em;
@@ -113,12 +197,6 @@
   margin: 0;
 }
 
-.nav-hack .nav-indent {
-  margin-left: 1rem;
-}
-.nav-hack .nav-indent2 {
-  margin-left: 2rem;
-}
 
 /* skip link */
 .button--skip-link {
@@ -143,92 +221,106 @@
   transform: translateY(-4em);
   opacity: 0;
 }
+
+.standalone-resource-navrule {
+    border:none;
+    border-top: 1px solid grey
+}
+
+.standalone-resource-about ul,
+.standalone-resource-pager ul {
+    list-style: none;
+}
+
+.standalone-resource-about a,
+.standalone-resource-pager a,
+.standalone-resource-about span,
+.standalone-resource-pager span 
+{
+    margin-left:.8em;
+    margin-right:.8em;
+}
+
 </style>
-     
 
     
     
     
-      <nav class="nav-hack your-report your-report--expanded sidebar standalone-resource__sidebar">
-          
-          
-          <h3>This Page Contents</h3>
-            <ul>
+        <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+            <header class="box-h ">Page Contents</header>
             
-            
-              <li><a href="#applicability">Applicability</a></li>
-            
-              <li><a href="#expectation">Expectation</a></li>
-            
-              <li><a href="#assumptions">Assumptions</a></li>
-            
-              <li><a href="#accessibilitysupport">Accessibility Support</a></li>
-            
-              <li><a href="#background">Background</a></li>
-            
-              <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
-            
-              <li><a href="#inputaspects">Input Aspects</a></li>
-            
-              <li><a href="#testcases">Test Cases</a></li>
-            
-              <li><a href="#glossary">Glossary</a></li>
-            
-              <li><a href="#implementations">Implementations</a></li>
-            
-              <li><a href="#changelog">Changelog</a></li>
-            
-            </ul>
-          
-                <p><em>Test Rules describe ways to test conformance to WCAG success criteria. They are <a href="../about">for evaluation</a>.</em></p>
-          
-      </nav>
-      
+            <div class="box-i">
+                <ul>
+                
+                
+                <li><a href="#description">Description</a></li>
+                
+                <li><a href="#applicability">Applicability</a></li>
+                
+                <li><a href="#expectation">Expectation</a></li>
+                
+                <li><a href="#assumptions">Assumptions</a></li>
+                
+                <li><a href="#accessibilitysupport">Accessibility Support</a></li>
+                
+                <li><a href="#background">Background</a></li>
+                
+                <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
+                
+                <li><a href="#inputaspects">Input Aspects</a></li>
+                
+                <li><a href="#testcases">Test Cases</a></li>
+                
+                <li><a href="#glossary">Glossary</a></li>
+                
+                <li><a href="#implementations">Implementations</a></li>
+                
+                <li><a href="#changelog">Changelog</a></li>
+                
+                </ul>
+            </div>
+        </aside>
+    
 
     <main id="main" lang="en" class="standalone-resource__main">
         <header>
-          <h1>
-            
-            <span class="standalone-resource__type-of-guidance">
+            <h1>
               
-                Proposed
+              <span class="standalone-resource__type-of-guidance">
+                
+                  Proposed
+                
+                Test Rule:
+              </span>
               
-              
-              Test Rule:
-            </span>
-            
-            Line height in style attributes is not !important
-          </h1>
+              Line height in style attributes is not !important
+            </h1>
+        </header>    
 
-          
-          <aside class="box"> 
-            <header class="box-h box-h-icon"> 
-              Rule Mapping 
-            </header>
-            <div class="box-i"> 
-             <p>This is an 
-              <strong>Atomic rule</strong> 
-              
-              to test 
-              
-              <strong>1.4.12: Text Spacing (Level AA)</strong>
-              
-              
-            </p> 
-            </div>
-           </aside>
-          
-        </header>
+        <aside class="box"> 
+  <header class="box-h box-h-icon"> 
+    Rule Mapping 
+  </header>
+  <div class="box-i"> 
+   <p>This is an 
+    <strong>Atomic rule</strong> 
+    
+    to test 
+    
+    <strong>1.4.12: Text Spacing (Level AA)</strong>
+    
+    
+  </p> 
+  </div>
+ </aside>
 
-        
-        <h2>Description</h2>
-        <p>This rule checks that the <code class="language-plaintext highlighter-rouge">style</code> attribute is not used to prevent adjusting <code class="language-plaintext highlighter-rouge">line-height</code> by using <code class="language-plaintext highlighter-rouge">!important</code>, except if it’s at least 1.5 times the font size.</p>
+<h2 id="description">Description</h2>
+<p>This rule checks that the <code class="language-plaintext highlighter-rouge">style</code> attribute is not used to prevent adjusting <code class="language-plaintext highlighter-rouge">line-height</code> by using <code class="language-plaintext highlighter-rouge">!important</code>, except if it’s at least 1.5 times the font size.</p>
 
-        
 
-        <h2 id="applicability">Applicability</h2>
+<h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to any <a href="#namespaced-element">HTML element</a> that is <a href="#visible" title="Definition of visible">visible</a> and for which the <code class="language-plaintext highlighter-rouge">style</code> attribute <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declares</a> the <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> CSS property.</p>
+<p>This rule applies to any HTML element with <a href="#visible" title="Definition of visible">visible</a> text that includes a <a href="https://www.w3.org/TR/css-text-3/#soft-wrap-break">soft wrap break</a> and for which the <code class="language-plaintext highlighter-rouge">style</code> attribute <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declares</a> the <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> CSS property.</p>
 
 <h2 id="expectation">Expectation</h2>
 
@@ -236,7 +328,7 @@
 
 <ul>
   <li><strong>not important</strong>: the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> property is not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>; or</li>
-  <li><strong>large enough</strong>: the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> property is not <code class="language-plaintext highlighter-rouge">normal</code>, and is at least <code class="language-plaintext highlighter-rouge">1.5</code> or 1.5 times the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <a href="https://www.w3.org/TR/css-fonts-4/#propdef-font-size" title="CSS Fonts Module Level 4 (Working draft) - Font size: the font-size property">font-size</a> property; or</li>
+  <li><strong>large enough</strong>: the <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value of its <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> property is at least 1.5 times the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <a href="https://www.w3.org/TR/css-fonts-4/#propdef-font-size" title="CSS Fonts Module Level 4 (Working draft) - Font size: the font-size property">font-size</a> property; or</li>
   <li><strong>cascade</strong>: the <a href="https://www.w3.org/TR/css-cascade-4/#cascaded" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascaded Values">cascaded</a> value of its <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> property is not a value <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in its <code class="language-plaintext highlighter-rouge">style</code> attribute.</li>
 </ul>
 
@@ -247,19 +339,24 @@
     <p>There is no mechanism available on the page to adjust <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a>. If there is such a mechanism, it is possible to fail this rule while <a href="https://www.w3.org/TR/WCAG21/#text-spacing" title="Success Criterion 1.4.12 Text Spacing">Success Criterion 1.4.12 Text Spacing</a> is still satisfied.</p>
   </li>
   <li>
-    <p>This rule assumes that when the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of the <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> property is <code class="language-plaintext highlighter-rouge">normal</code>, user agents chose a <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value below 1.5. <a href="https://drafts.csswg.org/css2/#valdef-line-height-normal" title="CSS 2.2 (Editor's draft) - normal line-height">CSS recommendation</a> is to have a <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value between 1.0 and 1.2, thus too small to satisfy <a href="https://www.w3.org/TR/WCAG21/#text-spacing" title="Success Criterion 1.4.12 Text Spacing">Success Criterion 1.4.12 Text Spacing</a>.</p>
+    <p>The font size is constant for all text in the element. If font-size changes (e.g., through use of the <code class="language-plaintext highlighter-rouge">::first-line</code> pseudo-element) then the required line height would also change throughout the element. This is untested by the current rule.</p>
+  </li>
+  <li>
+    <p>No other style attributes are used to increase or decrease the distance between lines of text. For example, style attributes such as <code class="language-plaintext highlighter-rouge">position</code>, <code class="language-plaintext highlighter-rouge">padding</code>, and <code class="language-plaintext highlighter-rouge">margin</code> could be used to increase the distance between lines of text to meet <a href="https://www.w3.org/TR/WCAG21/#text-spacing" title="Success Criterion 1.4.12 Text Spacing">Success Criterion 1.4.12 Text Spacing</a>. Oppositely, those style attributes could also be used to reduce the distance between lines of text. Thus, it is possible to pass this rule, but still fail <a href="https://www.w3.org/TR/WCAG21/#text-spacing" title="Success Criterion 1.4.12 Text Spacing">Success Criterion 1.4.12 Text Spacing</a> due to other styling choices.</p>
   </li>
 </ul>
 
 <h2 id="accessibilitysupport">Accessibility Support</h2>
 
-<p>While some assistive technologies are able to set <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-user" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin">user origin</a> or <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin">user agent origin</a> styles, others, such as browser extensions, are only able to set styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>. Such assistive technologies cannot create styles “winning” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over a <code class="language-plaintext highlighter-rouge">style</code> attribute with an <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> declaration. If accessibility support does not include assistive technologies that override <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> through <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>, this rule should not be used.</p>
+<p>While some assistive technologies are able to set <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-user" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin">user origin</a> or <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin">user agent origin</a> styles, others, such as browser extensions, are only able to set styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>. Such assistive technologies cannot create styles “winning” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over a <code class="language-plaintext highlighter-rouge">style</code> attribute with an <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> declaration.</p>
 
 <h2 id="background">Background</h2>
 
 <p>When a style is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in the <code class="language-plaintext highlighter-rouge">style</code> attribute with an <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> declaration, it “wins” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over any other style from <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>, i.e. it cannot be overridden by any of these. On the other hand, if such a style is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in a style sheet, it can still “lose” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> to declarations with higher <a href="https://www.w3.org/TR/selectors/#specificity" title="CSS Selectors Level 4 (Working draft) - Specificity">specificity</a> or simply coming from a later style sheet (such as ones injected by assistive technologies). This rule ensures that the element is not in the first case and that the style can be overridden by users, unless it is already at least the minimum recommended threshold. <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">Important</a> styles that are declared with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-user" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin">user</a> or <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin">user agent</a> origin can win the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>.</p>
 
 <p>CSS specifications define each declaration as being either <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> (if is as the <code class="language-plaintext highlighter-rouge">!important</code> annotation) or <a href="https://www.w3.org/TR/css-cascade-4/#normal" title="CSS Cascading and Inheritance Level 4 (Working draft) - Normal declarations">normal</a>. Given that <code class="language-plaintext highlighter-rouge">normal</code> is also a keyword for this property, and that <code class="language-plaintext highlighter-rouge">!important</code> is wider known that this distinction, this rule rather uses “<a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>”/”not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>” to avoid confusion.</p>
+
+<p>This rule evaluates the <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value of the <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> property instead of its <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value because the <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value is guaranteed to use absolute units (i.e., pixels). This streamlines comparison with the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <a href="https://www.w3.org/TR/css-fonts-4/#propdef-font-size" title="CSS Fonts Module Level 4 (Working draft) - Font size: the font-size property">font-size</a> which is also absolute. The <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> may be a unitless number that is harder to compare.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -301,25 +398,31 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
+<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/f6c53855436de3898c29ee685d5c1cf02be24c72.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <strong>not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a></strong> <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1.2em"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1.2em; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of twice the font size, which is <strong>large enough</strong>.</p>
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/a4c9e1fbd1f25787a4906a79d5ab23c975120833.html">Open in a new tab</a></p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 2em !important"</span><span class="nt">&gt;</span>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> <code class="language-plaintext highlighter-rouge">line-height</code> of twice the font size, which is <strong>large enough</strong>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 2em !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">30px</code>, which is <strong>large enough</strong> (the threshold is <code class="language-plaintext highlighter-rouge">30px</code>).</p>
+<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/203a13b314695fc2abc6163b3ac7940ab1c4a9ed.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">30px</code>, which is <strong>large enough</strong> (the threshold is <code class="language-plaintext highlighter-rouge">30px</code>).</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
 	<span class="nt">p</span> <span class="p">{</span>
@@ -327,14 +430,16 @@
 	<span class="p">}</span>
 <span class="nt">&lt;/style&gt;</span>
 
-<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 30px !important"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 30px !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-4">Passed Example 4</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">25.6px</code> (160% of <code class="language-plaintext highlighter-rouge">16px</code>) which is <strong>large enough</strong>.</p>
+<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/82c89e74b17e53b55a8d56f23dddbfbe04bc163e.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">25.6px</code> (160% of <code class="language-plaintext highlighter-rouge">16px</code>) which is <strong>large enough</strong>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
 	<span class="nt">p</span> <span class="p">{</span>
@@ -342,39 +447,47 @@
 	<span class="p">}</span>
 <span class="nt">&lt;/style&gt;</span>
 
-<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 160% !important"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 160% !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-5">Passed Example 5</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">1.6</code> which is <strong>large enough</strong>.</p>
+<p><a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/844c8f6a1100db804ee5b4d335098a74ff628238.html">Open in a new tab</a></p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1.6 !important"</span><span class="nt">&gt;</span>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">1.6</code> which is <strong>large enough</strong>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1.6 !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-6">Passed Example 6</h4>
 
+<p><a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/639b3bdba21f19efaa8fc304a8f95e6e7105e3cb.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has two <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> values for its <code class="language-plaintext highlighter-rouge">line-height</code> property. The latest wins the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a>. It has a value of <code class="language-plaintext highlighter-rouge">2em</code>, which is <strong>large enough</strong>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1em !important; line-height: 2em !important"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1em !important; line-height: 2em !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-7">Passed Example 7</h4>
 
+<p><a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0dcc810409a65f29f559c4826afbaa71bcba6ae0.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has two <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> values for its <code class="language-plaintext highlighter-rouge">line-height</code> property. The one which is <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> wins the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a>. It has a value of <code class="language-plaintext highlighter-rouge">2em</code>, which is <strong>large enough</strong>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 2em !important; line-height: 1em"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 2em !important; line-height: 1em; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-8">Passed Example 8</h4>
+
+<p><a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/a2bfcb630ad36d8f8e49fb02aa5b3d8db2aec2fc.html">Open in a new tab</a></p>
 
 <p>The <a href="https://www.w3.org/TR/css-cascade-4/#cascaded" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascaded Values">cascaded</a> value of the <code class="language-plaintext highlighter-rouge">line-height</code> property of this <code class="language-plaintext highlighter-rouge">p</code> element is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in the style sheet, not in the <code class="language-plaintext highlighter-rouge">style</code> attribute (it wins the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> because it is <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>). Thus, the <code class="language-plaintext highlighter-rouge">p</code> element matches the <strong>cascade</strong> condition.</p>
 
@@ -384,17 +497,19 @@
 	<span class="p">}</span>
 <span class="nt">&lt;/style&gt;</span>
 
-<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 2em"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 2em; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-9">Passed Example 9</h4>
 
+<p><a class="example-link" title="Passed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/b3ba5eaa37846b4b01ca04ae6e5f2d54c4813c1d.html">Open in a new tab</a></p>
+
 <p>The <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of the <code class="language-plaintext highlighter-rouge">line-height</code> property of this <code class="language-plaintext highlighter-rouge">p</code> element is <strong>not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a></strong>. The <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of the <code class="language-plaintext highlighter-rouge">line-height</code> property of this <code class="language-plaintext highlighter-rouge">span</code> element is the <a href="https://www.w3.org/TR/css-cascade-4/#inheriting" title="CSS Cascading and Inheritance Level 4 (Working draft) - Inherited Values">inherited</a> value, that is the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its parent and therefore also <strong>not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a></strong>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1.2em"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"line-height: inherit !important;"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"line-height: inherit !important; display: block; max-width: 200px;"</span><span class="nt">&gt;</span>
 		The toy brought back fond memories of being lost in the rain forest.
 	<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/p&gt;</span>
@@ -402,10 +517,12 @@
 
 <h4 id="passed-example-10">Passed Example 10</h4>
 
+<p><a class="example-link" title="Passed Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0f8063a09807c4bf8d5f7c796cbf0f2aa20e7e57.html">Open in a new tab</a></p>
+
 <p>The <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of the <code class="language-plaintext highlighter-rouge">line-height</code> property of this <code class="language-plaintext highlighter-rouge">p</code> element is <strong>not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a></strong>. The <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of the <code class="language-plaintext highlighter-rouge">line-height</code> property of this <code class="language-plaintext highlighter-rouge">span</code> element is the <a href="https://www.w3.org/TR/css-cascade-4/#inheriting" title="CSS Cascading and Inheritance Level 4 (Working draft) - Inherited Values">inherited</a> value, that is the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its parent and therefore also <strong>not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a></strong>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1.2em"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"line-height: unset !important;"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"line-height: unset !important; display: block; max-width: 200px;"</span><span class="nt">&gt;</span>
 		The toy brought back fond memories of being lost in the rain forest.
 	<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/p&gt;</span>
@@ -415,16 +532,20 @@
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> equal to the font size, which is below the recommended minimum.</p>
+<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/c8c447e4e9065a1f8676c78dd937486e074026f7.html">Open in a new tab</a></p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1em !important"</span><span class="nt">&gt;</span>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> <code class="language-plaintext highlighter-rouge">line-height</code> equal to the font size, which is below the required minimum.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1em !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">20px</code>, which is below the recommended minimum given the specified font size is 20 pixels.</p>
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/67159173d21bc9cf00d1bb5a7ec817696ccee05c.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">20px</code>, which is below the required minimum given the specified font size is 20 pixels.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
 	<span class="nt">p</span> <span class="p">{</span>
@@ -432,14 +553,16 @@
 	<span class="p">}</span>
 <span class="nt">&lt;/style&gt;</span>
 
-<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 20px !important"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 20px !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">19.2px</code> (120% of <code class="language-plaintext highlighter-rouge">16px</code>) which is below the recommended minimum.</p>
+<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/53e5a389ebf46db82a931674636809b95d2de74c.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">19.2px</code> (120% of <code class="language-plaintext highlighter-rouge">16px</code>) which is below the required minimum.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
 	<span class="nt">p</span> <span class="p">{</span>
@@ -447,34 +570,40 @@
 	<span class="p">}</span>
 <span class="nt">&lt;/style&gt;</span>
 
-<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 120% !important"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 120% !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">1.2</code> which is below the recommended minimum.</p>
+<p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/38a347130bce99ee98d09fbefa18adb372f4563f.html">Open in a new tab</a></p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1.2 !important"</span><span class="nt">&gt;</span>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">1.2</code> which is below the required minimum.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1.2 !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-5">Failed Example 5</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">normal</code> which is below the recommended minimum (<a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value is generally around 1.2).</p>
+<p><a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/712289cbcfbee5cd51a332265f44369f568712d3.html">Open in a new tab</a></p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: normal !important"</span><span class="nt">&gt;</span>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">normal</code> which is below the required minimum (<a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value is generally around 1.2).</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: normal !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-6">Failed Example 6</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">normal</code> which is below the recommended minimum (<a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value is generally around 1.2).</p>
+<p><a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/bed4bc29cbcd1f681c4e0f0d7ff7e05c579fefec.html">Open in a new tab</a></p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: initial !important"</span><span class="nt">&gt;</span>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">line-height</code> of <code class="language-plaintext highlighter-rouge">normal</code> which is below the required minimum (<a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value is generally around 1.2).</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: initial !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
@@ -482,6 +611,8 @@
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
+
+<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/e998ec72eef90b46574b39d2657ef278b61b51eb.svg">Open in a new tab</a></p>
 
 <p>There is no HTML element.</p>
 
@@ -492,38 +623,51 @@
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element is not <a href="#visible" title="Definition of visible">visible</a> because of <code class="language-plaintext highlighter-rouge">display: none</code>.</p>
+<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/bc3e59c1292a265135ed7043d2cdcaa62cdfac66.html">Open in a new tab</a></p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"display: none; line-height: 1em !important"</span><span class="nt">&gt;</span>
-	The toy brought back fond memories of being lost in the rain forest.
-<span class="nt">&lt;/p&gt;</span>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element will never have a <a href="https://www.w3.org/TR/css-text-3/#soft-wrap-break">soft wrap break</a> due to the use of an overflow container. In this case, even changing the view port size will not cause a <a href="https://www.w3.org/TR/css-text-3/#soft-wrap-break">soft wrap break</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"overflow-x: scroll;"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"line-height: 1em !important; width: 1000px;"</span><span class="nt">&gt;</span>
+		The toy brought back fond memories of being lost in the rain forest.
+	<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element is not <a href="#visible" title="Definition of visible">visible</a> because it is positioned off-screen.</p>
+<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/6e034188bb709c8e0011612448b6244427bd8d4f.html">Open in a new tab</a></p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"position: absolute; top: -999em; line-height: 1em !important;"</span><span class="nt">&gt;</span>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element is not <a href="#visible" title="Definition of visible">visible</a> because of <code class="language-plaintext highlighter-rouge">display: none</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"display: none; line-height: 1em !important; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
+<p><a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/81be0f6c00496f3c2d70071c8f73b292ba282bfc.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element is not <a href="#visible" title="Definition of visible">visible</a> because it is positioned off-screen.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"position: absolute; top: -999em; line-height: 1em !important; max-width: 200px;"</span><span class="nt">&gt;</span>
+	The toy brought back fond memories of being lost in the rain forest.
+<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<h4 id="inapplicable-example-5">Inapplicable Example 5</h4>
+
+<p><a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/7f23d5ee7e2a51c9d0922493c542953680972bb6.html">Open in a new tab</a></p>
+
 <p>The <code class="language-plaintext highlighter-rouge">style</code> attribute of this <code class="language-plaintext highlighter-rouge">p</code> element does not <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declare</a> the <code class="language-plaintext highlighter-rouge">line-height</code> property.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"width: 60%"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"width: 60%; max-width: 200px;"</span><span class="nt">&gt;</span>
 	The toy brought back fond memories of being lost in the rain forest.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h2 id="glossary">Glossary</h2>
-
-<h3 id="namespaced-element">Namespaced Element</h3>
-
-<p>An <a href="https://dom.spec.whatwg.org/#element" title="DOM element, 2021/05/31">element</a> with a specific <a href="https://dom.spec.whatwg.org/#dom-element-namespaceuri" title="DOM Element namespaceURI, 2021/05/31">namespaceURI</a> value from <a href="https://infra.spec.whatwg.org/#namespaces" title="HTML namespace, 2021/05/31">HTML namespaces</a>. For example an “SVG element” is any element with the “SVG namespace”, which is <code class="language-plaintext highlighter-rouge">http://www.w3.org/2000/svg</code>.</p>
-
-<p>Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">title</code> have a different namespace depending on where they are used. For example a <code class="language-plaintext highlighter-rouge">title</code> in an HTML page usually has the HTML namespace. When used in an <code class="language-plaintext highlighter-rouge">svg</code> element, a <code class="language-plaintext highlighter-rouge">title</code> element has the SVG namespace instead.</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -599,15 +743,19 @@ not accounted for in the change history or the last modified date.</p>
     </div>
     <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
   </div>
+
+
   
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
+      
+        style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 78fd32</p>
-<p><strong>Date:</strong> Updated 28 January 2022</p>
+<p><strong>Date:</strong> Updated 16 March 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
   </footer>
   
@@ -646,9 +794,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1647979321465010436"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1647979321465010436"></script>
 <script>
   svg4everybody();
 </script><script>
@@ -672,5 +820,8 @@ not accounted for in the change history or the last modified date.</p>
 <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
 
+
+    
   </body>
+
 </html>

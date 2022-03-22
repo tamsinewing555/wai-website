@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
 <head>
@@ -10,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1647636865441836596";
+      element.src = "/WAI/assets/scripts/main.js?1647979321465010436";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647636865441836596">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1647979321465010436">
 
-<title> HTML element language subtag matches language | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647636865441836596"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> HTML element language subtag matches language[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1647979321465010436"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="HTML element language subtag matches language" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -41,17 +40,19 @@
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-html-element-language-subtag-matches-language ">
-
+  <body id="top" class="page-html-element-language-subtag-matches-language  tight-page">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
-    <div class="minimal-header-container default-grid">
-      
+   <div class="minimal-header-container default-grid">
       <div class="minimal-header" id="site-header">
     <div class="minimal-header-name">
         WCAG 2 Test Rules
     </div>
     
+        <div class="minimal-header-subtitle">For developers of evaluation tools and test methodologies</div>
+    
+    
+        <a class="minimal-header-link" href="/WAI/standards-guidelines/act/rules/about/">About WCAG 2 Test Rules</a>
     
     <div class="minimal-header-logo">
         <a href="http://w3.org/">
@@ -63,38 +64,121 @@
     </div>
 </div>
 
-      
     </div>
 
     <div class="default-grid nav-container">
-      
-      <nav class="nav" aria-label="Context for this document">
-        <ul>
+        <div class="nav" >
           
           
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/">All Rules</a></li>
-          
-            <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/about/">About Rules</a></li>
-          
-          <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
-            All WCAG 2 Guidance
-            <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg>
-          </a></li>
-        </ul>
-      </nav>
-      
-    </div>
+          <nav class="nav standalone-resource-pager" aria-label="Item navigation">
+            <ul>
+                <li class="nav__item">
+                    <a href="/standards-guidelines/act/rules/">All Test Rules</a>
+                
+                </li>
 
+                
+            </ul>
+          </nav>
+        
+        </div>
+    </div>
     <div class="default-grid with-gap leftcol">
 
 <style>
+.nav {
+  background: none;
+}
+
+.nav-related-info { /* blue bar with the "About:" links */
+  background: #005a9c;
+  color: #fff;
+}
+
+.nav-related-info a {
+  color: #fff !important;
+}
+
+.nav-page-specific { /* light blue bar with page/section specific navigation/pager */
+  margin-bottom: 1.25em;
+}
+
+.nav a:link, .nav a:visited {
+  color: #036;
+  color: var(--w3c-blue);
+}
+
+.nav a:hover, .nav a:active {
+    color: var(--dk-blue);
+}
+
+.nav-hack.sidebar a:hover,
+.nav-hack.sidebar a:active
+ {
+    color: var(--dk-blue);
+    text-decoration: underline;
+}
+
+.standalone-resource-about, .standalone-resource-pager {
+  margin: 0;
+}
+
+nav.standalone-resource-about {
+  padding: .5em 0 1.5em 0;
+  font-style: italic;
+}
+
+
+.nav .standalone-resource-pager ul {
+  align-items: center;
+}
+
+.nav .standalone-resource-pager a,
+.nav .standalone-resource-pager span {
+
+  margin-left: 0;
+  margin-right: 1.5em;
+  padding: .5em;
+}
+
+
+.pager-icon {
+  vertical-align: middle;
+  padding: 0 0 0.15em 0;
+  margin: 0 -0.4em;
+  width: 1.65em;
+  height: 2em;
+  fill: var(--dk-blue)
+}
+
+.category-icon {
+  vertical-align: middle;
+  padding: 0 0.25em 0.25em 0.25em;
+  width: 2em;
+  height: 2em;
+}
+
+.zstandalone-resource-pager {
+  padding: .7em 0;
+}
+
+.standalone-resource-pager zul {
+  display: block;
+}
+
+.standalone-resource-pager zul li {
+  display: inline;
+}
+
 .nav-hack {
   font-size: .85rem;
+  /*justify-self: end;*/
+  align-self: start;
 }
 .nav-hack ul {
     list-style: none;
     border-bottom: 1px solid #BCBCBC;
-    padding-left: 1rem
+    padding-left: 0
 }
 .nav-hack li:not(:first-child){
     padding-top: 0.4em;
@@ -113,12 +197,6 @@
   margin: 0;
 }
 
-.nav-hack .nav-indent {
-  margin-left: 1rem;
-}
-.nav-hack .nav-indent2 {
-  margin-left: 2rem;
-}
 
 /* skip link */
 .button--skip-link {
@@ -143,98 +221,112 @@
   transform: translateY(-4em);
   opacity: 0;
 }
+
+.standalone-resource-navrule {
+    border:none;
+    border-top: 1px solid grey
+}
+
+.standalone-resource-about ul,
+.standalone-resource-pager ul {
+    list-style: none;
+}
+
+.standalone-resource-about a,
+.standalone-resource-pager a,
+.standalone-resource-about span,
+.standalone-resource-pager span 
+{
+    margin-left:.8em;
+    margin-right:.8em;
+}
+
 </style>
-     
 
     
     
     
-      <nav class="nav-hack your-report your-report--expanded sidebar standalone-resource__sidebar">
-          
-          
-          <h3>This Page Contents</h3>
-            <ul>
+        <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+            <header class="box-h ">Page Contents</header>
             
-            
-              <li><a href="#applicability">Applicability</a></li>
-            
-              <li><a href="#expectation">Expectation</a></li>
-            
-              <li><a href="#assumptions">Assumptions</a></li>
-            
-              <li><a href="#accessibilitysupport">Accessibility Support</a></li>
-            
-              <li><a href="#background">Background</a></li>
-            
-              <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
-            
-              <li><a href="#inputaspects">Input Aspects</a></li>
-            
-              <li><a href="#testcases">Test Cases</a></li>
-            
-              <li><a href="#glossary">Glossary</a></li>
-            
-              <li><a href="#implementations">Implementations</a></li>
-            
-              <li><a href="#changelog">Changelog</a></li>
-            
-            </ul>
-          
-                <p><em>Test Rules describe ways to test conformance to WCAG success criteria. They are <a href="../about">for evaluation</a>.</em></p>
-          
-      </nav>
-      
+            <div class="box-i">
+                <ul>
+                
+                
+                <li><a href="#description">Description</a></li>
+                
+                <li><a href="#applicability">Applicability</a></li>
+                
+                <li><a href="#expectation">Expectation</a></li>
+                
+                <li><a href="#assumptions">Assumptions</a></li>
+                
+                <li><a href="#accessibilitysupport">Accessibility Support</a></li>
+                
+                <li><a href="#background">Background</a></li>
+                
+                <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
+                
+                <li><a href="#inputaspects">Input Aspects</a></li>
+                
+                <li><a href="#testcases">Test Cases</a></li>
+                
+                <li><a href="#glossary">Glossary</a></li>
+                
+                <li><a href="#implementations">Implementations</a></li>
+                
+                <li><a href="#changelog">Changelog</a></li>
+                
+                </ul>
+            </div>
+        </aside>
+    
 
     <main id="main" lang="en" class="standalone-resource__main">
         <header>
-          <h1>
-            
-            <span class="standalone-resource__type-of-guidance">
+            <h1>
               
-                Proposed
+              <span class="standalone-resource__type-of-guidance">
+                
+                  Proposed
+                
+                Test Rule:
+              </span>
               
-              
-              Test Rule:
-            </span>
-            
-            HTML element language subtag matches language
-          </h1>
+              HTML element language subtag matches language
+            </h1>
+        </header>    
 
-          
-          <aside class="box"> 
-            <header class="box-h box-h-icon"> 
-              Rule Mapping 
-            </header>
-            <div class="box-i"> 
-             <p>This is an 
-              <strong>Atomic rule</strong> 
-              
-              to test 
-              
-              <strong>3.1.2: Language of Parts (Level AA)</strong>
-              
-              
-            </p> 
-            </div>
-           </aside>
-          
-        </header>
+        <aside class="box"> 
+  <header class="box-h box-h-icon"> 
+    Rule Mapping 
+  </header>
+  <div class="box-i"> 
+   <p>This is an 
+    <strong>Atomic rule</strong> 
+    
+    to test 
+    
+    <strong>3.1.2: Language of Parts (Level AA)</strong>
+    
+    
+  </p> 
+  </div>
+ </aside>
 
-        
-        <h2>Description</h2>
-        <p>This rule checks that the primary language subtag of an element matches its default language</p>
+<h2 id="description">Description</h2>
+<p>This rule checks that the primary language subtag of an element matches its default language</p>
 
-        
 
-        <h2 id="applicability">Applicability</h2>
+<h2 id="applicability">Applicability</h2>
 
 <p>This rule applies to any <a href="#namespaced-element">HTML element</a> with a <code class="language-plaintext highlighter-rouge">lang</code> attribute for which all the following are true:</p>
 
 <ul>
-  <li>the element is an <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant" title="DOM definition of Inclusive Descendant">inclusive descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping definition of Flat tree, working draft">flat tree</a> of a <code class="language-plaintext highlighter-rouge">body</code> element; and</li>
-  <li>the element is in a <a href="https://dom.spec.whatwg.org/#document-element" title="DOM definition of Document Element">document</a> with a <a href="https://dom.spec.whatwg.org/#concept-document-content-type" title="DOM definition of Content Type">content type</a> of <code class="language-plaintext highlighter-rouge">text/html</code>; and</li>
-  <li>the element’s <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> has a <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a>; and</li>
-  <li>there is some non-empty <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the element.</li>
+  <li><dfn id="off6ek:in-body">in body</dfn>: the element is an <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant" title="DOM definition of Inclusive Descendant">inclusive descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping definition of Flat tree, working draft">flat tree</a> of a <code class="language-plaintext highlighter-rouge">body</code> element; and</li>
+  <li><dfn id="off6ek:html">HTML</dfn>: the element is in a <a href="https://dom.spec.whatwg.org/#document-element" title="DOM definition of Document Element">document</a> with a <a href="https://dom.spec.whatwg.org/#concept-document-content-type" title="DOM definition of Content Type">content type</a> of <code class="language-plaintext highlighter-rouge">text/html</code>; and</li>
+  <li><dfn id="off6ek:valid-lang">Valid language</dfn>: the element’s <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> has a <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a>; and</li>
+  <li><dfn id="off6ek:not-empty">Not empty</dfn>: there is some non-empty <a href="#text-inheriting-language:text" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the element which is neither empty nor only <a href="#whitespace" title="Definition of whitespace">whitespace</a>.</li>
 </ul>
 
 <h2 id="expectation">Expectation</h2>
@@ -249,6 +341,9 @@
   </li>
   <li>
     <p>This rule assumes that only <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">language tags</a> with a <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a> are enough to satisfy <a href="https://www.w3.org/TR/WCAG21/#language-of-parts" title="Success Criterion 3.1.2 Language of Parts">Success Criterion 3.1.2 Language of Parts</a>; this notably excludes <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> and <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2: Codes for the Representation of Names of Languages">ISO 639.2</a> three-letters codes, both having poor support in assistive technologies.</p>
+  </li>
+  <li>
+    <p>This rule assumes that the text nodes contain text that express something in <a href="https://www.w3.org/TR/WCAG21/#dfn-human-language-s" title="WCAG definition of Human Language">human language</a> and therefore need a correct programmatic language.</p>
   </li>
 </ul>
 
@@ -323,6 +418,8 @@
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
+<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/ec40c0a032b11cabc03d71b6884ab9b85ee160ad.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">nl</code> (Dutch), which matches its <a href="#most-common-element-language" title="Definition of Common Language of an Element">most common language</a>. The most common language is Dutch because all words are Dutch.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -339,6 +436,8 @@
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
+
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/df9260fddb4d08ca0669bea363828d089b36317b.html">Open in a new tab</a></p>
 
 <p>The second <code class="language-plaintext highlighter-rouge">p</code> element has <code class="language-plaintext highlighter-rouge">lang</code> attribute value of <code class="language-plaintext highlighter-rouge">nl</code> (Dutch), which matches its <a href="#most-common-element-language" title="Definition of Common Language of an Element">most common language</a>. The most common language is Dutch because all English words are in <code class="language-plaintext highlighter-rouge">span</code> elements with a <code class="language-plaintext highlighter-rouge">lang</code> attribute value of <code class="language-plaintext highlighter-rouge">en</code>. Both <code class="language-plaintext highlighter-rouge">span</code> elements also have a <code class="language-plaintext highlighter-rouge">lang</code> attribute matching their most common language.</p>
 
@@ -360,16 +459,18 @@
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
+<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/5532e66ea71ed1f352f9911e224cbf290c7cc8e6.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">div</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">en</code> (English), which matches its <a href="#most-common-element-language" title="Definition of Common Language of an Element">most common language</a>. The most common language is English because the accessible texts are English, and all other text is in a <code class="language-plaintext highlighter-rouge">p</code> element with a (correct) <code class="language-plaintext highlighter-rouge">lang</code> attribute value of <code class="language-plaintext highlighter-rouge">fr</code>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"FR"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
 		<span class="nt">&lt;title&gt;</span>Feu d'artifice du nouvel an<span class="nt">&lt;/title&gt;</span>
 	<span class="nt">&lt;/head&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"EN"</span><span class="nt">&gt;</span>
 			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/fireworks.jpg"</span> <span class="na">alt=</span><span class="s">"Fireworks over Paris"</span> <span class="nt">/&gt;</span>
-			<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"FR"</span><span class="nt">&gt;</span>
 				Bonne année !
 			<span class="nt">&lt;/p&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
@@ -378,6 +479,8 @@
 </code></pre></div></div>
 
 <h4 id="passed-example-4">Passed Example 4</h4>
+
+<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/53d05e6fdcc63ff61ef1e5ea8454eea318aa038a.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">fr</code> (French), which matches one of its <a href="#most-common-element-language" title="Definition of Common Language of an Element">most common languages</a>. The most common languages are both English and French because all the words belong to both languages.</p>
 
@@ -390,6 +493,8 @@
 </code></pre></div></div>
 
 <h4 id="passed-example-5">Passed Example 5</h4>
+
+<p><a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/61c507e0aab456cce20538400fc1067be37953a0.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">en</code> (English), which matches one of its <a href="#most-common-element-language" title="Definition of Common Language of an Element">most common languages</a>. The most common languages are both English and French because all the words belong to both languages.</p>
 
@@ -404,6 +509,8 @@
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed Example 1</h4>
+
+<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/5b88bdc5f7d936eaa1fdd2f5f8fdd4022548d5ac.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">span</code> element has <code class="language-plaintext highlighter-rouge">lang</code> attribute value of <code class="language-plaintext highlighter-rouge">fr</code> (French), which does not match its <a href="#most-common-element-language" title="Definition of Common Language of an Element">most common language</a>. The most common language is Dutch because all words are Dutch.</p>
 
@@ -421,6 +528,8 @@
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
+
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/ffcbd35493c91b4d8ee42c3a7fba9c2356144257.html">Open in a new tab</a></p>
 
 <p>The second <code class="language-plaintext highlighter-rouge">p</code> element has <code class="language-plaintext highlighter-rouge">lang</code> attribute value of <code class="language-plaintext highlighter-rouge">en</code> (English), which does not match its <a href="#most-common-element-language" title="Definition of Common Language of an Element">most common language</a>. The most common language is Dutch because all English words are in <code class="language-plaintext highlighter-rouge">span</code> elements with a <code class="language-plaintext highlighter-rouge">lang</code> attribute value of <code class="language-plaintext highlighter-rouge">fr</code>. Both <code class="language-plaintext highlighter-rouge">span</code> elements also have an incorrect <code class="language-plaintext highlighter-rouge">lang</code> attribute in order to make sure that all targets in this example fail the rule.</p>
 
@@ -444,6 +553,8 @@
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
+<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/d00a83015b309b51bebfc2c85f62488daec3a5d1.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">div</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute value of <code class="language-plaintext highlighter-rouge">fr</code> (French), which does not match its <a href="#most-common-element-language" title="Definition of Common Language of an Element">most common language</a>. The most common language is English because the accessible texts are English, and all other text is in a <code class="language-plaintext highlighter-rouge">p</code> element with a <code class="language-plaintext highlighter-rouge">lang</code> attribute value of <code class="language-plaintext highlighter-rouge">nl</code>, which also doesn’t match its common language.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
@@ -463,7 +574,9 @@
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">div</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute value of <code class="language-plaintext highlighter-rouge">fr</code> (French), which does not match its <a href="#most-common-element-language" title="Definition of Common Language of an Element">most common language</a>. The most common language is English because the accessible name of the <code class="language-plaintext highlighter-rouge">img</code> element is English. The <code class="language-plaintext highlighter-rouge">lang</code> attribute on the <code class="language-plaintext highlighter-rouge">p</code> element is effectively ignored. The <code class="language-plaintext highlighter-rouge">p</code> element is not applicable because there is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from it since its content is neither <a href="#visible" title="Definition of Visible">visible</a> nor <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>.</p>
+<p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/895a754e85f4fbc8e11cea52295381f41eb384ca.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">div</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute value of <code class="language-plaintext highlighter-rouge">fr</code> (French), which does not match its <a href="#most-common-element-language" title="Definition of Common Language of an Element">most common language</a>. The most common language is English because the accessible name of the <code class="language-plaintext highlighter-rouge">img</code> element is English. The <code class="language-plaintext highlighter-rouge">lang</code> attribute on the <code class="language-plaintext highlighter-rouge">p</code> element is effectively ignored. The <code class="language-plaintext highlighter-rouge">p</code> element is not applicable because there is no <a href="#text-inheriting-language:text" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from it since its content is neither <a href="#visible" title="Definition of Visible">visible</a> nor <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
@@ -484,7 +597,9 @@
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
-<p>There are no HTML elements in this document.</p>
+<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/433bdbdd7078af3ebddd933a3b1352c2d162b224.svg">Open in a new tab</a></p>
+
+<p>This document is not <a href="#off6ek:html">HTML</a>.</p>
 
 <pre><code class="language-svg">&lt;svg xmlns="http://www.w3.org/2000/svg" lang="en"&gt;
     &lt;text x="0" y="0"&gt;I love ACT rules!&lt;/text&gt;
@@ -493,7 +608,9 @@
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
 
-<p>There is no descendant of a <code class="language-plaintext highlighter-rouge">body</code> element with a <code class="language-plaintext highlighter-rouge">lang</code> attribute.</p>
+<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/1aebc3e73c262d1417cfffd8c6e50cfb5fc37f82.html">Open in a new tab</a></p>
+
+<p>There is no <a href="#off6ek:in-body">descendant of a <code class="language-plaintext highlighter-rouge">body</code></a> element with a <code class="language-plaintext highlighter-rouge">lang</code> attribute.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -504,7 +621,9 @@
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element has an invalid language tag.</p>
+<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/4d0b06b614560fa0e230bf2b06f6d3c7667c5147.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element does not have a <a href="#off6ek:valid-lang">valid language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -517,7 +636,9 @@
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
-<p>There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the first <code class="language-plaintext highlighter-rouge">p</code> element because it has no content.</p>
+<p><a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/cc8b4db7f82f4095bc010311b00c73091e427302.html">Open in a new tab</a></p>
+
+<p>The first <code class="language-plaintext highlighter-rouge">p</code> element is <a href="#off6ek:not-empty">empty</a> because the only <a href="#text-inheriting-language:element" title="Definition of Element Inheriting its Programmatic Language from an Element">element inheriting its programmatic language</a> is itself, and it has no text node child.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -529,7 +650,9 @@
 
 <h4 id="inapplicable-example-5">Inapplicable Example 5</h4>
 
-<p>There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from this <code class="language-plaintext highlighter-rouge">p</code> element because it has no content that is either <a href="#visible" title="Definition of Visible">visible</a> or <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>.</p>
+<p><a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/39063a3b4d2872cbadefc9e252d0492ba44ff74f.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element is <a href="#off6ek:not-empty">empty</a> because it has no content that is either <a href="#visible" title="Definition of Visible">visible</a> or <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -539,6 +662,8 @@
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-6">Inapplicable Example 6</h4>
+
+<p><a class="example-link" title="Inapplicable Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/915cdae554a817caa4792101fde1adf14563227d.html">Open in a new tab</a></p>
 
 <p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of this <code class="language-plaintext highlighter-rouge">p</code> element has no <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a> because the <code class="language-plaintext highlighter-rouge">eng</code> <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2: Codes for the Representation of Names of Languages">iso 639.2</a> three letters code does not exist in the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a>.</p>
 
@@ -551,11 +676,26 @@
 
 <h4 id="inapplicable-example-7">Inapplicable Example 7</h4>
 
+<p><a class="example-link" title="Inapplicable Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/50e733e0c505a556fc53e6265eb5b432823570f7.html">Open in a new tab</a></p>
+
 <p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of this <code class="language-plaintext highlighter-rouge">p</code> element has no <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tag</a> because the <code class="language-plaintext highlighter-rouge">i-lox</code> <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tag</a> does not exist in the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"lb"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
 		<span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"i-lux"</span><span class="nt">&gt;</span>Lëtzebuerg ass e Land an Europa.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="inapplicable-example-8">Inapplicable Example 8</h4>
+
+<p><a class="example-link" title="Inapplicable Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/9fa4aaa2575cccf2f83db23b8a66a584cee96486.html">Open in a new tab</a></p>
+
+<p>The <a href="#text-inheriting-language:text" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from this <code class="language-plaintext highlighter-rouge">div</code> element is only <a href="#whitespace" title="Definition of whitespace">whitespace</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"invalid"</span><span class="nt">&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;/div&gt;</span>
 	<span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
@@ -578,26 +718,40 @@
 
 <h3 id="attribute-value">Attribute value</h3>
 
-<p>The <em>attribute value</em> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.</p>
+<p>The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.</p>
 
 <p>Some notable case of attribute value, among others:</p>
 
 <ul>
-  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute" title="HTML Specification of Enumerated Attribute">enumerated attributes</a>, the <em>attribute value</em> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus <code class="language-plaintext highlighter-rouge">&lt;input type="image" /&gt;</code> has an attribute value of either <code class="language-plaintext highlighter-rouge">Image Button</code> (the state) or <code class="language-plaintext highlighter-rouge">image</code> (the keyword mapping to it), both formulations having the same meaning; similarly, “an input element with a <code class="language-plaintext highlighter-rouge">type</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">Text</code>” can be either <code class="language-plaintext highlighter-rouge">&lt;input type="text" /&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;input /&gt;</code> (missing value default), or <code class="language-plaintext highlighter-rouge">&lt;input type="invalid" /&gt;</code> (invalid value default).</li>
-  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes" title="HTML Specification of Boolean Attribute">boolean attributes</a>, the <em>attribute value</em> is <code class="language-plaintext highlighter-rouge">true</code> when the attribute is present and <code class="language-plaintext highlighter-rouge">false</code> otherwise. Thus <code class="language-plaintext highlighter-rouge">&lt;button disabled&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;button disabled="disabled"&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;button disabled=""&gt;</code> all have a <code class="language-plaintext highlighter-rouge">disabled</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">true</code>.</li>
-  <li>For attributes whose value is used in a case-insensitive context, the <em>attribute value</em> is the lowercase version of the value written in the HTML code.</li>
-  <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <em>attribute value</em> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
-  <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <em>attribute value</em> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
-  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <em>attribute value</em> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute" title="HTML Specification of Enumerated Attribute">enumerated attributes</a>, the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus <code class="language-plaintext highlighter-rouge">&lt;input type="image" /&gt;</code> has an attribute value of either <code class="language-plaintext highlighter-rouge">Image Button</code> (the state) or <code class="language-plaintext highlighter-rouge">image</code> (the keyword mapping to it), both formulations having the same meaning; similarly, “an input element with a <code class="language-plaintext highlighter-rouge">type</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">Text</code>” can be either <code class="language-plaintext highlighter-rouge">&lt;input type="text" /&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;input /&gt;</code> (missing value default), or <code class="language-plaintext highlighter-rouge">&lt;input type="invalid" /&gt;</code> (invalid value default).</li>
+  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes" title="HTML Specification of Boolean Attribute">boolean attributes</a>, the <dfn id="attribute-value:boolean">attribute value</dfn> is <code class="language-plaintext highlighter-rouge">true</code> when the attribute is present and <code class="language-plaintext highlighter-rouge">false</code> otherwise. Thus <code class="language-plaintext highlighter-rouge">&lt;button disabled&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;button disabled="disabled"&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;button disabled=""&gt;</code> all have a <code class="language-plaintext highlighter-rouge">disabled</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">true</code>.</li>
+  <li>For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.</li>
+  <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
+  <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
 </ul>
 
 <p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
 
-<p>The <em>attribute value</em> of an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> is the value returned on getting it. Note that when an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes" title="HTML specification of Reflecting Content Attributes in IDL Attributes">reflects</a> a content attribute, they have the same attribute value.</p>
+<p>The <dfn id="attribute-value:idl">attribute value</dfn> of an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> is the value returned on getting it. Note that when an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes" title="HTML specification of Reflecting Content Attributes in IDL Attributes">reflects</a> a content attribute, they have the same attribute value.</p>
 
 <h3 id="focusable">Focusable</h3>
 
-<p>Elements that can become the target of keyboard input as described in the <a href="https://www.w3.org/TR/html">HTML</a> specification of <a href="https://html.spec.whatwg.org/#focusable-area">focusable</a> and <a href="https://html.spec.whatwg.org/#specially-focusable">can be focused</a>.</p>
+<p>An element is <em>focusable</em> if one or both of the following are true:</p>
+
+<ul>
+  <li>the element is part of <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>; or</li>
+  <li>the element has a <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> that is not null.</li>
+</ul>
+
+<p><strong>Exception</strong>: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered <em>focusable</em>.</p>
+
+<p>Notes:</p>
+
+<ul>
+  <li>The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.</li>
+  <li>The <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> of an element is the value of the <a href="https://html.spec.whatwg.org/#attr-tabindex">tabindex attribute</a> parsed using the <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">rules for parsing integers</a>. For the <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> to be different from null, it needs to be <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">parsed</a> without errors.</li>
+</ul>
 
 <h3 id="included-in-the-accessibility-tree">Included in the accessibility tree</h3>
 
@@ -623,7 +777,7 @@
 
 <h3 id="most-common-element-language">Most Common Language of an Element</h3>
 
-<p>The <em>most common language of an element</em> is determined by counting the number of <em>words</em> in the <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from this element that are part of any of the languages in the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a>. The same word can be part of multiple languages. In case of ties, the element has several most common languages. If there are no words in the <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the element, then it has no most common language.</p>
+<p>The <em>most common language of an element</em> is determined by counting the number of <em>words</em> in the <a href="#text-inheriting-language:text" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from this element that are part of any of the languages in the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a>. The same word can be part of multiple languages. In case of ties, the element has several most common languages. If there are no words in the <a href="#text-inheriting-language:text" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the element, then it has no most common language.</p>
 
 <p>For more details, see <a href="https://act-rules.github.io/pages/examples/element-language/">examples of most common language</a>.</p>
 
@@ -652,24 +806,25 @@
 <p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping definition of Flat tree, working draft">flat tree</a>:</p>
 
 <ul>
-  <li>has a <code class="language-plaintext highlighter-rouge">hidden</code> attribute; or</li>
   <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
   <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
 </ul>
 
 <p><strong>Note</strong>: Contrarily to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
 
+<p><strong>Note</strong>: The <a href="https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements">HTML standard suggests</a> rendering elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute with a CSS rule that applies the value <code class="language-plaintext highlighter-rouge">none</code> to the CSS property <code class="language-plaintext highlighter-rouge">display</code> of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the <code class="language-plaintext highlighter-rouge">display</code> property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.</p>
+
 <h3 id="text-inheriting-language">Text Inheriting its Programmatic Language from an Element</h3>
 
-<p>The <em>text inheriting its programmatic language</em> from an element E is composed of all the following texts:</p>
+<p>The <dfn id="text-inheriting-language:text">text inheriting its programmatic language</dfn> from an element E is composed of all the following texts:</p>
 
 <ul>
   <li><strong>text nodes</strong>: the value of any <a href="https://dom.spec.whatwg.org/#text" title="DOM text, as of 2020/06/05">text nodes</a> that are <a href="#visible" title="Definition of Visible">visible</a> or <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> and children of an element inheriting its programmatic language from E;</li>
-  <li><strong>accessible text</strong>: the <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> and <a href="https://www.w3.org/TR/accname-1.1/#dfn-accessible-description" title="Definition of Accessible description">accessible description</a> of any element inheriting its programmatic language from E, and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>;</li>
+  <li><strong>accessible text</strong>: the <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> and <a href="https://www.w3.org/TR/accname-1.1/#dfn-accessible-description" title="Definition of Accessible description">accessible description</a> of any <a href="#text-inheriting-language:element">element inheriting its programmatic language</a> from E, and <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>;</li>
   <li><strong>page title</strong>: the value of the <a href="https://html.spec.whatwg.org/multipage/dom.html#document.title" title="HTML document title, as of 2020/06/05">document title</a>, only if E is a <a href="https://dom.spec.whatwg.org/#document-element" title="DOM definition of Document Element">document</a> in a <a href="https://html.spec.whatwg.org/#top-level-browsing-context" title="HTML top-level browsing context, as of 2020/06/05">top-level browsing context</a>.</li>
 </ul>
 
-<p>An element F is an <em>element inheriting its programmatic language</em> from an element E if at least one of the following conditions is true (recursively):</p>
+<p>An element F is an <dfn id="text-inheriting-language:element">element inheriting its programmatic language</dfn> from an element E if at least one of the following conditions is true (recursively):</p>
 
 <ul>
   <li>F is E itself (an element always inherits its programmatic language from itself); or</li>
@@ -686,6 +841,28 @@
 <p><a href="https://www.w3.org/TR/WCAG21/#dfn-content">Content is defined in WCAG</a>.</p>
 
 <p>For more details, see <a href="https://act-rules.github.io/pages/examples/visible/">examples of visible</a>.</p>
+
+<h3 id="whitespace">Whitespace</h3>
+
+<p><em>Whitespace</em> are characters that have the Unicode “White_Space” property in the <a href="https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt">Unicode properties list</a>.</p>
+
+<p>This includes:</p>
+
+<ul>
+  <li>all characters in the <a href="https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153">Unicode Separator categories</a>, and</li>
+  <li>
+    <p>the following characters in the <a href="https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153">Other, Control</a> category:</p>
+
+    <ul>
+      <li>Character tabulation (U+0009)</li>
+      <li>Line Feed (LF) (U+000A)</li>
+      <li>Line Tabulation (U+000B)</li>
+      <li>Form Feed (FF) (U+000C)</li>
+      <li>Carriage Return (CR) (U+000D)</li>
+      <li>Next Line (NEL) (U+0085)</li>
+    </ul>
+  </li>
+</ul>
 
 <h2 id="implementations">Implementations</h2>
 
@@ -714,15 +891,19 @@ for details.</p>
     </div>
     <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
   </div>
+
+
   
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
+      
+        style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> off6ek</p>
-<p><strong>Date:</strong> Updated 28 January 2022</p>
+<p><strong>Date:</strong> Updated 16 March 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
   </footer>
   
@@ -761,9 +942,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1647979321465010436"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1647636865441836596"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1647979321465010436"></script>
 <script>
   svg4everybody();
 </script><script>
@@ -787,5 +968,8 @@ for details.</p>
 <noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
 
+
+    
   </body>
+
 </html>
