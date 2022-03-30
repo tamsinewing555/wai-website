@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-02-10/curricula/",
+            "title": "Updated Resource: Designer Modules in Curricula on Web Accessibility",
+            "summary": null,
+            "content_text": "New designer modules are now published in the Curricula on Web Accessibility. This curricula provides a framework for creating courses on digital accessibility, for including accessibility in other courses, and for reviewing and comparing existing and proposed courses. The February 2022 publication adds new designer modules. These modules focus on teaching accessibility to visual, information, interaction, and UX designers.",
+            "content_html": "<p>New designer modules are now published in the <a href=\"https://www.w3.org/WAI/curricula/\">Curricula on Web Accessibility</a>. This curricula provides a framework for creating courses on digital accessibility, for including accessibility in other courses, and for reviewing and comparing existing and proposed courses. The February 2022 publication adds new <a href=\"https://www.w3.org/WAI/curricula/designer-modules/\">designer modules</a>. These modules focus on teaching accessibility to visual, information, interaction, and UX designers.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-02-10/curricula/",
+            
+            
+            
+            
+            
+            "date_published": "2022-02-10T00:00:00+00:00",
+            "date_modified": "2022-02-10T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2021-10-14/remote-meetings/",
             "title": "For Review: Accessibility of Remote Meetings - First Public Working Draft",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2019-08-23T00:00:00+00:00",
             "date_modified": "2019-08-23T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2019-07-31/act-rules/",
-            "title": "Accessibility Conformance Testing (ACT) Rules Format 1.0 is a W3C Proposed Recommendation",
-            "summary": null,
-            "content_text": "Accessibility Conformance Testing (ACT) Rules Format is a W3C Proposed Recommendation. This draft demonstrates implementations of the specification based on example ACT Rules being continuously developed by the ACT Rules Community Group. Background on this work is in the blog post Harmonized Accessibility Testing. Please send comments as soon as feasible, by 24 September 2019.",
-            "content_html": "<p><a href=\"https://www.w3.org/TR/act-rules-format/\">Accessibility Conformance Testing (ACT) Rules Format</a> is a W3C Proposed Recommendation. This draft demonstrates implementations of the specification based on <a href=\"https://act-rules.github.io/rules/\">example ACT Rules</a> being continuously developed by the <a href=\"https://www.w3.org/community/act-r/\">ACT Rules Community Group</a>. Background on this work is in the blog post <a href=\"https://www.w3.org/blog/2019/07/harmonized-accessibility-testing/\">Harmonized Accessibility Testing</a>. Please send comments as soon as feasible, by <strong>24 September 2019</strong>.</p>",
-            "url": "https://www.w3.org/WAI/news/2019-07-31/act-rules/",
-            
-            
-            
-            
-            
-            "date_published": "2019-07-31T00:00:00+00:00",
-            "date_modified": "2019-07-31T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"

@@ -2094,6 +2094,7 @@
 /news/2021-06-08/wcag3/index.html
 /news/2021-10-12/NAUR/index.html
 /news/2021-10-14/remote-meetings/index.html
+/news/2022-02-10/curricula/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
