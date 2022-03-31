@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-03-31/new-format-coga-patterns/",
+            "title": "Cognitive Accessibility Design Patterns - New User Interface",
+            "summary": null,
+            "content_text": "Cognitive accessibility objectives and design patterns are now available as a set of web pages from Cognitive Accessibility Guidance list. The objectives and design patterns are “supplemental guidance” to WCAG 2 as explained in About Supplemental Guidance. They are part of W3C work on accessibility for people with cognitive and learning disabilities introduced in Cognitive Accessibility at W3C.",
+            "content_html": "<p>Cognitive accessibility objectives and design patterns are now available as a set of web pages from <a href=\"https://www.w3.org/WAI/WCAG2/supplemental/#cognitiveaccessibilityguidance\">Cognitive Accessibility Guidance list</a>. The objectives and design patterns are “supplemental guidance” to WCAG 2 as explained in <a href=\"https://www.w3.org/WAI/WCAG2/supplemental/about/\">About Supplemental Guidance</a>. They are part of W3C work on accessibility for people with cognitive and learning disabilities introduced in <a href=\"https://www.w3.org/WAI/cognitive/\">Cognitive Accessibility at W3C</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-03-31/new-format-coga-patterns/",
+            
+            
+            
+            
+            
+            "date_published": "2022-03-31T00:00:00+00:00",
+            "date_modified": "2022-03-31T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2022-02-10/curricula/",
             "title": "Updated Resource: Designer Modules in Curricula on Web Accessibility",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2019-08-29T00:00:00+00:00",
             "date_modified": "2019-08-29T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2019-08-23/inaccessibility-of-captcha/",
-            "title": "Inaccessibility of CAPTCHA - W3C Note Update Published",
-            "summary": null,
-            "content_text": "Inaccessibility of CAPTCHA - Alternatives to Visual Turing Tests on the Web is published as an updated W3C Working Group Note. (CAPTCHA stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.) The Note examines potential solutions to test that users are human, not software robots, in a way that is accessible to people with disabilities.  A summary, some background, and thanks to contributors is in a 23 August e-mail.",
-            "content_html": "<p><a href=\"https://www.w3.org/TR/turingtest/\">Inaccessibility of CAPTCHA - Alternatives to Visual Turing Tests on the Web</a> is published as an updated W3C Working Group Note. (CAPTCHA stands for Completely Automated Public Turing Test to Tell Computers and Humans Apart.) The Note examines potential solutions to test that users are human, not software robots, in a way that is accessible to people with disabilities.  A summary, some background, and thanks to contributors is in a <a href=\"https://lists.w3.org/Archives/Public/public-wai-announce/2019JulSep/0003.html\">23 August e-mail</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2019-08-23/inaccessibility-of-captcha/",
-            
-            
-            
-            
-            
-            "date_published": "2019-08-23T00:00:00+00:00",
-            "date_modified": "2019-08-23T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
