@@ -1906,6 +1906,7 @@
 /curricula/foundation-modules/principles-standards-and-checks/index.html
 /curricula/foundation-modules/what-is-web-accessibility/index.html
 /curricula/index.html
+/design-develop/changelog/index.html
 /design-develop/es.html
 /design-develop/fr.html
 /design-develop/index.html
