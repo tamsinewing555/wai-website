@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1649127641451668682";
+      element.src = "/WAI/assets/scripts/main.js?1649168206742803821";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1649127641451668682">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1649168206742803821">
 
-<title> audio element content has transcript[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1649127641451668682"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> audio element content has transcript[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1649168206742803821"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="audio element content has transcript" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -315,7 +315,7 @@ nav.standalone-resource-about {
  </aside>
 
 <h2 id="description">Description</h2>
-<p>Non-streaming <code class="language-plaintext highlighter-rouge">audio</code> elements must have a text alternative for all included auditory information.</p>
+<p>This rule checks that <code class="language-plaintext highlighter-rouge">audio</code> elements have a transcript that includes all auditory information.</p>
 
 
 <h2 id="applicability">Applicability</h2>
@@ -375,7 +375,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html">Open in a new tab</a></p>
 
-<p>Audio with controls and internal transcript</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has native player controls and an internal transcript.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -392,7 +392,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7e5bf06ee043bd223f348b4f2fd528586c268e69.html">Open in a new tab</a></p>
 
-<p>Audio with controls and external transcript</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has native player controls and an external transcript.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -404,7 +404,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3910043a0a8d9aff05d926b7bf9757b8b2ee98da.html">Open in a new tab</a></p>
 
-<p>Audio with autoplay and external transcript</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has an <code class="language-plaintext highlighter-rouge">autoplay</code> attribute and an external transcript.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -418,7 +418,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7cdf59c28089794dbbd75d81f29fb9adb9327cb2.html">Open in a new tab</a></p>
 
-<p>Audio with controls and no transcript</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has native player controls and no transcript.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -429,7 +429,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html">Open in a new tab</a></p>
 
-<p>Audio with controls and incorrect internal transcript</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has native player controls and an incorrect internal transcript.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -446,7 +446,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/5fd7ae577f7dd55633c44b3ac7b6d70b486cff3d.html">Open in a new tab</a></p>
 
-<p>Audio with controls and incorrect external transcript</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has native player controls and an incorrect external transcript.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -458,7 +458,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/f470186843fb28ba9b45dd1efc85b53c92b11c05.html">Open in a new tab</a></p>
 
-<p>Audio with autoplay and incorrect external transcript</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has an <code class="language-plaintext highlighter-rouge">autoplay</code> attribute and an incorrect external transcript.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -470,7 +470,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/06b6ada6383efa2ffeaf67370b177090dfcdf5e1.html">Open in a new tab</a></p>
 
-<p>Audio with controls and <a href="#visible" title="Definition of visible">non-visible</a> internal transcript</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has native player controls and a <a href="#visible" title="Definition of visible">non-visible</a> internal transcript.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -487,7 +487,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/d58c6252f96771666f71a65d199316108e709edd.html">Open in a new tab</a></p>
 
-<p>Audio with controls and internal transcript that is not exposed to the accessibility tree</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has native player controls and an internal transcript that is not exposed to the accessibility tree.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -506,7 +506,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/eba170767ac1de0092d33a9bee2c0ecf2ebdfd46.html">Open in a new tab</a></p>
 
-<p>Audio without controls.</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has no native player controls.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -517,7 +517,7 @@ nav.standalone-resource-about {
 
 <p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/381f800e41c8f1e72f1164ff0877bbb8446dc55d.html">Open in a new tab</a></p>
 
-<p>Audio with hidden controls.</p>
+<p>This <code class="language-plaintext highlighter-rouge">audio</code> element has hidden native player controls.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/audio&gt;</span>
@@ -632,7 +632,7 @@ for details.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 2eb176</p>
-<p><strong>Date:</strong> Updated 23 March 2022</p>
+<p><strong>Date:</strong> Updated 5 April 2022</p>
 <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
@@ -675,9 +675,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1649127641451668682"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1649168206742803821"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1649127641451668682"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1649168206742803821"></script>
 <script>
   svg4everybody();
 </script><script>
