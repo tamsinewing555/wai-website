@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-04-04/WAI-CooP-meeting/",
+            "title": "Invitation: WAI-CooP Meeting, Online, 19 April 2022",
+            "summary": null,
+            "content_text": "You are invited to the WAI-CooP Open Meeting, Online  on 19 April 2022. We encourage participation from people interested in: digital  accessibility implementation in Europe and internationally; guidance on  available web accessibility training, tools, and resources; and exchanges on  the European Union (EU) Web Accessibility Directive (WAD). Agenda, logistics,  and registration information is in the meeting page. This meeting is free, and  registration is required.",
+            "content_html": "<p>You are invited to the <a href=\"https://www.edf-feph.org/events-slug/wai-coop-online-meeting/\">WAI-CooP Open Meeting, Online  on 19 April 2022</a>. We encourage participation from people interested in: digital  accessibility implementation in Europe and internationally; guidance on  available web accessibility training, tools, and resources; and exchanges on  the European Union (EU) Web Accessibility Directive (WAD). Agenda, logistics,  and registration information is in the <a href=\"https://www.edf-feph.org/events-slug/wai-coop-online-meeting/\">meeting page</a>. This meeting is free, and  registration is required.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-04-04/WAI-CooP-meeting/",
+            
+            
+            
+            
+            
+            "date_published": "2022-04-04T00:00:00+00:00",
+            "date_modified": "2022-04-04T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2022-03-31/new-format-coga-patterns/",
             "title": "Cognitive Accessibility Design Patterns - New User Interface",
             "summary": null,
@@ -34,6 +55,27 @@
         },
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-03-17/wai-working-on/",
+            "title": "New page: What’s up at W3C WAI",
+            "summary": null,
+            "content_text": "What We're Working On &mdash; Accessibility Activities and Publications is a new web page where you can see what projects we’re working on at the W3C Web Accessibility Initiative (WAI), what publications are planned for the next couple months, and opportunities for you to contribute.",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/update/\">What We're Working On &mdash; Accessibility Activities and Publications</a> is a new web page where you can see what projects we’re working on at the W3C Web Accessibility Initiative (WAI), what publications are planned for the next couple months, and opportunities for you to contribute.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-03-17/wai-working-on/",
+            
+            
+            
+            
+            
+            "date_published": "2022-03-17T00:00:00+00:00",
+            "date_modified": "2022-03-17T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2022-02-10/curricula/",
             "title": "Updated Resource: Designer Modules in Curricula on Web Accessibility",
             "summary": null,
@@ -47,6 +89,48 @@
             
             "date_published": "2022-02-10T00:00:00+00:00",
             "date_modified": "2022-02-10T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2021-12-16/captcha/",
+            "title": "For Review: Inaccessibility of CAPTCHA - draft update",
+            "summary": null,
+            "content_text": "An updated draft of Inaccessibility of CAPTCHA: Alternatives to Visual Turing Tests on the Web is available for review and comment. It explores cryptographic authentication to verify  humans versus bots. This uses W3C technologies that remove the need for interactive CAPTCHAs (Completely Automated Public Turing Test to distinguish between Computers and Humans).",
+            "content_html": "<p>An updated draft of <a href=\"https://w3.org/TR/turingtest/\">Inaccessibility of CAPTCHA: Alternatives to Visual Turing Tests on the Web</a> is available for review and comment. It explores cryptographic authentication to verify  humans versus bots. This uses W3C technologies that remove the need for interactive CAPTCHAs (Completely Automated Public Turing Test to distinguish between Computers and Humans).</p>",
+            "url": "https://www.w3.org/WAI/news/2021-12-16/captcha/",
+            
+            
+            
+            
+            
+            "date_published": "2021-12-16T00:00:00+00:00",
+            "date_modified": "2021-12-16T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2021-12-02/IDPD-18n-day-PwDs/",
+            "title": "Digital Accessibility Updates on International Day of Persons with Disabilities (IDPD)",
+            "summary": null,
+            "content_text": "Digital Accessibility Updates on International Day of Persons with Disabilities (IDPD) blog post gives you updates on:documenting user needs in MAUR, SAUR, XAUR, RAUR, NAUR translating accessibility resourcesupdating digital accessibility language on speech recognition, voice recognition, description of visual  information in videos, and more.",
+            "content_html": "<p><a href=\"https://www.w3.org/blog/2021/12/idpd/\">Digital Accessibility Updates on International Day of Persons with Disabilities (IDPD)</a> blog post gives you updates on:</p><ul><li>documenting user needs in MAUR, SAUR, XAUR, RAUR, NAUR</li><li> translating accessibility resources</li><li>updating digital accessibility language on speech recognition, voice recognition, description of visual  information in videos, and more.</li></ul>",
+            "url": "https://www.w3.org/WAI/news/2021-12-02/IDPD-18n-day-PwDs/",
+            
+            
+            
+            
+            
+            "date_published": "2021-12-02T00:00:00+00:00",
+            "date_modified": "2021-12-02T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
@@ -677,90 +761,6 @@
             
             "date_published": "2019-11-22T00:00:00+00:00",
             "date_modified": "2019-11-22T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2019-10-31/act-rules-format-is-a-web-standard-w3c-recommendation/",
-            "title": "ACT Rules Format is a Web Standard \"W3C Recommendation\"",
-            "summary": null,
-            "content_text": "Accessibility Conformance Testing (ACT) Rules Format 1.0 was published today as a “W3C Recommendation” web standard. This standard helps developers of automated testing tools and manual testing methodologies to write, share, and implement test rules. The rules contribute to consistent testing for accessibility standards compliance. ACT is introduced in the ACT Overview. For more information and examples of organizations already using ACT, see the blog post: Calibrate Your Accessibility Evaluation With ACT.",
-            "content_html": "<p><a href=\"https://www.w3.org/TR/act-rules-format/\">Accessibility Conformance Testing (ACT) Rules Format 1.0</a> was published today as a “W3C Recommendation” web standard. This standard helps developers of automated testing tools and manual testing methodologies to write, share, and implement test rules. The rules contribute to consistent testing for accessibility standards compliance. ACT is introduced in the <a href=\"https://www.w3.org/WAI/standards-guidelines/act/\">ACT Overview</a>. For more information and examples of organizations already using ACT, see the blog post: <a href=\"https://www.w3.org/blog/2019/10/calibrate-your-accessibility-evaluation-with-act\">Calibrate Your Accessibility Evaluation With ACT</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2019-10-31/act-rules-format-is-a-web-standard-w3c-recommendation/",
-            
-            
-            
-            
-            
-            "date_published": "2019-10-31T00:00:00+00:00",
-            "date_modified": "2019-10-31T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2019-09-10/making-audio-and-video-media-accessible/",
-            "title": "New Resource: Making Audio and Video Media Accessible",
-            "summary": null,
-            "content_text": "Making Audio and Video Media Accessible helps you understand and create captions/subtitles, audio description of visual information, descriptive transcripts, and sign language for media. It includes guidance for creating new videos, and on media player accessibility. The planning and project management sections address considerations for outsourcing or in-house development. The resource starts by introducing user experiences and benefits to organizations – illustrating how digital accessibility is essential for some and useful for all.",
-            "content_html": "<p><a href=\"/WAI/media/av/\"><img src=\"/WAI/content-images/wai-news/2019-09-10-making-audio-and-video-media-accessible.png\" alt=\"\" class=\" large\" /><br />Making Audio and Video Media Accessible</a> helps you understand and create captions/subtitles, audio description of visual information, descriptive transcripts, and sign language for media. It includes guidance for creating new videos, and on media player accessibility. The planning and project management sections address considerations for outsourcing or in-house development. The resource starts by introducing user experiences and benefits to organizations – illustrating how digital <strong>accessibility is essential for some and useful for all</strong>.</p>",
-            "url": "https://www.w3.org/WAI/news/2019-09-10/making-audio-and-video-media-accessible/",
-            
-            
-            
-            
-            
-            "date_published": "2019-09-10T00:00:00+00:00",
-            "date_modified": "2019-09-10T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2019-09-06/pronunciation-working-drafts/",
-            "title": "For Review: Pronunciation Working Drafts",
-            "summary": null,
-            "content_text": "The new Pronunciation Overview page provides an introduction to WAI’s work on ways for screen readers to accurately pronounce content. It introduces three First Public Working Drafts for review: Pronunciation User Scenarios, Pronunciation Use Cases, Pronunciation Gap Analysis. We welcome your comments on these drafts, preferably by 14 October 2019.",
-            "content_html": "<p>The new <a href=\"/WAI/pronunciation/\">Pronunciation Overview page</a> provides an introduction to WAI’s work on ways for screen readers to accurately pronounce content. It introduces three First Public Working Drafts for review: <a href=\"https://www.w3.org/TR/pronunciation-user-scenarios/\">Pronunciation User Scenarios</a>, <a href=\"https://www.w3.org/TR/pronunciation-use-cases/\">Pronunciation Use Cases</a>, <a href=\"https://www.w3.org/TR/pronunciation-gap-analysis/\">Pronunciation Gap Analysis</a>. We welcome your comments on these drafts, preferably by 14 October 2019.</p>",
-            "url": "https://www.w3.org/WAI/news/2019-09-06/pronunciation-working-drafts/",
-            
-            
-            
-            
-            
-            "date_published": "2019-09-06T00:00:00+00:00",
-            "date_modified": "2019-09-06T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2019-08-29/workshop-on-inclusive-design-for-immersive-web-standards/",
-            "title": "Upcoming: Workshop on Inclusive Design for Immersive Web Standards",
-            "summary": null,
-            "content_text": "A W3C Workshop on Inclusive Design for Immersive Web Standards will be held on 5-6 November 2019 in Seattle, WA, USA. The workshop will bring together people with practical experience with inclusive virtual reality and augmented reality, and people involved in relevant web technologies. Attendance is free for invited participants and is open to the public. Expressions of interest and position statements are due by 5 October 2019.",
-            "content_html": "<p>A <a href=\"https://www.w3.org/2019/08/inclusive-xr-workshop/\">W3C Workshop on Inclusive Design for Immersive Web Standards</a> will be held on 5-6 November 2019 in Seattle, WA, USA. The workshop will bring together people with practical experience with inclusive virtual reality and augmented reality, and people involved in relevant web technologies. Attendance is free for invited participants and is open to the public. Expressions of interest and position statements are due by 5 October 2019.</p>",
-            "url": "https://www.w3.org/WAI/news/2019-08-29/workshop-on-inclusive-design-for-immersive-web-standards/",
-            
-            
-            
-            
-            
-            "date_published": "2019-08-29T00:00:00+00:00",
-            "date_modified": "2019-08-29T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"

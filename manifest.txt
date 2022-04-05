@@ -1944,7 +1944,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2096,14 +2095,19 @@
 /news/2021-06-08/wcag3/index.html
 /news/2021-10-12/NAUR/index.html
 /news/2021-10-14/remote-meetings/index.html
+/news/2021-12-02/IDPD-18n-day-PwDs/index.html
+/news/2021-12-16/captcha/index.html
 /news/2022-02-10/curricula/index.html
+/news/2022-03-17/wai-working-on/index.html
 /news/2022-03-31/new-format-coga-patterns/index.html
+/news/2022-04-04/WAI-CooP-meeting/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
 /news/24/index.html
 /news/25/index.html
 /news/26/index.html
+/news/27/index.html
 /news/3/index.html
 /news/4/index.html
 /news/5/index.html
