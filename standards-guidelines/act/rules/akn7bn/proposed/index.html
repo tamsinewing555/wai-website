@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1649193493704530575";
+      element.src = "/WAI/assets/scripts/main.js?1649887263214407511";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1649193493704530575">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1649887263214407511">
 
-<title> iframe with negative tabindex has no interactive elements[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1649193493704530575"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> iframe with negative tabindex has no interactive elements[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1649887263214407511"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="iframe with negative tabindex has no interactive elements" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -325,11 +325,13 @@ nav.standalone-resource-about {
 
 <h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to any <code class="language-plaintext highlighter-rouge">iframe</code> element that has a negative number as a <code class="language-plaintext highlighter-rouge">tabindex</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>.</p>
+<p>This rule applies to any non-focusable <code class="language-plaintext highlighter-rouge">iframe</code> element that has <a href="#focusable" title="Definition of focusable">focusable</a> content.</p>
 
 <h2 id="expectation">Expectation</h2>
 
-<p>For each test target, the <a href="https://html.spec.whatwg.org/#nested-browsing-context" title="HTML nested browsing context, 2020/12/18">nested browsing context</a> does not include elements that are <a href="#visible" title="Definition of visible">visible</a> and part of the <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/12/18">sequential focus navigation</a>. An element is “included” in a <a href="https://html.spec.whatwg.org/#nested-browsing-context" title="HTML nested browsing context, 2020/12/18">nested browsing context</a> if its <a href="https://dom.spec.whatwg.org/#dom-node-ownerdocument" title="DOM node owner document property, 2020/12/18">owner document</a> is the <a href="https://html.spec.whatwg.org/#bc-container-document" title="HTML browsing context container document, 2020/12/18">container document</a> of the <a href="https://html.spec.whatwg.org/#nested-browsing-context" title="HTML nested browsing context, 2020/12/18">nested browsing context</a>.</p>
+<p>For each test target, the <a href="https://html.spec.whatwg.org/#nested-browsing-context" title="HTML nested browsing context, 2020/12/18">nested browsing context</a> does not <a href="#akn7bn:contain">contain</a> elements that are <a href="#visible" title="Definition of visible">visible</a> and part of the <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/12/18">sequential focus navigation</a>.</p>
+
+<p>An element is <dfn id="akn7bn:contain">contained</dfn> in a <a href="https://html.spec.whatwg.org/#nested-browsing-context" title="HTML nested browsing context, 2020/12/18">nested browsing context</a> if its <a href="https://dom.spec.whatwg.org/#dom-node-ownerdocument" title="DOM node owner document property, 2020/12/18">owner document</a> is the <a href="https://html.spec.whatwg.org/#bc-container-document" title="HTML browsing context container document, 2020/12/18">container document</a> of the <a href="https://html.spec.whatwg.org/#nested-browsing-context" title="HTML nested browsing context, 2020/12/18">nested browsing context</a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -419,6 +421,15 @@ nav.standalone-resource-about {
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">srcdoc=</span><span class="s">"&lt;a href='/'&gt;Home&lt;/a&gt;"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
 </code></pre></div></div>
 
+<h4 id="passed-example-4">Passed Example 4</h4>
+
+<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">iframe</code> element contains no <a href="#visible" title="Definition of visible">visible</a> content because the iframe is hidden.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">hidden</span> <span class="na">srcdoc=</span><span class="s">"&lt;a href='/'&gt;Home&lt;/a&gt;"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+</code></pre></div></div>
+
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed Example 1</h4>
@@ -461,6 +472,24 @@ nav.standalone-resource-about {
 <p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
 
 <p>The <dfn id="attribute-value:idl">attribute value</dfn> of an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> is the value returned on getting it. Note that when an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes" title="HTML specification of Reflecting Content Attributes in IDL Attributes">reflects</a> a content attribute, they have the same attribute value.</p>
+
+<h3 id="focusable">Focusable</h3>
+
+<p>An element is <em>focusable</em> if one or both of the following are true:</p>
+
+<ul>
+  <li>the element is part of <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/12/18">sequential focus navigation</a>; or</li>
+  <li>the element has a <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> that is not null.</li>
+</ul>
+
+<p><strong>Exception</strong>: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered <em>focusable</em>.</p>
+
+<p>Notes:</p>
+
+<ul>
+  <li>The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.</li>
+  <li>The <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> of an element is the value of the <a href="https://html.spec.whatwg.org/#attr-tabindex">tabindex attribute</a> parsed using the <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">rules for parsing integers</a>. For the <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> to be different from null, it needs to be <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">parsed</a> without errors.</li>
+</ul>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -540,7 +569,7 @@ not accounted for in the change history or the last modified date.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> akn7bn</p>
-<p><strong>Date:</strong> Updated 16 March 2022</p>
+<p><strong>Date:</strong> Updated 7 April 2022</p>
 <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -581,9 +610,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1649193493704530575"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1649887263214407511"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1649193493704530575"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1649887263214407511"></script>
 <script>
   svg4everybody();
 </script><script>

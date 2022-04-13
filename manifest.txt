@@ -1034,6 +1034,7 @@
 /content-assets/wcag-act-rules/testcases/aizyf1/ca563b842b32b8fc79ac872f8fc4e799fcf76072.html
 /content-assets/wcag-act-rules/testcases/aizyf1/e64416f9e9792cd76b77ee209a26269d47c3ff97.html
 /content-assets/wcag-act-rules/testcases/aizyf1/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html
+/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html
 /content-assets/wcag-act-rules/testcases/akn7bn/62673162e22ee1e95e962522b1d1c3b549dbfc49.html
 /content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html
 /content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html
@@ -2093,6 +2094,7 @@
 /news/2021-05-25/RAUR/index.html
 /news/2021-06-01/WAI-CooP-meeting/index.html
 /news/2021-06-08/wcag3/index.html
+/news/2021-09-28/saur/index.html
 /news/2021-10-12/NAUR/index.html
 /news/2021-10-14/remote-meetings/index.html
 /news/2021-12-02/IDPD-18n-day-PwDs/index.html
@@ -2101,6 +2103,7 @@
 /news/2022-03-17/wai-working-on/index.html
 /news/2022-03-31/new-format-coga-patterns/index.html
 /news/2022-04-04/WAI-CooP-meeting/index.html
+/news/2022-04-13/saur/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
