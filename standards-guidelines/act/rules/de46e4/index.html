@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1649887263214407511";
+      element.src = "/WAI/assets/scripts/main.js?1651368062171395239";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1649887263214407511">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1651368062171395239">
 
-<title> Element with lang attribute has valid language tag | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1649887263214407511"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Element with lang attribute has valid language tag | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1651368062171395239"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Element with lang attribute has valid language tag" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -409,6 +409,8 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
+<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/53a78bad6e92791991df42c50d2e763a9f9d772c.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which has a <a href="#known-primary-language-tag">known primary language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
@@ -421,6 +423,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
+
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e0fe6824b5571e0552ab2955697c5ff0776abf79.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">blockquote</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which has a <a href="#known-primary-language-tag">known primary language tag</a>. The region section (“CH”) in the value is ignored by the rule (and the definition of <a href="#known-primary-language-tag">known primary language tag</a>).</p>
 
@@ -435,6 +439,8 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
+<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/207782d0d8899521e2b51b5c384f83d7f4516358.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which has a <a href="#known-primary-language-tag">known primary language tag</a>, but a syntactically invalid region subtag which is ignored by the rule.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
@@ -447,6 +453,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="passed-example-4">Passed Example 4</h4>
+
+<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8376f95166a75a8541217b77ae6a235f1aac6c3d.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">div</code> element has a valid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">article</code> element, therefore its <code class="language-plaintext highlighter-rouge">lang</code> attribute is not considered by the rule.</p>
 
@@ -463,11 +471,13 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-5">Passed Example 5</h4>
 
+<p><a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/2febb4d398ed0d788f9ac054ff14cfbd68c0c1f1.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">div</code> element has a valid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. The <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> of the image is <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">div</code> element.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
-		<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"EN"</span><span class="nt">&gt;</span>
 			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/fireworks.jpg"</span> <span class="na">alt=</span><span class="s">"Fireworks over Paris"</span> <span class="nt">/&gt;</span>
 		<span class="nt">&lt;/div&gt;</span>
 	<span class="nt">&lt;/body&gt;</span>
@@ -477,6 +487,8 @@ nav.standalone-resource-about {
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed Example 1</h4>
+
+<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0545e4efa0d7897b357f0396e7e30d5f3b5921dd.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which does not have a <a href="#known-primary-language-tag">known primary language tag</a> because its primary language subtag does not exist in the <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a>.</p>
 
@@ -491,6 +503,8 @@ nav.standalone-resource-about {
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e7f2916927e758969cbfe270ad4b6ed6c07faa72.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which has no <a href="#known-primary-language-tag">known primary language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
@@ -504,6 +518,8 @@ nav.standalone-resource-about {
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
+<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/35a083bacf80a64deb81069ec7db0229520c9a6c.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">article</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> which consists of only <a href="#whitespace" title="Definition of Whitespace">whitespace</a> and thus has no <a href="#known-primary-language-tag">known primary language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
@@ -516,6 +532,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="failed-example-4">Failed Example 4</h4>
+
+<p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0d2ac2a60f6b99de02537945ac61366e1562403d.html">Open in a new tab</a></p>
 
 <p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> does not have a valid language tag. The <code class="language-plaintext highlighter-rouge">lang</code> attribute must be valid because the content is <a href="#visible" title="Definition of visible">visible</a>.</p>
 
@@ -532,6 +550,8 @@ nav.standalone-resource-about {
 
 <h4 id="failed-example-5">Failed Example 5</h4>
 
+<p><a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8df22e9421c652e9849f7bfb4dbd28a24518c0fb.html">Open in a new tab</a></p>
+
 <p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> does not have a valid language tag, and its <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> is not <a href="#visible" title="Definition of visible">visible</a> though it is still <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
@@ -546,6 +566,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="failed-example-6">Failed Example 6</h4>
+
+<p><a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/984a5b424d118046dfa2529398056fbd52d4e5ea.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">div</code> element has an invalid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">article</code> element, therefore its <code class="language-plaintext highlighter-rouge">lang</code> attribute is not considered by the rule.</p>
 
@@ -562,6 +584,8 @@ nav.standalone-resource-about {
 
 <h4 id="failed-example-7">Failed Example 7</h4>
 
+<p><a class="example-link" title="Failed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/3087d6c373b09b1f4fc70a5c3ae221cce54b626c.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">div</code> element has an invalid <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. The <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> of the image is <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">div</code> element.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
@@ -575,6 +599,8 @@ nav.standalone-resource-about {
 
 <h4 id="failed-example-8">Failed Example 8</h4>
 
+<p><a class="example-link" title="Failed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html">Open in a new tab</a></p>
+
 <p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of this <code class="language-plaintext highlighter-rouge">p</code> element is an <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2: Codes for the Representation of Names of Languages">iso 639.2</a> three letters code, which has no <a href="#known-primary-language-tag">known primary language tag</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -585,6 +611,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="failed-example-9">Failed Example 9</h4>
+
+<p><a class="example-link" title="Failed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html">Open in a new tab</a></p>
 
 <p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of this <code class="language-plaintext highlighter-rouge">p</code> element is a <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tag</a>, which has no <a href="#known-primary-language-tag">known primary language tag</a>.</p>
 
@@ -599,6 +627,8 @@ nav.standalone-resource-about {
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
+<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html">Open in a new tab</a></p>
+
 <p>There is no element with a lang attribute value which is a descendant of a body element.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
@@ -609,6 +639,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
+
+<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d6606eb2863e2176f9beb914e5cfe70bce2d905e.html">Open in a new tab</a></p>
 
 <p>There is no element which is a descendant of a <code class="language-plaintext highlighter-rouge">body</code> element and has a non-empty <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>.</p>
 
@@ -622,6 +654,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
+
+<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html">Open in a new tab</a></p>
 
 <p>There is no element with a <a href="https://dom.spec.whatwg.org/#text">text node</a> as a <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree">flat tree</a> that is either <a href="#visible" title="Definition of visible">visible</a> or <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
@@ -638,9 +672,11 @@ nav.standalone-resource-about {
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
+<p><a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html">Open in a new tab</a></p>
+
 <p>There is no <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from this <code class="language-plaintext highlighter-rouge">div</code> element.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
 		<span class="nt">&lt;div</span> <span class="na">lang=</span><span class="s">"invalid"</span><span class="nt">&gt;</span>
 			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/fireworks.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
@@ -887,9 +923,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1649887263214407511"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1651368062171395239"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1649887263214407511"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1651368062171395239"></script>
 <script>
   svg4everybody();
 </script><script>

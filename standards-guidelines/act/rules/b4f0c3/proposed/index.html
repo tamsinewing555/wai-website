@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1649887263214407511";
+      element.src = "/WAI/assets/scripts/main.js?1651368062171395239";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1649887263214407511">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1651368062171395239">
 
-<title> meta viewport allows for zoom[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1649887263214407511"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> meta viewport allows for zoom[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1651368062171395239"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="meta viewport allows for zoom" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -262,7 +262,9 @@ nav.standalone-resource-about {
                 
                 <li><a href="#applicability">Applicability</a></li>
                 
-                <li><a href="#expectation">Expectation</a></li>
+                <li><a href="#expectation1">Expectation 1</a></li>
+                
+                <li><a href="#expectation2">Expectation 2</a></li>
                 
                 <li><a href="#assumptions">Assumptions</a></li>
                 
@@ -325,25 +327,24 @@ nav.standalone-resource-about {
 
 <h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to each <code class="language-plaintext highlighter-rouge">meta</code> element with a <code class="language-plaintext highlighter-rouge">name</code> attribute whose value is a <a href="https://infra.spec.whatwg.org/#ascii-case-insensitive" title="ASCII case-insensitive">case-insensitive</a> match for <code class="language-plaintext highlighter-rouge">viewport</code> and has a <code class="language-plaintext highlighter-rouge">content</code> attribute.</p>
+<p>This rule applies to each <code class="language-plaintext highlighter-rouge">content</code> attribute on a <code class="language-plaintext highlighter-rouge">meta</code> element with a <code class="language-plaintext highlighter-rouge">name</code> <a href="#attribute-value" title="Definition of attribute value">attribute value</a> of <code class="language-plaintext highlighter-rouge">viewport</code>.</p>
 
-<h2 id="expectation">Expectation</h2>
+<h2 id="expectation1">Expectation 1</h2>
 
-<p>For each test target, the <code class="language-plaintext highlighter-rouge">content</code> attribute, whose value is mapped to a list of property/value pairs in a user-agent specific manner, does not:</p>
+<p>For each test target, the <a href="#attribute-value" title="Definition of attribute value">attribute value</a> does hot have a <code class="language-plaintext highlighter-rouge">user-scalable</code> property with a value of <code class="language-plaintext highlighter-rouge">no</code>.</p>
 
-<ul>
-  <li>specify the property <code class="language-plaintext highlighter-rouge">user-scalable</code> with a value of <code class="language-plaintext highlighter-rouge">no</code>; nor</li>
-  <li>specify the property <code class="language-plaintext highlighter-rouge">maximum-scale</code> with a value of less than 2.</li>
-</ul>
+<h2 id="expectation2">Expectation 2</h2>
+
+<p>For each test target, the <a href="#attribute-value" title="Definition of attribute value">attribute value</a> does not have a <code class="language-plaintext highlighter-rouge">maximum-scale</code> property with a value less than 2.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>If any of the following is false, this rule can fail while Success Criteria <a href="https://www.w3.org/TR/WCAG21/#resize-text" title="WCAG 2.1 Success Criterion 1.4.4 Resize text">1.4.4 Resize text</a> and <a href="https://www.w3.org/TR/WCAG21/#reflow" title="WCAG 2.1 Success Criterion 1.4.10 Reflow">1.4.10 Reflow</a> can still be satisfied:</p>
+<p>Pages for which any of the following is true may satisfy success criteria Success Criteria <a href="https://www.w3.org/TR/WCAG21/#resize-text" title="WCAG 2.1 Success Criterion 1.4.4 Resize text">1.4.4 Resize text</a> and <a href="https://www.w3.org/TR/WCAG21/#reflow" title="WCAG 2.1 Success Criterion 1.4.10 Reflow">1.4.10 Reflow</a>, even if the rule results in a failed outcome.</p>
 
 <ul>
-  <li>The <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s" title="Web page">page</a> has <a href="#visible" title="Definition of visible">visible</a> <a href="https://www.w3.org/TR/WCAG21/#dfn-content" title="content (Web content)">content</a>.</li>
-  <li>There is no other <a href="https://www.w3.org/TR/WCAG21/#dfn-mechanism">mechanism</a> available to resize the text content.</li>
-  <li>The <a href="https://www.w3.org/TR/WCAG21/#dfn-content" title="content (Web content)">content</a> is not by default rendered in a way that fits in an area of 320 by 256 <a href="https://www.w3.org/TR/css3-values/#reference-pixel" title="CSS 3 definition, reference pixel">CSS pixels</a>, and needs to reflow to do so.</li>
+  <li>The <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s" title="Web page">page</a> has no <a href="#visible" title="Definition of visible">visible</a> <a href="https://www.w3.org/TR/WCAG21/#dfn-content" title="content (Web content)">content</a>; or</li>
+  <li>There is another <a href="https://www.w3.org/TR/WCAG21/#dfn-mechanism">mechanism</a> available to resize the text content; or</li>
+  <li>The <a href="https://www.w3.org/TR/WCAG21/#dfn-content" title="content (Web content)">content</a> does not need to reflow in order to fit in an area of 320 by 256 <a href="https://www.w3.org/TR/css3-values/#reference-pixel" title="CSS 3 definition, reference pixel">CSS pixels</a>.</li>
 </ul>
 
 <h2 id="accessibilitysupport">Accessibility Support</h2>
@@ -607,6 +608,25 @@ nav.standalone-resource-about {
 
 <h2 id="glossary">Glossary</h2>
 
+<h3 id="attribute-value">Attribute value</h3>
+
+<p>The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.</p>
+
+<p>Some notable case of attribute value, among others:</p>
+
+<ul>
+  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute" title="HTML Specification of Enumerated Attribute">enumerated attributes</a>, the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus <code class="language-plaintext highlighter-rouge">&lt;input type="image" /&gt;</code> has an attribute value of either <code class="language-plaintext highlighter-rouge">Image Button</code> (the state) or <code class="language-plaintext highlighter-rouge">image</code> (the keyword mapping to it), both formulations having the same meaning; similarly, “an input element with a <code class="language-plaintext highlighter-rouge">type</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">Text</code>” can be either <code class="language-plaintext highlighter-rouge">&lt;input type="text" /&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;input /&gt;</code> (missing value default), or <code class="language-plaintext highlighter-rouge">&lt;input type="invalid" /&gt;</code> (invalid value default).</li>
+  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes" title="HTML Specification of Boolean Attribute">boolean attributes</a>, the <dfn id="attribute-value:boolean">attribute value</dfn> is <code class="language-plaintext highlighter-rouge">true</code> when the attribute is present and <code class="language-plaintext highlighter-rouge">false</code> otherwise. Thus <code class="language-plaintext highlighter-rouge">&lt;button disabled&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;button disabled="disabled"&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;button disabled=""&gt;</code> all have a <code class="language-plaintext highlighter-rouge">disabled</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">true</code>.</li>
+  <li>For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.</li>
+  <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
+  <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+</ul>
+
+<p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
+
+<p>The <dfn id="attribute-value:idl">attribute value</dfn> of an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> is the value returned on getting it. Note that when an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes" title="HTML specification of Reflecting Content Attributes in IDL Attributes">reflects</a> a content attribute, they have the same attribute value.</p>
+
 <h3 id="outcome">Outcome</h3>
 
 <p>An <em>outcome</em> is a conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> or one of its constituent <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. An outcome can be one of the three following types:</p>
@@ -703,7 +723,7 @@ not accounted for in the change history or the last modified date.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> b4f0c3</p>
-<p><strong>Date:</strong> Updated 16 March 2022</p>
+<p><strong>Date:</strong> Updated 22 April 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -744,9 +764,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1649887263214407511"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1651368062171395239"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1649887263214407511"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1651368062171395239"></script>
 <script>
   svg4everybody();
 </script><script>

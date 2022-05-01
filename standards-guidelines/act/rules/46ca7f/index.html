@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1649887263214407511";
+      element.src = "/WAI/assets/scripts/main.js?1651368062171395239";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1649887263214407511">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1651368062171395239">
 
-<title> Element marked as decorative is not exposed | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1649887263214407511"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Element marked as decorative is not exposed | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1651368062171395239"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Element marked as decorative is not exposed" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -360,12 +360,16 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
+<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/e5b8fa7ab66409e7b52b335a8b6aebe11fd78635.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its empty <code class="language-plaintext highlighter-rouge">alt</code> attribute and has <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">none</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
+
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/b40e6ce081099b8bf0f76a43f4c27f12df342ddd.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its empty <code class="language-plaintext highlighter-rouge">alt</code> attribute and is not <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> because of the <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute.</p>
 
@@ -374,12 +378,16 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
+<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/6f8e6014c133635fecac02e1087a666c5014ae5f.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its empty <code class="language-plaintext highlighter-rouge">alt</code> attribute and is not <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> because it is <code class="language-plaintext highlighter-rouge">hidden</code> to everyone.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">hidden</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-4">Passed Example 4</h4>
+
+<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/eb5983ff8bb0f85c891d48f96106337446797d8f.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">nav</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">role</code> attribute and has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">presentation</code>.</p>
 
@@ -390,12 +398,16 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-5">Passed Example 5</h4>
 
+<p><a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/9c51e8f0568ab3401375114dd0eded2eddfe231a.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">role</code> attribute and has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">presentation</code> because own attributes are not required to be exposed and thus do not trigger the <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">alt=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-6">Passed Example 6</h4>
+
+<p><a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/6687821a71b53e0e1764e895900a6bad46412b5c.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">svg</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">role</code> attribute and has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">none</code>.</p>
 
@@ -408,6 +420,8 @@ nav.standalone-resource-about {
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
+<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/e136a03c52c01c1b190c7372d83463f3c6502de9.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">nav</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">role</code> attribute but has a non-empty <code class="language-plaintext highlighter-rouge">aria-label</code> attribute causing it to be <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> with its <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a> of <code class="language-plaintext highlighter-rouge">navigation</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">aria-label=</span><span class="s">"global"</span><span class="nt">&gt;</span>
@@ -417,12 +431,16 @@ nav.standalone-resource-about {
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/96c1f58088f1e32c965f38ddc50d4b88f6a0f022.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">img</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its empty <code class="language-plaintext highlighter-rouge">alt</code> attribute but has a non-empty <code class="language-plaintext highlighter-rouge">aria-labelledby</code> attribute causing it to be <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> with its <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a> of <code class="language-plaintext highlighter-rouge">img</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">aria-labelledby=</span><span class="s">"label"</span> <span class="nt">/&gt;</span> <span class="nt">&lt;span</span> <span class="na">hidden</span> <span class="na">id=</span><span class="s">"label"</span><span class="nt">&gt;</span>W3C logo<span class="nt">&lt;/span&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-3">Failed Example 3</h4>
+
+<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/b4329d21bd80d961408bf066a70998417234f200.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">svg</code> element is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> through its <code class="language-plaintext highlighter-rouge">role</code> attribute but has a non-empty <code class="language-plaintext highlighter-rouge">aria-label</code> attribute causing it to be <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a> with its <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a> of <code class="language-plaintext highlighter-rouge">graphics-document</code>.</p>
 
@@ -434,6 +452,8 @@ nav.standalone-resource-about {
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
+
+<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/a48478825dc5baf21cc79bfcfbe12ed462590f1e.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">img</code> element is not <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a>.</p>
 
@@ -640,9 +660,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1649887263214407511"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1651368062171395239"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1649887263214407511"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1651368062171395239"></script>
 <script>
   svg4everybody();
 </script><script>

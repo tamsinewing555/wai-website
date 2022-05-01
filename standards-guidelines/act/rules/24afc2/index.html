@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1649887263214407511";
+      element.src = "/WAI/assets/scripts/main.js?1651368062171395239";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1649887263214407511">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1651368062171395239">
 
-<title> Letter spacing in style attributes is not !important | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1649887263214407511"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Letter spacing in style attributes is not !important | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1651368062171395239"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Letter spacing in style attributes is not !important" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -399,6 +399,8 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
+<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/1877242970bb7a92b5c8ee7bc5c5e5ec87877890.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <strong>not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a></strong> <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">letter-spacing</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"letter-spacing: 0.1em"</span><span class="nt">&gt;</span>
@@ -408,6 +410,8 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9e9382901f59c7dd476717a55bf5c5a37ed76bbc.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">letter-spacing</code> of 0.15 time the font size, which is <strong>wide enough</strong>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"letter-spacing: 0.15em !important"</span><span class="nt">&gt;</span>
@@ -416,6 +420,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="passed-example-3">Passed Example 3</h4>
+
+<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/43f8fe88b8e7365db7aa251b263b5d00c7a47ae9.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <a href="https://www.w3.org/TR/css-text-3/#propdef-letter-spacing" title="CSS Text Module Level 3 - Tracking: the letter-spacing property">letter-spacing</a> of <code class="language-plaintext highlighter-rouge">3px</code>, which is <strong>wide enough</strong> (the threshold is <code class="language-plaintext highlighter-rouge">3px</code>).</p>
 
@@ -432,6 +438,8 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-4">Passed Example 4</h4>
 
+<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/787f24a573fa422e24ab72312f7306253bb83a4f.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has two <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> values for its <code class="language-plaintext highlighter-rouge">letter-spacing</code> property. The latest wins the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a>. It has a value of <code class="language-plaintext highlighter-rouge">0.15em</code>, and is <strong>wide enough</strong>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"letter-spacing: 0.1em !important; letter-spacing: 0.15em !important"</span><span class="nt">&gt;</span>
@@ -441,6 +449,8 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-5">Passed Example 5</h4>
 
+<p><a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/f000a9c495f11a4a11a4314871b91f4173e4589a.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has two <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> values for its <code class="language-plaintext highlighter-rouge">letter-spacing</code> property. The one which is <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> wins the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a>. It has a value of <code class="language-plaintext highlighter-rouge">0.15em</code>, and is <strong>wide enough</strong>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"letter-spacing: 0.15em !important; letter-spacing: 0.1em"</span><span class="nt">&gt;</span>
@@ -449,6 +459,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="passed-example-6">Passed Example 6</h4>
+
+<p><a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9608b535262c655f523314958f8ca3019a0968fe.html">Open in a new tab</a></p>
 
 <p>The <a href="https://www.w3.org/TR/css-cascade-4/#cascaded" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascaded Values">cascaded</a> value of the <code class="language-plaintext highlighter-rouge">letter-spacing</code> property of this <code class="language-plaintext highlighter-rouge">p</code> element is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in the style sheet, not in the <code class="language-plaintext highlighter-rouge">style</code> attribute (it wins the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> because it is <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>). Thus, the <code class="language-plaintext highlighter-rouge">p</code> element matches the <strong>cascade</strong> condition.</p>
 
@@ -465,6 +477,8 @@ nav.standalone-resource-about {
 
 <h4 id="passed-example-7">Passed Example 7</h4>
 
+<p><a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/6aa2034507dc16e6ae0d16f1b6f2a14d3dfadc18.html">Open in a new tab</a></p>
+
 <p>The <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of the <code class="language-plaintext highlighter-rouge">letter-spacing</code> property of this <code class="language-plaintext highlighter-rouge">p</code> element is <strong>not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a></strong>. The <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of the <code class="language-plaintext highlighter-rouge">letter-spacing</code> property of this <code class="language-plaintext highlighter-rouge">span</code> element is the <a href="https://www.w3.org/TR/css-cascade-4/#inheriting" title="CSS Cascading and Inheritance Level 4 (Working draft) - Inherited Values">inherited</a> value, that is the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its parent and therefore also <strong>not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a></strong>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"letter-spacing: 0.1em"</span><span class="nt">&gt;</span>
@@ -475,6 +489,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="passed-example-8">Passed Example 8</h4>
+
+<p><a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/64b25817b3d3909ab7f4acaee061875ebac1cee3.html">Open in a new tab</a></p>
 
 <p>The <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of the <code class="language-plaintext highlighter-rouge">letter-spacing</code> property of this <code class="language-plaintext highlighter-rouge">p</code> element is <strong>not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a></strong>. The <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of the <code class="language-plaintext highlighter-rouge">letter-spacing</code> property of this <code class="language-plaintext highlighter-rouge">span</code> element is the <a href="https://www.w3.org/TR/css-cascade-4/#inheriting" title="CSS Cascading and Inheritance Level 4 (Working draft) - Inherited Values">inherited</a> value, that is the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its parent and therefore also <strong>not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a></strong>.</p>
 
@@ -489,6 +505,8 @@ nav.standalone-resource-about {
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
+<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/8383685465c6a417cb86e192d1e9157bd5feee99.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">letter-spacing</code> of only 0.1 times the font size, which is below the required minimum.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"letter-spacing: 0.1em !important"</span><span class="nt">&gt;</span>
@@ -497,6 +515,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
+
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/b5a8fe74fbbea40e8bbee407f167ae808e14ea49.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">letter-spacing</code> of <code class="language-plaintext highlighter-rouge">2px</code> which is only 0.1 times the font size (<code class="language-plaintext highlighter-rouge">20px</code>), thus below the required minimum.</p>
 
@@ -513,6 +533,8 @@ nav.standalone-resource-about {
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
+<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/d8e379c210cdb651d28985c883fea21a4529ed59.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">letter-spacing</code> of 0.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"letter-spacing: normal !important"</span><span class="nt">&gt;</span>
@@ -521,6 +543,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="failed-example-4">Failed Example 4</h4>
+
+<p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9788de86b8a4e7a685d356347cc4059874ae6a38.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <code class="language-plaintext highlighter-rouge">letter-spacing</code> of 0.</p>
 
@@ -533,6 +557,8 @@ nav.standalone-resource-about {
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
+<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/eeca04eb6d00ab0aca01d460f0861f3328d4992d.svg">Open in a new tab</a></p>
+
 <p>There is no HTML element.</p>
 
 <pre><code class="language-svg">&lt;svg xmlns="http://www.w3.org/2000/svg"&gt;
@@ -541,6 +567,8 @@ nav.standalone-resource-about {
 </code></pre>
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
+
+<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/be174e053a61ece650873a6a44f8e4be356e4193.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element is not <a href="#visible" title="Definition of visible">visible</a> because of <code class="language-plaintext highlighter-rouge">display: none</code>.</p>
 
@@ -551,6 +579,8 @@ nav.standalone-resource-about {
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
+<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/88d6ea5706ed8ae188caa166879c381e64e5077a.html">Open in a new tab</a></p>
+
 <p>This <code class="language-plaintext highlighter-rouge">p</code> element is not <a href="#visible" title="Definition of visible">visible</a> because it is positioned off-screen.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"position: absolute; top: -999em; letter-spacing: 0.1em !important;"</span><span class="nt">&gt;</span>
@@ -559,6 +589,8 @@ nav.standalone-resource-about {
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
+
+<p><a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/92e706402d8f8cb13d73ffb759ce35ec910d272c.html">Open in a new tab</a></p>
 
 <p>The <code class="language-plaintext highlighter-rouge">style</code> attribute of this <code class="language-plaintext highlighter-rouge">p</code> element does not <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declare</a> the <code class="language-plaintext highlighter-rouge">letter-spacing</code> property.</p>
 
@@ -700,9 +732,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1649887263214407511"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1651368062171395239"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1649887263214407511"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1651368062171395239"></script>
 <script>
   svg4everybody();
 </script><script>
