@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1652370000680156028";
+      element.src = "/WAI/assets/scripts/main.js?1652453997061891171";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652370000680156028">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652453997061891171">
 
-<title> headers attribute specified on a cell refers to cells in the same table element[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652370000680156028"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> headers attribute specified on a cell refers to cells in the same table element[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652453997061891171"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="headers attribute specified on a cell refers to cells in the same table element" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -256,7 +256,6 @@ h2#sidebar-header {
     
         <nav class="box nav-hack sidebar standalone-resource__sidebar " aria-labelledby="sidebar-header">
           <h2 id="sidebar-header" class="box-h ">Page Contents</h2>
-          
             
             <div class="box-i">
                 <ul>
@@ -266,21 +265,21 @@ h2#sidebar-header {
                 
                 <li><a href="#applicability">Applicability</a></li>
                 
-                <li><a href="#expectation1">Expectation 1</a></li>
+                <li><a href="#expectation-1">Expectation 1</a></li>
                 
-                <li><a href="#expectation2">Expectation 2</a></li>
+                <li><a href="#expectation-2">Expectation 2</a></li>
                 
                 <li><a href="#assumptions">Assumptions</a></li>
                 
-                <li><a href="#accessibilitysupport">Accessibility Support</a></li>
+                <li><a href="#accessibility-support">Accessibility Support</a></li>
                 
                 <li><a href="#background">Background</a></li>
                 
-                <li><a href="#accessibilityrequirementsmapping">Accessibility Requirements Mapping</a></li>
+                <li><a href="#accessibility-requirements-mapping">Accessibility Requirements Mapping</a></li>
                 
-                <li><a href="#inputaspects">Input Aspects</a></li>
+                <li><a href="#input-aspects">Input Aspects</a></li>
                 
-                <li><a href="#testcases">Test Cases</a></li>
+                <li><a href="#test-cases">Test Cases</a></li>
                 
                 <li><a href="#glossary">Glossary</a></li>
                 
@@ -333,11 +332,11 @@ h2#sidebar-header {
 
 <p>This rule applies to any <code class="language-plaintext highlighter-rouge">headers</code> attribute specified on a <a href="https://html.spec.whatwg.org/#concept-cell" title="Definition of cell"><code class="language-plaintext highlighter-rouge">cell</code></a> within a <a href="https://html.spec.whatwg.org/#concept-table" title="Definition of table"><code class="language-plaintext highlighter-rouge">table</code></a> element, where the <a href="https://html.spec.whatwg.org/#concept-table" title="Definition of table"><code class="language-plaintext highlighter-rouge">table</code></a> element is <a href="#visible" title="Definition of visible">visible</a> and <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
 
-<h2 id="expectation1">Expectation 1</h2>
+<h2 id="expectation-1">Expectation 1</h2>
 
 <p>Each target’s <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is a <a href="https://html.spec.whatwg.org/#set-of-space-separated-tokens" title="Space separated tokens">set of space separated tokens</a>. Each token is the value of the <code class="language-plaintext highlighter-rouge">id</code> attribute of an element, that is a <a href="https://html.spec.whatwg.org/#concept-cell" title="Definition of cell"><code class="language-plaintext highlighter-rouge">cell</code></a> of the same <a href="https://html.spec.whatwg.org/#concept-table" title="Definition of table"><code class="language-plaintext highlighter-rouge">table</code></a>.</p>
 
-<h2 id="expectation2">Expectation 2</h2>
+<h2 id="expectation-2">Expectation 2</h2>
 
 <p>Each target’s <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is a <a href="https://html.spec.whatwg.org/#set-of-space-separated-tokens" title="Space separated tokens">set of space separated tokens</a>, and none of these tokens is the <code class="language-plaintext highlighter-rouge">id</code> of the element on which the test target is specified.</p>
 
@@ -349,7 +348,7 @@ h2#sidebar-header {
   <li>This rule assumes that the id values on the <code class="language-plaintext highlighter-rouge">headers</code> attribute are unique.</li>
 </ul>
 
-<h2 id="accessibilitysupport">Accessibility Support</h2>
+<h2 id="accessibility-support">Accessibility Support</h2>
 
 <p>There are no major accessibility support issues known for this rule.</p>
 
@@ -367,7 +366,7 @@ h2#sidebar-header {
   <li><code class="language-plaintext highlighter-rouge">headers</code> attribute referencing to the cell itself are ignored when <a href="https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells">assigning header cells (step 3, first case, point 2)</a>.</li>
 </ul>
 
-<h2 id="accessibilityrequirementsmapping">Accessibility Requirements Mapping</h2>
+<h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
 
 <ul class="act-requirements-list">
   <li><details>
@@ -396,7 +395,7 @@ h2#sidebar-header {
   </details></li>
 </ul>
 
-<h2 id="inputaspects">Input Aspects</h2>
+<h2 id="input-aspects">Input Aspects</h2>
 
 <p>The following aspects are required in using this rule.</p>
 
@@ -405,7 +404,7 @@ h2#sidebar-header {
   <li><a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-css">CSS Styling</a></li>
 </ul>
 
-<h2 id="testcases">Test Cases</h2>
+<h2 id="test-cases">Test Cases</h2>
 
 <h3 id="passed">Passed</h3>
 
@@ -936,9 +935,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1652370000680156028"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1652453997061891171"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1652370000680156028"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1652453997061891171"></script>
 <script>
   svg4everybody();
 </script><script>
