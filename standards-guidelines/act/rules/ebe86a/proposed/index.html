@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1652834056980640420";
+      element.src = "/WAI/assets/scripts/main.js?1652904595640413685";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652834056980640420">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652904595640413685">
 
-<title> Focusable element has no keyboard trap via non-standard navigation[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652834056980640420"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Focusable element has no keyboard trap via non-standard navigation[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652904595640413685"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Focusable element has no keyboard trap via non-standard navigation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -339,8 +339,6 @@ h2#sidebar-header {
 
 <p>This rule applies to any <a href="#namespaced-element">HTML or SVG element</a> that is <a href="#focusable">focusable</a> where focus cannot cycle to the browser UI by using <a href="#standard-keyboard-navigation">standard keyboard navigation</a>.</p>
 
-<p><strong>Note:</strong> This rule only applies to HTML and SVG. Thus, it is a partial check for WCAG 2.0 success criterion 2.1.2, which applies to all content.</p>
-
 <h2 id="expectation-1">Expectation 1</h2>
 
 <p>For each target element help information is <a href="#visible">visible</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> or can be accessed from within the keyboard trap.</p>
@@ -397,24 +395,18 @@ h2#sidebar-header {
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/2e5b21696d8d78553aef73c00c2c4118a123ce53.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/ab24c77ed9daefc8fa1650aedf0d1c6438460243.html">Open in a new tab</a></p>
 
-<p>Keyboard trap with help information in a paragraph before, and where the method advised works.</p>
+<p>These focusable <code class="language-plaintext highlighter-rouge">button</code> elements have scripts that create a keyboard trap. The document includes help information in a paragraph before the <code class="language-plaintext highlighter-rouge">button</code> elements and the method advised works to escape the keyboard trap.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
-	<span class="kd">var</span> <span class="nx">trapOn</span> <span class="o">=</span> <span class="kc">false</span>
-<span class="nt">&lt;/script&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/test-assets/focusable-no-keyboard-trap/keyboard.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
-<span class="nt">&lt;p&gt;</span>Press the M-key to Exit<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Press Ctrl+M to Exit<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link1"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onblur=</span><span class="s">"(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusToButton('btn2')"</span> <span class="na">onkeydown=</span><span class="s">"escapeTrapOnCtrlM(event)"</span><span class="nt">&gt;</span>
 	Button 1
 <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span>
-	<span class="na">id=</span><span class="s">"btn2"</span>
-	<span class="na">onkeydown=</span><span class="s">"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"</span>
-	<span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span>
-<span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusToButton('btn1')"</span> <span class="na">onkeydown=</span><span class="s">"escapeTrapOnCtrlM(event)"</span><span class="nt">&gt;</span>
 	Button 2
 <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
@@ -422,24 +414,18 @@ h2#sidebar-header {
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/7aa9d83ec176f011c1646a8977070c2b1c5209b6.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/e3902f01b8589702925be6d97f9542895ef3c76d.html">Open in a new tab</a></p>
 
-<p>Keyboard trap with help information within the trap, and where the method advised works.</p>
+<p>These focusable <code class="language-plaintext highlighter-rouge">button</code> elements have scripts that create a keyboard trap. The document includes help information within the trap and the method advised works to escape the keyboard trap.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
-	<span class="kd">var</span> <span class="nx">trapOn</span> <span class="o">=</span> <span class="kc">false</span>
-<span class="nt">&lt;/script&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/test-assets/focusable-no-keyboard-trap/keyboard.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link1"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onblur=</span><span class="s">"(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusToButton('btn2')"</span> <span class="na">onkeydown=</span><span class="s">"escapeTrapOnCtrlM(event)"</span><span class="nt">&gt;</span>
 	Button 1
 <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;p&gt;</span>Press the M-key to Exit<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;button</span>
-	<span class="na">id=</span><span class="s">"btn2"</span>
-	<span class="na">onkeydown=</span><span class="s">"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"</span>
-	<span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span>
-<span class="nt">&gt;</span>
+<span class="nt">&lt;p&gt;</span>Press Ctrl+M to Exit<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusToButton('btn1')"</span> <span class="na">onkeydown=</span><span class="s">"escapeTrapOnCtrlM(event)"</span><span class="nt">&gt;</span>
 	Button 2
 <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
@@ -447,26 +433,20 @@ h2#sidebar-header {
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
-<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/3432e1dfefcc17bea67a25de3c42a9a4bec73d7c.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/b92b5214d2b2214b89fb9812b389536759701790.html">Open in a new tab</a></p>
 
-<p>Keyboard trap with “help” link that once clicked exposes the instructions.</p>
+<p>These focusable <code class="language-plaintext highlighter-rouge">button</code> elements have scripts that create a keyboard trap. The document includes help information in a “help” link that once clicked exposes the instructions to escape the keyboard trap.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
-	<span class="kd">var</span> <span class="nx">trapOn</span> <span class="o">=</span> <span class="kc">false</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/test-assets/focusable-no-keyboard-trap/keyboard.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
-	<span class="kd">function</span> <span class="nx">showHelpText</span><span class="p">()</span> <span class="p">{</span>
-		<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">helptext</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">&lt;p&gt;Press the M-key to Exit&lt;/p&gt;</span><span class="dl">'</span>
-	<span class="p">}</span>
-<span class="nt">&lt;/script&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">onkeydown=</span><span class="s">"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">onkeydown=</span><span class="s">"escapeTrapOnCtrlM(event)"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link1"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onblur=</span><span class="s">"(function(e){trapOn=true; document.getElementById('helpLink').focus();})(event)"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusTo('helpLink')"</span><span class="nt">&gt;</span>
 		Button 1
 	<span class="nt">&lt;/button&gt;</span>
 	<span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"helpLink"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">onclick=</span><span class="s">"showHelpText()"</span><span class="nt">&gt;</span>How to go the next element<span class="nt">&lt;/a&gt;</span>
 	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"helptext"</span><span class="nt">&gt;&lt;/div&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">onblur=</span><span class="s">"moveFocusTo('btn1')"</span><span class="nt">&gt;</span>
 		Button 2
 	<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -477,23 +457,17 @@ h2#sidebar-header {
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/5e4c0baac1de5da1325348d49892a01b92f8fb0c.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/7dcc4ae00712889d448ecbcba200e032dca59bf0.html">Open in a new tab</a></p>
 
-<p>Keyboard trap with no instructions.</p>
+<p>These focusable <code class="language-plaintext highlighter-rouge">button</code> elements create a keyboard trap with no instructions.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
-	<span class="kd">var</span> <span class="nx">trapOn</span> <span class="o">=</span> <span class="kc">false</span>
-<span class="nt">&lt;/script&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/test-assets/focusable-no-keyboard-trap/keyboard.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link1"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onblur=</span><span class="s">"(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusToButton('btn2')"</span> <span class="na">onkeydown=</span><span class="s">"escapeTrapOnCtrlM(event)"</span><span class="nt">&gt;</span>
 	Button 1
 <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span>
-	<span class="na">id=</span><span class="s">"btn2"</span>
-	<span class="na">onkeydown=</span><span class="s">"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"</span>
-	<span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span>
-<span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusToButton('btn1')"</span> <span class="na">onkeydown=</span><span class="s">"escapeTrapOnCtrlM(event)"</span><span class="nt">&gt;</span>
 	Button 2
 <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
@@ -501,24 +475,18 @@ h2#sidebar-header {
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/e9885e3c626b0f50853075e86e0b2f82d723bd24.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/8fba3918b361f251dab4c19bec8eddc5624218ee.html">Open in a new tab</a></p>
 
-<p>Keyboard trap with instructions that doesn’t give advise on the method for proceeding.</p>
+<p>These focusable <code class="language-plaintext highlighter-rouge">button</code> elements create a keyboard trap with instructions that don’t give advice on the method for proceeding.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
-	<span class="kd">var</span> <span class="nx">trapOn</span> <span class="o">=</span> <span class="kc">false</span>
-<span class="nt">&lt;/script&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/test-assets/focusable-no-keyboard-trap/keyboard.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="nt">&lt;p&gt;</span>Go to the next element<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link1"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onblur=</span><span class="s">"(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusToButton('btn2')"</span> <span class="na">onkeydown=</span><span class="s">"escapeTrapOnCtrlM(event)"</span><span class="nt">&gt;</span>
 	Button 1
 <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span>
-	<span class="na">id=</span><span class="s">"btn2"</span>
-	<span class="na">onkeydown=</span><span class="s">"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"</span>
-	<span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span>
-<span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusToButton('btn1')"</span> <span class="na">onkeydown=</span><span class="s">"escapeTrapOnCtrlM(event)"</span><span class="nt">&gt;</span>
 	Button 2
 <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
@@ -526,20 +494,18 @@ h2#sidebar-header {
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/5cbf445372b50a5ff8e428c6b8b00506b1decddb.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/62fd24e73ea55f55ad45de392128a816a6f03526.html">Open in a new tab</a></p>
 
-<p>Keyboard trap with help text, where the method advised doesn’t work.</p>
+<p>These focusable <code class="language-plaintext highlighter-rouge">button</code> elements create a keyboard trap with help text, where the method advised doesn’t work.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
-	<span class="kd">var</span> <span class="nx">trapOn</span> <span class="o">=</span> <span class="kc">false</span>
-<span class="nt">&lt;/script&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/test-assets/focusable-no-keyboard-trap/keyboard.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link1"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onblur=</span><span class="s">"(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusToButton('btn2')"</span><span class="nt">&gt;</span>
 	Button 1
 <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;p&gt;</span>Press the M-key to Exit<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p&gt;</span>Press Ctrl+M to Exit<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">onfocus=</span><span class="s">"trapOn = true"</span> <span class="na">onblur=</span><span class="s">"moveFocusToButton('btn1')"</span><span class="nt">&gt;</span>
 	Button 2
 <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
@@ -551,7 +517,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/b20beca9dd7d487092cafcabce8c2b194896bc47.html">Open in a new tab</a></p>
 
-<p>Not a keyboard trap (interactive element).</p>
+<p>This focusable <code class="language-plaintext highlighter-rouge">button</code> elements do not create a keyboard trap.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link1"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span><span class="nt">&gt;</span>Button 1<span class="nt">&lt;/button&gt;</span>
@@ -693,7 +659,7 @@ for details.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> ebe86a</p>
-<p><strong>Date:</strong> Updated 16 March 2022</p>
+<p><strong>Date:</strong> Updated 18 May 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -734,9 +700,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1652834056980640420"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1652904595640413685"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1652834056980640420"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1652904595640413685"></script>
 <script>
   svg4everybody();
 </script><script>

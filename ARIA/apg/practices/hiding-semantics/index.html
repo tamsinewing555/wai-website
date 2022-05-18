@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1652904595640413685";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652904595640413685">
+
+<title> Hiding Semantics | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Hiding Semantics" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<meta property="og:description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<link rel="canonical" href="https://www.w3.org/WAI/ARIA/apg/practices/hiding-semantics/" />
+<meta property="og:url" content="https://www.w3.org/WAI/ARIA/apg/practices/hiding-semantics/" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Hiding Semantics" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Hiding Semantics","url":"https://www.w3.org/WAI/ARIA/apg/practices/hiding-semantics/"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-hiding-semantics ">
+    <a href="#main" class="button button--skip-link">Skip to content</a>
+
+   <div class="minimal-header-container default-grid">
+      
+      <div class="minimal-header" id="site-header">
+  <div class="minimal-header-container">
+    <div class="minimal-header-name">
+      <a href="/WAI/ARIA/apg/">
+          ARIA Authoring Practices Guide (APG)
+        </a>
+    </div>
+    
+      <div class="minimal-header-subtitle">
+          How to build accessibility semantics into web patterns and widgets
+      </div>
+    
+  </div>
+  
+  <div class="minimal-header-logo">
+        <a href="http://w3.org/">
+            <img alt="W3C" src="/WAI/assets/images/w3c2.svg" width="92" height="44"/>
+        </a>
+        <a href="/WAI/">
+            <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg"/>
+        </a>
+    </div>
+</div>
+
+    </div>
+
+    <div class="default-grid nav-container">
+        <div class="nav" >
+          
+           <nav class="nav" aria-label="APG">
+            <ul>
+            
+                <li class="nav__item"><a href="/WAI/ARIA/apg/">APG Home</a></li>
+            
+                <li class="nav__item"><a href="/WAI/ARIA/apg/patterns/">Patterns</a></li>
+            
+                <li class="nav__item"><a href="/WAI/ARIA/apg/practices/">Practices</a></li>
+            
+                <li class="nav__item"><a href="/WAI/ARIA/apg/example-index/">Index</a></li>
+            
+                <li class="nav__item"><a href="/WAI/ARIA/apg/about/">About</a></li>
+            
+            <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
+                All WCAG 2 Guidance
+                <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg>
+            </a></li>
+            </ul>
+          </nav>
+          
+        </div>
+    </div>
+    <div class="default-grid with-gap leftcol">
+
+<style>
+.nav {
+  background: none;
+}
+
+.nav-related-info { /* blue bar with the "About:" links */
+  background: #005a9c;
+  color: #fff;
+}
+
+.nav-related-info a {
+  color: #fff !important;
+}
+
+.nav-page-specific { /* light blue bar with page/section specific navigation/pager */
+  margin-bottom: 1.25em;
+}
+
+.nav a:link, .nav a:visited {
+  color: #036;
+  color: var(--w3c-blue);
+}
+
+.nav a:hover, .nav a:active {
+    color: var(--dk-blue);
+}
+
+.nav-hack.sidebar a:hover,
+.nav-hack.sidebar a:active
+ {
+    color: var(--dk-blue);
+    text-decoration: underline;
+}
+
+.standalone-resource-about, .standalone-resource-pager {
+  margin: 0;
+}
+
+nav.standalone-resource-about {
+  padding: .5em 0 1.5em 0;
+  font-style: italic;
+}
+
+
+.nav .standalone-resource-pager ul {
+  align-items: center;
+}
+
+.nav .standalone-resource-pager a,
+.nav .standalone-resource-pager span {
+
+  margin-left: 0;
+  margin-right: 1.5em;
+  padding: .5em;
+}
+
+
+.pager-icon {
+  vertical-align: middle;
+  padding: 0 0 0.15em 0;
+  margin: 0 -0.4em;
+  width: 1.65em;
+  height: 2em;
+  fill: var(--dk-blue)
+}
+
+.category-icon {
+  vertical-align: middle;
+  padding: 0 0.25em 0.25em 0.25em;
+  width: 2em;
+  height: 2em;
+}
+
+.zstandalone-resource-pager {
+  padding: .7em 0;
+}
+
+.standalone-resource-pager zul {
+  display: block;
+}
+
+.standalone-resource-pager zul li {
+  display: inline;
+}
+
+.nav-hack {
+  font-size: .85rem;
+  /*justify-self: end;*/
+  align-self: start;
+}
+.nav-hack ul {
+    list-style: none;
+    border-bottom: 1px solid #BCBCBC;
+    padding-left: 0
+}
+.nav-hack li:not(:first-child){
+    padding-top: 0.4em;
+    line-height: 1.2;
+    border-top: 1px solid #BCBCBC;
+}
+.nav-hack li a {
+    text-decoration: none;
+}
+.nav-hack h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.nav-hack p {
+  margin: 0;
+}
+
+h2#sidebar-header {
+  font-size: .95rem;
+}
+
+/* skip link */
+.button--skip-link {
+  background-color: var(--gold) !important;
+  border-color: var(--gold) !important;
+  outline-color: currentColor !important;
+  color: var(--off-black) !important;
+  font-weight: 600;
+  font-size: larger;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: 0.5em;
+  width: 10em;
+  opacity: 1;
+  transition: transform 0.1875s ease-out, opacity 0.1875s ease-out;
+}
+
+.button--skip-link:not(:focus):not(:hover) {
+  transform: translateY(-4em);
+  opacity: 0;
+}
+
+.standalone-resource-navrule {
+    border:none;
+    border-top: 1px solid grey
+}
+
+.standalone-resource-about ul,
+.standalone-resource-pager ul {
+    list-style: none;
+}
+
+.standalone-resource-about a,
+.standalone-resource-pager a,
+.standalone-resource-about span,
+.standalone-resource-pager span
+{
+    margin-left:.8em;
+    margin-right:.8em;
+}
+
+.minimal-header-name a {
+  text-decoration: none;
+}
+.minimal-header-name a:hover,
+.minimal-header-name a:focus {
+  text-decoration: underline;
+}
+
+</style>
+
+    
+    
+    
+        <nav class="box nav-hack sidebar standalone-resource__sidebar " aria-labelledby="sidebar-header">
+           <h2 id="sidebar-header" class="box-h ">Page Contents</h2>
+            
+            <div class="box-i">
+                <ul>
+                
+                
+                <li><a href="#x9-intentionally-hiding-semantics-with-the-presentation-role">Intentionally Hiding Semantics with the presentation Role</a></li>
+                
+                <li><a href="#x10-roles-that-automatically-hide-semantics-by-making-their-descendants-presentational">Roles That Automatically Hide Semantics by Making Their Descendants Presentational</a></li>
+                
+                </ul>
+            </div>
+          </nav>
+    
+
+    <main id="main" lang="en" class="standalone-resource__main">
+        <header>
+            <h1>
+              
+              <span class="standalone-resource__type-of-guidance">
+                
+                
+              </span>
+              
+              Hiding Semantics
+            </h1>
+        </header>
+
+        <link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/styles.css">
+
+<!-- Code highlighting styles -->
+<link rel="stylesheet" href="/WAI/ARIA/apg/example-index/css/github.css">
+
+<script>
+const addBodyClass = "practice-page";
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
+
+<div>
+<section id="presentation-role"><div class="header-wrapper"><h2 id="x9-intentionally-hiding-semantics-with-the-presentation-role">Intentionally Hiding Semantics with the <code>presentation</code> Role</h2></div>
+    
+    <p>
+      While ARIA is primarily used to express semantics, there are some situations where hiding an
+      element’s semantics from assistive technologies is helpful. This is done with the
+      <a href="https://w3c.github.io/aria/#presentation" class="role-reference">presentation</a>
+      role, which declares that an element is being used only for presentation and therefore does
+      not have any accessibility semantics. The ARIA 1.1 specification also includes role
+      <a href="https://w3c.github.io/aria/#none" class="role-reference">none</a>,
+      which serves as a synonym for <code>presentation</code>.
+    </p>
+    <p>
+      For example, consider a tabs widget built using an HTML <code>ul</code> element.
+    </p>
+    <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Tab 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Tab 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Tab 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+    <p>
+      Because the list is declared to be a tablist, the list items are not in a list context. It
+      could confuse users if an assistive technology were to render those list items. Applying role
+      <code>presentation</code> to the <code>li</code> elements tells browsers to leave those
+      elements out of their accessibility tree. Assistive technologies will thus be unaware of the
+      list item elements and see the tab elements as immediate children of the tablist.
+    </p>
+    <p>
+      Three common uses of role <code>presentation</code> are:
+    </p>
+    <ol>
+      <li>Hiding a decorative image; it is equivalent to giving the image null alt text. </li>
+      <li>Suppressing table semantics of tables used for layout in circumstances where the table semantics do not convey meaningful relationships.</li>
+      <li>Eliminating semantics of intervening orphan elements in the structure of a composite
+        widget, such as a tablist, menu, or tree as demonstrated in the example above.</li>
+    </ol>
+    <section id="presentation_role_effects"><div class="header-wrapper"><h3 id="x9-1-effects-of-role-presentation">
+        Effects of Role <code>presentation</code>
+      </h3></div>
+      
+      <p>
+        When <code>role="presentation"</code> is specified on an element, if a
+        <a href="/WAI/ARIA/apg/practices/hiding-semantics/#presentation_role_ignored">condition that requires a browser to ignore the <code>presentation</code> role</a>
+        does not exist, it has the following three effects.
+      </p>
+      <ol>
+        <li>The element’s implied ARIA role and any ARIA states and properties associated with
+          that role are hidden from assistive technologies.</li>
+        <li>
+          Text contained by the element, i.e., inner text, as well as inner text of all its
+          descendant elements remains visible to assistive technologies except, of course, when the
+          text is explicitly hidden, e.g., styled with <code>display: none</code> or has <code>aria-hidden="true"</code>.
+        </li>
+        <li>
+          The roles, states, and properties of each descendant element remain visible to assistive
+          technologies unless the descendant requires the context of the presentational
+          element. For example:
+          <ul>
+            <li> If <code>presentation</code> is applied to a <code>ul</code> or <code>ol</code> element, each child <code>li</code> element inherits the <code>presentation</code> role because ARIA requires the <code>listitem</code> elements to have the parent <code>list</code> element. So, the <code>li</code> elements are not exposed to assistive technologies, but elements contained inside of those <code>li</code> elements, including nested lists, are visible to assistive technologies. </li>
+            <li>
+              Similarly, if <code>presentation</code> is applied to a <code>table</code> element,
+              the descendant <code>caption</code>, <code>thead</code>, <code>tbody</code>, <code>tfoot</code>,
+              <code>tr</code>, <code>th</code>, and <code>td</code>
+              elements inherit role <code>presentation</code> and are thus not exposed to assistive technologies.
+              But, elements inside of the <code>th</code> and <code>td</code> elements, including nested tables,  are exposed to assistive technologies.
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+    <section id="presentation_role_ignored"><div class="header-wrapper"><h3 id="x9-2-conditions-that-cause-role-presentation-to-be-ignored">
+        Conditions That Cause Role <code>presentation</code> to be Ignored
+      </h3></div>
+      
+      <p>
+         Browsers ignore <code>role="presentation"</code>, and it therefore has no effect, if either of the following are true about the element to which it is applied:</p>
+          <ul>
+            <li>The element is focusable, e.g. it is natively focusable like an HTML link or input, or it has a <code>tabindex</code> attribute.</li>
+            <li>
+              The element has any of the
+              <a href="https://w3c.github.io/aria/#global_states" class="specref">twenty-one global ARIA states and properties</a>,
+              e.g., <code>aria-label</code>.
+            </li>
+          </ul>
+    </section>
+    <section id="presentation_role_examples"><div class="header-wrapper"><h3 id="x9-3-example-demonstrating-effects-of-the-presentation-role">
+        Example Demonstrating Effects of the <code>presentation</code> Role
+      </h3></div>
+      
+      <p>This code:</p>
+      <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Date of birth:<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>January 1, 3456<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+      <p>when parsed by a browser, is equivalent to the following from the perspective of a screen reader or other assistive technology that relies on the browser's accessibility tree:
+      </p>
+      <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Date of birth:<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>January 1, 3456<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+    </section>
+  </section> <section id="children-presentational"><div class="header-wrapper"><h2 id="x10-roles-that-automatically-hide-semantics-by-making-their-descendants-presentational">Roles That Automatically Hide Semantics by Making Their Descendants Presentational</h2></div>
+    
+    <p>
+      There are some types of user interface components that, when represented in a platform
+      accessibility API, can only contain text. For example, accessibility APIs do not have a way of
+      representing semantic elements contained in a button. To deal with this limitation, <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr>
+      requires browsers to automatically apply role <code>presentation</code> to all descendant
+      elements of any element with a role that cannot support semantic children.
+    </p>
+    <p>The roles that require all children to be presentational are:</p>
+    <ul>
+      <li>button</li>
+      <li>checkbox</li>
+      <li>img</li>
+      <li>meter</li>
+      <li>menuitemcheckbox</li>
+      <li>menuitemradio</li>
+      <li>option</li>
+      <li>progressbar</li>
+      <li>radio</li>
+      <li>scrollbar</li>
+      <li>separator</li>
+      <li>slider</li>
+      <li>switch</li>
+      <li>tab</li>
+    </ul>
+    <p>For instance, consider the following tab element, which contains a heading.</p>
+    <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Title of My Tab<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
+    <p>
+      Because <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> requires descendants of tab to be presentational,
+      the following code is equivalent.
+    </p>
+    <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"presentation"</span>&gt;</span>Title of My Tab<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
+    <p>
+      And, from the perspective of anyone using a technology that relies on an accessibility API, such as a screen reader,
+      the heading does not exist since the previous code is equivalent to the following.
+    </p>
+    <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span>&gt;</span>Title of My Tab<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
+    <p>
+      See the
+      <a href="/WAI/ARIA/apg/practices/hiding-semantics/#presentation-role">
+        section about role <code>presentation</code>
+      </a>
+      for a detailed explanation of what it does.
+    </p>
+  </section>
+</div>
+<script src="/WAI/ARIA/apg/example-index/js/jumpto.js"></script>
+
+ 
+
+      </main>
+
+  </div>
+
+    <div class="default-grid with-gap leftcol">
+      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Hiding%20Semantics">public-aria-practices@w3.org</a> or via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Hiding%20Semantics&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
+    <a href="https://github.com/w3c/aria-practices/edit/main/aria-practices.html"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/aria-practices/issues/new" class="button"><span>New GitHub Issue</span></a>
+</div></div></aside>
+      </div>
+    </div>
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
+  </div>
+
+
+  
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright &#xA9; 2022 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1652904595640413685"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1652904595640413685"></script>
+<script>
+  svg4everybody();
+</script><script>
+  var translationStrings = {};
+</script>
+<!-- Matomo -->
+<script>
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.w3.org/analytics/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '328']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+
+
+  </body>
+
+</html>

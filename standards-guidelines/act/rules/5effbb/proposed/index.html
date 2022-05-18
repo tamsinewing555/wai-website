@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1652834056980640420";
+      element.src = "/WAI/assets/scripts/main.js?1652904595640413685";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652834056980640420">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652904595640413685">
 
-<title> Link in context is descriptive[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652834056980640420"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Link in context is descriptive[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652904595640413685"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Link in context is descriptive" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -813,10 +813,10 @@ h2#sidebar-header {
 <p>The <em>programmatically determined context</em> of a link (or <em>programmatically determined link context</em>) is the set of all elements that are <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>, and have one or more of the following relationships to the link:</p>
 
 <ul>
-  <li>being an <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> with a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">listitem</code>; or</li>
-  <li>being the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> that is a <code class="language-plaintext highlighter-rouge">p</code> element; or</li>
-  <li>being the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> that has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">cell</code> or <code class="language-plaintext highlighter-rouge">gridcell</code>; or</li>
-  <li>being a header cell <a href="https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells">assigned</a> to the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> that has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">cell</code> or <code class="language-plaintext highlighter-rouge">gridcell</code>; or</li>
+  <li>being an <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM, ancestor, 2021/11/29">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping Module Level 1, flat tree, 2021/11/29">flat tree</a> with a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">listitem</code>; or</li>
+  <li>being the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM, ancestor, 2021/11/29">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping Module Level 1, flat tree, 2021/11/29">flat tree</a> that generates a <a href="https://drafts.csswg.org/css-display/#block-container" title="CSS Display Module Level 3, block container, 2022/01/17">block container</a>; or</li>
+  <li>being the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM, ancestor, 2021/11/29">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping Module Level 1, flat tree, 2021/11/29">flat tree</a> that has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">cell</code> or <code class="language-plaintext highlighter-rouge">gridcell</code>; or</li>
+  <li>being a header cell <a href="https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells" title="HTML, algorithm for assigning header cells, 2021/11/29">assigned</a> to the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM, ancestor, 2021/11/29">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping Module Level 1, flat tree, 2021/11/29">flat tree</a> that has a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">cell</code> or <code class="language-plaintext highlighter-rouge">gridcell</code>; or</li>
   <li>being referenced by an <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute of the link.</li>
 </ul>
 
@@ -826,7 +826,7 @@ h2#sidebar-header {
 
 <h3 id="programmatically-hidden">Programmatically Hidden</h3>
 
-<p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>:</p>
+<p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping Module Level 1, flat tree, 2021/11/29">flat tree</a>:</p>
 
 <ul>
   <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
@@ -915,7 +915,7 @@ not accounted for in the change history or the last modified date.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 5effbb</p>
-<p><strong>Date:</strong> Updated 16 March 2022</p>
+<p><strong>Date:</strong> Updated 18 May 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/marietrudelle">Marie Trudelle</a>, <a href="https://github.com/ramitgarg">Ramit Garg</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -956,9 +956,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1652834056980640420"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1652904595640413685"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1652834056980640420"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1652904595640413685"></script>
 <script>
   svg4everybody();
 </script><script>

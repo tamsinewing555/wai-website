@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1652834056980640420";
+      element.src = "/WAI/assets/scripts/main.js?1652904595640413685";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652834056980640420">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652904595640413685">
 
-<title> Links with identical accessible names and context serve equivalent purpose[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652834056980640420"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Links with identical accessible names and context serve equivalent purpose[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652904595640413685"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Links with identical accessible names and context serve equivalent purpose" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -442,17 +442,17 @@ h2#sidebar-header {
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/52523d2aedb7ec8ed97788758ab1398557aa301d.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/e0d32d9583b2b545ca76295cff78e016a44854b6.html">Open in a new tab</a></p>
 
 <p>These two HTML <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">context</a>, and resolve to the <a href="#same-resource" title="Definition of same resource">same resource</a> after an instant redirect.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;p&gt;</span>
+	<span class="nt">&lt;div&gt;</span>
 		Learn more (<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"</span><span class="nt">&gt;</span>About us<span class="nt">&lt;/a</span>
 		<span class="nt">&gt;</span>) and get in touch (<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html"</span>
 			<span class="nt">&gt;</span>About us<span class="nt">&lt;/a</span>
 		<span class="nt">&gt;</span>)
-	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
@@ -588,19 +588,19 @@ h2#sidebar-header {
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/d83d253f08a9a34641765518590dd7e46a53bfc7.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/8d14f906398220f1ba52ef34b7f8e40d654312bd.html">Open in a new tab</a></p>
 
 <p>These two HTML <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">context</a>. They link to web pages that are similar, but have different information in their content.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;p&gt;</span>
+	<span class="nt">&lt;div&gt;</span>
 		Learn more (<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html"</span>
 			<span class="nt">&gt;</span>Contact us<span class="nt">&lt;/a</span>
 		<span class="nt">&gt;</span>) and get in touch (
 		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html"</span>
 			<span class="nt">&gt;</span>Contact us<span class="nt">&lt;/a</span>
 		<span class="nt">&gt;</span>)
-	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
@@ -737,6 +737,34 @@ h2#sidebar-header {
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
+<h4 id="inapplicable-example-5">Inapplicable Example 5</h4>
+
+<p><a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/7d61465599fad14c1a2135a3e1a85209fec9302f.html">Open in a new tab</a></p>
+
+<p>These two HTML <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and link to the <a href="#same-resource" title="Definition of same resource">same resource</a> but different <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">programmatically determined link contexts</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div&gt;</span>
+		You can learn more in the
+		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"</span><span class="nt">&gt;</span>Contact us<span class="nt">&lt;/a&gt;</span> page.
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div&gt;</span>
+		You can find contact information in the
+		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"</span><span class="nt">&gt;</span>Contact us<span class="nt">&lt;/a&gt;</span> page.
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="inapplicable-example-6">Inapplicable Example 6</h4>
+
+<p><a class="example-link" title="Inapplicable Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/58087cbeb108ebf723ffc232c9996123a6eb168b.html">Open in a new tab</a></p>
+
+<p>These two HTML <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> but different <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">programmatically determined link contexts</a> because the <code class="language-plaintext highlighter-rouge">div</code> elements place them in different display blocks.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3.org/WAI/"</span><span class="nt">&gt;</span>Read more<span class="nt">&lt;/a&gt;</span> about the W3C WAI<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3.org/International/"</span><span class="nt">&gt;</span>Read more<span class="nt">&lt;/a&gt;</span> about the W3C internationalization<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
 <h2 id="glossary">Glossary</h2>
 
 <h3 id="accessible-name">Accessible Name</h3>
@@ -862,10 +890,10 @@ h2#sidebar-header {
 <p>The <em>programmatically determined context</em> of a link (or <em>programmatically determined link context</em>) is the set of all elements that are <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>, and have one or more of the following relationships to the link:</p>
 
 <ul>
-  <li>being an <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> with a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">listitem</code>; or</li>
-  <li>being the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> that is a <code class="language-plaintext highlighter-rouge">p</code> element; or</li>
-  <li>being the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> that has a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">cell</code> or <code class="language-plaintext highlighter-rouge">gridcell</code>; or</li>
-  <li>being a header cell <a href="https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells">assigned</a> to the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> that has a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">cell</code> or <code class="language-plaintext highlighter-rouge">gridcell</code>; or</li>
+  <li>being an <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM, ancestor, 2021/11/29">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping Module Level 1, flat tree, 2021/11/29">flat tree</a> with a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">listitem</code>; or</li>
+  <li>being the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM, ancestor, 2021/11/29">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping Module Level 1, flat tree, 2021/11/29">flat tree</a> that generates a <a href="https://drafts.csswg.org/css-display/#block-container" title="CSS Display Module Level 3, block container, 2022/01/17">block container</a>; or</li>
+  <li>being the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM, ancestor, 2021/11/29">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping Module Level 1, flat tree, 2021/11/29">flat tree</a> that has a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">cell</code> or <code class="language-plaintext highlighter-rouge">gridcell</code>; or</li>
+  <li>being a header cell <a href="https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells" title="HTML, algorithm for assigning header cells, 2021/11/29">assigned</a> to the closest <a href="https://dom.spec.whatwg.org/#concept-tree-ancestor" title="DOM, ancestor, 2021/11/29">ancestor</a> of the link in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping Module Level 1, flat tree, 2021/11/29">flat tree</a> that has a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">cell</code> or <code class="language-plaintext highlighter-rouge">gridcell</code>; or</li>
   <li>being referenced by an <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute of the link.</li>
 </ul>
 
@@ -875,7 +903,7 @@ h2#sidebar-header {
 
 <h3 id="programmatically-hidden">Programmatically Hidden</h3>
 
-<p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>:</p>
+<p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS Scoping Module Level 1, flat tree, 2021/11/29">flat tree</a>:</p>
 
 <ul>
   <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
@@ -1000,7 +1028,7 @@ not accounted for in the change history or the last modified date.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> fd3a94</p>
-<p><strong>Date:</strong> Updated 16 March 2022</p>
+<p><strong>Date:</strong> Updated 18 May 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1041,9 +1069,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1652834056980640420"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1652904595640413685"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1652834056980640420"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1652904595640413685"></script>
 <script>
   svg4everybody();
 </script><script>
