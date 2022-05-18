@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1652458790168658430";
+      element.src = "/WAI/assets/scripts/main.js?1652834056980640420";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652458790168658430">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652834056980640420">
 
-<title> Error message describes invalid form field value[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652458790168658430"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Error message describes invalid form field value[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652834056980640420"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Error message describes invalid form field value" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -462,16 +462,16 @@ h2#sidebar-header {
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/141dfeca5589c882bfe9ddcc1d29ffc62862bb77.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/8b3557dcf5062904594f91d781fde151d9fe3ef3.html">Open in a new tab</a></p>
 
 <p>This multiple <code class="language-plaintext highlighter-rouge">input</code> elements share a <a href="#form-field-error-indicator">form field error indicator</a> that identifies the elements unfilled (by referencing their labels), describes the cause of the error and how to resolve it.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
-	<span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"error"</span><span class="nt">&gt;</span>
-		Name and color cannot be left unfilled. Please complete all required fields.
-	<span class="nt">&lt;/h2&gt;</span>
+	<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"error"</span><span class="nt">&gt;&lt;strong&gt;</span>
+		Name and color cannot be empty. Please complete all required fields.
+	<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
 	<span class="nt">&lt;fieldset&gt;</span>
-		<span class="nt">&lt;legend&gt;</span>Your data<span class="nt">&lt;/legend&gt;</span>
+		<span class="nt">&lt;legend&gt;</span>Shipping<span class="nt">&lt;/legend&gt;</span>
 		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span><span class="nt">&gt;</span>Name (required)<span class="nt">&lt;/label&gt;</span>
 		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"name"</span> <span class="na">required</span> <span class="nt">/&gt;</span>
 		<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
@@ -489,14 +489,15 @@ h2#sidebar-header {
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
-<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/382dab963e875af745a9c175f0de48659ff40fc6.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/baa48e5f5a149f6d4d8038b693477ec94176d5a0.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">input</code> element does not have a <a href="#form-field-error-indicator">form field error indicator</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
-	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"age"</span><span class="nt">&gt;</span>Age (years)<span class="nt">&lt;/label&gt;</span>
-	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">id=</span><span class="s">"age"</span> <span class="nt">/&gt;</span>
-	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Submit"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"filter"</span><span class="nt">&gt;</span>Product filter<span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"filter"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"filter"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;p&gt;</span>To see all products, leave the field empty.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </code></pre></div></div>
 
@@ -520,14 +521,14 @@ h2#sidebar-header {
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/0f121af59d2ed6f066d2a41fbcef110c6ff032a7.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">input</code> element has a <a href="#form-field-error-indicator">form field error indicator</a> but its message does not describe the cause of the error.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
 	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"age"</span><span class="nt">&gt;</span>Age (years)<span class="nt">&lt;/label&gt;</span>
 	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">id=</span><span class="s">"age"</span> <span class="nt">/&gt;</span>
-	<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"error"</span><span class="nt">&gt;</span>Please enter a correct age.<span class="nt">&lt;/span&gt;&lt;br</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"error"</span><span class="nt">&gt;</span>Please enter the correct text.<span class="nt">&lt;/span&gt;&lt;br</span> <span class="nt">/&gt;</span>
 	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Submit"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 </code></pre></div></div>
@@ -786,7 +787,7 @@ for details.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 36b590</p>
-<p><strong>Date:</strong> Updated 16 March 2022</p>
+<p><strong>Date:</strong> Updated 16 May 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -827,9 +828,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1652458790168658430"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1652834056980640420"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1652458790168658430"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1652834056980640420"></script>
 <script>
   svg4everybody();
 </script><script>

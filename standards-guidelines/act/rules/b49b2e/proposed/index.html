@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1652458790168658430";
+      element.src = "/WAI/assets/scripts/main.js?1652834056980640420";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652458790168658430">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1652834056980640420">
 
-<title> Heading is descriptive[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652458790168658430"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Heading is descriptive[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1652834056980640420"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Heading is descriptive" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -455,13 +455,13 @@ h2#sidebar-header {
 
 <h4 id="passed-example-4">Passed Example 4</h4>
 
-<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/774026aba59c16a881fdb07d1fa04424c7bdd5ba.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/14faa79c92b5e281d8694f8a18ec00ba0c11da6b.html">Open in a new tab</a></p>
 
 <p>Heading marked up with <code class="language-plaintext highlighter-rouge">h1</code> element with an image that describes the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;h1&gt;</span>
-		<span class="nt">&lt;img</span> <span class="na">scr=</span><span class="s">"/test-assets/descriptive-heading-b49b2e/opening_hours_icon.png"</span> <span class="na">alt=</span><span class="s">"Opening hours"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/descriptive-heading-b49b2e/opening_hours_icon.png"</span> <span class="na">alt=</span><span class="s">"Opening hours"</span> <span class="nt">/&gt;</span>
 	<span class="nt">&lt;/h1&gt;</span>
 	<span class="nt">&lt;p&gt;</span>We are open Monday through Friday from 10 to 16<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
@@ -490,13 +490,13 @@ h2#sidebar-header {
 
 <h4 id="passed-example-6">Passed Example 6</h4>
 
-<p><a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/311761248534600e7fbcce12cecfe22ecd1fa521.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/910c8881245425846a502b38758fff7db5c213ef.html">Open in a new tab</a></p>
 
-<p>Heading marked up with <code class="language-plaintext highlighter-rouge">role="heading"</code> that describes the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>. The heading is positioned off screen and is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
+<p>Heading marked up with <code class="language-plaintext highlighter-rouge">role="heading"</code> that describes the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>. The heading is positioned off screen but is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"heading"</span> <span class="na">aria-level=</span><span class="s">"1"</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>Opening Hours<span class="nt">&lt;/span&gt;</span>
-	<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
 		We are open Monday through Friday from 10 to 16
 	<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
@@ -555,13 +555,13 @@ h2#sidebar-header {
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6deaab79bb8cfc0497aec9948366d9a38a93f0b3.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/ef219fca0c3c2558d18be113e628752c108e89c3.html">Open in a new tab</a></p>
 
 <p>Heading marked up with <code class="language-plaintext highlighter-rouge">role="heading"</code> that does not describe the topic or purpose of the following <a href="https://html.spec.whatwg.org/multipage/dom.html#palpable-content" title="HTML definition of Palpable Content">palpable content</a>. The heading is positioned off screen and is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"heading"</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>Weather<span class="nt">&lt;/span&gt;</span>
-	<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
 		We are open Monday through Friday from 10 to 16
 	<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
@@ -794,7 +794,7 @@ for details.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> b49b2e</p>
-<p><strong>Date:</strong> Updated 16 March 2022</p>
+<p><strong>Date:</strong> Updated 16 May 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -835,9 +835,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1652458790168658430"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1652834056980640420"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1652458790168658430"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1652834056980640420"></script>
 <script>
   svg4everybody();
 </script><script>
