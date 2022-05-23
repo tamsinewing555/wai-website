@@ -2313,6 +2313,7 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
+/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2663,6 +2664,7 @@
 /roles/developers/index.html
 /roles/index.html
 /roles/managers/index.html
+/roles/new/index.html
 /roles/policy-makers/index.html
 /roles/testers/index.html
 /roles/trainers/index.html
