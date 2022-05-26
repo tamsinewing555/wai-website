@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1653572938238716130";
+      element.src = "/WAI/assets/scripts/main.js?1653575473843192967";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1653572938238716130">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1653575473843192967">
 
 <title> Submit a course, training, or certification on web accessibility | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -888,16 +888,18 @@ function onSubmit(e) {
 </script>
 
 
-<form name="submission" method="post" action="https://wai-website.netlify.app/.netlify/functions/list-submission">
+
+
+  <form name="submission" method="post" action="https://wai-website.netlify.app/.netlify/functions/list-submission">
     <input type="hidden" name="form_name" value="submission" />
         
         <input type="hidden" name="form_version" value="1" />
       
         
-        <input type="hidden" name="success" value="/courses/submission/success.html" />
+        <input type="hidden" name="success" value="/WAI/courses/submission/success.html" />
       
         
-        <input type="hidden" name="failure" value="/courses/submission/failure.html" />
+        <input type="hidden" name="failure" value="/WAI/courses/submission/failure.html" />
       
         
         <input type="hidden" name="repository" value="wai-course-list" />
@@ -4101,16 +4103,6 @@ function getPreviewSubmission() {
 
 
 
-(function(){
-  const button = document.createElement('button')
-  button.innerText = 'Show Preview'
-  button.addEventListener('click', e => {
-      getPreviewSubmission();
-  })
-  const form = document.forms[0]
-  form.insertBefore(button, form.firstChild)
-})();
-
 
 </script>
 
@@ -4190,9 +4182,9 @@ function getPreviewSubmission() {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1653572938238716130"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1653575473843192967"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1653572938238716130"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1653575473843192967"></script>
 <script>
   svg4everybody();
 </script><script>
