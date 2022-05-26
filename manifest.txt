@@ -2250,7 +2250,6 @@
 /content-images/wai-wcag-supplemental/memory.svg
 /content-images/wai-wcag-supplemental/support.svg
 /content-images/wai-wcag-supplemental/tools.svg
-/courses/list/index.html
 /courses/submission/failure.html
 /courses/submission/index.html
 /courses/submission/success.html
@@ -2317,7 +2316,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
