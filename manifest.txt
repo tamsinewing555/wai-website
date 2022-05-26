@@ -2250,6 +2250,10 @@
 /content-images/wai-wcag-supplemental/memory.svg
 /content-images/wai-wcag-supplemental/support.svg
 /content-images/wai-wcag-supplemental/tools.svg
+/courses/list/index.html
+/courses/submission/failure.html
+/courses/submission/index.html
+/courses/submission/success.html
 /curricula/acknowledgements/index.html
 /curricula/changelog/index.html
 /curricula/designer-modules/forms-design/index.html
@@ -2495,6 +2499,8 @@
 /older-users/img/captcha.png
 /older-users/index.html
 /older-users/literature/index.html
+/package-lock.json
+/package.json
 /pages/wai-components/Gemfile
 /pages/wai-components/Gemfile.lock
 /pages/wai-components/README.md
