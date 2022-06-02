@@ -1552,14 +1552,18 @@
 /content-assets/wcag-act-rules/testcases/cc0f0a/1e52060759a535934176a5a981446066aad6b31f.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/24375551324ef95b99e7d7d6217e88bb2a1694ae.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/2993ef023f90439b1a91c8f0151749cf23db4d82.html
+/content-assets/wcag-act-rules/testcases/cc0f0a/2f1d964151ff5269a6027371956ee3b4a4a23fe7.html
+/content-assets/wcag-act-rules/testcases/cc0f0a/30fc1902581e0b197a544a40375bf7e732492756.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/39a5a085f5d5455d67ba73e192d936b2fc9b366e.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/491c4469226eaeca2e70e245564d41e81b7a3b88.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/4941fb38e0b80fcc7b74e114dc57dd799dbdd4af.html
+/content-assets/wcag-act-rules/testcases/cc0f0a/4f8c803095390503ea77bc55c4ed926f645271b6.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/6b256544fb761a04ec863859b1fe5a5c84d096af.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/80a4987bcfc497e90415cd6618a78842073c5768.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/83b8c1e9bad05e9f72b0bcdbb60204ad9c5594c3.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/886f79117b8bf284c124c689233842e81b7cf2e9.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/9b967559ff2691dc30436766f53feea55447b348.html
+/content-assets/wcag-act-rules/testcases/cc0f0a/a83b1482ac89fb3906b839092f6118525d868967.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/b0b11b83ebfd0d8ce9d2261ad4efe2a738fa670b.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/f8368dfab7eac249d870ed888c07e0b1b7c84614.html
 /content-assets/wcag-act-rules/testcases/cc0f0a/fa5104f9bd07fe52813d7e511c3cc87c4c1cf232.html
@@ -2250,6 +2254,7 @@
 /content-images/wai-wcag-supplemental/memory.svg
 /content-images/wai-wcag-supplemental/support.svg
 /content-images/wai-wcag-supplemental/tools.svg
+/courses/list/index.html
 /courses/submission/failure.html
 /courses/submission/index.html
 /courses/submission/success.html

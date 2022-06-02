@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1653575473843192967";
+      element.src = "/WAI/assets/scripts/main.js?1654135709307576064";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1653575473843192967">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654135709307576064">
 
-<title> Form field label is descriptive[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1653575473843192967"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Form field label is descriptive[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654135709307576064"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Form field label is descriptive" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -562,31 +562,34 @@ h2#sidebar-header {
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/fcac2934f1edc6c0503ebb53e3ff9528ce2fb7c7.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/30fc1902581e0b197a544a40375bf7e732492756.html">Open in a new tab</a></p>
 
-<p>The <code class="language-plaintext highlighter-rouge">label</code> elements are <a href="#programmatic-label" title="Definition of programmatic label">programmatic labels</a> of their respective <code class="language-plaintext highlighter-rouge">input</code> elements. The <code class="language-plaintext highlighter-rouge">label</code> elements, are not descriptive enough (because they are repeated over several fields). The headings are not <a href="#visible" title="Definition of visible">visible</a>. Therefore, they do not provide <a href="#visual-context" title="Definition of visual context">visual context</a>.</p>
+<p>These <code class="language-plaintext highlighter-rouge">label</code> elements are <a href="#programmatic-label" title="Definition of programmatic label">programmatic labels</a> of their respective <code class="language-plaintext highlighter-rouge">input</code> elements. They are not descriptive enough because they are reused on multiple fields. The headings are not <a href="#visible" title="Definition of visible">visible</a>. Therefore, they do not provide <a href="#visual-context" title="Definition of visual context">visual context</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;h2</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>Shipping<span class="nt">&lt;/h2&gt;</span>
-	<span class="nt">&lt;input</span> <span class="na">aria-label=</span><span class="s">"Name"</span> <span class="na">id=</span><span class="s">"shipping-name"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="nt">/&gt;</span>
-	<span class="nt">&lt;input</span> <span class="na">aria-label=</span><span class="s">"Street"</span> <span class="na">id=</span><span class="s">"shipping-street"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"street"</span> <span class="nt">/&gt;</span>
-
-	<span class="nt">&lt;h2</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>Billing<span class="nt">&lt;/h2&gt;</span>
-	<span class="nt">&lt;input</span> <span class="na">aria-label=</span><span class="s">"Name"</span> <span class="na">id=</span><span class="s">"billing-name"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="nt">/&gt;</span>
-	<span class="nt">&lt;input</span> <span class="na">aria-label=</span><span class="s">"Street"</span> <span class="na">id=</span><span class="s">"billing-street"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"street"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;fieldset&gt;</span>
+		<span class="nt">&lt;h2</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>Shipping address<span class="nt">&lt;/h2&gt;</span>
+		<span class="nt">&lt;label&gt;</span>Name: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"shipping-name"</span> <span class="nt">/&gt;&lt;/label&gt;</span>
+		<span class="nt">&lt;label&gt;</span>Street: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"shipping-street"</span> <span class="nt">/&gt;&lt;/label&gt;</span>
+	<span class="nt">&lt;/fieldset&gt;</span>
+	<span class="nt">&lt;fieldset&gt;</span>		
+		<span class="nt">&lt;h2</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span><span class="nt">&gt;</span>Billing address<span class="nt">&lt;/h2&gt;</span>
+		<span class="nt">&lt;label&gt;</span>Name: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"billing-name"</span> <span class="nt">/&gt;&lt;/label&gt;</span>
+		<span class="nt">&lt;label&gt;</span>Street: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"billing-street"</span> <span class="nt">/&gt;&lt;/label&gt;</span>
+	<span class="nt">&lt;/fieldset&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-5">Failed Example 5</h4>
 
-<p><a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/24375551324ef95b99e7d7d6217e88bb2a1694ae.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/2f1d964151ff5269a6027371956ee3b4a4a23fe7.html">Open in a new tab</a></p>
 
-<p>Both the <code class="language-plaintext highlighter-rouge">div</code> and the <code class="language-plaintext highlighter-rouge">span</code> elements are <a href="#programmatic-label" title="Definition of programmatic label">programmatic labels</a> of the <code class="language-plaintext highlighter-rouge">input</code> element, but only the <code class="language-plaintext highlighter-rouge">div</code> is <a href="#visible" title="Definition of visible">visible</a>. It has no <a href="#visual-context" title="Definition of visual context">visual context</a>, and is not descriptive.</p>
+<p>These <code class="language-plaintext highlighter-rouge">button</code> and <code class="language-plaintext highlighter-rouge">span</code> elements are both <a href="#programmatic-label" title="Definition of programmatic label">programmatic labels</a> of the <code class="language-plaintext highlighter-rouge">input</code> element, but only the <code class="language-plaintext highlighter-rouge">button</code> is <a href="#visible" title="Definition of visible">visible</a>. It has no <a href="#visual-context" title="Definition of visual context">visual context</a>, and is not descriptive.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"shipping"</span><span class="nt">&gt;</span>Shipping<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"name"</span> <span class="na">style=</span><span class="s">"display: none"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/span&gt;</span>
-	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"shipping-name"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">aria-labelledby=</span><span class="s">"shipping name"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">style=</span><span class="s">"display: none"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"search"</span> <span class="na">aria-labelledby=</span><span class="s">"submit search"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Go<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
@@ -606,36 +609,25 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
 
-<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/4941fb38e0b80fcc7b74e114dc57dd799dbdd4af.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/a83b1482ac89fb3906b839092f6118525d868967.html">Open in a new tab</a></p>
 
 <p>The <code class="language-plaintext highlighter-rouge">label</code> element is not <a href="#visible" title="Definition of visible">visible</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fname"</span> <span class="na">style=</span><span class="s">"display:none;"</span><span class="nt">&gt;</span>First name:<span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fname"</span> <span class="na">style=</span><span class="s">"position: absolute; left: -9999px;"</span><span class="nt">&gt;</span>First name:<span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>First name:<span class="nt">&lt;/label&gt;</span>
 	<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"fname"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"fname"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
-<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/80a4987bcfc497e90415cd6618a78842073c5768.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/4f8c803095390503ea77bc55c4ed926f645271b6.html">Open in a new tab</a></p>
 
 <p>The <code class="language-plaintext highlighter-rouge">label</code> is a <a href="#visible" title="Definition of visible">visible</a> <a href="#programmatic-label" title="Definition of programmatic label">programmatic label</a> of the <code class="language-plaintext highlighter-rouge">input</code> element. However, the <code class="language-plaintext highlighter-rouge">input</code> is not <a href="#visible" title="Definition of visible">visible</a>, hence this rule does not apply.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;label&gt;</span>First name: <span class="nt">&lt;input</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"fname"</span><span class="nt">/&gt;&lt;/label&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
-
-<p><a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/83b8c1e9bad05e9f72b0bcdbb60204ad9c5594c3.html">Open in a new tab</a></p>
-
-<p>The <code class="language-plaintext highlighter-rouge">span</code> element is not a <a href="#programmatic-label" title="Definition of programmatic label">programmatic label</a> of any element.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;span&gt;</span>First name:<span class="nt">&lt;/span&gt;</span>
-	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"fname"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;label&gt;</span>First name: <span class="nt">&lt;input</span> <span class="na">style=</span><span class="s">"position: absolute; top: -9999px; left: -9999px;"</span> <span class="na">disabled</span> <span class="na">role=</span><span class="s">"none"</span> <span class="nt">/&gt;&lt;/label&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
@@ -833,7 +825,7 @@ for details.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> cc0f0a</p>
-<p><strong>Date:</strong> Updated 16 May 2022</p>
+<p><strong>Date:</strong> Updated 30 May 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -874,9 +866,9 @@ for details.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1653575473843192967"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1654135709307576064"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1653575473843192967"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1654135709307576064"></script>
 <script>
   svg4everybody();
 </script><script>
