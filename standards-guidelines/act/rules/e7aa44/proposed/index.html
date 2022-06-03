@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654198271512486995";
+      element.src = "/WAI/assets/scripts/main.js?1654272053615630355";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654198271512486995">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654272053615630355">
 
-<title> Audio element content has text alternative[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654198271512486995"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Audio element content has text alternative[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654272053615630355"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Audio element content has text alternative" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -342,10 +342,8 @@ h2#sidebar-header {
 
 <ul>
   <li>has an <code class="language-plaintext highlighter-rouge">autoplay</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of true;  or,</li>
-  <li>has a “play button” that is <a href="#visible" title="Definition of visible">visible</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</li>
+  <li>has a <a href="#play-button" title="Definition of play button">play button</a> that is <a href="#visible" title="Definition of visible">visible</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</li>
 </ul>
-
-<p><strong>Note:</strong> A play button is an interactive element that when activated, plays the audio.</p>
 
 <h2 id="expectation">Expectation</h2>
 
@@ -609,6 +607,12 @@ h2#sidebar-header {
 
 <p><a href="#programmatically-hidden">Programmatically hidden</a> elements are removed from the accessibility tree. However, some browsers will leave <a href="#focusable">focusable</a> elements with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code> in the accessibility tree. Because they are hidden, these elements are considered <strong>not</strong> included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.</p>
 
+<h3 id="instrument-to-achieve-an-objective">Instrument to achieve an objective</h3>
+
+<p>An <a href="https://html.spec.whatwg.org/multipage/dom.html#htmlelement">HTML element</a> that when <a href="https://html.spec.whatwg.org/#activation">activated</a> allows an end-user to achieve an objective.</p>
+
+<p><strong>Note</strong>: Any rule that uses this definition must provide an unambiguous description of the objective the instrument is used to achieve.</p>
+
 <h3 id="non-streaming-media-element">Non-streaming media element</h3>
 
 <p>A <em>non-streaming media element</em> is an <a href="https://html.spec.whatwg.org/multipage/media.html#htmlmediaelement">HTML Media Element</a> for which the <code class="language-plaintext highlighter-rouge">duration</code> property is not 0.</p>
@@ -626,6 +630,10 @@ h2#sidebar-header {
 <p><strong>Note:</strong> A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> will have one or more outcomes.</p>
 
 <p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
+
+<h3 id="play-button">Play button</h3>
+
+<p>A play button is an <a href="#instrument-to-achieve-an-objective">instrument</a> that when <a href="https://html.spec.whatwg.org/#activation">activated</a> plays a <a href="https://html.spec.whatwg.org/multipage/media.html#media-resource">media resource</a>.</p>
 
 <h3 id="programmatically-hidden">Programmatically Hidden</h3>
 
@@ -710,7 +718,7 @@ not accounted for in the change history or the last modified date.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> e7aa44</p>
-<p><strong>Date:</strong> Updated 30 May 2022</p>
+<p><strong>Date:</strong> Updated 3 June 2022</p>
 <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
@@ -753,9 +761,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654198271512486995"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1654272053615630355"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654198271512486995"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1654272053615630355"></script>
 <script>
   svg4everybody();
 </script><script>
