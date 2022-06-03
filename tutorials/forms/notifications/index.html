@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654272053615630355";
+      element.src = "/WAI/assets/scripts/main.js?1654273627939973667";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654272053615630355">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654273627939973667">
 
 <title> User Notification | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -314,7 +314,7 @@
 
 <p>In addition to overall feedback, more specific feedback at or near the form controls can better help users to use your form. This includes feedback to indicate correctly entered input as well as errors in the input.</p>
 
-<p>Typically a combination of messages and visual cues are used to provide in-line feedback. For example, valid input can be indicated by a checkmark (✓) and green border, while errors can be indicated by an error icon (like a red ✗ or an exclamation mark) and red border. Error messages should also provide guidance on how to correct mistakes. The concepts for such error messages are essentially the same as for providing <a href="../instructions.html">instructions</a>.</p>
+<p>Typically a combination of messages and visual cues are used to provide in-line feedback. For example, valid input can be indicated by a checkmark (✓) and green border, while errors can be indicated by an error icon (like a red ✗ or an exclamation mark) and red border. Error messages should also provide guidance on how to correct mistakes. The concepts for such error messages are essentially the same as for providing <a href="../instructions">instructions</a>.</p>
 
 <h3 class="ap" id="after-submit">After submit</h3>
 
@@ -515,24 +515,35 @@ document.getElementById('ex3').addEventListener('submit', function(event){
 </code></pre></div></div>
 
 </div></aside>
-
+<p>concepts for such error messages 
+{::nomarkdown}</p>
 <aside class="box box-simple box-notes"><header class="box-h  box-h-simple box-h-notes"> Note</header><div class="box-i">
+{:/}
 
-<p><strong>Note:</strong> The displayed message in this example is coded using a <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code> element that has an <code class="language-plaintext highlighter-rouge">aria-live</code> attribute with the value <code class="language-plaintext highlighter-rouge">polite</code>. The contents of this so called “live region” are conveyed to screen readers and other assistive technology. The value “polite” de-emphasizes the importance of the message and does not cause screen readers to interrupt their current tasks to read aloud this message. Thus the message is only read once when the user stops typing rather than on every keystroke that the user makes.</p>
+**Note:** The displayed message in this example is coded using a `<span>` element that has an `aria-live` attribute with the value `polite`. The contents of this so called “live region” are conveyed to screen readers and other assistive technology. The value “polite” de-emphasizes the importance of the message and does not cause screen readers to interrupt their current tasks to read aloud this message. Thus the message is only read once when the user stops typing rather than on every keystroke that the user makes.
 
-</div></aside>
+{::nomarkdown}
+&lt;/div&gt;&lt;/aside&gt;
+{:/}
 
-<h4 class="ex inap" id="scaled-feedback">Scaled feedback</h4>
+#### Scaled feedback
+{:.ex.inap}
 
-<p>The example below illustrates a range of possible types of feedback in addition to success and error messages. In the example, the strength of the password is checked as it is typed by the user. The feedback indicates a scale of how strong the password is. The feedback is indicated using several cues, including color coding, a barometer, and label “Weak”, “Okay”, and “Strong”, as well as the time that would be needed to crack the password.</p>
+The example below illustrates a range of possible types of feedback in addition to success and error messages. In the example, the strength of the password is checked as it is typed by the user. The feedback indicates a scale of how strong the password is. The feedback is indicated using several cues, including color coding, a barometer, and label “Weak”, “Okay”, and “Strong”, as well as the time that would be needed to crack the password.
 
+{::nomarkdown}
 <aside class="box box-simple box-notes"><header class="box-h  box-h-simple box-h-notes"> Note</header><div class="box-i">
+{:/}
 
-<p>No data is sent using the following example input field. The password is shown in plain text for demonstration purposes.</p>
+No data is sent using the following example input field. The password is shown in plain text for demonstration purposes.
 
+{::nomarkdown}
 </div></aside>
+{:/}
 
+{::nomarkdown}
 <aside class="box box-example"><header class="box-h  box-h-example"> Example</header><div class="box-i">
+{:/}
 
 <form method="post" action="#">
 	<label for="ex2_password">Password:</label>
@@ -588,16 +599,21 @@ document.getElementById('ex2_password').addEventListener('keyup',
 
 </script>
 
+{::nomarkdown}
 </div></aside>
-<p><a href="/WAI/tutorials/forms/examples/password/">See commented example code in full.</a></p>
+{:/}
+[See commented example code in full.](/WAI/tutorials/forms/examples/password/)
 
-<h3 class="ap" id="on-focus-change">On focus change</h3>
+### On focus change
+{:.ap}
 
-<p>In some cases, it does not make sense to check input as it is being typed by the user because it would display error messages most of the time. This is often the case when data needs to be entered in a particular format, such as a date.</p>
+In some cases, it does not make sense to check input as it is being typed by the user because it would display error messages most of the time. This is often the case when data needs to be entered in a particular format, such as a date.
 
-<p>In the example below, the user is expected to provide an expiry date. The input is checked when the user leaves the form field, for example, by using the tab key to move the focus to the next field or by clicking on another field.</p>
+In the example below, the user is expected to provide an expiry date. The input is checked when the user leaves the form field, for example, by using the tab key to move the focus to the next field or by clicking on another field.
 
+{::nomarkdown}
 <aside class="box box-example"><header class="box-h  box-h-example"> Example</header><div class="box-i">
+{:/}
 
 <style>
 	#ex4 div {margin-bottom:.75em;}
@@ -645,22 +661,34 @@ for (var i = inputs.length - 1; i >= 0; i--) {
 
 </script>
 
+{::nomarkdown}
 </div></aside>
+{:/}
 
+{::nomarkdown}
 <aside class="box box-example"><header class="box-h  box-h-example"> Code Snippet</header><div class="box-i">
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>
-	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"expire"</span><span class="nt">&gt;&lt;strong&gt;&lt;/strong&gt;</span> Expiry date:<span class="nt">&lt;/label&gt;</span>
-	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"expire"</span> <span class="na">id=</span><span class="s">"expire"</span> <span class="na">value=</span><span class="s">"03.2015"</span> <span class="na">aria-describedby=</span><span class="s">"expDesc3"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"expDesc3"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
+{:/}
+~~~html
+<div>
+	<label for="expire"><strong></strong> Expiry date:</label>
+	<input type="text" name="expire" id="expire" value="03.2015" aria-describedby="expDesc3" />
+	<span id="expDesc3" aria-live="assertive"></span>
+</div>
+~~~
+{::nomarkdown}
 </div></aside>
+{:/}
 
+{::nomarkdown}
 <aside class="box box-simple box-notes"><header class="box-h  box-h-simple box-h-notes"> Note</header><div class="box-i">
+{:/}
 
-<p><strong>Note:</strong> The displayed message in this example is coded using a <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code> element that has an <code class="language-plaintext highlighter-rouge">aria-live</code> attribute with the value <code class="language-plaintext highlighter-rouge">assertive</code>. The contents of this so called “live region” is conveyed to screen readers and other assistive technology. The value “assertive” emphasizes the importance of the message and causes screen readers to interrupt their current tasks to read aloud this message. Thus the message is read aloud before the next element that received the focus is announced to the user.</p>
+**Note:** The displayed message in this example is coded using a `<span>` element that has an `aria-live` attribute with the value `assertive`. The contents of this so called “live region” is conveyed to screen readers and other assistive technology. The value “assertive” emphasizes the importance of the message and causes screen readers to interrupt their current tasks to read aloud this message. Thus the message is read aloud before the next element that received the focus is announced to the user.
 
-</div></aside>
+{::nomarkdown}
+&lt;/div&gt;&lt;/aside&gt;
+{:/}
+</span></div></aside></span></div></aside>
 
 
     
@@ -802,9 +830,9 @@ for (var i = inputs.length - 1; i >= 0; i--) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654272053615630355"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1654273627939973667"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654272053615630355"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1654273627939973667"></script>
 <script>
   svg4everybody();
 </script><script>
