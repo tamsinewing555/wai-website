@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654273627939973667";
+      element.src = "/WAI/assets/scripts/main.js?1654733465532753747";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654273627939973667">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654733465532753747">
 
 <title> Submit a course, training, or certification on digital accessibility | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -45,7 +45,7 @@
 
    <div class="minimal-header-container default-grid">
       
-      <banner class="minimal-header" id="site-header">
+      <header class="minimal-header" id="site-header">
   <div class="minimal-header-container">
     <div class="minimal-header-name">
       
@@ -63,7 +63,7 @@
             <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg"/>
         </a>
   </div>
-</banner>
+</header>
 
     </div>
 
@@ -393,6 +393,10 @@ main>header {
     margin-right: .5em;
 }
 
+.field:not(.filter-options)>label{
+    font-weight: 700;
+}
+
 #language,
 #country {
     width: 100%;
@@ -494,9 +498,22 @@ fieldset>p {
     margin-top: .25em !important
 }
 
+fieldset>fieldset{
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
 .fieldset-subtitles {
-    margin-top: 1.5em !important;
+    margin-top: .5em !important;
     color: var(--wai-green);
+    margin: 1em 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+legend.expl{
+    font-size: 1rem !important;
+    font-weight: normal;
+    margin-bottom: 0.5em !important;
 }
 
 #availability .label_input {
@@ -915,34 +932,33 @@ function onSubmit(e) {
 <h2 id="about_you">About you</h2>
 <p>We'd like to know who you are, so that we can contact you with questions about your submission. This information will be publicly available but not published on the course list.</p>
 
-<fieldset class="field">
-<legend id="label_submitter_name" class="label_input">Name (Required)</legend>
-  <input type="text" id="submitter_name" aria-labelledby="label_submitter_name" name="submitter_name" required="" />
-</fieldset>
+<div class="field">
+  <label class="label_input" for="submitter_name">Name (Required)</label>
+  <input type="text" id="submitter_name" name="submitter_name" required="" />
+</div>
 
-<fieldset class="field">
-<legend id="label_submitter_email" class="label_input">Email (Required)</legend>
-    <input type="email" id="submitter_email" name="submitter_email" aria-labelledby="label_submitter_email" required="" />
-</fieldset>
+<div class="field">
+<label for="submitter_email" class="label_input">Email (Required)</label>
+    <input type="email" id="submitter_email" name="submitter_email" required="" />
+</div>
 
 
 <h2 id="the_resource">About the resource</h2>
 <p>Provide some information about the course, training, or certification.</p>
 
-<fieldset class="field">
-  <legend id="label_title" class="label_input">Title (Required)</legend>
-  <input type="text" id="title" name="title" aria-labelledby="label_title" required="" />
-</fieldset>
+<div class="field">
+  <label for="title" class="label_input">Title (Required)</label>
+  <input type="text" id="title" name="title" required="" />
+</div>
 
-<fieldset class="field">
-  <legend id="label_provider" class="label_input">Provider (Required)</legend>
-  <input type="text" id="provider" name="provider" aria-labelledby="label_provider" required="" />
-</fieldset>
+<div class="field">
+  <label for="provider" class="label_input">Provider (Required)</label>
+  <input type="text" id="provider" name="provider" required="" />
+</div>
 
-<fieldset class="field fieldset_select_text" id="country">
-  <legend class="label_input">Country (Required)<span class="expl">In which country or countries is the provider?</span>
-  </legend>
-  
+<fieldset class="field fieldset_select_text" id="country" aria-describedby="expl_country">
+  <legend class="label_input">Country (Required)</legend>
+  <p class="expl" id="expl_country">In which country or countries is the provider located?</p>
   <div class="line">
     <label for="country1" class="label_input">Country 1 (Required)</label>
       <select name="country[]" id="country1" class="select_form" required="">
@@ -1961,13 +1977,13 @@ function onSubmit(e) {
   <button type="button" class="remove_line button-small" disabled="">Remove last country</button>
 </fieldset>
 
-<fieldset class="field">
-  <legend for="description" id="description_label" class="label_input">Description (Required)
-    <span class="expl">Provide a brief description of this resource (max. 350 chars).</span>
-  </legend>
-  <textarea id="description" name="description" maxlength="350" rows="5" aria-labelledby="description_label" aria-describedby="description_expl" required=""></textarea>
-  <p id="description_expl"><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
-</fieldset>
+<div class="field">
+  <label for="description" class="label_input">Description (Required)
+  </label>
+  <p class="expl" id="expl_desc">Provide a brief description of this resource (350 characters maximum).</p>
+  <textarea id="description" name="description" maxlength="350" rows="5" aria-describedby="expl_desc1 expl_desc2" required=""></textarea>
+  <p id="expl_desc2"><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
+</div>
 
 <fieldset class="field fieldset_radio other_field" id="type">
   <legend class="label_input">Type of resource (Required)</legend>
@@ -2047,10 +2063,9 @@ function onSubmit(e) {
   </div>
 </fieldset>
 
-<fieldset class="field fieldset_text" id="prerequisites">
-  <legend class="label_input">Prerequisites
-    <span class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</span>
-  </legend>
+<fieldset class="field fieldset_text" id="prerequisites" aria-describedby="expl_prerequisites">
+  <legend class="label_input">Prerequisites</legend>
+  <span class="expl" id="expl_prerequisites">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</span>
   <div class="line">
     <label for="prerequisites_1" class="label_input">Prerequisite 1</label>
     <input type="text" id="prerequisites_1" name="prerequisites" />
@@ -2063,10 +2078,9 @@ function onSubmit(e) {
   <button type="button" class="remove_line button-small" disabled="">Remove last prerequisite</button>
 </fieldset>
 
-<fieldset class="field fieldset_text" id="topics">
-  <legend class="label_input">Topics (Required)
-    <span class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</span>
-  </legend>
+<fieldset class="field fieldset_text" id="topics" aria-describedby="expl_topics">
+  <legend class="label_input">Topics (Required)</legend>
+  <p class="expl" id="expl_topics">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
   <div class="line">
     <label for="topics_1" class="label_input">Topic 1 (Required)</label>
     <input type="text" id="topics_1" name="topics" required="" />
@@ -2079,14 +2093,13 @@ function onSubmit(e) {
   <button type="button" class="remove_line button-small" disabled="">Remove last topic</button>
 </fieldset>
 
-<fieldset class="field fieldset_check_title" id="curricula">
-  <legend class="label_input">WAI Curricula on Web Accessibility
-    <span class="expl">WAI Curricula on Web Accessibility is a framework to help you create courses on digital accessibility, or to include accessibility in other courses. WAI Curricula provides a set of learning outcomes, topics and assessment ideas covering accessibility foundations that apply broadly, and specific skills for developers, designers and content authors. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.</span>
-    <span class="expl">If applicable, indicate the WAI Curricula modules that your resource covers.</span>
-  </legend>
+<fieldset class="field fieldset_check_title" id="curricula" aria-describedby="expl_curricula1 expl_curricula2">
+  <legend class="label_input">WAI Curricula on Web Accessibility</legend>
+  <p class="expl" id="expl_curricula1">WAI Curricula on Web Accessibility is a framework to help you create courses on digital accessibility, or to include accessibility in other courses. WAI Curricula provides a set of learning outcomes, topics and assessment ideas covering accessibility foundations that apply broadly, and specific skills for developers, designers and content authors. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.</p>
+  <p class="expl" id="expl_curricula2">If applicable, indicate the WAI Curricula modules that your resource covers.</p>
     
-<div class="subitems">
-<p class="fieldset-subtitles">Foundation Modules</p>
+<fieldset class="subitems">
+<legend class="fieldset-subtitles">Foundation Modules</legend>
 
 <div class="radio-field">
     <input type="checkbox" id="foundation_modules1" name="wai_curricula[]" value="foundation_modules1" group="wai_curricula" />
@@ -2113,10 +2126,10 @@ function onSubmit(e) {
     <label for="foundation_modules5">Module 5: Getting Started with Accessibility</label>
 </div>
 
-</div>
+</fieldset>
 
-<div class="subitems">
-<p class="fieldset-subtitles">Developer Modules</p>
+<fieldset class="subitems">
+<legend class="fieldset-subtitles">Developer Modules</legend>
 
 <div class="radio-field">
     <input type="checkbox" id="developer_modules1" name="wai_curricula[]" value="developer_modules1" group="wai_curricula" />
@@ -2153,10 +2166,10 @@ function onSubmit(e) {
     <label for="developer_modules7">Module 7: Rich Applications</label>
 </div>
 
-</div>
+</fieldset>
 
-<div class="subitems">
-<p class="fieldset-subtitles">Designer Modules</p>
+<fieldset class="subitems">
+<legend class="fieldset-subtitles">Designer Modules</legend>
 
 <div class="radio-field">
     <input type="checkbox" id="designer_modules1" name="wai_curricula[]" value="designer_modules1" group="wai_curricula" />
@@ -2193,14 +2206,13 @@ function onSubmit(e) {
     <label for="designer_modules7">Module 7: Forms Design</label>
 </div>
 
-</div>
+</fieldset>
 
 </fieldset>
 
-<fieldset class="field fieldset_select_text" id="language">
-  <legend class="label_input">Language (Required)
-    <span class="expl">Indicate in which language or languages this resource is provided.</span>
-  </legend>
+<fieldset class="field fieldset_select_text" id="language" aria-describedby="expl_language">
+  <legend class="label_input">Language (Required)</legend>
+  <p class="expl" id="expl_language">Indicate in which language or languages this resource is provided.</p>
   <div class="line">
     <label for="language_1" class="label_input">Language 1</label>
     <select name="language[]" id="language_1" class="select_form" required=""> 
@@ -2983,10 +2995,9 @@ function onSubmit(e) {
   </div>      
 </fieldset>
 
-<fieldset class="field fieldset_check" id="learning">
-  <legend class="label_input">Scheduling (Required)
-    <span class="expl">Indicate the attendance requirements for this resource. Choose as many as apply.</span>
-  </legend>
+<fieldset class="field fieldset_check" id="learning" aria-describedby="expl_learning">
+  <legend class="label_input">Scheduling (Required)</legend>
+  <p class="expl" id="expl_learning">Indicate the attendance requirements for this resource. Choose as many as apply.</p>
   <div class="radio-field">
     <input type="checkbox" id="learning_scheduled" name="learning[]" value="learning_scheduled" group="learning" required="" />
     <label for="learning_scheduled">Scheduled - participants are required to attend at a specific time</label>
@@ -2997,10 +3008,9 @@ function onSubmit(e) {
   </div>
 </fieldset>
 
-<fieldset class="field fieldset_text">
-  <legend id="platforms_label" class="label_input">Platforms
-    <span class="expl">If applicable, indicate on which platforms this resource is provided (for example, which Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.)</span>
-  </legend>
+<fieldset class="field fieldset_text" aria-describedby="expl_platform">
+  <legend id="platforms_label" class="label_input">Platforms</legend>
+  <span class="expl" id="expl_platform">If applicable, indicate on which platforms this resource is provided (for example, which Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.)</span>
   <div class="line">
     <label for="platform_1" class="label_input">Platform 1</label>
     <input type="text" id="platform_1" name="platforms" />
@@ -3014,15 +3024,13 @@ function onSubmit(e) {
 </fieldset>
 
 
-<fieldset class="field fieldset_check" id="accessibility-support">
-  <legend class="label_input">Accessibility support
-    <span class="expl">If applicable, indicate what accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>). Include details in the text box.</span>
-  </legend>
+<fieldset class="field fieldset_check" id="accessibility-support" aria-describedby="expl_asupport">
+  <legend class="label_input">Accessibility support</legend>
+  <p class="expl" id="expl_asupport">If applicable, indicate what accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>). Include details in the text box.</p>
   
 
-<p class="fieldset-subtitles" id="general-accessibility-subtitles">General accessibility</p>
-
-
+<fieldset>
+<legend class="fieldset-subtitles" id="general-accessibility-subtitles">General accessibility</legend>
 
 
 <div class="radio-field">
@@ -3032,21 +3040,21 @@ function onSubmit(e) {
 
 
 
-
 <div class="radio-field">
     <input type="checkbox" id="general-accessibility-pre-check-available" name="accessibility_support[]" value="general-accessibility-pre-check-available" group="accessibility_support" aria-describedby="general-accessibility-subtitles general-accessibility-pre-check-available-expl" />
     <label for="general-accessibility-pre-check-available">Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings</label>
 </div>    
 
 
+</fieldset>
 
 
-<p class="fieldset-subtitles" id="digital-accessibility-subtitles">Digital accessibility</p>
+<fieldset>
+<legend class="fieldset-subtitles" id="digital-accessibility-subtitles">Digital accessibility</legend>
 
 
-
-
-<p class="expl" id="accessible-electronic-handout-expl">Handouts, slides, and other electronic material is accessible, including: </p>
+<fieldset>
+<legend class="expl" id="accessible-electronic-handout-expl">Handouts, slides, and other electronic material is accessible, including: </legend>
 
 <div class="radio-field">  
     <input type="checkbox" id="digital-accessibility-caption-audio" name="accessibility_support[]" value="digital-accessibility-caption-audio" group="accessibility_support" aria-describedby="digital-accessibility-subtitles accessible-electronic-handout-expl" />
@@ -3078,20 +3086,20 @@ function onSubmit(e) {
     <label for="digital-accessibility-all-content-meets-wcag">All content meets at least <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a> Level AA</label>
 </div>
 
+</fieldset>
 
 
+</fieldset>
 
 
-<p class="fieldset-subtitles" id="non-digital-accessibility-subtitles">Non-digital accessibility</p>
-
-
+<fieldset>
+<legend class="fieldset-subtitles" id="non-digital-accessibility-subtitles">Non-digital accessibility</legend>
 
 
 <div class="radio-field">
     <input type="checkbox" id="non-digital-accessibility-accessible-facility" name="accessibility_support[]" value="non-digital-accessibility-accessible-facility" group="accessibility_support" aria-describedby="non-digital-accessibility-subtitles non-digital-accessibility-accessible-facility-expl" />
     <label for="non-digital-accessibility-accessible-facility">Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible</label>
 </div>    
-
 
 
 
@@ -3102,8 +3110,8 @@ function onSubmit(e) {
 
 
 
-
-<p class="expl" id="accessible-format-handouts-expl">Handouts, slides, and other material in accessible formats, including: </p>
+<fieldset>
+<legend class="expl" id="accessible-format-handouts-expl">Handouts, slides, and other material in accessible formats, including: </legend>
 
 <div class="radio-field">  
     <input type="checkbox" id="non-digital-accessibility-text-and-visuals-big-enough" name="accessibility_support[]" value="non-digital-accessibility-text-and-visuals-big-enough" group="accessibility_support" aria-describedby="non-digital-accessibility-subtitles accessible-format-handouts-expl" />
@@ -3120,8 +3128,10 @@ function onSubmit(e) {
     <label for="non-digital-accessibility-description-of-visual-information"><a href="https://www.w3.org/WAI/media/av/description/">Description of visual information</a> - audio description and text description</label>
 </div>
 
+</fieldset>
 
 
+</fieldset>
 
 
 <div class="field">
@@ -3130,12 +3140,11 @@ function onSubmit(e) {
 </div>
 </fieldset>
 
-<fieldset class="field">
-  <legend id="length_label" class="label_input">Length
-    <span class="expl">Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).</span>
-  </legend>
-  <input type="text" id="length" aria-labelledby="length_label" name="length" />
-</fieldset>
+<div class="field">
+  <label for="length" class="label_input">Length</label>
+  <p class="expl" id="expl_length">Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
+  <input type="text" id="length" name="length" aria-describedby="expl_length" />
+</div>
 
 <fieldset class="field fieldset_radio" id="cost">
   <legend class="label_input">Cost (Required)</legend>
@@ -3161,46 +3170,40 @@ function onSubmit(e) {
   </div>  
 </fieldset>
 
-<fieldset class="field">
-  <legend id="website_label" class="label_input">Website (Required)
-    <span class="expl">Indicate the website containing more information about this resource.</span>
-  </legend>
-  <input type="url" name="website" id="website" aria-labelledby="website_label" placeholder="https://example.com" required="" />
-</fieldset>
+<div class="field">
+  <label for="website" class="label_input">Website (Required)</label>
+  <p class="expl" id="expl_website">Indicate the website containing more information about this resource.</p>
+  <input type="url" name="website" id="website" placeholder="https://example.com" aria-describedby="expl_website" required="" />
+</div>
 
-<fieldset class="field">
-  <legend id="reviews_label" class="label_input">Reviews page
-    <span class="expl">Indicate the web page containing reviews about this resource.</span>
-  </legend>
-  <input type="url" name="reviews" id="reviews" aria-labelledby="reviews_label" placeholder="https://example.com" />
-</fieldset>
+<div class="field">
+  <label for="reviews" class="label_input">Reviews page</label>
+  <p class="expl" id="expl_reviews">Indicate the web page containing reviews about this resource.</p>
+  <input type="url" name="reviews" id="reviews" placeholder="https://example.com" aria-describedby="expl_reviews" />
+</div>
 
-<fieldset class="field">
-  <legend id="content_update_label" class="label_input">Last updated (Required)
-    <span class="expl">Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.</span>
-  </legend>
-  <input type="date" name="content_update" id="content_update" aria-labelledby="content_update_label" required="" />
-</fieldset>
+<div class="field">
+  <label for="content_update" class="label_input">Last updated (Required)</label>
+  <p class="expl" id="expl_content_update">Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.</p>
+  <input type="date" name="content_update" id="content_update" aria-descibedby="expl_content_update" required="" />
+</div>
 
 <fieldset class="field" id="availability">
   <legend class="label_input">Availability</legend>
-  <label for="start_date" class="label_input">From (Required)
-    <span class="expl">Indicate when this resource will become available.</span>
-  </label>
-  <input type="date" id="start_date" name="start_date" aria-label="Available from" required="" />
-  <label for="end_date" class="label_input">Until
-    <span class="expl">If applicable, indicate the date this resource will no longer be available.</span>
-  </label> 
-  <input type="date" id="end_date" name="end_date" aria-label="Available until" />
+  <label for="start_date" class="label_input">From (Required)</label>
+  <p class="expl" id="expl_start_date">Indicate when this resource will become available.</p>
+  <input type="date" id="start_date" name="start_date" aria-describedby="expl_start_date" required="" />
+  <label for="end_date" class="label_input">Until</label> 
+  <p class="expl" id="expl_end_date">If applicable, indicate the date this resource will no longer be available.</p>
+  <input type="date" id="end_date" name="end_date" aria-describedby="expl_end_date" />
 </fieldset>
 
 <h2>Submitting your course, training, or certification</h2>
-<fieldset class="field">
-  <legend id="comments_label" class="label_input">Comments
-    <span class="expl">Let us know if you have further comments. This comment will be publicly available but not published on the course list.</span>
-  </legend>
-  <textarea id="comments" name="comments" aria-labelledby="comments_label"></textarea>
-</fieldset>
+<div class="field">
+  <label for="comments" class="label_input">Comments</label>
+  <p class="expl" id="expl_comments">Let us know if you have further comments. This comment will be publicly available but not published on the course list.</p>
+  <textarea id="comments" name="comments" aria-describedby="expl_comments"></textarea>
+</div>
 
 <fieldset class="field">
   <div class="radio-field">  
@@ -3956,7 +3959,7 @@ function getPreviewSubmission() {
                             val.push(el.querySelector("label[for='" + c.id + "']").innerText);
                         })
 
-                        var label = d.querySelector('p').innerText;
+                        var label = d.querySelector('legend').innerText;
 
                         var value = label + ": " + (val.length === 0 ? "Not provided" : val.join('; '));
 
@@ -4144,7 +4147,7 @@ function getPreviewSubmission() {
       
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
-      <p><strong>Date:</strong> Updated 04 June 2021. First published June 2022.</p> <p><strong>Project Team:</strong> <a href="https://www.w3.org/People/Brewer/">Judy Brewer</a>, Carlos Duarte, and Letícia Seixas Pereira. <strong>Contributors:</strong> <a href="https://www.w3.org/WAI/about/groups/eowg/participants/">EOWG Participants</a>.</p> <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p></div>
+      <p><strong>Date:</strong> Updated 07 June 2021. First published June 2022.</p> <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. <span>Contributors:<span> <a href="https://www.w3.org/WAI/about/groups/eowg/participants/">EOWG Participants</a>.</p> <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p></div>
   </footer>
   
 
@@ -4182,9 +4185,9 @@ function getPreviewSubmission() {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654273627939973667"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1654733465532753747"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654273627939973667"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1654733465532753747"></script>
 <script>
   svg4everybody();
 </script><script>
