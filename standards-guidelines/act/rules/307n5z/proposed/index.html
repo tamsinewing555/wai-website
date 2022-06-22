@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654745313300498724";
+      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654745313300498724">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
 
-<title> Element with presentational children has no focusable content[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654745313300498724"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Element with presentational children has no focusable content[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Element with presentational children has no focusable content" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -291,9 +291,9 @@ h2#sidebar-header {
                 
                 <li><a href="#glossary">Glossary</a></li>
                 
-                <li><a href="#implementations">Implementations</a></li>
+                <li><a href="#ruleversions">Rule Versions</a></li>
                 
-                <li><a href="#changelog">Changelog</a></li>
+                <li><a href="#implementations">Implementations</a></li>
                 
                 </ul>
             </div>
@@ -405,7 +405,7 @@ h2#sidebar-header {
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ccaf2315b5268a447dff07aad635b3ad27aabaf8.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ccaf2315b5268a447dff07aad635b3ad27aabaf8.html">Open in a new tab</a></p>
 
 <p>None of these <code class="language-plaintext highlighter-rouge">button</code> elements has <a href="https://dom.spec.whatwg.org/#concept-tree-descendant" title="Definition Descendant, as on 2020-10-21">descendants</a> that are included in <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/10/21">sequential focus navigation</a>.</p>
 
@@ -414,7 +414,7 @@ h2#sidebar-header {
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/9bdea8c670e441afe5299bed4ea02b304becaaf8.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/9bdea8c670e441afe5299bed4ea02b304becaaf8.html">Open in a new tab</a></p>
 
 <p>This element with <code class="language-plaintext highlighter-rouge">checkbox</code> role has no <a href="https://dom.spec.whatwg.org/#concept-tree-descendant" title="Definition Descendant, as on 2020-10-21">descendants</a> that are included in <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/10/21">sequential focus navigation</a>. Instead the link to the terms of service is adjacent, and <code class="language-plaintext highlighter-rouge">aria-labelledby</code> is used to provide its <a href="#accessible-name" title="Definition of Accessible name">accessible name</a>.</p>
 
@@ -428,7 +428,7 @@ h2#sidebar-header {
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
-<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/8c835039e68f3fefc58e8b0985b2060fa02b3480.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/8c835039e68f3fefc58e8b0985b2060fa02b3480.html">Open in a new tab</a></p>
 
 <p>This element with <code class="language-plaintext highlighter-rouge">menuitemcheckbox</code> role has an <code class="language-plaintext highlighter-rouge">input</code> element as a descendant. Because the <code class="language-plaintext highlighter-rouge">input</code> is disabled it is not included in <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/10/21">sequential focus navigation</a>.</p>
 
@@ -446,19 +446,19 @@ h2#sidebar-header {
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e6d11dd9493057ccf9dad8a463130d458f74c672.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">button</code> element has a <a href="https://dom.spec.whatwg.org/#concept-tree-child" title="Definition child, as on 2020-10-21">child</a> <code class="language-plaintext highlighter-rouge">span</code> element. Because the <code class="language-plaintext highlighter-rouge">span</code> element has a <code class="language-plaintext highlighter-rouge">tabindex</code> attribute with value of <code class="language-plaintext highlighter-rouge">0</code>, it is included in <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/10/21">sequential focus navigation</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button&gt;</span>
 	Save
-	<span class="nt">&lt;span</span> <span class="na">aria-label=</span><span class="s">"save options"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>▼<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"save options"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">tabindex=</span><span class="s">"0"</span><span class="nt">&gt;</span>▼<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/b9f6f775efc8d7cdc38782087ccc6abaa88babb6.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/b9f6f775efc8d7cdc38782087ccc6abaa88babb6.html">Open in a new tab</a></p>
 
 <p>This element with <code class="language-plaintext highlighter-rouge">checkbox</code> role has an <code class="language-plaintext highlighter-rouge">a</code> element as a <a href="https://dom.spec.whatwg.org/#concept-tree-child" title="Definition child, as on 2020-10-21">child</a>. Because the <code class="language-plaintext highlighter-rouge">a</code> element has an <code class="language-plaintext highlighter-rouge">href</code> attribute, it is included in <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/10/21">sequential focus navigation</a>.</p>
 
@@ -467,7 +467,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/61a402c2eb82ccb8614aa62918cff81b8306ddf2.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/61a402c2eb82ccb8614aa62918cff81b8306ddf2.html">Open in a new tab</a></p>
 
 <p>This element with <code class="language-plaintext highlighter-rouge">menuitemcheckbox</code> role has a checkbox as a child. Because the checkbox is not disabled, it is included in <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/10/21">sequential focus navigation</a>.</p>
 
@@ -483,7 +483,7 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
-<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/54cd6b714326ddf6ae1181112d6ce35f6f3e3579.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/54cd6b714326ddf6ae1181112d6ce35f6f3e3579.html">Open in a new tab</a></p>
 
 <p>This element has a <code class="language-plaintext highlighter-rouge">link</code> role which does not have <a href="https://www.w3.org/TR/wai-aria-1.1/#childrenArePresentational" title="WAI-ARIA 1.1 Presentational Children">presentational children</a>.</p>
 
@@ -609,9 +609,9 @@ h2#sidebar-header {
   <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
 </ul>
 
-<p><strong>Note</strong>: Contrarily to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
+<p><strong>Note</strong>: Contrary to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
 
-<p><strong>Note</strong>: The <a href="https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements">HTML standard suggests</a> rendering elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute with a CSS rule that applies the value <code class="language-plaintext highlighter-rouge">none</code> to the CSS property <code class="language-plaintext highlighter-rouge">display</code> of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the <code class="language-plaintext highlighter-rouge">display</code> property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.</p>
+<p><strong>Note</strong>: The <a href="https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements">HTML standard suggests</a> setting the CSS <code class="language-plaintext highlighter-rouge">display</code> property to <code class="language-plaintext highlighter-rouge">none</code> for elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute. While not required by HTML, all modern browsers follow this suggestion. Because of this the <code class="language-plaintext highlighter-rouge">hidden</code> attribute is not used in this definition. In browsers that use this suggestion, overriding the CSS <code class="language-plaintext highlighter-rouge">display</code> property can reveal elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute.</p>
 
 <h3 id="semantic-role">Semantic Role</h3>
 
@@ -637,51 +637,49 @@ h2#sidebar-header {
 
 <p><strong>Note:</strong> depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.</p>
 
-<h2 id="implementations">Implementations</h2>
 
-<p>This section is not part of the official rule. It is populated dynamically and 
-not accounted for in the change history or the last modified date.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Implementation</th>
-      <th>Consistency</th>
-      <th>Complete</th>
-      <th>Report</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Alfa</td>
-      <td>Consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/alfa#id-307n5z">View Report</a></td>
-    </tr>
-    <tr>
-      <td>Axe-core</td>
-      <td>Consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/axe-core#id-307n5z">View Report</a></td>
-    </tr>
-    <tr>
-      <td>QualWeb</td>
-      <td>Consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/qualweb#id-307n5z">View Report</a></td>
-    </tr>
-    <tr>
-      <td>SortSite</td>
-      <td>Consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/sortsite#id-307n5z">View Report</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="changelog">Changelog</h2>
+<h2 id="ruleversions">Rule Versions</h2>
 
 <p>This is the first version of this ACT rule.</p>
+
+
+<h2 id="implementations">Implementations</h2>
+
+  <p>This section is not part of the official rule. It is populated dynamically and 
+    not accounted for in the change history or the last modified date.</p>
+  <table class="act-implementations">
+    <thead> 
+      <tr>
+        <th>Implementation</th>
+        <th>Type</th>
+        <th>Consistency</th>
+        <th>Report</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>Alfa 0.36.0</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-307n5z"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
+          <td>Axe-core 4.5.0-prerelease</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-307n5z"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
+          <td>QualWeb 3.0.0</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-307n5z"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+    </tbody>
+  </table>
 
  
 
@@ -709,7 +707,7 @@ not accounted for in the change history or the last modified date.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 307n5z</p>
-<p><strong>Date:</strong> Updated 16 March 2022</p>
+<p><strong>Date:</strong> Updated 21 June 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -750,9 +748,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
 <script>
   svg4everybody();
 </script><script>

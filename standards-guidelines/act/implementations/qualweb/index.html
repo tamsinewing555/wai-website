@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654745313300498724";
+      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654745313300498724">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
 
-<title> QualWeb ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654745313300498724"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> QualWeb ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="QualWeb ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -301,22 +301,20 @@ h2#sidebar-header {
     Implementation Summary 
   </header>
   <div class="box-i"><p>
+    <a href="http://qualweb.di.fc.ul.pt/evaluator/">QualWeb</a>
     
-      QualWeb
-    
-    
-      version 3.0.0 
+      version 3.0.0
     
     is an Automated tool
     
-      by LASIGE, Faculdade de Ciências da Universidade de Lisboa.
+      by <a href="https://www.lasige.pt/">LASIGE, Faculdade de Ciências da Universidade de Lisboa</a>.
     
 
     
 
     This ACT implementation tests for
-    WCAG 2.1 all levels, and WAI-ARIA 1.2.
-    See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+    WCAG 2.1 Level A, AA, AAA, and WAI-ARIA 1.2.
+    See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
   </p></div>
 </aside>
 
@@ -334,8 +332,8 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>Proposed rules</th>
-    <td>20</td>
-    <td>17</td>
+    <td>19</td>
+    <td>19</td>
   </tr>
 </tbody></table>
 
@@ -501,7 +499,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-5f99a7">
-          aria-* attribute is defined in WAI-ARIA
+          ARIA attribute is defined in WAI-ARIA
         </a></td>
         <td> Proposed Rule
         </td>
@@ -510,6 +508,16 @@ h2#sidebar-header {
       </tr>
     
     
+    
+      <tr>
+        <td><a href="#breakdown-6cfa84">
+          Element with aria-hidden has no content in sequential focus navigation
+        </a></td>
+        <td> Proposed Rule
+        </td>
+        <td> Partial
+        </td>
+      </tr>
     
     
     
@@ -559,7 +567,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-e7aa44">
-          audio element content has text alternative
+          Audio element content has text alternative
         </a></td>
         <td> Proposed Rule
         </td>
@@ -657,7 +665,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-7d6734">
-          svg element with explicit role has non-empty accessible name
+          SVG element with explicit role has non-empty accessible name
         </a></td>
         <td> Proposed Rule
         </td>
@@ -695,7 +703,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-3ea0c8">
-          id attribute value is unique
+          Id attribute value is unique
         </a></td>
         <td> Proposed Rule
         </td>
@@ -707,7 +715,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-4b1c6c">
-          iframe elements with identical accessible names have equivalent purpose
+          Iframe elements with identical accessible names have equivalent purpose
         </a></td>
         <td> Proposed Rule
         </td>
@@ -719,7 +727,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-cae760">
-          iframe element has non-empty accessible name
+          Iframe element has non-empty accessible name
         </a></td>
         <td> Proposed Rule
         </td>
@@ -731,7 +739,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-akn7bn">
-          iframe with negative tabindex has no interactive elements
+          Iframe with negative tabindex has no interactive elements
         </a></td>
         <td> Proposed Rule
         </td>
@@ -795,7 +803,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-bc659a">
-          meta element has no refresh delay
+          Meta element has no refresh delay
         </a></td>
         <td> Proposed Rule
         </td>
@@ -807,7 +815,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-bisz58">
-          meta element has no refresh delay (no exception)
+          Meta element has no refresh delay (no exception)
         </a></td>
         <td> Proposed Rule
         </td>
@@ -819,7 +827,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-b4f0c3">
-          meta viewport allows for zoom
+          Meta viewport allows for zoom
         </a></td>
         <td> Proposed Rule
         </td>
@@ -849,8 +857,8 @@ h2#sidebar-header {
         </a></td>
         <td> Proposed Rule
         </td>
-        <td>
-          Consistent </td>
+        <td> Partial
+        </td>
       </tr>
     
     
@@ -859,7 +867,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-674b10">
-          role attribute has valid value
+          Role attribute has valid value
         </a></td>
         <td> Proposed Rule
         </td>
@@ -919,7 +927,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-a25f45">
-          headers attribute specified on a cell refers to cells in the same table element
+          Headers attribute specified on a cell refers to cells in the same table element
         </a></td>
         <td> Proposed Rule
         </td>
@@ -967,7 +975,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-c3232f">
-          video element visual-only content has accessible alternative
+          Video element visual-only content has accessible alternative
         </a></td>
         <td> Proposed Rule
         </td>
@@ -1054,7 +1062,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1210,12 +1218,16 @@ h2#sidebar-header {
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/de46e4">Element with lang attribute has valid language tag</a>
   WCAG 2 rule. 
-    It covers all 18 examples.
+    It covers 18 of the 19 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1366,8 +1378,19 @@ h2#sidebar-header {
       </th>
       <td class="">inapplicable</td>
     </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html">Inapplicable Example 5</a>
+          <abbr title="Proposed example">*</abbr>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
   </tbody>
 </table>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-46ca7f">Element marked as decorative is not exposed</h3>
 <p>
@@ -1382,7 +1405,7 @@ h2#sidebar-header {
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1487,7 +1510,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1648,7 +1671,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1749,7 +1772,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1880,7 +1903,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2005,7 +2028,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2146,7 +2169,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2313,7 +2336,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2456,12 +2479,16 @@ h2#sidebar-header {
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/c487ae">Link has non-empty accessible name</a>
   WCAG 2 rule. 
-    It covers all 26 examples.
+    It covers 26 of the 28 examples.
+  
+    For 2 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2680,8 +2707,26 @@ h2#sidebar-header {
       </th>
       <td class="">inapplicable</td>
     </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html">Passed Example 11</a>
+          <abbr title="Proposed example">*</abbr>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html">Failed Example 11</a>
+          <abbr title="Proposed example">*</abbr>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
   </tbody>
 </table>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-9e45ec">Word spacing in style attributes is not !important</h3>
 <p>
@@ -2696,7 +2741,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2831,20 +2876,20 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-5f99a7">aria-* attribute is defined in WAI-ARIA</h3>
+<h3 id="breakdown-5f99a7">ARIA attribute is defined in WAI-ARIA</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>aria-* attribute is defined in WAI-ARIA</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/5f99a7">aria-* attribute is defined in WAI-ARIA</a>
+  <a href="/WAI/standards-guidelines/act/rules/5f99a7">ARIA attribute is defined in WAI-ARIA</a>
    proposed rule.
     It covers all 7 examples.
   
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2918,6 +2963,153 @@ h2#sidebar-header {
   </tbody>
 </table>
 
+<h3 id="breakdown-6cfa84">Element with aria-hidden has no content in sequential focus navigation</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>Element with `aria-hidden` has no focusable content</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/6cfa84">Element with aria-hidden has no content in sequential focus navigation</a>
+   proposed rule.
+    It covers 12 of the 14 examples.
+  
+    For 2 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+      
+        <ul>
+          <li>
+            4.1.2
+            Name, Role, Value
+          </li>
+        </ul>
+      
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            4.1.2
+            Name, Role, Value
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Element with `aria-hidden` has no focusable content</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/5bd22090d0f74dcea752749ef4ad8411e3772535.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9f9f5e323450f4c0bd5445597a39d160ce07ff48.html">Passed Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/3c48f0e596f96b4bb701943356b6c179f41d383c.html">Passed Example 3</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html">Passed Example 4</a>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html">Passed Example 5</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4e7955d592cbf361a55113fcd4524e979b16bb08.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2adaacc2f7b8d7a0d2d1496ad6f56aafd171f7fe.html">Failed Example 2</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/7d1d269e9ff9a8f396b2d638103379b6cf937225.html">Failed Example 3</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d0b1b435bb2757bab5f644e53a273a9f50c8bc2c.html">Failed Example 4</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html">Failed Example 5</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html">Failed Example 6</a>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/afb819d4c7cfdf8fc468bb2297da3247fb5ac056.html">Inapplicable Example 1</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/22d7a78f0d6680f70dae9cc412f496450a2acf4e.html">Inapplicable Example 2</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4d71a1ad253efab083f05dc558656d94eb430ca7.html">Inapplicable Example 3</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="breakdown-ff89c9">ARIA required context role</h3>
 <p>
   This rule is implemented by QualWeb using the
@@ -2931,7 +3123,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3080,7 +3272,7 @@ h2#sidebar-header {
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3215,7 +3407,7 @@ h2#sidebar-header {
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3391,14 +3583,14 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-e7aa44">audio element content has text alternative</h3>
+<h3 id="breakdown-e7aa44">Audio element content has text alternative</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>audio element content has transcript</code>, <code>audio element content is media alternative for text</code>, and <code>Audio element content has text alternative</code> procedures.
     Failed examples should be failed by <em>at least one</em> of these procedures.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/e7aa44">audio element content has text alternative</a>
+  <a href="/WAI/standards-guidelines/act/rules/e7aa44">Audio element content has text alternative</a>
    proposed rule.
     It covers 5 of the 8 examples.
     On 2 examples
@@ -3409,7 +3601,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3534,7 +3726,7 @@ h2#sidebar-header {
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3632,7 +3824,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3828,7 +4020,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3951,7 +4143,7 @@ h2#sidebar-header {
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4084,7 +4276,7 @@ h2#sidebar-header {
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4205,7 +4397,7 @@ h2#sidebar-header {
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4285,20 +4477,20 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-7d6734">svg element with explicit role has non-empty accessible name</h3>
+<h3 id="breakdown-7d6734">SVG element with explicit role has non-empty accessible name</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>svg element with explicit role has accessible name</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/7d6734">svg element with explicit role has non-empty accessible name</a>
+  <a href="/WAI/standards-guidelines/act/rules/7d6734">SVG element with explicit role has non-empty accessible name</a>
    proposed rule.
     It covers all 10 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4417,7 +4609,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4553,20 +4745,20 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-3ea0c8">id attribute value is unique</h3>
+<h3 id="breakdown-3ea0c8">Id attribute value is unique</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>`id` attribute value is unique</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/3ea0c8">id attribute value is unique</a>
+  <a href="/WAI/standards-guidelines/act/rules/3ea0c8">Id attribute value is unique</a>
    proposed rule.
     It covers all 10 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4672,13 +4864,13 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-4b1c6c">iframe elements with identical accessible names have equivalent purpose</h3>
+<h3 id="breakdown-4b1c6c">Iframe elements with identical accessible names have equivalent purpose</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>`iframe` elements with identical accessible names have equivalent purpose</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/4b1c6c">iframe elements with identical accessible names have equivalent purpose</a>
+  <a href="/WAI/standards-guidelines/act/rules/4b1c6c">Iframe elements with identical accessible names have equivalent purpose</a>
    proposed rule.
     It covers 9 of the 23 examples.
     On 14 examples
@@ -4689,7 +4881,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4866,20 +5058,20 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-cae760">iframe element has non-empty accessible name</h3>
+<h3 id="breakdown-cae760">Iframe element has non-empty accessible name</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>iframe element has accessible name</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/cae760">iframe element has non-empty accessible name</a>
+  <a href="/WAI/standards-guidelines/act/rules/cae760">Iframe element has non-empty accessible name</a>
    proposed rule.
     It covers all 10 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4985,20 +5177,20 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-akn7bn">iframe with negative tabindex has no interactive elements</h3>
+<h3 id="breakdown-akn7bn">Iframe with negative tabindex has no interactive elements</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>iframe with negative tabindex has no interactive elements</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/akn7bn">iframe with negative tabindex has no interactive elements</a>
+  <a href="/WAI/standards-guidelines/act/rules/akn7bn">Iframe with negative tabindex has no interactive elements</a>
    proposed rule.
     It covers all 6 examples.
   
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5090,7 +5282,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5200,7 +5392,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5378,7 +5570,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5465,13 +5657,13 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-bc659a">meta element has no refresh delay</h3>
+<h3 id="breakdown-bc659a">Meta element has no refresh delay</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>Meta-refresh no delay</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/bc659a">meta element has no refresh delay</a>
+  <a href="/WAI/standards-guidelines/act/rules/bc659a">Meta element has no refresh delay</a>
    proposed rule.
     It covers 13 of the 15 examples.
   
@@ -5482,7 +5674,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5638,13 +5830,13 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-bisz58">meta element has no refresh delay (no exception)</h3>
+<h3 id="breakdown-bisz58">Meta element has no refresh delay (no exception)</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>`meta` element has no refresh delay (no exception)</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/bisz58">meta element has no refresh delay (no exception)</a>
+  <a href="/WAI/standards-guidelines/act/rules/bisz58">Meta element has no refresh delay (no exception)</a>
    proposed rule.
     It covers 12 of the 14 examples.
   
@@ -5655,7 +5847,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5795,20 +5987,20 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-b4f0c3">meta viewport allows for zoom</h3>
+<h3 id="breakdown-b4f0c3">Meta viewport allows for zoom</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>meta viewport does not prevent zoom</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/b4f0c3">meta viewport allows for zoom</a>
+  <a href="/WAI/standards-guidelines/act/rules/b4f0c3">Meta viewport allows for zoom</a>
    proposed rule.
     It covers all 11 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5933,7 +6125,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -6067,16 +6259,20 @@ h2#sidebar-header {
 <p>
   This rule is implemented by QualWeb using the
   <code>Element with presentational children has no focusable content</code> procedure.
-  The implementation is 
-    fully  consistent with the
+  The implementation is  partially 
+   consistent with the
   <a href="/WAI/standards-guidelines/act/rules/307n5z">Element with presentational children has no focusable content</a>
    proposed rule.
-    It covers all 7 examples.
+    It covers 6 of the 7 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -6139,9 +6335,9 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e6d11dd9493057ccf9dad8a463130d458f74c672.html">Failed Example 1</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html">Failed Example 1</a>
       </th>
-      <td class="">failed</td>
+      <td class="act-untested">untested</td>
     </tr>
     <tr>
       <th>
@@ -6164,20 +6360,20 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-674b10">role attribute has valid value</h3>
+<h3 id="breakdown-674b10">Role attribute has valid value</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>role attribute has valid value</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/674b10">role attribute has valid value</a>
+  <a href="/WAI/standards-guidelines/act/rules/674b10">Role attribute has valid value</a>
    proposed rule.
     It covers all 10 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -6296,7 +6492,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -6403,7 +6599,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -6536,7 +6732,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -6642,7 +6838,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -6784,20 +6980,20 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-a25f45">headers attribute specified on a cell refers to cells in the same table element</h3>
+<h3 id="breakdown-a25f45">Headers attribute specified on a cell refers to cells in the same table element</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>Headers attribute specified on a cell refers to cells in the same table element</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/a25f45">headers attribute specified on a cell refers to cells in the same table element</a>
+  <a href="/WAI/standards-guidelines/act/rules/a25f45">Headers attribute specified on a cell refers to cells in the same table element</a>
    proposed rule.
     It covers all 16 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -6956,7 +7152,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -7197,7 +7393,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -7417,13 +7613,13 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-c3232f">video element visual-only content has accessible alternative</h3>
+<h3 id="breakdown-c3232f">Video element visual-only content has accessible alternative</h3>
 <p>
   This rule is implemented by QualWeb using the
   <code>video element visual-only content has description track</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/c3232f">video element visual-only content has accessible alternative</a>
+  <a href="/WAI/standards-guidelines/act/rules/c3232f">Video element visual-only content has accessible alternative</a>
    proposed rule.
     It covers 5 of the 9 examples.
     On 1 example
@@ -7434,7 +7630,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -7547,7 +7743,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -7629,7 +7825,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -7770,7 +7966,7 @@ h2#sidebar-header {
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -7943,9 +8139,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
 <script>
   svg4everybody();
 </script><script>

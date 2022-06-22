@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654745313300498724";
+      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654745313300498724">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
 
-<title> Trusted Tester ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654745313300498724"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Trusted Tester ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Trusted Tester ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -305,7 +305,7 @@ h2#sidebar-header {
       Trusted Tester
     
     
-      version 5.1 
+      version 5.1
     
     is an Test methodology
     
@@ -315,8 +315,8 @@ h2#sidebar-header {
     
 
     This ACT implementation tests for
-    WCAG 2.0 Level A &amp; AA.
-    See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+    WCAG 2.0 Level A, AA.
+    See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
   </p></div>
 </aside>
 
@@ -335,7 +335,7 @@ h2#sidebar-header {
   <tr>
     <th>Proposed rules</th>
     <td>2</td>
-    <td>2</td>
+    <td>5</td>
   </tr>
 </tbody></table>
 
@@ -449,7 +449,27 @@ h2#sidebar-header {
     
     
     
+      <tr>
+        <td><a href="#breakdown-ebe86a">
+          Focusable element has no keyboard trap via non-standard navigation
+        </a></td>
+        <td> Proposed Rule
+        </td>
+        <td> Partial
+        </td>
+      </tr>
     
+    
+    
+      <tr>
+        <td><a href="#breakdown-a1b64e">
+          Focusable element has no keyboard trap via standard navigation
+        </a></td>
+        <td> Proposed Rule
+        </td>
+        <td> Partial
+        </td>
+      </tr>
     
     
     
@@ -551,6 +571,16 @@ h2#sidebar-header {
     
     
     
+      <tr>
+        <td><a href="#breakdown-f51b46">
+          Video element auditory content has captions
+        </a></td>
+        <td> Proposed Rule
+        </td>
+        <td> Partial
+        </td>
+      </tr>
+    
     
     
     
@@ -582,7 +612,7 @@ h2#sidebar-header {
 <p>
   Results in this page are taken from a public
   <a href="https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester.json">test report</a>
-  published by Access Board.
+  published by US federal government.
   Data is published using the 
   <a href="https://act-rules.github.io/pages/implementations/earl-reports/">EARL+JSON-LD data format</a>.
 </p>
@@ -594,7 +624,7 @@ h2#sidebar-header {
 <h3 id="breakdown-efbfc7">Text content that changes automatically can be paused, stopped or hidden</h3>
 <p>
   This rule is implemented by Trusted Tester using the
-  <code>efbfc7-test</code> procedure.
+  <code>2.2.2-auto-updating</code> procedure.
   The implementation is 
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/efbfc7">Text content that changes automatically can be paused, stopped or hidden</a>
@@ -604,7 +634,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -642,7 +672,7 @@ h2#sidebar-header {
   <thead>
     <tr>
       <th></th>
-      <th>efbfc7-test</th>
+      <th>2.2.2-auto-updating</th>
     </tr>
   </thead>
 
@@ -733,7 +763,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -876,6 +906,212 @@ h2#sidebar-header {
   </tbody>
 </table>
 
+<h3 id="breakdown-ebe86a">Focusable element has no keyboard trap via non-standard navigation</h3>
+<p>
+  This rule is implemented by Trusted Tester using the
+  <code>2.1.2-no-keyboard-trap</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/ebe86a">Focusable element has no keyboard trap via non-standard navigation</a>
+   proposed rule.
+    It covers all 7 examples.
+  
+  
+    The implementation reports different success criteria as failed from what is expected by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+       None 
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            2.1.2
+            No Keyboard Trap
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>2.1.2-no-keyboard-trap</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/ab24c77ed9daefc8fa1650aedf0d1c6438460243.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/e3902f01b8589702925be6d97f9542895ef3c76d.html">Passed Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/b92b5214d2b2214b89fb9812b389536759701790.html">Passed Example 3</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/7dcc4ae00712889d448ecbcba200e032dca59bf0.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/8fba3918b361f251dab4c19bec8eddc5624218ee.html">Failed Example 2</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/62fd24e73ea55f55ad45de392128a816a6f03526.html">Failed Example 3</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/b20beca9dd7d487092cafcabce8c2b194896bc47.html">Inapplicable Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="breakdown-a1b64e">Focusable element has no keyboard trap via standard navigation</h3>
+<p>
+  This rule is implemented by Trusted Tester using the
+  <code>2.1.2-no-keyboard-trap</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/a1b64e">Focusable element has no keyboard trap via standard navigation</a>
+   proposed rule.
+    It covers all 10 examples.
+  
+  
+    The implementation reports different success criteria as failed from what is expected by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+       None 
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            2.1.2
+            No Keyboard Trap
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>2.1.2-no-keyboard-trap</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/96eb4b26010e8c598cb659108dbc34ca0abd82f9.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html">Passed Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/4b93a866e14ad4c9ed8efa13c080a1e05350fa2f.html">Passed Example 3</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html">Failed Example 2</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html">Failed Example 3</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/16dddd8ac5c419caba2c709b1b1f49cc5759e63c.html">Inapplicable Example 1</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/6e3dcc2f3612826dd3d8589c4e2951ad7a3e4dd7.html">Inapplicable Example 2</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/9d47dcc67abbcb177876ce082ae073947cc7135d.html">Inapplicable Example 3</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/30ffb2991af4d1727223409c9f1235e44acc1c13.html">Inapplicable Example 4</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="breakdown-b49b2e">Heading is descriptive</h3>
 <p>
   This rule is implemented by Trusted Tester using the
@@ -893,7 +1129,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1044,7 +1280,7 @@ h2#sidebar-header {
 <h3 id="breakdown-0va7u6">HTML graphics contain no text</h3>
 <p>
   This rule is implemented by Trusted Tester using the
-  <code>0va7u6-test</code> procedure.
+  <code>1.4.5-image-of-text</code> procedure.
   The implementation is 
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/0va7u6">HTML graphics contain no text</a>
@@ -1054,7 +1290,7 @@ h2#sidebar-header {
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1102,7 +1338,7 @@ h2#sidebar-header {
   <thead>
     <tr>
       <th></th>
-      <th>0va7u6-test</th>
+      <th>1.4.5-image-of-text</th>
     </tr>
   </thead>
 
@@ -1129,7 +1365,7 @@ h2#sidebar-header {
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/372b4acc620b897e8fa5e22607121407399f5e07.html">Passed Example 4</a>
       </th>
-      <td class="">inapplicable</td>
+      <td class="">passed</td>
     </tr>
     <tr>
       <th>
@@ -1141,13 +1377,13 @@ h2#sidebar-header {
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a.html">Passed Example 6</a>
       </th>
-      <td class="">passed</td>
+      <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/00a1b04016513662a754e5114d0efbbd98ba58c8.html">Passed Example 7</a>
       </th>
-      <td class="">inapplicable</td>
+      <td class="">passed</td>
     </tr>
     <tr>
       <th>
@@ -1188,6 +1424,106 @@ h2#sidebar-header {
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/5b1f5cf021116b02ca9a1846b18fa3e48860646b.html">Inapplicable Example 2</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="breakdown-f51b46">Video element auditory content has captions</h3>
+<p>
+  This rule is implemented by Trusted Tester using the
+  <code>2.1.2-no-keyboard-trap</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/f51b46">Video element auditory content has captions</a>
+   proposed rule.
+    It covers all 8 examples.
+  
+  
+    The implementation reports different success criteria as failed from what is expected by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+       None 
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            2.1.2
+            No Keyboard Trap
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>2.1.2-no-keyboard-trap</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/107f5b9199edada98041895374e27e3c51fc6a3d.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/80bae3524849f9516dfdcdb647ecc44c6d439ac3.html">Passed Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/af732f8f4e215ef60d49f6ada1f513e8d9776aa1.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/b489643151f44cfeda7ad8356c1e46893c3d962c.html">Failed Example 2</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/7a21303822a22edb9384d8956b95bcfe0c01a1fb.html">Failed Example 3</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/a4bf1f36113b22a1c9d34d7155269b72cf5721fc.html">Failed Example 4</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/38d4f61c98b1fe90c7e9c3d3eddd8d82f0596b53.html">Inapplicable Example 1</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/85f831671b50b4472c1a08a9108612c5d39571c2.html">Inapplicable Example 2</a>
       </th>
       <td class="">inapplicable</td>
     </tr>
@@ -1256,9 +1592,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
 <script>
   svg4everybody();
 </script><script>

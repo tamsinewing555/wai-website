@@ -9,17 +9,17 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654745313300498724";
+      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654745313300498724">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
 
-<title> About WCAG 2 Test Rules | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654745313300498724"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> About ACT Rules | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="About WCAG 2 Test Rules" />
+<meta property="og:title" content="About ACT Rules" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
@@ -29,18 +29,18 @@
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="About WCAG 2 Test Rules" />
+<meta property="twitter:title" content="About ACT Rules" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"About WCAG 2 Test Rules","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/about/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"About ACT Rules","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/about/"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-about-wcag-2-test-rules  tight-page">
+  <body id="top" class="page-about-act-rules  doc-note doc-draft tight-page">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
    <div class="minimal-header-container default-grid">
@@ -271,15 +271,13 @@ h2#sidebar-header {
                 <ul>
                 
                 
-                <li><a href="#test-rules-are-informative">Test Rules are Informative</a></li>
+                <li><a href="#what-are-act-rules">What are ACT Rules</a></li>
                 
-                <li><a href="#test-rules-are-partial-checks">Test Rules are Partial Checks</a></li>
+                <li><a href="#implementation-of-act-rules">Implementation of ACT Rules</a></li>
                 
-                <li><a href="#test-rules-check-for-failures">Test Rules Check for Failures</a></li>
+                <li><a href="#related-pages">Related Pages</a></li>
                 
-                <li><a href="#implementation-of-test-rules">Implementation of Test Rules</a></li>
-                
-                <li><a href="#structure-of-test-rules">Structure of Test Rules</a></li>
+                <li><a href="#structure-of-act-rules">Structure of ACT Rules</a></li>
                 
                 </ul>
             </div>
@@ -290,67 +288,74 @@ h2#sidebar-header {
         <header>
             <h1>
               
-              About WCAG 2 Test Rules
+              About ACT Rules
             </h1>
         </header>
 
-        <p> </p><aside class="box"><header class="box-h "> Summary</header><div class="box-i"> <p></p>
+        <section class="doc-note-box act-sticky">
+  <p>This page is <strong>under development</strong> and has not been approved by the working group.</p>
+</section>
 
-<p>WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guidelines (WCAG) success criteria. The Test Rules are informative — that means they are not required for determining conformance to WCAG. WCAG 2 Test Rules are primarily for developers of evaluation tools and test methodologies.</p>
+<aside class="box"><header class="box-h "> Summary</header><div class="box-i">
 
-<p>Guidance for others is in <cite>Understanding WCAG</cite> and <cite>WCAG Techniques</cite>. <strong>Learn about the different WCAG support material from <a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">The WCAG 2 Documents <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a>.</strong></p>
+<p>ACT Rules describe how to test conformance of accessibility standards such as <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a> and <a href="https://www.w3.org/WAI/ARIA/">WAI-ARIA <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a>. ACT Rules inform accessibility testers on how to evaluate edge cases in way that is consistent with other accessibility testers, test tools, and methodologies. ACT Rules are informative — that means they are not required for determining conformance to WCAG or ARIA.</p>
 
 </div></aside>
 
-<p>The <a href="https://www.w3.org/WAI/standards-guidelines/act/rules/">List of Test Rules for WCAG 2</a> is updated periodically. The rules are developed according to the <a href="https://www.w3.org/WAI/standards-guidelines/act/">Accessibility Conformance Testing (ACT) Rules Format 1.0 <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a> standard.</p>
+<h2 id="what-are-act-rules">What are ACT Rules</h2>
 
-<p><a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance">Understanding Conformance</a> provides related information, including on <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#accessibility-support">understanding accessibility support</a>.</p>
+<p>ACT Rules are designed to harmonize how edge cases for WCAG and other accessibility guidance are tested. Each ACT Rule describes in technology specific language how to test one particular aspect of a WCAG success criterion or other requirement. Rules have passed, failed, and inapplicable examples which can be used as test cases to determine the consistency of <a href="../implementations/">test tools and methodologies</a>.</p>
 
-<h2 id="test-rules-are-informative">Test Rules are Informative</h2>
+<h3 id="act-rules-are-informative">ACT Rules are Informative</h3>
 
-<p><em>WCAG 2 Test Rules are informative — that means they are not required for determining conformance. The basis for determining conformance to WCAG is the success criteria from the WCAG standard — not the Test Rules.</em></p>
+<p><em>ACT Rules are informative — that means they are not required for determining conformance. The basis for determining conformance to WCAG is the success criteria from the WCAG standard — not the ACT Rules.</em></p>
 
-<p>While W3C’s <a href="https://www.w3.org/WAI/standards-guidelines/act/rules/">List of Test Rules for WCAG 2</a> are reviewed by the W3C Accessibility Guidelines Working Group (AGWG), they are not vetted to the same degree as the W3C Web Content Accessibility Guidelines (WCAG) standard (called <em>W3C Recommendation</em>). The WCAG standard is the normative reference on determining conformance.</p>
+<p>While W3C’s <a href="https://www.w3.org/WAI/standards-guidelines/act/rules/">List of ACT Rules for WCAG 2</a> are reviewed by the W3C Accessibility Guidelines Working Group (AGWG), they are not vetted to the same degree as the W3C Web Content Accessibility Guidelines (WCAG) standard (called <em>W3C Recommendation</em>). The WCAG standard is the normative reference on determining conformance.</p>
 
-<h2 id="test-rules-are-partial-checks">Test Rules are Partial Checks</h2>
+<h3 id="act-rules-are-partial-checks">ACT Rules are Partial Checks</h3>
 
-<p>Test Rules typically check specific aspects of WCAG success criteria. For example, that a table cell has a header rather than the entire WCAG 2.2 success criterion 1.3.1 “Info and Relationships”, which applies to many more information structures on a web page. In fact, this example rule would not even check the validity of the table header, only if the header exists for a given table cell.</p>
+<p>ACT Rules typically check specific accessibility requirement such as the WCAG 2 success criteria. For example, an ACT Rule might test that a table cell has a header, rather than testing success criterion 1.3.1 “Info and Relationships” in its entirety. In fact, this example rule would not even check the validity of the table header, only if the header exists for a given table cell.</p>
 
-<p>Test Rules are also technology-specific. For example, the aforementioned table header example would be specific to HTML, possibly enriched with WAI-ARIA roles and properties, but not to other formats with tables. WCAG 2.2 success criteria are designed to be technology-agnostic and applicable to all web technologies.</p>
+<p>ACT Rules are also technology-specific. For example, the aforementioned table header example would be specific to HTML, possibly enriched with WAI-ARIA roles and properties, but not to other technologies with tables. WCAG 2 success criteria are designed to be technology-agnostic and applicable to all web technologies.</p>
 
-<h2 id="test-rules-check-for-failures">Test Rules Check for Failures</h2>
+<h3 id="act-rules-check-for-failures">ACT Rules Check for Failures</h3>
 
-<p>Test Rules are designed to check failures in satisfying WCAG success criteria. That is, when content fails Test Rules, it means that the content does not satisfy the corresponding success criteria. However, when content passes Test Rules, it means that no corresponding failures were detected — it does not necessarily mean that the content satisfies all aspects of the corresponding success criteria.</p>
+<p>ACT Rules are designed to check failures in satisfying WCAG 2 success criteria and other accessibility requirements. That is, when content fails ACT Rules, it means that the content does not satisfy the corresponding requirement. However, when content passes ACT Rules, it means that no corresponding failures were detected — it does not necessarily mean that the content satisfies all aspects of the corresponding accessibility requirement.</p>
 
-<p>The reason for this is because WCAG success criteria typically cover several aspects and technologies, while Test Rules only check specific aspects. Checking that content satisfies all aspects of WCAG success criteria typically requires further verification by human testers.</p>
+<p>WCAG success criteria typically cover several aspects and technologies, while ACT Rules only check specific aspects. Checking that content satisfies all aspects of WCAG success criteria typically requires further verification by human testers. Requirements for WAI-ARIA are often more atomic than the WCAG 2 success criteria, and can therefore often be fully covered with ACT Rules.</p>
 
-<p><strong>Note</strong>: <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#cc1">WCAG 2 Conformance Requirement 1</a> allows for “conforming alternate versions”. That means that content may still conform to WCAG 2, even when content fails Test Rules.</p>
+<p><strong>Note</strong>: <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#cc1">WCAG 2 Conformance Requirement 1</a> allows for “conforming alternate versions”. That means that content may still conform to WCAG 2, even when content fails ACT Rules.</p>
 
-<h2 id="implementation-of-test-rules">Implementation of Test Rules</h2>
+<h2 id="implementation-of-act-rules">Implementation of ACT Rules</h2>
 
-<p>Implementation of a Test Rule can be any automated testing tool, manual testing methodology, or other procedure that provides the same expected results for the test cases defined by the Test Rule. Specifically, when the expected result for a test case is:</p>
+<p>ACT Rules can be implemented by accessibility test tools and methodologies. Each rule comes with a number of passed, failed, and inapplicable examples. By running the tool or methodology against the examples its consistency with the rule can be determined. Vendors who publish such test results are included in the <a href="../implementations/">ACT Test Tools and Methodology Matrix</a>.</p>
+
+<h2 id="related-pages">Related Pages</h2>
 
 <ul>
-  <li><strong>Passed</strong>, the test result generated from the implementation is <em>passed</em>, <em>cantTell</em>, or <em>inapplicable</em></li>
-  <li><strong>Failed</strong>, the test result generated from the implementation is <em>failed</em> or <em>cantTell</em></li>
-  <li><strong>Inapplicable</strong>, the test result generated from the implementation is <em>inapplicable</em>, <em>cantTell</em>, or <em>passed</em></li>
+  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/">Accessibility Conformance Testing (ACT) Rules Format 1.0 <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a></li>
+  <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">The WCAG 2 Documents <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance">Understanding WCAG 2 Conformance</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#accessibility-support">understanding accessibility support</a></li>
+  <li><a href="https://www.w3.org/WAI/ARIA/apg/">ARIA Authoring Practices <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a></li>
+  <li><a href="https://www.w3.org/WAI/ER/tools/">Web Accessibility Evaluation Tools List</a></li>
 </ul>
 
-<h2 id="structure-of-test-rules">Structure of Test Rules</h2>
+<h2 id="structure-of-act-rules">Structure of ACT Rules</h2>
 
-<p>Test Rules conform to the <a href="https://www.w3.org/WAI/standards-guidelines/act/">Accessibility Conformance Testing (ACT) Rules Format 1.0</a> standard. They include the following parts:</p>
+<p>ACT Rules conform to the <a href="https://www.w3.org/WAI/standards-guidelines/act/">Accessibility Conformance Testing (ACT) Rules Format 1.0</a> standard. They include the following parts:</p>
 
 <ul>
-  <li><strong>Descriptive Title</strong> – title for the Test Rule, which should describe the rule</li>
-  <li><strong>Rule Identifier</strong> – identifier for the Test Rule; the rules use alphanumeric strings</li>
-  <li><strong>Rule Type</strong> – there are two basic types of Test Rules, depending on what is being tested:
+  <li><strong>Descriptive Title</strong> – title for the ACT Rule, which should describe the rule</li>
+  <li><strong>Rule Identifier</strong> – identifier for the ACT Rule; the rules use alphanumeric strings</li>
+  <li><strong>Rule Type</strong> – there are two basic types of ACT Rules, depending on what is being tested:
     <ul>
       <li><strong>Atomic Rule</strong> – test one specific situation, which may be part of a composite rule</li>
       <li><strong>Composite Rule</strong> – combine outcome from multiple atomic rules to one outcome</li>
     </ul>
   </li>
-  <li><strong>Accessibility Requirements Mapping</strong> – maps the Test Rule to particular accessibility requirements; in this suite of rules we use Web Content Accessibility Guidelines (WCAG) 2 Success Criteria</li>
-  <li><strong>Rule Input</strong> – describes the scope of input into Test Rules, which is one of the following:
+  <li><strong>Accessibility Requirements Mapping</strong> – maps the ACT Rule to particular accessibility requirements; in this suite of rules we use Web Content Accessibility Guidelines (WCAG) 2 Success Criteria</li>
+  <li><strong>Rule Input</strong> – describes the scope of input into ACT Rules, which is one of the following:
     <ul>
       <li><strong>Input Aspects</strong> – input into atomic rules, for example DOM Tree and CSS Styling etc.</li>
       <li><strong>Input Rules</strong> – input into the composite rules, which are the atomic rules in scope</li>
@@ -360,10 +365,10 @@ h2#sidebar-header {
   <li><strong>Expectations</strong> – description of the expected characteristics of the applicable rule content</li>
   <li><strong>Assumptions</strong> – assumptions made, for example specific interpretations of the requirements</li>
   <li><strong>Accessibility Support</strong> – known limitations regarding browsers and assistive technology</li>
-  <li><strong>Test Cases</strong> – sample code demonstrating passed, failed, and inapplicable rule conditions</li>
-  <li><strong>Change Log</strong> – history of changes for the Test Rules, to support backward compatibility</li>
-  <li><strong>Glossary</strong> – list of key terms defined by the Test Rule or used by the specific Test Rule</li>
-  <li><strong>Issues List (Optional)</strong> – list of known issues or bugs for the particular Test Rule, if any</li>
+  <li><strong>Examples (Test Cases)</strong> – sample code demonstrating passed, failed, and inapplicable rule conditions</li>
+  <li><strong>Change Log</strong> – history of changes for the ACT Rules, to support backward compatibility</li>
+  <li><strong>Glossary</strong> – list of key terms defined by the ACT Rule or used by the specific ACT Rule</li>
+  <li><strong>Issues List (Optional)</strong> – list of known issues or bugs for the particular ACT Rule, if any</li>
   <li><strong>Background (Optional)</strong> – relevant background, for example additional documentation, if any</li>
   <li><strong>Acknowledgements (Optional)</strong> – for example rule writers, reviewers, and other contributors</li>
 </ul>
@@ -374,9 +379,9 @@ h2#sidebar-header {
   </div>
 
     <div class="default-grid with-gap leftcol">
-      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20About%20WCAG%202%20Test%20Rules">wai@w3.org</a> or via GitHub.</p>
+      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20About%20ACT%20Rules">wai@w3.org</a> or via GitHub.</p>
 <div class="button-group">
-    <a href="mailto:wai@w3.org?subject=[en]%20About%20WCAG%202%20Test%20Rules&body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D" class="button"><span>E-mail</span></a>
+    <a href="mailto:wai@w3.org?subject=[en]%20About%20ACT%20Rules&body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D" class="button"><span>E-mail</span></a>
     <a href="https://github.com/w3c/wcag-act-rules/edit/master/content/about.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag-act-rules/issues/new" class="button"><span>New GitHub Issue</span></a>
 </div></div></aside>
       </div>
@@ -430,9 +435,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
 <script>
   svg4everybody();
 </script><script>

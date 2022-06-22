@@ -9,17 +9,17 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654745313300498724";
+      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654745313300498724">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
 
-<title> Element with aria-hidden has no focusable content[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654745313300498724"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Element with aria-hidden has no content in sequential focus navigation[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Element with aria-hidden has no focusable content" />
+<meta property="og:title" content="Element with aria-hidden has no content in sequential focus navigation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
@@ -29,18 +29,18 @@
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Element with aria-hidden has no focusable content" />
+<meta property="twitter:title" content="Element with aria-hidden has no content in sequential focus navigation" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Element with aria-hidden has no focusable content","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Element with aria-hidden has no content in sequential focus navigation","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-element-with-aria-hidden-has-no-focusable-content  tight-page">
+  <body id="top" class="page-element-with-aria-hidden-has-no-content-in-sequential-focus-navigation  tight-page">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
    <div class="minimal-header-container default-grid">
@@ -291,9 +291,9 @@ h2#sidebar-header {
                 
                 <li><a href="#glossary">Glossary</a></li>
                 
-                <li><a href="#implementations">Implementations</a></li>
+                <li><a href="#ruleversions">Rule Versions</a></li>
                 
-                <li><a href="#changelog">Changelog</a></li>
+                <li><a href="#implementations">Implementations</a></li>
                 
                 </ul>
             </div>
@@ -311,7 +311,7 @@ h2#sidebar-header {
                 
               </span>
               
-              Element with aria-hidden has no focusable content
+              Element with aria-hidden has no content in sequential focus navigation
             </h1>
         </header>
 
@@ -333,7 +333,7 @@ h2#sidebar-header {
  </aside>
 
 <h2 id="description">Description</h2>
-<p>This rule checks that elements with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute do not contain focusable elements.</p>
+<p>This rule checks that elements with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute do not contain elements that are part of the sequential focus navigation and focusable.</p>
 
 
 <h2 id="applicability">Applicability</h2>
@@ -342,11 +342,11 @@ h2#sidebar-header {
 
 <h2 id="expectation">Expectation</h2>
 
-<p>None of the target elements are <a href="#focusable" title="Definition of focusable">focusable</a>, nor do they have <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendants</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree">flat tree</a> that are <a href="#focusable" title="Definition of focusable">focusable</a>.</p>
+<p>None of the target elements has an <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant" title="DOM definition of Inclusive Descendant">inclusive descendant</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a> that are <a href="#focusable" title="Definition of focusable">focusable</a> and part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>Interacting with the page does not result in changing the <code class="language-plaintext highlighter-rouge">aria-hidden</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of target elements. An example of such a situation would be when closing a modal dialog makes previously hidden and not <a href="#focusable" title="Definition of focusable">focusable</a> elements become <a href="#focusable" title="Definition of focusable">focusable</a>.</p>
+<p>Interacting with the page does not result in changing the <code class="language-plaintext highlighter-rouge">aria-hidden</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of target elements. An example of such a situation would be when closing a modal dialog makes previously hidden elements  that were not <a href="#focusable" title="Definition of focusable">focusable</a> or part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> become <a href="#focusable" title="Definition of focusable">focusable</a> and part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>.</p>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
@@ -358,7 +358,7 @@ h2#sidebar-header {
 
 <p>By adding <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code> to an element, content authors ensure that assistive technologies will ignore the element. This can be used to hide parts of a web page that are <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration">pure decoration</a>, such as icon fonts - that are not meant to be read by assistive technologies.</p>
 
-<p>A <a href="#focusable" title="Definition of focusable">focusable</a> element with <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code> is ignored as part of the reading order, but still part of the focus order, making its state of <a href="#visible">visible</a> or hidden unclear.</p>
+<p>An element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code> that is also part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> may cause confusion for users of assistive technologies because the element can be reached via <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>, but it should be hidden and not <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>.</p>
 
 <p>The 1 second time span introduced in the exception of the definition of <a href="#focusable" title="Definition of focusable">focusable</a> is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focused state of an element consistently would be impractical without a time limit.</p>
 
@@ -423,18 +423,18 @@ h2#sidebar-header {
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/5bd22090d0f74dcea752749ef4ad8411e3772535.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/5bd22090d0f74dcea752749ef4ad8411e3772535.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element is not <a href="#focusable" title="Definition of focusable">focusable</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element is not part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9f9f5e323450f4c0bd5445597a39d160ce07ff48.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9f9f5e323450f4c0bd5445597a39d160ce07ff48.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">a</code> element is not <a href="#focusable" title="Definition of focusable">focusable</a> because it is hidden through CSS.</p>
+<p>This <code class="language-plaintext highlighter-rouge">a</code> element is not part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> because it is hidden through CSS.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
@@ -443,32 +443,58 @@ h2#sidebar-header {
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
-<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/3c48f0e596f96b4bb701943356b6c179f41d383c.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/3c48f0e596f96b4bb701943356b6c179f41d383c.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">input</code> element is not <a href="#focusable" title="Definition of focusable">focusable</a> because of the <code class="language-plaintext highlighter-rouge">disabled</code> attribute.</p>
+<p>This <code class="language-plaintext highlighter-rouge">input</code> element is not part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> because of the <code class="language-plaintext highlighter-rouge">disabled</code> attribute.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-4">Passed Example 4</h4>
 
-<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/8f7b47436534d716bf8f088786e5ee6b1154c23c.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">a</code> element is not <a href="#focusable" title="Definition of focusable">focusable</a> because it moves focus to the <code class="language-plaintext highlighter-rouge">input</code> element whenever it receives focus.</p>
+<p>This <code class="language-plaintext highlighter-rouge">a</code> element is not <a href="#focusable" title="Definition of focusable">focusable</a> because it moves focus to the <code class="language-plaintext highlighter-rouge">input</code> element whenever it receives focus. These elements
+are sometimes referred to as ‘focus sentinel’ or ‘bumper’. They are typically found before and after a modal / dialog in 
+order to contain focus within the modal. Page authors do not want the sentinel to be visible, nor do they want them to be read by
+a screen reader. But, they do want the element to be part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>. This allows the page author
+to detect that focus has left the dialog in order to wrap it to the top/bottom as appropriate.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"sampleModal"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-label=</span><span class="s">"Sample Modal"</span> <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">style=</span><span class="s">"border: solid black 1px; padding: 1rem;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>First and last name <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dialogFirst"</span><span class="nt">&gt;&lt;/label&gt;&lt;br</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"closeButton"</span><span class="nt">&gt;</span>Close button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">id=</span><span class="s">"sentinelAfter"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span><span class="nt">&gt;</span>Upon receiving focus, this focus sentinel should wrap focus to the top of the modal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">sentinelAfter</span><span class="dl">"</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">focus</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">dialogFirst</span><span class="dl">"</span><span class="p">).</span><span class="nx">focus</span><span class="p">();</span>
+    <span class="p">});</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">closeButton</span><span class="dl">"</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">sampleModal</span><span class="dl">"</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">none</span><span class="dl">"</span><span class="p">;</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-5">Passed Example 5</h4>
+
+<p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">button</code> element is <a href="#focusable" title="Definition of focusable">focusable</a>, but not part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> because of the <code class="language-plaintext highlighter-rouge">tabindex</code> attribute.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span> <span class="na">onfocus=</span><span class="s">"document.querySelector('input').focus()"</span><span class="nt">&gt;</span>First link<span class="nt">&lt;/a&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;input</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4e7955d592cbf361a55113fcd4524e979b16bb08.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4e7955d592cbf361a55113fcd4524e979b16bb08.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">a</code> element positioned off screen is <a href="#focusable" title="Definition of focusable">focusable</a> using the keyboard.</p>
+<p>This <code class="language-plaintext highlighter-rouge">a</code> element positioned off screen is part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> using the keyboard.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
@@ -477,9 +503,9 @@ h2#sidebar-header {
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2adaacc2f7b8d7a0d2d1496ad6f56aafd171f7fe.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2adaacc2f7b8d7a0d2d1496ad6f56aafd171f7fe.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">input</code> element is <a href="#focusable" title="Definition of focusable">focusable</a> because it was incorrectly disabled.</p>
+<p>This <code class="language-plaintext highlighter-rouge">input</code> element is part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> because it was incorrectly disabled.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;input</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
@@ -488,9 +514,9 @@ h2#sidebar-header {
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/7d1d269e9ff9a8f396b2d638103379b6cf937225.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/7d1d269e9ff9a8f396b2d638103379b6cf937225.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">button</code> element is <a href="#focusable" title="Definition of focusable">focusable</a> and a descendant of an element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">true</code> because <code class="language-plaintext highlighter-rouge">aria-hidden</code> can’t be reset once set to true on an ancestor.</p>
+<p>This <code class="language-plaintext highlighter-rouge">button</code> element is part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> and a descendant of an element with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">true</code> because <code class="language-plaintext highlighter-rouge">aria-hidden</code> can’t be reset once set to true on an ancestor.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>
@@ -501,29 +527,18 @@ h2#sidebar-header {
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d0b1b435bb2757bab5f644e53a273a9f50c8bc2c.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d0b1b435bb2757bab5f644e53a273a9f50c8bc2c.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">p</code> element is <a href="#focusable" title="Definition of focusable">focusable</a> because of the <code class="language-plaintext highlighter-rouge">tabindex</code> attribute.</p>
+<p>This <code class="language-plaintext highlighter-rouge">p</code> element is part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> because of the <code class="language-plaintext highlighter-rouge">tabindex</code> attribute.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-5">Failed Example 5</h4>
 
-<p><a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">button</code> element is <a href="#focusable" title="Definition of focusable">focusable</a> because of the <code class="language-plaintext highlighter-rouge">tabindex</code> attribute.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
-<h4 id="failed-example-6">Failed Example 6</h4>
-
-<p><a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html">Open in a new tab</a></p>
-
-<p>This <code class="language-plaintext highlighter-rouge">summary</code> element is <a href="#focusable" title="Definition of focusable">focusable</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">summary</code> element is part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;details</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;summary&gt;</span>Some button<span class="nt">&lt;/summary&gt;</span>
@@ -531,11 +546,33 @@ h2#sidebar-header {
 <span class="nt">&lt;/details&gt;</span>
 </code></pre></div></div>
 
+<h4 id="failed-example-6">Failed Example 6</h4>
+
+<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">a</code> element is <a href="#focusable" title="Definition of focusable">focusable</a> because it fails to move focus when it receives focus. This is in contrast to a focus sentinel that 
+immediately jumps focus to a valid location. Focus sentinels are typically used before and after a modal dialog in order to contain 
+and wrap focus. In this case, the <code class="language-plaintext highlighter-rouge">focus</code> event was removed, but the sentinel was not.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"sampleModal"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-label=</span><span class="s">"Sample Modal"</span> <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">style=</span><span class="s">"border: solid black 1px; padding: 1rem;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>First and last name <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dialogFirst"</span><span class="nt">&gt;&lt;/label&gt;&lt;br</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"closeButton"</span><span class="nt">&gt;</span>Close button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">id=</span><span class="s">"sentinelAfter"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span><span class="nt">&gt;</span>Upon receiving focus, this focus sentinel should wrap focus to the top of the modal<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">closeButton</span><span class="dl">"</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">sampleModal</span><span class="dl">"</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">none</span><span class="dl">"</span><span class="p">;</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
-<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/afb819d4c7cfdf8fc468bb2297da3247fb5ac056.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/afb819d4c7cfdf8fc468bb2297da3247fb5ac056.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute is ignored with null value.</p>
 
@@ -544,7 +581,7 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
 
-<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/22d7a78f0d6680f70dae9cc412f496450a2acf4e.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/22d7a78f0d6680f70dae9cc412f496450a2acf4e.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute is ignored with value <code class="language-plaintext highlighter-rouge">false</code>.</p>
 
@@ -553,7 +590,7 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
-<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4d71a1ad253efab083f05dc558656d94eb430ca7.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4d71a1ad253efab083f05dc558656d94eb430ca7.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute has an incorrect value.</p>
 
@@ -601,6 +638,16 @@ h2#sidebar-header {
   <li>The <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> of an element is the value of the <a href="https://html.spec.whatwg.org/#attr-tabindex">tabindex attribute</a> parsed using the <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">rules for parsing integers</a>. For the <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> to be different from null, it needs to be <a href="https://html.spec.whatwg.org/#rules-for-parsing-integers">parsed</a> without errors.</li>
 </ul>
 
+<h3 id="included-in-the-accessibility-tree">Included in the accessibility tree</h3>
+
+<p>Elements included in the accessibility tree of platform specific accessibility APIs are exposed to assistive technologies. This allows users of assistive technology to access the elements in a way that meets the requirements of the individual user.</p>
+
+<p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings (working draft)</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings (working draft)</a>.</p>
+
+<p>For more details, see <a href="https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/">examples of included in the accessibility tree</a>.</p>
+
+<p><a href="#programmatically-hidden">Programmatically hidden</a> elements are removed from the accessibility tree. However, some browsers will leave <a href="#focusable">focusable</a> elements with an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code> in the accessibility tree. Because they are hidden, these elements are considered <strong>not</strong> included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.</p>
+
 <h3 id="outcome">Outcome</h3>
 
 <p>An <em>outcome</em> is a conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> or one of its constituent <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. An outcome can be one of the three following types:</p>
@@ -615,61 +662,62 @@ h2#sidebar-header {
 
 <p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
 
-<h3 id="visible">Visible</h3>
+<h3 id="programmatically-hidden">Programmatically Hidden</h3>
 
-<p>Content perceivable through sight.</p>
+<p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="Definition of flat tree">flat tree</a>:</p>
 
-<p>Content is considered <em>visible</em> if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>
+<ul>
+  <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
+  <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
+</ul>
 
-<p><a href="https://www.w3.org/TR/WCAG21/#dfn-content">Content is defined in WCAG</a>.</p>
+<p><strong>Note</strong>: Contrary to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
 
-<p>For more details, see <a href="https://act-rules.github.io/pages/examples/visible/">examples of visible</a>.</p>
+<p><strong>Note</strong>: The <a href="https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements">HTML standard suggests</a> setting the CSS <code class="language-plaintext highlighter-rouge">display</code> property to <code class="language-plaintext highlighter-rouge">none</code> for elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute. While not required by HTML, all modern browsers follow this suggestion. Because of this the <code class="language-plaintext highlighter-rouge">hidden</code> attribute is not used in this definition. In browsers that use this suggestion, overriding the CSS <code class="language-plaintext highlighter-rouge">display</code> property can reveal elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute.</p>
+
+
+<h2 id="ruleversions">Rule Versions</h2>
+
+<p>This is the first version of this ACT rule.</p>
+
 
 <h2 id="implementations">Implementations</h2>
 
-<p>This section is not part of the official rule. It is populated dynamically and 
-not accounted for in the change history or the last modified date.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Implementation</th>
-      <th>Consistency</th>
-      <th>Complete</th>
-      <th>Report</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Alfa</td>
-      <td>Consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/alfa#id-6cfa84">View Report</a></td>
-    </tr>
-    <tr>
-      <td>Axe-core</td>
-      <td>Consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/axe-core#id-6cfa84">View Report</a></td>
-    </tr>
-    <tr>
-      <td>QualWeb</td>
-      <td>Consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/qualweb#id-6cfa84">View Report</a></td>
-    </tr>
-    <tr>
-      <td>SortSite</td>
-      <td>Consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/sortsite#id-6cfa84">View Report</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="changelog">Changelog</h2>
-
-<p>This is the first version of this ACT rule.</p>
+  <p>This section is not part of the official rule. It is populated dynamically and 
+    not accounted for in the change history or the last modified date.</p>
+  <table class="act-implementations">
+    <thead> 
+      <tr>
+        <th>Implementation</th>
+        <th>Type</th>
+        <th>Consistency</th>
+        <th>Report</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>Alfa 0.36.0</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-6cfa84"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
+          <td>Axe-core 4.5.0-prerelease</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-6cfa84"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
+          <td>QualWeb 3.0.0</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-6cfa84"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+    </tbody>
+  </table>
 
  
 
@@ -678,9 +726,9 @@ not accounted for in the change history or the last modified date.</p>
   </div>
 
     <div class="default-grid with-gap leftcol">
-      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-wcag-act@w3.org?subject=[en]%20Element%20with%20aria-hidden%20has%20no%20focusable%20content">public-wcag-act@w3.org</a> or via GitHub.</p>
+      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-wcag-act@w3.org?subject=[en]%20Element%20with%20aria-hidden%20has%20no%20content%20in%20sequential%20focus%20navigation">public-wcag-act@w3.org</a> or via GitHub.</p>
 <div class="button-group">
-    <a href="mailto:public-wcag-act@w3.org?subject=[en]%20Element%20with%20aria-hidden%20has%20no%20focusable%20content&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
+    <a href="mailto:public-wcag-act@w3.org?subject=[en]%20Element%20with%20aria-hidden%20has%20no%20content%20in%20sequential%20focus%20navigation&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
     <a href="https://github.com/w3c/wcag-act-rules/edit/master/content/rules/6cfa84/proposed.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag-act-rules/issues/new" class="button"><span>New GitHub Issue</span></a>
 </div></div></aside>
       </div>
@@ -697,7 +745,7 @@ not accounted for in the change history or the last modified date.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 6cfa84</p>
-<p><strong>Date:</strong> Updated 30 May 2022</p>
+<p><strong>Date:</strong> Updated 21 June 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -738,9 +786,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
 <script>
   svg4everybody();
 </script><script>

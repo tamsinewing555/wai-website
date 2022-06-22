@@ -9,17 +9,17 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654745313300498724";
+      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654745313300498724">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
 
-<title> All WCAG 2 Test Rules | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654745313300498724"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> All ACT Rules | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="All WCAG 2 Test Rules" />
+<meta property="og:title" content="All ACT Rules" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
@@ -29,18 +29,18 @@
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="All WCAG 2 Test Rules" />
+<meta property="twitter:title" content="All ACT Rules" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"All WCAG 2 Test Rules","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"All ACT Rules","url":"https://www.w3.org/WAI/standards-guidelines/act/rules/"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-all-wcag-2-test-rules  tight-page">
+  <body id="top" class="page-all-act-rules  doc-note doc-draft tight-page">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
    <div class="minimal-header-container default-grid">
@@ -271,9 +271,11 @@ h2#sidebar-header {
                 <ul>
                 
                 
-                <li><a href="#test-rules">Test Rules</a></li>
+                <li><a href="#rules-for-wcag-2">Rules for WCAG 2</a></li>
                 
-                <li><a href="#proposed-test-rules">Proposed Test Rules</a></li>
+                <li><a href="#proposed-rules-for-wcag-2">Proposed Rules for WCAG 2</a></li>
+                
+                <li><a href="#rules-beyond-wcag">Rules beyond WCAG</a></li>
                 
                 </ul>
             </div>
@@ -284,577 +286,131 @@ h2#sidebar-header {
         <header>
             <h1>
               
-              All WCAG 2 Test Rules
+              All ACT Rules
             </h1>
         </header>
 
-        <aside class="box"><header class="box-h "> Summary</header><div class="box-i">
+        <section class="doc-note-box act-sticky">
+  <p>This page is <strong>under development</strong> and has not been approved by the working group.</p>
+</section>
 
-<p>WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guidelines (WCAG) success criteria. They are primarily for developers of evaluation tools and test methodologies. Learn more from <a href="/WAI/standards-guidelines/act/rules/about/">About WCAG 2 Test Rules</a>.</p>
+<aside class="box"><header class="box-h "> Summary</header><div class="box-i">
 
-<p>This page lists Test Rules formally published by the W3C Accessibility Guidelines Working Group (AG WG), and Proposed Test Rules. Additional Rules are in development and will be listed on this page when published.</p>
+<p>This page contains list of ACT Rules to test conformance <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a>, <a href="https://www.w3.org/WAI/ARIA/">WAI-ARIA <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a> and other accessibility practices.  ACT Rules for WCAG 2 are formally approved by the Accessibility Guidelines Working Group. Proposed rules have not yet completed the approval process. ACT Rules are informative — that means they are not required for determining conformance to WCAG or ARIA. Learn more from <a href="/WAI/standards-guidelines/act/rules/about/">About ACT Rules</a>.</p>
 
 </div></aside>
-<h2 id="test-rules">Test Rules</h2>
 
-<p>These Test Rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one evaluation tool or methodology.</p>
+<h2 id="rules-for-wcag-2">Rules for WCAG 2</h2>
+
+<p>The ACT Rules in this section directly relate to WCAG 2 success criteria. These rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one <a href="../implementations/">test tool or methodology</a>.</p>
 
 <ul>
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/73f2c2/">Autocomplete attribute has valid value</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/97a4e1/">Button has non-empty accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/46ca7f/">Element marked as decorative is not exposed</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/de46e4/">Element with lang attribute has valid language tag</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/e086e5/">Form field has non-empty accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/b5c3f8/">HTML page has lang attribute</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/2779a5/">HTML page has non-empty title</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/5b7ae0/">HTML page lang and xml:lang attributes have matching values</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/bf051a/">HTML page lang attribute has valid language tag</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/59796f/">Image button has non-empty accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/23a2a8/">Image has non-empty accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/24afc2/">Letter spacing in style attributes is not !important</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/c487ae/">Link has non-empty accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/9e45ec/">Word spacing in style attributes is not !important</a></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 </ul>
 
-<h2 id="proposed-test-rules">Proposed Test Rules</h2>
+<h2 id="proposed-rules-for-wcag-2">Proposed Rules for WCAG 2</h2>
 
-<p>Proposed test rules will be published when they have at least one implementation and are approved by the AGWG.</p>
+<p>The ACT Rules in this section directly relate to WCAG 2 success criteria. These rules will be considered for approval once they are fully implemented in at least one test tool or methodology.</p>
 
 <ul>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/5f99a7/proposed/">ARIA attribute is defined in WAI-ARIA</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/ff89c9/proposed/">ARIA required context role</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/bc4a75/proposed/">ARIA required owned elements</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/6a7281/proposed/">ARIA state or property has valid value</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/5c01ea/proposed/">ARIA state or property is permitted</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/e6952f/proposed/">Attribute is not duplicated</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/1a02b0/proposed/">Audio and visuals of video element have transcript</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/e7aa44/proposed/">Audio element content has text alternative</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/2eb176/proposed/">Audio element content has transcript</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/afb423/proposed/">Audio element content is media alternative for text</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/80f0bf/proposed/">Audio or video element avoids automatically playing audio</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/4c31df/proposed/">Audio or video element that plays automatically has a control mechanism</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/aaa1bf/proposed/">Audio or video element that plays automatically has no audio that lasts more than 3 seconds</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/3e12e1/proposed/">Block of repeated content is collapsible</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/cf77f2/proposed/">Bypass Blocks of Repeated Content</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/9bd38c/proposed/">Content has alternative for visual reference</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/9eb3f6/proposed/">DEPRECATED — Image filename is accessible name for image</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/f196ce/proposed/">DEPRECATED — Video element visual content has description track</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/ac7dc6/proposed/">DEPRECATED — Video element visual-only content has description track</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/7677a9/proposed/">Device motion based changes to the content can also be created from the user interface</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/c249d5/proposed/">Device motion based changes to the content can be disabled</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/b40fd1/proposed/">Document has a landmark with non-repeated content</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/ye5d6e/proposed/">Document has an instrument to move focus to non-repeated content</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/047fe0/proposed/">Document has heading for non-repeated content</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/oj04fd/proposed/">Element in sequential focus order has visible focus</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/6cfa84/proposed/">Element with aria-hidden has no focusable content</a></li>
-  
-
-  
+    <li><a href="/WAI/standards-guidelines/act/rules/6cfa84/proposed/">Element with aria-hidden has no content in sequential focus navigation</a></li>
     <li><a href="/WAI/standards-guidelines/act/rules/307n5z/proposed/">Element with presentational children has no focusable content</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/4e8ab6/proposed/">Element with role attribute has required states and properties</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/36b590/proposed/">Error message describes invalid form field value</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/80af7b/proposed/">Focusable element has no keyboard trap</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/ebe86a/proposed/">Focusable element has no keyboard trap via non-standard navigation</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/a1b64e/proposed/">Focusable element has no keyboard trap via standard navigation</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/cc0f0a/proposed/">Form field label is descriptive</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/a25f45/proposed/">Headers attribute specified on a cell refers to cells in the same table element</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/ffd0e9/proposed/">Heading has non-empty accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/b49b2e/proposed/">Heading is descriptive</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/off6ek/proposed/">HTML element language subtag matches language</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/0va7u6/proposed/">HTML graphics contain no text</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/ucwvc8/proposed/">HTML page language subtag matches default language</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/c4a8a4/proposed/">HTML page title is descriptive</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/3ea0c8/proposed/">Id attribute value is unique</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/cae760/proposed/">Iframe element has non-empty accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/4b1c6c/proposed/">Iframe elements with identical accessible names have equivalent purpose</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/akn7bn/proposed/">Iframe with negative tabindex has no interactive elements</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/qt1vmo/proposed/">Image accessible name is descriptive</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/e88epe/proposed/">Image not in the accessibility tree is decorative</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/78fd32/proposed/">Line height in style attributes is not !important</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/5effbb/proposed/">Link in context is descriptive</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/aizyf1/proposed/">Link is descriptive</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/fd3a94/proposed/">Links with identical accessible names and context serve equivalent purpose</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/b20e66/proposed/">Links with identical accessible names have equivalent purpose</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/m6b1q3/proposed/">Menuitem has non-empty accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/bc659a/proposed/">Meta element has no refresh delay</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/bisz58/proposed/">Meta element has no refresh delay (no exception)</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/b4f0c3/proposed/">Meta viewport allows for zoom</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/ffbc54/proposed/">No keyboard shortcut uses only printable characters</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/8fc3b6/proposed/">Object element rendering non-text content has non-empty accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transform property</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/674b10/proposed/">Role attribute has valid value</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/0ssw9k/proposed/">Scrollable element is keyboard accessible</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/7d6734/proposed/">SVG element with explicit role has non-empty accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/d0f69e/proposed/">Table header cell has assigned cells</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/efbfc7/proposed/">Text content that changes automatically can be paused, stopped or hidden</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/09o5cg/proposed/">Text has enhanced contrast</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/afw4f7/proposed/">Text has minimum contrast</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/eac66b/proposed/">Video element auditory content has accessible alternative</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/f51b46/proposed/">Video element auditory content has captions</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/ab4d13/proposed/">Video element content is media alternative for text</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/c5a4ea/proposed/">Video element visual content has accessible alternative</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/1ea59c/proposed/">Video element visual content has audio description</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/1ec09b/proposed/">Video element visual content has strict accessible alternative</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/c3232f/proposed/">Video element visual-only content has accessible alternative</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/d7ba54/proposed/">Video element visual-only content has audio track alternative</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/ee13b5/proposed/">Video element visual-only content has transcript</a></li>
-  
-
-  
-    <li><a href="/WAI/standards-guidelines/act/rules/fd26cf/proposed/">Video element visual-only content is media alternative for text</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/2ee8b8/proposed/">Visible label is part of accessible name</a></li>
-  
-
-  
     <li><a href="/WAI/standards-guidelines/act/rules/59br37/proposed/">Zoomed text node is not clipped with CSS overflow</a></li>
-  
+</ul>
 
+<h2 id="rules-beyond-wcag">Rules beyond WCAG</h2>
+
+<p>The ACT Rules below do not directly relate to WCAG success criteria. They relate to other accessibility guidance such as <a href="https://www.w3.org/TR/wai-aria/">WAI-ARIA <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a> or <a href="https://www.w3.org/WAI/WCAG21/Techniques/">Techniques for WCAG 2 <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg></a>. These rules will be considered for approval once they are fully implemented in at least one test tool or methodology.</p>
+
+<ul>
+    <li><a href="/WAI/standards-guidelines/act/rules/46ca7f/">Element marked as decorative is not exposed</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/5f99a7/proposed/">ARIA attribute is defined in WAI-ARIA</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/6a7281/proposed/">ARIA state or property has valid value</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/5c01ea/proposed/">ARIA state or property is permitted</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/2eb176/proposed/">Audio element content has transcript</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/afb423/proposed/">Audio element content is media alternative for text</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/4c31df/proposed/">Audio or video element that plays automatically has a control mechanism</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/aaa1bf/proposed/">Audio or video element that plays automatically has no audio that lasts more than 3 seconds</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/3e12e1/proposed/">Block of repeated content is collapsible</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/f196ce/proposed/">DEPRECATED — Video element visual content has description track</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/ac7dc6/proposed/">DEPRECATED — Video element visual-only content has description track</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/b40fd1/proposed/">Document has a landmark with non-repeated content</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/ye5d6e/proposed/">Document has an instrument to move focus to non-repeated content</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/047fe0/proposed/">Document has heading for non-repeated content</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/ebe86a/proposed/">Focusable element has no keyboard trap via non-standard navigation</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/a1b64e/proposed/">Focusable element has no keyboard trap via standard navigation</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/f51b46/proposed/">Video element auditory content has captions</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/ab4d13/proposed/">Video element content is media alternative for text</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/1ea59c/proposed/">Video element visual content has audio description</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/d7ba54/proposed/">Video element visual-only content has audio track alternative</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/ee13b5/proposed/">Video element visual-only content has transcript</a></li>
+    <li><a href="/WAI/standards-guidelines/act/rules/fd26cf/proposed/">Video element visual-only content is media alternative for text</a></li>
 </ul>
  
 
@@ -863,9 +419,9 @@ h2#sidebar-header {
   </div>
 
     <div class="default-grid with-gap leftcol">
-      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20All%20WCAG%202%20Test%20Rules">wai@w3.org</a> or via GitHub.</p>
+      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20All%20ACT%20Rules">wai@w3.org</a> or via GitHub.</p>
 <div class="button-group">
-    <a href="mailto:wai@w3.org?subject=[en]%20All%20WCAG%202%20Test%20Rules&body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D" class="button"><span>E-mail</span></a>
+    <a href="mailto:wai@w3.org?subject=[en]%20All%20ACT%20Rules&body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D" class="button"><span>E-mail</span></a>
     <a href="https://github.com/w3c/wcag-act-rules/edit/master/content/index.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag-act-rules/issues/new" class="button"><span>New GitHub Issue</span></a>
 </div></div></aside>
       </div>
@@ -919,9 +475,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
 <script>
   svg4everybody();
 </script><script>

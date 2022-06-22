@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654745313300498724";
+      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654745313300498724">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
 
-<title> Axe-core ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654745313300498724"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Axe-core ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Axe-core ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -301,9 +301,9 @@ h2#sidebar-header {
     Implementation Summary 
   </header>
   <div class="box-i"><p>
-    <a href="https://github.com/dequelabs/axe-core/">Axe-core</a>
+    <a href="https://www.npmjs.com/package/axe-core/">Axe-core</a>
     
-      version 4.5-prerelease 
+      version 4.5.0-prerelease
     
     is an Automated tool
     
@@ -313,8 +313,8 @@ h2#sidebar-header {
     
 
     This ACT implementation tests for
-    WCAG 2.1 all levels, and WAI-ARIA 1.2.
-    See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+    WCAG 2.1 Level A, AA, AAA, and WAI-ARIA 1.2.
+    See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
   </p></div>
 </aside>
 
@@ -332,7 +332,7 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>Proposed rules</th>
-    <td>9</td>
+    <td>10</td>
     <td>17</td>
   </tr>
 </tbody></table>
@@ -501,7 +501,7 @@ h2#sidebar-header {
     
       <tr>
         <td><a href="#breakdown-6cfa84">
-          Element with aria-hidden has no focusable content
+          Element with aria-hidden has no content in sequential focus navigation
         </a></td>
         <td> Proposed Rule
         </td>
@@ -550,16 +550,6 @@ h2#sidebar-header {
     
     
     
-    
-      <tr>
-        <td><a href="#breakdown-4c31df">
-          Audio or video element that plays automatically has a control mechanism
-        </a></td>
-        <td> Proposed Rule
-        </td>
-        <td> Partial
-        </td>
-      </tr>
     
     
     
@@ -697,6 +687,15 @@ h2#sidebar-header {
     
     
     
+      <tr>
+        <td><a href="#breakdown-akn7bn">
+          Iframe with negative tabindex has no interactive elements
+        </a></td>
+        <td> Proposed Rule
+        </td>
+        <td>
+          Consistent </td>
+      </tr>
     
     
     
@@ -714,6 +713,17 @@ h2#sidebar-header {
     
     
     
+    
+    
+      <tr>
+        <td><a href="#breakdown-b20e66">
+          Links with identical accessible names have equivalent purpose
+        </a></td>
+        <td> Proposed Rule
+        </td>
+        <td> Partial
+        </td>
+      </tr>
     
     
     
@@ -935,7 +945,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1115,7 +1125,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1299,7 +1309,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1406,7 +1416,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1617,7 +1627,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1718,7 +1728,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1819,7 +1829,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -1950,7 +1960,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2075,7 +2085,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2217,7 +2227,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2404,12 +2414,16 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/c487ae">Link has non-empty accessible name</a>
   WCAG 2 rule. 
-    It covers all 26 examples.
+    It covers 26 of the 28 examples.
+  
+    For 2 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2660,8 +2674,28 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
       <td class="">inapplicable</td>
       <td class="">inapplicable</td>
     </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html">Passed Example 11</a>
+          <abbr title="Proposed example">*</abbr>
+      </th>
+      <td class="act-untested">untested</td>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html">Failed Example 11</a>
+          <abbr title="Proposed example">*</abbr>
+      </th>
+      <td class="act-untested">untested</td>
+      <td class="act-untested">untested</td>
+    </tr>
   </tbody>
 </table>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-5f99a7">ARIA attribute is defined in WAI-ARIA</h3>
 <p>
@@ -2676,7 +2710,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2757,24 +2791,24 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   </tbody>
 </table>
 
-<h3 id="breakdown-6cfa84">Element with aria-hidden has no focusable content</h3>
+<h3 id="breakdown-6cfa84">Element with aria-hidden has no content in sequential focus navigation</h3>
 <p>
   This rule is implemented by Axe-core using the
   <code>aria-hidden-focus</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/6cfa84">Element with aria-hidden has no focusable content</a>
+  <a href="/WAI/standards-guidelines/act/rules/6cfa84">Element with aria-hidden has no content in sequential focus navigation</a>
    proposed rule.
-    It covers 11 of the 13 examples.
-    On 1 example
-    the implementation cannot tell the outcome. This is often because of technical 
-    limitations in tools.
+    It covers 12 of the 14 examples.
   
+    For 2 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -2837,9 +2871,15 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/8f7b47436534d716bf8f088786e5ee6b1154c23c.html">Passed Example 4</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html">Passed Example 4</a>
       </th>
-      <td class="act-cannot-tell">cannot tell</td>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html">Passed Example 5</a>
+      </th>
+      <td class="">passed</td>
     </tr>
     <tr>
       <th>
@@ -2867,16 +2907,15 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html">Failed Example 5</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html">Failed Example 5</a>
       </th>
-      <td class="
-          act-false-negative">passed</td>
+      <td class="">failed</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html">Failed Example 6</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html">Failed Example 6</a>
       </th>
-      <td class="">failed</td>
+      <td class="act-untested">untested</td>
     </tr>
     <tr>
       <th>
@@ -2912,7 +2951,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3062,7 +3101,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3191,128 +3230,6 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   </tbody>
 </table>
 
-<h3 id="breakdown-4c31df">Audio or video element that plays automatically has a control mechanism</h3>
-<p>
-  This rule is implemented by Axe-core using the
-  <code>no-autoplay-audio</code> procedure.
-  The implementation is  partially 
-   consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/4c31df">Audio or video element that plays automatically has a control mechanism</a>
-   proposed rule.
-    It covers 5 of the 11 examples.
-  
-    For 6 examples
-    no results were reported. This can happen when examples are newer then the
-    test results.
-  
-  
-    The implementation reports different success criteria as failed from what is expected by this rule.
-  
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
-</p>
-
-
-<table class="act-requirements">
-  <caption>Success Criteria</caption>
-  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
-  <tr>
-    <td>
-       None 
-    </td>
-
-    <td>
-      
-        <ul>
-          <li>
-            1.4.2
-            Audio Control
-          </li>
-        </ul>
-      
-    </td>
-  </tr>
-</tbody></table>
-
-
-<table class="act-example-outcomes">
-  <caption>Test Results</caption>
-  <thead>
-    <tr>
-      <th></th>
-      <th>no-autoplay-audio</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/0d2dcde8931a9083e590034768ae2e0af747491c.html">Passed Example 1</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/3e93253107ce18a6170206bb287f03b1e3497c40.html">Passed Example 2</a>
-      </th>
-      <td class="act-untested">untested</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/f9af87d3dbc0303b261e0552b32067a7513263cb.html">Passed Example 3</a>
-      </th>
-      <td class="act-untested">untested</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/968b12b14eb008b424f050ab74277426b2ea81bf.html">Failed Example 1</a>
-      </th>
-      <td class="">failed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b712209d068fff2878cceadf40efe21a3ec4f6d8.html">Failed Example 2</a>
-      </th>
-      <td class="">failed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/53b7029c408c7c90f96555b1380dc40c01b8065e.html">Failed Example 3</a>
-      </th>
-      <td class="act-untested">untested</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7304f139186bd32c195aac6201d64174c0063c64.html">Failed Example 4</a>
-      </th>
-      <td class="act-untested">untested</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7c96453dfa5053b4a1b9ee1ed1270167522b1c37.html">Failed Example 5</a>
-      </th>
-      <td class="act-untested">untested</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html">Inapplicable Example 1</a>
-      </th>
-      <td class="">inapplicable</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html">Inapplicable Example 2</a>
-      </th>
-      <td class="act-untested">untested</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b5c74f9ddba668623e33e33e3b8f773776f3177f.html">Inapplicable Example 3</a>
-      </th>
-      <td class="">inapplicable</td>
-    </tr>
-  </tbody>
-</table>
-
 <h3 id="breakdown-3e12e1">Block of repeated content is collapsible</h3>
 <p>
   This rule is implemented by Axe-core using the
@@ -3330,7 +3247,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3427,7 +3344,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3567,7 +3484,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3690,7 +3607,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3825,7 +3742,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -3948,7 +3865,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports no success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4041,7 +3958,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4160,7 +4077,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4303,7 +4220,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4409,6 +4326,283 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   </tbody>
 </table>
 
+<h3 id="breakdown-akn7bn">Iframe with negative tabindex has no interactive elements</h3>
+<p>
+  This rule is implemented by Axe-core using the
+  <code>frame-focusable-content</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/akn7bn">Iframe with negative tabindex has no interactive elements</a>
+   proposed rule.
+    It covers all 6 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+      
+        <ul>
+          <li>
+            2.1.1
+            Keyboard
+          </li>
+        </ul>
+      
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            2.1.1
+            Keyboard
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>frame-focusable-content</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html">Passed Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html">Passed Example 3</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html">Passed Example 4</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/62673162e22ee1e95e962522b1d1c3b549dbfc49.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html">Inapplicable Example 1</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="breakdown-b20e66">Links with identical accessible names have equivalent purpose</h3>
+<p>
+  This rule is implemented by Axe-core using the
+  <code>identical-links-same-purpose</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/b20e66">Links with identical accessible names have equivalent purpose</a>
+   proposed rule.
+    It covers 10 of the 21 examples.
+    On 11 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
+  
+  
+    The implementation reports different success criteria as failed from what is expected by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+      
+        <ul>
+          <li>
+            2.4.9
+            Link Purpose (Link Only)
+          </li>
+        </ul>
+      
+    </td>
+
+    <td>
+       None 
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>identical-links-same-purpose</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/9ccf7853c269dfcc3832333ee3785257fa7b9018.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/3a84bd09a817b707c44e3b8af1f710e5a5f41f98.html">Passed Example 2</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/2594532c9868b1b639214e54380a2e9b2f91243b.html">Passed Example 3</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/6f97807f5525832037d676099a26cde32e519776.html">Passed Example 4</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/d6b244548c375ed83a8f3fb60193ed66442e7c68.html">Passed Example 5</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/11e8780590560ae2acdf79d708b541ca0666def5.html">Passed Example 6</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/4b5fcfab90a85fabcfffb143e0c886236f360d6c.html">Passed Example 7</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/39078d73e0c274100c3518259a3e30fe52ecd3b3.html">Passed Example 8</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/1e657a8e23e1ec1f52032bc68d5403cea50bc003.html">Passed Example 9</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/b9f1dad8a8d15e046de4628e8d4e29d31b950048.html">Passed Example 10</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/2283add5996728d458e4b6a7376071b354744a19.html">Passed Example 11</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/e339e9e7b77f88ce8041dba8e672a618f515df84.html">Passed Example 12</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/f34241fb3e5b4e23fa3813f2f29ddb7227a79c65.html">Failed Example 1</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/2bb9bd2d4cc0781427cb9ebaed949695a016afc0.html">Failed Example 2</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/578b693f3a1818b17b0bd678b75750e2824dff09.html">Failed Example 3</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/71d6745fb37e3348784179c751be9af0b997fa5b.html">Failed Example 4</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/a9c292b40ed314545cf73b58a2496f47a268592e.html">Failed Example 5</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/a67cf3bac5c43ae2c280736f9c86f57457c35537.html">Failed Example 6</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/547d69dca1d88658ee7036136b8cd29e05a28823.html">Inapplicable Example 1</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/45ef0c588326ff9dc7efc883da3b651163384032.html">Inapplicable Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/bf3cbb86a637d04ffea4fd63bb2430b639ebcdca.html">Inapplicable Example 3</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="breakdown-m6b1q3">Menuitem has non-empty accessible name</h3>
 <p>
   This rule is implemented by Axe-core using the
@@ -4422,7 +4616,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4529,7 +4723,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4647,7 +4841,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4787,10 +4981,14 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
    proposed rule.
     It covers 6 of the 7 examples.
   
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
+  
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -4853,10 +5051,9 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e6d11dd9493057ccf9dad8a463130d458f74c672.html">Failed Example 1</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html">Failed Example 1</a>
       </th>
-      <td class="
-          act-false-negative">passed</td>
+      <td class="act-untested">untested</td>
     </tr>
     <tr>
       <th>
@@ -4892,7 +5089,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5011,7 +5208,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5118,7 +5315,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5246,7 +5443,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5395,7 +5592,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5554,7 +5751,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation reports different success criteria as failed from what is expected by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -5790,7 +5987,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -6027,7 +6224,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   
     The implementation correctly reports which success criteria are failed by this rule.
   
-  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
 
 
@@ -6213,9 +6410,9 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
 <script>
   svg4everybody();
 </script><script>

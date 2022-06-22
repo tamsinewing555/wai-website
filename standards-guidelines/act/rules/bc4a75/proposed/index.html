@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654745313300498724";
+      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654745313300498724">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
 
-<title> ARIA required owned elements[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1654745313300498724"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> ARIA required owned elements[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="ARIA required owned elements" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -291,9 +291,9 @@ h2#sidebar-header {
                 
                 <li><a href="#glossary">Glossary</a></li>
                 
-                <li><a href="#implementations">Implementations</a></li>
+                <li><a href="#ruleversions">Rule Versions</a></li>
                 
-                <li><a href="#changelog">Changelog</a></li>
+                <li><a href="#implementations">Implementations</a></li>
                 
                 </ul>
             </div>
@@ -415,7 +415,7 @@ h2#sidebar-header {
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p><a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5c4aa70ce778897a8f9601621075c0f0c9abdc65.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5c4aa70ce778897a8f9601621075c0f0c9abdc65.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">list</code> role only owns elements with the <code class="language-plaintext highlighter-rouge">listitem</code> role. The <code class="language-plaintext highlighter-rouge">listitem</code> role is one of the <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">list</code>.</p>
 
@@ -427,32 +427,20 @@ h2#sidebar-header {
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5ca6583c5d7e250e11744fd20e385ac94a6c4dcf.html">Open in a new tab</a></p>
-
-<p>This element with the <code class="language-plaintext highlighter-rouge">tablist</code> role only owns elements with the <code class="language-plaintext highlighter-rouge">tab</code> role. The <code class="language-plaintext highlighter-rouge">tab</code> role is one of the <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">tablist</code>.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/li&gt;</span>
-	<span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span>
-</code></pre></div></div>
-
-<h4 id="passed-example-3">Passed Example 3</h4>
-
-<p><a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/3531d0aea5d4f26705ee56b34e068880aedff56c.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/d05f912754cdcfbf5f79b346d1418275e31fb8d5.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">grid</code> role only owns elements with the <code class="language-plaintext highlighter-rouge">row</code> role, and the element with the <code class="language-plaintext highlighter-rouge">row</code> role only owns elements with the <code class="language-plaintext highlighter-rouge">cell</code> role. The <code class="language-plaintext highlighter-rouge">row</code> role is one of the <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">grid</code>, and <code class="language-plaintext highlighter-rouge">cell</code> is one of the <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">row</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">role=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;tr</span> <span class="na">role=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"cell"</span><span class="nt">&gt;</span>Item 1<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;td</span> <span class="na">role=</span><span class="s">"cell"</span><span class="nt">&gt;</span>Item 1<span class="nt">&lt;/td&gt;</span>
 	<span class="nt">&lt;/tr&gt;</span>
 <span class="nt">&lt;/table&gt;</span>
 </code></pre></div></div>
 
-<h4 id="passed-example-4">Passed Example 4</h4>
+<h4 id="passed-example-3">Passed Example 3</h4>
 
-<p><a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">menu</code> role only owns elements with the <code class="language-plaintext highlighter-rouge">menuitem</code>, <code class="language-plaintext highlighter-rouge">menuitemradio</code> and <code class="language-plaintext highlighter-rouge">menuitemcheckbox</code> role. These roles are all <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">menu</code>. The element with the <code class="language-plaintext highlighter-rouge">none</code> role is not <a href="#owned-by">owned by</a> the <code class="language-plaintext highlighter-rouge">menu</code> because it is not <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
@@ -464,9 +452,22 @@ h2#sidebar-header {
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
+<h4 id="passed-example-4">Passed Example 4</h4>
+
+<p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/e74d875a66842a61c1667ec316b9d455e7e3a331.html">Open in a new tab</a></p>
+
+<p>This element with the <code class="language-plaintext highlighter-rouge">tablist</code> role only owns elements with the <code class="language-plaintext highlighter-rouge">tab</code> role. The <code class="language-plaintext highlighter-rouge">tab</code> role is one of the <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">tablist</code>. The <code class="language-plaintext highlighter-rouge">li</code> element is ignored because it has an <a href="#explicit-role">explicit semantic role</a> of <code class="language-plaintext highlighter-rouge">none</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">role=</span><span class="s">"tablist"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
 <h4 id="passed-example-5">Passed Example 5</h4>
 
-<p><a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a1826280426b6a76f0c871084146983b6f0faa9b.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a1826280426b6a76f0c871084146983b6f0faa9b.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">list</code> role only owns elements with the <code class="language-plaintext highlighter-rouge">listitem</code> role through the <code class="language-plaintext highlighter-rouge">aria-owns</code> attribute. The <code class="language-plaintext highlighter-rouge">listitem</code> role is one of the <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">list</code>.</p>
 
@@ -478,7 +479,7 @@ h2#sidebar-header {
 
 <h4 id="passed-example-6">Passed Example 6</h4>
 
-<p><a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/52c725e462af074a3559cf4bf4d4dd2386168938.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/52c725e462af074a3559cf4bf4d4dd2386168938.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">list</code> role only owns elements with the <code class="language-plaintext highlighter-rouge">listitem</code> role, or elements with the <code class="language-plaintext highlighter-rouge">group</code> role, in which each element has the <code class="language-plaintext highlighter-rouge">listitem</code> role. Both the <code class="language-plaintext highlighter-rouge">listitem</code> role on its own, and the <code class="language-plaintext highlighter-rouge">group</code> role (when containing elements with the <code class="language-plaintext highlighter-rouge">listitem</code> role) are <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">list</code>.</p>
 
@@ -493,7 +494,7 @@ h2#sidebar-header {
 
 <h4 id="passed-example-7">Passed Example 7</h4>
 
-<p><a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/51307c16b15d283b9f6ba7e4edc1bb99449f3f37.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/51307c16b15d283b9f6ba7e4edc1bb99449f3f37.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">menu</code> role only owns an element with a <code class="language-plaintext highlighter-rouge">group</code> role. The <code class="language-plaintext highlighter-rouge">group</code> in turn owns an element with the <code class="language-plaintext highlighter-rouge">menuitem</code> role, and an element with the <code class="language-plaintext highlighter-rouge">group</code> role, in which each element has the <code class="language-plaintext highlighter-rouge">menuitem</code> role. ARIA <code class="language-plaintext highlighter-rouge">group</code> roles are allowed to own other elements with a <code class="language-plaintext highlighter-rouge">group</code> role.</p>
 
@@ -512,7 +513,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p><a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/dd4d60acdda2a92253d4fc09cff248e9e0e3eb74.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/dd4d60acdda2a92253d4fc09cff248e9e0e3eb74.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">list</code> role owns an element without any of its <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> (<code class="language-plaintext highlighter-rouge">listitem</code> or <code class="language-plaintext highlighter-rouge">group</code> containing <code class="language-plaintext highlighter-rouge">listitem</code>).</p>
 
@@ -523,7 +524,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/0763ce51664b522eb3ed2c5479e11f4ed91e871c.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/0763ce51664b522eb3ed2c5479e11f4ed91e871c.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">tablist</code> role owns an element with the <code class="language-plaintext highlighter-rouge">listitem</code> role. The <code class="language-plaintext highlighter-rouge">listitem</code> role is not one of the <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">tablist</code>.</p>
 
@@ -534,7 +535,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p><a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/0fd4574e8dd585f4cb14c20f9966bf94f2139ea9.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/0fd4574e8dd585f4cb14c20f9966bf94f2139ea9.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">list</code> role owns an element with the <code class="language-plaintext highlighter-rouge">listitem</code> role, and one with the <code class="language-plaintext highlighter-rouge">link</code> role. The <code class="language-plaintext highlighter-rouge">link</code> role is not one of the <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">list</code>.</p>
 
@@ -546,7 +547,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p><a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/874032cb82216878366f02dd2d98e6c8047a1612.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/874032cb82216878366f02dd2d98e6c8047a1612.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">grid</code> role only owns elements with the <code class="language-plaintext highlighter-rouge">row</code> role, but the element with the <code class="language-plaintext highlighter-rouge">row</code> role does not own elements with the <code class="language-plaintext highlighter-rouge">cell</code> role. The <code class="language-plaintext highlighter-rouge">cell</code> is one of the <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">row</code>.</p>
 
@@ -559,7 +560,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-5">Failed Example 5</h4>
 
-<p><a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/f656ec33b2faf9fa804c61d09102fc70e1b916d2.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/f656ec33b2faf9fa804c61d09102fc70e1b916d2.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">list</code> role owns an element with the <code class="language-plaintext highlighter-rouge">tab</code> role through the <code class="language-plaintext highlighter-rouge">aria-owns</code> attribute. The <code class="language-plaintext highlighter-rouge">tab</code> role is not one of the <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">list</code>.</p>
 
@@ -571,7 +572,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-6">Failed Example 6</h4>
 
-<p><a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/f205939f29e3507a1f1cdbea0ae86ca40e8e0ada.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/f205939f29e3507a1f1cdbea0ae86ca40e8e0ada.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">list</code> role owns an element with the <code class="language-plaintext highlighter-rouge">group</code> role, but the group owns elements with the <code class="language-plaintext highlighter-rouge">tab</code> role. The <code class="language-plaintext highlighter-rouge">group</code> is not a <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a> for <code class="language-plaintext highlighter-rouge">list</code>, if it owns elements with a <a href="#semantic-role">semantic role</a> other then <code class="language-plaintext highlighter-rouge">listitem</code>.</p>
 
@@ -585,7 +586,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-7">Failed Example 7</h4>
 
-<p><a class="example-link" title="Failed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5e0e88f9ed776c89735d7db606c1381a7a1fb877.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5e0e88f9ed776c89735d7db606c1381a7a1fb877.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">menu</code> role only owns an element with a <code class="language-plaintext highlighter-rouge">group</code> role. The <code class="language-plaintext highlighter-rouge">group</code> in turn owns an element with the <code class="language-plaintext highlighter-rouge">menuitem</code> role, and an element with the <code class="language-plaintext highlighter-rouge">group</code> role, in which each element has the <code class="language-plaintext highlighter-rouge">treeitem</code> role. ARIA <code class="language-plaintext highlighter-rouge">group</code> roles are allowed to own other elements with a <code class="language-plaintext highlighter-rouge">group</code> role, but those nested <code class="language-plaintext highlighter-rouge">group</code> nodes must still meet the requirements.</p>
 
@@ -604,7 +605,7 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
-<p><a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/83d80bc34891ae13f05150c8c677028591f1d199.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/83d80bc34891ae13f05150c8c677028591f1d199.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">list</code> role is not included in the accessibility tree because the <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute is set to <code class="language-plaintext highlighter-rouge">true</code>.</p>
 
@@ -613,7 +614,7 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
 
-<p><a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">ul</code> element does not have an <a href="#explicit-role">explicit semantic role</a>.</p>
 
@@ -624,7 +625,7 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
-<p><a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a700af25effa2ba2bfad2429705e634fcd0142d6.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a700af25effa2ba2bfad2429705e634fcd0142d6.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">progressbar</code> role does not need <a href="https://www.w3.org/TR/wai-aria-1.1/#mustContain" title="Define Required owned element">required owned elements</a>.</p>
 
@@ -633,7 +634,7 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
-<p><a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/837f92d0ac41c14e55782991cbab75975b492702.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/837f92d0ac41c14e55782991cbab75975b492702.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">menu</code> role has an <code class="language-plaintext highlighter-rouge">aria-busy</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code>.</p>
 
@@ -644,7 +645,7 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-5">Inapplicable Example 5</h4>
 
-<p><a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/01c9526cc3ea1449ab8462fdf3c2aa4f215137dc.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/01c9526cc3ea1449ab8462fdf3c2aa4f215137dc.html">Open in a new tab</a></p>
 
 <p>This element with the <code class="language-plaintext highlighter-rouge">combobox</code> role conforms to <a href="https://www.w3.org/TR/wai-aria-1.1/">WAI-ARIA 1.1</a> without owned elements.</p>
 
@@ -764,9 +765,9 @@ h2#sidebar-header {
   <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
 </ul>
 
-<p><strong>Note</strong>: Contrarily to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
+<p><strong>Note</strong>: Contrary to the other conditions, the <code class="language-plaintext highlighter-rouge">visibility</code> CSS property may be reverted by descendants.</p>
 
-<p><strong>Note</strong>: The <a href="https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements">HTML standard suggests</a> rendering elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute with a CSS rule that applies the value <code class="language-plaintext highlighter-rouge">none</code> to the CSS property <code class="language-plaintext highlighter-rouge">display</code> of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the <code class="language-plaintext highlighter-rouge">display</code> property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.</p>
+<p><strong>Note</strong>: The <a href="https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements">HTML standard suggests</a> setting the CSS <code class="language-plaintext highlighter-rouge">display</code> property to <code class="language-plaintext highlighter-rouge">none</code> for elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute. While not required by HTML, all modern browsers follow this suggestion. Because of this the <code class="language-plaintext highlighter-rouge">hidden</code> attribute is not used in this definition. In browsers that use this suggestion, overriding the CSS <code class="language-plaintext highlighter-rouge">display</code> property can reveal elements with the <code class="language-plaintext highlighter-rouge">hidden</code> attribute.</p>
 
 <h3 id="semantic-role">Semantic Role</h3>
 
@@ -792,45 +793,35 @@ h2#sidebar-header {
 
 <p><strong>Note:</strong> depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.</p>
 
-<h2 id="implementations">Implementations</h2>
 
-<p>This section is not part of the official rule. It is populated dynamically and 
-not accounted for in the change history or the last modified date.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Implementation</th>
-      <th>Consistency</th>
-      <th>Complete</th>
-      <th>Report</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Axe-core</td>
-      <td>Partially-consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/axe-core#id-bc4a75">View Report</a></td>
-    </tr>
-    <tr>
-      <td>QualWeb</td>
-      <td>Consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/qualweb#id-bc4a75">View Report</a></td>
-    </tr>
-    <tr>
-      <td>SortSite</td>
-      <td>Consistent</td>
-      <td>Yes</td>
-      <td><a href="https://act-rules.github.io/implementation/sortsite#id-bc4a75">View Report</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="changelog">Changelog</h2>
+<h2 id="ruleversions">Rule Versions</h2>
 
 <p>This is the first version of this ACT rule.</p>
+
+
+<h2 id="implementations">Implementations</h2>
+
+  <p>This section is not part of the official rule. It is populated dynamically and 
+    not accounted for in the change history or the last modified date.</p>
+  <table class="act-implementations">
+    <thead> 
+      <tr>
+        <th>Implementation</th>
+        <th>Type</th>
+        <th>Consistency</th>
+        <th>Report</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>Alfa 0.36.0</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-bc4a75"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+    </tbody>
+  </table>
 
  
 
@@ -858,7 +849,7 @@ not accounted for in the change history or the last modified date.</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> bc4a75</p>
-<p><strong>Date:</strong> Updated 16 March 2022</p>
+<p><strong>Date:</strong> Updated 21 June 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -899,9 +890,9 @@ not accounted for in the change history or the last modified date.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
 <script>
   svg4everybody();
 </script><script>

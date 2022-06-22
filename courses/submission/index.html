@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1654745313300498724";
+      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1654745313300498724">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
 
 <title> Submit a course, training, or certification on digital accessibility | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -907,7 +907,7 @@ function onSubmit(e) {
 
 
 
-  <form name="submission" method="post" action="https://wai-website.netlify.app/.netlify/functions/list-submission">
+  <form name="submission" method="post" action="/.netlify/functions/list-submission">
     <input type="hidden" name="form_name" value="submission" />
         
         <input type="hidden" name="form_version" value="1" />
@@ -923,10 +923,11 @@ function onSubmit(e) {
       
 <!--<a href="../list">Back to Course List</a>-->
 
-<p>This form allows you to provide information about courses, training, and certification on digital accessibility.</p> 
+<p>This form allows you to provide information about courses, training, and certification on digital accessibility to be listed on the WAI website. Information submitted with this form will be publicly available in GitHub.</p> 
 <p>When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.</p>
-<p>If you wish to update any information or remove a course included in this list, please contact us via e-mail to the editors group list: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">group-wai-list-courses@w3.org</a></p>
-<p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available on our GitHub repository.</em></p> 
+<p>If you have questions, please e-mail them to: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">group-wai-list-courses@w3.org</a></p>
+<p>If you want to update information in the list or delete a course, please send e-mail to: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">group-wai-list-courses@w3.org</a> (e-mails to that address are not publicly-archived).</p>
+<p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating.</em></p> 
 
 
 <h2 id="about_you">About you</h2>
@@ -3154,15 +3155,15 @@ function onSubmit(e) {
   </div> 
   <div class="radio-field">
     <input type="radio" name="cost" id="cost_certificates_for_purchase" value="cost_certificates_for_purchase" />
-    <label for="cost_certificates_for_purchase">Free with certificates for purchase</label>
+    <label for="cost_certificates_for_purchase">Free, with certificates for purchase</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="cost" id="cost_limited_time" valye="cost_limited_time" />
-    <label for="cost_limited_time">Free for limited content or duration</label>
+    <label for="cost_limited_time">Paid, with some free content or free for a limited duration</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="cost" id="cost_reduced_for_some" value="cost_reduced_for_some" />
-    <label for="cost_reduced_for_some">Free or reduced fee for some</label>
+    <label for="cost_reduced_for_some">Paid, with reduced fee for some</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="cost" id="cost_paid" value="cost_paid" />
@@ -3171,13 +3172,13 @@ function onSubmit(e) {
 </fieldset>
 
 <div class="field">
-  <label for="website" class="label_input">Website (Required)</label>
-  <p class="expl" id="expl_website">Indicate the website containing more information about this resource.</p>
+  <label for="website" class="label_input">Web page (Required)</label>
+  <p class="expl" id="expl_website">Indicate the web page containing more information about this resource.</p>
   <input type="url" name="website" id="website" placeholder="https://example.com" aria-describedby="expl_website" required="" />
 </div>
 
 <div class="field">
-  <label for="reviews" class="label_input">Reviews page</label>
+  <label for="reviews" class="label_input">Reviews web page</label>
   <p class="expl" id="expl_reviews">Indicate the web page containing reviews about this resource.</p>
   <input type="url" name="reviews" id="reviews" placeholder="https://example.com" aria-describedby="expl_reviews" />
 </div>
@@ -3278,8 +3279,8 @@ const importJsonCountries = String.raw`{"ad":{"name":"Andorra","nativeName":"And
 importJsonCountries.replace("\\", "\\\\");
 const jsonCountry = JSON.parse(importJsonCountries);;
 
-const jsonFilters = JSON.parse('[{"id":"type_resource","name":"Type of resource","type":"checkbox","options":[{"id":"type_graduate","name":"Graduate program"},{"id":"type_undergraduate","name":"Undergraduate program"},{"id":"type_certification","name":"Professional certification"},{"id":"type_training","name":"Training"},{"id":"type_other","name":"Other"}]},{"id":"audience","name":"Audience","type":"checkbox","options":[{"id":"audience_content_author","name":"Content author"},{"id":"audience_designer","name":"Designer"},{"id":"audience_developer","name":"Developer"},{"id":"audience_manager","name":"Manager"},{"id":"audience_tester","name":"Tester"},{"id":"audience_general","name":"General"},{"id":"audience_other","name":"Other"}]},{"id":"level","name":"Level","type":"checkbox","options":[{"id":"level_basic","name":"Basic"},{"id":"level_intermediate","name":"Intermediate"},{"id":"level_advanced","name":"Advanced"}]},{"id":"format","name":"Format","info":"true","type":"checkbox","options":[{"id":"format_face_to_face","name":"Face-to-face"},{"id":"format_online","name":"Online"},{"id":"format_blended","name":"Blended"},{"id":"format_hybrid","name":"Hybrid"}]},{"id":"learning","name":"Scheduling","info":"true","type":"checkbox","options":[{"id":"learning_scheduled","name":"Scheduled"},{"id":"learning_unscheduled","name":"Unscheduled"}]},{"id":"cost","name":"Cost","type":"checkbox","options":[{"id":"cost_free","name":"Free of charge"},{"id":"cost_certificates_for_purchase","name":"Free with certificates for purchase"},{"id":"cost_limited_time","name":"Free for limited content or duration"},{"id":"cost_reduced_for_some","name":"Free or reduced fee for some"},{"id":"cost_paid","name":"Paid"}]}]');
-const jsonLang = JSON.parse('null');
+const jsonFilters = JSON.parse('[{"id":"type_resource","name":"Type of resource","type":"checkbox","options":[{"id":"type_graduate","name":"Graduate program"},{"id":"type_undergraduate","name":"Undergraduate program"},{"id":"type_certification","name":"Professional certification"},{"id":"type_training","name":"Training"},{"id":"type_other","name":"Other"}]},{"id":"audience","name":"Audience","type":"checkbox","options":[{"id":"audience_content_author","name":"Content author"},{"id":"audience_designer","name":"Designer"},{"id":"audience_developer","name":"Developer"},{"id":"audience_manager","name":"Manager"},{"id":"audience_tester","name":"Tester"},{"id":"audience_general","name":"General"},{"id":"audience_other","name":"Other"}]},{"id":"level","name":"Level","type":"checkbox","options":[{"id":"level_basic","name":"Basic"},{"id":"level_intermediate","name":"Intermediate"},{"id":"level_advanced","name":"Advanced"}]},{"id":"format","name":"Format","info":"true","type":"checkbox","options":[{"id":"format_face_to_face","name":"Face-to-face"},{"id":"format_online","name":"Online"},{"id":"format_blended","name":"Blended"},{"id":"format_hybrid","name":"Hybrid"}]},{"id":"learning","name":"Scheduling","info":"true","type":"checkbox","options":[{"id":"learning_scheduled","name":"Scheduled"},{"id":"learning_unscheduled","name":"Unscheduled"}]},{"id":"cost","name":"Cost","type":"checkbox","options":[{"id":"cost_free","name":"Free of charge"},{"id":"cost_certificates_for_purchase","name":"Free, with certificates for purchase"},{"id":"cost_limited_time","name":"Paid, with some free content or free for a limited duration"},{"id":"cost_reduced_for_some","name":"Paid, with reduced fee for some"},{"id":"cost_paid","name":"Paid"}]}]');
+const jsonLang = JSON.parse('{"ab":{"name":"Abkhaz","nativeName":"аҧсуа"},"aa":{"name":"Afar","nativeName":"Afaraf"},"af":{"name":"Afrikaans","nativeName":"Afrikaans"},"ak":{"name":"Akan","nativeName":"Akan"},"sq":{"name":"Albanian","nativeName":"Shqip"},"am":{"name":"Amharic","nativeName":"አማርኛ"},"ar":{"name":"Arabic","nativeName":"العربية","rtl":true},"an":{"name":"Aragonese","nativeName":"Aragonés"},"hy":{"name":"Armenian","nativeName":"Հայերեն"},"as":{"name":"Assamese","nativeName":"অসমীয়া"},"av":{"name":"Avaric","nativeName":"авар мацӀ, магӀарул мацӀ"},"ae":{"name":"Avestan","nativeName":"avesta"},"ay":{"name":"Aymara","nativeName":"aymar aru"},"az":{"name":"Azerbaijani","nativeName":"azərbaycan dili"},"bm":{"name":"Bambara","nativeName":"bamanankan"},"ba":{"name":"Bashkir","nativeName":"башҡорт теле"},"eu":{"name":"Basque","nativeName":"euskara, euskera"},"be":{"name":"Belarusian","nativeName":"Беларуская"},"bn":{"name":"Bengali","nativeName":"বাংলা"},"bh":{"name":"Bihari","nativeName":"भोजपुरी"},"bi":{"name":"Bislama","nativeName":"Bislama"},"bs":{"name":"Bosnian","nativeName":"bosanski jezik"},"br":{"name":"Breton","nativeName":"brezhoneg"},"bg":{"name":"Bulgarian","nativeName":"български език"},"my":{"name":"Burmese","nativeName":"ဗမာစာ"},"ca":{"name":"Catalan","nativeName":"Català"},"ch":{"name":"Chamorro","nativeName":"Chamoru"},"ce":{"name":"Chechen","nativeName":"нохчийн мотт"},"ny":{"name":"Chichewa; Chewa; Nyanja","nativeName":"chiCheŵa, chinyanja"},"zh":{"name":"Chinese","nativeName":"中文 (Zhōngwén), 汉语, 漢語"},"zh-hans":{"name":"Simplified Chinese","nativeName":"简体中文"},"zh-hant":{"name":"Traditional Chinese","nativeName":"繁體中文"},"cv":{"name":"Chuvash","nativeName":"чӑваш чӗлхи"},"kw":{"name":"Cornish","nativeName":"Kernewek"},"co":{"name":"Corsican","nativeName":"corsu, lingua corsa"},"cr":{"name":"Cree","nativeName":"ᓀᐦᐃᔭᐍᐏᐣ"},"hr":{"name":"Croatian","nativeName":"hrvatski"},"cs":{"name":"Czech","nativeName":"čeština"},"da":{"name":"Danish","nativeName":"dansk"},"dv":{"name":"Divehi; Dhivehi; Maldivian;","nativeName":"ދިވެހި"},"nl":{"name":"Dutch","nativeName":"Nederlands"},"en":{"name":"English","nativeName":"English"},"eo":{"name":"Esperanto","nativeName":"Esperanto"},"et":{"name":"Estonian","nativeName":"eesti"},"ee":{"name":"Ewe","nativeName":"Eʋegbe"},"fo":{"name":"Faroese","nativeName":"føroyskt"},"fj":{"name":"Fijian","nativeName":"vosa Vakaviti"},"fi":{"name":"Finnish","nativeName":"suomi"},"fr":{"name":"French","nativeName":"français"},"ff":{"name":"Fula; Fulah; Pulaar; Pular","nativeName":"Fulfulde, Pulaar, Pular"},"gl":{"name":"Galician","nativeName":"Galego"},"ka":{"name":"Georgian","nativeName":"ქართული"},"de":{"name":"German","nativeName":"Deutsch"},"el":{"name":"Greek","nativeName":"Ελληνικά"},"gn":{"name":"Guaraní","nativeName":"Avañeẽ"},"gu":{"name":"Gujarati","nativeName":"ગુજરાતી"},"ht":{"name":"Haitian; Haitian Creole","nativeName":"Kreyòl ayisyen"},"ha":{"name":"Hausa","nativeName":"Hausa, هَوُسَ"},"he":{"name":"Hebrew","nativeName":"עברית","rtl":true},"hz":{"name":"Herero","nativeName":"Otjiherero"},"hi":{"name":"Hindi","nativeName":"हिन्दी, हिंदी"},"ho":{"name":"Hiri Motu","nativeName":"Hiri Motu"},"hu":{"name":"Hungarian","nativeName":"Magyar"},"ia":{"name":"Interlingua","nativeName":"Interlingua"},"id":{"name":"Indonesian","nativeName":"Bahasa Indonesia"},"ie":{"name":"Interlingue","nativeName":"Originally called Occidental; then Interlingue after WWII"},"ga":{"name":"Irish","nativeName":"Gaeilge"},"ig":{"name":"Igbo","nativeName":"Asụsụ Igbo"},"ik":{"name":"Inupiaq","nativeName":"Iñupiaq, Iñupiatun"},"io":{"name":"Ido","nativeName":"Ido"},"is":{"name":"Icelandic","nativeName":"Íslenska"},"it":{"name":"Italian","nativeName":"Italiano"},"iu":{"name":"Inuktitut","nativeName":"ᐃᓄᒃᑎᑐᑦ"},"ja":{"name":"Japanese","nativeName":"日本語"},"jv":{"name":"Javanese","nativeName":"basa Jawa"},"kl":{"name":"Kalaallisut, Greenlandic","nativeName":"kalaallisut, kalaallit oqaasii"},"kn":{"name":"Kannada","nativeName":"ಕನ್ನಡ"},"kr":{"name":"Kanuri","nativeName":"Kanuri"},"ks":{"name":"Kashmiri","nativeName":"कश्मीरी, كشميري‎"},"kk":{"name":"Kazakh","nativeName":"Қазақ тілі"},"km":{"name":"Khmer","nativeName":"ភាសាខ្មែរ"},"ki":{"name":"Kikuyu, Gikuyu","nativeName":"Gĩkũyũ"},"rw":{"name":"Kinyarwanda","nativeName":"Ikinyarwanda"},"ky":{"name":"Kirghiz, Kyrgyz","nativeName":"кыргыз тили"},"kv":{"name":"Komi","nativeName":"коми кыв"},"kg":{"name":"Kongo","nativeName":"KiKongo"},"ko":{"name":"Korean","nativeName":"한국어"},"kok":{"name":"Konkani","nativeName":"कोंकणी"},"ku":{"name":"Kurdish","nativeName":"Kurdî, كوردی‎"},"kj":{"name":"Kwanyama, Kuanyama","nativeName":"Kuanyama"},"la":{"name":"Latin","nativeName":"latine, lingua latina"},"lb":{"name":"Luxembourgish, Letzeburgesch","nativeName":"Lëtzebuergesch"},"lg":{"name":"Luganda","nativeName":"Luganda"},"li":{"name":"Limburgish, Limburgan, Limburger","nativeName":"Limburgs"},"ln":{"name":"Lingala","nativeName":"Lingála"},"lo":{"name":"Lao","nativeName":"ພາສາລາວ"},"lt":{"name":"Lithuanian","nativeName":"lietuvių kalba"},"lu":{"name":"Luba-Katanga","nativeName":""},"lv":{"name":"Latvian","nativeName":"latviešu valoda"},"gv":{"name":"Manx","nativeName":"Gaelg, Gailck"},"mk":{"name":"Macedonian","nativeName":"македонски јазик"},"mg":{"name":"Malagasy","nativeName":"Malagasy fiteny"},"ms":{"name":"Malay","nativeName":"bahasa Melayu, بهاس ملايو‎"},"ml":{"name":"Malayalam","nativeName":"മലയാളം"},"mt":{"name":"Maltese","nativeName":"Malti"},"mi":{"name":"Māori","nativeName":"te reo Māori"},"mr":{"name":"Marathi (Marāṭhī)","nativeName":"मराठी"},"mh":{"name":"Marshallese","nativeName":"Kajin M̧ajeļ"},"mn":{"name":"Mongolian","nativeName":"монгол"},"na":{"name":"Nauru","nativeName":"Ekakairũ Naoero"},"nv":{"name":"Navajo, Navaho","nativeName":"Diné bizaad, Dinékʼehǰí"},"nb":{"name":"Norwegian Bokmål","nativeName":"Norsk bokmål"},"nd":{"name":"North Ndebele","nativeName":"isiNdebele"},"ne":{"name":"Nepali","nativeName":"नेपाली"},"ng":{"name":"Ndonga","nativeName":"Owambo"},"nn":{"name":"Norwegian Nynorsk","nativeName":"Norsk nynorsk"},"no":{"name":"Norwegian","nativeName":"Norsk"},"ii":{"name":"Nuosu","nativeName":"ꆈꌠ꒿ Nuosuhxop"},"nr":{"name":"South Ndebele","nativeName":"isiNdebele"},"oc":{"name":"Occitan","nativeName":"Occitan"},"oj":{"name":"Ojibwe, Ojibwa","nativeName":"ᐊᓂᔑᓈᐯᒧᐎᓐ"},"cu":{"name":"Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic","nativeName":"ѩзыкъ словѣньскъ"},"om":{"name":"Oromo","nativeName":"Afaan Oromoo"},"or":{"name":"Oriya","nativeName":"ଓଡ଼ିଆ"},"os":{"name":"Ossetian, Ossetic","nativeName":"ирон æвзаг"},"pa":{"name":"Panjabi, Punjabi","nativeName":"ਪੰਜਾਬੀ, پنجابی‎"},"pi":{"name":"Pāli","nativeName":"पाऴि"},"fa":{"name":"Persian","nativeName":"فارسی"},"pl":{"name":"Polish","nativeName":"polski"},"ps":{"name":"Pashto, Pushto","nativeName":"پښتو"},"pt":{"name":"European Portuguese","nativeName":"Português Europeu"},"pt-BR":{"name":"Brazilian Portuguese","nativeName":"Português do Brasil"},"qu":{"name":"Quechua","nativeName":"Runa Simi, Kichwa"},"rm":{"name":"Romansh","nativeName":"rumantsch grischun"},"rn":{"name":"Kirundi","nativeName":"kiRundi"},"ro":{"name":"Romanian, Moldavian, Moldovan","nativeName":"română"},"ru":{"name":"Russian","nativeName":"русский язык"},"sa":{"name":"Sanskrit (Saṁskṛta)","nativeName":"संस्कृतम्"},"sc":{"name":"Sardinian","nativeName":"sardu"},"sd":{"name":"Sindhi","nativeName":"सिन्धी, سنڌي، سندھی‎"},"se":{"name":"Northern Sami","nativeName":"Davvisámegiella"},"sm":{"name":"Samoan","nativeName":"gagana faa Samoa"},"sg":{"name":"Sango","nativeName":"yângâ tî sängö"},"sr":{"name":"Serbian","nativeName":"српски језик"},"gd":{"name":"Scottish Gaelic; Gaelic","nativeName":"Gàidhlig"},"sn":{"name":"Shona","nativeName":"chiShona"},"si":{"name":"Sinhala, Sinhalese","nativeName":"සිංහල"},"sk":{"name":"Slovak","nativeName":"slovenčina"},"sl":{"name":"Slovene","nativeName":"slovenščina"},"so":{"name":"Somali","nativeName":"Soomaaliga, af Soomaali"},"st":{"name":"Southern Sotho","nativeName":"Sesotho"},"es":{"name":"Spanish","nativeName":"español"},"su":{"name":"Sundanese","nativeName":"Basa Sunda"},"sw":{"name":"Swahili","nativeName":"Kiswahili"},"ss":{"name":"Swati","nativeName":"SiSwati"},"sv":{"name":"Swedish","nativeName":"svenska"},"ta":{"name":"Tamil","nativeName":"தமிழ்"},"te":{"name":"Telugu","nativeName":"తెలుగు"},"tg":{"name":"Tajik","nativeName":"тоҷикӣ, toğikī, تاجیکی‎"},"th":{"name":"Thai","nativeName":"ไทย"},"ti":{"name":"Tigrinya","nativeName":"ትግርኛ"},"bo":{"name":"Tibetan","nativeName":"བོད་ཡིག"},"tk":{"name":"Turkmen","nativeName":"Türkmen, Түркмен"},"tl":{"name":"Tagalog","nativeName":"Tagalog, ᜏᜒᜃᜅ᜔ ᜆᜄᜎᜓᜄ᜔"},"tn":{"name":"Tswana","nativeName":"Setswana"},"to":{"name":"Tonga (Tonga Islands)","nativeName":"faka Tonga"},"tr":{"name":"Turkish","nativeName":"Türkçe"},"ts":{"name":"Tsonga","nativeName":"Xitsonga"},"tt":{"name":"Tatar","nativeName":"татарча, tatarça, تاتارچا‎"},"tw":{"name":"Twi","nativeName":"Twi"},"ty":{"name":"Tahitian","nativeName":"Reo Tahiti"},"ug":{"name":"Uighur, Uyghur","nativeName":"Uyƣurqə, ئۇيغۇرچە‎"},"uk":{"name":"Ukrainian","nativeName":"українська"},"ur":{"name":"Urdu","nativeName":"اردو"},"uz":{"name":"Uzbek","nativeName":"zbek, Ўзбек, أۇزبېك‎"},"ve":{"name":"Venda","nativeName":"Tshivenḓa"},"vi":{"name":"Vietnamese","nativeName":"Tiếng Việt"},"vo":{"name":"Volapük","nativeName":"Volapük"},"wa":{"name":"Walloon","nativeName":"Walon"},"cy":{"name":"Welsh","nativeName":"Cymraeg"},"wo":{"name":"Wolof","nativeName":"Wollof"},"fy":{"name":"Western Frisian","nativeName":"Frysk"},"xh":{"name":"Xhosa","nativeName":"isiXhosa"},"yi":{"name":"Yiddish","nativeName":"ייִדיש"},"yo":{"name":"Yoruba","nativeName":"Yorùbá"},"za":{"name":"Zhuang, Chuang","nativeName":"Saɯ cueŋƅ, Saw cuengh"}}');
 const coursesList = document.getElementById('courses-list');
 
 const submitForm = document.querySelector('form');
@@ -3424,12 +3425,16 @@ if (filterForm) {
         var searchedResults = [];
 
         Object.values(newResultsList).forEach(o => {
-
+            var topics;
+            if(Array.isArray(o.topics))
+                topics = o.topics.join();
+            else
+                topics = o.topics;
             if (
                 o.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 o.provider.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 o.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                o.topics.join().toLowerCase().includes(searchTerm.toLowerCase())) {
+                topics.toLowerCase().includes(searchTerm.toLowerCase())) {
                 searchedResults.push(o);
             }
         })
@@ -4112,7 +4117,7 @@ function getPreviewSubmission() {
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
 <div class="overlay-content">
-  <button class="button button-close_preview icon" title="Close preview and go back to the form"><span><svg focusable="false" aria-hidden="true" class="icon-ex-circle "><use xlink:href="/assets/images/icons.svg#icon-ex-circle"></use></svg> </span></button>
+  <button class="button button-close_preview icon" title="Close preview and go back to the form"><span><svg focusable="false" aria-hidden="true" class="icon-ex-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg> </span></button>
   <h2 id="preview_title">Review your submission</h2>  
   <p>Please review the information provided. If you need to correct any information, you can go back to the form and then proceed to your submission.</p>
   <div class="details-preview box"></div>
@@ -4185,9 +4190,9 @@ function getPreviewSubmission() {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1654745313300498724"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
 <script>
   svg4everybody();
 </script><script>
