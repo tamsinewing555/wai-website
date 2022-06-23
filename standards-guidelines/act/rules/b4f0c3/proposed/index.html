@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
+      element.src = "/WAI/assets/scripts/main.js?1656014488153756472";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1656014488153756472">
 
-<title> Meta viewport allows for zoom[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Meta viewport allows for zoom[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1656014488153756472"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Meta viewport allows for zoom" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -340,11 +340,16 @@ h2#sidebar-header {
 
 <h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to each <code class="language-plaintext highlighter-rouge">content</code> attribute on a <code class="language-plaintext highlighter-rouge">meta</code> element with a <code class="language-plaintext highlighter-rouge">name</code> <a href="#attribute-value" title="Definition of attribute value">attribute value</a> of <code class="language-plaintext highlighter-rouge">viewport</code>.</p>
+<p>This rule applies to each <code class="language-plaintext highlighter-rouge">content</code> attribute on a <code class="language-plaintext highlighter-rouge">meta</code> element with a <code class="language-plaintext highlighter-rouge">name</code> <a href="#attribute-value" title="Definition of attribute value">attribute value</a> of <code class="language-plaintext highlighter-rouge">viewport</code> for which at least one of the following is true:</p>
+
+<ul>
+  <li>the <code class="language-plaintext highlighter-rouge">content</code> <a href="#attribute-value" title="Definition of attribute value">attribute value</a> has the <code class="language-plaintext highlighter-rouge">user-scalable</code> property; or</li>
+  <li>the <code class="language-plaintext highlighter-rouge">content</code> <a href="#attribute-value" title="Definition of attribute value">attribute value</a> has the <code class="language-plaintext highlighter-rouge">maximum-scale</code> property.</li>
+</ul>
 
 <h2 id="expectation-1">Expectation 1</h2>
 
-<p>For each test target, the <a href="#attribute-value" title="Definition of attribute value">attribute value</a> does hot have a <code class="language-plaintext highlighter-rouge">user-scalable</code> property with a value of <code class="language-plaintext highlighter-rouge">no</code>.</p>
+<p>For each test target, the <a href="#attribute-value" title="Definition of attribute value">attribute value</a> does not have a <code class="language-plaintext highlighter-rouge">user-scalable</code> property with a value of <code class="language-plaintext highlighter-rouge">no</code>.</p>
 
 <h2 id="expectation-2">Expectation 2</h2>
 
@@ -408,26 +413,7 @@ h2#sidebar-header {
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html">Open in a new tab</a></p>
-
-<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element does not prevent user scaling because it does not specify the <code class="language-plaintext highlighter-rouge">maximum-scale</code> and <code class="language-plaintext highlighter-rouge">user-scalable</code> values.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
-	<span class="nt">&lt;head&gt;</span>
-		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
-		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width"</span> <span class="nt">/&gt;</span>
-	<span class="nt">&lt;/head&gt;</span>
-	<span class="nt">&lt;body&gt;</span>
-		<span class="nt">&lt;p&gt;</span>
-			Lorem ipsum
-		<span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<h4 id="passed-example-2">Passed Example 2</h4>
-
-<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html">Open in a new tab</a></p>
 
 <p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element does not prevent user scaling because it has <code class="language-plaintext highlighter-rouge">user-scalable</code> set to <code class="language-plaintext highlighter-rouge">yes</code>.</p>
 
@@ -444,47 +430,28 @@ h2#sidebar-header {
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
+<h4 id="passed-example-2">Passed Example 2</h4>
+
+<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d143bfe343ecf75bceb92b6fc9807cc5f453b319.html">Open in a new tab</a></p>
+
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element allows users to scale content up to 200% because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to 2.0.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"maximum-scale=2.0"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;p&gt;</span>
+			Lorem ipsum
+		<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
 <h4 id="passed-example-3">Passed Example 3</h4>
 
-<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d97325fca0ca13bdc585ee4128c4657522bded38.html">Open in a new tab</a></p>
-
-<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element allows users to scale content up to 600% because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to 6.0.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
-	<span class="nt">&lt;head&gt;</span>
-		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
-		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"maximum-scale=6.0"</span> <span class="nt">/&gt;</span>
-	<span class="nt">&lt;/head&gt;</span>
-	<span class="nt">&lt;body&gt;</span>
-		<span class="nt">&lt;p&gt;</span>
-			Lorem ipsum
-		<span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<h4 id="passed-example-4">Passed Example 4</h4>
-
-<p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html">Open in a new tab</a></p>
-
-<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element does not prevent user scaling because it does not specify the <code class="language-plaintext highlighter-rouge">maximum-scale</code> and <code class="language-plaintext highlighter-rouge">user-scalable</code> values.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
-	<span class="nt">&lt;head&gt;</span>
-		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
-		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">""</span> <span class="nt">/&gt;</span>
-	<span class="nt">&lt;/head&gt;</span>
-	<span class="nt">&lt;body&gt;</span>
-		<span class="nt">&lt;p&gt;</span>
-			Lorem ipsum
-		<span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div>
-
-<h4 id="passed-example-5">Passed Example 5</h4>
-
-<p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html">Open in a new tab</a></p>
 
 <p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element does not prevent user scaling because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to -1 which results in this value being dropped.</p>
 
@@ -619,6 +586,44 @@ h2#sidebar-header {
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
+<h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
+
+<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html">Open in a new tab</a></p>
+
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element does not specify the <code class="language-plaintext highlighter-rouge">maximum-scale</code> nor <code class="language-plaintext highlighter-rouge">user-scalable</code> values.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;p&gt;</span>
+			Lorem ipsum
+		<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
+
+<p><a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html">Open in a new tab</a></p>
+
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element does not prevent user scaling because it does not specify the <code class="language-plaintext highlighter-rouge">maximum-scale</code> nor <code class="language-plaintext highlighter-rouge">user-scalable</code> values.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;p&gt;</span>
+			Lorem ipsum
+		<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
 <h2 id="glossary">Glossary</h2>
 
 <h3 id="attribute-value">Attribute value</h3>
@@ -692,6 +697,13 @@ h2#sidebar-header {
           <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-b4f0c3"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
+          <td>Axe DevTools Pro 4.24.5</td>
+          <td>Semi-automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-b4f0c3"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
           <td>Axe-core 4.5.0-prerelease</td>
           <td>Automated tool</td>
           <td> Partial
@@ -699,10 +711,17 @@ h2#sidebar-header {
           <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-b4f0c3"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
+          <td>Equal Access Accessibility Checker 3.1.33-rc</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-b4f0c3"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
           <td>QualWeb 3.0.0</td>
           <td>Automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-b4f0c3"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
     </tbody>
@@ -734,7 +753,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> b4f0c3</p>
-<p><strong>Date:</strong> Updated 21 June 2022</p>
+<p><strong>Date:</strong> Updated 23 June 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -775,9 +794,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1656014488153756472"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1656014488153756472"></script>
 <script>
   svg4everybody();
 </script><script>

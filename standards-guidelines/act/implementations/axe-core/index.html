@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
+      element.src = "/WAI/assets/scripts/main.js?1656014488153756472";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1656014488153756472">
 
-<title> Axe-core ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Axe-core ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1656014488153756472"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Axe-core ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -332,8 +332,8 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>Proposed rules</th>
-    <td>10</td>
-    <td>17</td>
+    <td>11</td>
+    <td>16</td>
   </tr>
 </tbody></table>
 
@@ -505,8 +505,8 @@ h2#sidebar-header {
         </a></td>
         <td> Proposed Rule
         </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -777,8 +777,8 @@ h2#sidebar-header {
         </a></td>
         <td> Proposed Rule
         </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -841,8 +841,8 @@ h2#sidebar-header {
         </a></td>
         <td> Proposed Rule
         </td>
-        <td>
-          Consistent </td>
+        <td> Partial
+        </td>
       </tr>
     
     
@@ -2414,11 +2414,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/c487ae">Link has non-empty accessible name</a>
   WCAG 2 rule. 
-    It covers 26 of the 28 examples.
-  
-    For 2 examples
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 28 examples.
   
   
     The implementation reports different success criteria as failed from what is expected by this rule.
@@ -2679,16 +2675,17 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html">Passed Example 11</a>
           <abbr title="Proposed example">*</abbr>
       </th>
-      <td class="act-untested">untested</td>
-      <td class="act-untested">untested</td>
+      <td class="">passed</td>
+      <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html">Failed Example 11</a>
           <abbr title="Proposed example">*</abbr>
       </th>
-      <td class="act-untested">untested</td>
-      <td class="act-untested">untested</td>
+      <td class="">failed</td>
+      <td class="
+          act-false-negative">inapplicable</td>
     </tr>
   </tbody>
 </table>
@@ -2703,7 +2700,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>aria-valid-attr</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/5f99a7">ARIA attribute is defined in WAI-ARIA</a>
+  <a href="/WAI/standards-guidelines/act/rules/5f99a7/proposed/">ARIA attribute is defined in WAI-ARIA</a>
    proposed rule.
     It covers all 7 examples.
   
@@ -2795,15 +2792,15 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
 <p>
   This rule is implemented by Axe-core using the
   <code>aria-hidden-focus</code> procedure.
-  The implementation is  partially 
-   consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/6cfa84">Element with aria-hidden has no content in sequential focus navigation</a>
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/6cfa84/proposed/">Element with aria-hidden has no content in sequential focus navigation</a>
    proposed rule.
     It covers 12 of the 14 examples.
+    On 2 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
   
-    For 2 examples
-    no results were reported. This can happen when examples are newer then the
-    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -2873,7 +2870,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html">Passed Example 4</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="act-cannot-tell">cannot tell</td>
     </tr>
     <tr>
       <th>
@@ -2915,7 +2912,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html">Failed Example 6</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="act-cannot-tell">cannot tell</td>
     </tr>
     <tr>
       <th>
@@ -2944,7 +2941,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>aria-required-parent</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/ff89c9">ARIA required context role</a>
+  <a href="/WAI/standards-guidelines/act/rules/ff89c9/proposed/">ARIA required context role</a>
    proposed rule.
     It covers 14 of the 15 examples.
   
@@ -3094,7 +3091,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>aria-allowed-attr</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/5c01ea">ARIA state or property is permitted</a>
+  <a href="/WAI/standards-guidelines/act/rules/5c01ea/proposed/">ARIA state or property is permitted</a>
    proposed rule.
     It covers all 15 examples.
   
@@ -3236,7 +3233,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>bypass</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/3e12e1">Block of repeated content is collapsible</a>
+  <a href="/WAI/standards-guidelines/act/rules/3e12e1/proposed/">Block of repeated content is collapsible</a>
    proposed rule.
     It covers 1 of the 8 examples.
     On 7 examples
@@ -3333,7 +3330,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>bypass</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/cf77f2">Bypass Blocks of Repeated Content</a>
+  <a href="/WAI/standards-guidelines/act/rules/cf77f2/proposed/">Bypass Blocks of Repeated Content</a>
    proposed rule.
     It covers 9 of the 14 examples.
     On 5 examples
@@ -3473,7 +3470,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>css-orientation-lock</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/b33eff">Orientation of the page is not restricted using CSS transform property</a>
+  <a href="/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transform property</a>
    proposed rule.
     It covers 9 of the 10 examples.
     On 1 example
@@ -3596,7 +3593,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>bypass</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/047fe0">Document has heading for non-repeated content</a>
+  <a href="/WAI/standards-guidelines/act/rules/047fe0/proposed/">Document has heading for non-repeated content</a>
    proposed rule.
     It covers 10 of the 14 examples.
     On 2 examples
@@ -3731,7 +3728,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>bypass</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/ye5d6e">Document has an instrument to move focus to non-repeated content</a>
+  <a href="/WAI/standards-guidelines/act/rules/ye5d6e/proposed/">Document has an instrument to move focus to non-repeated content</a>
    proposed rule.
     It covers 8 of the 12 examples.
     On 2 examples
@@ -3854,7 +3851,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>bypass</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/b40fd1">Document has a landmark with non-repeated content</a>
+  <a href="/WAI/standards-guidelines/act/rules/b40fd1/proposed/">Document has a landmark with non-repeated content</a>
    proposed rule.
     It covers 5 of the 8 examples.
     On 3 examples
@@ -3951,7 +3948,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>svg-img-alt</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/7d6734">SVG element with explicit role has non-empty accessible name</a>
+  <a href="/WAI/standards-guidelines/act/rules/7d6734/proposed/">SVG element with explicit role has non-empty accessible name</a>
    proposed rule.
     It covers all 10 examples.
   
@@ -4070,7 +4067,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>empty-heading</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/ffd0e9">Heading has non-empty accessible name</a>
+  <a href="/WAI/standards-guidelines/act/rules/ffd0e9/proposed/">Heading has non-empty accessible name</a>
    proposed rule.
     It covers 14 of the 15 examples.
   
@@ -4213,7 +4210,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>duplicate-id-aria</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/3ea0c8">Id attribute value is unique</a>
+  <a href="/WAI/standards-guidelines/act/rules/3ea0c8/proposed/">Id attribute value is unique</a>
    proposed rule.
     It covers all 10 examples.
   
@@ -4332,7 +4329,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>frame-focusable-content</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/akn7bn">Iframe with negative tabindex has no interactive elements</a>
+  <a href="/WAI/standards-guidelines/act/rules/akn7bn/proposed/">Iframe with negative tabindex has no interactive elements</a>
    proposed rule.
     It covers all 6 examples.
   
@@ -4427,7 +4424,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>identical-links-same-purpose</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/b20e66">Links with identical accessible names have equivalent purpose</a>
+  <a href="/WAI/standards-guidelines/act/rules/b20e66/proposed/">Links with identical accessible names have equivalent purpose</a>
    proposed rule.
     It covers 10 of the 21 examples.
     On 11 examples
@@ -4609,7 +4606,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>button-name</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/m6b1q3">Menuitem has non-empty accessible name</a>
+  <a href="/WAI/standards-guidelines/act/rules/m6b1q3/proposed/">Menuitem has non-empty accessible name</a>
    proposed rule.
     It covers all 8 examples.
   
@@ -4716,9 +4713,13 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>meta-viewport</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/b4f0c3">Meta viewport allows for zoom</a>
+  <a href="/WAI/standards-guidelines/act/rules/b4f0c3/proposed/">Meta viewport allows for zoom</a>
    proposed rule.
-    It covers all 11 examples.
+    It covers 10 of the 11 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation reports different success criteria as failed from what is expected by this rule.
@@ -4761,31 +4762,19 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <tbody>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html">Passed Example 1</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html">Passed Example 1</a>
       </th>
       <td class="">passed</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html">Passed Example 2</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d143bfe343ecf75bceb92b6fc9807cc5f453b319.html">Passed Example 2</a>
       </th>
-      <td class="">passed</td>
+      <td class="act-untested">untested</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d97325fca0ca13bdc585ee4128c4657522bded38.html">Passed Example 3</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html">Passed Example 4</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html">Passed Example 5</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html">Passed Example 3</a>
       </th>
       <td class="">passed</td>
     </tr>
@@ -4825,6 +4814,18 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
       </th>
       <td class="">passed</td>
     </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html">Inapplicable Example 3</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html">Inapplicable Example 4</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
   </tbody>
 </table>
 
@@ -4834,7 +4835,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>object-alt</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/8fc3b6">Object element rendering non-text content has non-empty accessible name</a>
+  <a href="/WAI/standards-guidelines/act/rules/8fc3b6/proposed/">Object element rendering non-text content has non-empty accessible name</a>
    proposed rule.
     It covers all 14 examples.
   
@@ -4975,15 +4976,11 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
 <p>
   This rule is implemented by Axe-core using the
   <code>nested-interactive</code> procedure.
-  The implementation is  partially 
-   consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/307n5z">Element with presentational children has no focusable content</a>
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/307n5z/proposed/">Element with presentational children has no focusable content</a>
    proposed rule.
-    It covers 6 of the 7 examples.
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 7 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -5053,7 +5050,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html">Failed Example 1</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">passed, failed</td>
     </tr>
     <tr>
       <th>
@@ -5082,7 +5079,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>aria-roles</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/674b10">Role attribute has valid value</a>
+  <a href="/WAI/standards-guidelines/act/rules/674b10/proposed/">Role attribute has valid value</a>
    proposed rule.
     It covers all 10 examples.
   
@@ -5201,7 +5198,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>aria-required-attr</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/4e8ab6">Element with role attribute has required states and properties</a>
+  <a href="/WAI/standards-guidelines/act/rules/4e8ab6/proposed/">Element with role attribute has required states and properties</a>
    proposed rule.
     It covers all 8 examples.
   
@@ -5308,7 +5305,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>scrollable-region-focusable</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/0ssw9k">Scrollable element is keyboard accessible</a>
+  <a href="/WAI/standards-guidelines/act/rules/0ssw9k/proposed/">Scrollable element is keyboard accessible</a>
    proposed rule.
     It covers all 10 examples.
   
@@ -5432,7 +5429,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>th-has-data-cells</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/d0f69e">Table header cell has assigned cells</a>
+  <a href="/WAI/standards-guidelines/act/rules/d0f69e/proposed/">Table header cell has assigned cells</a>
    proposed rule.
     It covers 13 of the 16 examples.
     On 2 examples
@@ -5583,11 +5580,15 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
 <p>
   This rule is implemented by Axe-core using the
   <code>td-headers-attr</code> procedure.
-  The implementation is 
-    fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/a25f45">Headers attribute specified on a cell refers to cells in the same table element</a>
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/a25f45/proposed/">Headers attribute specified on a cell refers to cells in the same table element</a>
    proposed rule.
-    It covers all 16 examples.
+    It covers 16 of the 17 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -5691,13 +5692,19 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html">Failed Example 2</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html">Failed Example 2</a>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html">Failed Example 3</a>
       </th>
       <td class="">failed</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html">Failed Example 3</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html">Failed Example 4</a>
       </th>
       <td class="">failed</td>
     </tr>
@@ -5740,7 +5747,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>color-contrast</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/afw4f7">Text has minimum contrast</a>
+  <a href="/WAI/standards-guidelines/act/rules/afw4f7/proposed/">Text has minimum contrast</a>
    proposed rule.
     It covers 21 of the 28 examples.
     On 7 examples
@@ -5976,7 +5983,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>color-contrast-enhanced</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/09o5cg">Text has enhanced contrast</a>
+  <a href="/WAI/standards-guidelines/act/rules/09o5cg/proposed/">Text has enhanced contrast</a>
    proposed rule.
     It covers 22 of the 29 examples.
     On 7 examples
@@ -6213,7 +6220,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>label-content-name-mismatch</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/2ee8b8">Visible label is part of accessible name</a>
+  <a href="/WAI/standards-guidelines/act/rules/2ee8b8/proposed/">Visible label is part of accessible name</a>
    proposed rule.
     It covers 12 of the 13 examples.
     On 1 example
@@ -6410,9 +6417,9 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1656014488153756472"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1656014488153756472"></script>
 <script>
   svg4everybody();
 </script><script>

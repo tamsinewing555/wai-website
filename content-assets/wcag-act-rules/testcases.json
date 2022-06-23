@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1131,
+  "count": 1134,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -19389,26 +19389,8 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
-    },
-    {
-      "ruleId": "b4f0c3",
-      "ruleName": "Meta viewport allows for zoom",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
       "testcaseId": "312146d84331c7214ed6919391ad955098eff516",
-      "testcaseTitle": "Passed Example 2",
+      "testcaseTitle": "Passed Example 1",
       "relativePath": "testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
@@ -19425,28 +19407,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "d97325fca0ca13bdc585ee4128c4657522bded38",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/b4f0c3/d97325fca0ca13bdc585ee4128c4657522bded38.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d97325fca0ca13bdc585ee4128c4657522bded38.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
-    },
-    {
-      "ruleId": "b4f0c3",
-      "ruleName": "Meta viewport allows for zoom",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "a36115d7110156fde2fe6187dbb49402096f82fb",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html",
+      "testcaseId": "d143bfe343ecf75bceb92b6fc9807cc5f453b319",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/b4f0c3/d143bfe343ecf75bceb92b6fc9807cc5f453b319.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d143bfe343ecf75bceb92b6fc9807cc5f453b319.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
     },
     {
@@ -19462,7 +19426,7 @@
       },
       "expected": "passed",
       "testcaseId": "4ade33e41dda291c9078e56ca2a95c4825dbc1fe",
-      "testcaseTitle": "Passed Example 5",
+      "testcaseTitle": "Passed Example 3",
       "relativePath": "testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
@@ -19573,6 +19537,42 @@
       "testcaseTitle": "Inapplicable Example 2",
       "relativePath": "testcases/b4f0c3/fe4a93d2631e7c54f1c00e3c56e04c927b5144c1.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/fe4a93d2631e7c54f1c00e3c56e04c927b5144c1.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "a36115d7110156fde2fe6187dbb49402096f82fb",
+      "testcaseTitle": "Inapplicable Example 4",
+      "relativePath": "testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
     },
     {
@@ -22113,8 +22113,32 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a",
+      "testcaseId": "cd25fd6cc4fde1734fc90c2f11e71886e3458007",
       "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a",
+      "testcaseTitle": "Failed Example 3",
       "relativePath": "testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
@@ -22138,7 +22162,7 @@
       },
       "expected": "failed",
       "testcaseId": "1bdbd209a611d68876d5b6e37541f7ddc2038f97",
-      "testcaseTitle": "Failed Example 3",
+      "testcaseTitle": "Failed Example 4",
       "relativePath": "testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
@@ -26633,6 +26657,42 @@
       "testcaseTitle": "Failed Example 3",
       "relativePath": "testcases/59br37/ef39fe61d9b0093a3a886c3482d69adc7aeabd52.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef39fe61d9b0093a3a886c3482d69adc7aeabd52.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/59br37/proposed/"
+    },
+    {
+      "ruleId": "59br37",
+      "ruleName": "Zoomed text node is not clipped with CSS overflow",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "fc598e8d60950941aae5070b17eb4ca1d4bd3bdf",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/59br37/proposed/"
+    },
+    {
+      "ruleId": "59br37",
+      "ruleName": "Zoomed text node is not clipped with CSS overflow",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "3665c0599c286b1b3060aee795009ab5b8942a14",
+      "testcaseTitle": "Failed Example 5",
+      "relativePath": "testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/59br37/proposed/"
     },
     {

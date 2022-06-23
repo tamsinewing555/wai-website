@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1655922033776762924";
+      element.src = "/WAI/assets/scripts/main.js?1656014488153756472";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1655922033776762924">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1656014488153756472">
 
-<title> Headers attribute specified on a cell refers to cells in the same table element[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1655922033776762924"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Headers attribute specified on a cell refers to cells in the same table element[proposed] | Test Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1656014488153756472"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Headers attribute specified on a cell refers to cells in the same table element" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -603,7 +603,28 @@ h2#sidebar-header {
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html">Open in a new tab</a></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">td</code> elements have a <code class="language-plaintext highlighter-rouge">headers</code> attribute referring to an ID that exist in a separate <code class="language-plaintext highlighter-rouge">table</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table&gt;</span>
+	<span class="nt">&lt;tr&gt;</span>
+		<span class="nt">&lt;th</span> <span class="na">id=</span><span class="s">"headOfColumn1"</span><span class="nt">&gt;</span>Projects<span class="nt">&lt;/th&gt;</span>
+		<span class="nt">&lt;th</span> <span class="na">id=</span><span class="s">"headOfColumn2"</span><span class="nt">&gt;</span>Objective<span class="nt">&lt;/th&gt;</span>
+	<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+
+<span class="nt">&lt;table&gt;</span>
+	<span class="nt">&lt;tr&gt;</span>
+		<span class="nt">&lt;td</span> <span class="na">headers=</span><span class="s">"headOfColumn1"</span><span class="nt">&gt;</span>15%<span class="nt">&lt;/td&gt;</span>
+		<span class="nt">&lt;td</span> <span class="na">headers=</span><span class="s">"headOfColumn2"</span><span class="nt">&gt;</span>10%<span class="nt">&lt;/td&gt;</span>
+	<span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-3">Failed Example 3</h4>
+
+<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html">Open in a new tab</a></p>
 
 <p>The <code class="language-plaintext highlighter-rouge">td</code> element has a <code class="language-plaintext highlighter-rouge">headers</code> attribute referring to its own ID.</p>
 
@@ -619,9 +640,9 @@ h2#sidebar-header {
 <span class="nt">&lt;/table&gt;</span>
 </code></pre></div></div>
 
-<h4 id="failed-example-3">Failed Example 3</h4>
+<h4 id="failed-example-4">Failed Example 4</h4>
 
-<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html">Open in a new tab</a></p>
 
 <p>The <code class="language-plaintext highlighter-rouge">headers</code> attribute on the data cells in the second row refers to an element inside the same <code class="language-plaintext highlighter-rouge">table</code> which does not have a role of <code class="language-plaintext highlighter-rouge">rowheader</code> or <code class="language-plaintext highlighter-rouge">columnheader</code>.</p>
 
@@ -855,22 +876,36 @@ h2#sidebar-header {
         <tr>
           <td>Alfa 0.36.0</td>
           <td>Automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-a25f45"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
+          <td>Axe DevTools Pro 4.24.5</td>
+          <td>Semi-automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-a25f45"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
           <td>Axe-core 4.5.0-prerelease</td>
           <td>Automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-a25f45"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
+          <td>Equal Access Accessibility Checker 3.1.33-rc</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-a25f45"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
           <td>QualWeb 3.0.0</td>
           <td>Automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-a25f45"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
     </tbody>
@@ -902,7 +937,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> a25f45</p>
-<p><strong>Date:</strong> Updated 21 June 2022</p>
+<p><strong>Date:</strong> Updated 23 June 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -943,9 +978,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1655922033776762924"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1656014488153756472"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1655922033776762924"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1656014488153756472"></script>
 <script>
   svg4everybody();
 </script><script>
