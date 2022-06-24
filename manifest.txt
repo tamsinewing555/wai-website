@@ -98,8 +98,8 @@
 /ARIA/apg/example-index/js/app.js
 /ARIA/apg/example-index/js/examples.js
 /ARIA/apg/example-index/js/highlight.pack.js
-/ARIA/apg/example-index/js/jumpto.js
 /ARIA/apg/example-index/js/notice.html
+/ARIA/apg/example-index/js/skipto.js
 /ARIA/apg/example-index/js/utils.js
 /ARIA/apg/example-index/landmarks/HTML5.html
 /ARIA/apg/example-index/landmarks/at.html
@@ -2336,6 +2336,7 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
+/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
