@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1656064303033515074";
+      element.src = "/WAI/assets/scripts/main.js?1656521418164254524";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1656064303033515074">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1656521418164254524">
 
-<title> Axe-core ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1656064303033515074"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Axe-core ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1656521418164254524"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Axe-core ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -48,18 +48,16 @@
       <header class="minimal-header" id="site-header">
   <div class="minimal-header-container">
     <div class="minimal-header-name">
-      
-          WCAG 2 Test Rules
-        
+      <a href="/WAI/standards-guidelines/act/rules/">
+          ACT Rules
+        </a>
     </div>
     
       <p class="minimal-header-subtitle">
-          For developers of evaluation tools and test methodologies
+          Rules for accessibility conformance testing (ACT)
       </p>
     
   </div>
-  
-  <a class="minimal-header-link" href="/WAI/standards-guidelines/act/rules/about/">About WCAG 2 Test Rules</a>
   
   <div class="minimal-header-logo">
         <a href="http://w3.org/">
@@ -76,18 +74,22 @@
     <div class="default-grid nav-container">
         <div class="nav" >
           
-          
-          <nav class="nav standalone-resource-pager" aria-label="false">
+           <nav class="nav" aria-label="false">
             <ul>
-                <li class="nav__item">
-                    <a href="/WAI/standards-guidelines/act/rules/">All Test Rules</a>
-                
-                </li>
-
-                
+            
+                <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/">All Rules</a></li>
+            
+                <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/about/">About</a></li>
+            
+                <li class="nav__item"><a href="/WAI/standards-guidelines/act/implementations/">Implementations</a></li>
+            
+            <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
+                All WCAG 2 Guidance
+                <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/WAI/assets/images/icons.svg#icon-different-view"></use></svg>
+            </a></li>
             </ul>
           </nav>
-        
+          
         </div>
     </div>
     <div class="default-grid with-gap leftcol">
@@ -327,13 +329,13 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>WCAG 2 rules</th>
-    <td>9</td>
-    <td>2</td>
+    <td>11</td>
+    <td>3</td>
   </tr>
   <tr>
     <th>Proposed rules</th>
-    <td>11</td>
-    <td>16</td>
+    <td>9</td>
+    <td>15</td>
   </tr>
 </tbody></table>
 
@@ -637,8 +639,8 @@ h2#sidebar-header {
         <td><a href="#breakdown-7d6734">
           SVG element with explicit role has non-empty accessible name
         </a></td>
-        <td> Proposed Rule
-        </td>
+        <td>
+          WCAG 2 Rule </td>
         <td>
           Consistent </td>
       </tr>
@@ -775,8 +777,8 @@ h2#sidebar-header {
         <td><a href="#breakdown-307n5z">
           Element with presentational children has no focusable content
         </a></td>
-        <td> Proposed Rule
-        </td>
+        <td>
+          WCAG 2 Rule </td>
         <td>
           Consistent </td>
       </tr>
@@ -839,8 +841,8 @@ h2#sidebar-header {
         <td><a href="#breakdown-a25f45">
           Headers attribute specified on a cell refers to cells in the same table element
         </a></td>
-        <td> Proposed Rule
-        </td>
+        <td>
+          WCAG 2 Rule </td>
         <td> Partial
         </td>
       </tr>
@@ -2673,7 +2675,6 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html">Passed Example 11</a>
-          <abbr title="Proposed example">*</abbr>
       </th>
       <td class="">passed</td>
       <td class="">inapplicable</td>
@@ -2681,7 +2682,6 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html">Failed Example 11</a>
-          <abbr title="Proposed example">*</abbr>
       </th>
       <td class="">failed</td>
       <td class="
@@ -2689,10 +2689,6 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     </tr>
   </tbody>
 </table>
-<p>
-  *: These examples are not yet approved for the rule. Results on these outcomes are not
-  taken into consideration determining the consistency and coverage.
-</p>
 
 <h3 id="breakdown-5f99a7">ARIA attribute is defined in WAI-ARIA</h3>
 <p>
@@ -3948,8 +3944,8 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>svg-img-alt</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/7d6734/proposed/">SVG element with explicit role has non-empty accessible name</a>
-   proposed rule.
+  <a href="/WAI/standards-guidelines/act/rules/7d6734">SVG element with explicit role has non-empty accessible name</a>
+  WCAG 2 rule. 
     It covers all 10 examples.
   
   
@@ -4978,8 +4974,8 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>nested-interactive</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/307n5z/proposed/">Element with presentational children has no focusable content</a>
-   proposed rule.
+  <a href="/WAI/standards-guidelines/act/rules/307n5z">Element with presentational children has no focusable content</a>
+  WCAG 2 rule. 
     It covers all 7 examples.
   
   
@@ -5582,8 +5578,8 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   <code>td-headers-attr</code> procedure.
   The implementation is  partially 
    consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/a25f45/proposed/">Headers attribute specified on a cell refers to cells in the same table element</a>
-   proposed rule.
+  <a href="/WAI/standards-guidelines/act/rules/a25f45">Headers attribute specified on a cell refers to cells in the same table element</a>
+  WCAG 2 rule. 
     It covers 16 of the 17 examples.
   
     For 1 example
@@ -6417,9 +6413,9 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1656064303033515074"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1656521418164254524"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1656064303033515074"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1656521418164254524"></script>
 <script>
   svg4everybody();
 </script><script>
