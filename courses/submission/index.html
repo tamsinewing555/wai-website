@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1656594886031354043";
+      element.src = "/WAI/assets/scripts/main.js?1656601882379329316";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1656594886031354043">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1656601882379329316">
 
 <title> Submit a course, training, or certification on digital accessibility | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -907,7 +907,7 @@ function onSubmit(e) {
 
 
 
-  <form name="submission" method="post" action="https://wai-website.netlify.app/.netlify/functions/list-submission">
+  <form name="submission" method="post" action="https://wai-website.netlify.app/.netlify/functions/list-submission" data-wai-form="checkbox-required-group">
     <input type="hidden" name="form_name" value="submission" />
         
         <input type="hidden" name="form_version" value="1" />
@@ -3227,7 +3227,7 @@ function onSubmit(e) {
     <script>
       // Adds check for one or more checkboxes in a required group
       // TODO handle more than one form
-      const form = document.querySelector('form')
+      const form = document.querySelector('form[data-wai-form="checkbox-required-group"]')
       const submitButton = form.querySelector('button[type="submit"]')
       submitButton.addEventListener('click', (event) => {
         const requiredCheckboxes = form.querySelectorAll('input[type="checkbox"][required][group]')
@@ -4190,9 +4190,9 @@ function getPreviewSubmission() {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1656594886031354043"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1656601882379329316"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1656594886031354043"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1656601882379329316"></script>
 <script>
   svg4everybody();
 </script><script>
