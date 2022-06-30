@@ -407,6 +407,7 @@
 /about/sponsoring/index.html
 /about/translating/index.html
 /about/using-wai-material/index.html
+/adapt/index.html
 /assets/ableplayer/.gitattributes
 /assets/ableplayer/.gitignore
 /assets/ableplayer/Gruntfile.js
@@ -2336,7 +2337,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2550,7 +2550,6 @@
 /people-use-web/user-stories/es.html
 /people-use-web/user-stories/fr.html
 /people-use-web/user-stories/index.html
-/personalization/index.html
 /perspective-videos/acknowledgements/index.html
 /perspective-videos/captions/index.html
 /perspective-videos/cc/captions-en.vtt
