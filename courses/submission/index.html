@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1657684689861914950";
+      element.src = "/WAI/assets/scripts/main.js?1657738106606077946";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1657684689861914950">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1657738106606077946">
 
 <title> Submit a course, training, or certification on digital accessibility | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -2084,11 +2084,11 @@ function onSubmit(e) {
   <p class="expl" id="expl_topics">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
   <div class="line">
     <label for="topics_1" class="label_input">Topic 1 (Required)</label>
-    <input type="text" id="topics_1" name="topics" required="" />
+    <input type="text" id="topics_1" name="topics[]" required="" />
   </div>
   <div class="proto">
     <label for="topics_[n]" class="label_input">Topic [n]</label>
-    <input type="text" id="topics_[n]" name="topics" class="input_hidden" disabled="" />
+    <input type="text" id="topics_[n]" name="topics[]" class="input_hidden" disabled="" />
   </div>
   <button type="button" class="add_line button-small">Add new topic</button>
   <button type="button" class="remove_line button-small" disabled="">Remove last topic</button>
@@ -4190,9 +4190,9 @@ function getPreviewSubmission() {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1657684689861914950"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1657738106606077946"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1657684689861914950"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1657738106606077946"></script>
 <script>
   svg4everybody();
 </script><script>
