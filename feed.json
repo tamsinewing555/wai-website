@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-07-05/SAUR/",
+            "title": "Multimedia Synchronization Accessibility User Requirements - Note Published",
+            "summary": null,
+            "content_text": "Synchronization Accessibility User Requirements (\"SAUR\") describes accessibility-related user needs and requirements for audio and visual media synchronization. It covers synchronization of captions, sign language interpretation, and description. The requirements are applicable to multimedia content in general, as well as to real-time communication applications and to media in immersive environments.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/saur/\">Synchronization Accessibility User Requirements</a> (\"SAUR\") describes accessibility-related user needs and requirements for audio and visual media synchronization. It covers synchronization of captions, sign language interpretation, and description. The requirements are applicable to multimedia content in general, as well as to real-time communication applications and to media in immersive environments.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-07-05/SAUR/",
+            
+            
+            
+            
+            
+            "date_published": "2022-07-05T00:00:00+00:00",
+            "date_modified": "2022-07-05T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2022-06-09/course-submission/",
             "title": "Accessibility Course List – Submit a course, training, or certification",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2020-02-27T00:00:00+00:00",
             "date_modified": "2020-02-27T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2020-02-13/XAUR/",
-            "title": "For Review: XR Accessibility User Requirements (XAUR) First Draft",
-            "summary": null,
-            "content_text": "The First Public Working Draft of the Working Group Note XR Accessibility User Requirements (XAUR) is now available for review. The XAUR document describes the needs of people with disabilities in virtual or immersive environments (XR). It includes requirements for XR to be accessible. XAUR is for designers and developers who are involved in creating XR experiences. It is also useful for anyone who wants to better understand XR accessibility. We would particularly like input on any user needs or requirements that are missing from this draft. For more information, see the blog post XR Accessibility User Requirements – call for review.",
-            "content_html": "<p>The First Public Working Draft of the Working Group Note <a href=\"https://www.w3.org/TR/xaur/\">XR Accessibility User Requirements (XAUR)</a> is now available for review. The XAUR document describes the needs of people with disabilities in virtual or immersive environments (XR). It includes requirements for XR to be accessible. XAUR is for designers and developers who are involved in creating XR experiences. It is also useful for anyone who wants to better understand XR accessibility. We would particularly like input on any user needs or requirements that are missing from this draft. For more information, see the blog post <a href=\"https://www.w3.org/blog/2020/03/xr-accessibility-user-requirements-call-for-review/\">XR Accessibility User Requirements – call for review</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2020-02-13/XAUR/",
-            
-            
-            
-            
-            
-            "date_published": "2020-02-13T00:00:00+00:00",
-            "date_modified": "2020-02-13T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"

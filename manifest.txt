@@ -2338,7 +2338,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2501,6 +2500,7 @@
 /news/2022-05-17/remote-meetings/index.html
 /news/2022-05-19/ARIA-APG-redesign/index.html
 /news/2022-06-09/course-submission/index.html
+/news/2022-07-05/SAUR/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
