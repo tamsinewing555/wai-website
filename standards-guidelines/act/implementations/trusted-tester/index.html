@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1657811417479239804";
+      element.src = "/WAI/assets/scripts/main.js?1657815574759146025";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1657811417479239804">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1657815574759146025">
 
-<title> Trusted Tester ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1657811417479239804"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Trusted Tester ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1657815574759146025"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Trusted Tester ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -331,12 +331,12 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>WCAG 2 rules</th>
-    <td>0</td>
+    <td>2</td>
     <td>0</td>
   </tr>
   <tr>
     <th>Proposed rules</th>
-    <td>7</td>
+    <td>8</td>
     <td>4</td>
   </tr>
 </tbody></table>
@@ -363,11 +363,31 @@ h2#sidebar-header {
     
     
     
+      <tr>
+        <td><a href="#breakdown-b5c3f8">
+          HTML page has lang attribute
+        </a></td>
+        <td>
+          WCAG 2 Rule </td>
+        <td>
+          Consistent </td>
+      </tr>
     
     
     
     
     
+    
+    
+      <tr>
+        <td><a href="#breakdown-2779a5">
+          HTML page has non-empty title
+        </a></td>
+        <td>
+          WCAG 2 Rule </td>
+        <td>
+          Consistent </td>
+      </tr>
     
     
     
@@ -597,6 +617,16 @@ h2#sidebar-header {
     
     
     
+      <tr>
+        <td><a href="#breakdown-oj04fd">
+          Element in sequential focus order has visible focus
+        </a></td>
+        <td> Proposed Rule
+        </td>
+        <td>
+          Consistent </td>
+      </tr>
+    
     
     
     
@@ -662,6 +692,232 @@ h2#sidebar-header {
 <h2 id="implementationdetails">Implementation Details</h2>
 
 
+
+<h3 id="breakdown-b5c3f8">HTML page has lang attribute</h3>
+<p>
+  This rule is implemented by Trusted Tester using the
+  <code>3.1.1-page-language-defined</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/b5c3f8">HTML page has lang attribute</a>
+  WCAG 2 rule. 
+    It covers all 7 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+      
+        <ul>
+          <li>
+            3.1.1
+            Language of Page
+          </li>
+        </ul>
+      
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            3.1.1
+            Language of Page
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>3.1.1-page-language-defined</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/f8214944f374b25c3ce42bd92a4304d38a2309dc.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/941efb7368e46b27b937d34b07fc4d41da01b002.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/36f0f321c8aa6e8c0a5ee08b15e8f1442ad762fd.html">Failed Example 2</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/5636ffbff7668ca38610e36905889df90a92f485.html">Failed Example 3</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4885abc44ca092b3d07a3f8e855dbcbf33f6c66b.html">Failed Example 4</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/297b27cc9c3500b77e72320d73ad8252aede9bb8.svg">Inapplicable Example 1</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/af7eaac588fa1a23884d30f93ed50c2f1779c2fa.xml">Inapplicable Example 2</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="breakdown-2779a5">HTML page has non-empty title</h3>
+<p>
+  This rule is implemented by Trusted Tester using the
+  <code>2.4.2-page-title-defined</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/2779a5">HTML page has non-empty title</a>
+  WCAG 2 rule. 
+    It covers all 11 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+      
+        <ul>
+          <li>
+            2.4.2
+            Page Titled
+          </li>
+        </ul>
+      
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            2.4.2
+            Page Titled
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>2.4.2-page-title-defined</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/7f9f315b5041f3726662bf269613c43678af99d4.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/64771c390e57375a822a7223362ea7bb859c0a96.html">Passed Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/6b3d2e2147cfc618b744f2dabfaf2e66327055d7.html">Passed Example 3</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/efa1e0438bb515332ec6b4d943044c336ca77fab.html">Passed Example 4</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/0ad882dffaf6edd16058119e1c513b4746b0ac27.html">Passed Example 5</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/820fb18c9bb20fb1a940a0806a87c6f6e468bb5b.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/314d991fa5328e41f8a806bfbac84d748b41f7ed.html">Failed Example 2</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/5fd6fda771cf8810eef5166464622d6979e0406e.html">Failed Example 3</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/a14968698b0e95b6624f187d4538e320e4fa8952.html">Failed Example 4</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/4eeff9c95f15e90ca5abc972079112d1ea5c3d51.html">Failed Example 5</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Inapplicable Example 1</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="breakdown-e7aa44">Audio element content has text alternative</h3>
 <p>
@@ -1928,6 +2184,119 @@ h2#sidebar-header {
   </tbody>
 </table>
 
+<h3 id="breakdown-oj04fd">Element in sequential focus order has visible focus</h3>
+<p>
+  This rule is implemented by Trusted Tester using the
+  <code>2.4.7-focus-visible</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/oj04fd/proposed/">Element in sequential focus order has visible focus</a>
+   proposed rule.
+    It covers all 9 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+      
+        <ul>
+          <li>
+            2.4.7
+            Focus Visible
+          </li>
+        </ul>
+      
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            2.4.7
+            Focus Visible
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>2.4.7-focus-visible</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/abc8e8ea2752ecd3cd92f18b457bde3738f5d23f.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/5ac8e9939b5aff9f07e5c2e3b295dd15d814ae30.html">Passed Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/4efb68e27fc5c5bec5349331d80f58879254e94e.html">Passed Example 3</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/dd9628d86628e285fe99ce98efdacbe441c20ca5.html">Passed Example 4</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/70adae819928e7235dc91d7d0b4a6b195a08ad5a.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/90789ad82a761b7697418e8cb403db103f0925a2.html">Inapplicable Example 1</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/52be6331dc0978990a8b806a9a4a84bf738a43e1.html">Inapplicable Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/b12f1f45eef29c30197ca3bda79d793cd90eeadd.html">Inapplicable Example 3</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/ef877d377b4814d96d90274011e7304e14c59245.html">Inapplicable Example 4</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="breakdown-f51b46">Video element auditory content has captions</h3>
 <p>
   This rule is implemented by Trusted Tester using the
@@ -2090,9 +2459,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1657811417479239804"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1657815574759146025"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1657811417479239804"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1657815574759146025"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -620,6 +620,7 @@
 /content-assets/wcag-act-rules/earl/equal-access.json
 /content-assets/wcag-act-rules/earl/qualweb.json
 /content-assets/wcag-act-rules/earl/sort-site.json
+/content-assets/wcag-act-rules/earl/sortsite.json
 /content-assets/wcag-act-rules/earl/trusted-tester.json
 /content-assets/wcag-act-rules/test-assets/0va7u6/bigA.png
 /content-assets/wcag-act-rules/test-assets/0va7u6/books.jpg
@@ -2709,7 +2710,7 @@
 /standards-guidelines/act/implementations/equal-access/index.html
 /standards-guidelines/act/implementations/index.html
 /standards-guidelines/act/implementations/qualweb/index.html
-/standards-guidelines/act/implementations/sort-site/index.html
+/standards-guidelines/act/implementations/sortsite/index.html
 /standards-guidelines/act/implementations/trusted-tester/index.html
 /standards-guidelines/act/index.html
 /standards-guidelines/act/rules/047fe0/proposed/index.html
