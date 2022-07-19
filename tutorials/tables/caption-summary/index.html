@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1657904801227946785";
+      element.src = "/WAI/assets/scripts/main.js?1658196695590310639";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1657904801227946785">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1658196695590310639">
 
 <title> Caption &amp; Summary | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -174,7 +174,37 @@
         
           Caption &amp; Summary
         </h1><p>in <a lang="en" href="/WAI/tutorials/tables/"><span>Tables Tutorial</span></a></p></header>
-    <p><img src="/WAI/content-images/wai-tutorials/tables/img-caption.png" alt="" class=" small right" /> Captions and summaries provide information that can help users find, navigate, and understand tables. While they are not required in every case to meet WCAG, captions and summaries are fairly straightforward ways to provide such information that is often needed.</p>
+    <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Overview </h2></header><div class="box-i">
+
+<p><img src="/WAI/content-images/wai-tutorials/tables/img-caption.png" alt="" class=" small right" /> Captions and summaries provide information that can help users find, navigate, and understand tables. While they are not required in every case to meet WCAG, captions and summaries are fairly straightforward ways to provide such information that is often needed.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#identifying-a-table-using-a-caption" id="markdown-toc-identifying-a-table-using-a-caption">Identifying a table using a caption</a></li>
+  <li><a href="#summaries-for-more-complex-tables" id="markdown-toc-summaries-for-more-complex-tables">Summaries for more complex tables</a>    <ul>
+      <li><a href="#nesting-summary-inside-the-caption-element" id="markdown-toc-nesting-summary-inside-the-caption-element">Nesting summary inside the <code class="language-plaintext highlighter-rouge">&lt;caption&gt;</code> element</a></li>
+      <li><a href="#using-aria-describedby-to-provide-a-table-summary" id="markdown-toc-using-aria-describedby-to-provide-a-table-summary">Using <code class="language-plaintext highlighter-rouge">aria-describedby</code> to provide a table summary</a></li>
+      <li><a href="#using-the-figure-element-to-mark-up-a-table-summary" id="markdown-toc-using-the-figure-element-to-mark-up-a-table-summary">Using the <code class="language-plaintext highlighter-rouge">&lt;figure&gt;</code> element to mark up a table summary</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
 
 <ul>
   <li>
@@ -491,66 +521,6 @@
 
 </div></aside>
 
-<h3 class="ap" id="using-the-summary-attribute">Using the <code class="language-plaintext highlighter-rouge">summary</code> attribute</h3>
-
-<aside class="box box-simple box-notes"><header class="box-h  box-h-simple box-h-notes"> Note</header><div class="box-i">
-
-<p><strong>The <code class="language-plaintext highlighter-rouge">summary</code> attribute is deprecated in HTML5.</strong></p>
-
-</div></aside>
-
-<p>In this approach, the summary text is in the <code class="language-plaintext highlighter-rouge">summary</code> attribute of the table. Such summaries are not displayed visually. They are commonly only available to screen reader users.</p>
-
-<p>See WCAG technique <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H73">H73: Using the summary attribute of the table element to give an overview of data tables</a> for advice on the summary attribute.</p>
-
-<aside class="box box-example"><header class="box-h  box-h-example"> Example</header><div class="box-i">
-
-<table summary="Column one has the location and size of accommodation, other columns show the type and number of properties available.">
-  <caption>Paris: Availability of holiday accommodation</caption>
-  <thead>
-    <tr>
-      <td></td>
-      <th id="stud" scope="col"> Studio </th>
-      <th id="apt" scope="col"> <abbr title="Apartment">Apt</abbr> </th>
-      <th id="chal" scope="col"> Chalet </th>
-      <th id="villa" scope="col"> Villa </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th headers="par" id="pbed1"> 1 bedroom </th>
-      <td headers="par pbed1 stud"> 11 </td>
-      <td headers="par pbed1 apt"> 20 </td>
-      <td headers="par pbed1 chal"> 25 </td>
-      <td headers="par pbed1 villa"> 23 </td>
-    </tr>
-    <tr>
-      <th headers="par" id="pbed2"> 2 bedroom </th>
-      <td headers="par pbed2 stud"> - </td>
-      <td headers="par pbed2 apt"> 43 </td>
-      <td headers="par pbed2 chal"> 52 </td>
-      <td headers="par pbed2 villa"> 32 </td>
-    </tr>
-    <tr>
-      <th headers="par" id="pbed3"> 3 bedroom </th>
-      <td headers="par pbed3 stud"> - </td>
-      <td headers="par pbed3 apt"> 13 </td>
-      <td headers="par pbed3 chal"> 15 </td>
-      <td headers="par pbed3 villa"> 40 </td>
-    </tr>
-  </tbody>
-</table>
-
-</div></aside>
-
-<aside class="box box-example"><header class="box-h  box-h-example"> Code Snippet</header><div class="box-i">
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">summary=</span><span class="s">"Column one has the location and size of accommodation, other columns show the type and number of properties available."</span><span class="nt">&gt;</span>
-</code></pre></div></div>
-
-</div></aside>
-
 
     
       <aside class="box box-large box-icon" id="related"><header class="box-h  box-h-large box-h-icon box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-default "><use xlink:href="/WAI/assets/images/icons.svg#icon-default"></use></svg> Related WCAG resources</header><div class="box-i">
@@ -558,7 +528,7 @@
 
 
   <p><strong>Techniques:</strong></p>
-  <ul><li><a href="https://www.w3.org/TR/WCAG20-TECHS/H39">H39: Using caption elements to associate data table captions with data tables</a></li><li><a href="https://www.w3.org/TR/WCAG20-TECHS/H73">H73: Using the summary attribute of the table element</a></li></ul>
+  <ul><li><a href="https://www.w3.org/TR/WCAG20-TECHS/H39">H39: Using caption elements to associate data table captions with data tables</a></li></ul>
 
 </div></aside>
 
@@ -695,9 +665,9 @@
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1657904801227946785"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1658196695590310639"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1657904801227946785"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1658196695590310639"></script>
 <script>
   svg4everybody();
 </script><script>
