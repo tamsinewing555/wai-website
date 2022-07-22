@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-07-22/remote-meetings/",
+            "title": "Accessibility of Remote Meetings - Note Published",
+            "summary": null,
+            "content_text": "How to Make Your Presentations and Meetings Accessible to All now has a more detailed companion resource: Accessibility of Remote Meetings. Accessibility of Remote Meetings provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participting in remote meetings and hybrid meetings.",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">How to Make Your Presentations and Meetings Accessible to All</a> now has a more detailed companion resource: <a href=\"https://www.w3.org/TR/remote-meetings/\">Accessibility of Remote Meetings</a>. <cite>Accessibility of Remote Meetings</cite> provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participting in remote meetings and hybrid meetings.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-07-22/remote-meetings/",
+            
+            
+            
+            
+            
+            "date_published": "2022-07-22T00:00:00+00:00",
+            "date_modified": "2022-07-22T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2022-07-05/SAUR/",
             "title": "Multimedia Synchronization Accessibility User Requirements - Note Published",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2020-03-10T00:00:00+00:00",
             "date_modified": "2020-03-10T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2020-02-27/wcag-2-2/",
-            "title": "Notice: Web Content Accessibility Guidelines (WCAG) 2.2 in Development",
-            "summary": null,
-            "content_text": "The Accessibility Guidelines Working Group (AG WG) has published a First Public Working Draft of WCAG 2.2. Additional success criteria in development for 2.2 address the needs of people with cognitive or learning disabilities, users of mobile devices, and users of ebooks. For information on what’s new in this draft and upcoming work, see the blog post Web Content Accessibility Guidelines (WCAG) 2.2 in Development.",
-            "content_html": "<p>The Accessibility Guidelines Working Group (<a href=\"https://www.w3.org/WAI/GL/\">AG WG</a>) has published a First Public Working Draft of <a href=\"https://www.w3.org/TR/WCAG22/\">WCAG 2.2</a>. Additional success criteria in development for 2.2 address the needs of people with cognitive or learning disabilities, users of mobile devices, and users of ebooks. For information on what’s new in this draft and upcoming work, see the blog post <a href=\"https://www.w3.org/blog/2020/02/wcag-22-in-development/\">Web Content Accessibility Guidelines (WCAG) 2.2 in Development</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2020-02-27/wcag-2-2/",
-            
-            
-            
-            
-            
-            "date_published": "2020-02-27T00:00:00+00:00",
-            "date_modified": "2020-02-27T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
