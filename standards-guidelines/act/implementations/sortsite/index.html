@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1659476699699909235";
+      element.src = "/WAI/assets/scripts/main.js?1659622095287930942";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1659476699699909235">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1659622095287930942">
 
-<title> SortSite ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1659476699699909235"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> SortSite ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1659622095287930942"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="SortSite ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -331,7 +331,7 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>Proposed rules</th>
-    <td>22</td>
+    <td>21</td>
     <td>2</td>
   </tr>
 </tbody></table>
@@ -783,16 +783,6 @@ h2#sidebar-header {
       </tr>
     
     
-    
-      <tr>
-        <td><a href="#breakdown-bc659a">
-          Meta element has no refresh delay
-        </a></td>
-        <td> Proposed Rule
-        </td>
-        <td>
-          Consistent </td>
-      </tr>
     
     
     
@@ -5416,175 +5406,6 @@ h2#sidebar-header {
   </tbody>
 </table>
 
-<h3 id="breakdown-bc659a">Meta element has no refresh delay</h3>
-<p>
-  This rule is implemented by SortSite using the
-  <code>AccHtmlMetaRefresh</code> procedure.
-  The implementation is 
-    fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/bc659a/proposed/">Meta element has no refresh delay</a>
-   proposed rule.
-    It covers all 15 examples.
-  
-  
-    The implementation correctly reports which success criteria are failed by this rule.
-  
-  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
-</p>
-
-
-<table class="act-requirements">
-  <caption>Success Criteria</caption>
-  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
-  <tr>
-    <td>
-      
-        <ul>
-          <li>
-            2.2.1
-            Timing Adjustable
-          </li>
-        
-          <li>
-            2.2.4
-            Interruptions
-          </li>
-        
-          <li>
-            3.2.5
-            Change on Request
-          </li>
-        </ul>
-      
-    </td>
-
-    <td>
-      
-        <ul>
-          <li>
-            2.2.1
-            Timing Adjustable
-          </li>
-        
-          <li>
-            2.2.4
-            Interruptions
-          </li>
-        
-          <li>
-            3.2.5
-            Change on Request
-          </li>
-        </ul>
-      
-    </td>
-  </tr>
-</tbody></table>
-
-
-<table class="act-example-outcomes">
-  <caption>Test Results</caption>
-  <thead>
-    <tr>
-      <th></th>
-      <th>AccHtmlMetaRefresh</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/49d79a4e4e4a994a8eb7cf2eaf59c99d2251cac5.html">Passed Example 1</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/d48be8e9b638b9c27714cb3118a335376ed65f0f.html">Passed Example 2</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b5ca868de7980f6944142ecdb849f47ad2cdfb5c.html">Passed Example 3</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html">Failed Example 1</a>
-      </th>
-      <td class="">failed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b134b6aa2851b2e3ee5d1fbca056c2b706776a98.html">Failed Example 2</a>
-      </th>
-      <td class="">failed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/7ce73a0a773528b21f497c3f0600ceb9f1b0097f.html">Failed Example 3</a>
-      </th>
-      <td class="">failed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/3824cfe765c82569066863a2276c428cc9ebd82c.html">Failed Example 4</a>
-      </th>
-      <td class="">failed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/3761ce87e64549073f62df26071fbde9850e649e.html">Inapplicable Example 1</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/9a3bda5ec60f149807ec999ca430dce67f295846.html">Inapplicable Example 2</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a943b8cfaefd7d7b16fefc36bc24eed2ce89a4e8.html">Inapplicable Example 3</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/e6e51895cab42ee6adf2ade5b654808d830e673b.html">Inapplicable Example 4</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ab5d8aeef0246a383e782e44744d3989e72fd573.html">Inapplicable Example 5</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html">Inapplicable Example 6</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/e95e086753e09bfc8c7c20ab5c3241aef0ad8cfd.html">Inapplicable Example 7</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-    <tr>
-      <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html">Inapplicable Example 8</a>
-      </th>
-      <td class="">passed</td>
-    </tr>
-  </tbody>
-</table>
-
 <h3 id="breakdown-b4f0c3">Meta viewport allows for zoom</h3>
 <p>
   This rule is implemented by SortSite using the
@@ -7032,9 +6853,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1659476699699909235"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1659622095287930942"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1659476699699909235"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1659622095287930942"></script>
 <script>
   svg4everybody();
 </script><script>

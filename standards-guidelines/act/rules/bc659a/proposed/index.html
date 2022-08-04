@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1659476699699909235";
+      element.src = "/WAI/assets/scripts/main.js?1659622095287930942";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1659476699699909235">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1659622095287930942">
 
-<title> Meta element has no refresh delay[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1659476699699909235"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Meta element has no refresh delay[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1659622095287930942"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Meta element has no refresh delay" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -353,7 +353,7 @@ h2#sidebar-header {
 
 <h2 id="expectation">Expectation</h2>
 
-<p>For each test target, running the <a href="https://html.spec.whatwg.org/#shared-declarative-refresh-steps" title="HTML specification of the Shared Declarative Refresh Steps">shared declarative refresh steps</a>, given the target’s document, the value of the target’s <code class="language-plaintext highlighter-rouge">content</code> attribute, and the target results in <em>time</em> being either 0 or greater than 72000 (20 hours).</p>
+<p>For each target, the <em>time</em> from the content <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is between 0 and 72000 (20 hours). To determine the <em>time</em>, run the <a href="https://html.spec.whatwg.org/#shared-declarative-refresh-steps" title="HTML specification of the Shared Declarative Refresh Steps">shared declarative refresh steps</a> on the <code class="language-plaintext highlighter-rouge">meta</code> element as described in the <a href="https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-refresh">HTML refresh state</a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -368,7 +368,7 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
-<p>This rule is designed specifically for <a href="https://www.w3.org/TR/WCAG21/#timing-adjustable" title="WCAG 2.1 Success Criterion 2.2.1 Timing Adjustable">2.2.1 Timing Adjustable</a>, which can be satisfied if the time limit is over 20 hours long. All pages that fail this because of a “refresh” <code class="language-plaintext highlighter-rouge">meta</code> element also do not satisfy <a href="https://www.w3.org/TR/WCAG21/#no-timing" title="WCAG 2.1 Success Criterion 2.2.3 No Timing">2.2.3 No Timing</a> and <a href="https://www.w3.org/TR/WCAG21/#change-on-request" title="WCAG 2.1 Success Criterion 3.2.5 Change on Request">3.2.5 Change on Request</a>. In order to adequately test the <a href="#expectation">expectation</a>, some of the passed examples do not satisfy <a href="https://www.w3.org/TR/WCAG21/#no-timing" title="WCAG 2.1 Success Criterion 2.2.3 No Timing">2.2.3 No Timing</a> and <a href="https://www.w3.org/TR/WCAG21/#change-on-request" title="WCAG 2.1 Success Criterion 3.2.5 Change on Request">3.2.5 Change on Request</a>.</p>
+<p>This rule is designed specifically for <a href="https://www.w3.org/TR/WCAG21/#timing-adjustable" title="WCAG 2.1 Success Criterion 2.2.1 Timing Adjustable">2.2.1 Timing Adjustable</a>, which can be satisfied if the time limit is over 20 hours long. All pages that fail this because of a “refresh” <code class="language-plaintext highlighter-rouge">meta</code> element also do not satisfy <a href="https://www.w3.org/TR/WCAG21/#change-on-request" title="WCAG 2.1 Success Criterion 3.2.5 Change on Request">3.2.5 Change on Request</a>. In order to adequately test the <a href="#expectation">expectation</a>, some of the passed examples do not satisfy <a href="https://www.w3.org/TR/WCAG21/#change-on-request" title="WCAG 2.1 Success Criterion 3.2.5 Change on Request">3.2.5 Change on Request</a>. Note: Because a refresh with a timing of 0 is a redirect, it is exempt from this rule. Since this can cause rapid screen flashes it is strongly recommend to avoid this.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -463,7 +463,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/49d79a4e4e4a994a8eb7cf2eaf59c99d2251cac5.html">Open in a new tab</a></p>
 
-<p>Redirects immediately.</p>
+<p>This page redirects to a new page immediately.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0; URL='https://github.com'"</span> <span class="nt">/&gt;</span>
@@ -474,7 +474,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/d48be8e9b638b9c27714cb3118a335376ed65f0f.html">Open in a new tab</a></p>
 
-<p>First valid <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="refresh"&gt;</code> redirects immediately.</p>
+<p>The first valid <code class="language-plaintext highlighter-rouge">meta</code> element on this page redirects to a new page immediately.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0; https://w3.org"</span> <span class="nt">/&gt;</span>
@@ -486,7 +486,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b5ca868de7980f6944142ecdb849f47ad2cdfb5c.html">Open in a new tab</a></p>
 
-<p>Redirects after more than 20 hours.</p>
+<p>This page redirects after more than 20 hours.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"72001; https://w3.org"</span> <span class="nt">/&gt;</span>
@@ -497,137 +497,173 @@ h2#sidebar-header {
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/56857820788db21498e95a5cbba65d59a9a2b892.html">Open in a new tab</a></p>
 
-<p>Refreshes after 30 seconds.</p>
+<p>This page refreshes after 30 seconds.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"30"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page refreshes after 30 seconds.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b134b6aa2851b2e3ee5d1fbca056c2b706776a98.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/96c7657d21888cd05edd297d44a8fd554b21c908.html">Open in a new tab</a></p>
 
-<p>Redirects after 30 seconds.</p>
+<p>This page redirects to a new page after 30 seconds.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"30; URL='https://w3.org'"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page redirects afte 30 seconds.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/7ce73a0a773528b21f497c3f0600ceb9f1b0097f.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b2e7f3e00ffce0a2a1078f860452814e6445445d.html">Open in a new tab</a></p>
 
-<p>First <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="refresh"&gt;</code> element is not valid, second one redirects after 5 seconds.</p>
+<p>The first <code class="language-plaintext highlighter-rouge">meta</code> element on this page is not valid because it uses colon (“:”) rather than semicolon (“;”). The second <code class="language-plaintext highlighter-rouge">meta</code> element redirects to a new page after 5 seconds.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0: https://w3.org"</span> <span class="nt">/&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"5; https://w3.org"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page refreshes after 5 seconds.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/3824cfe765c82569066863a2276c428cc9ebd82c.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/5d4d5b214459c8a0779600ab39a5668003271c62.html">Open in a new tab</a></p>
 
-<p>Redirects after exactly 20 hours.</p>
+<p>This page redirects to a new page after exactly 20 hours.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"72000; https://w3.org"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page redirects after exactly 20 hours.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
-<p><a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/3761ce87e64549073f62df26071fbde9850e649e.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/48a600254c0883cd5a72471420b1ac5a532ca6c3.html">Open in a new tab</a></p>
 
-<p>No <code class="language-plaintext highlighter-rouge">content</code> attribute.</p>
+<p>This page will not refresh because it lacks a <code class="language-plaintext highlighter-rouge">content</code> attribute.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page does not refresh.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
 
-<p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/9a3bda5ec60f149807ec999ca430dce67f295846.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/4dffd30573a924ad0158d813733e029aac160194.html">Open in a new tab</a></p>
 
-<p>No <code class="language-plaintext highlighter-rouge">http-equiv="refresh"</code> attribute.</p>
+<p>This page will not refresh because it lacks a <code class="language-plaintext highlighter-rouge">http-equiv</code> attribute.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">"30"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page does not refresh.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
-<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a943b8cfaefd7d7b16fefc36bc24eed2ce89a4e8.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a05aeffa53890c3ed9fd9cefa544eb1071497de5.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+<p>This ‘meta’ element contains an invalid <code class="language-plaintext highlighter-rouge">content</code> attribute and will not refresh the page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0: https://w3.org"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page does not redirect.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
-<p><a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/e6e51895cab42ee6adf2ade5b654808d830e673b.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a8c47bb26867342e83342645507fb766648799d7.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+<p>This ‘meta’ element contains an invalid <code class="language-plaintext highlighter-rouge">content</code> attribute and will not refresh the page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"-00.12 foo"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page does not refresh.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-5">Inapplicable Example 5</h4>
 
-<p><a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ab5d8aeef0246a383e782e44744d3989e72fd573.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ca4a053f47b6e322ad6de680fdabd05f651bf49b.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+<p>This ‘meta’ element contains an invalid <code class="language-plaintext highlighter-rouge">content</code> attribute and will not refresh the page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"; 30"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page does not refresh.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-6">Inapplicable Example 6</h4>
 
-<p><a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b42a3a108d5d0f65258cd8157eb0011b78ce9253.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+<p>This ‘meta’ element contains an invalid <code class="language-plaintext highlighter-rouge">content</code> attribute and will not refresh the page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">""</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page does not refresh.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-7">Inapplicable Example 7</h4>
 
-<p><a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/e95e086753e09bfc8c7c20ab5c3241aef0ad8cfd.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/0bf30cdf02ff26dfca5aa705b7023227da221e05.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+<p>This ‘meta’ element contains an invalid <code class="language-plaintext highlighter-rouge">content</code> attribute and will not refresh the page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"+5; https://w3.org"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page does not redirect.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-8">Inapplicable Example 8</h4>
 
-<p><a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/8ce8198a1e6907ae25eb957eb0a5a99e719131a1.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+<p>This ‘meta’ element contains an invalid <code class="language-plaintext highlighter-rouge">content</code> attribute and will not refresh the page.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"foo; URL='https://w3.org'"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;p&gt;</span>This page does not redirect.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 </code></pre></div></div>
 
 <h2 id="glossary">Glossary</h2>
@@ -673,55 +709,13 @@ h2#sidebar-header {
 
 <h2 id="implementations">Implementations</h2>
 
-  <p>This section is not part of the official rule. It is populated dynamically and 
-    not accounted for in the change history or the last modified date.</p>
-  <table class="act-implementations">
-    <thead> 
-      <tr>
-        <th>Implementation</th>
-        <th>Type</th>
-        <th>Consistency</th>
-        <th>Report</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>Alfa 0.36.0</td>
-          <td>Automated tool</td>
-          <td> Partial
-          </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-bc659a"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-        </tr>
-        <tr>
-          <td>Axe DevTools Pro 4.24.5</td>
-          <td>Semi-automated tool</td>
-          <td>
-            Consistent </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-bc659a"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-        </tr>
-        <tr>
-          <td>Axe-core 4.5.0-prerelease</td>
-          <td>Automated tool</td>
-          <td>
-            Consistent </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-bc659a"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-        </tr>
-        <tr>
-          <td>QualWeb 3.0.0</td>
-          <td>Automated tool</td>
-          <td> Partial
-          </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-bc659a"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-        </tr>
-        <tr>
-          <td>SortSite 6.45</td>
-          <td>Automated tool</td>
-          <td>
-            Consistent </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-bc659a"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-        </tr>
-    </tbody>
-  </table>
+  <p>There are currently no known implementations for this rule.
+    If you would like to contribute an implementation, please read the 
+    <a href="/WAI/standards-guidelines/act/implementations/">
+      ACT Implementations page
+    </a> for details.
+  </p>
+
 
  
 
@@ -749,7 +743,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> bc659a</p>
-<p><strong>Date:</strong> Updated 11 July 2022</p>
+<p><strong>Date:</strong> Updated 21 July 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -790,9 +784,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1659476699699909235"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1659622095287930942"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1659476699699909235"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1659622095287930942"></script>
 <script>
   svg4everybody();
 </script><script>
