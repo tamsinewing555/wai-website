@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1659710928260735444";
+      element.src = "/WAI/assets/scripts/main.js?1659730658471872406";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1659710928260735444">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1659730658471872406">
 
 <title> What&#39;s New in WCAG 2.2 Working Draft | Web Accessibility Initiative (WAI) | W3C</title><style>blockquote {font-style: normal !important;}
 blockquote p:first-of-type:before, blockquote p:last-of-type:after, blockquote dl:last-of-type:after {content: '' !important;margin-left: 0 !important;}
@@ -203,7 +203,7 @@ span.note, span.ednote, span.warning { padding: .1em .5em .15em; }
       </h1></header>
     <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
 
-<p>This page lists the proposed new success criteria in the <strong>Working Draft</strong> of Web Content Accessibility Guidelines (WCAG) 2.2.</p>
+<p>This page lists the proposed new success criteria in the <strong>Working Draft</strong> of Web Content Accessibility Guidelines (WCAG) 2.2. We will update this page when we reach consensus on changes.</p>
 
 <p><strong>It includes quotes from personas (fictional people)</strong> to help you understand some aspects of the success criteria. It also includes links to Understanding documents that explain the success criteria in detail and provide more examples.</p>
 
@@ -227,7 +227,7 @@ span.note, span.ednote, span.warning { padding: .1em .5em .15em; }
   <li><a href="#guideline-24-navigable" id="markdown-toc-guideline-24-navigable">Guideline 2.4 Navigable</a>    <ul>
       <li><a href="#2411-focus-appearance-minimum-aa" id="markdown-toc-2411-focus-appearance-minimum-aa">2.4.11 Focus Appearance (Minimum) (AA)</a></li>
       <li><a href="#2412-focus-appearance-enhanced-aaa" id="markdown-toc-2412-focus-appearance-enhanced-aaa">2.4.12 Focus Appearance (Enhanced) (AAA)</a></li>
-      <li><a href="#2413-page-break-navigation-a" id="markdown-toc-2413-page-break-navigation-a">2.4.13 Page Break Navigation (A)</a></li>
+      <li><a href="#2413-page-break-navigation" id="markdown-toc-2413-page-break-navigation">2.4.13 Page Break Navigation</a></li>
     </ul>
   </li>
   <li><a href="#guideline-25-input-modalities" id="markdown-toc-guideline-25-input-modalities">Guideline 2.5 Input Modalities</a>    <ul>
@@ -261,8 +261,8 @@ span.note, span.ednote, span.warning { padding: .1em .5em .15em; }
 
 <p>WCAG 2.2 is scheduled to be completed and published by December 2022. Current drafts:</p>
 <ul>
-  <li><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2 Working Draft</a> is approved to be posted as a draft</li>
-  <li><a href="https://w3c.github.io/wcag/guidelines/22/">Editors’ Draft of WCAG 2.2</a> has updates that are not yet all approved</li>
+  <li><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2 Working Draft</a> does not include proposed changes</li>
+  <li><a href="https://w3c.github.io/wcag/guidelines/22/">Editors’ Draft of WCAG 2.2</a> includes proposed changes, some are not yet approved</li>
 </ul>
 
 <p>The process for completing WCAG 2.2 is introduced in <a href="https://www.w3.org/WAI/standards-guidelines/w3c-process/">How WAI Develops Accessibility Standards through the W3C Process</a>. WCAG 2.2 is scheduled to go to “Candidate Recommendation” by September 2022.</p>
@@ -277,6 +277,12 @@ span.note, span.ednote, span.warning { padding: .1em .5em .15em; }
 <p>WCAG 2.2 Working Draft provides 9 additional success criteria, that are included on this page. This page will be updated with the next publication.</p>
 
 <h3 id="changes-to-22-working-draft">Changes to 2.2 Working Draft</h3>
+
+<p>Changes since the 2021 Working Draft:</p>
+<ul>
+  <li>We will provide a list here when we reach consensus on the next draft</li>
+  <li>Proposed changes are include in the <a href="https://w3c.github.io/wcag/guidelines/22/">Editors’ Draft of WCAG 2.2</a></li>
+</ul>
 
 <p>Changes from the 11 August 2020 to 11 May 2021 Working Draft include:</p>
 <ul>
@@ -359,23 +365,8 @@ span.note, span.ednote, span.warning { padding: .1em .5em .15em; }
 </div>
 <p><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-enhanced">Understanding Focus Appearance (Enhanced)</a></p>
 
-<h3 id="2413-page-break-navigation-a">2.4.13 Page Break Navigation (A)</h3>
-<blockquote class="sc">
-  <p>For web content with <a href="https://www.w3.org/TR/WCAG22/#dfn-pagebreak-locators" class="internalDFN" data-link-type="dfn">page break locators</a>, a mechanism is available to navigate to each locator.</p>
-</blockquote>
-<p class="persona"><a href="https://www.w3.org/WAI/people-use-web/user-stories/#classroomstudent">Student</a> with dyslexia:<br />
-  and <a href="https://www.w3.org/WAI/people-use-web/user-stories/#retiree">Retiree</a> with low vision:</p>
-<div class="quotes">
-  <ul>
-    <li>
-      <p><span class="issue">Problem:</span><span><q>I increase the text size and spacing in the online textbook. The instructor said: "The activity is on page 37." But it's not on page 37 in my view, and I cannot find it.</q></span></p>
-    </li>
-    <li>
-      <p><span class="issue">Works well:</span><span><q>I used the page contents list to get to "page 37". (It's actually page 53 in my view — that's OK, I found it.)</q></span></p>
-    </li>
-  </ul>
-</div>
-<p><a href="https://w3c.github.io/wcag/understanding/page-break-navigation.html">Page Break Navigation</a></p>
+<h3 id="2413-page-break-navigation">2.4.13 Page Break Navigation</h3>
+<p><em>This was included in the 21 May 2021 draft, and has been removed from the Editors’ Draft.</em></p>
 
 <h2 id="guideline-25-input-modalities">Guideline 2.5 Input Modalities</h2>
 
@@ -585,7 +576,7 @@ span.note, span.ednote, span.warning { padding: .1em .5em .15em; }
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Date:</strong> Updated 4 August 2022.</p> <p><strong>Editor:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>. Contributors: <a href="https://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>,  <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>, and <a href="https://www.w3.org/groups/wg/ag/participants">AG WG Participants</a>.</p> <p>Developed with input from the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>) and the Accessibility Guidelines Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">AG WG</a>).</p>
+      <p><strong>Date:</strong> Updated 5 August 2022.</p> <p><strong>Editor:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>. Contributors: <a href="https://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>,  <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>, and <a href="https://www.w3.org/groups/wg/ag/participants">AG WG Participants</a>.</p> <p>Developed with input from the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>) and the Accessibility Guidelines Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">AG WG</a>).</p>
 </div>
   </footer>
   
@@ -624,9 +615,9 @@ span.note, span.ednote, span.warning { padding: .1em .5em .15em; }
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1659710928260735444"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1659730658471872406"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1659710928260735444"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1659730658471872406"></script>
 <script>
   svg4everybody();
 </script><script>
