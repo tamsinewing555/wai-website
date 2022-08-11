@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1659822586251601212";
+      element.src = "/WAI/assets/scripts/main.js?1660226226253684248";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1659822586251601212">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1660226226253684248">
 
-<title> Line height in style attributes is not !important[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1659822586251601212"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Line height in style attributes is not !important[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1660226226253684248"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Line height in style attributes is not !important" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -374,7 +374,7 @@ h2#sidebar-header {
 
 <p>When a style is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in the <code class="language-plaintext highlighter-rouge">style</code> attribute with an <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> declaration, it “wins” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over any other style from <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>, i.e. it cannot be overridden by any of these. On the other hand, if such a style is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in a style sheet, it can still “lose” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> to declarations with higher <a href="https://www.w3.org/TR/selectors/#specificity" title="CSS Selectors Level 4 (Working draft) - Specificity">specificity</a> or simply coming from a later style sheet (such as ones injected by assistive technologies). This rule ensures that the element is not in the first case and that the style can be overridden by users, unless it is already at least the minimum recommended threshold. <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">Important</a> styles that are declared with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-user" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin">user</a> or <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin">user agent</a> origin can win the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>.</p>
 
-<p>CSS specifications define each declaration as being either <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> (if is as the <code class="language-plaintext highlighter-rouge">!important</code> annotation) or <a href="https://www.w3.org/TR/css-cascade-4/#normal" title="CSS Cascading and Inheritance Level 4 (Working draft) - Normal declarations">normal</a>. Given that <code class="language-plaintext highlighter-rouge">normal</code> is also a keyword for this property, and that <code class="language-plaintext highlighter-rouge">!important</code> is wider known that this distinction, this rule rather uses “<a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>”/”not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>” to avoid confusion.</p>
+<p>CSS specifications define each declaration as being either <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> (such as the <code class="language-plaintext highlighter-rouge">!important</code> annotation) or <a href="https://www.w3.org/TR/css-cascade-4/#normal" title="CSS Cascading and Inheritance Level 4 (Working draft) - Normal declarations">normal</a>. Given that <code class="language-plaintext highlighter-rouge">normal</code> is also a keyword for this property, and that <code class="language-plaintext highlighter-rouge">!important</code> is more widely known, this rule rather uses “<a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>”/”not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>” to avoid confusion.</p>
 
 <p>This rule evaluates the <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value of the <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> property instead of its <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value because the <a href="https://www.w3.org/TR/css-cascade-4/#used" title="CSS Cascading and Inheritance Level 4 (Working draft) - Used Values">used</a> value is guaranteed to use absolute units (i.e., pixels). This streamlines comparison with the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <a href="https://www.w3.org/TR/css-fonts-4/#propdef-font-size" title="CSS Fonts Module Level 4 (Working draft) - Font size: the font-size property">font-size</a> which is also absolute. The <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <a href="https://drafts.csswg.org/css2/visudet.html#propdef-line-height" title="CSS Visual formatting model details - line-height property">line-height</a> may be a unitless number that is harder to compare.</p>
 
@@ -734,6 +734,20 @@ h2#sidebar-header {
     </thead>
     <tbody>
         <tr>
+          <td>Axe DevTools Pro 4.24.5</td>
+          <td>Semi-automated tool</td>
+          <td>
+            Consistent </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-78fd32"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
+          <td>Axe-core 4.5.0-prerelease</td>
+          <td>Automated tool</td>
+          <td>
+            Consistent </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-78fd32"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
           <td>SortSite 6.45</td>
           <td>Automated tool</td>
           <td>
@@ -769,7 +783,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 78fd32</p>
-<p><strong>Date:</strong> Updated 11 July 2022</p>
+<p><strong>Date:</strong> Updated 11 August 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -810,9 +824,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1659822586251601212"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1660226226253684248"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1659822586251601212"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1660226226253684248"></script>
 <script>
   svg4everybody();
 </script><script>
