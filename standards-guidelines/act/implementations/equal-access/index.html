@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1660771287145756652";
+      element.src = "/WAI/assets/scripts/main.js?1660845319068005144";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1660771287145756652">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1660845319068005144">
 
-<title> Equal Access Accessibility Checker ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1660771287145756652"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Equal Access Accessibility Checker ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1660845319068005144"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Equal Access Accessibility Checker ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -304,10 +304,10 @@ h2#sidebar-header {
   </header>
   <div class="box-i"><p>
     <a href="https://www.ibm.com/able/toolkit/">Equal Access Accessibility Checker</a>
-      version 3.1.33-rc
+      version 3.1.36
     is an Automated tool
       by <a href="https://www.ibm.com/">IBM Accessibility</a>.
-      The test results were last updated 7 July 2022.
+      The test results were last updated 15 August 2022.
 
     
 
@@ -326,8 +326,8 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>WCAG 2 rules</th>
-    <td>2</td>
-    <td>9</td>
+    <td>8</td>
+    <td>3</td>
   </tr>
   <tr>
     <th>Proposed rules</th>
@@ -356,8 +356,8 @@ h2#sidebar-header {
         </a></td>
         <td>
           WCAG 2 Rule </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -372,8 +372,8 @@ h2#sidebar-header {
         </a></td>
         <td>
           WCAG 2 Rule </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -408,8 +408,8 @@ h2#sidebar-header {
         </a></td>
         <td>
           WCAG 2 Rule </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -420,8 +420,8 @@ h2#sidebar-header {
         </a></td>
         <td>
           WCAG 2 Rule </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -444,8 +444,8 @@ h2#sidebar-header {
         </a></td>
         <td>
           WCAG 2 Rule </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -472,8 +472,8 @@ h2#sidebar-header {
         </a></td>
         <td>
           WCAG 2 Rule </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -755,19 +755,18 @@ h2#sidebar-header {
 <h2 id="aboutequalaccessaccessibilitycheckerresults">About Equal Access Accessibility Checker Results</h2>
 
 <p>ACT rule results were generated using the latest <code class="language-plaintext highlighter-rouge">accessibility-checker</code> 
-from NPM using the <a href="https://github.com/IBMa/equal-access/tree/master/accessibility-checker/test-act">ACT test driver</a>.
+from NPM using the <a href="https://github.com/IBMa/equal-access/tree/master/accessibility-checker/test-act-w3">ACT test driver</a>.
 Results were created using the <code class="language-plaintext highlighter-rouge">preview</code> archive and the <code class="language-plaintext highlighter-rouge">IBM_Accessibility</code> policy.
 Mappings from ACT Rules to Accessibility Checker rule ids and reason codes can be 
-found in <a href="https://github.com/IBMa/equal-access/blob/master/accessibility-checker/test-act/act_aligned.json"><code class="language-plaintext highlighter-rouge">act_aligned.json</code></a> 
-and <a href="https://github.com/IBMa/equal-access/blob/master/accessibility-checker/test-act/ace_mapping.js"><code class="language-plaintext highlighter-rouge">ace_mapping.js</code></a>. 
-Results indicate the rule ids and reason codes related to the ACT rule are  generated in the following format:</p>
+found in the act property of <a href="https://github.com/IBMa/equal-access/blob/master/accessibility-checker-engine/src/v4/rules">rule definitions</a>. 
+Results indicate the rule ids and reason codes related to the ACT rule are generated in the following format:</p>
 
 <p><code class="language-plaintext highlighter-rouge">RuleId1:ReasonCode1,ReasonCode2|RuleId2:ReasonCode3,ReasonCode4</code>.</p>
 
 
 <p>
   Results in this page are taken from a public
-  <a href="https://unpkg.com/accessibility-checker-engine@next/earlResultW3.json">test report</a>
+  <a href="https://unpkg.com/accessibility-checker-engine@next/act-report-v2.json">test report</a>
   published by IBM Accessibility.
   Data is published using the 
   <a href="https://act-rules.github.io/pages/implementations/earl-reports/">EARL+JSON-LD data format</a>.
@@ -781,14 +780,14 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
 <p>
   This rule is implemented by Equal Access Accessibility Checker using the
   <code>WCAG20_Input_ExplicitLabel:Pass_0,Fail_1,Fail_2</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/97a4e1">Button has non-empty accessible name</a>
   WCAG 2 rule. 
     It covers all 17 examples.
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -812,11 +811,6 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
     <td>
       
         <ul>
-          <li>
-            1.1.1
-            Non-text Content
-          </li>
-        
           <li>
             4.1.2
             Name, Role, Value
@@ -947,14 +941,14 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
 <p>
   This rule is implemented by Equal Access Accessibility Checker using the
   <code>WCAG20_Input_ExplicitLabel:Pass_0,Fail_1,Fail_2</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/e086e5">Form field has non-empty accessible name</a>
   WCAG 2 rule. 
     It covers all 17 examples.
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -978,11 +972,6 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
     <td>
       
         <ul>
-          <li>
-            1.1.1
-            Non-text Content
-          </li>
-        
           <li>
             4.1.2
             Name, Role, Value
@@ -1118,11 +1107,7 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/b5c3f8">HTML page has lang attribute</a>
   WCAG 2 rule. 
-    It covers 5 of the 7 examples.
-  
-    For 2 examples
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 7 examples.
   
   
     The implementation reports different success criteria as failed from what is expected by this rule.
@@ -1218,15 +1203,15 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/297b27cc9c3500b77e72320d73ad8252aede9bb8.svg">Inapplicable Example 1</a>
       </th>
-      <td class="act-untested">untested</td>
-      <td class="act-untested">untested</td>
+      <td class="">inapplicable</td>
+      <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/af7eaac588fa1a23884d30f93ed50c2f1779c2fa.xml">Inapplicable Example 2</a>
       </th>
-      <td class="act-untested">untested</td>
-      <td class="act-untested">untested</td>
+      <td class="">inapplicable</td>
+      <td class="">inapplicable</td>
     </tr>
   </tbody>
 </table>
@@ -1239,11 +1224,7 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/bf051a">HTML page lang attribute has valid language tag</a>
   WCAG 2 rule. 
-    It covers 6 of the 7 examples.
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 7 examples.
   
   
     The implementation reports different success criteria as failed from what is expected by this rule.
@@ -1331,7 +1312,7 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg">Inapplicable Example 1</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">inapplicable</td>
     </tr>
   </tbody>
 </table>
@@ -1340,15 +1321,11 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
 <p>
   This rule is implemented by Equal Access Accessibility Checker using the
   <code>WCAG20_Html_HasLang:Pass_0,Fail_4,Fail_5</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/5b7ae0">HTML page lang and xml:lang attributes have matching values</a>
   WCAG 2 rule. 
-    It covers 9 of the 12 examples.
-  
-    For 3 examples
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 12 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -1430,19 +1407,19 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/d0f61fa9d6acd6759aaf5aec062a1e5026fcf4d5.svg">Inapplicable Example 1</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/84aa25ef587640beb210c6de408f209021542593.svg">Inapplicable Example 2</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/f766afdae47b656ab4dd08a3ae552506f3f1f820.xml">Inapplicable Example 3</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
@@ -1475,15 +1452,11 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
 <p>
   This rule is implemented by Equal Access Accessibility Checker using the
   <code>WCAG20_Doc_HasTitle:Pass_0,Fail_1,Fail_2,Fail_3</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/2779a5">HTML page has non-empty title</a>
   WCAG 2 rule. 
-    It covers 10 of the 11 examples.
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 11 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -1595,7 +1568,7 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Inapplicable Example 1</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">inapplicable</td>
     </tr>
   </tbody>
 </table>
@@ -1763,14 +1736,14 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
   This rule is implemented by Equal Access Accessibility Checker using the
   <code>WCAG20_Img_HasAlt:Pass_0,Fail_1,Fail_2,Fail_3</code>, and <code>HAAC_Aria_ImgAlt:Pass_0,Fail_1,Fail_2,Fail_3</code> procedures.
     Failed examples should be failed by <em>at least one</em> of these procedures.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/23a2a8">Image has non-empty accessible name</a>
   WCAG 2 rule. 
     It covers all 18 examples.
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -1797,11 +1770,6 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
           <li>
             1.1.1
             Non-text Content
-          </li>
-        
-          <li>
-            4.1.2
-            Name, Role, Value
           </li>
         </ul>
       
@@ -2196,14 +2164,14 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
   This rule is implemented by Equal Access Accessibility Checker using the
   <code>HAAC_Aria_ImgAlt:Pass_0,Fail_2</code>, and <code>HAAC_Aria_SvgAlt:Pass_0,Fail_2</code> procedures.
     Failed examples should be failed by <em>at least one</em> of these procedures.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/7d6734">SVG element with explicit role has non-empty accessible name</a>
   WCAG 2 rule. 
     It covers all 10 examples.
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -2228,8 +2196,8 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
       
         <ul>
           <li>
-            4.1.2
-            Name, Role, Value
+            1.1.1
+            Non-text Content
           </li>
         </ul>
       
@@ -2881,11 +2849,7 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/6a7281/proposed/">ARIA state or property has valid value</a>
    proposed rule.
-    It covers 21 of the 24 examples.
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers 22 of the 24 examples.
   
   
     The implementation reports different success criteria as failed from what is expected by this rule.
@@ -3070,7 +3034,7 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml">Inapplicable Example 4</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">inapplicable</td>
     </tr>
   </tbody>
 </table>
@@ -3205,7 +3169,7 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
     It covers 9 of the 10 examples.
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -3230,8 +3194,8 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
       
         <ul>
           <li>
-            2.4.1
-            Bypass Blocks
+            4.1.2
+            Name, Role, Value
           </li>
         </ul>
       
@@ -3986,9 +3950,9 @@ Results indicate the rule ids and reason codes related to the ACT rule are  gene
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1660771287145756652"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1660845319068005144"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1660771287145756652"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1660845319068005144"></script>
 <script>
   svg4everybody();
 </script><script>
