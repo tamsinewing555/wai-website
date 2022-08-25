@@ -1858,9 +1858,11 @@
 /content-assets/wcag-act-rules/testcases/oj04fd/b12f1f45eef29c30197ca3bda79d793cd90eeadd.html
 /content-assets/wcag-act-rules/testcases/oj04fd/dd9628d86628e285fe99ce98efdacbe441c20ca5.html
 /content-assets/wcag-act-rules/testcases/oj04fd/ef877d377b4814d96d90274011e7304e14c59245.html
+/content-assets/wcag-act-rules/testcases/qt1vmo/09899111e5bcb25a5bb64000f63dc926eb653b7d.html
 /content-assets/wcag-act-rules/testcases/qt1vmo/0ab8d652533229aae98191a6a43c2168e1959963.html
 /content-assets/wcag-act-rules/testcases/qt1vmo/12138756433c374a529170bea2977cf40cc94d84.html
 /content-assets/wcag-act-rules/testcases/qt1vmo/2616e8486562f08449b710b8a5dc9846474af000.html
+/content-assets/wcag-act-rules/testcases/qt1vmo/2f7d82593e287df64b7459695e355a840254255c.html
 /content-assets/wcag-act-rules/testcases/qt1vmo/4629221e66963f356b68f6e17dacea9a937fe7d3.html
 /content-assets/wcag-act-rules/testcases/qt1vmo/4d04a4946e1f06834c89b91f0a765367f9d0d492.html
 /content-assets/wcag-act-rules/testcases/qt1vmo/5cdb41b3b9be43fd015bf4692ea295f87cb7e02f.html
@@ -2344,7 +2346,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
