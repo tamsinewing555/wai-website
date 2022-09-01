@@ -13,11 +13,32 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-08-31/making-events-accessible/",
+            "title": "Updated: Making Events Accessible - Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid",
+            "summary": null,
+            "content_text": "Making Events Accessible: Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid is updated. It helps presenters, participants, and organizers make events inclusive, particularly to people with disabilities. This benefits everyone, particularly international participants.",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">Making Events Accessible: Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid</a> is updated. It helps presenters, participants, and organizers make events inclusive, particularly to people with disabilities. This benefits everyone, particularly international participants.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-08-31/making-events-accessible/",
+            
+            
+            
+            
+            
+            "date_published": "2022-08-31T00:00:00+00:00",
+            "date_modified": "2022-08-31T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2022-07-22/remote-meetings/",
             "title": "Accessibility of Remote Meetings - Note Published",
             "summary": null,
-            "content_text": "How to Make Your Presentations and Meetings Accessible to All now has a more detailed companion resource: Accessibility of Remote Meetings. Accessibility of Remote Meetings provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participting in remote meetings and hybrid meetings.",
-            "content_html": "<p><a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">How to Make Your Presentations and Meetings Accessible to All</a> now has a more detailed companion resource: <a href=\"https://www.w3.org/TR/remote-meetings/\">Accessibility of Remote Meetings</a>. <cite>Accessibility of Remote Meetings</cite> provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participting in remote meetings and hybrid meetings.</p>",
+            "content_text": "Making Events Accessible:Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid now has a more detailed companion resource: Accessibility of Remote Meetings. Accessibility of Remote Meetings provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participting in remote meetings and hybrid meetings.",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">Making Events Accessible:Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid</a> now has a more detailed companion resource: <a href=\"https://www.w3.org/TR/remote-meetings/\">Accessibility of Remote Meetings</a>. <cite>Accessibility of Remote Meetings</cite> provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participting in remote meetings and hybrid meetings.</p>",
             "url": "https://www.w3.org/WAI/news/2022-07-22/remote-meetings/",
             
             
@@ -740,27 +761,6 @@
             
             "date_published": "2020-03-19T00:00:00+00:00",
             "date_modified": "2020-03-19T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2020-03-10/pronunciation/",
-            "title": "For Review: Pronunciation of Text-To-Speech (TTS) Working Drafts",
-            "summary": null,
-            "content_text": "New drafts of Working Group Notes are available for review: Explainer: Improving Spoken Presentation on the Web and Pronunciation Gap Analysis and Use Cases. These documents will guide work on a normative specification to enable content authors to ensure that text-to-speech (TTS) synthesis properly pronounces HTML content. We would particularly like input on additional use cases and requirements not described in these documents; and any aspects of the analysis that are missing, incorrect, or insufficiently defined. For context of this work, please see the Pronunciation Overview.",
-            "content_html": "<p>New drafts of Working Group Notes are available for review: <a href=\"https://www.w3.org/TR/pronunciation-explainer/\">Explainer: Improving Spoken Presentation on the Web</a> and <a href=\"https://www.w3.org/TR/pronunciation-gap-analysis-and-use-cases/\">Pronunciation Gap Analysis and Use Cases</a>. These documents will guide work on a normative specification to enable content authors to ensure that text-to-speech (TTS) synthesis properly pronounces HTML content. We would particularly like input on additional use cases and requirements not described in these documents; and any aspects of the analysis that are missing, incorrect, or insufficiently defined. For context of this work, please see the <a href=\"https://www.w3.org/WAI/pronunciation/\">Pronunciation Overview</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2020-03-10/pronunciation/",
-            
-            
-            
-            
-            
-            "date_published": "2020-03-10T00:00:00+00:00",
-            "date_modified": "2020-03-10T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
