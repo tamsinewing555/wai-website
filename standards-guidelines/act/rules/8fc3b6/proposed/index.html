@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1662632185878638029";
+      element.src = "/WAI/assets/scripts/main.js?1662648742319723910";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1662632185878638029">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1662648742319723910">
 
-<title> Object element rendering non-text content has non-empty accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1662632185878638029"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Object element rendering non-text content has non-empty accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1662648742319723910"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Object element rendering non-text content has non-empty accessible name" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -60,12 +60,10 @@
   </div>
   
   <div class="minimal-header-logo">
-        <a href="http://w3.org/">
-            <img alt="W3C" src="/WAI/assets/images/w3c2.svg" width="92" height="44"/>
-        </a>
-        <a href="/WAI/">
-            <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg"/>
-        </a>
+    <a href="/WAI/">
+      <img alt="W3C" src="/WAI/assets/images/w3c2.svg" width="92" height="44"/>
+      <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg"/>
+    </a>
   </div>
 </header>
 
@@ -340,7 +338,13 @@ h2#sidebar-header {
 
 <h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to any <code class="language-plaintext highlighter-rouge">object</code> element that is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a> and embeds a resource with an <a href="https://mimesniff.spec.whatwg.org/#image-mime-type">image MIME type</a> or an <a href="https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type">audio or video MIME type</a>.</p>
+<p>This rule applies to any <code class="language-plaintext highlighter-rouge">object</code> element for which all the following are true:</p>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">object</code> element is <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a>; and</li>
+  <li>The <code class="language-plaintext highlighter-rouge">object</code> element has no <a href="#explicit-role" title="Definition of Explicit role">explicit role</a>; and</li>
+  <li>The <code class="language-plaintext highlighter-rouge">object</code> element embeds a resource whose MIME type is either <a href="https://mimesniff.spec.whatwg.org/#image-mime-type">image</a>, or <a href="https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type">audio or video</a>.</li>
+</ul>
 
 <h2 id="expectation">Expectation</h2>
 
@@ -352,11 +356,17 @@ h2#sidebar-header {
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
-<p>Non-supported media formats make screen readers render the text content of the element instead of other attributes.</p>
+<p>The <a href="https://mimesniff.spec.whatwg.org/#mime-type-groups" title="MIME Sniffing - Living Standard, 2022/01/17">MIME type</a> of the resource embedded in the <code class="language-plaintext highlighter-rouge">data</code> attribute impacts how the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> of the <code class="language-plaintext highlighter-rouge">object</code> is computed. For example, <code class="language-plaintext highlighter-rouge">object</code> embedding <a href="https://mimesniff.spec.whatwg.org/#image-mime-type" title="MIME Sniffing - Living Standard, 2022/01/17">image MIME type</a> may use their <code class="language-plaintext highlighter-rouge">alt</code> attribute to compute their <a href="#accessible-name" title="Definition of accessible name">accessible name</a>, but <code class="language-plaintext highlighter-rouge">object</code> embedding <a href="https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type" title="MIME Sniffing - Living Standard, 2022/01/17">audio or video MIME types</a> may not. An <code class="language-plaintext highlighter-rouge">object</code> does not officially support the use of an <code class="language-plaintext highlighter-rouge">alt</code> so this may behave differently according to the browser used.</p>
 
 <h2 id="background">Background</h2>
 
 <p>Testing that the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> describes the purpose of the <code class="language-plaintext highlighter-rouge">object</code> element is not part of this rule and must be tested separately.</p>
+
+<p>Non-supported media formats make screen readers render the text content of the element instead of other attributes.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Object</code> elements without an accessible name are ignored by assistive technologies unless they have an <a href="#explicit-role" title="Definition of Explicit role">explicit role</a>.</p>
+
+<p>When the object resource is not loaded, the fallback content is rendered as shown in the Inapplicable Example: “This <code class="language-plaintext highlighter-rouge">object</code> element does not need an accessible name because it loads no image, audio, or video.”</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -480,60 +490,102 @@ h2#sidebar-header {
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">aria-labelledby=</span><span class="s">"download"</span> <span class="na">data=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span><span class="nt">&gt;&lt;/object&gt;</span>
 </code></pre></div></div>
 
+<h4 id="failed-example-5">Failed Example 5</h4>
+
+<p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/a2525d7f2db0db246df0a702416606c56085a17a.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">object</code> element has an empty <a href="#accessible-name" title="Definition of accessible name">accessible name</a>. The <code class="language-plaintext highlighter-rouge">img</code> element inside the <code class="language-plaintext highlighter-rouge">object</code> is not used in computing the <code class="language-plaintext highlighter-rouge">object</code>’s accessible name.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/object&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-6">Failed Example 6</h4>
+
+<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/f6b0a52f8bb37ab0a8b290237add5be669a28b2f.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">object</code> element has <code class="language-plaintext highlighter-rouge">alt</code> attribute, however this will not create an  <a href="#accessible-name" title="Definition of accessible name">accessible name</a>. Because of this the accessible name is empty.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">alt=</span><span class="s">"Moon speech"</span><span class="nt">&gt;&lt;/object&gt;</span>
+</code></pre></div></div>
+
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
-<p><a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fd273c99d6129f0972ffdbe529b2b1cfa1116cf0.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">object</code> element has an <a href="#explicit-role" title="Definition of Explicit role">explicit role</a> of “img”.</p>
+
+<p><strong>Note</strong>: Object elements with other roles may still require an accessible name. This is tested through other rules.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">title=</span><span class="s">"W3C"</span> <span class="na">data=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span><span class="nt">&gt;&lt;/object&gt;</span>
+</code></pre></div></div>
+
+<h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
+
+<p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">object</code> element is not <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a> due to <code class="language-plaintext highlighter-rouge">display:none</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">"/test-assets/rabbit-video/video.mp4"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/object&gt;</span>
 </code></pre></div></div>
 
-<h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
+<h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
-<p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/52ac3fd2be278ede2bb32987a32673c6d5ee5edb.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/52ac3fd2be278ede2bb32987a32673c6d5ee5edb.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">object</code> element is not <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a> due to <code class="language-plaintext highlighter-rouge">visibility:hidden</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">style=</span><span class="s">"visibility: hidden;"</span><span class="nt">&gt;&lt;/object&gt;</span>
 </code></pre></div></div>
 
-<h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
+<h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
-<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">object</code> element is not <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a> due to <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/object&gt;</span>
 </code></pre></div></div>
 
-<h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
+<h4 id="inapplicable-example-5">Inapplicable Example 5</h4>
 
-<p><a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">object</code> element is not <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a> because it is marked as decorative through <code class="language-plaintext highlighter-rouge">role="presentation"</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">data=</span><span class="s">"/test-assets/contrast/example.png"</span><span class="nt">&gt;&lt;/object&gt;</span>
 </code></pre></div></div>
 
-<h4 id="inapplicable-example-5">Inapplicable Example 5</h4>
+<h4 id="inapplicable-example-6">Inapplicable Example 6</h4>
 
-<p><a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">object</code> element embeds an HTML resource.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">title=</span><span class="s">"My University"</span> <span class="na">data=</span><span class="s">"/test-assets/shared/index.html"</span><span class="nt">&gt;&lt;/object&gt;</span>
 </code></pre></div></div>
 
-<h4 id="inapplicable-example-6">Inapplicable Example 6</h4>
+<h4 id="inapplicable-example-7">Inapplicable Example 7</h4>
 
-<p><a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html">Open in a new tab</a></p>
 
 <p>There is no <code class="language-plaintext highlighter-rouge">object</code> element.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;audio</span> <span class="na">title=</span><span class="s">"Moon speech"</span> <span class="na">src=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span><span class="nt">&gt;&lt;/audio&gt;</span>
+</code></pre></div></div>
+
+<h4 id="inapplicable-example-8">Inapplicable Example 8</h4>
+
+<p><a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/25b2c00b86322f15c0cbb376b58b342fff916f62.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">object</code> element does not need an accessible name because it loads no image, audio, or video. Instead the <code class="language-plaintext highlighter-rouge">img</code> element inside the <code class="language-plaintext highlighter-rouge">object</code> is rendered.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">"/invalid/url/index.html"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="na">alt=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/object&gt;</span>
 </code></pre></div></div>
 
 <h2 id="glossary">Glossary</h2>
@@ -593,8 +645,8 @@ h2#sidebar-header {
 <p>An element is <em>marked as decorative</em> if one or more of the following conditions is true:</p>
 
 <ul>
-  <li>it has an <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a> of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">presentation</code>; or</li>
-  <li>it is an <code class="language-plaintext highlighter-rouge">img</code> element with an <code class="language-plaintext highlighter-rouge">alt</code> attribute whose value is the empty string (<code class="language-plaintext highlighter-rouge">alt=""</code>), and with no <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>.</li>
+  <li>it has an <a href="#explicit-role" title="Definition of Explicit role">explicit role</a> of <code class="language-plaintext highlighter-rouge">none</code> or <code class="language-plaintext highlighter-rouge">presentation</code>; or</li>
+  <li>it is an <code class="language-plaintext highlighter-rouge">img</code> element with an <code class="language-plaintext highlighter-rouge">alt</code> attribute whose value is the empty string (<code class="language-plaintext highlighter-rouge">alt=""</code>), and with no <a href="#explicit-role" title="Definition of Explicit role">explicit role</a>.</li>
 </ul>
 
 <p>Elements are marked as decorative as a way to convey the intention of the author that they are <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a>. It is different from the element actually being <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a> as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a> may overwrite this intention.</p>
@@ -663,43 +715,43 @@ h2#sidebar-header {
         <tr>
           <td>Alfa 0.36.0</td>
           <td>Automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-8fc3b6"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
           <td>Axe DevTools Pro 4.24.5</td>
           <td>Semi-automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-8fc3b6"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
           <td>Axe-core 4.5.0-prerelease</td>
           <td>Automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-8fc3b6"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
           <td>Equal Access Accessibility Checker 3.1.36</td>
           <td>Automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-8fc3b6"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
           <td>QualWeb 3.0.0</td>
           <td>Automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-8fc3b6"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
           <td>SortSite 6.45</td>
           <td>Automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-8fc3b6"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
     </tbody>
@@ -731,7 +783,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 8fc3b6</p>
-<p><strong>Date:</strong> Updated 11 July 2022</p>
+<p><strong>Date:</strong> Updated 6 September 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
@@ -774,9 +826,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1662632185878638029"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1662648742319723910"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1662632185878638029"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1662648742319723910"></script>
 <script>
   svg4everybody();
 </script><script>

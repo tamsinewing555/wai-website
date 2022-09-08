@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1662632185878638029";
+      element.src = "/WAI/assets/scripts/main.js?1662648742319723910";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1662632185878638029">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1662648742319723910">
 
-<title> Axe DevTools Pro ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1662632185878638029"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Axe DevTools Pro ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1662648742319723910"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Axe DevTools Pro ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -60,12 +60,10 @@
   </div>
   
   <div class="minimal-header-logo">
-        <a href="http://w3.org/">
-            <img alt="W3C" src="/WAI/assets/images/w3c2.svg" width="92" height="44"/>
-        </a>
-        <a href="/WAI/">
-            <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg"/>
-        </a>
+    <a href="/WAI/">
+      <img alt="W3C" src="/WAI/assets/images/w3c2.svg" width="92" height="44"/>
+      <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg"/>
+    </a>
   </div>
 </header>
 
@@ -307,7 +305,7 @@ h2#sidebar-header {
       version 4.24.5
     is an Semi-automated tool
       by <a href="https://deque.com/">Deque Systems</a>.
-      The test results were last updated 26 August 2022.
+      The test results were last updated 8 September 2022.
 
     
 
@@ -326,13 +324,13 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>WCAG 2 rules</th>
-    <td>14</td>
-    <td>3</td>
+    <td>15</td>
+    <td>2</td>
   </tr>
   <tr>
     <th>Proposed rules</th>
     <td>15</td>
-    <td>21</td>
+    <td>22</td>
   </tr>
 </tbody></table>
 
@@ -378,8 +376,8 @@ h2#sidebar-header {
         </a></td>
         <td>
           WCAG 2 Rule </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -612,6 +610,16 @@ h2#sidebar-header {
     
     
     
+      <tr>
+        <td><a href="#breakdown-6a7281">
+          ARIA state or property has valid value
+        </a></td>
+        <td> Proposed Rule
+        </td>
+        <td> Partial
+        </td>
+      </tr>
+    
     
     
     
@@ -784,8 +792,8 @@ h2#sidebar-header {
         </a></td>
         <td> Proposed Rule
         </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -928,8 +936,8 @@ h2#sidebar-header {
         </a></td>
         <td> Proposed Rule
         </td>
-        <td>
-          Consistent </td>
+        <td> Partial
+        </td>
       </tr>
     
     
@@ -1451,11 +1459,11 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
 <p>
   This rule is implemented by Axe DevTools Pro using the
   <code>valid-lang</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/de46e4">Element with lang attribute has valid language tag</a>
   WCAG 2 rule. 
-    It covers 18 of the 19 examples.
+    It covers all 19 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -1555,8 +1563,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0d2ac2a60f6b99de02537945ac61366e1562403d.html">Failed Example 4</a>
       </th>
-      <td class="
-          act-false-negative">passed</td>
+      <td class="">failed</td>
     </tr>
     <tr>
       <th>
@@ -4415,6 +4422,207 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   </tbody>
 </table>
 
+<h3 id="breakdown-6a7281">ARIA state or property has valid value</h3>
+<p>
+  This rule is implemented by Axe DevTools Pro using the
+  <code>aria-valid-attr-value</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/6a7281/proposed/">ARIA state or property has valid value</a>
+   proposed rule.
+    It covers 22 of the 24 examples.
+    On 1 example
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
+  
+  
+    The implementation reports different success criteria as failed from what is expected by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+       None 
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            4.1.2
+            Name, Role, Value
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>aria-valid-attr-value</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html">Passed Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/96266c86acb686975024d26d020899162944728e.html">Passed Example 3</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html">Passed Example 4</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html">Passed Example 5</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html">Passed Example 6</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html">Passed Example 7</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html">Passed Example 8</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/bb42f0c8876f592a3cc7accec1c4b0ac6a632cf3.html">Passed Example 9</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0.html">Passed Example 10</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ce27fcdd85fbf37a953727cdc454f3e504041a31.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f56c0ae73185b14d5b942e29b4567ff65518c940.html">Failed Example 2</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0959137934bd17ea8c95b86120b1c7331e4facc2.html">Failed Example 3</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html">Failed Example 4</a>
+      </th>
+      <td class="
+          act-false-negative">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html">Failed Example 5</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html">Failed Example 6</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/da1afbf428a6b21dd698995bdd6b39a059e2a581.html">Failed Example 7</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/bad4a344d82a15ba2396ceb7824dae56f894b85d.html">Failed Example 8</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b936e8a11737c2c8650d3afc28f7d58dcf8635e7.html">Failed Example 9</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html">Failed Example 10</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/9d80b71ad39b258fb75db804867f189d76ecdab8.html">Inapplicable Example 1</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/90428c9c8cc74d6a3047775637078366994a8e88.html">Inapplicable Example 2</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/d82c477ac58becfda4233237a642b8ef70eb6c5f.html">Inapplicable Example 3</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml">Inapplicable Example 4</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="breakdown-3e12e1">Block of repeated content is collapsible</h3>
 <p>
   This rule is implemented by Axe DevTools Pro using the
@@ -5837,11 +6045,11 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
 <p>
   This rule is implemented by Axe DevTools Pro using the
   <code>frame-title</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/cae760/proposed/">Iframe element has non-empty accessible name</a>
    proposed rule.
-    It covers 9 of the 10 examples.
+    It covers all 10 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -5929,8 +6137,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/8d7ed640412cd827b169ef4f465faed482feaa26.html">Failed Example 4</a>
       </th>
-      <td class="
-          act-false-negative">passed</td>
+      <td class="">failed</td>
     </tr>
     <tr>
       <th>
@@ -7422,11 +7629,15 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
 <p>
   This rule is implemented by Axe DevTools Pro using the
   <code>object-alt</code> procedure.
-  The implementation is 
-    fully  consistent with the
+  The implementation is  partially 
+   consistent with the
   <a href="/WAI/standards-guidelines/act/rules/8fc3b6/proposed/">Object element rendering non-text content has non-empty accessible name</a>
    proposed rule.
-    It covers all 14 examples.
+    It covers 14 of the 18 examples.
+  
+    For 4 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -7524,39 +7735,63 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html">Inapplicable Example 1</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/a2525d7f2db0db246df0a702416606c56085a17a.html">Failed Example 5</a>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/f6b0a52f8bb37ab0a8b290237add5be669a28b2f.html">Failed Example 6</a>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fd273c99d6129f0972ffdbe529b2b1cfa1116cf0.html">Inapplicable Example 1</a>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html">Inapplicable Example 2</a>
       </th>
       <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/52ac3fd2be278ede2bb32987a32673c6d5ee5edb.html">Inapplicable Example 2</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/52ac3fd2be278ede2bb32987a32673c6d5ee5edb.html">Inapplicable Example 3</a>
       </th>
       <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html">Inapplicable Example 3</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html">Inapplicable Example 4</a>
       </th>
       <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html">Inapplicable Example 4</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html">Inapplicable Example 5</a>
       </th>
       <td class="">passed</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html">Inapplicable Example 5</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html">Inapplicable Example 6</a>
       </th>
       <td class="">passed</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html">Inapplicable Example 6</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html">Inapplicable Example 7</a>
       </th>
       <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/25b2c00b86322f15c0cbb376b58b342fff916f62.html">Inapplicable Example 8</a>
+      </th>
+      <td class="act-untested">untested</td>
     </tr>
   </tbody>
 </table>
@@ -8853,9 +9088,9 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1662632185878638029"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1662648742319723910"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1662632185878638029"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1662648742319723910"></script>
 <script>
   svg4everybody();
 </script><script>

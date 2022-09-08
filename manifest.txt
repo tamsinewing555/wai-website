@@ -1174,6 +1174,7 @@
 /content-assets/wcag-act-rules/testcases/80f0bf/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/0b589d8fd36a41135b86e1f10ecac977a167c3a0.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/0f4a37cd30bd688d1a8ebbb915b2c70a4bf0272c.html
+/content-assets/wcag-act-rules/testcases/8fc3b6/25b2c00b86322f15c0cbb376b58b342fff916f62.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/2c4e13b6606b88bbe10bfffbe4b6f4e6d373c4a7.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/4147da2dd50e2326a7985207296cfcd0ba57a1ee.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html
@@ -1182,10 +1183,13 @@
 /content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/8bd420282f8209ce236004c61bc4bbd728afceb7.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html
+/content-assets/wcag-act-rules/testcases/8fc3b6/a2525d7f2db0db246df0a702416606c56085a17a.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/c3ed1c920db04a7b13d043fae5766694cf50d561.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/dcb42362e4cd8108444dd64c8538ef0523de0aa7.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/dd651de8f984bc2bc5d791eceedf16e70cca0cdc.html
+/content-assets/wcag-act-rules/testcases/8fc3b6/f6b0a52f8bb37ab0a8b290237add5be669a28b2f.html
 /content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html
+/content-assets/wcag-act-rules/testcases/8fc3b6/fd273c99d6129f0972ffdbe529b2b1cfa1116cf0.html
 /content-assets/wcag-act-rules/testcases/97a4e1/00fe207175e40ddc81a86fb09504e5fa33b7dd0f.html
 /content-assets/wcag-act-rules/testcases/97a4e1/0666607827b30150ed0a5be439f58623b3222131.html
 /content-assets/wcag-act-rules/testcases/97a4e1/096bf1e8eeb0b5633861389cb3fa3267649e396c.html
@@ -2280,6 +2284,7 @@
 /content-images/wai-wcag-supplemental/memory.svg
 /content-images/wai-wcag-supplemental/support.svg
 /content-images/wai-wcag-supplemental/tools.svg
+/courses/list/index.html
 /courses/submission/failure.html
 /courses/submission/index.html
 /courses/submission/success.html

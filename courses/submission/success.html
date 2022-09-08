@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1662632185878638029";
+      element.src = "/WAI/assets/scripts/main.js?1662648742319723910";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1662632185878638029">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1662648742319723910">
 
 <title> Form Submitted | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
@@ -56,12 +56,10 @@
   </div>
   
   <div class="minimal-header-logo">
-        <a href="http://w3.org/">
-            <img alt="W3C" src="/WAI/assets/images/w3c2.svg" width="92" height="44"/>
-        </a>
-        <a href="/WAI/">
-            <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg"/>
-        </a>
+    <a href="/WAI/">
+      <img alt="W3C" src="/WAI/assets/images/w3c2.svg" width="92" height="44"/>
+      <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg"/>
+    </a>
   </div>
 </header>
 
@@ -257,9 +255,11 @@ h2#sidebar-header {
             </h1>
         </header>
 
-        <div style="grid-column: 2 / span 8">
+        <!-- markdownlint-disable no-inline-html -->
 
-<style> 
+<div style="grid-column: 2 / span 8">
+
+<style>
 .minimal-header-container {
     display: grid !important;
     grid-column-gap: 32px;
@@ -275,7 +275,7 @@ h2#sidebar-header {
     display: grid;
     grid-gap: 2em;
     grid-column: 1 / 8;
-    margin-bottom: 48px;
+    margin-bottom: 30px;
 }
 
 .header-full {
@@ -287,12 +287,17 @@ h2#sidebar-header {
     grid-column: 1 / 7;
 }
 
+.header-left .box{
+    padding: 8px;
+    margin: 20px 0 30px;
+}
+
+
 .header-right {
     grid-column: 1 / 7;
 }
 
 .header-right .box {
-    margin: 0;
     padding: 8px;
 }
 
@@ -327,7 +332,7 @@ main>header {
     }
 
     .header-left {
-        grid-column: 1 / 6;
+        grid-column: 1 / 5;
     }
 
     .header-right {
@@ -349,8 +354,8 @@ main>header {
     display: contents;
 }
 
-#left-col h2 {
-    margin: 43px 0 20px;
+#app h2 {
+    margin: 20px 0 20px;
 }
 
 #left-col legend {
@@ -387,9 +392,20 @@ main>header {
     }
 }
 
-.courses-filters input {
-    margin-right: .5em;
+.filter-options input {
+    float:left;
 }
+
+.filter-options label {
+    margin-left:28px;
+    display:block;
+}
+
+/*
+#left-col .field label {
+    display: inline !important;
+}
+*/
 
 .field:not(.filter-options)>label{
     font-weight: 700;
@@ -441,15 +457,12 @@ select {
     cursor: pointer;
 }
 
-#left-col .field label {
-    display: inline !important;
-}
-
 #courses-list {
     padding-top: 2em;
     margin-top: 2em;
     border-top: 1px solid #ccc;
 }
+
 
 @media (min-width: 60em) {
     #courses-list {
@@ -466,6 +479,9 @@ select {
     }
 }
 
+details summary p{
+    color: var(--w3c-blue);
+}
 
 #courses-list dd {
     margin: 0 0 1em 0;
@@ -527,20 +543,13 @@ legend.expl{
 }
 
 #disclaimer {
-    border: 1px solid var(--line-grey);
+    grid-column: 2/10;
     margin-top: 2em;
 }
 
-#disclaimer h2 {
-    background-color: gold;
-    margin: 0px !important;
-    padding: 10px;
-    font-size: 1.3em;
-    color: var(--off-black);
-}
 
-#disclaimer p {
-    padding: 10px;
+.box-disclaimer {
+    margin: 0px !important;
 }
 
 #total-courses {
@@ -636,7 +645,6 @@ fieldset label:hover a:hover {
 .courses-list-header {
     display: grid;
     grid-gap: 1em;
-    border-bottom: 1px solid var(--line-grey);
     padding-bottom: 1em;
 }
 
@@ -672,6 +680,10 @@ fieldset label:hover a:hover {
     color: var(--pure-white);
     display: grid;
     align-items: center;
+}
+
+#filter-courses-info p{
+    margin: 0 !important;
 }
 
 button {
@@ -746,7 +758,7 @@ button {
     font-size: .85em;
 }
 
-#status span {
+#status {
     color: var(--wai-green);
     font-weight: bold;
 }
@@ -894,10 +906,7 @@ main > header { grid-column: 2 / span 8; }
 Thank you for your submission. We strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
 </div>
 
-
-
 <div class="header-full success"><p><em>We use GitHub and if you're really curious you can go to <a href="https://github.com/w3c/wai-course-list/pulls/">Course List GitHub repository</a> to see your information (JSON format).</em></p></div>
-
 
 </div>
 
@@ -955,9 +964,9 @@ Thank you for your submission. We strive to review and publish your submission w
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1662632185878638029"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1662648742319723910"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1662632185878638029"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1662648742319723910"></script>
 <script>
   svg4everybody();
 </script><script>

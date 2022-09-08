@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1662632185878638029";
+      element.src = "/WAI/assets/scripts/main.js?1662648742319723910";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1662632185878638029">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1662648742319723910">
 
-<title> Alfa ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1662632185878638029"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Alfa ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1662648742319723910"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Alfa ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -60,12 +60,10 @@
   </div>
   
   <div class="minimal-header-logo">
-        <a href="http://w3.org/">
-            <img alt="W3C" src="/WAI/assets/images/w3c2.svg" width="92" height="44"/>
-        </a>
-        <a href="/WAI/">
-            <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg"/>
-        </a>
+    <a href="/WAI/">
+      <img alt="W3C" src="/WAI/assets/images/w3c2.svg" width="92" height="44"/>
+      <img alt="Web Accessibility Initiative" src="/WAI/assets/images/wai.svg"/>
+    </a>
   </div>
 </header>
 
@@ -331,8 +329,8 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>Proposed rules</th>
-    <td>7</td>
-    <td>9</td>
+    <td>6</td>
+    <td>10</td>
   </tr>
 </tbody></table>
 
@@ -758,8 +756,8 @@ h2#sidebar-header {
         </a></td>
         <td> Proposed Rule
         </td>
-        <td>
-          Consistent </td>
+        <td> Partial
+        </td>
       </tr>
     
     
@@ -4903,11 +4901,15 @@ h2#sidebar-header {
 <p>
   This rule is implemented by Alfa using the
   <code>sia-r63</code> procedure.
-  The implementation is 
-    fully  consistent with the
+  The implementation is  partially 
+   consistent with the
   <a href="/WAI/standards-guidelines/act/rules/8fc3b6/proposed/">Object element rendering non-text content has non-empty accessible name</a>
    proposed rule.
-    It covers all 14 examples.
+    It covers 14 of the 18 examples.
+  
+    For 4 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -5005,39 +5007,63 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html">Inapplicable Example 1</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/a2525d7f2db0db246df0a702416606c56085a17a.html">Failed Example 5</a>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/f6b0a52f8bb37ab0a8b290237add5be669a28b2f.html">Failed Example 6</a>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fd273c99d6129f0972ffdbe529b2b1cfa1116cf0.html">Inapplicable Example 1</a>
+      </th>
+      <td class="act-untested">untested</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html">Inapplicable Example 2</a>
       </th>
       <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/52ac3fd2be278ede2bb32987a32673c6d5ee5edb.html">Inapplicable Example 2</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/52ac3fd2be278ede2bb32987a32673c6d5ee5edb.html">Inapplicable Example 3</a>
       </th>
       <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html">Inapplicable Example 3</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html">Inapplicable Example 4</a>
       </th>
       <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html">Inapplicable Example 4</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html">Inapplicable Example 5</a>
       </th>
       <td class="">inapplicable</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html">Inapplicable Example 5</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html">Inapplicable Example 6</a>
       </th>
       <td class="">passed</td>
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html">Inapplicable Example 6</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html">Inapplicable Example 7</a>
       </th>
       <td class="">inapplicable</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/25b2c00b86322f15c0cbb376b58b342fff916f62.html">Inapplicable Example 8</a>
+      </th>
+      <td class="act-untested">untested</td>
     </tr>
   </tbody>
 </table>
@@ -5375,9 +5401,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1662632185878638029"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1662648742319723910"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1662632185878638029"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1662648742319723910"></script>
 <script>
   svg4everybody();
 </script><script>
