@@ -2042,6 +2042,8 @@
 /content-images/wai-components/relate.png
 /content-images/wai-components/specs.png
 /content-images/wai-conformance-eval-overview/conformance-evaluation-cc.vtt
+/content-images/wai-course-list/clear.svg
+/content-images/wai-course-list/w3c.png
 /content-images/wai-easy-checks/easy-checks-accessibility-cc.vtt
 /content-images/wai-easy-checks/video-thumb-easy-checks.png
 /content-images/wai-eval-overview/conformance-evaluation-cc.vtt
@@ -2284,6 +2286,8 @@
 /content-images/wai-wcag-supplemental/memory.svg
 /content-images/wai-wcag-supplemental/support.svg
 /content-images/wai-wcag-supplemental/tools.svg
+/courses/foundations-course/index.html
+/courses/index.html
 /courses/list/index.html
 /courses/submission/failure.html
 /courses/submission/index.html
@@ -2346,11 +2350,11 @@
 /fundamentals/components/index.html
 /fundamentals/components/ko.html
 /fundamentals/es.html
-/fundamentals/foundations-course/index.html
 /fundamentals/fr.html
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
+/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
