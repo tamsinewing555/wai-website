@@ -2520,6 +2520,8 @@
 /news/2022-07-05/SAUR/index.html
 /news/2022-07-22/remote-meetings/index.html
 /news/2022-08-31/making-events-accessible/index.html
+/news/2022-09-06/maturity-model/index.html
+/news/2022-09-06/wcag-22-cr/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
@@ -2528,6 +2530,7 @@
 /news/26/index.html
 /news/27/index.html
 /news/28/index.html
+/news/29/index.html
 /news/3/index.html
 /news/4/index.html
 /news/5/index.html

@@ -13,6 +13,48 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-09-06/wcag-22-cr/",
+            "title": "Call for Implementations: WCAG 2.2 Candidate Recommendation",
+            "summary": null,
+            "content_text": "WCAG 2.2 is now officially a ‘Candidate Recommendation’. We’re seeking examples of how the new ‘success criteria’ are implemented in websites and web apps. We plan to publish the finalized WCAG 2.2 in December 2022. Please see status and updates in What’s New in WCAG 2.2 Draft. Please submit implementations and any comments by 4 October 2022.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/WCAG22\">WCAG 2.2</a> is now officially a ‘Candidate Recommendation’. We’re seeking examples of how the new ‘success criteria’ are implemented in websites and web apps. We plan to publish the finalized WCAG 2.2 in December 2022. Please see status and updates in <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/\">What’s New in WCAG 2.2 Draft</a>. Please submit implementations and any comments by <strong>4 October 2022</strong>.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-09-06/wcag-22-cr/",
+            
+            
+            
+            
+            
+            "date_published": "2022-09-06T00:00:00+00:00",
+            "date_modified": "2022-09-06T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2022-09-06/maturity-model/",
+            "title": "For Reveiw: Accessibility Maturity Model - Group Draft Note",
+            "summary": null,
+            "content_text": "The Accessibility Maturity Model Draft Note is available for review and comment. The document is designed to help organizations track and improve the accessibility of their products, services, and internal support of people with disabilities. For more information, see the blog post that addresses \"Why Does Accessibility Need a Maturity Model?\". Please submit any comments by 16 October 2022.",
+            "content_html": "<p>The <a href=\"https://www.w3.org/TR/maturity-model/\">Accessibility Maturity Model</a> Draft Note is available for review and comment. The document is designed to help organizations track and improve the accessibility of their products, services, and internal support of people with disabilities. For more information, see the blog post that addresses \"<a href=\"https://www.w3.org/blog/2022/09/w3c-accessibility-maturity-model/\">Why Does Accessibility Need a Maturity Model?</a>\". Please submit any comments by 16 October 2022.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-09-06/maturity-model/",
+            
+            
+            
+            
+            
+            "date_published": "2022-09-06T00:00:00+00:00",
+            "date_modified": "2022-09-06T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2022-08-31/making-events-accessible/",
             "title": "Updated: Making Events Accessible - Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid",
             "summary": null,
@@ -719,48 +761,6 @@
             
             "date_published": "2020-05-26T00:00:00+00:00",
             "date_modified": "2020-05-26T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2020-05-14/eval-videos-gaad/",
-            "title": "New Videos Introduce Web Accessibility - Great for GAAD",
-            "summary": null,
-            "content_text": "The Accessibility Education and Outreach Working Group (EOWG) has published 5 short videos that introduce evaluation resources from the W3C Web Accessibility Initiative (WAI). The animated videos cover: Easy Checks — A First Review of Web Accessibility,  Evaluation Tools, Conformance Evaluation including the Report Tool, and Involving Users in Web Accessibility. Other WAI videos include: Video Introduction to Web Accessibility and W3C Standards and the Web Accessibility Perspectives videos that demonstrate how accessibility is essential for some and useful for all. These videos are particularly useful to share for Global Accessibility Awareness Day (GAAD) on 21 May 2020 — along with the free online course: Introduction to Web Accessibility.",
-            "content_html": "<p>The Accessibility Education and Outreach Working Group (<a href=\"https://www.w3.org/WAI/EO/\">EOWG</a>) has published <a href=\"https://www.w3.org/WAI/test-evaluate/\">5 short videos that introduce evaluation resources</a> from the W3C Web Accessibility Initiative (<a href=\"https://www.w3.org/WAI/\">WAI</a>). The animated videos cover: Easy Checks — A First Review of Web Accessibility,  Evaluation Tools, Conformance Evaluation including the Report Tool, and Involving Users in Web Accessibility. Other WAI videos include: <a href=\"https://www.w3.org/WAI/videos/standards-and-benefits/\">Video Introduction to Web Accessibility and W3C Standards</a> and the <a href=\"https://www.w3.org/WAI/perspective-videos/\">Web Accessibility Perspectives videos</a> that demonstrate how accessibility is essential for some and useful for all. These videos are particularly useful to share for Global Accessibility Awareness Day (<a href=\"https://globalaccessibilityawarenessday.org/\">GAAD</a>) on 21 May 2020 — along with the free online course: <a href=\"https://www.w3.org/blog/2019/12/free-online-course-introduction-to-web-accessibility/\">Introduction to Web Accessibility</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2020-05-14/eval-videos-gaad/",
-            
-            
-            
-            
-            
-            "date_published": "2020-05-14T00:00:00+00:00",
-            "date_modified": "2020-05-14T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2020-03-19/RAUR/",
-            "title": "For Review: RTC Accessibility User Requirements (RAUR) First Draft",
-            "summary": null,
-            "content_text": "The First Public Working Draft of the Working Group Note RTC Accessibility User Requirements (RAUR) is now available for review. RAUR outlines user needs, requirements, and scenarios for real-time communication (RTC) to be accessible to people with disabilities. Accessible telecommunication technology is increasingly important for people who are working remotely and relying on RTC for daily needs. The purpose of this document is to inform the development of specifications and underlying architecture at W3C and beyond. Some of the requirements apply at the system or platform level, and some are authoring requirements. We would particularly like input on any user needs or requirements that are missing from this draft. For more information, see the blog post RTC Accessibility User Requirements – Call for Review.",
-            "content_html": "<p>The First Public Working Draft of the Working Group Note <a href=\"https://www.w3.org/TR/RAUR/\">RTC Accessibility User Requirements (RAUR)</a> is now available for review. RAUR outlines user needs, requirements, and scenarios for real-time communication (RTC) to be accessible to people with disabilities. Accessible telecommunication technology is increasingly important for people who are working remotely and relying on RTC for daily needs. The purpose of this document is to inform the development of specifications and underlying architecture at W3C and beyond. Some of the requirements apply at the system or platform level, and some are authoring requirements. We would particularly like input on any user needs or requirements that are missing from this draft. For more information, see the blog post <a href=\"https://www.w3.org/blog/2020/03/rtc-accessibility-user-requirements-call-for-review/\">RTC Accessibility User Requirements – Call for Review</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2020-03-19/RAUR/",
-            
-            
-            
-            
-            
-            "date_published": "2020-03-19T00:00:00+00:00",
-            "date_modified": "2020-03-19T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
