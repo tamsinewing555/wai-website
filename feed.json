@@ -35,7 +35,7 @@
     
         {
             "id": "https://www.w3.org/WAI/news/2022-09-06/maturity-model/",
-            "title": "For Reveiw: Accessibility Maturity Model - Group Draft Note",
+            "title": "For Review: Accessibility Maturity Model - Group Draft Note",
             "summary": null,
             "content_text": "The Accessibility Maturity Model Draft Note is available for review and comment. The document is designed to help organizations track and improve the accessibility of their products, services, and internal support of people with disabilities. For more information, see the blog post that addresses \"Why Does Accessibility Need a Maturity Model?\". Please submit any comments by 16 October 2022.",
             "content_html": "<p>The <a href=\"https://www.w3.org/TR/maturity-model/\">Accessibility Maturity Model</a> Draft Note is available for review and comment. The document is designed to help organizations track and improve the accessibility of their products, services, and internal support of people with disabilities. For more information, see the blog post that addresses \"<a href=\"https://www.w3.org/blog/2022/09/w3c-accessibility-maturity-model/\">Why Does Accessibility Need a Maturity Model?</a>\". Please submit any comments by 16 October 2022.</p>",
@@ -79,8 +79,8 @@
             "id": "https://www.w3.org/WAI/news/2022-07-22/remote-meetings/",
             "title": "Accessibility of Remote Meetings - Note Published",
             "summary": null,
-            "content_text": "Making Events Accessible:Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid now has a more detailed companion resource: Accessibility of Remote Meetings. Accessibility of Remote Meetings provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participting in remote meetings and hybrid meetings.",
-            "content_html": "<p><a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">Making Events Accessible:Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid</a> now has a more detailed companion resource: <a href=\"https://www.w3.org/TR/remote-meetings/\">Accessibility of Remote Meetings</a>. <cite>Accessibility of Remote Meetings</cite> provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participting in remote meetings and hybrid meetings.</p>",
+            "content_text": "Making Events Accessible:Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid now has a more detailed companion resource: Accessibility of Remote Meetings. Accessibility of Remote Meetings provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participating in remote meetings and hybrid meetings.",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">Making Events Accessible:Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid</a> now has a more detailed companion resource: <a href=\"https://www.w3.org/TR/remote-meetings/\">Accessibility of Remote Meetings</a>. <cite>Accessibility of Remote Meetings</cite> provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participating in remote meetings and hybrid meetings.</p>",
             "url": "https://www.w3.org/WAI/news/2022-07-22/remote-meetings/",
             
             
