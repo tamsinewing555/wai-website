@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-09-19/course-list/",
+            "title": "New Resource: Accessibility Course List",
+            "summary": null,
+            "content_text": "Course List - Digital Accessibility Education, Training, and Certification includes publicly-available courses around the world. We expect to add more courses in the coming weeks. We invite course providers to submit your courses. We may also revise the user interface based on additional user feedback. Please send any comments by 17 October 2022.",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/courses/list/\">Course List - Digital Accessibility Education, Training, and Certification</a> includes publicly-available courses around the world. We expect to add more courses in the coming weeks. We invite course providers to submit your courses. We may also revise the user interface based on additional user feedback. Please send any comments by 17 October 2022.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-09-19/course-list/",
+            
+            
+            
+            
+            
+            "date_published": "2022-09-19T00:00:00+00:00",
+            "date_modified": "2022-09-19T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2022-09-06/wcag-22-cr/",
             "title": "Call for Implementations: WCAG 2.2 Candidate Recommendation",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2020-06-19T00:00:00+00:00",
             "date_modified": "2020-06-19T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2020-05-26/wcag-21-in-dutch/",
-            "title": "WCAG 2.1 in Dutch: Authorized Translation Published",
-            "summary": null,
-            "content_text": "Richtlijnen voor Toegankelijkheid van Webcontent (WCAG) 2.1, the Dutch Authorized Translation of Web Content Accessibility Guidelines (WCAG) 2.1, is now available, following completion of the W3C Authorized Translations process. Other translations of WAI resources are listed in All WAI Translations. WAI encourages translations in all languages. If you might be interesting in translating resources, see Translating WAI Resources.",
-            "content_html": "<p><a href=\"https://www.w3.org/Translations/WCAG21-nl/\" lang=\"nl\" hreflang=\"nl\">Richtlijnen voor Toegankelijkheid van Webcontent (WCAG) 2.1</a>, the Dutch Authorized Translation of <a href=\"http://www.w3.org/WAI/intro/wcag\">Web Content Accessibility Guidelines (WCAG) 2.1</a>, is now available, following completion of the <a href=\"http://www.w3.org/2005/02/TranslationPolicy\">W3C Authorized Translations process</a>. Other translations of WAI resources are listed in <a href=\"https://www.w3.org/WAI/translations/\">All WAI Translations</a>. WAI encourages translations in all languages. If you might be interesting in translating resources, see <a href=\"https://www.w3.org/WAI/about/translating/\">Translating WAI Resources</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2020-05-26/wcag-21-in-dutch/",
-            
-            
-            
-            
-            
-            "date_published": "2020-05-26T00:00:00+00:00",
-            "date_modified": "2020-05-26T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"

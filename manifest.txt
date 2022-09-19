@@ -2354,7 +2354,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2522,6 +2521,7 @@
 /news/2022-08-31/making-events-accessible/index.html
 /news/2022-09-06/maturity-model/index.html
 /news/2022-09-06/wcag-22-cr/index.html
+/news/2022-09-19/course-list/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
