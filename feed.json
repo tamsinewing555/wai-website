@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-09-29/curricula/",
+            "title": "Updated Resource: Content Author Modules in Curricula on Web Accessibility",
+            "summary": null,
+            "content_text": "Curricula on Web Accessibility now has new content author modules. This curricula provides a framework for creating courses on digital accessibility, for including accessibility in other courses, and for reviewing and comparing existing and proposed courses. The September 2022 publication adds new content author modules. These modules focus on teaching accessibility to writers, editors, content creators, and content publishers.",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/curricula/\">Curricula on Web Accessibility</a> now has new content author modules. This curricula provides a framework for creating courses on digital accessibility, for including accessibility in other courses, and for reviewing and comparing existing and proposed courses. The September 2022 publication adds new <a href=\"https://www.w3.org/WAI/curricula/content-author-modules/\">content author modules</a>. These modules focus on teaching accessibility to writers, editors, content creators, and content publishers.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-09-29/curricula/",
+            
+            
+            
+            
+            
+            "date_published": "2022-09-29T00:00:00+00:00",
+            "date_modified": "2022-09-29T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2022-09-19/course-list/",
             "title": "New Resource: Accessibility Course List",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2020-06-29T00:00:00+00:00",
             "date_modified": "2020-06-29T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2020-06-19/conformance-challenges-approaches-for-mitigating/",
-            "title": "For Review: Challenges with Accessibility Guidelines Conformance and Testing, and Approaches for Mitigating Them",
-            "summary": null,
-            "content_text": "The Accessibility Guidelines Working Group (AG WG) has published an updated Working Draft of Challenges with Accessibility Guidelines Conformance and Testing, and Approaches for Mitigating Them. This document is part of work on future accessibility guidelines, including WCAG 3.0. It explores the challenges of evaluating a broad range of websites and applications for conformance to Web Content Accessibility Guidelines (WCAG), and explores approaches for mitigating these challenges. Please see the blog post for information on this document and questions for review: Challenges with Accessibility Guidelines Conformance and Testing, and Approaches for Mitigating Them - blog.",
-            "content_html": "<p>The Accessibility Guidelines Working Group (<a href=\"https://www.w3.org/WAI/GL/\">AG WG</a>) has published an updated <a href=\"https://www.w3.org/TR/2020/WD-accessibility-conformance-challenges-20200619/\">Working Draft of Challenges with Accessibility Guidelines Conformance and Testing, and Approaches for Mitigating Them</a>. This document is part of work on future accessibility guidelines, including WCAG 3.0. It explores the challenges of evaluating a broad range of websites and applications for conformance to Web Content Accessibility Guidelines (WCAG), and explores approaches for mitigating these challenges. Please see the blog post for information on this document and questions for review: <a href=\"https://www.w3.org/blog/2020/06/accessibility-conformance-challenges-draft/\">Challenges with Accessibility Guidelines Conformance and Testing, and Approaches for Mitigating Them - blog</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2020-06-19/conformance-challenges-approaches-for-mitigating/",
-            
-            
-            
-            
-            
-            "date_published": "2020-06-19T00:00:00+00:00",
-            "date_modified": "2020-06-19T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"

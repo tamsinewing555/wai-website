@@ -2536,6 +2536,7 @@
 /news/2022-09-06/maturity-model/index.html
 /news/2022-09-06/wcag-22-cr/index.html
 /news/2022-09-19/course-list/index.html
+/news/2022-09-29/curricula/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
