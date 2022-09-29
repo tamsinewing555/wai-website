@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1663853225767803184";
+      element.src = "/WAI/assets/scripts/main.js?1664458117720382982";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1663853225767803184">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1664458117720382982">
 
-<title> SortSite ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1663853225767803184"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> SortSite ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1664458117720382982"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="SortSite ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -305,7 +305,7 @@ h2#sidebar-header {
       version 6.45
     is an Automated tool
       by <a href="https://www.powermapper.com/">PowerMapper</a>.
-      The test results were last updated 8 July 2022.
+      The test results were last updated 23 September 2022.
 
     
 
@@ -329,8 +329,8 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>Proposed rules</th>
-    <td>19</td>
-    <td>4</td>
+    <td>21</td>
+    <td>3</td>
   </tr>
 </tbody></table>
 
@@ -782,6 +782,16 @@ h2#sidebar-header {
     
     
     
+      <tr>
+        <td><a href="#breakdown-bc659a">
+          Meta element has no refresh delay
+        </a></td>
+        <td> Proposed Rule
+        </td>
+        <td>
+          Consistent </td>
+      </tr>
+    
     
     
     
@@ -882,8 +892,8 @@ h2#sidebar-header {
         </a></td>
         <td> Proposed Rule
         </td>
-        <td> Partial
-        </td>
+        <td>
+          Consistent </td>
       </tr>
     
     
@@ -2687,11 +2697,6 @@ h2#sidebar-header {
           <li>
             2.4.4
             Link Purpose (In Context)
-          </li>
-        
-          <li>
-            2.4.9
-            Link Purpose (Link Only)
           </li>
         </ul>
       
@@ -5148,11 +5153,6 @@ h2#sidebar-header {
             2.4.4
             Link Purpose (In Context)
           </li>
-        
-          <li>
-            2.4.9
-            Link Purpose (Link Only)
-          </li>
         </ul>
       
     </td>
@@ -5404,6 +5404,165 @@ h2#sidebar-header {
   </tbody>
 </table>
 
+<h3 id="breakdown-bc659a">Meta element has no refresh delay</h3>
+<p>
+  This rule is implemented by SortSite using the
+  <code>AccHtmlMetaRefresh</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/bc659a/proposed/">Meta element has no refresh delay</a>
+   proposed rule.
+    It covers all 15 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+      
+        <ul>
+          <li>
+            2.2.1
+            Timing Adjustable
+          </li>
+        </ul>
+      
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            2.2.1
+            Timing Adjustable
+          </li>
+        
+          <li>
+            2.2.4
+            Interruptions
+          </li>
+        
+          <li>
+            3.2.5
+            Change on Request
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>AccHtmlMetaRefresh</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/49d79a4e4e4a994a8eb7cf2eaf59c99d2251cac5.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/d48be8e9b638b9c27714cb3118a335376ed65f0f.html">Passed Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b5ca868de7980f6944142ecdb849f47ad2cdfb5c.html">Passed Example 3</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/56857820788db21498e95a5cbba65d59a9a2b892.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/96c7657d21888cd05edd297d44a8fd554b21c908.html">Failed Example 2</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b2e7f3e00ffce0a2a1078f860452814e6445445d.html">Failed Example 3</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/5d4d5b214459c8a0779600ab39a5668003271c62.html">Failed Example 4</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/48a600254c0883cd5a72471420b1ac5a532ca6c3.html">Inapplicable Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/4dffd30573a924ad0158d813733e029aac160194.html">Inapplicable Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a05aeffa53890c3ed9fd9cefa544eb1071497de5.html">Inapplicable Example 3</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a8c47bb26867342e83342645507fb766648799d7.html">Inapplicable Example 4</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ca4a053f47b6e322ad6de680fdabd05f651bf49b.html">Inapplicable Example 5</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b42a3a108d5d0f65258cd8157eb0011b78ce9253.html">Inapplicable Example 6</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/0bf30cdf02ff26dfca5aa705b7023227da221e05.html">Inapplicable Example 7</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/8ce8198a1e6907ae25eb957eb0a5a99e719131a1.html">Inapplicable Example 8</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="breakdown-b4f0c3">Meta viewport allows for zoom</h3>
 <p>
   This rule is implemented by SortSite using the
@@ -5537,9 +5696,9 @@ h2#sidebar-header {
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/8fc3b6/proposed/">Object element rendering non-text content has non-empty accessible name</a>
    proposed rule.
-    It covers 14 of the 18 examples.
+    It covers 17 of the 18 examples.
   
-    For 4 examples
+    For 1 example
     no results were reported. This can happen when examples are newer then the
     test results.
   
@@ -5603,9 +5762,9 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/0b589d8fd36a41135b86e1f10ecac977a167c3a0.html">Passed Example 3</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/1b172036f8e219ef9b6f591d7f5df26e4ba11327.html">Passed Example 3</a>
       </th>
-      <td class="">passed</td>
+      <td class="act-untested">untested</td>
     </tr>
     <tr>
       <th>
@@ -5641,19 +5800,19 @@ h2#sidebar-header {
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/a2525d7f2db0db246df0a702416606c56085a17a.html">Failed Example 5</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">failed</td>
     </tr>
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/f6b0a52f8bb37ab0a8b290237add5be669a28b2f.html">Failed Example 6</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">failed</td>
     </tr>
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fd273c99d6129f0972ffdbe529b2b1cfa1116cf0.html">Inapplicable Example 1</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">passed</td>
     </tr>
     <tr>
       <th>
@@ -5695,7 +5854,7 @@ h2#sidebar-header {
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/25b2c00b86322f15c0cbb376b58b342fff916f62.html">Inapplicable Example 8</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">passed</td>
     </tr>
   </tbody>
 </table>
@@ -5953,11 +6112,6 @@ h2#sidebar-header {
           <li>
             2.1.1
             Keyboard
-          </li>
-        
-          <li>
-            2.1.3
-            Keyboard (No Exception)
           </li>
         </ul>
       
@@ -6238,11 +6392,6 @@ h2#sidebar-header {
             1.4.3
             Contrast (Minimum)
           </li>
-        
-          <li>
-            1.4.6
-            Contrast (Enhanced)
-          </li>
         </ul>
       
     </td>
@@ -6451,15 +6600,11 @@ h2#sidebar-header {
 <p>
   This rule is implemented by SortSite using the
   <code>AccHtmlContrastEnhanced</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/09o5cg/proposed/">Text has enhanced contrast</a>
    proposed rule.
-    It covers 28 of the 29 examples.
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 29 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -6523,7 +6668,7 @@ h2#sidebar-header {
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html">Passed Example 3</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">passed</td>
     </tr>
     <tr>
       <th>
@@ -6883,9 +7028,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1663853225767803184"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1664458117720382982"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1663853225767803184"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1664458117720382982"></script>
 <script>
   svg4everybody();
 </script><script>
