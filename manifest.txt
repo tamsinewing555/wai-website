@@ -2301,6 +2301,13 @@
 /courses/submission/success.html
 /curricula/acknowledgements/index.html
 /curricula/changelog/index.html
+/curricula/content-author-modules/clear-content/index.html
+/curricula/content-author-modules/data-tables/index.html
+/curricula/content-author-modules/forms/index.html
+/curricula/content-author-modules/images/index.html
+/curricula/content-author-modules/index.html
+/curricula/content-author-modules/multimedia/index.html
+/curricula/content-author-modules/structure/index.html
 /curricula/designer-modules/forms-design/index.html
 /curricula/designer-modules/images-and-graphics/index.html
 /curricula/designer-modules/index.html
