@@ -606,6 +606,7 @@
 /content-assets/wai-aria-practices/styles.css
 /content-assets/wcag-act-rules/act-styles.css
 /content-assets/wcag-act-rules/bar-chart-fill.svg
+/content-assets/wcag-act-rules/earl-context.json
 /content-assets/wcag-act-rules/earl/alfa.json
 /content-assets/wcag-act-rules/earl/axe-core.json
 /content-assets/wcag-act-rules/earl/axe-devtools-pro.json
@@ -614,6 +615,8 @@
 /content-assets/wcag-act-rules/earl/sort-site.json
 /content-assets/wcag-act-rules/earl/sortsite.json
 /content-assets/wcag-act-rules/earl/trusted-tester.json
+/content-assets/wcag-act-rules/impl-large-scope.svg
+/content-assets/wcag-act-rules/impl-small-scope.svg
 /content-assets/wcag-act-rules/test-assets/0va7u6/bigA.png
 /content-assets/wcag-act-rules/test-assets/0va7u6/books.jpg
 /content-assets/wcag-act-rules/test-assets/0va7u6/button.jpg
@@ -2368,6 +2371,7 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
+/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2749,6 +2753,10 @@
 /standards-guidelines/act/implementations/sortsite/index.html
 /standards-guidelines/act/implementations/trusted-tester/index.html
 /standards-guidelines/act/index.html
+/standards-guidelines/act/report/earl/index.html
+/standards-guidelines/act/report/mapping/index.html
+/standards-guidelines/act/report/submit/index.html
+/standards-guidelines/act/report/testcases/index.html
 /standards-guidelines/act/rules/047fe0/proposed/index.html
 /standards-guidelines/act/rules/09o5cg/proposed/index.html
 /standards-guidelines/act/rules/0ssw9k/proposed/index.html

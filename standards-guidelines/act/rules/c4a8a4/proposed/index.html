@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1666201620668416874";
+      element.src = "/WAI/assets/scripts/main.js?1666320724653623445";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666201620668416874">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666320724653623445">
 
-<title> HTML page title is descriptive[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666201620668416874"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> HTML page title is descriptive[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666320724653623445"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="HTML page title is descriptive" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -333,17 +333,12 @@ h2#sidebar-header {
  </aside>
 
 <h2 id="description">Description</h2>
-<p>This rule checks that the first title in an HTML page describes the topic or purpose of that page.</p>
+<p>This rule checks that the first title in an HTML web page describes the topic or purpose of that page.</p>
 
 
 <h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to the first <a href="#namespaced-element">HTML</a> <code class="language-plaintext highlighter-rouge">title</code> element that</p>
-
-<ul>
-  <li>is a <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> of the <code class="language-plaintext highlighter-rouge">html</code> element of a <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web page</a>, and</li>
-  <li>contains <a href="https://dom.spec.whatwg.org/#concept-tree-child">children</a> that are <a href="https://dom.spec.whatwg.org/#text">text nodes</a> that are not only <a href="#whitespace">whitespace</a>.</li>
-</ul>
+<p>This rule applies to the <a href="https://html.spec.whatwg.org/multipage/dom.html#the-title-element-2" title="HTML definition of Document Title">document title</a> of each <a href="#web-page-html" title="Definition of Web Page (HTML)">html web page</a> if this <a href="https://html.spec.whatwg.org/multipage/dom.html#the-title-element-2" title="HTML definition of Document Title">document title</a> contains not only <a href="#whitespace">whitespace</a> <a href="https://dom.spec.whatwg.org/#text">text nodes</a>.</p>
 
 <h2 id="expectation">Expectation</h2>
 
@@ -351,9 +346,7 @@ h2#sidebar-header {
 
 <h2 id="assumptions">Assumptions</h2>
 
-<ul>
-  <li>A prerequisite for this rule is that Technique H25: Providing a title using the title element is used for living up to 2.4.2 Page Titled</li>
-</ul>
+<p>There are currently no assumptions.</p>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
@@ -544,12 +537,6 @@ h2#sidebar-header {
 
 <h2 id="glossary">Glossary</h2>
 
-<h3 id="namespaced-element">Namespaced Element</h3>
-
-<p>An <a href="https://dom.spec.whatwg.org/#element" title="DOM element, 2021/05/31">element</a> with a specific <a href="https://dom.spec.whatwg.org/#dom-element-namespaceuri" title="DOM Element namespaceURI, 2021/05/31">namespaceURI</a> value from <a href="https://infra.spec.whatwg.org/#namespaces" title="HTML namespace, 2021/05/31">HTML namespaces</a>. For example an “SVG element” is any element with the “SVG namespace”, which is <code class="language-plaintext highlighter-rouge">http://www.w3.org/2000/svg</code>.</p>
-
-<p>Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">title</code> have a different namespace depending on where they are used. For example a <code class="language-plaintext highlighter-rouge">title</code> in an HTML page usually has the HTML namespace. When used in an <code class="language-plaintext highlighter-rouge">svg</code> element, a <code class="language-plaintext highlighter-rouge">title</code> element has the SVG namespace instead.</p>
-
 <h3 id="outcome">Outcome</h3>
 
 <p>An <em>outcome</em> is a conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> or one of its constituent <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. An outcome can be one of the three following types:</p>
@@ -563,6 +550,16 @@ h2#sidebar-header {
 <p><strong>Note:</strong> A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> will have one or more outcomes.</p>
 
 <p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
+
+<h3 id="web-page-html">Web page (HTML)</h3>
+
+<p>An <em>HTML <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web page</a></em> is the set of all <a href="https://html.spec.whatwg.org/#fully-active">fully active</a> <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> which share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context">top-level browsing context</a>.</p>
+
+<p><strong>Note:</strong> Nesting of browsing context mostly happens with <code class="language-plaintext highlighter-rouge">iframe</code> and <code class="language-plaintext highlighter-rouge">object</code>. Thus a web page will most of the time be a “top-level” document and all its <code class="language-plaintext highlighter-rouge">iframe</code> and <code class="language-plaintext highlighter-rouge">object</code> (recursively).</p>
+
+<p><strong>Note:</strong> <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">Web pages</a> as defined by WCAG are not restricted to the HTML technology but can also include, <em>e.g.</em>, PDF or DOCX documents.</p>
+
+<p><strong>Note:</strong> Although web pages as defined here are sets of <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> (and do not contain other kind of nodes), one can abusively write that any node is “in a web page” if it is a <a href="https://dom.spec.whatwg.org/#concept-shadow-including-descendant">shadow-including descendant</a> of a <a href="https://dom.spec.whatwg.org/#concept-document">document</a> that is part of that web page.</p>
 
 <h3 id="whitespace">Whitespace</h3>
 
@@ -607,7 +604,7 @@ h2#sidebar-header {
     </thead>
     <tbody>
         <tr>
-          <td>Axe DevTools Pro 4.24.5</td>
+          <td>Axe DevTools Pro 4.37.1</td>
           <td>Semi-automated tool</td>
           <td>
             Consistent </td>
@@ -649,7 +646,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> c4a8a4</p>
-<p><strong>Date:</strong> Updated 12 July 2022</p>
+<p><strong>Date:</strong> Updated 13 October 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/corbb">Corbb O'Connor</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -690,9 +687,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1666201620668416874"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1666320724653623445"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1666201620668416874"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1666320724653623445"></script>
 <script>
   svg4everybody();
 </script><script>

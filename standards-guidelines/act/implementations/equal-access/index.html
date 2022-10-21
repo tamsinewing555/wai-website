@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1666201620668416874";
+      element.src = "/WAI/assets/scripts/main.js?1666320724653623445";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666201620668416874">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666320724653623445">
 
-<title> Equal Access Accessibility Checker ACT Implementation | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666201620668416874"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Equal Access Accessibility Checker ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666320724653623445"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Equal Access Accessibility Checker ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -40,7 +40,7 @@
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-equal-access-accessibility-checker-act-implementation  doc-note doc-draft tight-page">
+  <body id="top" class="page-equal-access-accessibility-checker-act-implementation  tight-page">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
    <div class="minimal-header-container default-grid">
@@ -72,7 +72,7 @@
     <div class="default-grid nav-container">
         <div class="nav" >
           
-           <nav class="nav" aria-label="false">
+           <nav class="nav" aria-label="">
             <ul>
             
                 <li class="nav__item"><a href="/WAI/standards-guidelines/act/rules/">All Rules</a></li>
@@ -286,15 +286,16 @@ h2#sidebar-header {
         <header>
             <h1>
               
+              <span class="standalone-resource__type-of-guidance">
+                
+                
+              </span>
+              
               Equal Access Accessibility Checker ACT Implementation
             </h1>
         </header>
 
         
-
-<section class="doc-note-box act-sticky">
-  <p>This page is <strong>under development</strong> and has not been approved by the working group.</p>
-</section>
 
 <aside class="box"> 
   <header class="box-h box-h-icon"> 
@@ -305,7 +306,7 @@ h2#sidebar-header {
       version 3.1.36
     is an Automated tool
       by <a href="https://www.ibm.com/">IBM Accessibility</a>.
-      The test results were last updated 23 September 2022.
+      The test results were last updated 14 October 2022.
 
     
 
@@ -324,7 +325,7 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>WCAG 2 rules</th>
-    <td>11</td>
+    <td>12</td>
     <td>1</td>
   </tr>
   <tr>
@@ -485,6 +486,16 @@ h2#sidebar-header {
       </tr>
     
     
+    
+      <tr>
+        <td><a href="#breakdown-307n5z">
+          Element with presentational children has no focusable content
+        </a></td>
+        <td>
+          WCAG 2 Rule </td>
+        <td>
+          Consistent </td>
+      </tr>
     
     
     
@@ -2470,6 +2481,111 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
   </tbody>
 </table>
 
+<h3 id="breakdown-307n5z">Element with presentational children has no focusable content</h3>
+<p>
+  This rule is implemented by Equal Access Accessibility Checker using the
+  <code>aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/307n5z">Element with presentational children has no focusable content</a>
+  WCAG 2 rule. 
+    It covers 5 of the 7 examples.
+    On 2 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+      
+        <ul>
+          <li>
+            4.1.2
+            Name, Role, Value
+          </li>
+        </ul>
+      
+    </td>
+
+    <td>
+      
+        <ul>
+          <li>
+            4.1.2
+            Name, Role, Value
+          </li>
+        </ul>
+      
+    </td>
+  </tr>
+</tbody></table>
+
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ccaf2315b5268a447dff07aad635b3ad27aabaf8.html">Passed Example 1</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/9bdea8c670e441afe5299bed4ea02b304becaaf8.html">Passed Example 2</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/8c835039e68f3fefc58e8b0985b2060fa02b3480.html">Passed Example 3</a>
+      </th>
+      <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html">Failed Example 1</a>
+      </th>
+      <td class="">failed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/b9f6f775efc8d7cdc38782087ccc6abaa88babb6.html">Failed Example 2</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/61a402c2eb82ccb8614aa62918cff81b8306ddf2.html">Failed Example 3</a>
+      </th>
+      <td class="act-cannot-tell">cannot tell</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/54cd6b714326ddf6ae1181112d6ce35f6f3e3579.html">Inapplicable Example 1</a>
+      </th>
+      <td class="">inapplicable</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="breakdown-a25f45">Headers attribute specified on a cell refers to cells in the same table element</h3>
 <p>
   This rule is implemented by Equal Access Accessibility Checker using the
@@ -3699,11 +3815,7 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/8fc3b6/proposed/">Object element rendering non-text content has non-empty accessible name</a>
    proposed rule.
-    It covers 16 of the 18 examples.
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers 17 of the 18 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -3767,7 +3879,7 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/1b172036f8e219ef9b6f591d7f5df26e4ba11327.html">Passed Example 3</a>
       </th>
-      <td class="act-untested">untested</td>
+      <td class="">passed</td>
     </tr>
     <tr>
       <th>
@@ -4155,9 +4267,9 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1666201620668416874"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1666320724653623445"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1666201620668416874"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1666320724653623445"></script>
 <script>
   svg4everybody();
 </script><script>

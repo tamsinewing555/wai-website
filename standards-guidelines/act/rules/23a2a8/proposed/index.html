@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1666201620668416874";
+      element.src = "/WAI/assets/scripts/main.js?1666320724653623445";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666201620668416874">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666320724653623445">
 
-<title> Image has non-empty accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666201620668416874"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Image has non-empty accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666320724653623445"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Image has non-empty accessible name" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -351,7 +351,6 @@ h2#sidebar-header {
 <h2 id="accessibility-support">Accessibility Support</h2>
 
 <ul>
-  <li>There is a known combination of a popular browser and assistive technology that does not by default support <code class="language-plaintext highlighter-rouge">title</code> as an <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</li>
   <li>There are several popular browsers that do not treat images with empty <code class="language-plaintext highlighter-rouge">alt</code> attribute as having a role of <code class="language-plaintext highlighter-rouge">presentation</code> but instead add the <code class="language-plaintext highlighter-rouge">img</code> element to the accessibility tree with a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> of either <code class="language-plaintext highlighter-rouge">img</code> or <code class="language-plaintext highlighter-rouge">graphic</code>.</li>
   <li>Implementation of <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">Presentational Roles Conflict Resolution</a> varies from one browser or assistive technology to another. Depending on this, some <a href="#semantic-role" title="Definition of semantic role">semantic</a> <code class="language-plaintext highlighter-rouge">img</code> elements can fail this rule with some technology but users of other technologies would not experience any accessibility issue.</li>
   <li>Images can have their role set to <code class="language-plaintext highlighter-rouge">presentation</code> through an empty <code class="language-plaintext highlighter-rouge">alt</code> attribute. <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">Presentational Roles Conflict Resolution</a> does not specify what to do if such an image is <a href="#focusable" title="Definition of focusable">focusable</a> (it only specifies what to do in case of explicit <code class="language-plaintext highlighter-rouge">role="none"</code> or <code class="language-plaintext highlighter-rouge">role="presentation"</code>). Some browsers expose these images and some don’t. Thus, this rule may fail for technologies that expose these without creating an accessibility issue for users of other technologies.</li>
@@ -469,8 +468,6 @@ h2#sidebar-header {
 <p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/40d83620b0bcbcf0e7380177384f48596823e7a9.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">img</code> element has an <a href="#accessible-name" title="Definition of accessible name">accessible name</a> because of a <code class="language-plaintext highlighter-rouge">title</code> attribute.</p>
-
-<p><strong>Note</strong>: There are assistive technologies that do not support using the <code class="language-plaintext highlighter-rouge">title</code> attribute for an <a href="#accessible-name" title="Definition of accessible name">accessible name</a>, or in which this feature can be disabled.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">title=</span><span class="s">"W3C logo"</span> <span class="na">src=</span><span class="s">"/test-assets/shared/w3c-logo.png"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
@@ -786,14 +783,14 @@ h2#sidebar-header {
           <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-23a2a8"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
-          <td>Axe DevTools Pro 4.24.5</td>
+          <td>Axe DevTools Pro 4.37.1</td>
           <td>Semi-automated tool</td>
           <td>
             Consistent </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-23a2a8"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
-          <td>Axe-core 4.5.0-prerelease</td>
+          <td>Axe-core 4.5</td>
           <td>Automated tool</td>
           <td>
             Consistent </td>
@@ -849,7 +846,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 23a2a8</p>
-<p><strong>Date:</strong> Updated 11 July 2022</p>
+<p><strong>Date:</strong> Updated 14 October 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -890,9 +887,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1666201620668416874"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1666320724653623445"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1666201620668416874"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1666320724653623445"></script>
 <script>
   svg4everybody();
 </script><script>
