@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1666320724653623445";
+      element.src = "/WAI/assets/scripts/main.js?1666875341496785270";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666320724653623445">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666875341496785270">
 
-<title> Element with aria-hidden has no content in sequential focus navigation[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666320724653623445"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Element with aria-hidden has no content in sequential focus navigation[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666875341496785270"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Element with aria-hidden has no content in sequential focus navigation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -346,7 +346,7 @@ h2#sidebar-header {
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>Interacting with the page does not result in changing the <code class="language-plaintext highlighter-rouge">aria-hidden</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of target elements. An example of such a situation would be when closing a modal dialog makes previously hidden elements  that were not <a href="#focusable" title="Definition of focusable">focusable</a> or part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> become <a href="#focusable" title="Definition of focusable">focusable</a> and part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>.</p>
+<p>Interacting with the page does not result in changing the <code class="language-plaintext highlighter-rouge">aria-hidden</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of target elements. An example of such a situation would be when closing a modal dialog makes previously hidden elements that were not <a href="#focusable" title="Definition of focusable">focusable</a> or part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a> become <a href="#focusable" title="Definition of focusable">focusable</a> and part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>.</p>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
@@ -452,28 +452,36 @@ h2#sidebar-header {
 
 <h4 id="passed-example-4">Passed Example 4</h4>
 
-<p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d343bc6a2877b62d80153453c3781debc33e0b1d.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">a</code> element is not <a href="#focusable" title="Definition of focusable">focusable</a> because it moves focus to the <code class="language-plaintext highlighter-rouge">input</code> element whenever it receives focus. These elements
-are sometimes referred to as ‘focus sentinel’ or ‘bumper’. They are typically found before and after a modal / dialog in 
+are sometimes referred to as ‘focus sentinel’ or ‘bumper’. They are typically found before and after a modal / dialog in
 order to contain focus within the modal. Page authors do not want the sentinel to be visible, nor do they want them to be read by
 a screen reader. But, they do want the element to be part of the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>. This allows the page author
 to detect that focus has left the dialog in order to wrap it to the top/bottom as appropriate.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"sampleModal"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-label=</span><span class="s">"Sample Modal"</span> <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">style=</span><span class="s">"border: solid black 1px; padding: 1rem;"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label&gt;</span>First and last name <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dialogFirst"</span><span class="nt">&gt;&lt;/label&gt;&lt;br</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"closeButton"</span><span class="nt">&gt;</span>Close button<span class="nt">&lt;/button&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span>
+	<span class="na">id=</span><span class="s">"sampleModal"</span>
+	<span class="na">role=</span><span class="s">"dialog"</span>
+	<span class="na">aria-label=</span><span class="s">"Sample Modal"</span>
+	<span class="na">aria-modal=</span><span class="s">"true"</span>
+	<span class="na">style=</span><span class="s">"border: solid black 1px; padding: 1rem;"</span>
+<span class="nt">&gt;</span>
+	<span class="nt">&lt;label&gt;</span>First and last name <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dialogFirst"</span><span class="nt">/&gt;&lt;/label&gt;&lt;br</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"closeButton"</span><span class="nt">&gt;</span>Close button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">id=</span><span class="s">"sentinelAfter"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span><span class="nt">&gt;</span>Upon receiving focus, this focus sentinel should wrap focus to the top of the modal<span class="nt">&lt;/a&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">id=</span><span class="s">"sentinelAfter"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span>
+		<span class="nt">&gt;</span>Upon receiving focus, this focus sentinel should wrap focus to the top of the modal<span class="nt">&lt;/a</span>
+	<span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;script&gt;</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">sentinelAfter</span><span class="dl">"</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">focus</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">dialogFirst</span><span class="dl">"</span><span class="p">).</span><span class="nx">focus</span><span class="p">();</span>
-    <span class="p">});</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">closeButton</span><span class="dl">"</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">sampleModal</span><span class="dl">"</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">none</span><span class="dl">"</span><span class="p">;</span>
-    <span class="p">});</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">sentinelAfter</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">focus</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">dialogFirst</span><span class="dl">'</span><span class="p">).</span><span class="nx">focus</span><span class="p">()</span>
+	<span class="p">})</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">closeButton</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">sampleModal</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span>
+	<span class="p">})</span>
 <span class="nt">&lt;/script&gt;</span>
 </code></pre></div></div>
 
@@ -486,6 +494,20 @@ to detect that focus has left the dialog in order to wrap it to the top/bottom a
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-6">Passed Example 6</h4>
+
+<p><a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2dcf10cb4314dd7964dd38c2afe7d399bfcbcfac.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">svg</code> element with <code class="language-plaintext highlighter-rouge">aria-hidden</code> does not have a focusable descendant, focusable ancestors are not a problem for this rule.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">"16"</span> <span class="na">height=</span><span class="s">"16"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;circle</span> <span class="na">cx=</span><span class="s">"8"</span> <span class="na">cy=</span><span class="s">"11"</span> <span class="na">r=</span><span class="s">"4"</span> <span class="na">stroke=</span><span class="s">"black"</span> <span class="na">stroke-width=</span><span class="s">"2"</span> <span class="na">fill=</span><span class="s">"transparent"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/svg&gt;</span>
+	Hello ACT
+<span class="nt">&lt;/a&gt;</span>
 </code></pre></div></div>
 
 <h3 id="failed">Failed</h3>
@@ -548,23 +570,31 @@ to detect that focus has left the dialog in order to wrap it to the top/bottom a
 
 <h4 id="failed-example-6">Failed Example 6</h4>
 
-<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9812d828fef2da32081f4c0acce0c58912f071cb.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">a</code> element is <a href="#focusable" title="Definition of focusable">focusable</a> because it fails to move focus when it receives focus. This is in contrast to a focus sentinel that 
-immediately jumps focus to a valid location. Focus sentinels are typically used before and after a modal dialog in order to contain 
+<p>This <code class="language-plaintext highlighter-rouge">a</code> element is <a href="#focusable" title="Definition of focusable">focusable</a> because it fails to move focus when it receives focus. This is in contrast to a focus sentinel that
+immediately jumps focus to a valid location. Focus sentinels are typically used before and after a modal dialog in order to contain
 and wrap focus. In this case, the <code class="language-plaintext highlighter-rouge">focus</code> event was removed, but the sentinel was not.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"sampleModal"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-label=</span><span class="s">"Sample Modal"</span> <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">style=</span><span class="s">"border: solid black 1px; padding: 1rem;"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label&gt;</span>First and last name <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dialogFirst"</span><span class="nt">&gt;&lt;/label&gt;&lt;br</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"closeButton"</span><span class="nt">&gt;</span>Close button<span class="nt">&lt;/button&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span>
+	<span class="na">id=</span><span class="s">"sampleModal"</span>
+	<span class="na">role=</span><span class="s">"dialog"</span>
+	<span class="na">aria-label=</span><span class="s">"Sample Modal"</span>
+	<span class="na">aria-modal=</span><span class="s">"true"</span>
+	<span class="na">style=</span><span class="s">"border: solid black 1px; padding: 1rem;"</span>
+<span class="nt">&gt;</span>
+	<span class="nt">&lt;label&gt;</span>First and last name <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dialogFirst"</span><span class="nt">/&gt;&lt;/label&gt;&lt;br</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"closeButton"</span><span class="nt">&gt;</span>Close button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">id=</span><span class="s">"sentinelAfter"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span><span class="nt">&gt;</span>Upon receiving focus, this focus sentinel should wrap focus to the top of the modal<span class="nt">&lt;/a&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">id=</span><span class="s">"sentinelAfter"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span>
+		<span class="nt">&gt;</span>Upon receiving focus, this focus sentinel should wrap focus to the top of the modal<span class="nt">&lt;/a</span>
+	<span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;script&gt;</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">closeButton</span><span class="dl">"</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">sampleModal</span><span class="dl">"</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">none</span><span class="dl">"</span><span class="p">;</span>
-    <span class="p">});</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">closeButton</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">sampleModal</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span>
+	<span class="p">})</span>
 <span class="nt">&lt;/script&gt;</span>
 </code></pre></div></div>
 
@@ -678,7 +708,12 @@ and wrap focus. In this case, the <code class="language-plaintext highlighter-ro
 
 <h2 id="ruleversions">Rule Versions</h2>
 
-<p>This is the first version of this ACT rule.</p>
+<ol>
+  <li>
+      <a href="/WAI/standards-guidelines/act/rules/6cfa84/">
+        Latest version, 25 October 2022</a>
+  </li>
+</ol>
 
 
 <h2 id="implementations">Implementations</h2>
@@ -696,6 +731,13 @@ and wrap focus. In this case, the <code class="language-plaintext highlighter-ro
     </thead>
     <tbody>
         <tr>
+          <td>Alfa 0.43.1</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-6cfa84"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
           <td>Axe DevTools Pro 4.37.1</td>
           <td>Semi-automated tool</td>
           <td>
@@ -710,10 +752,24 @@ and wrap focus. In this case, the <code class="language-plaintext highlighter-ro
           <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-6cfa84"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
+          <td>Equal Access Accessibility Checker 3.1.36</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-6cfa84"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
+          <td>QualWeb 3.0.0</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-6cfa84"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
           <td>SortSite 6.45</td>
           <td>Automated tool</td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-6cfa84"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
     </tbody>
@@ -745,7 +801,7 @@ and wrap focus. In this case, the <code class="language-plaintext highlighter-ro
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 6cfa84</p>
-<p><strong>Date:</strong> Updated 11 July 2022</p>
+<p><strong>Date:</strong> Updated 21 October 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -786,9 +842,9 @@ and wrap focus. In this case, the <code class="language-plaintext highlighter-ro
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1666320724653623445"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1666875341496785270"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1666320724653623445"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1666875341496785270"></script>
 <script>
   svg4everybody();
 </script><script>

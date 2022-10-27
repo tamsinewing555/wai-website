@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1666320724653623445";
+      element.src = "/WAI/assets/scripts/main.js?1666875341496785270";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666320724653623445">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666875341496785270">
 
-<title> SortSite ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666320724653623445"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> SortSite ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666875341496785270"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="SortSite ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -325,12 +325,12 @@ h2#sidebar-header {
   </tr>
   <tr>
     <th>WCAG 2 rules</th>
-    <td>16</td>
-    <td>1</td>
+    <td>20</td>
+    <td>2</td>
   </tr>
   <tr>
     <th>Proposed rules</th>
-    <td>22</td>
+    <td>17</td>
     <td>2</td>
   </tr>
 </tbody></table>
@@ -567,10 +567,10 @@ h2#sidebar-header {
         <td><a href="#breakdown-6cfa84">
           Element with aria-hidden has no content in sequential focus navigation
         </a></td>
-        <td> Proposed Rule
-        </td>
         <td>
-          Consistent </td>
+          WCAG 2 Rule </td>
+        <td> Partial
+        </td>
       </tr>
     
     
@@ -745,8 +745,8 @@ h2#sidebar-header {
         <td><a href="#breakdown-78fd32">
           Line height in style attributes is not !important
         </a></td>
-        <td> Proposed Rule
-        </td>
+        <td>
+          WCAG 2 Rule </td>
         <td>
           Consistent </td>
       </tr>
@@ -787,8 +787,8 @@ h2#sidebar-header {
         <td><a href="#breakdown-bc659a">
           Meta element has no refresh delay
         </a></td>
-        <td> Proposed Rule
-        </td>
+        <td>
+          WCAG 2 Rule </td>
         <td>
           Consistent </td>
       </tr>
@@ -801,8 +801,8 @@ h2#sidebar-header {
         <td><a href="#breakdown-b4f0c3">
           Meta viewport allows for zoom
         </a></td>
-        <td> Proposed Rule
-        </td>
+        <td>
+          WCAG 2 Rule </td>
         <td>
           Consistent </td>
       </tr>
@@ -815,8 +815,8 @@ h2#sidebar-header {
         <td><a href="#breakdown-8fc3b6">
           Object element rendering non-text content has non-empty accessible name
         </a></td>
-        <td> Proposed Rule
-        </td>
+        <td>
+          WCAG 2 Rule </td>
         <td>
           Consistent </td>
       </tr>
@@ -3535,11 +3535,15 @@ h2#sidebar-header {
 <p>
   This rule is implemented by SortSite using the
   <code>AccAriaHiddenFocusableContent</code> procedure.
-  The implementation is 
-    fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/6cfa84/proposed/">Element with aria-hidden has no content in sequential focus navigation</a>
-   proposed rule.
-    It covers all 14 examples.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/6cfa84">Element with aria-hidden has no content in sequential focus navigation</a>
+  WCAG 2 rule. 
+    It covers 12 of the 15 examples.
+  
+    For 3 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -3607,15 +3611,21 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html">Passed Example 4</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d343bc6a2877b62d80153453c3781debc33e0b1d.html">Passed Example 4</a>
       </th>
-      <td class="">passed</td>
+      <td class="act-untested">untested</td>
     </tr>
     <tr>
       <th>
         <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html">Passed Example 5</a>
       </th>
       <td class="">passed</td>
+    </tr>
+    <tr>
+      <th>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2dcf10cb4314dd7964dd38c2afe7d399bfcbcfac.html">Passed Example 6</a>
+      </th>
+      <td class="act-untested">untested</td>
     </tr>
     <tr>
       <th>
@@ -3649,9 +3659,9 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>
-        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html">Failed Example 6</a>
+        <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9812d828fef2da32081f4c0acce0c58912f071cb.html">Failed Example 6</a>
       </th>
-      <td class="">failed</td>
+      <td class="act-untested">untested</td>
     </tr>
     <tr>
       <th>
@@ -4947,8 +4957,8 @@ h2#sidebar-header {
   <code>AccCssLineHeightImportant</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/78fd32/proposed/">Line height in style attributes is not !important</a>
-   proposed rule.
+  <a href="/WAI/standards-guidelines/act/rules/78fd32">Line height in style attributes is not !important</a>
+  WCAG 2 rule. 
     It covers all 21 examples.
   
   
@@ -5411,8 +5421,8 @@ h2#sidebar-header {
   <code>AccHtmlMetaRefresh</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/bc659a/proposed/">Meta element has no refresh delay</a>
-   proposed rule.
+  <a href="/WAI/standards-guidelines/act/rules/bc659a">Meta element has no refresh delay</a>
+  WCAG 2 rule. 
     It covers all 15 examples.
   
   
@@ -5570,8 +5580,8 @@ h2#sidebar-header {
   <code>AccHtmlMetaViewportNoZoom</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/b4f0c3/proposed/">Meta viewport allows for zoom</a>
-   proposed rule.
+  <a href="/WAI/standards-guidelines/act/rules/b4f0c3">Meta viewport allows for zoom</a>
+  WCAG 2 rule. 
     It covers all 11 examples.
   
   
@@ -5695,8 +5705,8 @@ h2#sidebar-header {
   <code>AccHtmlObjectNoAccName</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/8fc3b6/proposed/">Object element rendering non-text content has non-empty accessible name</a>
-   proposed rule.
+  <a href="/WAI/standards-guidelines/act/rules/8fc3b6">Object element rendering non-text content has non-empty accessible name</a>
+  WCAG 2 rule. 
     It covers all 18 examples.
   
   
@@ -7025,9 +7035,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1666320724653623445"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1666875341496785270"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1666320724653623445"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1666875341496785270"></script>
 <script>
   svg4everybody();
 </script><script>

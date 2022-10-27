@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1666320724653623445";
+      element.src = "/WAI/assets/scripts/main.js?1666875341496785270";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666320724653623445">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1666875341496785270">
 
-<title> Object element rendering non-text content has non-empty accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666320724653623445"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Object element rendering non-text content has non-empty accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1666875341496785270"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Object element rendering non-text content has non-empty accessible name" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -352,9 +352,11 @@ h2#sidebar-header {
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>The <code class="language-plaintext highlighter-rouge">object</code> element is not rendered for presentational purposes. If the <code class="language-plaintext highlighter-rouge">object</code> is decorative and not <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> then the rule might fail but the success criterion might still be satisfied.</p>
+<p><em>There are currently no assumptions</em></p>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
+
+<p>Some screen readers announce <code class="language-plaintext highlighter-rouge">object</code> elements even if they do not have an accessible name, while other skip the element. If an <code class="language-plaintext highlighter-rouge">object</code> is used to render decorative content, to ensure it is <a href="#marked-as-decorative" title="Definition of Marked as decorative">marked as decorative</a> and can be ignored by all major screen readers a presentational role is necessary.</p>
 
 <p>The <a href="https://mimesniff.spec.whatwg.org/#mime-type-groups" title="MIME Sniffing - Living Standard, 2022/01/17">MIME type</a> of the resource embedded in the <code class="language-plaintext highlighter-rouge">data</code> attribute impacts how the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> of the <code class="language-plaintext highlighter-rouge">object</code> is computed. For example, <code class="language-plaintext highlighter-rouge">object</code> embedding <a href="https://mimesniff.spec.whatwg.org/#image-mime-type" title="MIME Sniffing - Living Standard, 2022/01/17">image MIME type</a> may use their <code class="language-plaintext highlighter-rouge">alt</code> attribute to compute their <a href="#accessible-name" title="Definition of accessible name">accessible name</a>, but <code class="language-plaintext highlighter-rouge">object</code> embedding <a href="https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type" title="MIME Sniffing - Living Standard, 2022/01/17">audio or video MIME types</a> may not. An <code class="language-plaintext highlighter-rouge">object</code> does not officially support the use of an <code class="language-plaintext highlighter-rouge">alt</code> so this may behave differently according to the browser used.</p>
 
@@ -505,7 +507,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/f6b0a52f8bb37ab0a8b290237add5be669a28b2f.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">object</code> element has <code class="language-plaintext highlighter-rouge">alt</code> attribute, however this will not create an  <a href="#accessible-name" title="Definition of accessible name">accessible name</a>. Because of this the accessible name is empty.</p>
+<p>This <code class="language-plaintext highlighter-rouge">object</code> element has <code class="language-plaintext highlighter-rouge">alt</code> attribute, however this will not create an <a href="#accessible-name" title="Definition of accessible name">accessible name</a>. Because of this the accessible name is empty.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">"/test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">alt=</span><span class="s">"Moon speech"</span><span class="nt">&gt;&lt;/object&gt;</span>
 </code></pre></div></div>
@@ -695,7 +697,12 @@ h2#sidebar-header {
 
 <h2 id="ruleversions">Rule Versions</h2>
 
-<p>This is the first version of this ACT rule.</p>
+<ol>
+  <li>
+      <a href="/WAI/standards-guidelines/act/rules/8fc3b6/">
+        Latest version, 25 October 2022</a>
+  </li>
+</ol>
 
 
 <h2 id="implementations">Implementations</h2>
@@ -718,6 +725,20 @@ h2#sidebar-header {
           <td> Partial
           </td>
           <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-8fc3b6"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
+          <td>Axe DevTools Pro 4.37.1</td>
+          <td>Semi-automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-8fc3b6"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+        </tr>
+        <tr>
+          <td>Axe-core 4.5</td>
+          <td>Automated tool</td>
+          <td> Partial
+          </td>
+          <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-8fc3b6"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
         </tr>
         <tr>
           <td>Equal Access Accessibility Checker 3.1.36</td>
@@ -769,7 +790,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 8fc3b6</p>
-<p><strong>Date:</strong> Updated 15 September 2022</p>
+<p><strong>Date:</strong> Updated 21 October 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
@@ -812,9 +833,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1666320724653623445"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1666875341496785270"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1666320724653623445"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1666875341496785270"></script>
 <script>
   svg4everybody();
 </script><script>
