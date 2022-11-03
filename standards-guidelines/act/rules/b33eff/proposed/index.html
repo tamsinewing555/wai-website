@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1667315441042740060";
+      element.src = "/WAI/assets/scripts/main.js?1667483868961090453";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1667315441042740060">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1667483868961090453">
 
-<title> Orientation of the page is not restricted using CSS transform property[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1667315441042740060"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Orientation of the page is not restricted using CSS transform property[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1667483868961090453"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Orientation of the page is not restricted using CSS transform property" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -356,7 +356,7 @@ h2#sidebar-header {
 
 <p>The target element is neither rotated clockwise nor counter clockwise around the Z-axis at an angle corresponding to 90 degrees relative from the position of the element in <code class="language-plaintext highlighter-rouge">landscape</code> orientation to the position of the element in <code class="language-plaintext highlighter-rouge">portrait</code> orientation, and vice versa.</p>
 
-<p><strong>Note:</strong> Imagine the display of a smartphone with cartoon figure at its center. With this example, if a user turns the smartphone a quarter turn, that is a partial move from one orientation to the other, the user would expect that the cartoon figure continues to remain facing upwards. The smartphone accomplishes this by rotating the contents of its display a quarter turn to counter the users change in orientation. In effect, the cartoon figure has remained in place and its rotation relative from one orientation to the other is 0 degrees. Now imagine that a developer facilitated this rotation of the cartoon figure by a quarter turn <em>only</em> when the smartphone starts from one orientation and not the other; its rotation relative from one orientation to the other would then be 90 degrees and it would appear stuck, or locked, as the user moves between orientations. What the developer has done is effectively counter the smartphones attempt at countering the users change in orientation.</p>
+<p><strong>Note:</strong> Imagine the display of a smartphone with cartoon figure at its center. With this example, if a user turns the smartphone a quarter turn, that is a partial move from one orientation to the other, the user would expect that the cartoon figure continues to remain facing upwards. The smartphone accomplishes this by rotating the contents of its display a quarter turn to counter the users change in orientation. In effect, the cartoon figure has remained in place and its rotation relative from one orientation to the other is 0 degrees. Now imagine that a developer facilitated this rotation of the cartoon figure by a quarter turn <em>only</em> when the smartphone starts from one orientation and not the other; its rotation relative from one orientation to the other would then be 90 degrees and it would appear stuck, or locked, as the user moves between orientations. What the developer has done is effectively counter the smartphone’s attempt at countering the user’s change in orientation.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -365,6 +365,7 @@ h2#sidebar-header {
 <ul>
   <li>Elements for which a particular display orientation is <a href="https://www.w3.org/TR/WCAG21/#dfn-essential">essential</a>.</li>
   <li>The existence of any control on the page that can change the orientation on demand.</li>
+  <li>Scripts are not used to adjust the CSS orientation lock.</li>
 </ul>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
@@ -773,7 +774,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> b33eff</p>
-<p><strong>Date:</strong> Updated 21 October 2022</p>
+<p><strong>Date:</strong> Updated 28 October 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -814,9 +815,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1667315441042740060"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1667483868961090453"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1667315441042740060"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1667483868961090453"></script>
 <script>
   svg4everybody();
 </script><script>
