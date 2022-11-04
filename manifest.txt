@@ -2377,7 +2377,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2573,6 +2572,8 @@
 /older-users/literature/index.html
 /package-lock.json
 /package.json
+/pages/wai-authoring-tools-list/images/w3c.svg
+/pages/wai-authoring-tools-list/images/wai.svg
 /pages/wai-components/Gemfile
 /pages/wai-components/Gemfile.lock
 /pages/wai-components/README.md
@@ -2985,6 +2986,9 @@
 /tips/img/trainer.png
 /tips/index.html
 /tips/writing/index.html
+/tools-list/authoring/submit-a-tool/failure.html
+/tools-list/authoring/submit-a-tool/index.html
+/tools-list/authoring/submit-a-tool/success.html
 /translations/index.html
 /tutorials/acknowledgements/index.html
 /tutorials/carousels/animations/index.html
