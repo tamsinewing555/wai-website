@@ -2987,6 +2987,7 @@
 /tips/img/trainer.png
 /tips/index.html
 /tips/writing/index.html
+/tools-list/authoring/index.html
 /tools-list/authoring/submit-a-tool/failure.html
 /tools-list/authoring/submit-a-tool/index.html
 /tools-list/authoring/submit-a-tool/success.html

@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1668075339434954066";
+      element.src = "/WAI/assets/scripts/main.js?1668098582054547501";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1668075339434954066">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1668098582054547501">
 
 <title>[Draft] Submit an authoring tool | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -156,6 +156,8 @@
       border-right: 1px solid #ccc;
     }
   }
+
+
   @media (min-width: 72em) {
     .tools-filters {
       grid-column: 2 / 4;
@@ -193,12 +195,12 @@
     display: contents;
   }
   .tools-tools {
-    display: flex;
     position: relative;
     padding-top: 2em;
     margin-top: 2em;
     border-top: 1px solid #ccc;
   }
+
   @media (min-width: 60em) {
     .tools-tools {
       grid-column: 4 / span 7;
@@ -454,6 +456,19 @@ svg.icon-ex-circle {
     margin: 20px 0 30px 0;
 }
 
+
+.box-infobox>div {
+  padding: 5px 5px 5px 2em !important;
+  font-size: .85em;
+  position: relative;
+}
+
+.box-infobox>div>svg {
+  margin-left: -1.5em !important;
+  margin-top: 3px !important;
+  position: absolute;
+}
+
 main > header { grid-column: 4 / span 4; }
 </style>
 
@@ -472,6 +487,9 @@ function onSubmit(e) {
 
   <form name="submission" method="post" action="https://wai-website.netlify.app/.netlify/functions/list-submission" data-wai-form="checkbox-required-group">
     <input type="hidden" name="form_name" value="submission" />
+        
+        <input type="hidden" name="DEBUG" value="true" />
+      
         
         <input type="hidden" name="form_version" value="1" />
       
@@ -561,7 +579,7 @@ function onSubmit(e) {
 
   <h3>The authoring tool user interface follows applicable accessibility guidelines </h3>
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Web-based functionality is accessible</h4></legend>
   <p>The full editing experience conforms to WCAG 2.0 (or other accessibility guidelines). <small style="margin-left: 1em;"><em>See also: A.1.1 </em></small></p>
   <div class="radio-field">
@@ -600,7 +618,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Non-web-based functionality is accessible</h4></legend>
   <p>If the interface is not on the web, it conforms to platform-specific accessibility guidelines. <small style="margin-left: 1em;"><em>See also: A.1.2 </em></small></p>
   <div class="radio-field">
@@ -643,7 +661,7 @@ function onSubmit(e) {
 
   <h3>Editing-views are perceivable </h3>
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Alternative content available to editors</h4></legend>
   <p>If there is anything visible that is not text, like icons, images or video, there is alternative text available. <small style="margin-left: 1em;"><em>See also: A.2.1 </em></small></p>
   <div class="radio-field">
@@ -682,7 +700,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Editing-view presentation can be programmatically determined</h4></legend>
   <p>Status indicators (like changes or spelling errors) and text properties (like italics or bold) are conveyed to users of assistive technologies. <small style="margin-left: 1em;"><em>See also: A.2.2 </em></small></p>
   <div class="radio-field">
@@ -725,7 +743,7 @@ function onSubmit(e) {
 
   <h3>Editing-views are operable</h3>
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Works with keyboard</h4></legend>
   <p>Everything that can be done with a mouse, can just as easily be done with a keyboard, including drag and drop and drawing capabilities. There should be no keyboard traps. Keyboard usage should be efficient and easier to use than just with sequential access (for example: use WAI-ARIA landmarks or offer keyboard shortcuts). <small style="margin-left: 1em;"><em>See also: A.3.1 </em></small></p>
   <div class="radio-field">
@@ -764,7 +782,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Enough time</h4></legend>
   <p>Time limits in the editor, like for auto-save, can be turned off or extended (some exceptions apply). <small style="margin-left: 1em;"><em>See also: A.3.2 </em></small></p>
   <div class="radio-field">
@@ -803,7 +821,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Flashing content optional</h4></legend>
   <p>Flashing content, like videos, including previews of that kind of content, can be paused or turned off. <small style="margin-left: 1em;"><em>See also: A.3.3 </em></small></p>
   <div class="radio-field">
@@ -842,7 +860,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Content can be navigated by structure</h4></legend>
   <p>Users can navigate quicker by structure, for example headings, lists or HTML elements. <small style="margin-left: 1em;"><em>See also: A.3.4 </em></small></p>
   <div class="radio-field">
@@ -881,7 +899,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Content searchable</h4></legend>
   <p>Users can search in text content, results are focused when shown. If there are no matches, this is indicated. User can search in two directions (backwards and forwards). <small style="margin-left: 1em;"><em>See also: A.3.5 </em></small></p>
   <div class="radio-field">
@@ -920,7 +938,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Supports display preferences</h4></legend>
   <p>If there are user settings for display, this only affects the editing view, not the output. If a content editor uses OS settings like high contrast mode or their own stylesheet, this does not break the editing experience. <small style="margin-left: 1em;"><em>See also: A.3.6 </em></small></p>
   <div class="radio-field">
@@ -959,7 +977,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Previews are accessible</h4></legend>
   <p>When the tool shows a preview of the content, that preview is at least as accessible as in current browsers and other user agents. <small style="margin-left: 1em;"><em>See also: A.3.7 </em></small></p>
   <div class="radio-field">
@@ -1002,7 +1020,7 @@ function onSubmit(e) {
 
   <h3>Editing-views are understandable</h3>
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Helps editor prevent and correct mistakes</h4></legend>
   <p>Lets users undo changes and settings. <small style="margin-left: 1em;"><em>See also: A.4.1 </em></small></p>
   <div class="radio-field">
@@ -1041,7 +1059,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>(Accessibility) features documented</h4></legend>
   <p>Documents all features, including accessibility features. <small style="margin-left: 1em;"><em>See also: A.4.2 </em></small></p>
   <div class="radio-field">
@@ -1086,7 +1104,7 @@ function onSubmit(e) {
 
   <h3>Fully automatic processes produce accessible content </h3>
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Generates accessible markup</h4></legend>
   <p> When the tool generates markup, that markup is accessible. If accesssibility information is required, like alternative texts, the content editor is prompted to provide that information. <small style="margin-left: 1em;"><em>See also: B.1.1 </em></small></p>
   <div class="radio-field">
@@ -1125,7 +1143,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Preserves accessibility information</h4></legend>
   <p> If content is pasted from a word processor or converted from one format into another, any accessibility information is preserved. <small style="margin-left: 1em;"><em>See also: B.1.2 </em></small></p>
   <div class="radio-field">
@@ -1168,7 +1186,7 @@ function onSubmit(e) {
 
   <h3>Supports producing accessible content</h3>
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Accessible content production is possible</h4></legend>
   <p>If some options produce more accessible content than others, they are displayed more prominently. If properties and attributes can be set, those relevant for accessibility can also be set. <small style="margin-left: 1em;"><em>See also: B.2.1 </em></small></p>
   <div class="radio-field">
@@ -1207,7 +1225,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Editors guided</h4></legend>
   <p>Editors are guided to produce accessible content. <small style="margin-left: 1em;"><em>See also: B.2.2 </em></small></p>
   <div class="radio-field">
@@ -1246,7 +1264,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Text alternatives can be managed</h4></legend>
   <p>There is a tool for providing text alternatives to “non-text content”, like images, videos and data visualisation. <small style="margin-left: 1em;"><em>See also: B.2.3 </em></small></p>
   <div class="radio-field">
@@ -1285,7 +1303,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Accessible templates available</h4></legend>
   <p> There are accessible templates available. If there is a repository of templates, it is easy to find the ones that prioritise accessibility. <small style="margin-left: 1em;"><em>See also: B.2.4 </em></small></p>
   <div class="radio-field">
@@ -1324,7 +1342,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Accessible components/plug-ins available</h4></legend>
   <p> If any components or plugins are built-in to the tool, they are accessible. If there is a gallery of components or plug-ins, it indicates accessible options. <small style="margin-left: 1em;"><em>See also: B.2.5 </em></small></p>
   <div class="radio-field">
@@ -1367,7 +1385,7 @@ function onSubmit(e) {
 
   <h3>Helps with improving the accessibility of existing content</h3>
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Checks accessibility automatically</h4></legend>
   <p> Has built-in checks for common accessibility problems, for example a check to identify missing alternative text. <small style="margin-left: 1em;"><em>See also: B.3.1 </em></small></p>
   <div class="radio-field">
@@ -1406,7 +1424,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Helps content editors fix problems</h4></legend>
   <p> Provides suggestions to content editor about accessibility problems. <small style="margin-left: 1em;"><em>See also: B.3.2 </em></small></p>
   <div class="radio-field">
@@ -1449,7 +1467,7 @@ function onSubmit(e) {
 
   <h3>Promotes and integrates accessibility features</h3>
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Accessibility features prominent</h4></legend>
   <p>Accessibility features are on by default and a prominent part of the editing workflow. Documentation shows examples of how to create accessible content, for instance with example markup or screenshots. <small style="margin-left: 1em;"><em>See also: B.4.1 </em></small></p>
   <div class="radio-field">
@@ -1488,7 +1506,7 @@ function onSubmit(e) {
 </fieldset>
 
   
-  <fieldset data-indicate-guideline.conformance="" class="fieldset_radio">
+  <fieldset data-guideline-conformance="" class="fieldset_radio">
   <legend><h4>Documentation promotes accessibility</h4></legend>
   <p> Provides suggestions to content editor about accessibility problems. <small style="margin-left: 1em;"><em>See also: B.4.2 </em></small></p>
   <div class="radio-field">
@@ -1578,7 +1596,7 @@ function onSubmit(e) {
 
 
 <script>
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
+const dateFormat = { year: 'numeric', month: 'long', day: 'numeric' };
 
 function getPreviewSubmission() {
 
@@ -1629,7 +1647,7 @@ function getPreviewSubmission() {
 
                 if (elType === "date") {
                     value = new Date(value);
-                    value = value.toLocaleDateString(undefined, options);
+                    value = value.toLocaleDateString(undefined, dateFormat);
                 }
             }
 
@@ -1840,7 +1858,160 @@ function getPreviewSubmission() {
 
 }
 
+const filterForm = document.querySelector('[data-filter-form]');
 
+if (filterForm) {
+  filterForm.addEventListener('change', e => {
+    submitForm(filterForm);
+  });
+
+  filterForm.addEventListener('submit', e => {
+
+    // Store reference to form to make later code easier to read
+    const form = e.target;
+
+    submitForm(form);
+
+    // Prevent the default form submit
+    e.preventDefault();
+  });
+
+  function submitForm(form) {
+    // get status message references
+    const statusBusy = document.querySelector('.status-busy');
+    const statusFailure = document.querySelector('.status-failure');
+
+    // Post data using the Fetch API
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form)
+      })
+      // We turn the response into text as we expect HTML
+      .then(res => res.text())
+
+      // Let's turn it into an HTML document
+      .then(text => new DOMParser().parseFromString(text, 'text/html'))
+
+      // Now we have a document to work with let's replace the <form>
+      .then(doc => {
+
+        // Create result message container and copy HTML from doc
+        const toolsList = document.getElementById('tools-list');
+        toolsList.innerHTML = doc.body.innerHTML;
+
+        // Allow focussing this element with JavaScript
+        toolsList.tabIndex = -1;
+
+
+        // Hide the busy state
+        statusBusy.hidden = true;
+
+        // Hide error message
+        statusFailure.hidden = true;
+
+        // Unlock form elements
+        Array.from(form.elements).forEach(field => field.disabled = false);
+      })
+      .catch(err => {
+
+        // Unlock form elements
+        Array.from(form.elements).forEach(field => field.disabled = false);
+
+        // Return focus to active element
+        lastActive.focus();
+
+        // Hide the busy state
+        statusBusy.hidden = true;
+
+        // Show error message
+        statusFailure.hidden = false;
+
+        console.log(err);
+      });
+
+    // Before we disable all the fields, remember the last active field
+    const lastActive = document.activeElement;
+
+    // Show busy state and move focus to it
+    statusBusy.hidden = false;
+
+    // Disable all form elements to prevent further input
+    Array.from(form.elements).forEach(field => field.disabled = true);
+
+    // Make sure connection failure message is hidden
+    statusFailure.hidden = true;
+  };
+}
+
+const conformanceOptions = document.querySelectorAll('[data-guideline-conformance]');
+
+if (conformanceOptions) {
+  [].forEach.call(conformanceOptions, option => {
+
+    option.addEventListener('change', e => {
+      const triggers = option.querySelectorAll('[data-trigger]');
+
+      if (triggers) {
+        [].forEach.call(triggers, trigger => {
+          trigger.setAttribute('hidden', 'true');
+        });
+      }
+
+      if (e.target.getAttribute('data-triggers')) {
+        const triggered = option.querySelector(`#${e.target.getAttribute('data-triggers')}`);
+        triggered.removeAttribute('hidden');
+      }
+    });
+  });
+}
+
+const tabsets = document.querySelectorAll('[data-do-tabs]');
+
+if (tabsets) {
+  [].forEach.call(tabsets, tabset => {
+
+    const tabs = tabset.querySelectorAll('[data-tab]');
+    const tabpanels = tabset.querySelectorAll('[data-tabpanel]');
+
+    if (tabs) {
+      [].forEach.call(tabs, tab => {
+        tab.addEventListener('click', e => {
+          const relatedPanel = document.getElementById(tab.getAttribute('href').substr(1));
+
+          [].forEach.call(tabpanels, tabpanel => {
+            tabpanel.setAttribute('hidden', 'true');
+          });
+
+          relatedPanel.removeAttribute('hidden');
+          relatedPanel.focus();
+
+          [].forEach.call(tabs, tab => {
+            tab.removeAttribute('data-tab-current', '');
+          });
+
+          tab.setAttribute('data-tab-current', '');
+
+          e.preventDefault();
+        });
+      });
+    }
+
+    tabs[0].setAttribute('data-tab-current', '');
+
+  });
+}
+
+
+
+(function(){
+  const button = document.createElement('button')
+  button.innerText = 'Show Preview'
+  button.addEventListener('click', e => {
+      getPreviewSubmission();
+  })
+  const form = document.querySelector('[name="submission"]');
+  form.insertBefore(button, form.firstChild)
+})();
 
 </script>
 
@@ -1913,9 +2084,9 @@ function getPreviewSubmission() {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1668075339434954066"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1668098582054547501"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1668075339434954066"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1668098582054547501"></script>
 <script>
   svg4everybody();
 </script><script>
