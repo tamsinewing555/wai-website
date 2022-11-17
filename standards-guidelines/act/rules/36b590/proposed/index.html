@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1668549901828172031";
+      element.src = "/WAI/assets/scripts/main.js?1668697137421895019";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1668549901828172031">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1668697137421895019">
 
-<title> Error message describes invalid form field value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1668549901828172031"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Error message describes invalid form field value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1668697137421895019"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Error message describes invalid form field value" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -358,22 +358,9 @@ h2#sidebar-header {
   <li><code class="language-plaintext highlighter-rouge">textbox</code>.</li>
 </ul>
 
-<p><strong>Note</strong>: The list of applicable <a href="#semantic-role" title="Definition of semantic role">semantic roles</a> is derived by taking all the <a href="https://www.w3.org/TR/wai-aria-1.1/">ARIA 1.1</a> roles that:</p>
-
-<ul>
-  <li>inherit from the <a href="https://www.w3.org/TR/wai-aria/#abstract_roles">abstract</a> <code class="language-plaintext highlighter-rouge">input</code> or <code class="language-plaintext highlighter-rouge">select</code> role, and</li>
-  <li>do not have a <a href="https://www.w3.org/TR/wai-aria/#scope">required context</a> role that inherits from the <a href="https://www.w3.org/TR/wai-aria/#abstract_roles">abstract</a> <code class="language-plaintext highlighter-rouge">input</code> or <code class="language-plaintext highlighter-rouge">select</code> role.</li>
-</ul>
-
 <h2 id="expectation-1">Expectation 1</h2>
 
 <p>Each test target either has no <a href="#form-field-error-indicator">form field error indicators</a>, or at least one of the <a href="#form-field-error-indicator">form field error indicators</a> allows the identification of the related test target, through <a href="https://www.w3.org/TR/WCAG21/#dfn-text">text</a>, or through <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content">non-text content</a>, or through <a href="https://www.w3.org/TR/WCAG21/#dfn-presentation">presentation</a>.</p>
-
-<p><strong>Note</strong>: This rule does not test <a href="#form-field-error-indicator">form field error indicators</a> shown on a different page than that of the test target.</p>
-
-<p><strong>Note</strong>: A single <a href="#form-field-error-indicator">form field error indicator</a> can be related to multiple test targets. For example, an error message at the top of a form can list all the form fields that are required and are empty.</p>
-
-<p><strong>Note</strong>: A single test target can be related to multiple <a href="#form-field-error-indicator">form field error indicators</a>. For example, a text field can have a red border around it, an error icon adjacent to it, an error message below it, and another error message at the top of the form. All of these are error indicators for the same form field.</p>
 
 <h2 id="expectation-2">Expectation 2</h2>
 
@@ -399,13 +386,26 @@ h2#sidebar-header {
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p><em>There are currently no assumptions.</em></p>
+<p>There are no assumptions.</p>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
-<p><em>There are no major accessibility support issues known for this rule.</em></p>
+<p>There are no accessibility support issues known.</p>
 
 <h2 id="background">Background</h2>
+
+<p>The list of applicable <a href="#semantic-role" title="Definition of semantic role">semantic roles</a> is derived by taking all the <a href="https://www.w3.org/TR/wai-aria-1.2/">ARIA 1.2</a> roles that:</p>
+
+<ul>
+  <li>inherit from the <code class="language-plaintext highlighter-rouge">input</code>, <code class="language-plaintext highlighter-rouge">menuitem</code> or <code class="language-plaintext highlighter-rouge">select</code> role, and</li>
+  <li>are form field controls (this notably excludes <code class="language-plaintext highlighter-rouge">menu</code>, <code class="language-plaintext highlighter-rouge">option</code> or <code class="language-plaintext highlighter-rouge">tree</code>).</li>
+</ul>
+
+<p>This rule does not test <a href="#form-field-error-indicator">form field error indicators</a> shown on a different page than that of the test target.</p>
+
+<p>A single <a href="#form-field-error-indicator">form field error indicator</a> can be related to multiple test targets. For example, an error message at the top of a form can list all the form fields that are required and are empty.</p>
+
+<p>A single test target can be related to multiple <a href="#form-field-error-indicator">form field error indicators</a>. For example, a text field can have a red border around it, an error icon adjacent to it, an error message below it, and another error message at the top of the form. All of these are error indicators for the same form field.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -462,14 +462,16 @@ h2#sidebar-header {
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/8b3557dcf5062904594f91d781fde151d9fe3ef3.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html">Open in a new tab</a></p>
 
-<p>This multiple <code class="language-plaintext highlighter-rouge">input</code> elements share a <a href="#form-field-error-indicator">form field error indicator</a> that identifies the elements unfilled (by referencing their labels), describes the cause of the error and how to resolve it.</p>
+<p>These multiple <code class="language-plaintext highlighter-rouge">input</code> elements share a <a href="#form-field-error-indicator">form field error indicator</a> that identifies the elements unfilled (by referencing their labels), describes the cause of the error and how to resolve it.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
-	<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"error"</span><span class="nt">&gt;&lt;strong&gt;</span>
-		Name and color cannot be empty. Please complete all required fields.
-	<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+	<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"error"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;strong&gt;</span>
+			Name and color cannot be empty. Please complete all required fields.
+		<span class="nt">&lt;/strong&gt;</span>
+	<span class="nt">&lt;/p&gt;</span>
 	<span class="nt">&lt;fieldset&gt;</span>
 		<span class="nt">&lt;legend&gt;</span>Shipping<span class="nt">&lt;/legend&gt;</span>
 		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span><span class="nt">&gt;</span>Name (required)<span class="nt">&lt;/label&gt;</span>
@@ -743,7 +745,7 @@ h2#sidebar-header {
 <p>The <em>WAI ARIA Specifications</em> group both the WAI ARIA W3C Recommendation and ARIA modules, namely:</p>
 
 <ul>
-  <li><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.2/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a></li>
   <li><a href="https://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA Graphics Module 1.0</a></li>
   <li><a href="https://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a></li>
 </ul>
@@ -813,7 +815,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 36b590</p>
-<p><strong>Date:</strong> Updated 11 July 2022</p>
+<p><strong>Date:</strong> Updated 14 November 2022</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -854,9 +856,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1668549901828172031"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1668697137421895019"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1668549901828172031"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1668697137421895019"></script>
 <script>
   svg4everybody();
 </script><script>
