@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1669259252758109727";
+      element.src = "/WAI/assets/scripts/main.js?1669827992028048322";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1669259252758109727">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1669827992028048322">
 
 <title> Something went wrong | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -193,7 +193,8 @@
   .tools-filters input {
     margin-right: .5em;
   }
-  .tools {
+  .tools,
+  #app {
     display: contents;
   }
   .tools-tools {
@@ -202,6 +203,23 @@
     margin-top: 2em;
     border-top: 1px solid #ccc;
   }
+
+#tools-list dd {
+    margin: 0 0 1em 0;
+}
+
+details dt::after {
+    content: ":";
+}
+
+#tools-list dt {
+    float: left;
+    margin: 0 .5em 0 0;
+}
+
+#tools-list dd ul {
+    margin: 3em 3em 0 0;
+}
 
   @media (min-width: 60em) {
     .tools-tools {
@@ -530,9 +548,9 @@ main > header { grid-column: 2 / span 8; }
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1669259252758109727"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1669827992028048322"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1669259252758109727"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1669827992028048322"></script>
 <script>
   svg4everybody();
 </script><script>

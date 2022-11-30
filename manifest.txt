@@ -2641,6 +2641,7 @@
 /people-use-web/user-stories/es.html
 /people-use-web/user-stories/fr.html
 /people-use-web/user-stories/index.html
+/people/index.html
 /perspective-videos/acknowledgements/index.html
 /perspective-videos/captions/index.html
 /perspective-videos/cc/captions-en.vtt

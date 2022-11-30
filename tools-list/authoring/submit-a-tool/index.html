@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1669259252758109727";
+      element.src = "/WAI/assets/scripts/main.js?1669827992028048322";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1669259252758109727">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1669827992028048322">
 
 <title>[Draft] Submit an authoring tool | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -191,7 +191,8 @@
   .tools-filters input {
     margin-right: .5em;
   }
-  .tools {
+  .tools,
+  #app {
     display: contents;
   }
   .tools-tools {
@@ -200,6 +201,23 @@
     margin-top: 2em;
     border-top: 1px solid #ccc;
   }
+
+#tools-list dd {
+    margin: 0 0 1em 0;
+}
+
+details dt::after {
+    content: ":";
+}
+
+#tools-list dt {
+    float: left;
+    margin: 0 .5em 0 0;
+}
+
+#tools-list dd ul {
+    margin: 3em 3em 0 0;
+}
 
   @media (min-width: 60em) {
     .tools-tools {
@@ -487,9 +505,6 @@ function onSubmit(e) {
 
   <form name="submission" method="post" action="https://wai-website.netlify.app/.netlify/functions/list-submission" data-wai-form="checkbox-required-group">
     <input type="hidden" name="form_name" value="submission" />
-        
-        <input type="hidden" name="DEBUG" value="true" />
-      
         
         <input type="hidden" name="form_version" value="1" />
       
@@ -2002,16 +2017,6 @@ if (tabsets) {
 
 
 
-(function(){
-  const button = document.createElement('button')
-  button.innerText = 'Show Preview'
-  button.addEventListener('click', e => {
-      getPreviewSubmission();
-  })
-  const form = document.querySelector('[name="submission"]');
-  form.insertBefore(button, form.firstChild)
-})();
-
 </script>
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
@@ -2083,9 +2088,9 @@ if (tabsets) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1669259252758109727"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1669827992028048322"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1669259252758109727"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1669827992028048322"></script>
 <script>
   svg4everybody();
 </script><script>
