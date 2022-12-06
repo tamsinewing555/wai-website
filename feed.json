@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2022-12-06/act-rules/",
+            "title": "ACT Rules for Accessibility Evaluation Tools And Methodologies",
+            "summary": null,
+            "content_text": "Accessibility Conformance Testing (ACT) Rules help evaluation tools and methodologies produced accurate, consistent results. ACT Rules help test accessibility standards more reliably. Learn more About ACT Rules. We encourage evaluation tools and methodologies to implement the individual ACT Rules and to share your implementation report on the W3C WAI website. Learn about submitting an implementation.",
+            "content_html": "<p>Accessibility Conformance Testing (ACT) Rules help evaluation tools and methodologies produced accurate, consistent results. ACT Rules help test accessibility standards more reliably. Learn more <a href=\"https://www.w3.org/WAI/standards-guidelines/act/rules/about/\">About ACT Rules</a>. We encourage evaluation tools and methodologies to implement the individual ACT Rules and to share your implementation report on the W3C WAI website. Learn about <a href=\"https://www.w3.org/WAI/standards-guidelines/act/report/submit/\">submitting an implementation</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-12-06/act-rules/",
+            
+            
+            
+            
+            
+            "date_published": "2022-12-06T00:00:00+00:00",
+            "date_modified": "2022-12-06T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2022-11-08/ctaur/",
             "title": "For Review: Collaboration Tools Accessibility User Requirements - First Draft",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2020-08-11T00:00:00+00:00",
             "date_modified": "2020-08-11T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2020-07-17/content-usable/",
-            "title": "For Review: Making Content Usable for People with Cognitive and Learning Disabilities",
-            "summary": null,
-            "content_text": "The Draft Note \"Making Content Usable for People with Cognitive and Learning Disabilities\" is ready for review. This may be the final review before the document is published as a Working Group Note. We particularly request feedback on:  Are any user needs or patterns missing or incorrect?  Can any information be made easier to understand and implement?Comments are welcome through 4 September 2020.",
-            "content_html": "<p>The Draft Note <a href=\"https://www.w3.org/TR/coga-usable/\">\"Making Content Usable for People with Cognitive and Learning Disabilities\"</a> is ready for review. This may be the final review before the document is published as a Working Group Note. We particularly request feedback on:</p><ul>  <li>Are any user needs or patterns missing or incorrect?</li>  <li>Can any information be made easier to understand and implement?</li></ul><p>Comments are welcome through 4 September 2020.</p>",
-            "url": "https://www.w3.org/WAI/news/2020-07-17/content-usable/",
-            
-            
-            
-            
-            
-            "date_published": "2020-07-17T00:00:00+00:00",
-            "date_modified": "2020-07-17T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"

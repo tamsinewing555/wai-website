@@ -2588,6 +2588,7 @@
 /news/2022-09-19/course-list/index.html
 /news/2022-09-29/curricula/index.html
 /news/2022-11-08/ctaur/index.html
+/news/2022-12-06/act-rules/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
@@ -2598,6 +2599,7 @@
 /news/28/index.html
 /news/29/index.html
 /news/3/index.html
+/news/30/index.html
 /news/4/index.html
 /news/5/index.html
 /news/6/index.html
