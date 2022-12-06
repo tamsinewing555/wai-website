@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1669907843126156400";
+      element.src = "/WAI/assets/scripts/main.js?1670339576587685094";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1669907843126156400">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1670339576587685094">
 
-<title> ARIA required context role[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1669907843126156400"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> ARIA required context role[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1670339576587685094"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="ARIA required context role" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -459,12 +459,12 @@ h2#sidebar-header {
 
 <h4 id="passed-example-5">Passed Example 5</h4>
 
-<p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/c18579dc18aaebf7eeaa4e24e4bc199d77c432bc.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/2ffe7d6cfa547dc8b107922a6bd7542ea36c96d6.html">Open in a new tab</a></p>
 
 <p>These elements with an <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a> of <code class="language-plaintext highlighter-rouge">listitem</code> are children in the <a href="https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility" title="Definition of accessibility tree">accessibility tree</a> of an element with their <a href="https://www.w3.org/TR/wai-aria-1.2/#scope" title="WAI ARIA definition of Required Context Role">required context role</a> even though they are not its DOM children. The <code class="language-plaintext highlighter-rouge">aria-owns</code> attribute is used to alter the accessibility tree and place the target elements in their <a href="https://www.w3.org/TR/wai-aria-1.2/#scope">required context role</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"list"</span> <span class="na">aria-owns=</span><span class="s">"item1 item2"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>
 		<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"item1"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>List item 1<span class="nt">&lt;/div&gt;</span>
 		<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"item2"</span> <span class="na">role=</span><span class="s">"listitem"</span><span class="nt">&gt;</span>List item 2<span class="nt">&lt;/div&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
@@ -720,60 +720,62 @@ h2#sidebar-header {
 
   <p>This section is not part of the official rule. It is populated dynamically and 
     not accounted for in the change history or the last modified date.</p>
-  <table class="act-implementations">
-    <thead> 
-      <tr>
-        <th>Implementation</th>
-        <th>Type</th>
-        <th>Consistency</th>
-        <th>Report</th>
-      </tr>
-    </thead>
-    <tbody>
+  <div class="scroll-wrap">
+    <table class="act-implementations">
+      <thead>
         <tr>
-          <td>Alfa 0.43.1</td>
-          <td>Automated tool</td>
-          <td>
-            Consistent </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-ff89c9"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+          <th>Implementation</th>
+          <th>Type</th>
+          <th>Consistency</th>
+          <th>Report</th>
         </tr>
-        <tr>
-          <td>Axe DevTools Pro 4.37.1</td>
-          <td>Semi-automated tool</td>
-          <td> Partial
-          </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-ff89c9"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-        </tr>
-        <tr>
-          <td>Axe-core 4.5</td>
-          <td>Automated tool</td>
-          <td> Partial
-          </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-ff89c9"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-        </tr>
-        <tr>
-          <td>Equal Access Accessibility Checker 3.1.36</td>
-          <td>Automated tool</td>
-          <td> Partial
-          </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-ff89c9"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-        </tr>
-        <tr>
-          <td>QualWeb 3.0.0</td>
-          <td>Automated tool</td>
-          <td> Partial
-          </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-ff89c9"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-        </tr>
-        <tr>
-          <td>SortSite 6.45</td>
-          <td>Automated tool</td>
-          <td>
-            Consistent </td>
-          <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-ff89c9"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-        </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+          <tr>
+            <td>Alfa 0.53.0</td>
+            <td>Automated tool</td>
+            <td> Partial
+            </td>
+            <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-ff89c9"><img alt="Alfa Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+          </tr>
+          <tr>
+            <td>Axe DevTools Pro 4.37.1</td>
+            <td>Semi-automated tool</td>
+            <td>
+              Consistent </td>
+            <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-ff89c9"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+          </tr>
+          <tr>
+            <td>Axe-core 4.6 beta</td>
+            <td>Automated tool</td>
+            <td>
+              Consistent </td>
+            <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-ff89c9"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+          </tr>
+          <tr>
+            <td>Equal Access Accessibility Checker 3.1.36</td>
+            <td>Automated tool</td>
+            <td> Partial
+            </td>
+            <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-ff89c9"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+          </tr>
+          <tr>
+            <td>QualWeb 3.0.0</td>
+            <td>Automated tool</td>
+            <td> Partial
+            </td>
+            <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-ff89c9"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+          </tr>
+          <tr>
+            <td>SortSite 6.45</td>
+            <td>Automated tool</td>
+            <td> Partial
+            </td>
+            <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-ff89c9"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
 
  
 
@@ -801,7 +803,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> ff89c9</p>
-<p><strong>Date:</strong> Updated 11 November 2022</p>
+<p><strong>Date:</strong> Updated 1 December 2022</p>
 <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -842,9 +844,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1669907843126156400"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1670339576587685094"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1669907843126156400"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1670339576587685094"></script>
 <script>
   svg4everybody();
 </script><script>
