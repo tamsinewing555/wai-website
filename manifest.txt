@@ -2937,8 +2937,11 @@
 /standards-guidelines/act/rules/ye5d6e/proposed/index.html
 /standards-guidelines/ar.html
 /standards-guidelines/aria/index.html
+/standards-guidelines/atag/No-code/index.html
+/standards-guidelines/atag/education/index.html
 /standards-guidelines/atag/glance/index.html
 /standards-guidelines/atag/index.html
+/standards-guidelines/atag/social-media/index.html
 /standards-guidelines/changelog/index.html
 /standards-guidelines/cs.html
 /standards-guidelines/earl/index.html
