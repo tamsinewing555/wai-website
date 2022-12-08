@@ -1298,6 +1298,7 @@
 /content-assets/wcag-act-rules/testcases/a1b64e/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html
 /content-assets/wcag-act-rules/testcases/a25f45/09d9fb1862a6f579a948259a44e1117af595d937.html
 /content-assets/wcag-act-rules/testcases/a25f45/1400d13aa5a86dbacf71db631f5de1abfc982094.html
+/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html
 /content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html
 /content-assets/wcag-act-rules/testcases/a25f45/57382c6bd42af05f3b9836a95bee672d1b9330d7.html
 /content-assets/wcag-act-rules/testcases/a25f45/7291b4b36dfa21e666a765a51c01e777d40a5174.html
@@ -2418,7 +2419,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
