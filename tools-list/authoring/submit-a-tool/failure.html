@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1670530554364403946";
+      element.src = "/WAI/assets/scripts/main.js?1670630822563043443";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1670530554364403946">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1670630822563043443">
 
 <title> Something went wrong | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -154,6 +154,7 @@ main > header {
 .box {
   grid-column: 2 / 10;
 }
+/*
 .header-sup {
   margin-bottom: 48px;
 }
@@ -164,9 +165,10 @@ main > header {
 .tools-filters {
   font-size: 85%;
 }
+*/
 @media (min-width: 60em) {
   .tools-filters {
-    font-size: 85%;
+    /* font-size: 85%; */
     grid-column: 1 / 4;
     padding-right: 2em;
     border-right: 1px solid #ccc;
@@ -508,8 +510,25 @@ svg.icon-ex-circle {
   position: absolute;
 }
 
-.radio-field:hover label {
-    color: var(--off-white);
+#disclaimer {
+    grid-column: 2/10;
+    /* margin-top: 2em; */
+}
+
+.box-disclaimer {
+    margin: 0px !important;
+}
+
+.button-submit-end {
+    grid-column: 2 / 8;
+    margin-top: 2em;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+h2 {
+    margin: 0 0 20px;
 }
 
 main > header { grid-column: 2 / span 8; }
@@ -526,7 +545,7 @@ main > header { grid-column: 2 / span 8; }
     <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=Something%20went%20wrong">wai-eo-editors@w3.org</a> or via GitHub.</p>
 <div class="button-group">
     <a href="mailto:wai-eo-editors@w3.org?subject=Something%20went%20wrong&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/wai-website/edit/master/index.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?title=[]%20" class="button"><span>New GitHub Issue</span></a>
+    <a href="https://github.com/w3c/wai-authoring-tools-list/edit/master/index.md"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-authoring-tools-list/issues/new?title=[]%20" class="button"><span>New GitHub Issue</span></a>
 </div></div></aside>
 
 
@@ -571,9 +590,9 @@ main > header { grid-column: 2 / span 8; }
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1670530554364403946"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1670630822563043443"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1670530554364403946"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1670630822563043443"></script>
 <script>
   svg4everybody();
 </script><script>

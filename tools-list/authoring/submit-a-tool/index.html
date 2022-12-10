@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1670530554364403946";
+      element.src = "/WAI/assets/scripts/main.js?1670630822563043443";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1670530554364403946">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1670630822563043443">
 
 <title> Submit an Authoring Tool | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -152,6 +152,7 @@ main > header {
 .box {
   grid-column: 2 / 10;
 }
+/*
 .header-sup {
   margin-bottom: 48px;
 }
@@ -162,9 +163,10 @@ main > header {
 .tools-filters {
   font-size: 85%;
 }
+*/
 @media (min-width: 60em) {
   .tools-filters {
-    font-size: 85%;
+    /* font-size: 85%; */
     grid-column: 1 / 4;
     padding-right: 2em;
     border-right: 1px solid #ccc;
@@ -506,8 +508,25 @@ svg.icon-ex-circle {
   position: absolute;
 }
 
-.radio-field:hover label {
-    color: var(--off-white);
+#disclaimer {
+    grid-column: 2/10;
+    /* margin-top: 2em; */
+}
+
+.box-disclaimer {
+    margin: 0px !important;
+}
+
+.button-submit-end {
+    grid-column: 2 / 8;
+    margin-top: 2em;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+h2 {
+    margin: 0 0 20px;
 }
 
 main > header { grid-column: 4 / span 4; }
@@ -565,6 +584,10 @@ function onSubmit(e) {
     <input type="text" id="tool-name" name="tool-name" required="" />
   </div>
   <div class="field">
+    <label for="tool-link">Link to tool main page</label>
+    <input type="text" id="tool-link" name="tool-link" required="" />
+  </div>
+  <div class="field">
     <label for="tool-vendor">Vendor <span>(Required)</span></label>
     <input type="text" id="tool-vendor" name="tool-vendor" required="" />
   </div>
@@ -573,7 +596,7 @@ function onSubmit(e) {
     <textarea id="tool-description" name="tool-description"></textarea>
   </div>
   <div class="field">
-    <label for="tool-statement">Link to accessibility statement</label>
+    <label for="tool-statement">Link to accessibility statement for the tool</label>
     <input type="text" id="tool-statement" name="tool-statement" placeholder="https://" />
   </div>
   <fieldset class="field fieldset_radio">
@@ -1590,7 +1613,7 @@ function onSubmit(e) {
   </div>
 
   <h2>Submitting your tool</h2>
-  <p>Let us know if you have any comments.</p>
+  <p>Let us know if you have any comments. This comment will be publicly available in GitHub, and not published on the tools list.</p>
   <div class="field">
     <label for="comments">Comments</label>
     <textarea id="comments" name="comments"></textarea>
@@ -2114,9 +2137,9 @@ if (tabsets) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1670530554364403946"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1670630822563043443"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1670530554364403946"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1670630822563043443"></script>
 <script>
   svg4everybody();
 </script><script>
