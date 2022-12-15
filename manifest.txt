@@ -388,6 +388,7 @@
 /about/projects/wai-coop/paper106.html
 /about/projects/wai-coop/paper107.html
 /about/projects/wai-coop/symposium1/index.html
+/about/projects/wai-coop/symposium2/index.html
 /about/projects/wai-coop/transcript1.html
 /about/projects/wai-core-2015/index.html
 /about/projects/wai-core-ford/index.html
@@ -2419,6 +2420,7 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
+/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
