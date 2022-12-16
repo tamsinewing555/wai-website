@@ -2135,6 +2135,7 @@
 /content-images/wai-fundamentals-overview/shawn.png
 /content-images/wai-fundamentals-overview/social-course1.png
 /content-images/wai-fundamentals-overview/test.md
+/content-images/wai-fundamentals-overview/video.svg
 /content-images/wai-fundamentals-overview/video6-tagline.png
 /content-images/wai-fundamentals-overview/vivienne.png
 /content-images/wai-fundamentals-overview/wcag2.1AA-blue-v.svg
@@ -2420,7 +2421,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
