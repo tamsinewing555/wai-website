@@ -2421,7 +2421,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2989,6 +2988,7 @@
 /standards-guidelines/wcag/translations/index.html
 /standards-guidelines/wcag/wcag3-intro/index.html
 /standards-guidelines/zh-hans.html
+/success.html
 /teach-advocate/accessibility-training/index.html
 /teach-advocate/accessibility-training/presentation-outlines/index.html
 /teach-advocate/accessibility-training/topics/index.html
@@ -3043,6 +3043,9 @@
 /tools-list/authoring/submit-a-tool/failure.html
 /tools-list/authoring/submit-a-tool/index.html
 /tools-list/authoring/submit-a-tool/success.html
+/tools-list/evaluation/index.html
+/tools-list/evaluation/submit-a-tool/failure.html
+/tools-list/evaluation/submit-a-tool/index.html
 /translations/index.html
 /tutorials/acknowledgements/index.html
 /tutorials/carousels/animations/index.html
