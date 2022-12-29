@@ -2127,13 +2127,19 @@
 /content-images/wai-fundamentals-overview/certificate.png
 /content-images/wai-fundamentals-overview/checks-image-1.png
 /content-images/wai-fundamentals-overview/foundations-course-teaser-cc.vtt
+/content-images/wai-fundamentals-overview/hearing-aid.png
 /content-images/wai-fundamentals-overview/henny.png
+/content-images/wai-fundamentals-overview/low-vision-pizza.png
+/content-images/wai-fundamentals-overview/low-vision.png
 /content-images/wai-fundamentals-overview/makoto-video.png
 /content-images/wai-fundamentals-overview/makoto.png
+/content-images/wai-fundamentals-overview/older-user-laptop.png
 /content-images/wai-fundamentals-overview/sarah.png
 /content-images/wai-fundamentals-overview/shadi.png
 /content-images/wai-fundamentals-overview/shawn.png
+/content-images/wai-fundamentals-overview/sip-puff.png
 /content-images/wai-fundamentals-overview/social-course1.png
+/content-images/wai-fundamentals-overview/still-dog-outside.png
 /content-images/wai-fundamentals-overview/test.md
 /content-images/wai-fundamentals-overview/video.svg
 /content-images/wai-fundamentals-overview/video6-tagline.png
@@ -2421,7 +2427,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
