@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1672281656309560392";
+      element.src = "/WAI/assets/scripts/main.js?1672935355233197716";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1672281656309560392">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1672935355233197716">
 
-<title> HTML images contain no text[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1672281656309560392"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> HTML images contain no text[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1672935355233197716"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="HTML images contain no text" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -340,16 +340,16 @@ h2#sidebar-header {
 
 <h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to any <a href="#rendered-image-resource" title="Definition of rendered image resource">rendered image resources</a> in a <a href="#web-page-html" title="Definition of web page (HTML)">web page</a>.</p>
+<p>This rule applies to any <a href="#rendered-image-resource" title="Definition of rendered image resource">image resources</a> rendered in a <a href="#web-page-html" title="Definition of web page (HTML)">web page</a>.</p>
 
 <h2 id="expectation">Expectation</h2>
 
-<p>For each test target, its <a href="#visible" title="Definition of visible">visible pixels</a> do not contain text expressing anything in a <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-human-language" title="WCAG 2.1, Definition of human language">human language</a>, except if at least one of the following is true:</p>
+<p>Each test target has no <a href="#visible" title="Definition of visible">visible</a> <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-human-language" title="WCAG 2.1, Definition of human language">text</a>, except if at least one of the following is true:</p>
 
 <ul>
-  <li><strong>essential</strong>: the <a href="#visible" title="Definition of visible">visible pixels</a> of the test target contain text for which its presentation is <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-essential" title="WCAG 2.1, Definition of essential">essential</a>; or</li>
-  <li><strong>not significant</strong>: the <a href="#visible" title="Definition of visible">visible pixels</a> of the test target contain text and the text is not a significant part of the visible part of the image or</li>
-  <li><strong>decoration</strong>: the test target belongs to an <a href="#embedded-image" title="Definition of Embedded Image">embedded image</a> that is <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG 2.1, Purely decorative">purely decorative</a>.</li>
+  <li><dfn id="0va7u6:decorative">decorative</dfn>: The image with text is <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG 2.1, Purely decorative">purely decorative</a>; or</li>
+  <li><dfn id="0va7u6:incidental">incidental</dfn>: The text is not a <a href="#insignificant" title="Definition of Insignificant">significant</a> part of the image; or</li>
+  <li><dfn id="0va7u6:essential">essential</dfn>: Ensuring presentation of the text is <a href="#essential-text-presentation" title="Definition of Essential (Text Presentation)">essential</a>.</li>
 </ul>
 
 <h2 id="assumptions">Assumptions</h2>
@@ -357,6 +357,7 @@ h2#sidebar-header {
 <ul>
   <li>There is no mechanism to change the rendered text in the image resource. Otherwise, the rule might fail while <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text">SC 1.4.5 Images of Text</a> and <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text-no-exception">SC 1.4.9 Images of Text (No Exception)</a> might be satisfied.</li>
   <li>The specific presentation of the text rendered in the image resource can be achieved through formatted text. Otherwise, the rule might fail while <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text">SC 1.4.5 Images of Text</a> and <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text-no-exception">SC 1.4.9 Images of Text (No Exception)</a> might be satisfied.</li>
+  <li>When used in HTML, the SVG <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code> element is not considered to be an image of text. This is because like any other element in HTML, SVG <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code> can be adjusted through custom style sheets. This does not apply for SVG text that is in a separate file, and displayed through, for example, the <code class="language-plaintext highlighter-rouge">img</code> element.</li>
 </ul>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
@@ -452,7 +453,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/372b4acc620b897e8fa5e22607121407399f5e07.html">Open in a new tab</a></p>
 
-<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">object</code> element contains text, but it is not the most significant content.</p>
+<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">object</code> element contains text, but it is not the most <a href="#0va7u6:incidental">significant</a> content.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">"/test-assets/0va7u6/times_square.jpg"</span> <span class="na">title=</span><span class="s">"Picture of Times Square, New York"</span><span class="nt">&gt;&lt;/object&gt;</span>
 </code></pre></div></div>
@@ -461,7 +462,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/28b2597a08ca7a6fd85a273b484b599c04a03f1a.html">Open in a new tab</a></p>
 
-<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">img</code> element contains text, but its presentation is essential to convey the information.</p>
+<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">img</code> element contains text, but its presentation is <a href="#0va7u6:essential">essential</a> to convey the information.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
 	The following image is a close up of the cover of a Classic Comics book titled "Ivanhoe" illustrating a font that
@@ -477,7 +478,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a.html">Open in a new tab</a></p>
 
-<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">background-image</code> property of the <code class="language-plaintext highlighter-rouge">div</code> element contains a logo with text. Logotypes are considered an essential exception.</p>
+<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">background-image</code> property of the <code class="language-plaintext highlighter-rouge">div</code> element contains a logo with text. Logotypes are considered an <a href="#0va7u6:essential">essential</a> exception.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span>
 	<span class="na">role=</span><span class="s">"img"</span>
@@ -495,7 +496,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/00a1b04016513662a754e5114d0efbbd98ba58c8.html">Open in a new tab</a></p>
 
-<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">img</code> element is an image of text (the book covers), but it is just meant to decorate the webpage of a book store, therefore it is <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG 2.1, Purely decorative">purely decorative</a>.</p>
+<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">img</code> element is an image of text (the book covers), but it is just meant to decorate the webpage of a book store, therefore it is <a href="#0va7u6:decorative">decorative</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/0va7u6/books.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;p&gt;</span>Welcome to my book store<span class="nt">&lt;/p&gt;</span>
@@ -531,7 +532,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/80ff3d6a9f2de0b2b9f179a13d91d47ce8c9ab26.html">Open in a new tab</a></p>
 
-<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">img</code> element contains text for which the particular presentation is not essential.</p>
+<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">img</code> element contains text for which the particular presentation is not <a href="#0va7u6:essential">essential</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span>
 	<span class="na">src=</span><span class="s">"/test-assets/0va7u6/textimage.jpg"</span>
@@ -543,7 +544,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/45041ac39ebf8f9d8ff642ea0bb56e947f0ac76e.html">Open in a new tab</a></p>
 
-<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">input</code> element in the <a href="https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image)">Image Button</a> contains text for which the particular presentation is not essential.</p>
+<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">input</code> element in the <a href="https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image)">Image Button</a> contains text for which the particular presentation is not <a href="#0va7u6:essential">essential</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"image"</span> <span class="na">src=</span><span class="s">"/test-assets/0va7u6/button.jpg"</span> <span class="na">alt=</span><span class="s">"Press me"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
@@ -552,7 +553,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/bf023941401d04f61ce739ee10fcc15f87d298a7.html">Open in a new tab</a></p>
 
-<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">background-image</code> property of the <code class="language-plaintext highlighter-rouge">div</code> element contains text for which the particular presentation is not essential.</p>
+<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">background-image</code> property of the <code class="language-plaintext highlighter-rouge">div</code> element contains text for which the particular presentation is not <a href="#0va7u6:essential">essential</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-image: url(/test-assets/0va7u6/textimage.jpg); width: 500px; height: 200px;"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
@@ -561,10 +562,22 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html">Open in a new tab</a></p>
 
-<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">img</code> element contains text that provides redundant information, but it still is information, therefore it is not <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG 2.1, Purely decorative">purely decorative</a>.</p>
+<p>This image resource referenced by the <code class="language-plaintext highlighter-rouge">img</code> element contains text that provides redundant information, but it still is information, therefore it is not <a href="#0va7u6:decorative">decorative</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/0va7u6/welcome.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;p&gt;</span>Welcome to our website<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-5">Failed Example 5</h4>
+
+<p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">img</code> element loads an SVG with text as an image resource. Because the SVG is loaded as an image resource, instead of being embedded in HTML the text cannot be selected or customized.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"WCAG Rocks"</span> <span class="na">src=</span><span class="s">"data:image/svg+xml;utf8,
+&lt;svg xmlns='http://www.w3.org/2000/svg' height='20px' width='80px'&gt;
+  &lt;text x='0' y='15'&gt;WCAG Rocks&lt;/text&gt;
+&lt;/svg&gt;"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
 <h3 id="inapplicable">Inapplicable</h3>
@@ -624,6 +637,36 @@ h2#sidebar-header {
   <li>the element is an <code class="language-plaintext highlighter-rouge">svg</code> element having one or more <code class="language-plaintext highlighter-rouge">image</code> <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendants</a> with a non-empty <code class="language-plaintext highlighter-rouge">href</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>; or</li>
   <li>the element has a <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> <a href="https://drafts.csswg.org/css-backgrounds-3/#background-image"><code class="language-plaintext highlighter-rouge">background-image</code></a> CSS property with at least one <a href="https://www.w3.org/TR/css-images-3/#typedef-image"><code class="language-plaintext highlighter-rouge">image</code></a> that is a <a href="https://www.w3.org/TR/css-images-3/#url-notation">url reference</a>.</li>
 </ul>
+
+<h3 id="essential-text-presentation">Essential text presentation</h3>
+
+<p>The presentation of text is considered essential in one of more of the following scenarios:</p>
+
+<ol>
+  <li>The text and its presentation is part of a brand; or</li>
+  <li>The text is part of a digitized image of a physical object; or</li>
+  <li>The text is part of a free-form digital illustration; or</li>
+  <li>The text is part of an image with other graphical objects, where its relationship is informative; or</li>
+  <li>Changing part of the presentation would alter the meaning of content on the page.</li>
+</ol>
+
+<p>Examples of text for which the presentation is essential include:</p>
+
+<ol>
+  <li>Logos, product names, or slogans</li>
+  <li>Image of a hand-written letter, picture of a street sign, or a scanned contract</li>
+  <li>A digital signature, or a note written using a stylus,</li>
+  <li>A bar chart, diagram, or maps with place names</li>
+  <li>An image showing a font, or showing the difference between font-weights</li>
+</ol>
+
+<p><strong>Note:</strong> WCAG includes a generic definition of “<a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-essential">essential</a>”.</p>
+
+<h3 id="insignificant">Insignificant</h3>
+
+<p>Content that is neither <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG 2.1, Purely decorative">purely decorative</a>, nor required for understanding the purpose of certain pieces of information or functionality. Insignificant content is often used to provide context.</p>
+
+<p><strong>Example</strong>: A picture of New York’s Time Square may include taxis, a famous pizza restaurant, and theater advertisements, etc. None of these are purely decorative. They provide clues as to where the picture was taken. But neither are any of these required to understand the picture as a whole. Even if the picture itself is significant, the taxis in the picture are not.</p>
 
 <h3 id="outcome">Outcome</h3>
 
@@ -687,8 +730,8 @@ h2#sidebar-header {
           <tr>
             <td>Trusted Tester 5.1</td>
             <td>Test methodology</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/trusted-tester#breakdown-0va7u6"><img alt="Trusted Tester Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
       </tbody>
@@ -721,8 +764,8 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 0va7u6</p>
-<p><strong>Date:</strong> Updated 14 November 2022</p>
-<p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+<p><strong>Date:</strong> Updated 4 January 2023</p>
+<p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
 <p><strong>Assets:</strong> Test cases use assets from the following sources: Times Square image released into the public domain by (WT-shared) Ypsilonatshared at wts wikivoyage.; Book shelf image by Alexandre Boue, licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International</a> license.; Ivanhoe Classic Comics released into the public domain by Malcolm Kildale under the <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-ShareAlike 3.0 Unported</a> license</p>
@@ -749,7 +792,7 @@ h2#sidebar-header {
       </ul>
     </div>
     <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2022 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+      <p>Copyright &#xA9; 2023 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
   <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
@@ -764,9 +807,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1672281656309560392"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1672935355233197716"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1672281656309560392"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1672935355233197716"></script>
 <script>
   svg4everybody();
 </script><script>
