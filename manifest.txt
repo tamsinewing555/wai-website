@@ -2431,7 +2431,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2584,7 +2583,6 @@
 /news/2021-09-28/saur/index.html
 /news/2021-10-12/NAUR/index.html
 /news/2021-10-14/remote-meetings/index.html
-/news/2021-11-10/symposium/index.html
 /news/2021-12-02/IDPD-18n-day-PwDs/index.html
 /news/2021-12-16/captcha/index.html
 /news/2022-02-10/curricula/index.html
@@ -2604,7 +2602,6 @@
 /news/2022-09-29/curricula/index.html
 /news/2022-11-08/ctaur/index.html
 /news/2022-12-06/act-rules/index.html
-/news/2022-12-12/atag-resources/index.html
 /news/2022-12-15/symposium/index.html
 /news/2023-01-05/wai-adapt-symbols/index.html
 /news/21/index.html
