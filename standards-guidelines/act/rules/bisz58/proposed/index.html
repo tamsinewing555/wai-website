@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1674665310583494176";
+      element.src = "/WAI/assets/scripts/main.js?1674695576888655316";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674665310583494176">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674695576888655316">
 
-<title> Meta element has no refresh delay (no exception)[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674665310583494176"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Meta element has no refresh delay (no exception)[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674695576888655316"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Meta element has no refresh delay (no exception)" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -365,6 +365,8 @@ h2#sidebar-header {
 
 <p>Because a refresh with a timing of 0 is a redirect, it is exempt from this rule. Since this can cause rapid screen flashes it is strongly recommended to avoid this.</p>
 
+<p>This rule is closely related to <a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">success criterion 2.2.1 Time Adjustable</a>. Because this rule is stricter, <code class="language-plaintext highlighter-rouge">meta</code> elements that pass this rule satisfy 2.1.1 Time Adjustable.</p>
+
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
@@ -425,6 +427,18 @@ h2#sidebar-header {
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
         <li>All <code>passed</code> outcomes: technique needs further testing</li>
         <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>2.2.1 Timing Adjustable (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">Learn more about 2.2.1 Timing Adjustable</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion </li>
+        <li>An <code>inapplicable</code> outcome: success criterion </li>
       </ul></li>
     </ul>
   </details></li>
@@ -648,7 +662,7 @@ h2#sidebar-header {
       </thead>
       <tbody>
           <tr>
-            <td>Alfa 0.53.0</td>
+            <td>Alfa 0.56.0</td>
             <td>Automated tool</td>
             <td>
               Consistent </td>
@@ -705,7 +719,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> bisz58</p>
-<p><strong>Date:</strong> Updated 11 November 2022</p>
+<p><strong>Date:</strong> Updated 16 January 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -746,9 +760,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1674695576888655316"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1674695576888655316"></script>
 <script>
   svg4everybody();
 </script><script>

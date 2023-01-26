@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1674665310583494176";
+      element.src = "/WAI/assets/scripts/main.js?1674695576888655316";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674665310583494176">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674695576888655316">
 
-<title> Alfa ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674665310583494176"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Alfa ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674695576888655316"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Alfa ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -303,10 +303,10 @@ h2#sidebar-header {
   </header>
   <div class="box-i"><p>
     <a href="https://alfa.siteimprove.com/">Alfa</a>
-      version 0.53.0
+      version 0.56.0
      is an Automated tool
       by <a href="https://www.siteimprove.com/">Siteimprove</a>.
-      The test results were last updated 3 January 2023.
+      The test results were last updated 20 January 2023.
 
     
 
@@ -331,8 +331,8 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>Proposed rules</th>
+      <td>10</td>
       <td>6</td>
-      <td>9</td>
     </tr>
   </tbody></table>
 </div>
@@ -600,8 +600,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
         </tr>
       
       
@@ -636,8 +636,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -648,8 +648,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -714,8 +714,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -808,6 +808,16 @@ h2#sidebar-header {
       
       
       
+        <tr>
+          <td><a href="#breakdown-674b10">
+            Role attribute has valid value
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td>
+            Consistent </td>
+        </tr>
+      
       
       
         <tr>
@@ -816,8 +826,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -4021,11 +4031,15 @@ h2#sidebar-header {
 <p>
   This rule is implemented by Alfa using the
   <code>sia-r20</code> procedure.
-  The implementation is 
-    fully  consistent with the
+  The implementation is  partially 
+   consistent with the
   <a href="/WAI/standards-guidelines/act/rules/5f99a7/proposed/">ARIA attribute is defined in WAI-ARIA</a>
    proposed rule.
-    It covers all 7 examples.
+    It covers 6 of the 7 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports no success criteria are failed by this rule.
@@ -4088,9 +4102,9 @@ h2#sidebar-header {
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html">Failed Example 1</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html">Failed Example 1</a>
         </th>
-        <td class="">failed</td>
+        <td class="act-untested">untested</td>
       </tr>
       <tr>
         <th>
@@ -4432,11 +4446,11 @@ h2#sidebar-header {
 <p>
   This rule is implemented by Alfa using the
   <code>sia-r18</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/5c01ea/proposed/">ARIA state or property is permitted</a>
    proposed rule.
-    It covers 15 of the 16 examples.
+    It covers all 16 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -4562,8 +4576,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html">Failed Example 3</a>
         </th>
-        <td class="
-            act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
@@ -4585,11 +4598,11 @@ h2#sidebar-header {
 <p>
   This rule is implemented by Alfa using the
   <code>sia-r19</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/6a7281/proposed/">ARIA state or property has valid value</a>
    proposed rule.
-    It covers 22 of the 24 examples.
+    It covers 23 of the 24 examples.
     On 1 example
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
@@ -4748,8 +4761,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html">Failed Example 10</a>
         </th>
-        <td class="
-            act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
@@ -4906,14 +4918,14 @@ h2#sidebar-header {
 <p>
   This rule is implemented by Alfa using the
   <code>sia-r64</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/ffd0e9/proposed/">Heading has non-empty accessible name</a>
    proposed rule.
     It covers all 15 examples.
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -4941,11 +4953,6 @@ h2#sidebar-header {
             <li>
               1.3.1
               Info and Relationships
-            </li>
-          
-            <li>
-              2.4.6
-              Headings and Labels
             </li>
           
             <li>
@@ -5208,7 +5215,7 @@ h2#sidebar-header {
   
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -5231,7 +5238,14 @@ h2#sidebar-header {
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              4.1.2
+              Name, Role, Value
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -5406,7 +5420,7 @@ h2#sidebar-header {
   
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -5429,7 +5443,14 @@ h2#sidebar-header {
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              2.4.9
+              Link Purpose (Link Only)
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -5849,15 +5870,15 @@ h2#sidebar-header {
   </table>
 </div>
 
-<h3 id="breakdown-4e8ab6">Element with role attribute has required states and properties</h3>
+<h3 id="breakdown-674b10">Role attribute has valid value</h3>
 <p>
   This rule is implemented by Alfa using the
-  <code>sia-r16</code> procedure.
-  The implementation is  partially 
-   consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/4e8ab6/proposed/">Element with role attribute has required states and properties</a>
+  <code>sia-r110</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/674b10/proposed/">Role attribute has valid value</a>
    proposed rule.
-    It covers 14 of the 15 examples.
+    It covers all 10 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -5872,14 +5893,133 @@ h2#sidebar-header {
     <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
     <tr>
       <td>
+         None 
+      </td>
+
+      <td>
         
           <ul>
             <li>
-              4.1.2
-              Name, Role, Value
+              1.3.1
+              Info and Relationships
+            </li>
+          
+            <li>
+              
+              
+            </li>
+          
+            <li>
+              
+              
             </li>
           </ul>
         
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>sia-r110</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html">Passed Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html">Passed Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html">Passed Example 3</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html">Failed Example 1</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html">Failed Example 2</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html">Inapplicable Example 3</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html">Inapplicable Example 4</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html">Inapplicable Example 5</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="breakdown-4e8ab6">Element with role attribute has required states and properties</h3>
+<p>
+  This rule is implemented by Alfa using the
+  <code>sia-r16</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/4e8ab6/proposed/">Element with role attribute has required states and properties</a>
+   proposed rule.
+    It covers all 15 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+         None 
       </td>
 
       <td>
@@ -5983,8 +6123,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html">Failed Example 6</a>
         </th>
-        <td class="
-            act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
@@ -6023,7 +6162,7 @@ h2#sidebar-header {
   
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -6046,7 +6185,14 @@ h2#sidebar-header {
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              2.4.7
+              Focus Visible
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -6337,9 +6483,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1674695576888655316"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1674695576888655316"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1674665310583494176";
+      element.src = "/WAI/assets/scripts/main.js?1674695576888655316";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674665310583494176">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674695576888655316">
 
-<title> Axe DevTools Pro ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674665310583494176"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Axe DevTools Pro ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674695576888655316"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Axe DevTools Pro ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -306,7 +306,7 @@ h2#sidebar-header {
       version 4.37.1
      is an Semi-automated tool
       by <a href="https://deque.com/">Deque Systems</a>.
-      The test results were last updated 5 January 2023.
+      The test results were last updated 25 January 2023.
 
     
 
@@ -331,8 +331,8 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>Proposed rules</th>
-      <td>15</td>
-      <td>17</td>
+      <td>19</td>
+      <td>13</td>
     </tr>
   </tbody></table>
 </div>
@@ -620,8 +620,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -656,8 +656,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -954,8 +954,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -978,8 +978,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -4621,14 +4621,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
 <p>
   This rule is implemented by Axe DevTools Pro using the
   <code>aria-valid-attr</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/5f99a7/proposed/">ARIA attribute is defined in WAI-ARIA</a>
    proposed rule.
     It covers all 7 examples.
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -4695,7 +4695,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html">Failed Example 1</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html">Failed Example 1</a>
         </th>
         <td class="">failed</td>
       </tr>
@@ -5056,14 +5056,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
 <p>
   This rule is implemented by Axe DevTools Pro using the
   <code>aria-allowed-attr</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/5c01ea/proposed/">ARIA state or property is permitted</a>
    proposed rule.
     It covers all 16 examples.
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -5219,7 +5219,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -5424,7 +5424,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   
   
   
-    The implementation correctly reports no success criteria are failed by this rule.
+    The implementation reports different success criteria as failed from what is expected by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -5440,7 +5440,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              2.4.1
+              Bypass Blocks
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -5525,7 +5532,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -5548,7 +5555,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              2.4.1
+              Bypass Blocks
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -5796,7 +5810,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   
   
   
-    The implementation correctly reports no success criteria are failed by this rule.
+    The implementation reports different success criteria as failed from what is expected by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -5812,7 +5826,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              2.4.1
+              Bypass Blocks
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -5935,7 +5956,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   
   
   
-    The implementation correctly reports no success criteria are failed by this rule.
+    The implementation reports different success criteria as failed from what is expected by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -5951,7 +5972,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              2.4.1
+              Bypass Blocks
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -6062,7 +6090,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   
   
   
-    The implementation correctly reports no success criteria are failed by this rule.
+    The implementation reports different success criteria as failed from what is expected by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -6078,7 +6106,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              2.4.1
+              Bypass Blocks
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -6688,7 +6723,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -6711,7 +6746,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              4.1.2
+              Name, Role, Value
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -7579,7 +7621,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -7602,7 +7644,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              2.4.9
+              Link Purpose (Link Only)
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -8016,14 +8065,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
 <p>
   This rule is implemented by Axe DevTools Pro using the
   <code>aria-roles</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/674b10/proposed/">Role attribute has valid value</a>
    proposed rule.
     It covers all 10 examples.
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -8035,14 +8084,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
     <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
     <tr>
       <td>
-        
-          <ul>
-            <li>
-              1.3.1
-              Info and Relationships
-            </li>
-          </ul>
-        
+         None 
       </td>
 
       <td>
@@ -8158,14 +8200,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
     <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
     <tr>
       <td>
-        
-          <ul>
-            <li>
-              4.1.2
-              Name, Role, Value
-            </li>
-          </ul>
-        
+         None 
       </td>
 
       <td>
@@ -8292,15 +8327,11 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
 <p>
   This rule is implemented by Axe DevTools Pro using the
   <code>scrollable-region-focusable</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/0ssw9k/proposed/">Scrollable element is keyboard accessible</a>
    proposed rule.
-    It covers 9 of the 10 examples.
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 10 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -8409,7 +8440,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html">Inapplicable Example 6</a>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="">inapplicable</td>
       </tr>
     </tbody>
   </table>
@@ -8535,7 +8566,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -8558,7 +8589,14 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       </td>
 
       <td>
-         None 
+        
+          <ul>
+            <li>
+              1.3.1
+              Info and Relationships
+            </li>
+          </ul>
+        
       </td>
     </tr>
   </tbody></table>
@@ -9009,7 +9047,7 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html">Passed Example 3</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html">Passed Example 3</a>
         </th>
         <td class="">passed</td>
       </tr>
@@ -9407,9 +9445,9 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1674695576888655316"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1674695576888655316"></script>
 <script>
   svg4everybody();
 </script><script>

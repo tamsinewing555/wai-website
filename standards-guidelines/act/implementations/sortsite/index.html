@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1674665310583494176";
+      element.src = "/WAI/assets/scripts/main.js?1674695576888655316";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674665310583494176">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674695576888655316">
 
-<title> SortSite ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674665310583494176"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> SortSite ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674695576888655316"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="SortSite ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -306,7 +306,7 @@ h2#sidebar-header {
       version 6.45
      is an Automated tool
       by <a href="https://www.powermapper.com/">PowerMapper</a>.
-      The test results were last updated 2 December 2022.
+      The test results were last updated 16 January 2023.
 
     
 
@@ -331,8 +331,8 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>Proposed rules</th>
-      <td>18</td>
-      <td>1</td>
+      <td>15</td>
+      <td>4</td>
     </tr>
   </tbody></table>
 </div>
@@ -620,8 +620,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
         </tr>
       
       
@@ -800,8 +800,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
         </tr>
       
       
@@ -896,8 +896,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
         </tr>
       
       
@@ -3373,11 +3373,7 @@ h2#sidebar-header {
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/a25f45">Headers attribute specified on a cell refers to cells in the same table element</a>
   WCAG 2 rule. 
-    It covers 17 of the 18 examples.
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 18 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -3535,7 +3531,7 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html">Inapplicable Example 6</a>
             <abbr title="Proposed example">*</abbr>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="">passed</td>
       </tr>
     </tbody>
   </table>
@@ -4354,11 +4350,15 @@ h2#sidebar-header {
 <p>
   This rule is implemented by SortSite using the
   <code>W3cHtml5Error-RnvErAkey-aria-*</code> procedure.
-  The implementation is 
-    fully  consistent with the
+  The implementation is  partially 
+   consistent with the
   <a href="/WAI/standards-guidelines/act/rules/5f99a7/proposed/">ARIA attribute is defined in WAI-ARIA</a>
    proposed rule.
-    It covers all 7 examples.
+    It covers 6 of the 7 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports no success criteria are failed by this rule.
@@ -4421,9 +4421,9 @@ h2#sidebar-header {
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html">Failed Example 1</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html">Failed Example 1</a>
         </th>
-        <td class="">failed</td>
+        <td class="act-untested">untested</td>
       </tr>
       <tr>
         <th>
@@ -4532,7 +4532,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/2ffe7d6cfa547dc8b107922a6bd7542ea36c96d6.html">Passed Example 5</a>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -4556,7 +4556,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/52508dc0ac389108301d7cbd7f931be45a45741f.html">Failed Example 3</a>
         </th>
-        <td class="">failed</td>
+        <td class="act-untested">untested</td>
       </tr>
       <tr>
         <th>
@@ -5738,11 +5738,15 @@ h2#sidebar-header {
 <p>
   This rule is implemented by SortSite using the
   <code>AccHtmlLinkTextAmbiguousContext</code> procedure.
-  The implementation is 
-    fully  consistent with the
+  The implementation is  partially 
+   consistent with the
   <a href="/WAI/standards-guidelines/act/rules/5effbb/proposed/">Link in context is descriptive</a>
    proposed rule.
-    It covers all 18 examples.
+    It covers 17 of the 18 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -5848,9 +5852,9 @@ h2#sidebar-header {
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5.html">Passed Example 9</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/4e89fcc7903980482fe12350f864ca75963d6efd.html">Passed Example 9</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-untested">untested</td>
       </tr>
       <tr>
         <th>
@@ -6044,14 +6048,7 @@ h2#sidebar-header {
     <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
     <tr>
       <td>
-        
-          <ul>
-            <li>
-              1.3.1
-              Info and Relationships
-            </li>
-          </ul>
-        
+         None 
       </td>
 
       <td>
@@ -6167,14 +6164,7 @@ h2#sidebar-header {
     <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
     <tr>
       <td>
-        
-          <ul>
-            <li>
-              4.1.2
-              Name, Role, Value
-            </li>
-          </ul>
-        
+         None 
       </td>
 
       <td>
@@ -6848,11 +6838,15 @@ h2#sidebar-header {
 <p>
   This rule is implemented by SortSite using the
   <code>AccHtmlContrastEnhanced</code> procedure.
-  The implementation is 
-    fully  consistent with the
+  The implementation is  partially 
+   consistent with the
   <a href="/WAI/standards-guidelines/act/rules/09o5cg/proposed/">Text has enhanced contrast</a>
    proposed rule.
-    It covers all 33 examples.
+    It covers 32 of the 33 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -6917,9 +6911,9 @@ h2#sidebar-header {
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html">Passed Example 3</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html">Passed Example 3</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-untested">untested</td>
       </tr>
       <tr>
         <th>
@@ -7308,9 +7302,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1674695576888655316"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1674695576888655316"></script>
 <script>
   svg4everybody();
 </script><script>

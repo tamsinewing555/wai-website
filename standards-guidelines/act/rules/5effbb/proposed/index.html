@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1674665310583494176";
+      element.src = "/WAI/assets/scripts/main.js?1674695576888655316";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674665310583494176">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674695576888655316">
 
-<title> Link in context is descriptive[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674665310583494176"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Link in context is descriptive[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674695576888655316"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Link in context is descriptive" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -325,9 +325,7 @@ h2#sidebar-header {
     
     to test 
     
-    <strong>2.4.4: Link Purpose (In Context) (Level A)</strong>, 
-    
-    <strong>2.4.9: Link Purpose (Link Only) (Level AAA)</strong>
+    <strong>2.4.4: Link Purpose (In Context) (Level A)</strong>
     
     
   </p> 
@@ -375,8 +373,8 @@ h2#sidebar-header {
 <h3 id="related-rules">Related rules</h3>
 
 <ul>
-  <li><a href="https://act-rules.github.io/rules/c487ae">Link has non-empty accessible name</a></li>
-  <li><a href="https://act-rules.github.io/rules/aizyf1">Link is descriptive</a></li>
+  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/">Link has non-empty accessible name</a></li>
+  <li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/aizyf1/proposed/">Link is descriptive</a></li>
 </ul>
 
 <h3 id="bibliography">Bibliography</h3>
@@ -577,14 +575,22 @@ h2#sidebar-header {
 
 <h4 id="passed-example-9">Passed Example 9</h4>
 
-<p><a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/4e89fcc7903980482fe12350f864ca75963d6efd.html">Open in a new tab</a></p>
 
 <p>The <a href="#programmatically-determined-link-context" title="Definition of Programmatically Determined Link Context">programmatically determined link context</a> (provided by the element referenced by the <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute) and the <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> (from the link’s text) describe the purpose of the links.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"rule"</span><span class="nt">&gt;</span>Button has accessible name<span class="nt">&lt;/h2&gt;</span>
 <span class="nt">&lt;ul&gt;</span>
-	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://act-rules.github.io/rules/97a4e1#applicability"</span> <span class="na">aria-describedby=</span><span class="s">"rule"</span><span class="nt">&gt;</span>Applicability<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://act-rules.github.io/rules/97a4e1#expectation"</span> <span class="na">aria-describedby=</span><span class="s">"rule"</span><span class="nt">&gt;</span>Expectation<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+	<span class="nt">&lt;li&gt;</span>
+		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3.org/WAI/standards-guidelines/act/rules/97a4e1/#applicability"</span> <span class="na">aria-describedby=</span><span class="s">"rule"</span>
+			<span class="nt">&gt;</span>Applicability<span class="nt">&lt;/a</span>
+		<span class="nt">&gt;</span>
+	<span class="nt">&lt;/li&gt;</span>
+	<span class="nt">&lt;li&gt;</span>
+		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3.org/WAI/standards-guidelines/act/rules/97a4e1/#expectation"</span> <span class="na">aria-describedby=</span><span class="s">"rule"</span>
+			<span class="nt">&gt;</span>Expectation<span class="nt">&lt;/a</span>
+		<span class="nt">&gt;</span>
+	<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
 </code></pre></div></div>
 
@@ -882,15 +888,15 @@ h2#sidebar-header {
           <tr>
             <td>SortSite 6.45</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-5effbb"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>ember-template-lint 4.16.1</td>
             <td>Linter</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/ember-template-lint#breakdown-5effbb"><img alt="ember-template-lint Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
       </tbody>
@@ -923,7 +929,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 5effbb</p>
-<p><strong>Date:</strong> Updated 11 November 2022</p>
+<p><strong>Date:</strong> Updated 16 January 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/marietrudelle">Marie Trudelle</a>, <a href="https://github.com/ramitgarg">Ramit Garg</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -964,9 +970,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1674695576888655316"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1674695576888655316"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1674665310583494176";
+      element.src = "/WAI/assets/scripts/main.js?1674695576888655316";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674665310583494176">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674695576888655316">
 
-<title> Text has enhanced contrast[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674665310583494176"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Text has enhanced contrast[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1674695576888655316"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Text has enhanced contrast" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -380,6 +380,8 @@ h2#sidebar-header {
 
 <p>When the text color or background color is not specified in the web page, colors from other <a href="https://www.w3.org/TR/css3-cascade/#cascading-origins" title="CSS 3, origin">origins</a> will be used. Testers must ensure colors are not affected by styles from a <a href="https://www.w3.org/TR/css3-cascade/#cascade-origin-user" title="CSS 3, user origin">user origin</a>, such as a custom style sheet. Contrast issues caused by specifying the text color but not the background or vice versa, must be tested separately from this rule.</p>
 
+<p>This rule is closely related to <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">success criterion 1.4.3 Contrast (Minimum)</a>. Because this rule is stricter, text that passes this rule will likely satisfy 1.4.3 Contrast (Minimum).</p>
+
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
@@ -429,6 +431,18 @@ h2#sidebar-header {
       </ul></li>
     </ul>
   </details></li>
+  <li><details>
+    <summary><span>1.4.3 Contrast (Minimum) (Level AA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Learn more about 1.4.3 Contrast (Minimum)</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion </li>
+        <li>An <code>inapplicable</code> outcome: success criterion </li>
+      </ul></li>
+    </ul>
+  </details></li>
 </ul>
 
 <h2 id="input-aspects">Input Aspects</h2>
@@ -470,18 +484,18 @@ h2#sidebar-header {
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
-<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html">Open in a new tab</a></p>
 
 <p>This white text has a contrast ratio between 18:1 and 7:1 on the background image.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
-<span class="nt">p</span> <span class="p">{</span>
-	<span class="nl">color</span><span class="p">:</span> <span class="m">#FFF</span><span class="p">;</span>
-	<span class="nl">height</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
-	<span class="nl">padding-top</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
-	<span class="nl">background</span><span class="p">:</span> <span class="m">#000</span> <span class="nb">no-repeat</span> <span class="m">-20px</span> <span class="m">-20px</span> <span class="sx">url('/test-assets/contrast/black-hole.jpeg')</span><span class="p">;</span>
-	<span class="nl">text-shadow</span><span class="p">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">2px</span> <span class="no">black</span><span class="p">;</span>
-<span class="p">}</span>
+	<span class="nt">p</span> <span class="p">{</span>
+		<span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+		<span class="nl">height</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+		<span class="nl">padding-top</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+		<span class="nl">background</span><span class="p">:</span> <span class="m">#000</span> <span class="nb">no-repeat</span> <span class="m">-20px</span> <span class="m">-20px</span> <span class="sx">url('/test-assets/contrast/black-hole.jpeg')</span><span class="p">;</span>
+		<span class="nl">text-shadow</span><span class="p">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">2px</span> <span class="no">black</span><span class="p">;</span>
+	<span class="p">}</span>
 <span class="nt">&lt;/style&gt;</span>
 <span class="nt">&lt;p&gt;</span>Black hole sun<span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
@@ -557,7 +571,7 @@ light gray background with a contrast ratio of 18.26:1</p>
 <p><a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html">Open in a new tab</a></p>
 
 <p>This text is part of a widget because it is a child of an element with the <code class="language-plaintext highlighter-rouge">role</code> attribute set to <code class="language-plaintext highlighter-rouge">button</code>.
-The text has the default browser text color on the default browser background color. By default, this is 
+The text has the default browser text color on the default browser background color. By default, this is
 black text on a white background with a contrast ratio of 21:1</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>My button!<span class="nt">&lt;/div&gt;</span>
@@ -1092,8 +1106,8 @@ of <code class="language-plaintext highlighter-rouge">A-lum-max</code> with <cod
           <tr>
             <td>SortSite 6.45</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-09o5cg"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
       </tbody>
@@ -1126,7 +1140,7 @@ of <code class="language-plaintext highlighter-rouge">A-lum-max</code> with <cod
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 09o5cg</p>
-<p><strong>Date:</strong> Updated 23 November 2022</p>
+<p><strong>Date:</strong> Updated 16 January 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1167,9 +1181,9 @@ of <code class="language-plaintext highlighter-rouge">A-lum-max</code> with <cod
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1674695576888655316"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1674665310583494176"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1674695576888655316"></script>
 <script>
   svg4everybody();
 </script><script>
