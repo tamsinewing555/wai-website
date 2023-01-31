@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1674695576888655316";
+      element.src = "/WAI/assets/scripts/main.js?1675203077578945814";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674695576888655316">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675203077578945814">
 
 <title> Index | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -27,21 +27,20 @@
 <link rel="canonical" href="https://www.w3.org/WAI/ARIA/apg/example-index/" />
 <meta property="og:url" content="https://www.w3.org/WAI/ARIA/apg/example-index/" />
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-01-26T01:12:56+00:00" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content="Index" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"dateModified":"2023-01-26T01:12:56+00:00","datePublished":"2023-01-26T01:12:56+00:00","description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Index","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/ARIA/apg/example-index/"},"url":"https://www.w3.org/WAI/ARIA/apg/example-index/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Index","url":"https://www.w3.org/WAI/ARIA/apg/example-index/"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-index resource-apg-examples">
+  <body id="top" class="page-index ">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
    <div class="minimal-header-container default-grid">
@@ -300,16 +299,22 @@ h2#sidebar-header {
             </h1>
         </header>
 
-        <script src="js/examples.js"></script>
+        <meta charset="UTF-8">
 
-<script src="js/highlight.pack.js"></script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<script src="js/app.js"></script>
+<title>Index</title>
+
+<script src="../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
+
+<script src="../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+
+<script src="../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
 
 <link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/styles.css">
 
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/apg/example-index/css/github.css">
+<link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/shared/css/github.css">
 
 <script>
 const addBodyClass = undefined;
@@ -320,7 +325,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 <script>
     const parentPage = window.location.pathname.match(
-      /\/(patterns|practices|example-index)\//
+      /\/(patterns|practices)\//
     )?.[1];
     if (parentPage) {
       const parentHref = 'a[href*="' + parentPage + '"]';
@@ -330,21 +335,21 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 <div>
 
-      <h2 id="abouttheindex">About the Index</h2>
-      <p>
-        This page includes a list of all ARIA design pattern examples 
-        indexed either by role or by ARIA properties and states.
-      </p>
-      
-  
   <div>
     
-    
-    
+    <h2 id="abouttheindex">About the Index</h2>
+    <p>
+      This page includes a list of all ARIA design pattern examples indexed
+      either by role or by ARIA properties and states.
+    </p>
+    <ul>
+      <li><a href="#examples_by_role_label">Examples by Role</a></li>
+      <li><a href="#examples_by_props_label">Examples by Properties and States</a></li>
+    </ul>
     <section id="examples_by_roles">
       <h2 id="examples_by_role_label">Examples by Role</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
-      <div class="table-wrap"><table aria-labelledby="examples_by_role_label" class="data attributes">
+      <table aria-labelledby="examples_by_role_label" class="data attributes">
         <thead>
           <tr>
             <th>Role</th>
@@ -356,26 +361,26 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>alert</code></td>
             <td>
               <ul>
-                <li><a href="alert/alert.html">Alert</a></li>
-                <li><a href="dialog-modal/alertdialog.html">Alert Dialog</a></li>
+                <li><a href="../patterns/alert/examples/alert/">Alert</a></li>
+                <li><a href="../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>alertdialog</code></td>
-            <td><a href="dialog-modal/alertdialog.html">Alert Dialog</a></td>
+            <td><a href="../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></td>
           </tr>
           <tr>
             <td><code>article</code></td>
-            <td><a href="feed/feed.html">Feed</a></td>
+            <td><a href="../patterns/feed/examples/feed/">Feed</a></td>
           </tr>
           <tr>
             <td><code>banner</code></td>
             <td>
               <ul>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="landmarks/banner.html">Banner Landmark</a></li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/landmarks/examples/banner.html">Banner Landmark</a></li>
               </ul>
             </td>
           </tr>
@@ -383,52 +388,52 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>button</code></td>
             <td>
               <ul>
-                <li><a href="button/button_idl.html">Button  (IDL Version)</a></li>
-                <li><a href="button/button.html">Button</a></li>
+                <li><a href="../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
+                <li><a href="../patterns/button/examples/button/">Button</a></li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>cell</code></td>
-            <td><a href="table/table.html">Table</a></td>
+            <td><a href="../patterns/table/examples/table/">Table</a></td>
           </tr>
           <tr>
             <td><code>checkbox</code></td>
             <td>
               <ul>
-                <li><a href="checkbox/checkbox-mixed.html">Checkbox  (Mixed-State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="checkbox/checkbox.html">Checkbox  (Two State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/checkbox/examples/checkbox-mixed/">Checkbox  (Mixed-State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/checkbox/examples/checkbox/">Checkbox  (Two State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>columnheader</code></td>
-            <td><a href="table/table.html">Table</a></td>
+            <td><a href="../patterns/table/examples/table/">Table</a></td>
           </tr>
           <tr>
             <td><code>combobox</code></td>
             <td>
               <ul>
-                <li><a href="combobox/combobox-autocomplete-both.html">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-list.html">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-none.html">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-select-only.html">Select-Only Combobox</a></li>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>complementary</code></td>
-            <td><a href="landmarks/complementary.html">Complementary Landmark</a></td>
+            <td><a href="../patterns/landmarks/examples/complementary.html">Complementary Landmark</a></td>
           </tr>
           <tr>
             <td><code>contentinfo</code></td>
             <td>
               <ul>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="landmarks/contentinfo.html">Contentinfo Landmark</a></li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/landmarks/examples/contentinfo.html">Contentinfo Landmark</a></li>
               </ul>
             </td>
           </tr>
@@ -436,29 +441,29 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>dialog</code></td>
             <td>
               <ul>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="dialog-modal/datepicker-dialog.html">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="dialog-modal/dialog.html">Modal Dialog</a></li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>feed</code></td>
-            <td><a href="feed/feed.html">Feed</a></td>
+            <td><a href="../patterns/feed/examples/feed/">Feed</a></td>
           </tr>
           <tr>
             <td><code>form</code></td>
-            <td><a href="landmarks/form.html">Form Landmark</a></td>
+            <td><a href="../patterns/landmarks/examples/form.html">Form Landmark</a></td>
           </tr>
           <tr>
             <td><code>grid</code></td>
             <td>
               <ul>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
-                <li><a href="dialog-modal/datepicker-dialog.html">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="grid/dataGrids.html">Data Grid</a></li>
-                <li><a href="grid/LayoutGrids.html">Layout Grid</a></li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></li>
+                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
               </ul>
             </td>
           </tr>
@@ -466,9 +471,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>gridcell</code></td>
             <td>
               <ul>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
-                <li><a href="grid/LayoutGrids.html">Layout Grid</a></li>
-                <li><a href="treegrid/treegrid-1.html">Treegrid Email Inbox</a></li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
+                <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
               </ul>
             </td>
           </tr>
@@ -476,52 +481,52 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>group</code></td>
             <td>
               <ul>
-                <li><a href="carousel/carousel-1-prev-next.html">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
-                <li><a href="checkbox/checkbox.html">Checkbox  (Two State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="listbox/listbox-grouped.html">Listbox  with Grouped Options</a></li>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-color-viewer.html">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
-                <li><a href="switch/switch-button.html">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="treeview/treeview-1/treeview-1a.html">File Directory Treeview  Using Computed Properties</a></li>
-                <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
+                <li><a href="../patterns/checkbox/examples/checkbox/">Checkbox  (Two State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>link</code></td>
-            <td><a href="link/link.html">Link</a></td>
+            <td><a href="../patterns/link/examples/link/">Link</a></td>
           </tr>
           <tr>
             <td><code>listbox</code></td>
             <td>
               <ul>
-                <li><a href="combobox/combobox-autocomplete-both.html">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-list.html">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-none.html">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-select-only.html">Select-Only Combobox</a></li>
-                <li><a href="listbox/listbox-collapsible.html">(Deprecated) Collapsible Dropdown Listbox</a></li>
-                <li><a href="listbox/listbox-grouped.html">Listbox  with Grouped Options</a></li>
-                <li><a href="listbox/listbox-rearrangeable.html">Listboxes with Rearrangeable Options</a></li>
-                <li><a href="listbox/listbox-scrollable.html">Scrollable Listbox</a></li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>main</code></td>
-            <td><a href="landmarks/main.html">Main Landmark</a></td>
+            <td><a href="../patterns/landmarks/examples/main.html">Main Landmark</a></td>
           </tr>
           <tr>
             <td><code>menu</code></td>
             <td>
               <ul>
-                <li><a href="menu-button/menu-button-actions-active-descendant.html">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-actions.html">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-links.html">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -529,8 +534,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>menubar</code></td>
             <td>
               <ul>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -538,38 +543,38 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>menuitem</code></td>
             <td>
               <ul>
-                <li><a href="menu-button/menu-button-actions-active-descendant.html">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-actions.html">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-links.html">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>menuitemcheckbox</code></td>
-            <td><a href="menubar/menubar-editor.html">Editor Menubar</a></td>
+            <td><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a></td>
           </tr>
           <tr>
             <td><code>menuitemradio</code></td>
             <td>
               <ul>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>meter</code></td>
-            <td><a href="meter/meter.html">Meter</a></td>
+            <td><a href="../patterns/meter/examples/meter/">Meter</a></td>
           </tr>
           <tr>
             <td><code>navigation</code></td>
             <td>
               <ul>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="landmarks/navigation.html">Navigation Landmark</a></li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/landmarks/examples/navigation.html">Navigation Landmark</a></li>
               </ul>
             </td>
           </tr>
@@ -577,13 +582,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>none</code></td>
             <td>
               <ul>
-                <li><a href="menu-button/menu-button-links.html">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio-rating.html">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-multithumb.html">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-seek.html">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-temperature.html">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio-rating/">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -591,14 +596,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>option</code></td>
             <td>
               <ul>
-                <li><a href="combobox/combobox-autocomplete-both.html">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-list.html">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-none.html">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-select-only.html">Select-Only Combobox</a></li>
-                <li><a href="listbox/listbox-collapsible.html">(Deprecated) Collapsible Dropdown Listbox</a></li>
-                <li><a href="listbox/listbox-grouped.html">Listbox  with Grouped Options</a></li>
-                <li><a href="listbox/listbox-rearrangeable.html">Listboxes with Rearrangeable Options</a></li>
-                <li><a href="listbox/listbox-scrollable.html">Scrollable Listbox</a></li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
               </ul>
             </td>
           </tr>
@@ -606,10 +611,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>radio</code></td>
             <td>
               <ul>
-                <li><a href="radio/radio-activedescendant.html">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio-rating.html">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio.html">Radio Group  Using Roving tabindex</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio-rating/">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio/">Radio Group  Using Roving tabindex</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -617,10 +622,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>radiogroup</code></td>
             <td>
               <ul>
-                <li><a href="radio/radio-activedescendant.html">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio-rating.html">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio.html">Radio Group  Using Roving tabindex</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio-rating/">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio/">Radio Group  Using Roving tabindex</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -628,12 +633,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>region</code></td>
             <td>
               <ul>
-                <li><a href="accordion/accordion.html">Accordion</a></li>
-                <li><a href="carousel/carousel-1-prev-next.html">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
-                <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="landmarks/region.html">Region Landmark</a></li>
+                <li><a href="../patterns/accordion/examples/accordion/">Accordion</a></li>
+                <li><a href="../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
+                <li><a href="../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/landmarks/examples/region.html">Region Landmark</a></li>
               </ul>
             </td>
           </tr>
@@ -641,34 +646,34 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>row</code></td>
             <td>
               <ul>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
-                <li><a href="grid/LayoutGrids.html">Layout Grid</a></li>
-                <li><a href="table/table.html">Table</a></li>
-                <li><a href="treegrid/treegrid-1.html">Treegrid Email Inbox</a></li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
+                <li><a href="../patterns/table/examples/table/">Table</a></li>
+                <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>rowgroup</code></td>
-            <td><a href="table/table.html">Table</a></td>
+            <td><a href="../patterns/table/examples/table/">Table</a></td>
           </tr>
           <tr>
             <td><code>search</code></td>
-            <td><a href="landmarks/search.html">Search Landmark</a></td>
+            <td><a href="../patterns/landmarks/examples/search.html">Search Landmark</a></td>
           </tr>
           <tr>
             <td><code>separator</code></td>
-            <td><a href="menubar/menubar-editor.html">Editor Menubar</a></td>
+            <td><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a></td>
           </tr>
           <tr>
             <td><code>slider</code></td>
             <td>
               <ul>
-                <li><a href="slider/slider-color-viewer.html">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-multithumb.html">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-rating.html">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-seek.html">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-temperature.html">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -676,8 +681,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>spinbutton</code></td>
             <td>
               <ul>
-                <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -685,9 +690,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>switch</code></td>
             <td>
               <ul>
-                <li><a href="switch/switch-button.html">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="switch/switch-checkbox.html">Switch  Using HTML Checkbox Input</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="switch/switch.html">Switch</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/switch/examples/switch-checkbox/">Switch  Using HTML Checkbox Input</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/switch/examples/switch/">Switch</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -695,23 +700,23 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>tab</code></td>
             <td>
               <ul>
-                <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>table</code></td>
-            <td><a href="table/table.html">Table</a></td>
+            <td><a href="../patterns/table/examples/table/">Table</a></td>
           </tr>
           <tr>
             <td><code>tablist</code></td>
             <td>
               <ul>
-                <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -719,46 +724,46 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>tabpanel</code></td>
             <td>
               <ul>
-                <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>toolbar</code></td>
-            <td><a href="toolbar/toolbar.html">Toolbar</a></td>
+            <td><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></td>
           </tr>
           <tr>
             <td><code>tree</code></td>
             <td>
               <ul>
-                <li><a href="treeview/treeview-1/treeview-1a.html">File Directory Treeview  Using Computed Properties</a></li>
-                <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>treegrid</code></td>
-            <td><a href="treegrid/treegrid-1.html">Treegrid Email Inbox</a></td>
+            <td><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></td>
           </tr>
           <tr>
             <td><code>treeitem</code></td>
             <td>
               <ul>
-                <li><a href="treeview/treeview-1/treeview-1a.html">File Directory Treeview  Using Computed Properties</a></li>
-                <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr></tbody>
-      </table></div>
+      </table>
     </section>
     <section id="examples_by_props">
       <h2 id="examples_by_props_label">Examples By Properties and States</h2>
       <div><strong>NOTE:</strong> The HC abbreviation means example has High Contrast support.</div>
-      <div class="table-wrap"><table aria-labelledby="examples_by_props_label" class="data attributes">
+      <table aria-labelledby="examples_by_props_label" class="data attributes">
         <thead>
           <tr>
             <th>Property or State</th>
@@ -770,88 +775,88 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-activedescendant</code></td>
             <td>
               <ul>
-                <li><a href="combobox/combobox-autocomplete-both.html">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-list.html">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-none.html">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-select-only.html">Select-Only Combobox</a></li>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
-                <li><a href="listbox/listbox-collapsible.html">(Deprecated) Collapsible Dropdown Listbox</a></li>
-                <li><a href="listbox/listbox-grouped.html">Listbox  with Grouped Options</a></li>
-                <li><a href="listbox/listbox-rearrangeable.html">Listboxes with Rearrangeable Options</a></li>
-                <li><a href="listbox/listbox-scrollable.html">Scrollable Listbox</a></li>
-                <li><a href="menu-button/menu-button-actions-active-descendant.html">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio-activedescendant.html">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>aria-atomic</code></td>
-            <td><a href="alert/alert.html">Alert</a></td>
+            <td><a href="../patterns/alert/examples/alert/">Alert</a></td>
           </tr>
           <tr>
             <td><code>aria-autocomplete</code></td>
             <td>
               <ul>
-                <li><a href="combobox/combobox-autocomplete-both.html">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-list.html">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-none.html">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>aria-busy</code></td>
-            <td><a href="feed/feed.html">Feed</a></td>
+            <td><a href="../patterns/feed/examples/feed/">Feed</a></td>
           </tr>
           <tr>
             <td><code>aria-checked</code></td>
             <td>
               <ul>
-                <li><a href="checkbox/checkbox-mixed.html">Checkbox  (Mixed-State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="checkbox/checkbox.html">Checkbox  (Two State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio-activedescendant.html">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio-rating.html">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio.html">Radio Group  Using Roving tabindex</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="switch/switch-button.html">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="switch/switch.html">Switch</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/checkbox/examples/checkbox-mixed/">Checkbox  (Mixed-State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/checkbox/examples/checkbox/">Checkbox  (Two State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio-rating/">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio/">Radio Group  Using Roving tabindex</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/switch/examples/switch/">Switch</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>aria-colcount</code></td>
-            <td><a href="grid/dataGrids.html">Data Grid</a></td>
+            <td><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></td>
           </tr>
           <tr>
             <td><code>aria-colindex</code></td>
-            <td><a href="grid/dataGrids.html">Data Grid</a></td>
+            <td><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></td>
           </tr>
           <tr>
             <td><code>aria-controls</code></td>
             <td>
               <ul>
-                <li><a href="accordion/accordion.html">Accordion</a></li>
-                <li><a href="carousel/carousel-1-prev-next.html">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
-                <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="checkbox/checkbox-mixed.html">Checkbox  (Mixed-State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-both.html">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-list.html">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-none.html">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-select-only.html">Select-Only Combobox</a></li>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
-                <li><a href="disclosure/disclosure-faq.html">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="disclosure/disclosure-image-description.html">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="disclosure/disclosure-navigation-hybrid.html">Disclosure Navigation Menu with Top-Level Links</a></li>
-                <li><a href="disclosure/disclosure-navigation.html">Disclosure Navigation Menu</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-actions-active-descendant.html">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-actions.html">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-links.html">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/accordion/examples/accordion/">Accordion</a></li>
+                <li><a href="../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
+                <li><a href="../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/checkbox/examples/checkbox-mixed/">Checkbox  (Mixed-State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
+                <li><a href="../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -859,10 +864,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-current</code></td>
             <td>
               <ul>
-                <li><a href="disclosure/disclosure-navigation-hybrid.html">Disclosure Navigation Menu with Top-Level Links</a></li>
-                <li><a href="disclosure/disclosure-navigation.html">Disclosure Navigation Menu</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/breadcrumb/examples/breadcrumb/">Breadcrumb</a></li>
+                <li><a href="../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
+                <li><a href="../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -870,12 +876,12 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-describedby</code></td>
             <td>
               <ul>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="dialog-modal/alertdialog.html">Alert Dialog</a></li>
-                <li><a href="dialog-modal/datepicker-dialog.html">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="dialog-modal/dialog.html">Modal Dialog</a></li>
-                <li><a href="feed/feed.html">Feed</a></li>
-                <li><a href="table/table.html">Table</a></li>
+                <li><a href="../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../patterns/table/examples/table/">Table</a></li>
               </ul>
             </td>
           </tr>
@@ -883,9 +889,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-disabled</code></td>
             <td>
               <ul>
-                <li><a href="dialog-modal/alertdialog.html">Alert Dialog</a></li>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -893,28 +899,28 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-expanded</code></td>
             <td>
               <ul>
-                <li><a href="accordion/accordion.html">Accordion</a></li>
-                <li><a href="combobox/combobox-autocomplete-both.html">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-list.html">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-none.html">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-select-only.html">Select-Only Combobox</a></li>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
-                <li><a href="disclosure/disclosure-faq.html">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="disclosure/disclosure-image-description.html">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="disclosure/disclosure-navigation-hybrid.html">Disclosure Navigation Menu with Top-Level Links</a></li>
-                <li><a href="disclosure/disclosure-navigation.html">Disclosure Navigation Menu</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="listbox/listbox-collapsible.html">(Deprecated) Collapsible Dropdown Listbox</a></li>
-                <li><a href="menu-button/menu-button-actions-active-descendant.html">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-actions.html">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-links.html">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
-                <li><a href="treegrid/treegrid-1.html">Treegrid Email Inbox</a></li>
-                <li><a href="treeview/treeview-1/treeview-1a.html">File Directory Treeview  Using Computed Properties</a></li>
-                <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/accordion/examples/accordion/">Accordion</a></li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/disclosure/examples/disclosure-faq/">Disclosure (Show/Hide) for Answers to Frequently Asked Questions</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/disclosure/examples/disclosure-image-description/">Disclosure (Show/Hide) for Image Description</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/disclosure/examples/disclosure-navigation-hybrid/">Disclosure Navigation Menu with Top-Level Links</a></li>
+                <li><a href="../patterns/disclosure/examples/disclosure-navigation/">Disclosure Navigation Menu</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
+                <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -922,15 +928,15 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-haspopup</code></td>
             <td>
               <ul>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
-                <li><a href="listbox/listbox-collapsible.html">(Deprecated) Collapsible Dropdown Listbox</a></li>
-                <li><a href="menu-button/menu-button-actions-active-descendant.html">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-actions.html">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-links.html">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -938,19 +944,19 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-hidden</code></td>
             <td>
               <ul>
-                <li><a href="button/button_idl.html">Button  (IDL Version)</a></li>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-color-viewer.html">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-multithumb.html">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-rating.html">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-seek.html">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-temperature.html">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
-                <li><a href="switch/switch-button.html">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="switch/switch-checkbox.html">Switch  Using HTML Checkbox Input</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="switch/switch.html">Switch</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="table/sortable-table.html">Sortable Table</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/switch/examples/switch-checkbox/">Switch  Using HTML Checkbox Input</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/switch/examples/switch/">Switch</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/table/examples/sortable-table/">Sortable Table</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -958,23 +964,24 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-label</code></td>
             <td>
               <ul>
-                <li><a href="carousel/carousel-1-prev-next.html">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
-                <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-both.html">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-list.html">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-none.html">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="dialog-modal/datepicker-dialog.html">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="link/link.html">Link</a></li>
-                <li><a href="menubar/menubar-editor.html">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio-rating.html">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-multithumb.html">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
-                <li><a href="table/table.html">Table</a></li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
-                <li><a href="treegrid/treegrid-1.html">Treegrid Email Inbox</a></li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/breadcrumb/examples/breadcrumb/">Breadcrumb</a></li>
+                <li><a href="../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
+                <li><a href="../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/link/examples/link/">Link</a></li>
+                <li><a href="../patterns/menubar/examples/menubar-editor/">Editor Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio-rating/">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/table/examples/table/">Table</a></li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
+                <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -982,46 +989,46 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-labelledby</code></td>
             <td>
               <ul>
-                <li><a href="accordion/accordion.html">Accordion</a></li>
-                <li><a href="checkbox/checkbox.html">Checkbox  (Two State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-select-only.html">Select-Only Combobox</a></li>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
-                <li><a href="dialog-modal/alertdialog.html">Alert Dialog</a></li>
-                <li><a href="dialog-modal/datepicker-dialog.html">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="dialog-modal/dialog.html">Modal Dialog</a></li>
-                <li><a href="feed/feed.html">Feed</a></li>
-                <li><a href="grid/dataGrids.html">Data Grid</a></li>
-                <li><a href="grid/LayoutGrids.html">Layout Grid</a></li>
-                <li><a href="listbox/listbox-collapsible.html">(Deprecated) Collapsible Dropdown Listbox</a></li>
-                <li><a href="listbox/listbox-grouped.html">Listbox  with Grouped Options</a></li>
-                <li><a href="listbox/listbox-rearrangeable.html">Listboxes with Rearrangeable Options</a></li>
-                <li><a href="listbox/listbox-scrollable.html">Scrollable Listbox</a></li>
-                <li><a href="menu-button/menu-button-actions-active-descendant.html">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-actions.html">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menu-button/menu-button-links.html">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="menubar/menubar-navigation.html">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="meter/meter.html">Meter</a></li>
-                <li><a href="radio/radio-activedescendant.html">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio-rating.html">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="radio/radio.html">Radio Group  Using Roving tabindex</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-color-viewer.html">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-rating.html">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-seek.html">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-temperature.html">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
-                <li><a href="switch/switch-button.html">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="treeview/treeview-1/treeview-1a.html">File Directory Treeview  Using Computed Properties</a></li>
-                <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
-                <li><a href="treeview/treeview-navigation.html">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="landmarks/complementary.html">Complementary Landmark</a></li>
-                <li><a href="landmarks/form.html">Form Landmark</a></li>
-                <li><a href="landmarks/main.html">Main Landmark</a></li>
-                <li><a href="landmarks/navigation.html">Navigation Landmark</a></li>
-                <li><a href="landmarks/region.html">Region Landmark</a></li>
-                <li><a href="landmarks/search.html">Search Landmark</a></li>
+                <li><a href="../patterns/accordion/examples/accordion/">Accordion</a></li>
+                <li><a href="../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></li>
+                <li><a href="../patterns/checkbox/examples/checkbox/">Checkbox  (Two State)</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></li>
+                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions-active-descendant/">Actions Menu Button  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-actions/">Actions Menu Button  Using element.focus()</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menu-button/examples/menu-button-links/">Navigation Menu Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/menubar/examples/menubar-navigation/">Navigation Menubar</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/meter/examples/meter/">Meter</a></li>
+                <li><a href="../patterns/radio/examples/radio-activedescendant/">Radio Group  Using aria-activedescendant</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio-rating/">Rating Radio Group</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/radio/examples/radio/">Radio Group  Using Roving tabindex</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/switch/examples/switch-button/">Switch  Using HTML Button</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/landmarks/examples/complementary.html">Complementary Landmark</a></li>
+                <li><a href="../patterns/landmarks/examples/form.html">Form Landmark</a></li>
+                <li><a href="../patterns/landmarks/examples/main.html">Main Landmark</a></li>
+                <li><a href="../patterns/landmarks/examples/navigation.html">Navigation Landmark</a></li>
+                <li><a href="../patterns/landmarks/examples/region.html">Region Landmark</a></li>
+                <li><a href="../patterns/landmarks/examples/search.html">Search Landmark</a></li>
               </ul>
             </td>
           </tr>
@@ -1029,8 +1036,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-level</code></td>
             <td>
               <ul>
-                <li><a href="treegrid/treegrid-1.html">Treegrid Email Inbox</a></li>
-                <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
               </ul>
             </td>
           </tr>
@@ -1038,11 +1045,11 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-live</code></td>
             <td>
               <ul>
-                <li><a href="alert/alert.html">Alert</a></li>
-                <li><a href="carousel/carousel-1-prev-next.html">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
-                <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="dialog-modal/datepicker-dialog.html">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/alert/examples/alert/">Alert</a></li>
+                <li><a href="../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
+                <li><a href="../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -1050,32 +1057,32 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-modal</code></td>
             <td>
               <ul>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="dialog-modal/alertdialog.html">Alert Dialog</a></li>
-                <li><a href="dialog-modal/datepicker-dialog.html">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="dialog-modal/dialog.html">Modal Dialog</a></li>
+                <li><a href="../patterns/alertdialog/examples/alertdialog/">Alert Dialog</a></li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/dialog-modal/examples/dialog/">Modal Dialog</a></li>
               </ul>
             </td>
           </tr>
           <tr>
             <td><code>aria-multiselectable</code></td>
-            <td><a href="listbox/listbox-rearrangeable.html">Listboxes with Rearrangeable Options</a></td>
+            <td><a href="../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></td>
           </tr>
           <tr>
             <td><code>aria-orientation</code></td>
-            <td><a href="slider/slider-temperature.html">Vertical Temperature Slider</a></td>
+            <td><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a></td>
           </tr>
           <tr>
             <td><code>aria-owns</code></td>
-            <td><a href="treeview/treeview-navigation.html">Navigation Treeview</a></td>
+            <td><a href="../patterns/treeview/examples/treeview-navigation/">Navigation Treeview</a></td>
           </tr>
           <tr>
             <td><code>aria-posinset</code></td>
             <td>
               <ul>
-                <li><a href="feed/feed.html">Feed</a></li>
-                <li><a href="treegrid/treegrid-1.html">Treegrid Email Inbox</a></li>
-                <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
               </ul>
             </td>
           </tr>
@@ -1083,9 +1090,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-pressed</code></td>
             <td>
               <ul>
-                <li><a href="button/button_idl.html">Button  (IDL Version)</a></li>
-                <li><a href="button/button.html">Button</a></li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/button/examples/button_idl/">Button  (IDL Version)</a></li>
+                <li><a href="../patterns/button/examples/button/">Button</a></li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -1093,8 +1100,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-roledescription</code></td>
             <td>
               <ul>
-                <li><a href="carousel/carousel-1-prev-next.html">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
-                <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/carousel/examples/carousel-1-prev-next/">Auto-Rotating Image Carousel  with Buttons for Slide Control</a></li>
+                <li><a href="../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -1102,8 +1109,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-rowcount</code></td>
             <td>
               <ul>
-                <li><a href="grid/dataGrids.html">Data Grid</a></li>
-                <li><a href="grid/LayoutGrids.html">Layout Grid</a></li>
+                <li><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></li>
+                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
               </ul>
             </td>
           </tr>
@@ -1111,8 +1118,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-rowindex</code></td>
             <td>
               <ul>
-                <li><a href="grid/dataGrids.html">Data Grid</a></li>
-                <li><a href="grid/LayoutGrids.html">Layout Grid</a></li>
+                <li><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></li>
+                <li><a href="../patterns/grid/examples/LayoutGrids/">Layout Grid</a></li>
               </ul>
             </td>
           </tr>
@@ -1120,22 +1127,22 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-selected</code></td>
             <td>
               <ul>
-                <li><a href="carousel/carousel-2-tablist.html">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-both.html">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-list.html">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-autocomplete-none.html">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-datepicker.html">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="combobox/combobox-select-only.html">Select-Only Combobox</a></li>
-                <li><a href="combobox/grid-combo.html">Editable Combobox with Grid Popup</a></li>
-                <li><a href="dialog-modal/datepicker-dialog.html">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="listbox/listbox-collapsible.html">(Deprecated) Collapsible Dropdown Listbox</a></li>
-                <li><a href="listbox/listbox-grouped.html">Listbox  with Grouped Options</a></li>
-                <li><a href="listbox/listbox-rearrangeable.html">Listboxes with Rearrangeable Options</a></li>
-                <li><a href="listbox/listbox-scrollable.html">Scrollable Listbox</a></li>
-                <li><a href="tabs/tabs-automatic.html">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="tabs/tabs-manual.html">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="treeview/treeview-1/treeview-1a.html">File Directory Treeview  Using Computed Properties</a></li>
-                <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../patterns/carousel/examples/carousel-2-tablist/">Auto-Rotating Image Carousel with Tabs for Slide Control</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-both/">Editable Combobox With Both List and Inline Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-list/">Editable Combobox With List Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-autocomplete-none/">Editable Combobox without Autocomplete</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-datepicker/">Date Picker Combobox</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/combobox/examples/combobox-select-only/">Select-Only Combobox</a></li>
+                <li><a href="../patterns/combobox/examples/grid-combo/">Editable Combobox with Grid Popup</a></li>
+                <li><a href="../patterns/dialog-modal/examples/datepicker-dialog/">Date Picker Dialog</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/listbox/examples/listbox-collapsible/">(Deprecated) Collapsible Dropdown Listbox</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-grouped/">Listbox  with Grouped Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-rearrangeable/">Listboxes with Rearrangeable Options</a></li>
+                <li><a href="../patterns/listbox/examples/listbox-scrollable/">Scrollable Listbox</a></li>
+                <li><a href="../patterns/tabs/examples/tabs-automatic/">Tabs with Automatic Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/tabs/examples/tabs-manual/">Tabs with Manual Activation</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/treeview/examples/treeview-1a/">File Directory Treeview  Using Computed Properties</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
               </ul>
             </td>
           </tr>
@@ -1143,9 +1150,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-setsize</code></td>
             <td>
               <ul>
-                <li><a href="feed/feed.html">Feed</a></li>
-                <li><a href="treegrid/treegrid-1.html">Treegrid Email Inbox</a></li>
-                <li><a href="treeview/treeview-1/treeview-1b.html">File Directory Treeview  Using Declared Properties</a></li>
+                <li><a href="../patterns/feed/examples/feed/">Feed</a></li>
+                <li><a href="../patterns/treegrid/examples/treegrid-1/">Treegrid Email Inbox</a></li>
+                <li><a href="../patterns/treeview/examples/treeview-1b/">File Directory Treeview  Using Declared Properties</a></li>
               </ul>
             </td>
           </tr>
@@ -1153,8 +1160,8 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-sort</code></td>
             <td>
               <ul>
-                <li><a href="grid/dataGrids.html">Data Grid</a></li>
-                <li><a href="table/sortable-table.html">Sortable Table</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/grid/examples/dataGrids/">Data Grid</a></li>
+                <li><a href="../patterns/table/examples/sortable-table/">Sortable Table</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
               </ul>
             </td>
           </tr>
@@ -1162,14 +1169,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-valuemax</code></td>
             <td>
               <ul>
-                <li><a href="meter/meter.html">Meter</a></li>
-                <li><a href="slider/slider-color-viewer.html">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-multithumb.html">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-rating.html">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-seek.html">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-temperature.html">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/meter/examples/meter/">Meter</a></li>
+                <li><a href="../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -1177,14 +1184,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-valuemin</code></td>
             <td>
               <ul>
-                <li><a href="meter/meter.html">Meter</a></li>
-                <li><a href="slider/slider-color-viewer.html">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-multithumb.html">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-rating.html">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-seek.html">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-temperature.html">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/meter/examples/meter/">Meter</a></li>
+                <li><a href="../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -1192,14 +1199,14 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-valuenow</code></td>
             <td>
               <ul>
-                <li><a href="meter/meter.html">Meter</a></li>
-                <li><a href="slider/slider-color-viewer.html">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-multithumb.html">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-rating.html">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-seek.html">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-temperature.html">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/meter/examples/meter/">Meter</a></li>
+                <li><a href="../patterns/slider-multithumb/examples/slider-multithumb/">Horizontal Multi-Thumb Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-color-viewer/">Color Viewer Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr>
@@ -1207,24 +1214,22 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             <td><code>aria-valuetext</code></td>
             <td>
               <ul>
-                <li><a href="slider/slider-rating.html">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-seek.html">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="slider/slider-temperature.html">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
-                <li><a href="spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button</a></li>
-                <li><a href="toolbar/toolbar.html">Toolbar</a></li>
+                <li><a href="../patterns/slider/examples/slider-rating/">Rating Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-seek/">Media Seek Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/slider/examples/slider-temperature/">Vertical Temperature Slider</a> (<abbr title="High Contrast Support">HC</abbr>)</li>
+                <li><a href="../patterns/spinbutton/examples/datepicker-spinbuttons/">Date Picker Spin Button</a></li>
+                <li><a href="../patterns/toolbar/examples/toolbar/">Toolbar</a></li>
               </ul>
             </td>
           </tr></tbody>
-      </table></div>
+      </table>
     </section>
   </div>
-  
 
 
 
-    
 </div>
-<script src="/WAI/ARIA/apg/example-index/js/skipto.js"></script>
+<script src="/WAI/content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
  
 
@@ -1236,7 +1241,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
       <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Index">public-aria-practices@w3.org</a> or via GitHub.</p>
 <div class="button-group">
     <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Index&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/aria-practices/edit/main/aria-practices.html"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/aria-practices/issues/new" class="button"><span>New GitHub Issue</span></a>
+    <a href="https://github.com/w3c/aria-practices/edit/main/content/index/index.html"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/aria-practices/issues/new" class="button"><span>New GitHub Issue</span></a>
 </div></div></aside>
       </div>
     </div>
@@ -1281,9 +1286,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1674695576888655316"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1675203077578945814"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1674695576888655316"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1675203077578945814"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -9,17 +9,17 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1674695576888655316";
+      element.src = "/WAI/assets/scripts/main.js?1675203077578945814";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674695576888655316">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675203077578945814">
 
-<title> Disclosure (Show/Hide) | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Disclosure (Show/Hide) Pattern | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
-<meta property="og:title" content="Disclosure (Show/Hide)" />
+<meta property="og:title" content="Disclosure (Show/Hide) Pattern" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
@@ -29,18 +29,18 @@
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Disclosure (Show/Hide)" />
+<meta property="twitter:title" content="Disclosure (Show/Hide) Pattern" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Disclosure (Show/Hide)","url":"https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Disclosure (Show/Hide) Pattern","url":"https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-disclosure-show-hide ">
+  <body id="top" class="page-disclosure-show-hide-pattern ">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
    <div class="minimal-header-container default-grid">
@@ -275,13 +275,13 @@ h2#sidebar-header {
                 <ul>
                 
                 
-                <li><a href="#about-this-pattern">About This Pattern</a></li>
+                <li><a href="#aboutthispattern">About This Pattern</a></li>
                 
-                <li><a href="#examples-4">Examples</a></li>
+                <li><a href="#examples">Examples</a></li>
                 
-                <li><a href="#keyboard-interaction-8">Keyboard Interaction</a></li>
+                <li><a href="#keyboardinteraction">Keyboard Interaction</a></li>
                 
-                <li><a href="#wai-aria-roles-states-and-properties-8">WAI-ARIA Roles, States, and Properties</a></li>
+                <li><a href="#wai-ariaroles,states,andproperties">WAI-ARIA Roles, States, and Properties</a></li>
                 
                 </ul>
             </div>
@@ -297,17 +297,29 @@ h2#sidebar-header {
                 
               </span>
               
-              Disclosure (Show/Hide)
+              Disclosure (Show/Hide) Pattern
             </h1>
         </header>
 
-        <link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/styles.css">
+        <meta charset="UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>Disclosure (Show/Hide) Pattern</title>
+
+<script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+
+<script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+
+<script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
+
+<link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/styles.css">
 
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/apg/example-index/css/github.css">
+<link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/shared/css/github.css">
 
 <script>
-const addBodyClass = "pattern-page";
+const addBodyClass = undefined;
 const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
@@ -315,7 +327,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 <script>
     const parentPage = window.location.pathname.match(
-      /\/(patterns|practices|example-index)\//
+      /\/(patterns|practices)\//
     )?.[1];
     if (parentPage) {
       const parentHref = 'a[href*="' + parentPage + '"]';
@@ -324,27 +336,32 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 
 <div>
-<section class="widget" id="disclosure"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
-      
-      <p>
-        A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).
-        It has two elements: a disclosure <a href="/WAI/ARIA/apg/patterns/button/">button</a> and a section of content whose visibility is controlled by the button.
-        When the controlled content is hidden, the button is often styled as a typical push button with a right-pointing arrow or triangle to hint that activating the button will display additional content.
-        When the content is visible, the arrow or triangle typically points down.
-      </p>
 
-      <section class="notoc examples-section"><img alt="" src="/WAI/content-images/wai-aria-practices/img/disclosure.svg"><div class="header-wrapper"><h2 id="examples-4" tabindex="-1">Examples</h2></div>
-        
+    <div>
+      
+
+      <section id="about">
+        <h2 id="aboutthispattern">About This Pattern</h2>
+        <p>
+          A disclosure is a widget that enables content to be either collapsed (hidden) or expanded (visible).
+          It has two elements: a disclosure <a href="../button/">button</a> and a section of content whose visibility is controlled by the button.
+          When the controlled content is hidden, the button is often styled as a typical push button with a right-pointing arrow or triangle to hint that activating the button will display additional content.
+          When the content is visible, the arrow or triangle typically points down.
+        </p>
+      </section>
+
+      <section id="examples" class="examples-section"><img alt="" src="/WAI/content-images/wai-aria-practices/img/disclosure.svg">
+        <h2 id="examples">Examples</h2>
         <ul>
-          <li><a href="../../example-index/disclosure/disclosure-image-description.html">Disclosure (Show/Hide) of Image Description</a></li>
-          <li><a href="../../example-index/disclosure/disclosure-faq.html">Disclosure (Show/Hide) of Answers to Frequently Asked Questions</a></li>
-          <li><a href="../../example-index/disclosure/disclosure-navigation.html">Disclosure (Show/Hide) Navigation Menu</a></li>
-          <li><a href="../../example-index/disclosure/disclosure-navigation-hybrid.html">Disclosure (Show/Hide) Navigation Menu with Top-Level Links</a></li>
+          <li><a href="examples/disclosure-image-description/">Disclosure (Show/Hide) of Image Description</a></li>
+          <li><a href="examples/disclosure-faq/">Disclosure (Show/Hide) of Answers to Frequently Asked Questions</a></li>
+          <li><a href="examples/disclosure-navigation/">Disclosure (Show/Hide) Navigation Menu</a></li>
+          <li><a href="examples/disclosure-navigation-hybrid/">Disclosure (Show/Hide) Navigation Menu with Top-Level Links</a></li>
         </ul>
       </section>
 
-      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-8" tabindex="-1">Keyboard Interaction</h2></div>
-        
+      <section id="keyboard_interaction">
+        <h2 id="keyboardinteraction">Keyboard Interaction</h2>
         <p>When the disclosure control has focus:</p>
         <ul>
           <li><kbd>Enter</kbd>: activates the disclosure control and toggles the visibility of the disclosure content.</li>
@@ -352,27 +369,23 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         </ul>
       </section>
 
-      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-8" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
-        
+      <section id="roles_states_properties">
+        <h2 id="wai-ariaroles,states,andproperties">WAI-ARIA Roles, States, and Properties</h2>
         <ul>
           <li>The element that shows and hides the content has role <a href="https://w3c.github.io/aria/#button" class="role-reference">button</a>.</li>
           <li>
-            When the content is visible, the element with role <code>button</code> has
-            <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference">aria-expanded</a>
-            set to <code>true</code>.
+            When the content is visible, the element with role <code>button</code> has <a href="https://w3c.github.io/aria/#aria-expanded" class="state-reference">aria-expanded</a> set to <code>true</code>.
             When the content area is hidden, it is set to <code>false</code>.
           </li>
           <li>
-            Optionally, the element with role <code>button</code> has a value specified for
-            <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a>
-            that refers to the element that contains all the content that is shown or hidden.
-            </li>
+            Optionally, the element with role <code>button</code> has a value specified for <a href="https://w3c.github.io/aria/#aria-controls" class="property-reference">aria-controls</a> that refers to the element that contains all the content that is shown or hidden.
+          </li>
         </ul>
-
       </section>
-    </section>
+    </div>
+  
 </div>
-<script src="/WAI/ARIA/apg/example-index/js/skipto.js"></script>
+<script src="/WAI/content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
  
 
@@ -381,10 +394,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </div>
 
     <div class="default-grid with-gap leftcol">
-      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Disclosure%20(Show/Hide)">public-aria-practices@w3.org</a> or via GitHub.</p>
+      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Disclosure%20(Show/Hide)%20Pattern">public-aria-practices@w3.org</a> or via GitHub.</p>
 <div class="button-group">
-    <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Disclosure%20(Show/Hide)&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/aria-practices/edit/main/aria-practices.html"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/aria-practices/issues/new" class="button"><span>New GitHub Issue</span></a>
+    <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Disclosure%20(Show/Hide)%20Pattern&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
+    <a href="https://github.com/w3c/aria-practices/edit/main/content/patterns/disclosure/disclosure-pattern.html"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/aria-practices/issues/new" class="button"><span>New GitHub Issue</span></a>
 </div></div></aside>
       </div>
     </div>
@@ -429,9 +442,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1674695576888655316"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1675203077578945814"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1674695576888655316"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1675203077578945814"></script>
 <script>
   svg4everybody();
 </script><script>

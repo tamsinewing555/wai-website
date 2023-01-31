@@ -9,17 +9,17 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1674695576888655316";
+      element.src = "/WAI/assets/scripts/main.js?1675203077578945814";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1674695576888655316">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675203077578945814">
 
-<title> Spinbutton | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Spinbutton Pattern | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
-<meta property="og:title" content="Spinbutton" />
+<meta property="og:title" content="Spinbutton Pattern" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
@@ -29,18 +29,18 @@
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Spinbutton" />
+<meta property="twitter:title" content="Spinbutton Pattern" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Spinbutton","url":"https://www.w3.org/WAI/ARIA/apg/patterns/spinbutton/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Spinbutton Pattern","url":"https://www.w3.org/WAI/ARIA/apg/patterns/spinbutton/"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-spinbutton ">
+  <body id="top" class="page-spinbutton-pattern ">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
    <div class="minimal-header-container default-grid">
@@ -275,13 +275,13 @@ h2#sidebar-header {
                 <ul>
                 
                 
-                <li><a href="#about-this-pattern">About This Pattern</a></li>
+                <li><a href="#aboutthispattern">About This Pattern</a></li>
                 
-                <li><a href="#example-6">Example</a></li>
+                <li><a href="#example">Example</a></li>
                 
-                <li><a href="#keyboard-interaction-18">Keyboard Interaction</a></li>
+                <li><a href="#keyboardinteraction">Keyboard Interaction</a></li>
                 
-                <li><a href="#wai-aria-roles-states-and-properties-19">WAI-ARIA Roles, States, and Properties</a></li>
+                <li><a href="#wai-ariaroles,states,andproperties">WAI-ARIA Roles, States, and Properties</a></li>
                 
                 </ul>
             </div>
@@ -297,17 +297,29 @@ h2#sidebar-header {
                 
               </span>
               
-              Spinbutton
+              Spinbutton Pattern
             </h1>
         </header>
 
-        <link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/styles.css">
+        <meta charset="UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>Spinbutton Pattern</title>
+
+<script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
+
+<script src="../../../../content-assets/wai-aria-practices/shared/js/app.js"></script>
+
+<script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
+
+<link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/styles.css">
 
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/ARIA/apg/example-index/css/github.css">
+<link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/shared/css/github.css">
 
 <script>
-const addBodyClass = "pattern-page";
+const addBodyClass = undefined;
 const enableSidebar = true;
 if (addBodyClass) document.body.classList.add(addBodyClass);
 if (enableSidebar) document.body.classList.add('has-sidebar');
@@ -315,7 +327,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
 <script>
     const parentPage = window.location.pathname.match(
-      /\/(patterns|practices|example-index)\//
+      /\/(patterns|practices)\//
     )?.[1];
     if (parentPage) {
       const parentHref = 'a[href*="' + parentPage + '"]';
@@ -324,29 +336,34 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </script>
 
 <div>
-<section class="widget" id="spinbutton"><h2 id="about-this-pattern" tabindex="-1">About This Pattern</h2><div class="header-wrapper"></div>
-      
-      <p>
-        A spinbutton is an input widget that restricts its value to a set or range of discrete values.
-        For example, in a widget that enables users to set an alarm, a spinbutton could allow users to select a number from 0 to 59 for the minute of an hour.
-      </p>
-      <p>
-        Spinbuttons often have three components, including a text field that displays the current value, an increase button, and a decrease button.
-        The text field is usually the only focusable component because the increase and decrease functions are keyboard accessible via arrow keys.
-        Typically, the text field also allows users to directly edit the value.
-      </p>
-      <p>
-        If the range is large, a spinbutton may support changing the value in both small and large steps.
-        For instance, in the alarm example, the user may be able to move by 1 minute with <kbd>Up Arrow</kbd> and <kbd>Down Arrow</kbd> and by 10 minutes with <kbd>Page Up</kbd> and <kbd>Page Down</kbd>.
-      </p>
 
-      <section class="notoc examples-section"><img alt="" src="/WAI/content-images/wai-aria-practices/img/spinbutton.svg"><div class="header-wrapper"><h2 id="example-6" tabindex="-1">Example</h2></div>
-        
-        <p><a href="../../example-index/spinbutton/datepicker-spinbuttons.html">Date Picker Spin Button Example:</a> Illustrates a date picker made from three spin buttons for day, month, and year.</p>
+    <div>
+      
+
+      <section id="about">
+        <h2 id="aboutthispattern">About This Pattern</h2>
+        <p>
+          A spinbutton is an input widget that restricts its value to a set or range of discrete values.
+          For example, in a widget that enables users to set an alarm, a spinbutton could allow users to select a number from 0 to 59 for the minute of an hour.
+        </p>
+        <p>
+          Spinbuttons often have three components, including a text field that displays the current value, an increase button, and a decrease button.
+          The text field is usually the only focusable component because the increase and decrease functions are keyboard accessible via arrow keys.
+          Typically, the text field also allows users to directly edit the value.
+        </p>
+        <p>
+          If the range is large, a spinbutton may support changing the value in both small and large steps.
+          For instance, in the alarm example, the user may be able to move by 1 minute with <kbd>Up Arrow</kbd> and <kbd>Down Arrow</kbd> and by 10 minutes with <kbd>Page Up</kbd> and <kbd>Page Down</kbd>.
+        </p>
       </section>
 
-      <section class="notoc"><div class="header-wrapper"><h2 id="keyboard-interaction-18" tabindex="-1">Keyboard Interaction</h2></div>
-        
+      <section id="examples" class="examples-section"><img alt="" src="/WAI/content-images/wai-aria-practices/img/spinbutton.svg">
+        <h2 id="example">Example</h2>
+        <p><a href="examples/datepicker-spinbuttons/">Date Picker Spin Button Example:</a> Illustrates a date picker made from three spin buttons for day, month, and year.</p>
+      </section>
+
+      <section id="keyboard_interaction">
+        <h2 id="keyboardinteraction">Keyboard Interaction</h2>
         <ul>
           <li><kbd>Up Arrow</kbd>: Increases the value.</li>
           <li><kbd>Down Arrow</kbd>: Decreases the value.</li>
@@ -354,32 +371,37 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li><kbd>End</kbd>: If the spinbutton has a maximum value, sets the value to its maximum.</li>
           <li><kbd>Page Up</kbd> (Optional): Increases the value by a larger step than <kbd>Up Arrow</kbd>.</li>
           <li><kbd>Page Down</kbd> (Optional): Decreases the value by a larger step than <kbd>Down Arrow</kbd>.</li>
-          <li>If the spinbutton text field allows directly editing the value, the following keys are supported:
+          <li>
+            If the spinbutton text field allows directly editing the value, the following keys are supported:
             <ul>
               <li>Standard single line text editing keys appropriate for the device platform (see note below).</li>
               <li>
-                Printable Characters: Type characters in the textbox. Note that many implementations allow only certain characters as part of the value and prevent input of any other characters.
-                For example, an hour-and-minute spinner would allow only integer values from 0 to 59, the colon ':', and the letters 'AM' and 'PM'.
-                Any other character input does not change the contents of the text field nor the value of the spinbutton.
+                Printable Characters: Type characters in the textbox.
+                Note that many implementations allow only certain characters as part of the value and prevent input of any other characters.
+                For example, an hour-and-minute spinner would allow only integer values from 0 to 59, the colon ':', and the letters 'AM' and 'PM'. Any other character input does not change the contents of the text field nor the value of the spinbutton.
               </li>
             </ul>
           </li>
         </ul>
-        <div class="note" role="note" id="issue-container-generatedID-25"><div role="heading" class="note-title marker" id="h-note-23" aria-level="5"><span>Note</span></div><ol class="">
-          <li>Focus remains on the text field during operation.</li>
-          <li>Standard single line text editing keys appropriate for the device platform:
-            <ol>
-              <li>include keys for input, cursor movement, selection, and text manipulation.</li>
-              <li>Standard key assignments for editing functions depend on the device operating system.</li>
-              <li>The most robust approach for providing text editing functions is to rely on browsers, which  supply them for HTML inputs with type text and for elements with the <code>contenteditable</code> HTML attribute.</li>
-              <li><strong>IMPORTANT:</strong> Be sure that JavaScript does not interfere with browser-provided text editing functions by capturing key events for the keys used to perform them.</li>
-            </ol>
-          </li>
-        </ol></div>
+        <div class="note">
+          <h3>Note</h3>
+          <ol>
+            <li>Focus remains on the text field during operation.</li>
+            <li>
+              Standard single line text editing keys appropriate for the device platform:
+              <ol>
+                <li>include keys for input, cursor movement, selection, and text manipulation.</li>
+                <li>Standard key assignments for editing functions depend on the device operating system.</li>
+                <li>The most robust approach for providing text editing functions is to rely on browsers, which supply them for HTML inputs with type text and for elements with the <code>contenteditable</code> HTML attribute.</li>
+                <li><strong>IMPORTANT:</strong> Be sure that JavaScript does not interfere with browser-provided text editing functions by capturing key events for the keys used to perform them.</li>
+              </ol>
+            </li>
+          </ol>
+        </div>
       </section>
 
-      <section class="notoc"><div class="header-wrapper"><h2 id="wai-aria-roles-states-and-properties-19" tabindex="-1"><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</h2></div>
-        
+      <section id="roles_states_properties">
+        <h2 id="wai-ariaroles,states,andproperties">WAI-ARIA Roles, States, and Properties</h2>
         <ul>
           <li>
             The focusable element serving as the spinbutton has role <a class="role-reference" href="https://w3c.github.io/aria/#spinbutton">spinbutton</a>.
@@ -389,27 +411,22 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
           <li>The spinbutton element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuemin">aria-valuemin</a> property set to a decimal value representing the minimum allowed value of the spinbutton if it has a known minimum value.</li>
           <li>The spinbutton element has the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuemax">aria-valuemax</a> property set to a decimal value representing the maximum allowed value of the spinbutton if it has a known maximum value.</li>
           <li>
-          If the value of <code>aria-valuenow</code> is not user-friendly, e.g., the day of the week is represented by a number, the
-          <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuetext">aria-valuetext</a>
-          property is set on the spinbutton element to a string that makes the spinbutton value understandable, e.g., "Monday".
+            If the value of <code>aria-valuenow</code> is not user-friendly, e.g., the day of the week is represented by a number, the <a class="property-reference" href="https://w3c.github.io/aria/#aria-valuetext">aria-valuetext</a> property is set on the spinbutton element to a string that makes the spinbutton value understandable, e.g., "Monday".
           </li>
           <li>
-            If the spinbutton has a visible label, it is referenced by
-            <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> on the spinbutton element.
-            Otherwise, the spinbutton element has a label provided by
-            <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
+            If the spinbutton has a visible label, it is referenced by <a href="https://w3c.github.io/aria/#aria-labelledby" class="property-reference">aria-labelledby</a> on the spinbutton element.
+            Otherwise, the spinbutton element has a label provided by <a href="https://w3c.github.io/aria/#aria-label" class="property-reference">aria-label</a>.
           </li>
           <li>
-            The spinbutton element has
-            <a href="https://w3c.github.io/aria/#aria-invalid" class="state-reference">aria-invalid</a> set to <code>true</code>
-            if the value is outside the allowed range.
+            The spinbutton element has <a href="https://w3c.github.io/aria/#aria-invalid" class="state-reference">aria-invalid</a> set to <code>true</code> if the value is outside the allowed range.
             Note that most implementations prevent input of invalid values, but in some scenarios, blocking all invalid input may not be practical.
           </li>
         </ul>
       </section>
-    </section>
+    </div>
+  
 </div>
-<script src="/WAI/ARIA/apg/example-index/js/skipto.js"></script>
+<script src="/WAI/content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
  
 
@@ -418,10 +435,10 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </div>
 
     <div class="default-grid with-gap leftcol">
-      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Spinbutton">public-aria-practices@w3.org</a> or via GitHub.</p>
+      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Spinbutton%20Pattern">public-aria-practices@w3.org</a> or via GitHub.</p>
 <div class="button-group">
-    <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Spinbutton&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/aria-practices/edit/main/aria-practices.html"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/aria-practices/issues/new" class="button"><span>New GitHub Issue</span></a>
+    <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Spinbutton%20Pattern&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
+    <a href="https://github.com/w3c/aria-practices/edit/main/content/patterns/spinbutton/spinbutton-pattern.html"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/aria-practices/issues/new" class="button"><span>New GitHub Issue</span></a>
 </div></div></aside>
       </div>
     </div>
@@ -466,9 +483,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1674695576888655316"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1675203077578945814"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1674695576888655316"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1675203077578945814"></script>
 <script>
   svg4everybody();
 </script><script>
