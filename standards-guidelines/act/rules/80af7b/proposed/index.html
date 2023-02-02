@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1675212118787249054";
+      element.src = "/WAI/assets/scripts/main.js?1675347404520915149";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675212118787249054">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675347404520915149">
 
-<title> Focusable element has no keyboard trap[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1675212118787249054"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Focusable element has no keyboard trap[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1675347404520915149"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Focusable element has no keyboard trap" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -359,6 +359,8 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
+<p>This rule only requires navigation in one direction (either forward or backward), not both, and not a specific one. It is clear that not being able to escape a focus trap in any direction is a failure of <a href="https://www.w3.org/TR/WCAG21/#no-keyboard-trap" title="Success Criterion 2.1.2 No Keyboard Trap">Success Criterion 2.1.2 No keyboard trap</a>. However, it is less clear that being able to escape in only one direction is enough to satisfy it. If <a href="https://www.w3.org/TR/WCAG21/#no-keyboard-trap" title="Success Criterion 2.1.2 No Keyboard Trap">Success Criterion 2.1.2 No keyboard trap</a> requires the possibility to escape the trap in a specific way (e.g. forward <a href="#standard-keyboard-navigation">standard keyboard navigation</a>) or in both directions, this rule may pass while the criterion is not satisfied.</p>
+
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
@@ -512,14 +514,15 @@ h2#sidebar-header {
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/780388a837915960bca7651bd80743fb2cafdbcb.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/f5ea9fd3b681971b2af4953fae9bb2d319a203c6.html">Open in a new tab</a></p>
 
-<p>This <a href="#focusable" title="Definition of focusable">focusable</a> element creates a keyboard trap bringing focus to the <code class="language-plaintext highlighter-rouge">button</code>.</p>
+<p>This <a href="#focusable" title="Definition of focusable">focusable</a> element creates a keyboard trap bringing focus to the <code class="language-plaintext highlighter-rouge">button</code>. Note that if one of the links is removed, the focus may jump to the browser UI before the timeout expires, at which point the <code class="language-plaintext highlighter-rouge">this.focus()</code> trap cannot trigger anymore.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">onblur=</span><span class="s">"setTimeout(() =&gt; this.focus(), 10)"</span><span class="nt">&gt;</span>
 	Button1
 <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
@@ -684,6 +687,30 @@ h2#sidebar-header {
 
 <p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
 
+<h3 id="standard-keyboard-navigation">Standard keyboard navigation</h3>
+
+<p><em>Standard keyboard navigation</em> entails using one or more of the following:</p>
+
+<ul>
+  <li>Tab key</li>
+  <li>Shift+Tab</li>
+  <li>Arrow keys</li>
+  <li>Esc key</li>
+  <li>Enter key</li>
+  <li>Space key</li>
+</ul>
+
+<p>Expected behavior of standard keyboard navigation keys:</p>
+
+<ul>
+  <li>Tab key: Skipping forward between <a href="#focusable" title="Definition of focusable">focusable</a> elements</li>
+  <li>Shift+Tab: Skipping backwards between <a href="#focusable" title="Definition of focusable">focusable</a> elements</li>
+  <li>Arrow keys: Navigate input elements, e.g. up/down drop down, between radio buttons etc.</li>
+  <li>Esc key: Close or cancel, e.g close a modal</li>
+  <li>Enter key: Select or activate the element in focus (same as clicking with mouse)</li>
+  <li>Space key: Select input elements, e.g. drop downs, radio buttons etc.</li>
+</ul>
+
 
 <h2 id="ruleversions">Rule Versions</h2>
 
@@ -742,7 +769,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 80af7b</p>
-<p><strong>Date:</strong> Updated 16 January 2023</p>
+<p><strong>Date:</strong> Updated 31 January 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -761,6 +788,7 @@ h2#sidebar-header {
     </div>
     <div class="social" lang="en" dir="auto" translate="no">
       <ul>
+        <li><a href="https://w3c.social/@wai">Mastodon</a></li>
         <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/WAI/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
         <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
         <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
@@ -768,7 +796,7 @@ h2#sidebar-header {
       </ul>
     </div>
     <div lang="en" dir="auto"  translate="no">
-      <p>Copyright &#xA9; 2023 W3C <sup>&#xAE;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn">Beihang</a>) <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+      <p>Copyright © 2023 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
     </div>
   </div>
   <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
@@ -783,9 +811,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1675212118787249054"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1675347404520915149"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1675212118787249054"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1675347404520915149"></script>
 <script>
   svg4everybody();
 </script><script>
