@@ -2435,7 +2435,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2611,6 +2610,7 @@
 /news/2022-12-12/atag-resources/index.html
 /news/2022-12-15/symposium/index.html
 /news/2023-01-05/wai-adapt-symbols/index.html
+/news/2023-01-25/wcag-22-cr2/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
@@ -2622,6 +2622,7 @@
 /news/29/index.html
 /news/3/index.html
 /news/30/index.html
+/news/31/index.html
 /news/4/index.html
 /news/5/index.html
 /news/6/index.html
@@ -2811,6 +2812,7 @@
 /policies/sweden/index.html
 /policies/switzerland/index.html
 /policies/taiwan/index.html
+/policies/testing.md
 /policies/united-kingdom/index.html
 /policies/united-states/index.html
 /pronunciation/index.html
