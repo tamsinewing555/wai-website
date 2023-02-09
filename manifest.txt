@@ -624,6 +624,7 @@
 /content-assets/wcag-act-rules/act-styles.css
 /content-assets/wcag-act-rules/bar-chart-fill.svg
 /content-assets/wcag-act-rules/earl-context.json
+/content-assets/wcag-act-rules/earl/alfa-assisted.json
 /content-assets/wcag-act-rules/earl/alfa.json
 /content-assets/wcag-act-rules/earl/axe-core.json
 /content-assets/wcag-act-rules/earl/axe-devtools-pro.json
@@ -748,6 +749,7 @@
 /content-assets/wcag-act-rules/testcases/047fe0/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg
 /content-assets/wcag-act-rules/testcases/047fe0/f8146acb3179c3ac33f415443099748f7d859e29.html
 /content-assets/wcag-act-rules/testcases/09o5cg/04344f745bd9bad51292748e7893f146c045aae4.html
+/content-assets/wcag-act-rules/testcases/09o5cg/173cb00f20c52f35970c322dedf7bc11450b70c1.html
 /content-assets/wcag-act-rules/testcases/09o5cg/1882d796de0dcb4b85924f3abfbf565eeef2d963.html
 /content-assets/wcag-act-rules/testcases/09o5cg/2347a45232c34aa309087ed099f4781cd70b5b1e.html
 /content-assets/wcag-act-rules/testcases/09o5cg/2845a8409b1c07caa856d1bfbf42ed244b0de9c2.html
@@ -1152,6 +1154,7 @@
 /content-assets/wcag-act-rules/testcases/73f2c2/d64a0231dbcc95b21aafe3b554b9fdcbc9855301.html
 /content-assets/wcag-act-rules/testcases/73f2c2/e9f07d1795d34f948d3dd42051963623109a0bae.html
 /content-assets/wcag-act-rules/testcases/73f2c2/eabc191efa65e6613739042a0ae21937cda02428.html
+/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html
 /content-assets/wcag-act-rules/testcases/73f2c2/ff150593870cd4c1228d5eb69e2e0bc205e09727.html
 /content-assets/wcag-act-rules/testcases/7677a9/0c6bdb9bd6aa5ccc33b456cd8ca3ad6407ae7f2e.html
 /content-assets/wcag-act-rules/testcases/7677a9/2694ab357e8e65b63d04049518396248d45b8091.html
@@ -1365,6 +1368,7 @@
 /content-assets/wcag-act-rules/testcases/afb423/dedfb667190bd564527247550565cdea8ccefd3f.html
 /content-assets/wcag-act-rules/testcases/afb423/e76fd82b8a71085be3a7a2ad96c1ce12522116e2.html
 /content-assets/wcag-act-rules/testcases/afw4f7/04344f745bd9bad51292748e7893f146c045aae4.html
+/content-assets/wcag-act-rules/testcases/afw4f7/173cb00f20c52f35970c322dedf7bc11450b70c1.html
 /content-assets/wcag-act-rules/testcases/afw4f7/19123c99ec390011b87736827720d5e1e794bad2.html
 /content-assets/wcag-act-rules/testcases/afw4f7/2347a45232c34aa309087ed099f4781cd70b5b1e.html
 /content-assets/wcag-act-rules/testcases/afw4f7/2845a8409b1c07caa856d1bfbf42ed244b0de9c2.html
@@ -1392,6 +1396,7 @@
 /content-assets/wcag-act-rules/testcases/afw4f7/bf47c65f2854b6ac100a6f700d354b243b069231.html
 /content-assets/wcag-act-rules/testcases/afw4f7/c7c09c1019dcf1d1c67183001b4d459dee7a87ff.html
 /content-assets/wcag-act-rules/testcases/afw4f7/dbd2374952b96375369afe2a012bfbadd182bf6b.html
+/content-assets/wcag-act-rules/testcases/afw4f7/dc170fd015758b62d8e0141e086893a116ee724e.html
 /content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html
 /content-assets/wcag-act-rules/testcases/afw4f7/e8f3acb1dc814b8b815c69b7150cdea67d5bd98e.html
 /content-assets/wcag-act-rules/testcases/afw4f7/eaf0a926896f045a498073da42ea6263a4d6d36c.html
@@ -2506,6 +2511,7 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
+/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2839,6 +2845,7 @@
 /planning/statements/generator/index.html
 /planning/statements/index.html
 /planning/statements/minimal-example/index.html
+/policies/argentina/index.html
 /policies/australia/index.html
 /policies/canada/index.html
 /policies/china/index.html
@@ -2872,7 +2879,6 @@
 /policies/sweden/index.html
 /policies/switzerland/index.html
 /policies/taiwan/index.html
-/policies/testing.md
 /policies/united-kingdom/index.html
 /policies/united-states/index.html
 /pronunciation/index.html
@@ -2892,6 +2898,7 @@
 /search/index.html
 /sitemap.xml
 /sitemap/index.html
+/standards-guidelines/act/implementations/alfa-assisted/index.html
 /standards-guidelines/act/implementations/alfa/index.html
 /standards-guidelines/act/implementations/axe-core/index.html
 /standards-guidelines/act/implementations/axe-devtools-pro/index.html

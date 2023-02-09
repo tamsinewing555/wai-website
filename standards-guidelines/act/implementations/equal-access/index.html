@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1675771901694845811";
+      element.src = "/WAI/assets/scripts/main.js?1675961456389039992";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675771901694845811">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675961456389039992">
 
-<title> Equal Access Accessibility Checker ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1675771901694845811"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Equal Access Accessibility Checker ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1675961456389039992"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Equal Access Accessibility Checker ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -306,7 +306,7 @@ h2#sidebar-header {
       version 3.1.42-rc.0
      is an Automated tool
       by <a href="https://www.ibm.com/">IBM Accessibility</a>.
-      The test results were last updated 27 January 2023.
+      The test results were last updated 9 February 2023.
 
     
 
@@ -331,7 +331,7 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>Proposed rules</th>
-      <td>6</td>
+      <td>7</td>
       <td>6</td>
     </tr>
   </tbody></table>
@@ -674,6 +674,16 @@ h2#sidebar-header {
       
       
       
+        <tr>
+          <td><a href="#breakdown-b33eff">
+            Orientation of the page is not restricted using CSS transform property
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td>
+            Consistent </td>
+        </tr>
+      
       
       
       
@@ -727,8 +737,6 @@ h2#sidebar-header {
           <td> Partial
           </td>
         </tr>
-      
-      
       
       
       
@@ -834,10 +842,6 @@ h2#sidebar-header {
       
       
       
-      
-      
-      
-      
         <tr>
           <td><a href="#breakdown-2ee8b8">
             Visible label is part of accessible name
@@ -887,7 +891,11 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/73f2c2">autocomplete attribute has valid value</a>
   WCAG 2 rule. 
-    It covers all 20 examples.
+    It covers 20 of the 21 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -1058,9 +1066,20 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
         </th>
         <td class="">inapplicable</td>
       </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html">Passed Example 9</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
     </tbody>
   </table>
 </div>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-97a4e1">Button has non-empty accessible name</h3>
 <p>
@@ -4774,6 +4793,129 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
   </table>
 </div>
 
+<h3 id="breakdown-b33eff">Orientation of the page is not restricted using CSS transform property</h3>
+<p>
+  This rule is implemented by Equal Access Accessibility Checker using the
+  <code>element_orientation_unlocked:pass,fail_locked</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transform property</a>
+   proposed rule.
+    It covers all 10 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+        
+          <ul>
+            <li>
+              1.3.4
+              Orientation
+            </li>
+          </ul>
+        
+      </td>
+
+      <td>
+        
+          <ul>
+            <li>
+              1.3.4
+              Orientation
+            </li>
+          </ul>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>element_orientation_unlocked:pass,fail_locked</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html">Passed Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html">Passed Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html">Failed Example 1</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html">Failed Example 2</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html">Failed Example 3</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html">Inapplicable Example 3</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/65f069d9d7d5a75562917c80ab7334b2914f42f4.html">Inapplicable Example 4</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html">Inapplicable Example 5</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <h3 id="breakdown-3ea0c8">Id attribute value is unique</h3>
 <p>
   This rule is implemented by Equal Access Accessibility Checker using the
@@ -5429,11 +5571,15 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/afw4f7/proposed/">Text has minimum contrast</a>
    proposed rule.
-    It covers 21 of the 32 examples.
+    It covers 19 of the 32 examples.
     On 4 examples
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   
+  
+    For 2 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -5498,9 +5644,9 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b5914a5edae45c5c93e1ec30b9a22afe70f504ee.html">Passed Example 3</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc170fd015758b62d8e0141e086893a116ee724e.html">Passed Example 3</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-untested">untested</td>
       </tr>
       <tr>
         <th>
@@ -5540,9 +5686,9 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html">Passed Example 10</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/173cb00f20c52f35970c322dedf7bc11450b70c1.html">Passed Example 10</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-untested">untested</td>
       </tr>
       <tr>
         <th>
@@ -5891,9 +6037,9 @@ Results indicate the rule ids and reason codes related to the ACT rule are gener
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1675771901694845811"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1675961456389039992"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1675771901694845811"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1675961456389039992"></script>
 <script>
   svg4everybody();
 </script><script>

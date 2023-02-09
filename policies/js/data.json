@@ -1,5 +1,19 @@
 [
 {
+    "title": "Argentina",
+    "countryhref": "/WAI/policies/argentina/",
+    "policyname": "Ley N° 26.653 de “Accesibilidad Web”",
+    "policyhref": "/WAI/policies/argentina/#ley-n-26-653-de-accesibilidad-web",
+    "url": "",
+    "enactdate": "26/11/2010",
+    "type": "law, Non-discrimination law,",
+    "scope": [
+      
+    ],
+    "webonly": "yes",
+    "wcagver": "WCAG 2.0,"
+  },
+{
     "title": "Australia",
     "countryhref": "/WAI/policies/australia/",
     "policyname": "Disability Discrimination Act 1992 (DDA)",

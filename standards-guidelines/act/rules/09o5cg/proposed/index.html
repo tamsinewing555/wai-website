@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1675771901694845811";
+      element.src = "/WAI/assets/scripts/main.js?1675961456389039992";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675771901694845811">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675961456389039992">
 
-<title> Text has enhanced contrast[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1675771901694845811"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Text has enhanced contrast[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1675961456389039992"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Text has enhanced contrast" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -341,9 +341,8 @@ h2#sidebar-header {
 <p>This rule applies to any <a href="#visible" title="Definition of Visible">visible</a> character in a <a href="https://dom.spec.whatwg.org/#text" title="DOM, text node, 2020/07/23">text node</a> that is a <a href="https://dom.spec.whatwg.org/#concept-tree-child" title="DOM, child, 2020/07/23">child</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/07/23">flat tree</a> of an <a href="#namespaced-element">HTML element</a>, except if the <a href="https://dom.spec.whatwg.org/#text" title="DOM, text node, 2020/07/23">text node</a> has an <a href="https://dom.spec.whatwg.org/#concept-shadow-including-ancestor" title="DOM, ancestor, 2020/07/23">ancestor</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/07/23">flat tree</a> for which at least one of the following is true:</p>
 
 <ul>
-  <li><strong>disabled widget</strong>: the ancestor is a <a href="#inheriting-semantic" title="Definition of Inheriting Semantic Role">inheriting semantic</a> <code class="language-plaintext highlighter-rouge">widget</code> that is <a href="#disabled-element" title="Definition of Disabled">disabled</a>; or</li>
-  <li><strong>disabled label</strong>: the ancestor is used in the <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> of a <a href="#inheriting-semantic" title="Definition of Inheriting Semantic Role">inheriting semantic</a> <code class="language-plaintext highlighter-rouge">widget</code> that is <a href="#disabled-element" title="Definition of Disabled">disabled</a>; or</li>
-  <li><strong>disabled group</strong>: the ancestor has a <a href="#semantic-role" title="Definition of Semantic role">semantic role</a> of <code class="language-plaintext highlighter-rouge">group</code> and is <a href="#disabled-element" title="Definition of Disabled">disabled</a>.</li>
+  <li><strong>disabled ancestor</strong>: the ancestor is an <a href="#inheriting-semantic" title="Definition of Inheriting Semantic Role">inheriting semantic</a> <code class="language-plaintext highlighter-rouge">group</code> or <code class="language-plaintext highlighter-rouge">widget</code> that is <a href="#disabled-element" title="Definition of Disabled">disabled</a>; or</li>
+  <li><strong>disabled label</strong>: the ancestor is used in the <a href="#accessible-name" title="Definition of Accessible Name">accessible name</a> of an <a href="#inheriting-semantic" title="Definition of Inheriting Semantic Role">inheriting semantic</a> <code class="language-plaintext highlighter-rouge">widget</code> that is <a href="#disabled-element" title="Definition of Disabled">disabled</a>.</li>
 </ul>
 
 <h2 id="expectation">Expectation</h2>
@@ -557,22 +556,18 @@ h2#sidebar-header {
 
 <h4 id="passed-example-9">Passed Example 9</h4>
 
-<p><a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/173cb00f20c52f35970c322dedf7bc11450b70c1.html">Open in a new tab</a></p>
 
-<p>This text is part of a widget because it is a child of a <code class="language-plaintext highlighter-rouge">button</code> element. The text has the default
-browser button text color on the default browser button background color. By default, this is black text on a
-light gray background with a contrast ratio of 18.26:1</p>
+<p>This text has the <a href="https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-3">default user agent link text and background color</a>, of <code class="language-plaintext highlighter-rouge">#0000EE</code> and white. This results in a contrast ratio of 9.39:1.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button&gt;</span>My button!<span class="nt">&lt;/button&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://w3c.org/"</span><span class="nt">&gt;</span>W3C<span class="nt">&lt;/a&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-10">Passed Example 10</h4>
 
 <p><a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html">Open in a new tab</a></p>
 
-<p>This text is part of a widget because it is a child of an element with the <code class="language-plaintext highlighter-rouge">role</code> attribute set to <code class="language-plaintext highlighter-rouge">button</code>.
-The text has the default browser text color on the default browser background color. By default, this is
-black text on a white background with a contrast ratio of 21:1</p>
+<p>This text is using the default user agent text color and background color. By default, this is black text on a white background with a contrast ratio of 21:1</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>My button!<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
@@ -707,7 +702,7 @@ black text on a white background with a contrast ratio of 21:1</p>
 
 <p><a class="example-link" title="Failed Example 11" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/a34d15d4bb754339339996802d1bc32d464643da.html">Open in a new tab</a></p>
 
-<p>The first <code class="language-plaintext highlighter-rouge">p</code> element has a contrast ratio of 12.6:1. The second <code class="language-plaintext highlighter-rouge">p</code> element, which contains an example of the Helvetica font, has a contrast ratio of 6.4:1. Because this provides information, and not only for aesthetic purposes, this is not considered <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG 2.1, Purely decorative">purely decorative</a>.</p>
+<p>The first <code class="language-plaintext highlighter-rouge">p</code> element has a contrast ratio of 12.6:1. The second <code class="language-plaintext highlighter-rouge">p</code> element, which contains an example of the Helvetica font, has a contrast ratio of 6.4:1. Because this provides information, and is not only for aesthetic purposes, this is not considered <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG 2.1, Purely decorative">purely decorative</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"color: #333; background: #FFF;"</span><span class="nt">&gt;</span>
 	Helvetica is a widely used sans-serif typeface developed in 1957 by Max Miedinger and Eduard Hoffmann.
@@ -721,7 +716,7 @@ black text on a white background with a contrast ratio of 21:1</p>
 
 <p><a class="example-link" title="Failed Example 12" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html">Open in a new tab</a></p>
 
-<p>This text is part of a widget because it is a child of a <code class="language-plaintext highlighter-rouge">button</code> element. The button text has a contrast ratio of 6.4:1.</p>
+<p>This text in a <code class="language-plaintext highlighter-rouge">button</code> element has a contrast ratio of 6.4:1.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">style=</span><span class="s">"color: #555; background: #EEE;"</span><span class="nt">&gt;</span>My button!<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
@@ -730,9 +725,7 @@ black text on a white background with a contrast ratio of 21:1</p>
 
 <p><a class="example-link" title="Failed Example 13" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html">Open in a new tab</a></p>
 
-<p>This text is part of a widget because it is a child of an element with the <code class="language-plaintext highlighter-rouge">role</code> attribute set to <code class="language-plaintext highlighter-rouge">button</code>.
-The button text has a contrast
-ratio of 6.4:1.</p>
+<p>This text in a <a href="#semantic-role" title="Definition of Semantic role">semantic button</a> has a contrast ratio of 6.4:1.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">style=</span><span class="s">"color: #555; background: #EEE;"</span><span class="nt">&gt;</span>My button!<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
@@ -955,11 +948,7 @@ ratio of 6.4:1.</p>
 
 <h3 id="highest-possible-contrast">Highest Possible Contrast</h3>
 
-<p>The highest value of the <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio">contrast ratios</a> between two sets of colors (A and B).
-To calculate the highest value, find the colors in each set with the largest and smallest 
-<a href="https://www.w3.org/TR/WCAG21/#dfn-relative-luminance">relative luminance</a> (<code class="language-plaintext highlighter-rouge">A-lum-max</code>, <code class="language-plaintext highlighter-rouge">A-lum-min</code>, <code class="language-plaintext highlighter-rouge">B-lum-max</code>, <code class="language-plaintext highlighter-rouge">B-lum-min</code>). The
-highest possible contrast is then the larger of the <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio">contrast ratios</a>
-of <code class="language-plaintext highlighter-rouge">A-lum-max</code> with <code class="language-plaintext highlighter-rouge">B-lum-min</code> versus <code class="language-plaintext highlighter-rouge">A-lum-min</code> with <code class="language-plaintext highlighter-rouge">B-lum-max</code>.</p>
+<p>The highest value of the <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio" title="WCAG definition of Contrast Ratio">contrast ratios</a> between two sets of colors (A and B). That is, the highest <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio" title="WCAG definition of Contrast Ratio">contrast ratio</a> between either the darkest color in A and the brightest color in B, or the brightest color in A and the darkest color in B.</p>
 
 <h3 id="implicit-role">Implicit Semantic Role</h3>
 
@@ -1078,6 +1067,7 @@ of <code class="language-plaintext highlighter-rouge">A-lum-max</code> with <cod
 <p>This is the first version of this ACT rule.</p>
 
 
+
 <h2 id="implementations">Implementations</h2>
 
   <p>This section is not part of the official rule. It is populated dynamically and 
@@ -1096,15 +1086,15 @@ of <code class="language-plaintext highlighter-rouge">A-lum-max</code> with <cod
           <tr>
             <td>Axe DevTools Pro 4.37.1</td>
             <td>Semi-automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-09o5cg"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>Axe-core 4.6.0</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-09o5cg"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
@@ -1124,6 +1114,8 @@ of <code class="language-plaintext highlighter-rouge">A-lum-max</code> with <cod
       </tbody>
     </table>
   </div>
+
+
 
  
 
@@ -1151,7 +1143,7 @@ of <code class="language-plaintext highlighter-rouge">A-lum-max</code> with <cod
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 09o5cg</p>
-<p><strong>Date:</strong> Updated 26 January 2023</p>
+<p><strong>Date:</strong> Updated 9 February 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1193,9 +1185,9 @@ of <code class="language-plaintext highlighter-rouge">A-lum-max</code> with <cod
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1675771901694845811"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1675961456389039992"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1675771901694845811"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1675961456389039992"></script>
 <script>
   svg4everybody();
 </script><script>

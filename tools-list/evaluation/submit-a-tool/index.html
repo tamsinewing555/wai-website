@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1675771901694845811";
+      element.src = "/WAI/assets/scripts/main.js?1675961456389039992";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675771901694845811">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1675961456389039992">
 
 <title>[Draft] Submit a tool - Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -253,7 +253,7 @@ main>header {
 }
 
 .tools-filters {
-  padding-right: 2em;
+  padding-right: 2.5em;
 }
 
 @media (min-width: 60em) {
@@ -342,6 +342,7 @@ main>header {
   padding-top: 2em;
   margin-top: 2em;
   border-top: 1px solid #ccc;
+  padding-left: 0.5em;
 }
 
 #tools-list h2 {
@@ -389,7 +390,16 @@ details dt::after {
 .specialField {
   color: var(--wai-green);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 18px !important;
+}
+
+.logos a:hover{
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.logos img:hover{
+  text-decoration: none !important;
 }
 
 /* 
@@ -1388,7 +1398,7 @@ main > header { grid-column: 4 / span 4; }
 </style>
 
 <div class="submission-header">
-  <a href="../list-of-evaluation-tools/" class="backtolist"><svg focusable="false" aria-hidden="true" class="icon-arrow-left "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-left"></use></svg>Back to List of Evaluation Tools</a>
+  <a href="../" class="backtolist"><svg focusable="false" aria-hidden="true" class="icon-arrow-left "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-left"></use></svg>Back to List of Evaluation Tools</a>
   <p>
     This form allows you to provide information on your organization’s Tool for Web Accessibility Evaluation to be listed on the WAI website. Information submitted will also be publicly available in GitHub.
   </p>
@@ -1453,7 +1463,7 @@ main > header { grid-column: 4 / span 4; }
       <label for="a11yloc" class="label-input">Accessibility statement (URL)</label>
       <input type="url" id="a11yloc" name="a11yloc" />
       <p class="subfieldtext"> 
-        While an accessibility statement is not required to submit a tool, it provides valuable information on your commitment to accessibility to your (potential) users. Get started by visiting <a href="https://www.w3.org/WAI/planning/statements/" target="_blank">Developing an Accessibility Statement</a>.
+        While an accessibility statement is not required to submit a tool, it provides valuable information on your commitment to accessibility to your users. Get started by visiting <a href="https://www.w3.org/WAI/planning/statements/" target="_blank">Developing an Accessibility Statement</a>.
       </p>
   </div>
   <div class="field">
@@ -1511,12 +1521,48 @@ main > header { grid-column: 4 / span 4; }
       </div>
   </fieldset>
   
-  <fieldset class="field" id="product">.
+  <fieldset class="field" id="product">
       <div class="fieldheader">
         <legend for="tool-product" class="label-input">Product to evaluate<span class="short-sub">(Required)</span></legend>
         
       </div>
       <div class="field-group">
+        
+          <div class="radio-field">
+            <input type="checkbox" name="product[]" id="tool-product-website" value="Website" group="product" required="" />
+            <label for="tool-product-website">Website</label>
+            
+          </div>
+        
+          <div class="radio-field">
+            <input type="checkbox" name="product[]" id="tool-product-productDesktopApplication" value="Desktop application" group="product" required="" />
+            <label for="tool-product-productDesktopApplication">Desktop application</label>
+            
+          </div>
+        
+          <div class="radio-field">
+            <input type="checkbox" name="product[]" id="tool-product-productMobileApplication" value="Mobile application" group="product" required="" />
+            <label for="tool-product-productMobileApplication">Mobile application</label>
+            
+          </div>
+        
+          <div class="radio-field">
+            <input type="checkbox" name="product[]" id="tool-product-document" value="Document" group="product" required="" />
+            <label for="tool-product-document">Document</label>
+            
+          </div>
+        
+          <div class="radio-field">
+            <input type="checkbox" name="product[]" id="tool-product-sourceCode" value="Source code" group="product" required="" />
+            <label for="tool-product-sourceCode">Source code</label>
+            
+          </div>
+        
+          <div class="radio-field">
+            <input type="checkbox" name="product[]" id="tool-product-otherProduct" value="Other" group="product" required="" />
+            <label for="tool-product-otherProduct">Other</label>
+            
+          </div>
         
       </div>
   </fieldset>
@@ -3093,9 +3139,9 @@ if (submitForm) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1675771901694845811"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1675961456389039992"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1675771901694845811"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1675961456389039992"></script>
 <script>
   svg4everybody();
 </script><script>
