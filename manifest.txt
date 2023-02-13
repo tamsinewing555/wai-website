@@ -2687,6 +2687,7 @@
 /news/2022-12-15/symposium/index.html
 /news/2023-01-05/wai-adapt-symbols/index.html
 /news/2023-01-25/wcag-22-cr2/index.html
+/news/2023-02-13/WCAG-21-Catalan/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
