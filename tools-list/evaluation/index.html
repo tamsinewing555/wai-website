@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1676339775994754455";
+      element.src = "/WAI/assets/scripts/main.js?1676579655045259061";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1676339775994754455">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1676579655045259061">
 
 <title>[Draft] Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -505,6 +505,17 @@ details>div{
   }
 }
 */
+
+.searchbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchbox svg {
+  position: absolute;
+  right: 15px;
+}
 
 #helpimprove {
   grid-column: 4 / 10;
@@ -3072,9 +3083,9 @@ input[type=checkbox]
         <h2>Tools list</h2>
         <div class="tools-list-header">
             <h2 class="visuallyhidden">List of tools</h2>
-            <div class="field">
+            <div class="field searchbox">
                 <label for="search" aria-label="Search tools" class="visuallyhidden">Search tools</label>
-                <input type="search" id="search" placeholder="Search tools" />
+                <svg focusable="false" aria-hidden="true" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg><input type="search" id="search" placeholder="Search tools" />
             </div>
             <div class="sort-by">
                 <label for="select">Sort by</label>
@@ -23374,7 +23385,10 @@ if (filterForm && sortForm && search) {
     }
 
     if(searchTerm.length > 0){
+      document.getElementsByClassName('searchbox')[0].getElementsByTagName("svg")[0].style.display = "none";
       totalToolsCounter.innerHTML += " for: <span aria-live='polite'>\"" + searchTerm + "\"</span>";
+    }else{
+      document.getElementsByClassName('searchbox')[0].getElementsByTagName("svg")[0].style.display = "";
     }
 
     console.log(newResults);
@@ -23870,9 +23884,9 @@ function closeHelperOverlay(){
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1676339775994754455"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1676579655045259061"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1676339775994754455"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1676579655045259061"></script>
 <script>
   svg4everybody();
 </script><script>
