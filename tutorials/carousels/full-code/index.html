@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1676579655045259061";
+      element.src = "/WAI/assets/scripts/main.js?1676606323425140549";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1676579655045259061">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1676606323425140549">
 
 <title> Complete Code | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -196,7 +196,7 @@
     <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">dispatchEvent</span><span class="p">(</span> <span class="nx">event</span> <span class="p">);</span>
   <span class="p">}</span>
   <span class="kd">function</span> <span class="nx">removePolyfill</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
-<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">e</span><span class="p">.</span><span class="nx">c1Generated</span><span class="p">){</span> <span class="c1">// focus after focusin, so chrome will the first time trigger tow times focusin</span>
+<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">e</span><span class="p">.</span><span class="nx">c1Generated</span><span class="p">){</span> <span class="c1">// focus after focusin, so chrome will the first time trigger two times focusin</span>
   <span class="nx">d</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">focus</span><span class="dl">'</span> <span class="p">,</span><span class="nx">addPolyfill</span> <span class="p">,</span><span class="kc">true</span><span class="p">);</span>
   <span class="nx">d</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">blur</span><span class="dl">'</span> <span class="p">,</span><span class="nx">addPolyfill</span> <span class="p">,</span><span class="kc">true</span><span class="p">);</span>
   <span class="nx">d</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">focusin</span><span class="dl">'</span> <span class="p">,</span><span class="nx">removePolyfill</span> <span class="p">,</span><span class="kc">true</span><span class="p">);</span>
@@ -269,7 +269,7 @@
     <span class="nx">carousel</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">active carousel</span><span class="dl">'</span><span class="p">;</span>
 
 
-    <span class="c1">// Create unordered list for controls, and attach click events fo previous and next slide</span>
+    <span class="c1">// Create unordered list for controls, and attach click events to previous and next slide</span>
     <span class="kd">var</span> <span class="nx">ctrls</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">ul</span><span class="dl">'</span><span class="p">);</span>
 
     <span class="nx">ctrls</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">controls</span><span class="dl">'</span><span class="p">;</span>
@@ -291,7 +291,7 @@
 
     <span class="nx">carousel</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">ctrls</span><span class="p">);</span>
 
-    <span class="c1">// If the carousel is animated or a slide navigation is requested in the settings, anoter unordered list that contains those elements is added. (Note that you cannot supress the navigation when it is animated.)</span>
+    <span class="c1">// If the carousel is animated or a slide navigation is requested in the settings, another unordered list that contains those elements is added. (Note that you cannot supress the navigation when it is animated.)</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">slidenav</span> <span class="o">||</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">animate</span><span class="p">)</span> <span class="p">{</span>
       <span class="nx">slidenav</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">ul</span><span class="dl">'</span><span class="p">);</span>
 
@@ -623,13 +623,13 @@
           <ul class="sentence">
             
             
-            <li>The Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>)</li>
+            <li>see <a href="/WAI/tutorials/acknowledgements/">Acknowledgements</a></li>
             
           </ul>
           
       </div>
       
-        <p>Developed with support from the <a href="https://www.w3.org/WAI/ACT/">WAI-ACT project</a>, co-funded by the <strong>European Commission <abbr title="Information Society Technologies">IST</abbr> Programme</strong>.</p>
+        <p>Developed by the Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Developed with support from the <a href="https://www.w3.org/WAI/ACT/">WAI-ACT project</a>, co-funded by the <strong>European Commission <abbr title="Information Society Technologies">IST</abbr> Programme</strong>.</p>
       
       
       </div>
@@ -667,9 +667,9 @@
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1676579655045259061"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1676606323425140549"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1676579655045259061"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1676606323425140549"></script>
 <script>
   svg4everybody();
 </script><script>
