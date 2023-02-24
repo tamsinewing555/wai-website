@@ -33,12 +33,12 @@
 /ARIA/apg/patterns/disclosure/examples/disclosure-navigation-hybrid/index.html
 /ARIA/apg/patterns/disclosure/examples/disclosure-navigation/index.html
 /ARIA/apg/patterns/disclosure/index.html
+/ARIA/apg/patterns/feed/examples/feed-display.html
 /ARIA/apg/patterns/feed/examples/feed/index.html
-/ARIA/apg/patterns/feed/examples/feedDisplay.html
 /ARIA/apg/patterns/feed/index.html
-/ARIA/apg/patterns/grid/examples/LayoutGrids/index.html
-/ARIA/apg/patterns/grid/examples/advancedDataGrid/index.html
-/ARIA/apg/patterns/grid/examples/dataGrids/index.html
+/ARIA/apg/patterns/grid/examples/advanced-data-grid/index.html
+/ARIA/apg/patterns/grid/examples/data-grids/index.html
+/ARIA/apg/patterns/grid/examples/layout-grids/index.html
 /ARIA/apg/patterns/grid/index.html
 /ARIA/apg/patterns/index.html
 /ARIA/apg/patterns/landmarks/examples/HTML5.html
