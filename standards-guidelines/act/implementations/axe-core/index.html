@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1677245308345058151";
+      element.src = "/WAI/assets/scripts/main.js?1677591489169460112";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677245308345058151">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677591489169460112">
 
-<title> Axe-core ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677245308345058151"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Axe-core ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677591489169460112"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Axe-core ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -306,7 +306,7 @@ h2#sidebar-header {
       version 4.6.0
      is an Automated tool
       by <a href="https://deque.com/">Deque Systems</a>.
-      The test results were last updated 9 February 2023.
+      The test results were last updated 27 February 2023.
 
     
 
@@ -331,8 +331,8 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>Proposed rules</th>
-      <td>14</td>
-      <td>12</td>
+      <td>15</td>
+      <td>11</td>
     </tr>
   </tbody></table>
 </div>
@@ -716,12 +716,12 @@ h2#sidebar-header {
       
         <tr>
           <td><a href="#breakdown-b33eff">
-            Orientation of the page is not restricted using CSS transform property
+            Orientation of the page is not restricted using CSS transforms
           </a></td>
           <td> Proposed Rule
           </td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
         </tr>
       
       
@@ -952,8 +952,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -964,8 +964,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -1036,7 +1036,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/73f2c2">autocomplete attribute has valid value</a>
   WCAG 2 rule. 
-    It covers all 21 examples.
+    It covers all 23 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -1213,6 +1213,20 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
             <abbr title="Proposed example">*</abbr>
         </th>
         <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html">Inapplicable Example 8</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html">Inapplicable Example 9</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="">inapplicable</td>
       </tr>
     </tbody>
   </table>
@@ -1950,7 +1964,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/b5c3f8">HTML page has lang attribute</a>
   WCAG 2 rule. 
-    It covers all 7 examples.
+    It covers all 14 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -2043,9 +2057,62 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
         </th>
         <td class="">inapplicable</td>
       </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1.html">Passed Example 1</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html">Failed Example 1</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html">Failed Example 2</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html">Failed Example 3</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html">Failed Example 4</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/b584aa8aeb33814a0ecb63fd9ed4d97f2211f837.svg">Inapplicable Example 1</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/58847c387d3b2cfa7e57c6ed613a8f31569cfd30.xml">Inapplicable Example 2</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
     </tbody>
   </table>
 </div>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-bf051a">HTML page lang attribute has valid language tag</h3>
 <p>
@@ -5611,15 +5678,15 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   </table>
 </div>
 
-<h3 id="breakdown-b33eff">Orientation of the page is not restricted using CSS transform property</h3>
+<h3 id="breakdown-b33eff">Orientation of the page is not restricted using CSS transforms</h3>
 <p>
   This rule is implemented by Axe-core using the
   <code>css-orientation-lock</code> procedure.
-  The implementation is 
-    fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transform property</a>
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transforms</a>
    proposed rule.
-    It covers 9 of the 10 examples.
+    It covers 10 of the 12 examples.
     On 1 example
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
@@ -5688,6 +5755,12 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
       </tr>
       <tr>
         <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html">Passed Example 3</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html">Failed Example 1</a>
         </th>
         <td class="">failed</td>
@@ -5703,6 +5776,13 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html">Failed Example 3</a>
         </th>
         <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html">Failed Example 4</a>
+        </th>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
@@ -7861,19 +7941,15 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
 <p>
   This rule is implemented by Axe-core using the
   <code>color-contrast</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/afw4f7/proposed/">Text has minimum contrast</a>
    proposed rule.
-    It covers 24 of the 32 examples.
-    On 6 examples
+    It covers 25 of the 32 examples.
+    On 7 examples
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   
-  
-    For 2 examples
-    no results were reported. This can happen when examples are newer then the
-    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -7940,7 +8016,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc170fd015758b62d8e0141e086893a116ee724e.html">Passed Example 3</a>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
@@ -7982,7 +8058,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/173cb00f20c52f35970c322dedf7bc11450b70c1.html">Passed Example 10</a>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -8125,19 +8201,15 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
   This rule is implemented by Axe-core using the
   <code>color-contrast-enhanced</code>, and <code>color-contrast</code> procedures.
     Failed examples should be failed by <em>at least one</em> of these procedures.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/09o5cg/proposed/">Text has enhanced contrast</a>
    proposed rule.
-    It covers 26 of the 34 examples.
+    It covers 27 of the 34 examples.
     On 7 examples
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -8254,8 +8326,8 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/173cb00f20c52f35970c322dedf7bc11450b70c1.html">Passed Example 9</a>
         </th>
-        <td class="act-untested">untested</td>
-        <td class="act-untested">untested</td>
+        <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -8657,9 +8729,9 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1677591489169460112"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1677591489169460112"></script>
 <script>
   svg4everybody();
 </script><script>

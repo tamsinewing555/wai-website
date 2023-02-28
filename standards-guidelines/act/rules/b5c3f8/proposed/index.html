@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1677245308345058151";
+      element.src = "/WAI/assets/scripts/main.js?1677591489169460112";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677245308345058151">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677591489169460112">
 
-<title> HTML page has lang attribute[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677245308345058151"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> HTML page has lang attribute[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677591489169460112"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="HTML page has lang attribute" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -420,69 +420,95 @@ h2#sidebar-header {
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/f8214944f374b25c3ce42bd92a4304d38a2309dc.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute with a non-empty (<code class="language-plaintext highlighter-rouge">""</code>) value.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;&lt;/html&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		The quick brown fox jumps over the lazy dog.
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/941efb7368e46b27b937d34b07fc4d41da01b002.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">html</code> element does not have a <code class="language-plaintext highlighter-rouge">lang</code> attribute.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;&lt;/html&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		The quick brown fox jumps over the lazy dog.
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/36f0f321c8aa6e8c0a5ee08b15e8f1442ad762fd.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute with an empty (<code class="language-plaintext highlighter-rouge">""</code>) value.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">""</span><span class="nt">&gt;&lt;/html&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">""</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		The quick brown fox jumps over the lazy dog.
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/5636ffbff7668ca38610e36905889df90a92f485.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">html</code> element has a <code class="language-plaintext highlighter-rouge">lang</code> attribute whose value is only <a href="https://infra.spec.whatwg.org/#ascii-whitespace">ASCII whitespace</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">" "</span><span class="nt">&gt;&lt;/html&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">" "</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		The quick brown fox jumps over the lazy dog.
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4885abc44ca092b3d07a3f8e855dbcbf33f6c66b.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">html</code> element has no <code class="language-plaintext highlighter-rouge">lang</code> attribute, only a <code class="language-plaintext highlighter-rouge">xml:lang</code> attribute.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;&lt;/html&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		The quick brown fox jumps over the lazy dog.
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
 
-<p><a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/297b27cc9c3500b77e72320d73ad8252aede9bb8.svg">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/b584aa8aeb33814a0ecb63fd9ed4d97f2211f837.svg">Open in a new tab</a></p>
 
 <p>This rule does not apply to an <code class="language-plaintext highlighter-rouge">svg</code> element.</p>
 
-<pre><code class="language-svg">&lt;svg xmlns="http://www.w3.org/2000/svg"&gt;&lt;/svg&gt;
+<pre><code class="language-svg">&lt;svg xmlns="http://www.w3.org/2000/svg" lang="en"&gt;
+    &lt;text&gt;
+        The quick brown fox jumps over the lazy dog.
+    &lt;/text&gt;
+&lt;/svg&gt;
 </code></pre>
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
 
-<p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/af7eaac588fa1a23884d30f93ed50c2f1779c2fa.xml">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/58847c387d3b2cfa7e57c6ed613a8f31569cfd30.xml">Open in a new tab</a></p>
 
 <p>This rule does not apply to a <code class="language-plaintext highlighter-rouge">math</code> element.</p>
 
-<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;math&gt;&lt;/math&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;math</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+    The quick brown fox jumps over the lazy dog.
+<span class="nt">&lt;/math&gt;</span>
 </code></pre></div></div>
 
 <h2 id="glossary">Glossary</h2>
@@ -583,8 +609,8 @@ h2#sidebar-header {
           <tr>
             <td>Equal Access Accessibility Checker 3.1.42-rc.0</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-b5c3f8"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
@@ -609,7 +635,7 @@ h2#sidebar-header {
             <td><a href="/WAI/standards-guidelines/act/implementations/trusted-tester#breakdown-b5c3f8"><img alt="Trusted Tester Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
-            <td>ember-template-lint 4.16.1</td>
+            <td>ember-template-lint 5.5.1</td>
             <td>Linter</td>
             <td>
               Consistent </td>
@@ -647,7 +673,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> b5c3f8</p>
-<p><strong>Date:</strong> Updated 16 January 2023</p>
+<p><strong>Date:</strong> Updated 16 February 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Previous Authors: <a href="https://github.com/annika-FTB">Annika Nietzio</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -689,9 +715,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1677591489169460112"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1677591489169460112"></script>
 <script>
   svg4everybody();
 </script><script>

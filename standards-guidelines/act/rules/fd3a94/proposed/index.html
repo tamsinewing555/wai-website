@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1677245308345058151";
+      element.src = "/WAI/assets/scripts/main.js?1677591489169460112";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677245308345058151">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677591489169460112">
 
-<title> Links with identical accessible names and same context serve equivalent purpose[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677245308345058151"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Links with identical accessible names and same context serve equivalent purpose[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677591489169460112"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Links with identical accessible names and same context serve equivalent purpose" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -361,7 +361,7 @@ h2#sidebar-header {
 <ul>
   <li>This rule assumes that the purpose of the links with identical <a href="#accessible-name" title="Definition of accessible name">accessible names</a> and <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">context</a> would not be ambiguous to users in general, which is the exception mentioned in <a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">Success Criterion 2.4.4 Link Purpose (In Context)</a>. If the links are ambiguous to users in general, users of assistive technologies are not at a disadvantage when viewing the links, which makes it more of a general user experience concern than an accessibility issue.</li>
   <li>This rule assumes that, within the context of the test subject, the description provided by the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> of a link can only accurately describe one resource (notably, homonyms alone are not used as link names). Thus, if two or more links have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> but resolve to different resources, at least one of them does not describe its purpose.</li>
-  <li>This rule assumes that assistive technologies are exposing all links on the page in the same way no matter which <a href="https://dom.spec.whatwg.org/#document-trees">document tree</a> they are in. If an assistive technology requires the user to “enter” an <code class="language-plaintext highlighter-rouge">iframe</code> or a <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow tree</a> before exposing its links, then it is possible for two links to have identical name and context but resolve to different resources without failing <a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">Success Criterion 2.4.4 Link Purpose (In Context)</a> (if said links are in separate <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">documents</a> or <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow trees</a>)</li>
+  <li>This rule assumes that assistive technologies are exposing all links on the page in the same way no matter which <a href="https://dom.spec.whatwg.org/#document-trees">document tree</a> they are in. If an assistive technology requires the user to “enter” an <code class="language-plaintext highlighter-rouge">iframe</code> or a <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow tree</a> before exposing its links, then it is possible for two links to have identical name and same context but resolve to different resources without failing <a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">Success Criterion 2.4.4 Link Purpose (In Context)</a> (if said links are in separate <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">documents</a> or <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow trees</a>)</li>
 </ul>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
@@ -372,7 +372,7 @@ h2#sidebar-header {
 
 <p>This rule is designed specifically for <a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">2.4.4 Link Purpose (In Context)</a>, which requires the purpose to be clear within the context of a link. Because links that do not have this, also are not clear without that context, this rule maps to <a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only" title="Success Criterion 2.4.9: Link Purpose (Link Only)">2.4.9 Link Purpose (Link only)</a> as well. In order to adequately test the <a href="#expectation">expectation</a>, some of the passed examples do not satisfy <a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only" title="Success Criterion 2.4.9: Link Purpose (Link Only)">2.4.9 Link Purpose (Link only)</a>.</p>
 
-<p>This rule specifically targets links within the exact same context. Links with identical name that are in identical (but not the same) contexts also fail <a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">2.4.4 Link Purpose (In Context)</a>. However, defining “identical context” unambiguously was not really possible and was left out of this rule.</p>
+<p>There is a difference between two contexts being the <em>same</em> and being <em>identical</em>. This rule specifically targets links within the <em>same</em> context. The same context means exactly the same set of DOM nodes. Identical (but not the same) contexts might have a different set of DOM nodes, but those DOM nodes have equivalent content - such as text content, attribute values, and so on. This difference is similar to the difference in some programming languages between pointer equivalence and deep object equivalence. Links with identical name that are in identical (but not the same) contexts also fail <a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">2.4.4 Link Purpose (In Context)</a>. However, defining “identical context” unambiguously has been deemed infeasible at this time, and so has been left out of this rule.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -740,7 +740,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/a799c111fc2dd2b2e6dade9bf227790d8cb33f68.html">Open in a new tab</a></p>
 
-<p>These two HTML <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and link to the <a href="#same-resource" title="Definition of same resource">same resource</a> but different <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">programmatically determined link contexts</a>. Even if the contexts have identical content, they are not the same (the same elements).</p>
+<p>These two HTML <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and link to the <a href="#same-resource" title="Definition of same resource">same resource</a> but different <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">programmatically determined link contexts</a>. Even though the two contexts in this example are <em>identical</em>, they are not the <em>same</em>. That is: even though they have equivalent content, they do not consist of the same DOM elements.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;div&gt;</span>
@@ -896,7 +896,7 @@ h2#sidebar-header {
   <li>being referenced by an <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute of the link.</li>
 </ul>
 
-<p>This definition is based on the <a href="https://www.w3.org/TR/WCAG21/#dfn-programmatically-determined-link-context">WCAG definition of programmatically determined link context</a>.</p>
+<p>This definition is based on (but not equivalent to) the <a href="https://www.w3.org/TR/WCAG21/#dfn-programmatically-determined-link-context">WCAG definition of programmatically determined link context</a>.</p>
 
 <p>This definition assumes that the HTML document with the link is a document using HTML according to the specification.</p>
 
@@ -1006,7 +1006,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> fd3a94</p>
-<p><strong>Date:</strong> Updated 16 January 2023</p>
+<p><strong>Date:</strong> Updated 28 February 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1048,9 +1048,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1677591489169460112"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1677591489169460112"></script>
 <script>
   svg4everybody();
 </script><script>

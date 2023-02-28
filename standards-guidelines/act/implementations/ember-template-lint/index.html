@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1677245308345058151";
+      element.src = "/WAI/assets/scripts/main.js?1677591489169460112";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677245308345058151">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677591489169460112">
 
-<title> Ember-template-lint ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677245308345058151"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Ember-template-lint ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677591489169460112"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Ember-template-lint ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -304,11 +304,11 @@ h2#sidebar-header {
   <div class="box-i"><p>
     
       ember-template-lint
-      version 4.16.1
+      version 5.5.1
      is a linter
     
       by contributors in the Ember.js community.
-      The test results were last updated 17 November 2022.
+      The test results were last updated 14 February 2023.
 
     
 
@@ -333,8 +333,8 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>Proposed rules</th>
-      <td>1</td>
-      <td>4</td>
+      <td>2</td>
+      <td>3</td>
     </tr>
   </tbody></table>
 </div>
@@ -412,8 +412,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -618,11 +618,15 @@ not run scripts or render CSS.</p>
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/b5c3f8">HTML page has lang attribute</a>
   WCAG 2 rule. 
-    It covers 3 of the 7 examples.
-    On 4 examples
+    It covers 5 of the 14 examples.
+    On 2 examples
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   
+  
+    For 7 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -677,7 +681,7 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/f8214944f374b25c3ce42bd92a4304d38a2309dc.html">Passed Example 1</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -695,7 +699,7 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/5636ffbff7668ca38610e36905889df90a92f485.html">Failed Example 3</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
@@ -715,27 +719,72 @@ not run scripts or render CSS.</p>
         </th>
         <td class="act-cannot-tell">cannot tell</td>
       </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1.html">Passed Example 1</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html">Failed Example 1</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html">Failed Example 2</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html">Failed Example 3</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html">Failed Example 4</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/b584aa8aeb33814a0ecb63fd9ed4d97f2211f837.svg">Inapplicable Example 1</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/58847c387d3b2cfa7e57c6ed613a8f31569cfd30.xml">Inapplicable Example 2</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
     </tbody>
   </table>
 </div>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-5f99a7">ARIA attribute is defined in WAI-ARIA</h3>
 <p>
   This rule is implemented by ember-template-lint using the
   <code>no-invalid-aria-attributes</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/5f99a7/proposed/">ARIA attribute is defined in WAI-ARIA</a>
    proposed rule.
-    It covers 1 of the 7 examples.
-    On 5 examples
-    the implementation cannot tell the outcome. This is often because of technical 
-    limitations in tools.
-  
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 7 examples.
   
   
     The implementation correctly reports no success criteria are failed by this rule.
@@ -776,31 +825,31 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/261dcd3214e87532fc2f9c8db7fdce05de9e07f0.html">Passed Example 1</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html">Passed Example 2</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html">Passed Example 3</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html">Passed Example 4</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html">Failed Example 1</a>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
@@ -812,7 +861,7 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/d528a33258103014c0a03cf1e418ee0620f7b4f6.html">Inapplicable Example 1</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
     </tbody>
   </table>
@@ -826,15 +875,11 @@ not run scripts or render CSS.</p>
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/5c01ea/proposed/">ARIA state or property is permitted</a>
    proposed rule.
-    It covers 1 of the 16 examples.
-    On 14 examples
+    It covers 13 of the 16 examples.
+    On 2 examples
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
   
   
     The implementation correctly reports no success criteria are failed by this rule.
@@ -875,67 +920,67 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/4240276511703c9bfa881ac80f7c0af5c92c97cc.html">Passed Example 1</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/f91d77e96c069380252b674faaf08eecab375503.html">Passed Example 2</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/fec2c81ca23a9647c00ccd1fb5e74d06841ed6fa.html">Passed Example 3</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html">Passed Example 4</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/b67ab9861299ffa342880729ee1dbb43d2068a6b.html">Passed Example 5</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/edd0f2ba6aa31bc4dac2f057090eec3334e62c6d.html">Passed Example 6</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/e81a1a6206e030af2cba2ebf4b3a7c86e1225b5b.html">Passed Example 7</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2b5e0b61e7317a251c5d0d74ac0d0cad202adacc.html">Passed Example 8</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/6c0718872b1d915b49c48fe135b9fc251bcff561.html">Passed Example 9</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d934cb530f9bd82f0c84615dfc405efad9b1fc69.html">Passed Example 10</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/0401164ef77abe96fd6502d35ed04952a057a8fe.html">Passed Example 11</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -953,13 +998,14 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html">Failed Example 3</a>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html">Inapplicable Example 1</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -979,8 +1025,8 @@ not run scripts or render CSS.</p>
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/e6952f/proposed/">Attribute is not duplicated</a>
    proposed rule.
-    It covers 2 of the 10 examples.
-    On 8 examples
+    It covers 5 of the 10 examples.
+    On 5 examples
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   
@@ -1038,19 +1084,19 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/ebd0080bacb8debc7ad069072240657df38c3e2c.html">Passed Example 1</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/3f5db5b7f88b5c55969fabecd926bb8f85624ce2.html">Passed Example 2</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/978d5521aa80f7f43f24d509fca705e64b4e9bd2.html">Passed Example 3</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -1106,8 +1152,8 @@ not run scripts or render CSS.</p>
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/aizyf1/proposed/">Link is descriptive</a>
    proposed rule.
-    It covers 1 of the 12 examples.
-    On 11 examples
+    It covers 6 of the 12 examples.
+    On 2 examples
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   
@@ -1165,19 +1211,19 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/c7661d61606728f898297f6e69f68af3d5b6c6d0.html">Passed Example 1</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/9863e3ea603a1bdde28e5b94f8675579e33a16d7.html">Passed Example 2</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/2eb4856e68c4cf8b3ed55f7d34b08ad4ae8b3fdd.html">Passed Example 3</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -1195,31 +1241,35 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html">Failed Example 2</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html">Failed Example 3</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/771c36b9967faec9926af86041d834b4a108a52e.html">Failed Example 4</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b130285915a8ca42926a11553a5791f44b65d487.html">Failed Example 5</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e64416f9e9792cd76b77ee209a26269d47c3ff97.html">Inapplicable Example 1</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -1231,7 +1281,7 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/ca563b842b32b8fc79ac872f8fc4e799fcf76072.html">Inapplicable Example 3</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
     </tbody>
   </table>
@@ -1245,15 +1295,11 @@ not run scripts or render CSS.</p>
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/5effbb/proposed/">Link in context is descriptive</a>
    proposed rule.
-    It covers 1 of the 18 examples.
-    On 16 examples
+    It covers 11 of the 18 examples.
+    On 3 examples
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   
-  
-    For 1 example
-    no results were reported. This can happen when examples are newer then the
-    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -1308,37 +1354,37 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/c7661d61606728f898297f6e69f68af3d5b6c6d0.html">Passed Example 1</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/9863e3ea603a1bdde28e5b94f8675579e33a16d7.html">Passed Example 2</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/771c36b9967faec9926af86041d834b4a108a52e.html">Passed Example 3</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/2eb4856e68c4cf8b3ed55f7d34b08ad4ae8b3fdd.html">Passed Example 4</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/b130285915a8ca42926a11553a5791f44b65d487.html">Passed Example 5</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/a1e9ff296f0728e180aeb920beacb26bf88ddb12.html">Passed Example 6</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -1350,13 +1396,13 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/e4f70ef2843c6239d0bebe46b97a682bd901e749.html">Passed Example 8</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/4e89fcc7903980482fe12350f864ca75963d6efd.html">Passed Example 9</a>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -1368,19 +1414,22 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html">Failed Example 2</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html">Failed Example 3</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/98f0638a038a244b0bde70ff316cde1be7ce9a3b.html">Failed Example 4</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
@@ -1392,13 +1441,14 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/45d884e81c4ef8234cfbd85d259dd6a64685c9d2.html">Failed Example 6</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/e64416f9e9792cd76b77ee209a26269d47c3ff97.html">Inapplicable Example 1</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -1410,7 +1460,7 @@ not run scripts or render CSS.</p>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/ca563b842b32b8fc79ac872f8fc4e799fcf76072.html">Inapplicable Example 3</a>
         </th>
-        <td class="act-cannot-tell">cannot tell</td>
+        <td class="">passed</td>
       </tr>
     </tbody>
   </table>
@@ -1479,9 +1529,9 @@ not run scripts or render CSS.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1677591489169460112"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1677591489169460112"></script>
 <script>
   svg4everybody();
 </script><script>

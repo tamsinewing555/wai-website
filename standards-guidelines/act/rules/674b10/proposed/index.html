@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1677245308345058151";
+      element.src = "/WAI/assets/scripts/main.js?1677591489169460112";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677245308345058151">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677591489169460112">
 
-<title> Role attribute has valid value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677245308345058151"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Role attribute has valid value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677591489169460112"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Role attribute has valid value" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -346,11 +346,7 @@ h2#sidebar-header {
 
 <h2 id="assumptions">Assumptions</h2>
 
-<ul>
-  <li>This rule assumes that the <code class="language-plaintext highlighter-rouge">role</code> attribute is used to provide an ARIA <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> to the elements. If it is used for other purposes, this rule shouldn’t be used.</li>
-  <li>This rule assumes that elements with a <code class="language-plaintext highlighter-rouge">role</code> attribute have their intended structure and relationship conveyed through some sort of presentation. If it is not the case, it is possible to fail this rule while still satisfying <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Success Criterion 1.3.1 Info and Relationship</a>.</li>
-  <li>This rule assumes that the intended role of the element is not its <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a>. If no token is valid, User Agents will default to the <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a> for the element; if that role is the intended one, it is possible to fail this rule but still satisfy <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Success Criterion 1.3.1 Info and Relationships</a>.</li>
-</ul>
+<p>This rule assumes that using the <code class="language-plaintext highlighter-rouge">role</code> attribute for any purpose other than to provide an ARIA <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> to the elements is invalid. These would fail <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4">WCAG Technique: ARIA4 Using a WAI-ARIA role to expose the role of a user interface component</a>.</p>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
@@ -358,9 +354,11 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
-<p>Using an invalid role is often the result of a typo or other developer error. Such roles are ignored by browsers and assistive technologies, and the element’s default semantics is used. This often means that a role that should exist is missing. This can cause issues under <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">success criterion 1.3.1 Info and Relationships</a> or <a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2 Name, Rule Value</a>.</p>
+<p>Using an invalid role is often the result of a typo or other developer error. Unknown roles are ignored by browsers and assistive technologies, and the element’s <a href="#implicit-role" title="Definition of Implicit Role">implicit role</a> is used. This often means that a role that should exist is missing. This can cause issues under <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">success criterion 1.3.1 Info and Relationships</a> or <a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2 Name, Role, Value</a>. If the element’s implicit semantics are sufficient to communicate its intent, an invalid role may not cause an accessibility issue.</p>
 
-<p>The <code class="language-plaintext highlighter-rouge">role</code> attribute is a set of <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="Definition of space separated tokens">space separated tokens</a>. Having a <a href="#whitespace">whitespace</a> separated list of more than one token in the value of the role attribute is used for what is known as <em>fallback roles</em>. If the first token is not accessibility supported (or valid), the next one will be used for determining the <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of the element, and so forth. Having the rule target attributes containing at least one non-<a href="https://infra.spec.whatwg.org/#ascii-whitespace" title="Definition of ASCII whitespace">ASCII whitespace</a> character ensures that there is at least one token in the set.</p>
+<p>The <code class="language-plaintext highlighter-rouge">role</code> attribute is a set of <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="Definition of space separated tokens">space separated tokens</a>. Having a <a href="#whitespace">whitespace</a> separated list of more than one token in the value of the role attribute is used for what is known as <em>fallback roles</em>. If the first token is not accessibility supported (or valid), the next one will be used for determining the <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of the element, and so forth. The rule applies to attributes containing at least one non-<a href="https://infra.spec.whatwg.org/#ascii-whitespace" title="Definition of ASCII whitespace">ASCII whitespace</a> character so that there is at least one token in the set.</p>
+
+<p>Not every role should be used on every element. Which ARIA roles may be used on which HTML elements is defined in <a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a>. Testing this is not part of this rule.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -443,7 +441,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">role</code> attribute contains one token, and this token is a valid <a href="https://www.w3.org/TR/wai-aria-1.2/#role_definitions" title="List of WAI-ARIA roles">WAI-ARIA role</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">role</code> attribute contains one <code class="language-plaintext highlighter-rouge">searchbox</code> token which is a valid <a href="https://www.w3.org/TR/wai-aria-1.2/#role_definitions" title="List of WAI-ARIA roles">WAI-ARIA role</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Search: <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">role=</span><span class="s">"searchbox"</span> <span class="na">placeholder=</span><span class="s">"Enter 3 or more characters"</span><span class="nt">/&gt;&lt;/label&gt;</span>
 </code></pre></div></div>
@@ -452,7 +450,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">role</code> attribute contains two tokens, and these tokens are both valid <a href="https://www.w3.org/TR/wai-aria-1.2/#role_definitions" title="List of WAI-ARIA roles">WAI-ARIA roles</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">role</code> attribute contains two tokens which are both valid <a href="https://www.w3.org/TR/wai-aria-1.2/#role_definitions" title="List of WAI-ARIA roles">WAI-ARIA roles</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
 	<span class="nc">.ref</span> <span class="p">{</span>
@@ -480,7 +478,7 @@ See [<span class="nt">&lt;span</span> <span class="na">class=</span><span class=
 
 <p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">role</code> attribute contains one token, but this token is not a valid role in any of the <a href="#wai-aria-specifications" title="Definition of WAI-ARIA Specifications">WAI-ARIA specifications</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">role</code> attribute contains one <code class="language-plaintext highlighter-rouge">lnik</code> token, but this token is not a valid role in any of the <a href="#wai-aria-specifications" title="Definition of WAI-ARIA Specifications">WAI-ARIA specifications</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
 	<span class="nc">.link</span> <span class="p">{</span>
@@ -496,7 +494,7 @@ I love <span class="nt">&lt;span</span> <span class="na">class=</span><span clas
 
 <p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">role</code> attribute contains two tokens, but none of these tokens is a valid role in any of the <a href="#wai-aria-specifications" title="Definition of WAI-ARIA Specifications">WAI-ARIA specifications</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">role</code> attribute contains two tokens, but neither of these tokens is a valid role in any of the <a href="#wai-aria-specifications" title="Definition of WAI-ARIA Specifications">WAI-ARIA specifications</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;style&gt;</span>
 	<span class="nc">.ref</span> <span class="p">{</span>
@@ -796,7 +794,7 @@ See [<span class="nt">&lt;span</span> <span class="na">class=</span><span class=
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 674b10</p>
-<p><strong>Date:</strong> Updated 16 January 2023</p>
+<p><strong>Date:</strong> Updated 28 February 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -838,9 +836,9 @@ See [<span class="nt">&lt;span</span> <span class="na">class=</span><span class=
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1677591489169460112"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1677591489169460112"></script>
 <script>
   svg4everybody();
 </script><script>

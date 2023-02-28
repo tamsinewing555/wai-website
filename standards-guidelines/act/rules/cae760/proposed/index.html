@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1677245308345058151";
+      element.src = "/WAI/assets/scripts/main.js?1677591489169460112";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677245308345058151">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1677591489169460112">
 
-<title> Iframe element has non-empty accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677245308345058151"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Iframe element has non-empty accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1677591489169460112"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Iframe element has non-empty accessible name" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -338,7 +338,7 @@ h2#sidebar-header {
 
 <h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to <code class="language-plaintext highlighter-rouge">iframe</code> elements that are <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a> and that can be accessed by <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>.</p>
+<p>This rule applies to <code class="language-plaintext highlighter-rouge">iframe</code> elements that are <a href="#included-in-the-accessibility-tree" title="Definition of included in the accessibility tree">included in the accessibility tree</a> and do not have a negative <code class="language-plaintext highlighter-rouge">tabindex</code> <a href="#attribute-value" title="Definition of Attribute value">attribute value</a>.</p>
 
 <p><strong>Note:</strong> <code class="language-plaintext highlighter-rouge">frame</code> element is deprecated, this rule does not consider <code class="language-plaintext highlighter-rouge">frame</code> or <code class="language-plaintext highlighter-rouge">frameset</code> elements.</p>
 
@@ -497,7 +497,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">iframe</code> element has a negative <code class="language-plaintext highlighter-rouge">tabindex</code> and therefore is not included in the <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation">sequential focus navigation</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">iframe</code> element has a negative <code class="language-plaintext highlighter-rouge">tabindex</code> <a href="#attribute-value" title="Definition of Attribute value">attribute value</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">src=</span><span class="s">"/test-assets/SC4-1-2-frame-doc.html"</span><span class="nt">&gt;</span> <span class="nt">&lt;/iframe&gt;</span>
 </code></pre></div></div>
@@ -517,6 +517,25 @@ h2#sidebar-header {
 <p><strong>Note:</strong> As per the <a href="https://www.w3.org/TR/accname">accessible name and description computation</a>, each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (<code class="language-plaintext highlighter-rouge">""</code>) one.</p>
 
 <p><strong>Note:</strong> As per the <a href="https://www.w3.org/TR/accname">accessible name and description computation</a>, accessible names are <a href="https://www.w3.org/TR/accname-1.1/#terminology">flat string</a> trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.</p>
+
+<h3 id="attribute-value">Attribute value</h3>
+
+<p>The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.</p>
+
+<p>Some notable case of attribute value, among others:</p>
+
+<ul>
+  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute" title="HTML Specification of Enumerated Attribute">enumerated attributes</a>, the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus <code class="language-plaintext highlighter-rouge">&lt;input type="image" /&gt;</code> has an attribute value of either <code class="language-plaintext highlighter-rouge">Image Button</code> (the state) or <code class="language-plaintext highlighter-rouge">image</code> (the keyword mapping to it), both formulations having the same meaning; similarly, “an input element with a <code class="language-plaintext highlighter-rouge">type</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">Text</code>” can be either <code class="language-plaintext highlighter-rouge">&lt;input type="text" /&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;input /&gt;</code> (missing value default), or <code class="language-plaintext highlighter-rouge">&lt;input type="invalid" /&gt;</code> (invalid value default).</li>
+  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes" title="HTML Specification of Boolean Attribute">boolean attributes</a>, the <dfn id="attribute-value:boolean">attribute value</dfn> is <code class="language-plaintext highlighter-rouge">true</code> when the attribute is present and <code class="language-plaintext highlighter-rouge">false</code> otherwise. Thus <code class="language-plaintext highlighter-rouge">&lt;button disabled&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;button disabled="disabled"&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;button disabled=""&gt;</code> all have a <code class="language-plaintext highlighter-rouge">disabled</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">true</code>.</li>
+  <li>For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.</li>
+  <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
+  <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+</ul>
+
+<p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
+
+<p>The <dfn id="attribute-value:idl">attribute value</dfn> of an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> is the value returned on getting it. Note that when an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes" title="HTML specification of Reflecting Content Attributes in IDL Attributes">reflects</a> a content attribute, they have the same attribute value.</p>
 
 <h3 id="explicit-role">Explicit Semantic Role</h3>
 
@@ -704,7 +723,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> cae760</p>
-<p><strong>Date:</strong> Updated 11 November 2022</p>
+<p><strong>Date:</strong> Updated 16 February 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -746,9 +765,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1677591489169460112"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1677245308345058151"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1677591489169460112"></script>
 <script>
   svg4everybody();
 </script><script>
