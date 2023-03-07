@@ -692,7 +692,9 @@
 /content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page3.html
 /content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html
 /content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html
+/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-incorrect-transcript.html
 /content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-incorrect-transcript.txt
+/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-transcript.html
 /content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-transcript.txt
 /content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3
 /content-assets/wcag-act-rules/test-assets/non-visual-reference-alternative-9bd38c/awesome_wide.jfif
@@ -877,14 +879,18 @@
 /content-assets/wcag-act-rules/testcases/2eb176/06b6ada6383efa2ffeaf67370b177090dfcdf5e1.html
 /content-assets/wcag-act-rules/testcases/2eb176/381f800e41c8f1e72f1164ff0877bbb8446dc55d.html
 /content-assets/wcag-act-rules/testcases/2eb176/3910043a0a8d9aff05d926b7bf9757b8b2ee98da.html
+/content-assets/wcag-act-rules/testcases/2eb176/3a018f7d638bd2993d176f341edaee79fda3d55a.html
+/content-assets/wcag-act-rules/testcases/2eb176/3d78bf5e3f2b717595db4df064b0ec542bae0d9b.html
 /content-assets/wcag-act-rules/testcases/2eb176/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html
 /content-assets/wcag-act-rules/testcases/2eb176/5fd7ae577f7dd55633c44b3ac7b6d70b486cff3d.html
 /content-assets/wcag-act-rules/testcases/2eb176/7cdf59c28089794dbbd75d81f29fb9adb9327cb2.html
 /content-assets/wcag-act-rules/testcases/2eb176/7e5bf06ee043bd223f348b4f2fd528586c268e69.html
 /content-assets/wcag-act-rules/testcases/2eb176/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html
+/content-assets/wcag-act-rules/testcases/2eb176/d24c583b4697496be0aba15c259714da93ac209c.html
 /content-assets/wcag-act-rules/testcases/2eb176/d58c6252f96771666f71a65d199316108e709edd.html
 /content-assets/wcag-act-rules/testcases/2eb176/eba170767ac1de0092d33a9bee2c0ecf2ebdfd46.html
 /content-assets/wcag-act-rules/testcases/2eb176/f470186843fb28ba9b45dd1efc85b53c92b11c05.html
+/content-assets/wcag-act-rules/testcases/2eb176/ff5548c1341eb4edc32a87d9a018d425a5a065e3.html
 /content-assets/wcag-act-rules/testcases/2ee8b8/02f6608c4242efccba3ceeb8b73cc6b1255e362d.html
 /content-assets/wcag-act-rules/testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html
 /content-assets/wcag-act-rules/testcases/2ee8b8/326f6768ecbf60ca31149e65ab2853c138095fd7.html
@@ -2522,7 +2528,6 @@
 /fundamentals/index.html
 /index.html
 /link/to/page/index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
