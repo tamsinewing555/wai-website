@@ -1477,7 +1477,9 @@
 /content-assets/wcag-act-rules/testcases/b49b2e/26d71f03f10bc14b28212699eddafe17adafc6b8.html
 /content-assets/wcag-act-rules/testcases/b49b2e/311761248534600e7fbcce12cecfe22ecd1fa521.html
 /content-assets/wcag-act-rules/testcases/b49b2e/3ab7de594473cac4745adce5edac1b4143aff701.html
+/content-assets/wcag-act-rules/testcases/b49b2e/6000a70ba2da9a828fa9c817ae6a0d2c092522fb.html
 /content-assets/wcag-act-rules/testcases/b49b2e/69658c922aa926b0b8e4e1f113620c1dff5d64a9.html
+/content-assets/wcag-act-rules/testcases/b49b2e/6b63f3bcb8cfa7d388c35ebe82cedf6111e3c8f6.html
 /content-assets/wcag-act-rules/testcases/b49b2e/6deaab79bb8cfc0497aec9948366d9a38a93f0b3.html
 /content-assets/wcag-act-rules/testcases/b49b2e/774026aba59c16a881fdb07d1fa04424c7bdd5ba.html
 /content-assets/wcag-act-rules/testcases/b49b2e/79cce8d89309bea03e122d2917d340a525db4de0.html
