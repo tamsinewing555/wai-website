@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1679421862971072339";
+      element.src = "/WAI/assets/scripts/main.js?1680008435946578140";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1679421862971072339">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1680008435946578140">
 
-<title> Autocomplete attribute has valid value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1679421862971072339"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Autocomplete attribute has valid value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1680008435946578140"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Autocomplete attribute has valid value" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -569,6 +569,51 @@ h2#sidebar-header {
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Username<span class="nt">&lt;input</span> <span class="na">role=</span><span class="s">"banner"</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">autocomplete=</span><span class="s">"banner"</span><span class="nt">/&gt;&lt;/label&gt;</span>
 </code></pre></div></div>
 
+<h4 id="failed-example-6">Failed Example 6</h4>
+
+<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/2512c24c9a793fa8a30958e203090f955a3fc262.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute does not contain any required token.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Address<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"shipping"</span><span class="nt">/&gt;&lt;/label&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-7">Failed Example 7</h4>
+
+<p><a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/55ce632e85a0243abf196c59242b2af699e5c0d4.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute contains two of the required tokens, but only one is allowed.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Address<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"address-line1 address-line2"</span><span class="nt">/&gt;&lt;/label&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-8">Failed Example 8</h4>
+
+<p><a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/130d7f761a6a43b896b2f1d0ded311da6a7aebf1.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute contains a <code class="language-plaintext highlighter-rouge">work</code> modifier but no required token afterwards.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Email<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"work"</span><span class="nt">/&gt;&lt;/label&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-9">Failed Example 9</h4>
+
+<p><a class="example-link" title="Failed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/3d79434f382323a20bc7dda8cd01e8d084a3c3bf.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute contains an extra token after the allowed ones.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Password<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">autocomplete=</span><span class="s">"current-password webauthn invalid"</span><span class="nt">/&gt;&lt;/label&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-10">Failed Example 10</h4>
+
+<p><a class="example-link" title="Failed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/92214e0008b9b2e7bd98d991d27c09bb33d4c92c.html">Open in a new tab</a></p>
+
+<p>This <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute contains an extra token after the allowed ones.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label&gt;</span>Email<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"email invalid"</span><span class="nt">/&gt;&lt;/label&gt;</span>
+</code></pre></div></div>
+
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
@@ -933,7 +978,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 73f2c2</p>
-<p><strong>Date:</strong> Updated 23 February 2023</p>
+<p><strong>Date:</strong> Updated 23 March 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/ajanec01">Aron Janecki</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -975,9 +1020,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1679421862971072339"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1680008435946578140"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1679421862971072339"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1680008435946578140"></script>
 <script>
   svg4everybody();
 </script><script>
