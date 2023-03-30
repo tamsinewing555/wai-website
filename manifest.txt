@@ -2534,7 +2534,7 @@
 /fundamentals/fr.html
 /fundamentals/index.html
 /index.html
-/link/to/page/index.html
+/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2856,6 +2856,10 @@
 /planning-and-managing/initiate/index.html
 /planning-and-managing/plan/index.html
 /planning-and-managing/sustain/index.html
+/planning/arrm/decision-tree/index.html
+/planning/arrm/index.html
+/planning/arrm/roles/index.html
+/planning/arrm/sc-map/index.html
 /planning/changelog/index.html
 /planning/es.html
 /planning/fr.html
