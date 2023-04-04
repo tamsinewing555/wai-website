@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1680563497526646703";
+      element.src = "/WAI/assets/scripts/main.js?1680615367640699476";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1680563497526646703">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1680615367640699476">
 
-<title> Axe DevTools Pro ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1680563497526646703"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Axe DevTools Pro ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1680615367640699476"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Axe DevTools Pro ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -306,7 +306,7 @@ h2#sidebar-header {
       version 4.37.1
      is an Semi-automated tool
       by <a href="https://deque.com/">Deque Systems</a>.
-      The test results were last updated 27 March 2023.
+      The test results were last updated 4 April 2023.
 
     
 
@@ -332,7 +332,7 @@ h2#sidebar-header {
     <tr>
       <th>Proposed rules</th>
       <td>18</td>
-      <td>14</td>
+      <td>13</td>
     </tr>
   </tbody></table>
 </div>
@@ -713,16 +713,6 @@ h2#sidebar-header {
         </tr>
       
       
-      
-        <tr>
-          <td><a href="#breakdown-b33eff">
-            Orientation of the page is not restricted using CSS transforms
-          </a></td>
-          <td> Proposed Rule
-          </td>
-          <td> Partial
-          </td>
-        </tr>
       
       
       
@@ -5775,146 +5765,6 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
   </table>
 </div>
 
-<h3 id="breakdown-b33eff">Orientation of the page is not restricted using CSS transforms</h3>
-<p>
-  This rule is implemented by Axe DevTools Pro using the
-  <code>css-orientation-lock</code> procedure.
-  The implementation is  partially 
-   consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transforms</a>
-   proposed rule.
-    It covers 10 of the 12 examples.
-    On 1 example
-    the implementation cannot tell the outcome. This is often because of technical 
-    limitations in tools.
-  
-  
-  
-    The implementation correctly reports which success criteria are failed by this rule.
-  
-  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
-</p>
-
-
-<div class="scroll-wrap">
-  <table class="act-requirements">
-    <caption>Success Criteria</caption>
-    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
-    <tr>
-      <td>
-        
-          <ul>
-            <li>
-              1.3.4
-              Orientation
-            </li>
-          </ul>
-        
-      </td>
-
-      <td>
-        
-          <ul>
-            <li>
-              1.3.4
-              Orientation
-            </li>
-          </ul>
-        
-      </td>
-    </tr>
-  </tbody></table>
-</div>
-
-
-<div class="scroll-wrap">
-  <table class="act-example-outcomes">
-    <caption>Test Results</caption>
-    <thead>
-      <tr>
-        <th></th>
-        <th>css-orientation-lock</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html">Passed Example 1</a>
-        </th>
-        <td class="">passed</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html">Passed Example 2</a>
-        </th>
-        <td class="">passed</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html">Passed Example 3</a>
-        </th>
-        <td class="">passed</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html">Failed Example 1</a>
-        </th>
-        <td class="">failed</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html">Failed Example 2</a>
-        </th>
-        <td class="">failed</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html">Failed Example 3</a>
-        </th>
-        <td class="">failed</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html">Failed Example 4</a>
-        </th>
-        <td class="
-            act-false-negative">passed</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html">Inapplicable Example 1</a>
-        </th>
-        <td class="act-cannot-tell">cannot tell</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html">Inapplicable Example 2</a>
-        </th>
-        <td class="">passed</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html">Inapplicable Example 3</a>
-        </th>
-        <td class="">passed</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/65f069d9d7d5a75562917c80ab7334b2914f42f4.html">Inapplicable Example 4</a>
-        </th>
-        <td class="">passed</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html">Inapplicable Example 5</a>
-        </th>
-        <td class="">passed</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
 <h3 id="breakdown-047fe0">Document has heading for non-repeated content</h3>
 <p>
   This rule is implemented by Axe DevTools Pro using the
@@ -9654,9 +9504,9 @@ the <code class="language-plaintext highlighter-rouge">alt-text-not-meaningful</
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1680563497526646703"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1680615367640699476"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1680563497526646703"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1680615367640699476"></script>
 <script>
   svg4everybody();
 </script><script>

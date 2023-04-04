@@ -633,6 +633,8 @@
 /content-assets/wcag-act-rules/earl/qualweb.json
 /content-assets/wcag-act-rules/earl/sort-site.json
 /content-assets/wcag-act-rules/earl/sortsite.json
+/content-assets/wcag-act-rules/earl/total-validator-browser.json
+/content-assets/wcag-act-rules/earl/total-validator.json
 /content-assets/wcag-act-rules/earl/trusted-tester.json
 /content-assets/wcag-act-rules/impl-large-scope.svg
 /content-assets/wcag-act-rules/impl-small-scope.svg
@@ -2534,6 +2536,7 @@
 /fundamentals/fr.html
 /fundamentals/index.html
 /index.html
+/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2935,6 +2938,8 @@
 /standards-guidelines/act/implementations/index.html
 /standards-guidelines/act/implementations/qualweb/index.html
 /standards-guidelines/act/implementations/sortsite/index.html
+/standards-guidelines/act/implementations/total-validator-browser/index.html
+/standards-guidelines/act/implementations/total-validator/index.html
 /standards-guidelines/act/implementations/trusted-tester/index.html
 /standards-guidelines/act/index.html
 /standards-guidelines/act/report/earl/index.html
