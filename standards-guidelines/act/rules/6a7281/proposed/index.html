@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1680887795075257694";
+      element.src = "/WAI/assets/scripts/main.js?1681233943386681043";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1680887795075257694">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1681233943386681043">
 
-<title> ARIA state or property has valid value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1680887795075257694"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> ARIA state or property has valid value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1681233943386681043"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="ARIA state or property has valid value" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -333,19 +333,17 @@ h2#sidebar-header {
 
 <h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to any <a href="https://www.w3.org/TR/wai-aria-1.2/#state_prop_def">WAI-ARIA 1.2 state or property</a> that is not empty (“”), and that is specified on an <a href="#namespaced-element">HTML or SVG element</a>.</p>
+<p>This rule applies to any <a href="https://www.w3.org/TR/wai-aria-1.2/#state_prop_def">WAI-ARIA state or property</a> that has a non-empty (“”) [attribute value][], and that is specified on an <a href="#namespaced-element">HTML or SVG element</a>.</p>
 
 <h2 id="expectation">Expectation</h2>
 
-<p>Each test target has a valid value according to its <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">WAI-ARIA 1.2 value type</a>.</p>
+<p>Each test target has an [attribute value][] that is valid according to its <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">WAI-ARIA value type</a>.</p>
 
-<p>For value types <code class="language-plaintext highlighter-rouge">ID Reference</code> and <code class="language-plaintext highlighter-rouge">ID Reference List</code> for <a href="https://www.w3.org/TR/wai-aria-1.2/#requiredState">WAI-ARIA required properties</a> at least one of the elements with the given ids exists in the same <a href="https://dom.spec.whatwg.org/#document-trees">document tree</a> or in the same <a href="https://dom.spec.whatwg.org/#shadow-trees">shadow tree</a> as the element that specifies the target attribute.</p>
-
-<p>For value type <code class="language-plaintext highlighter-rouge">URI</code> the value matches the <a href="https://www.ietf.org/rfc/rfc3986.txt">generic URI syntax</a>.</p>
+<p><strong>Exception</strong>: For value types <code class="language-plaintext highlighter-rouge">ID Reference</code> and <code class="language-plaintext highlighter-rouge">ID Reference List</code> no ID referenced elements are required.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>This rule catches values that are undefined in <a href="#wai-aria-specifications" title="List of WAI-ARIA Specifications">WAI-ARIA Specifications</a>, and where the resulting behavior in user agents are also undefined in WAI-ARIA. This might lead to accessibility issues, if the intention was to use behavior defined in <a href="#wai-aria-specifications" title="List of WAI-ARIA Specifications">WAI-ARIA Specifications</a>. When values are used that do not have a defined behavior in <a href="#wai-aria-specifications" title="List of WAI-ARIA Specifications">WAI-ARIA Specifications</a>, the HTML/SVG specification decides what default values should be used, since it is defined here what should happen when an invalid value is used for an attribute. If the default value for invalid attribute values happens to match the author’s intention for the value, there will not be an accessibility issue.</p>
+<p>There are no assumptions.</p>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
@@ -353,11 +351,9 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
-<p>Using invalid ARIA attribute values is often the result of a typo or other developer error. These attributes are then either ignored, or a default value is assumed by browsers and assistive technologies. This often means that a state or property which should exist is missing or has an unexpected value. This can cause issues under <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">success criterion 1.3.1 Info and Relationships</a> or <a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2 Name, Rule Value</a>.</p>
+<p>Using invalid ARIA attribute values is often the result of a typo or other developer error. These attributes are then either ignored, or a default value is assumed by browsers and assistive technologies. This often means that a state or property which should exist is missing or has an unexpected value. This can cause issues under <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">success criterion 1.3.1 Info and Relationships</a> or <a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2 Name, Rule Value</a>. If the default value for invalid attribute values happens to match the author’s intention for the value, there will not be an accessibility issue.</p>
 
-<p>Only for <a href="https://www.w3.org/TR/wai-aria-1.2/#requiredState">WAI-ARIA required properties</a> with value types <code class="language-plaintext highlighter-rouge">ID Reference</code> and <code class="language-plaintext highlighter-rouge">ID Reference List</code> is there a requirement that the elements with the given ids actually exists. For non-required properties, this is not a requirement. For example, the value of the <code class="language-plaintext highlighter-rouge">aria-errormessage</code> attribute on an <code class="language-plaintext highlighter-rouge">input</code> does not need to reference an <code class="language-plaintext highlighter-rouge">id</code> that exists within the same document, because an <a href="https://html.spec.whatwg.org/#htmlelement">HTML element</a> with such and <code class="language-plaintext highlighter-rouge">id</code> may be created in response to an <a href="https://dom.spec.whatwg.org/#event">event</a> that may or may not happen.</p>
-
-<p>For value type <code class="language-plaintext highlighter-rouge">URI</code>, this rule does not require that the destination URI exists.</p>
+<p>This rule does not require the target of an <code class="language-plaintext highlighter-rouge">ID Reference</code> to exist. This is because referencing an element that does not exist, and not having the reference at all has the same end result. A common use case for using <code class="language-plaintext highlighter-rouge">ID Reference</code> for a non-existing ID is to use a static <code class="language-plaintext highlighter-rouge">aria-errormessage</code> on an <code class="language-plaintext highlighter-rouge">input</code> element, and to only insert the element with the error message if there is an actual error. There are some cases in which ID references are required. These are tested in a separate rule.</p>
 
 <h3 id="related-rules">Related rules</h3>
 
@@ -420,45 +416,54 @@ h2#sidebar-header {
 
 <h4 id="passed-example-1">Passed Example 1</h4>
 
-<p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e970b77c1137e5fd4627f70663da4d1fcda36b23.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-required</code> property with valid true/false value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-label</code> [attribute value][] of <code class="language-plaintext highlighter-rouge">Family name</code> is allowed for the <code class="language-plaintext highlighter-rouge">string</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"textbox"</span> <span class="na">aria-required=</span><span class="s">"true"</span> <span class="na">aria-label=</span><span class="s">"A required textbox"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"textbox"</span> <span class="na">aria-label=</span><span class="s">"Family name"</span><span class="nt">&gt;&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/db10f30be20aebf661f0b81b2c0cfc698b1453eb.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-expanded</code> state with valid true/false/undefined value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-required</code> [attribute value][] of <code class="language-plaintext highlighter-rouge">true</code> is allowed for the <code class="language-plaintext highlighter-rouge">true/false</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-expanded=</span><span class="s">"undefined"</span><span class="nt">&gt;</span>A button<span class="nt">&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"textbox"</span> <span class="na">aria-required=</span><span class="s">"true"</span> <span class="na">aria-label=</span><span class="s">"Family name"</span><span class="nt">&gt;&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-3">Passed Example 3</h4>
 
-<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/96266c86acb686975024d26d020899162944728e.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-pressed</code> state with valid tristate value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-expanded</code> [attribute value][] of <code class="language-plaintext highlighter-rouge">undefined</code> is allowed for the <code class="language-plaintext highlighter-rouge">true/false/undefined</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-pressed=</span><span class="s">"mixed"</span><span class="nt">&gt;</span>An other button<span class="nt">&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-expanded=</span><span class="s">"undefined"</span><span class="nt">&gt;</span>A button<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-4">Passed Example 4</h4>
 
-<p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/38b0160bfc6c056fa0d02affbc02e49dce284467.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-errormessage</code> property with valid ID reference value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-pressed</code> [attribute value][] of <code class="language-plaintext highlighter-rouge">mixed</code> is allowed for the <code class="language-plaintext highlighter-rouge">tristate</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"textbox"</span> <span class="na">aria-errormessage=</span><span class="s">"my-error"</span> <span class="na">aria-label=</span><span class="s">"A textbox"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-pressed=</span><span class="s">"mixed"</span><span class="nt">&gt;</span>Partially pressed button<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-5">Passed Example 5</h4>
 
-<p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-owns</code> property with valid ID reference list value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-errormessage</code> [attribute value][] is an <code class="language-plaintext highlighter-rouge">ID Reference</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>. The presence of an element with a matching ID is not required by this rule.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"textbox"</span> <span class="na">aria-errormessage=</span><span class="s">"my-error"</span> <span class="na">aria-label=</span><span class="s">"A textbox"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-6">Passed Example 6</h4>
+
+<p><a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html">Open in a new tab</a></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">aria-owns</code> [attribute value][] is a valid <code class="language-plaintext highlighter-rouge">ID Reference List</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>. Both tokens reference elements that exist in the same [DOM tree][].</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Shopping list<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"list"</span> <span class="na">aria-owns=</span><span class="s">"item1 item2"</span><span class="nt">&gt;&lt;/div&gt;</span>
@@ -466,59 +471,40 @@ h2#sidebar-header {
 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"item2"</span><span class="nt">&gt;</span>Bananas<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
-<h4 id="passed-example-6">Passed Example 6</h4>
+<h4 id="passed-example-7">Passed Example 7</h4>
 
-<p><a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-rowindex</code> property with valid integer value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-rowindex</code> [attribute value][] of 2 is a valid <code class="language-plaintext highlighter-rouge">integer</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"gridcell"</span> <span class="na">aria-rowindex=</span><span class="s">"2"</span><span class="nt">&gt;</span>Fred<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
-<h4 id="passed-example-7">Passed Example 7</h4>
+<h4 id="passed-example-8">Passed Example 8</h4>
 
-<p><a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-valuemin</code>, <code class="language-plaintext highlighter-rouge">aria-valuemax</code> and <code class="language-plaintext highlighter-rouge">aria-valuenow</code> properties with valid number values</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-valuemin</code>, <code class="language-plaintext highlighter-rouge">aria-valuemax</code> and <code class="language-plaintext highlighter-rouge">aria-valuenow</code> [attribute values][attribute value] are valid for a <code class="language-plaintext highlighter-rouge">number</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"spinbutton"</span> <span class="na">aria-valuemin=</span><span class="s">"1.0"</span> <span class="na">aria-valuemax=</span><span class="s">"2.0"</span> <span class="na">aria-valuenow=</span><span class="s">"1.5"</span> <span class="na">aria-label=</span><span class="s">"Select a value"</span><span class="nt">&gt;&lt;/div&gt;</span>
 </code></pre></div></div>
 
-<h4 id="passed-example-8">Passed Example 8</h4>
-
-<p><a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html">Open in a new tab</a></p>
-
-<p><code class="language-plaintext highlighter-rouge">aria-placeholder</code> property with valid string value</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"textbox"</span> <span class="na">aria-placeholder=</span><span class="s">"MM-DD-YYYY"</span> <span class="na">aria-label=</span><span class="s">"Your birthdate"</span><span class="nt">&gt;</span>
-	MM-DD-YYYY
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
 <h4 id="passed-example-9">Passed Example 9</h4>
 
-<p><a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0496ff9d59d514f97c8739004b2b941dd7ca97bf.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-relevant</code> property with valid token list values</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-current</code> [attribute value][] of <code class="language-plaintext highlighter-rouge">page</code> is a valid <code class="language-plaintext highlighter-rouge">token</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-relevant=</span><span class="s">"text removals"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-10">Passed Example 10</h4>
 
-<p><a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-controls</code>, which is a required property for the role <code class="language-plaintext highlighter-rouge">scrollbar</code>, has <code class="language-plaintext highlighter-rouge">ID Reference list</code> that references at least one element existing in the same document tree.</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-relevant</code> [attribute value][] has a <code class="language-plaintext highlighter-rouge">text</code> and <code class="language-plaintext highlighter-rouge">removals</code> tokens. Both are valid tokens for a <code class="language-plaintext highlighter-rouge">aria-relevant</code> <code class="language-plaintext highlighter-rouge">token list</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"content1"</span><span class="nt">&gt;</span>Lorem ipsum...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span>
-	<span class="na">role=</span><span class="s">"scrollbar"</span>
-	<span class="na">aria-controls=</span><span class="s">"content1 content2"</span>
-	<span class="na">aria-orientation=</span><span class="s">"vertical"</span>
-	<span class="na">aria-valuemax=</span><span class="s">"100"</span>
-	<span class="na">aria-valuemin=</span><span class="s">"0"</span>
-	<span class="na">aria-valuenow=</span><span class="s">"25"</span>
-<span class="nt">&gt;&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-relevant=</span><span class="s">"text removals"</span><span class="nt">&gt;&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h3 id="failed">Failed</h3>
@@ -527,97 +513,63 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ce27fcdd85fbf37a953727cdc454f3e504041a31.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-required</code> property with invalid true/false value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-required</code> [attribute value][] of <code class="language-plaintext highlighter-rouge">undefined</code> is not valid for a <code class="language-plaintext highlighter-rouge">true/false</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"textbox"</span> <span class="na">aria-required=</span><span class="s">"undefined"</span> <span class="na">aria-label=</span><span class="s">"A required textbox"</span><span class="nt">&gt;&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f56c0ae73185b14d5b942e29b4567ff65518c940.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/1f586827cecc5b1b4d9f60dcaba1e77f4a90c54a.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-expanded</code> state with invalid true/false/undefined value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-expanded</code> [attribute value][] of <code class="language-plaintext highlighter-rouge">collapsed</code> is not valid for a <code class="language-plaintext highlighter-rouge">true/false/undefined</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-expanded=</span><span class="s">"mixed"</span><span class="nt">&gt;</span>A button<span class="nt">&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-expanded=</span><span class="s">"collapsed"</span><span class="nt">&gt;</span>A button<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
 <p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0959137934bd17ea8c95b86120b1c7331e4facc2.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-pressed</code> state with invalid tristate value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-pressed</code> [attribute value][] of <code class="language-plaintext highlighter-rouge">horizontal</code> is not valid for a <code class="language-plaintext highlighter-rouge">tristate</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-pressed=</span><span class="s">"horizontal"</span><span class="nt">&gt;</span>An other button<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-errormessage</code> property with invalid ID reference value, since space is not allowed in a single ID</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"textbox"</span> <span class="na">aria-errormessage=</span><span class="s">"error1 error2"</span> <span class="na">aria-label=</span><span class="s">"A textbox with an error"</span><span class="nt">&gt;&lt;/div&gt;</span>
-</code></pre></div></div>
-
-<h4 id="failed-example-5">Failed Example 5</h4>
-
-<p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html">Open in a new tab</a></p>
-
-<p><code class="language-plaintext highlighter-rouge">aria-rowindex</code> property with invalid integer value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-rowindex</code> [attribute value][] of <code class="language-plaintext highlighter-rouge">2.5</code> is not valid for an <code class="language-plaintext highlighter-rouge">integer</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a> because it is a decimal number.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"gridcell"</span> <span class="na">aria-rowindex=</span><span class="s">"2.5"</span><span class="nt">&gt;</span>Fred<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
-<h4 id="failed-example-6">Failed Example 6</h4>
+<h4 id="failed-example-5">Failed Example 5</h4>
 
-<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-valuemin</code>, <code class="language-plaintext highlighter-rouge">aria-valuemax</code> and <code class="language-plaintext highlighter-rouge">aria-valuenow</code> property with invalid number values</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-valuemin</code>, <code class="language-plaintext highlighter-rouge">aria-valuemax</code> and <code class="language-plaintext highlighter-rouge">aria-valuenow</code> [attribute values][attribute value] are <code class="language-plaintext highlighter-rouge">strings</code>. These should all be of the <code class="language-plaintext highlighter-rouge">number</code> <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">value type</a> instead.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"spinbutton"</span> <span class="na">aria-valuemin=</span><span class="s">"one"</span> <span class="na">aria-valuemax=</span><span class="s">"three"</span> <span class="na">aria-valuenow=</span><span class="s">"two"</span> <span class="na">aria-label=</span><span class="s">"Choose a value"</span><span class="nt">&gt;&lt;/div&gt;</span>
 </code></pre></div></div>
 
+<h4 id="failed-example-6">Failed Example 6</h4>
+
+<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/88ff0942922e48b686413cf12cd0fd3510a8b29f.html">Open in a new tab</a></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">aria-live</code> [attribute value][] of <code class="language-plaintext highlighter-rouge">page</code> is not a valid <code class="language-plaintext highlighter-rouge">token</code>, because <code class="language-plaintext highlighter-rouge">page</code> is not a token for <code class="language-plaintext highlighter-rouge">aria-live</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"main"</span> <span class="na">aria-live=</span><span class="s">"page"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre></div></div>
+
 <h4 id="failed-example-7">Failed Example 7</h4>
 
-<p><a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/da1afbf428a6b21dd698995bdd6b39a059e2a581.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b78f507edd1866cc5b1a7fae8b530da964b470fb.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-live</code> property with invalid token value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-relevant</code> [attribute value][] has the two tokens <code class="language-plaintext highlighter-rouge">text</code> and <code class="language-plaintext highlighter-rouge">always</code>. The <code class="language-plaintext highlighter-rouge">always</code> token is not valid for the <code class="language-plaintext highlighter-rouge">aria-relevant</code> <code class="language-plaintext highlighter-rouge">token list</code>. In order to be a valid value, all tokens must be valid.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"main"</span> <span class="na">aria-live=</span><span class="s">"nope"</span><span class="nt">&gt;&lt;/div&gt;</span>
-</code></pre></div></div>
-
-<h4 id="failed-example-8">Failed Example 8</h4>
-
-<p><a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/79d12098309e131210ba01ae2eca31ac97c13123.html">Open in a new tab</a></p>
-
-<p>Element with invalid token list value</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-relevant=</span><span class="s">"always"</span><span class="nt">&gt;&lt;/div&gt;</span>
-</code></pre></div></div>
-
-<h4 id="failed-example-9">Failed Example 9</h4>
-
-<p><a class="example-link" title="Failed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b936e8a11737c2c8650d3afc28f7d58dcf8635e7.html">Open in a new tab</a></p>
-
-<p><code class="language-plaintext highlighter-rouge">aria-expanded</code> state with invalid true/false/undefined value for custom element</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;my-button</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-expanded=</span><span class="s">"collapsed"</span><span class="nt">&gt;</span>My button<span class="nt">&lt;/my-button&gt;</span>
-</code></pre></div></div>
-
-<h4 id="failed-example-10">Failed Example 10</h4>
-
-<p><a class="example-link" title="Failed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html">Open in a new tab</a></p>
-
-<p><code class="language-plaintext highlighter-rouge">aria-controls</code>, which is a required property for the role <code class="language-plaintext highlighter-rouge">scrollbar</code>, references an element that does not exist in the same document tree.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span>
-	<span class="na">role=</span><span class="s">"scrollbar"</span>
-	<span class="na">aria-controls=</span><span class="s">"content1"</span>
-	<span class="na">aria-orientation=</span><span class="s">"vertical"</span>
-	<span class="na">aria-valuemax=</span><span class="s">"100"</span>
-	<span class="na">aria-valuemin=</span><span class="s">"0"</span>
-	<span class="na">aria-valuenow=</span><span class="s">"25"</span>
-<span class="nt">&gt;&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-relevant=</span><span class="s">"text always"</span><span class="nt">&gt;&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h3 id="inapplicable">Inapplicable</h3>
@@ -642,22 +594,20 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
-<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/d82c477ac58becfda4233237a642b8ef70eb6c5f.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0b90f166412e03fa01b460aa1c8e68f722a47434.html">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-checked</code> state with empty value</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-live</code> attribute does not have a value.</p>
 
-<p><strong>Note</strong>: The HTML validator flags an <code class="language-plaintext highlighter-rouge">aria-checked</code> attribute with an empty value as an issue. However, since WAI-ARIA 1.1, <code class="language-plaintext highlighter-rouge">aria-checked</code> has a default value of <code class="language-plaintext highlighter-rouge">undefined</code>.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"checkbox"</span> <span class="na">aria-checked</span><span class="nt">&gt;</span>Accept terms and conditions<span class="nt">&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live</span><span class="nt">&gt;</span>Remember to be awesome!<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
-<p><a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/d5d5467bced8e0eb2174ee42184258634c03421b.xml">Open in a new tab</a></p>
 
-<p><code class="language-plaintext highlighter-rouge">aria-hidden</code> state on an element that is not an <a href="#namespaced-element">HTML or SVG element</a>.</p>
+<p>The <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute is not on an <a href="#namespaced-element">HTML or SVG element</a>.</p>
 
-<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;math</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/math&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;math</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;&lt;/math&gt;</span>
 </code></pre></div></div>
 
 <h2 id="glossary">Glossary</h2>
@@ -681,18 +631,6 @@ h2#sidebar-header {
 <p><strong>Note:</strong> A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> will have one or more outcomes.</p>
 
 <p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
-
-<h3 id="wai-aria-specifications">WAI-ARIA specifications</h3>
-
-<p>The <em>WAI ARIA Specifications</em> group both the WAI ARIA W3C Recommendation and ARIA modules, namely:</p>
-
-<ul>
-  <li><a href="https://www.w3.org/TR/wai-aria-1.2/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a></li>
-  <li><a href="https://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA Graphics Module 1.0</a></li>
-  <li><a href="https://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a></li>
-</ul>
-
-<p><strong>Note:</strong> depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.</p>
 
 
 <h2 id="ruleversions">Rule Versions</h2>
@@ -719,29 +657,29 @@ h2#sidebar-header {
           <tr>
             <td>Alfa (fully automated) 0.57.2</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-6a7281"><img alt="Alfa (fully automated) Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>Alfa (semi-automated) 0.57.2</td>
             <td>Semi-automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/alfa-assisted#breakdown-6a7281"><img alt="Alfa (semi-automated) Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>Axe DevTools Pro 4.37.1</td>
             <td>Semi-automated tool</td>
-            <td> Partial
-            </td>
+            <td>
+              Consistent </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-6a7281"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>Axe-core 4.6.0</td>
             <td>Automated tool</td>
-            <td> Partial
-            </td>
+            <td>
+              Consistent </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-6a7281"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
@@ -754,30 +692,37 @@ h2#sidebar-header {
           <tr>
             <td>QualWeb 3.0.0</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-6a7281"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>SortSite 6.45</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-6a7281"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>Total Validator 17.1.0</td>
             <td>Linter</td>
-            <td> Partial
-            </td>
+            <td>
+              Consistent </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/total-validator#breakdown-6a7281"><img alt="Total Validator Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>Total Validator (+Browser) 17.1.0</td>
             <td>Automated tool</td>
+            <td>
+              Consistent </td>
+            <td><a href="/WAI/standards-guidelines/act/implementations/total-validator-browser#breakdown-6a7281"><img alt="Total Validator (+Browser) Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+          </tr>
+          <tr>
+            <td>ember-template-lint 5.5.1</td>
+            <td>Linter</td>
             <td> Partial
             </td>
-            <td><a href="/WAI/standards-guidelines/act/implementations/total-validator-browser#breakdown-6a7281"><img alt="Total Validator (+Browser) Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+            <td><a href="/WAI/standards-guidelines/act/implementations/ember-template-lint#breakdown-6a7281"><img alt="ember-template-lint Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
       </tbody>
     </table>
@@ -811,7 +756,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 6a7281</p>
-<p><strong>Date:</strong> Updated 7 February 2023</p>
+<p><strong>Date:</strong> Updated 6 April 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -853,9 +798,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1680887795075257694"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1681233943386681043"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1680887795075257694"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1681233943386681043"></script>
 <script>
   svg4everybody();
 </script><script>
