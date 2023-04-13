@@ -1,4 +1,10 @@
+/ARIA/apg/about/acknowledgements/index.html
+/ARIA/apg/about/aria-basics/index.html
+/ARIA/apg/about/change-history/index.html
+/ARIA/apg/about/coverage-and-quality/index.html
 /ARIA/apg/about/index.html
+/ARIA/apg/about/introduction/index.html
+/ARIA/apg/about/related-specifications/index.html
 /ARIA/apg/example-index/index.html
 /ARIA/apg/index.html
 /ARIA/apg/patterns/accordion/examples/accordion/index.html
@@ -424,6 +430,8 @@
 /business-case/fr.html
 /business-case/index.html
 /cognitive/index.html
+/content-assets/wai-aria-practices/about/coverage-and-quality/prop-coverage.csv
+/content-assets/wai-aria-practices/about/coverage-and-quality/role-coverage.csv
 /content-assets/wai-aria-practices/homepage.css
 /content-assets/wai-aria-practices/patterns/accordion/examples/css/accordion.css
 /content-assets/wai-aria-practices/patterns/accordion/examples/js/accordion.js
