@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1681412820399711412";
+      element.src = "/WAI/assets/scripts/main.js?1681822592578681691";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1681412820399711412">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1681822592578681691">
 
-<title> Total Validator ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1681412820399711412"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Total Validator ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1681822592578681691"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Total Validator ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -307,7 +307,7 @@ h2#sidebar-header {
      is a linter
     
       by <a href="https://www.totalvalidator.com/">Total Validator</a>.
-      The test results were last updated 7 April 2023.
+      The test results were last updated 13 April 2023.
 
     
 
@@ -327,12 +327,12 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>WCAG 2 rules</th>
-      <td>19</td>
-      <td>3</td>
+      <td>22</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>Proposed rules</th>
-      <td>15</td>
+      <td>16</td>
       <td>0</td>
     </tr>
   </tbody></table>
@@ -489,8 +489,8 @@ h2#sidebar-header {
           </a></td>
           <td>
             WCAG 2 Rule </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -513,8 +513,8 @@ h2#sidebar-header {
           </a></td>
           <td>
             WCAG 2 Rule </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -573,8 +573,8 @@ h2#sidebar-header {
           </a></td>
           <td>
             WCAG 2 Rule </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -854,6 +854,16 @@ h2#sidebar-header {
       
       
       
+      
+        <tr>
+          <td><a href="#breakdown-d0f69e">
+            Table header cell has assigned cells
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td>
+            Consistent </td>
+        </tr>
       
       
       
@@ -2730,12 +2740,17 @@ h2#sidebar-header {
 <h3 id="breakdown-24afc2">Letter spacing in style attributes is not !important</h3>
 <p>
   This rule is implemented by Total Validator using the
-  <code>P917</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  <code>W917</code>, and <code>P917</code> procedures.
+    Failed examples should be failed by <em>at least one</em> of these procedures.
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/24afc2">Letter spacing in style attributes is not !important</a>
   WCAG 2 rule. 
     It covers 13 of the 16 examples.
+    On 3 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -2781,6 +2796,7 @@ h2#sidebar-header {
     <thead>
       <tr>
         <th></th>
+        <th>W917</th>
         <th>P917</th>
       </tr>
     </thead>
@@ -2791,23 +2807,27 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/1877242970bb7a92b5c8ee7bc5c5e5ec87877890.html">Passed Example 1</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9e9382901f59c7dd476717a55bf5c5a37ed76bbc.html">Passed Example 2</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/43f8fe88b8e7365db7aa251b263b5d00c7a47ae9.html">Passed Example 3</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/787f24a573fa422e24ab72312f7306253bb83a4f.html">Passed Example 4</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
       <tr>
@@ -2815,17 +2835,20 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/f000a9c495f11a4a11a4314871b91f4173e4589a.html">Passed Example 5</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9608b535262c655f523314958f8ca3019a0968fe.html">Passed Example 6</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/6aa2034507dc16e6ae0d16f1b6f2a14d3dfadc18.html">Passed Example 7</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
       <tr>
@@ -2833,24 +2856,28 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/64b25817b3d3909ab7f4acaee061875ebac1cee3.html">Passed Example 8</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/8383685465c6a417cb86e192d1e9157bd5feee99.html">Failed Example 1</a>
         </th>
+        <td class="
+            act-false-negative">passed</td>
         <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/b5a8fe74fbbea40e8bbee407f167ae808e14ea49.html">Failed Example 2</a>
         </th>
-        <td class="
-            act-false-negative">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/d8e379c210cdb651d28985c883fea21a4529ed59.html">Failed Example 3</a>
         </th>
+        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
       </tr>
@@ -2858,6 +2885,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9788de86b8a4e7a685d356347cc4059874ae6a38.html">Failed Example 4</a>
         </th>
+        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
       </tr>
@@ -2866,11 +2894,13 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/eeca04eb6d00ab0aca01d460f0861f3328d4992d.svg">Inapplicable Example 1</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/be174e053a61ece650873a6a44f8e4be356e4193.html">Inapplicable Example 2</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
       <tr>
@@ -2878,11 +2908,13 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/88d6ea5706ed8ae188caa166879c381e64e5077a.html">Inapplicable Example 3</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/92e706402d8f8cb13d73ffb759ce35ec910d272c.html">Inapplicable Example 4</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
     </tbody>
@@ -3179,12 +3211,17 @@ h2#sidebar-header {
 <h3 id="breakdown-9e45ec">Word spacing in style attributes is not !important</h3>
 <p>
   This rule is implemented by Total Validator using the
-  <code>P917</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  <code>W917</code>, and <code>P917</code> procedures.
+    Failed examples should be failed by <em>at least one</em> of these procedures.
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/9e45ec">Word spacing in style attributes is not !important</a>
   WCAG 2 rule. 
     It covers 13 of the 16 examples.
+    On 3 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -3230,6 +3267,7 @@ h2#sidebar-header {
     <thead>
       <tr>
         <th></th>
+        <th>W917</th>
         <th>P917</th>
       </tr>
     </thead>
@@ -3240,23 +3278,27 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d32bae2609b7c0c66a1df8dbfc182fb10c16805d.html">Passed Example 1</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/45e5a588c3e8977fa0e83074d7f7c89738e8ec42.html">Passed Example 2</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c.html">Passed Example 3</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/6d5dde208ef91b6afceca022c7a2a12b99f042b7.html">Passed Example 4</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
       <tr>
@@ -3264,17 +3306,20 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2d9b8cf0906f0e05e4d487c9682db7a7e022fab0.html">Passed Example 5</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/51faee765656c7bfe86b959373e1df8679726779.html">Passed Example 6</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fa119442cf663c73bf332488f3965b427b024009.html">Passed Example 7</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
       <tr>
@@ -3282,24 +3327,28 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/edaf06132468eccf5fd90551151252a364b44b7b.html">Passed Example 8</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/31d185e51a8be241f8a75d09deae69d3937f0329.html">Failed Example 1</a>
         </th>
+        <td class="
+            act-false-negative">passed</td>
         <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/1134eadf72b2a40c03b8bbf486ebfd3bb34cf986.html">Failed Example 2</a>
         </th>
-        <td class="
-            act-false-negative">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/830c047a178145d69fb7dd3fb21abae5a84f1830.html">Failed Example 3</a>
         </th>
+        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
       </tr>
@@ -3307,6 +3356,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d9fe2bdf199d96c133830ded7907a28c4c33efcc.html">Failed Example 4</a>
         </th>
+        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
       </tr>
@@ -3315,11 +3365,13 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/cc484992ddeab663aa5e490f3fd71806c9bd8528.svg">Inapplicable Example 1</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/32f0d32619e3d22a8988256e0f3ebae3e0f801c9.html">Inapplicable Example 2</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
       <tr>
@@ -3327,11 +3379,13 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/a8f0c6682763e4ca7db824dc145a23067a3eb889.html">Inapplicable Example 3</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/92e706402d8f8cb13d73ffb759ce35ec910d272c.html">Inapplicable Example 4</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
     </tbody>
@@ -3902,12 +3956,17 @@ h2#sidebar-header {
 <h3 id="breakdown-78fd32">Line height in style attributes is not !important</h3>
 <p>
   This rule is implemented by Total Validator using the
-  <code>P917</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  <code>W917</code>, and <code>P917</code> procedures.
+    Failed examples should be failed by <em>at least one</em> of these procedures.
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/78fd32">Line height in style attributes is not !important</a>
   WCAG 2 rule. 
-    It covers 18 of the 21 examples.
+    It covers 16 of the 21 examples.
+    On 5 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -3953,6 +4012,7 @@ h2#sidebar-header {
     <thead>
       <tr>
         <th></th>
+        <th>W917</th>
         <th>P917</th>
       </tr>
     </thead>
@@ -3963,29 +4023,34 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/f6c53855436de3898c29ee685d5c1cf02be24c72.html">Passed Example 1</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/a4c9e1fbd1f25787a4906a79d5ab23c975120833.html">Passed Example 2</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/203a13b314695fc2abc6163b3ac7940ab1c4a9ed.html">Passed Example 3</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/82c89e74b17e53b55a8d56f23dddbfbe04bc163e.html">Passed Example 4</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/844c8f6a1100db804ee5b4d335098a74ff628238.html">Passed Example 5</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
       <tr>
@@ -3993,23 +4058,27 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/639b3bdba21f19efaa8fc304a8f95e6e7105e3cb.html">Passed Example 6</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0dcc810409a65f29f559c4826afbaa71bcba6ae0.html">Passed Example 7</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/a2bfcb630ad36d8f8e49fb02aa5b3d8db2aec2fc.html">Passed Example 8</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/b3ba5eaa37846b4b01ca04ae6e5f2d54c4813c1d.html">Passed Example 9</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
       <tr>
@@ -4017,36 +4086,43 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0f8063a09807c4bf8d5f7c796cbf0f2aa20e7e57.html">Passed Example 10</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/c8c447e4e9065a1f8676c78dd937486e074026f7.html">Failed Example 1</a>
         </th>
+        <td class="
+            act-false-negative">passed</td>
         <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/67159173d21bc9cf00d1bb5a7ec817696ccee05c.html">Failed Example 2</a>
         </th>
-        <td class="
-            act-false-negative">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/53e5a389ebf46db82a931674636809b95d2de74c.html">Failed Example 3</a>
         </th>
-        <td class="">failed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/38a347130bce99ee98d09fbefa18adb372f4563f.html">Failed Example 4</a>
         </th>
+        <td class="
+            act-false-negative">passed</td>
         <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/712289cbcfbee5cd51a332265f44369f568712d3.html">Failed Example 5</a>
         </th>
+        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
       </tr>
@@ -4054,6 +4130,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/bed4bc29cbcd1f681c4e0f0d7ff7e05c579fefec.html">Failed Example 6</a>
         </th>
+        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
       </tr>
@@ -4062,11 +4139,13 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/e998ec72eef90b46574b39d2657ef278b61b51eb.svg">Inapplicable Example 1</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/bc3e59c1292a265135ed7043d2cdcaa62cdfac66.html">Inapplicable Example 2</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
       <tr>
@@ -4074,17 +4153,20 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/6e034188bb709c8e0011612448b6244427bd8d4f.html">Inapplicable Example 3</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/81be0f6c00496f3c2d70071c8f73b292ba282bfc.html">Inapplicable Example 4</a>
         </th>
         <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/7f23d5ee7e2a51c9d0922493c542953680972bb6.html">Inapplicable Example 5</a>
         </th>
+        <td class="">passed</td>
         <td class="">passed</td>
       </tr>
     </tbody>
@@ -6580,6 +6662,165 @@ h2#sidebar-header {
   </table>
 </div>
 
+<h3 id="breakdown-d0f69e">Table header cell has assigned cells</h3>
+<p>
+  This rule is implemented by Total Validator using the
+  <code>W887</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/d0f69e/proposed/">Table header cell has assigned cells</a>
+   proposed rule.
+    It covers all 16 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+        
+          <ul>
+            <li>
+              1.3.1
+              Info and Relationships
+            </li>
+          </ul>
+        
+      </td>
+
+      <td>
+        
+          <ul>
+            <li>
+              1.3.1
+              Info and Relationships
+            </li>
+          </ul>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>W887</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/4d021e317ad660d19925651ead361fcaf474dc76.html">Passed Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/b04d95d8e4e0fb2ade127363a6906792698cdea7.html">Passed Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/9fbe21d1ffdb176ef89afc95cc3f4f666353ee25.html">Passed Example 3</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html">Passed Example 4</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/28e0234356523086d570a5b8f959e8cc5ea6b4a6.html">Passed Example 5</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/47a80af86b4ea6357997fa76a62cd55dcb8f2fe7.html">Passed Example 6</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/664972feaac1097f9365d73aac844c81fa927fa2.html">Failed Example 1</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/6bb6ca5dcdbd1fef063561f61de88740db24bd5d.html">Failed Example 2</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/1a0ee1b5549d2f1eebd337e85cae8487331ab723.html">Failed Example 3</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7ab8f027dde4ee91a2b45b52a61cff442ec676d8.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/b52547570de8121323bf0cc9ead85422309fa260.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/c03135d1a5242415c66ff2ae561683eaf63e48d0.html">Inapplicable Example 3</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0c9e4e7e3f2b739bb6dbd1f0b54bc691e6e3f1df.html">Inapplicable Example 4</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/86e5df7afd4815371b086d53db45901640bb4b53.html">Inapplicable Example 5</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/8177b424b0a57eecc5f80cc6a30d1073493e16b3.html">Inapplicable Example 6</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0c53e1a110f5191e74bd97da2c92c79c40d76eb2.html">Inapplicable Example 7</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <h3 id="breakdown-2ee8b8">Visible label is part of accessible name</h3>
 <p>
   This rule is implemented by Total Validator using the
@@ -6788,9 +7029,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1681412820399711412"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1681822592578681691"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1681412820399711412"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1681822592578681691"></script>
 <script>
   svg4everybody();
 </script><script>
