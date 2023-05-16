@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1683730859424495892";
+      element.src = "/WAI/assets/scripts/main.js?1684238147425358809";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1683730859424495892">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1684238147425358809">
 
-<title> Axe-core ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1683730859424495892"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Axe-core ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1684238147425358809"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Axe-core ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -306,7 +306,7 @@ h2#sidebar-header {
       version 4.6.0
      is an Automated tool
       by <a href="https://deque.com/">Deque Systems</a>.
-      The test results were last updated 6 May 2023.
+      The test results were last updated 16 May 2023.
 
     
 
@@ -331,8 +331,8 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>Proposed rules</th>
-      <td>16</td>
-      <td>9</td>
+      <td>15</td>
+      <td>10</td>
     </tr>
   </tbody></table>
 </div>
@@ -916,8 +916,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
         </tr>
       
       
@@ -4753,13 +4753,17 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
 <h3 id="breakdown-ff89c9">ARIA required context role</h3>
 <p>
   This rule is implemented by Axe-core using the
-  <code>aria-required-children</code>, and <code>aria-required-parent</code> procedures.
+  <code>aria-required-parent</code>, and <code>aria-required-children</code> procedures.
     Failed examples should be failed by <em>at least one</em> of these procedures.
   The implementation is 
     fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/ff89c9/proposed/">ARIA required context role</a>
    proposed rule.
-    It covers all 15 examples.
+    It covers 14 of the 15 examples.
+    On 1 example
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -4805,8 +4809,8 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     <thead>
       <tr>
         <th></th>
-        <th>aria-required-children</th>
         <th>aria-required-parent</th>
+        <th>aria-required-children</th>
       </tr>
     </thead>
 
@@ -4822,8 +4826,8 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/44afe364fc9417fd5663599145f670552f507ab0.html">Passed Example 2</a>
         </th>
-        <td class="">inapplicable</td>
         <td class="">passed</td>
+        <td class="">inapplicable</td>
       </tr>
       <tr>
         <th>
@@ -4857,9 +4861,9 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/cd55d1d52c286ac6b342155dde8fcfa49c82ae4a.html">Failed Example 1</a>
         </th>
+        <td class="">failed</td>
         <td class="
             act-false-negative">inapplicable</td>
-        <td class="">failed</td>
       </tr>
       <tr>
         <th>
@@ -4872,16 +4876,16 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/52508dc0ac389108301d7cbd7f931be45a45741f.html">Failed Example 3</a>
         </th>
-        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/f8e3dbe601969ab54954447e04ae384eb52d7082.html">Failed Example 4</a>
         </th>
         <td class="">failed</td>
-        <td class="">failed</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
@@ -4906,7 +4910,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/84dd1831c0682a800e6af2fe992fb3d69d4222eb.html">Inapplicable Example 4</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3457868b79bad5b8cf2320c88cd5f542f9388cda.html">Inapplicable Example 4</a>
         </th>
         <td class="">inapplicable</td>
         <td class="">inapplicable</td>
@@ -4915,8 +4919,8 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/48dc663078fb5421332814b72bd0079f90aad09a.html">Inapplicable Example 5</a>
         </th>
-        <td class="">inapplicable</td>
         <td class="">passed</td>
+        <td class="">inapplicable</td>
       </tr>
     </tbody>
   </table>
@@ -7520,11 +7524,15 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
 <p>
   This rule is implemented by Axe-core using the
   <code>scrollable-region-focusable</code> procedure.
-  The implementation is 
-    fully  consistent with the
+  The implementation is  partially 
+   consistent with the
   <a href="/WAI/standards-guidelines/act/rules/0ssw9k/proposed/">Scrollable element is keyboard accessible</a>
    proposed rule.
-    It covers all 10 examples.
+    It covers 9 of the 10 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -7633,7 +7641,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html">Inapplicable Example 6</a>
         </th>
-        <td class="">inapplicable</td>
+        <td class="act-untested">untested</td>
       </tr>
     </tbody>
   </table>
@@ -8018,7 +8026,7 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html">Inapplicable Example 5</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/20f9cd78dd0fa87ee8d40ea3ed35a1fe3ff66508.html">Inapplicable Example 5</a>
         </th>
         <td class="">inapplicable</td>
       </tr>
@@ -8595,9 +8603,9 @@ Checks with “unsupported” in its ID are disabled, which deal with issues of 
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1683730859424495892"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1684238147425358809"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1683730859424495892"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1684238147425358809"></script>
 <script>
   svg4everybody();
 </script><script>
