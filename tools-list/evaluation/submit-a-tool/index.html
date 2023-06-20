@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1686182872756421274";
+      element.src = "/WAI/assets/scripts/main.js?1687277439411549655";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1686182872756421274">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1687277439411549655">
 
 <title>[Draft] Submit a tool - Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -129,6 +129,14 @@
   main {
     display: contents;
   }
+}
+
+.external-checkbox {
+  padding: 0;
+}
+
+.external-checkbox label {
+  margin-left: 0.3em;
 }
 
 .header-sup {
@@ -1295,7 +1303,6 @@ input[type=checkbox]
 
 .submission-form .radio-field {
   display: flex;
-  align-items: center;
 }
 
 .submission-form .radio-field label {
@@ -1340,8 +1347,12 @@ input[type=checkbox]
 }
 
 .submission-form p {
-  margin: 0;
+  margin: 1em 0;
   width: 100%;
+}
+
+.submission-form > p {
+  padding: 4px;
 }
 
 .submission-form .submit-tool {
@@ -1426,42 +1437,24 @@ main > header { grid-column: 4 / span 4; }
   <h2 id="scope">What evaluation tools are included</h2>
   
   <p>
-    This list includes digital accessibility evaluation software tools in any language, free or paid. These tools will help determine if digital content meet accessibility guidelines.
+    This list includes digital accessibility evaluation software tools in any language, free or paid. These tools are specifically designed to help determine if digital content meets accessibility guidelines.
   </p>
   
-  <details id="scope-info"><summary>
-        <p>Evaluation Tools List details</p>
-      </summary>
-  <div>
-        <p>Tools that <strong>will</strong> be included on this list include:</p>
+  <p>Tools that <strong>will</strong> be included on this list include:</p>
 
-        <ul>
-          <li>
-            <p>Tools, applications or extensions that support the evaluation of digital accessibility.</p>
-          </li>
-          <li>
-            <p>Tools that simulate user experience in order to support the identification of accessibility issues.</p>
-          </li>
-        </ul>
-
-        <p>Tools that <strong>will not</strong> be included in this list are:</p>
-
-        <ul>
-          <li>
-            <p>Assistive technologies, such as screen readers, or voice assistants, that are primarily designed to support people with disabilities use the web.</p>
-          </li>
-          <li>
-            <p>Tools that primarily change content or code directly to improve accessibility.</p>
-          </li>
-          <li>
-            <p>Checklists of accessibility requirements or Success Criteria.</p>
-          </li>
-          <li>
-            <p>Recommendations, best practices, or methodologies about digital accessibility.</p>
-          </li>
-        </ul>
-      </div>
-</details>
+  <ul>
+    <li>Tools, applications or extensions that are specifically designed to support the evaluation of digital accessibility.</li>
+    <li>Tools that simulate user experience in order to support the identification of accessibility issues.</li>
+  </ul>
+    
+  <p>Tools that <strong>will not</strong> be included in this list are:</p>
+  
+  <ul>
+    <li>Assistive technologies, such as screen readers, or voice assistants, that are primarily designed to support people with disabilities use the web.</li>
+    <li>Tools that primarily change content or code directly to improve accessibility.</li>
+    <li>Checklists of accessibility requirements or Success Criteria.</li>
+    <li>Recommendations, best practices, or methodologies about digital accessibility.</li>
+  </ul>
 </div><form name="submission" method="post" action="/.netlify/functions/form-action" data-wai-form="checkbox-required-group">
     <input type="hidden" name="form_name" value="submission" />
         
@@ -1476,6 +1469,11 @@ main > header { grid-column: 4 / span 4; }
         
         <input type="hidden" name="repository" value="wai-evaluation-tools-list" />
       
+<div class="radio-field external-checkbox">
+  <input type="checkbox" id="readterms" name="readterms" required="" />
+  <label for="readterms">I have read the above and confirm that this submission meets the criteria for tools that will be included (Required)</label>
+</div>
+
 <div class="submission-form">
   <h2 id="general-information"><span>1/3</span>General information</h2>
 
@@ -1695,8 +1693,8 @@ main > header { grid-column: 4 / span 4; }
           </div>
         
           <div class="radio-field">
-            <input type="checkbox" name="automated[]" id="tool-automated-entireProduct" value="Entire product" group="automated" required="" />
-            <label for="tool-automated-entireProduct">Entire product</label>
+            <input type="checkbox" name="automated[]" id="tool-automated-entireProduct" value="Entire website / software / product" group="automated" required="" />
+            <label for="tool-automated-entireProduct">Entire website / software / product</label>
             
           </div>
         
@@ -1890,8 +1888,8 @@ main > header { grid-column: 4 / span 4; }
           </div>
         
           <div class="radio-field">
-            <input type="checkbox" name="guideline[]" id="tool-guideline-EPUB1.0" value="EPUB Accessibility 1.0" group="guideline" />
-            <label for="tool-guideline-EPUB1.0">EPUB Accessibility 1.0</label>
+            <input type="checkbox" name="guideline[]" id="tool-guideline-EPUB" value="EPUB Accessibility" group="guideline" />
+            <label for="tool-guideline-EPUB">EPUB Accessibility</label>
             
           </div>
         
@@ -2818,11 +2816,11 @@ main > header { grid-column: 4 / span 4; }
           </div>
         
           <div class="radio-field">
-            <input type="checkbox" name="type[]" id="tool-type-authoringTool" value="Authoring tool plugin" group="type" required="" />
-            <label for="tool-type-authoringTool">Authoring tool plugin</label>
+            <input type="checkbox" name="type[]" id="tool-type-authoringTool" value="CMS plugin" group="type" required="" />
+            <label for="tool-type-authoringTool">CMS plugin</label>
             
-              <abbr title="For content creation software" class="toggletip-container">
-                  <img alt="For content creation software" tabindex="0" data-toggletip-content="For content creation software" src="/content-images/wai-evaluation-tools-list/info.png" />
+              <abbr title="Content Management System plugin" class="toggletip-container">
+                  <img alt="Content Management System plugin" tabindex="0" data-toggletip-content="Content Management System plugin" src="/content-images/wai-evaluation-tools-list/info.png" />
                   <span class="toggletip-span-inline" role="status"></span>
               </abbr>
             
@@ -2922,6 +2920,21 @@ main > header { grid-column: 4 / span 4; }
         
       </div>
   </fieldset>
+
+  <h2 id="submission"><span>4/5</span>Submitting your evaluation tool</h2>
+
+  <div class="field">
+    <label for="comments" class="label-input">Comments</label>
+    <p class="expl" id="expl_comments">Let us know if you have further comments. This comment will be publicly available but not published on the evaluation tools list.</p>
+    <textarea id="comments" name="comments" aria-describedby="expl_comments"></textarea>
+  </div>
+  
+  <div class="radio-field external-checkbox">
+    <input type="checkbox" id="publish-permission" name="publish-permission" required="" />
+    <label for="publish-permission">I give permission for the information about this resource to be published in the W3C's Evaluation Tools List and archived on GitHub (Required).</label>
+  </div>
+  
+  <p>We will aim to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.</p>
 
   <div class="field">
     <button type="submit" class="submit-tool">Submit tool</button>
@@ -3196,9 +3209,9 @@ if (submitForm) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1686182872756421274"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1687277439411549655"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1686182872756421274"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1687277439411549655"></script>
 <script>
   svg4everybody();
 </script><script>
