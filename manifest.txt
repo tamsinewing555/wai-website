@@ -59,6 +59,7 @@
 /ARIA/apg/patterns/landmarks/examples/region.html
 /ARIA/apg/patterns/landmarks/examples/resources.html
 /ARIA/apg/patterns/landmarks/examples/search.html
+/ARIA/apg/patterns/landmarks/index.html
 /ARIA/apg/patterns/link/examples/link/index.html
 /ARIA/apg/patterns/link/index.html
 /ARIA/apg/patterns/listbox/examples/listbox-collapsible/index.html
@@ -2560,7 +2561,6 @@
 /fundamentals/fr.html
 /fundamentals/index.html
 /index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html

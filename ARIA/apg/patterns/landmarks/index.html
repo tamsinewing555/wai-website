@@ -17,30 +17,30 @@
   </script>
   <link rel="stylesheet" href="/WAI/assets/css/style.css?1687282414120610125">
 
-<title> Change History | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Landmarks Pattern | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
-<meta property="og:title" content="Change History" />
+<meta property="og:title" content="Landmarks Pattern" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
 <meta property="og:description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
-<link rel="canonical" href="https://www.w3.org/WAI/ARIA/apg/about/change-history/" />
-<meta property="og:url" content="https://www.w3.org/WAI/ARIA/apg/about/change-history/" />
+<link rel="canonical" href="https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/" />
+<meta property="og:url" content="https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/" />
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Change History" />
+<meta property="twitter:title" content="Landmarks Pattern" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Change History","url":"https://www.w3.org/WAI/ARIA/apg/about/change-history/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Landmarks Pattern","url":"https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-change-history ">
+  <body id="top" class="page-landmarks-pattern ">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
    <div class="minimal-header-container default-grid">
@@ -268,7 +268,24 @@ h2#sidebar-header {
     
     
     
-        
+        <nav class="box nav-hack sidebar standalone-resource__sidebar " aria-labelledby="sidebar-header">
+           <h2 id="sidebar-header" class="box-h ">Page Contents</h2>
+            
+            <div class="box-i">
+                <ul>
+                
+                
+                <li><a href="#aboutthispattern">About This Pattern</a></li>
+                
+                <li><a href="#examples">Examples</a></li>
+                
+                <li><a href="#keyboardinteraction">Keyboard Interaction</a></li>
+                
+                <li><a href="#wai-ariaroles,states,andproperties">WAI-ARIA Roles, States, and Properties</a></li>
+                
+                </ul>
+            </div>
+          </nav>
     
 
     <main id="main" lang="en" class="standalone-resource__main">
@@ -280,15 +297,15 @@ h2#sidebar-header {
                 
               </span>
               
-              Change History
+              Landmarks Pattern
             </h1>
         </header>
 
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8">
 
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<title>Change History</title>
+<title>Landmarks Pattern</title>
 
 <script src="../../../../content-assets/wai-aria-practices/shared/js/highlight.pack.js"></script>
 
@@ -296,10 +313,17 @@ h2#sidebar-header {
 
 <script src="../../../../content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-<link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/styles.css" />
+<link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/styles.css">
 
 <!-- Code highlighting styles -->
-<link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/shared/css/github.css" />
+<link rel="stylesheet" href="/WAI/content-assets/wai-aria-practices/shared/css/github.css">
+
+<script>
+const addBodyClass = undefined;
+const enableSidebar = true;
+if (addBodyClass) document.body.classList.add(addBodyClass);
+if (enableSidebar) document.body.classList.add('has-sidebar');
+</script>
 
 <script>
     const parentPage = window.location.pathname.match(
@@ -315,68 +339,69 @@ h2#sidebar-header {
 
     <div>
       
-      <p>
-          APG 1.1 supported ARIA 1.1, and this version, APG 1.2, includes changes to support version 1.2 of the ARIA specification.
-          It also includes nearly 200 significant updates to improve the quality and breadth of content.
-          A <a href="https://github.com/w3c/aria-practices/wiki/Change-Log-for-November-2021-APG-1.2-Note-Release-1">detailed log of all changes</a> is available on the wiki of the w3c/aria-practices GitHub repository.
-          Highlights of major changes to support ARIA 1.2 as well as some of the improvements include the following.
-      </p>
-      <ul>
-          <li>Added section to provide guidance related to 38 document structure roles, 18 of which are new in ARIA 1.2.</li>
-          <li>Revised guidance for roles where naming requirements changed in ARIA 1.2. ARIA 1.2 prohibits names on some roles. ARIA 1.2 removed naming requirements from some other roles.</li>
-          <li>Added naming guidance for 18 roles that are new in ARIA 1.2.</li>
-          <li>Revised the combobox pattern and 4 combobox examples to reflect the ARIA 1.2 revisions to combobox.</li>
-          <li>Added example illustrating changes in ARIA 1.2 that enable creation of custom select-only comboboxes, which are similar to HTML select elements. This replaces the Collapsible Listbox example, which is now deprecated.</li>
-          <li>Revised the listbox pattern to specify how to utilize the new ARIA 1.2 support for named groups of options and Added a new listbox example to demonstrate the named option group feature.</li>
-          <li>Revised the editor menubar example to illustrate new ARIA 1.2 support for named groups of items in a menu.</li>
-          <li>Updated the listbox and tree patterns to reflect current browser processing of aria-selected and provided guidance regarding the use of aria-checked to communicate selection.</li>
-          <li>Added section providing guidance about properties used with range widgets, such as aria-valuemin and aria-valuemax.</li>
-          <li>Added a design pattern and example implementation of the meter role, which is new in ARIA 1.2</li>
-          <li>Added two examples that demonstrate how to create rating inputs, one based on slider and one based on radio group.</li>
-          <li>Added two other slider examples: a vertical temperature slider and a media seek slider.</li>
-          <li>Added a switch design pattern and three example implementations: one made from a div element, one based on HTML button, and one that uses HTML checkbox input.</li>
-          <li>Added a button example that illustrates use of the new ARIA 1.2 IDL interface.</li>
-          <li>Added a date picker example that illustrates choosing a date with a combobox.</li>
-          <li>Added another example of a disclosure navigation menu that demonstrates how to include top-level links.</li>
-          <li>Added example of a sortable table.</li>
-          <li>Changed all example pages to include a <q>Jump to</q> menu, a button to  open the example in CodePen, and added a prominently placed warning with guidance about testing before re-using example code.</li>
-          <li>Improved support for high contrast settings and added detailed documentation of high contrast support in many examples.</li>
-          <li>Improved support for touch-based screen readers in several examples, most notably in sliders.</li>
-          <li>Due to change in ARIA 1.2, removed Math role from list of roles that have presentational children.</li>
-          <li>Developed a <a href="https://github.com/w3c/aria-practices/wiki/Code-Guide#apg-coding-standards">comprehensive set of coding standards for HTML, CSS, and Javascript</a> for the APG and updated a significant portion of content to conform with the standards.</li>
-          <li>In response to feedback, fixed many documentation errors and functional bugs in examples.</li>
-      </ul>
-      <p>Comprehensive lists of closed issues included in APG 1.2 release 1 are tracked in the following GitHub milestones.</p>
-      <ul>
-          <li>
-          <a href="https://github.com/w3c/aria-practices/milestone/2?closed=1">APG 1.2 Release 1 Milestone</a>:
-          Github issues closed in the first publication of APG 1.2 as a W3C Note in November 2021.
-          </li>
-          <li>
-          <a href="https://github.com/w3c/aria-practices/milestone/10">APG 1.2 Working Draft 3 Milestone</a>:
-          Github issues closed in the third working draft of APG 1.2 published in November 2019.
-          </li>
-          <li>
-          <a href="https://github.com/w3c/aria-practices/milestone/7">APG 1.2 Working Draft 1 milestone</a>:
-          GitHub issues closed in the first working draft of APG 1.2 published on July 17, 2018.
-          </li>
-      </ul>
+
+      <section id="about">
+        <h2 id="aboutthispattern">About This Pattern</h2>
+        <p>
+          <a class="role-reference" href="https://w3c.github.io/aria/#landmark">Landmarks</a> are a set of eight roles that identify the major sections of a page.
+          Each landmark role enables assistive technology users to perceive the start and end of a feature of the high-level page structure that is usually conveyed visually with placement, spacing, color, or borders.
+          For example, the <a class="role-reference" href="https://w3c.github.io/aria/#main">main</a> landmark designates the section that contains the main content of the page.
+          In addition to conveying structure, landmarks enable browsers and assistive technologies to facilitate efficient keyboard navigation among sections of a page.
+        </p>
+        <p>
+          Several landmark roles are implied by HTML elements.
+          For example, the HTML <code>main</code> element automatically creates a main landmark region, and the HTML <code>nav</code> element creates a navigation landmark region.
+          </p>
+        <p>
+          Since landmarks are intended to help assistive technology users perceive the high-level structure of a page, their value diminishes as their number grows.
+          For optimum value, a general rule of thumb is that a page contains seven or fewer landmark regions.
+          Another best practice is to ensure that all content is contained within an appropriate landmark region.
+          The <a href="../../practices/landmark-regions/">Landmark Regions Practice</a> describes ways of using HTML sectioning elements and ARIA landmark roles that will most benefit users.
+        </p>
+      </section>
+
+      <section id="examples" class="examples-section"><img alt="" src="/WAI/content-images/wai-aria-practices/img/landmarks.svg">
+        <h2 id="examples">Examples</h2>
+        <ul>
+          <li><a href="examples/main.html">Main Landmark Example</a></li>
+          <li><a href="examples/navigation.html">Navigation Landmark Example</a></li>
+          <li><a href="examples/search.html">Search Landmark Example</a></li>
+          <li><a href="examples/banner.html">Banner Landmark Example</a></li>
+          <li><a href="examples/contentinfo.html">Contentinfo Landmark Example</a></li>
+          <li><a href="examples/complementary.html">Complementary Landmark Example</a></li>
+          <li><a href="examples/form.html">Form Landmark Example</a></li>
+          <li><a href="examples/region.html">Region Landmark Example</a></li>
+        </ul>
+      </section>
+
+      <section id="keyboard_interaction">
+        <h2 id="keyboardinteraction">Keyboard Interaction</h2>
+        <p>Not applicable.</p>
+      </section>
+
+      <section id="roles_states_properties">
+        <h2 id="wai-ariaroles,states,andproperties">WAI-ARIA Roles, States, and Properties</h2>
+        <p>
+          The <a href="../../practices/landmark-regions/">Landmark Regions Practice</a> describes the HTML elements, roles, properties, and usage guidelines for each of the landmark region roles.
+        </p>
+      </section>
+
     </div>
   
 </div>
 <script src="/WAI/content-assets/wai-aria-practices/shared/js/skipto.js"></script>
 
-
+ 
 
       </main>
 
   </div>
 
     <div class="default-grid with-gap leftcol">
-      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Change%20History">public-aria-practices@w3.org</a> or via GitHub.</p>
+      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Landmarks%20Pattern">public-aria-practices@w3.org</a> or via GitHub.</p>
 <div class="button-group">
-    <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Change%20History&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
-    <a href="https://github.com/w3c/aria-practices/edit/main/content/about/change-history/change-history.html"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/aria-practices/issues/new" class="button"><span>New GitHub Issue</span></a>
+    <a href="mailto:public-aria-practices@w3.org?subject=[en]%20Landmarks%20Pattern&body=[put%20comment%20here...]" class="button"><span>E-mail</span></a>
+    <a href="https://github.com/w3c/aria-practices/edit/main/content/patterns/landmarks/landmarks-pattern.html"  class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/aria-practices/issues/new" class="button"><span>New GitHub Issue</span></a>
 </div></div></aside>
       </div>
     </div>
