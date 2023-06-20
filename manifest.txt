@@ -1680,9 +1680,12 @@
 /content-assets/wcag-act-rules/testcases/c5a4ea/8664da01669e891e6f0aa73cd85e71277961cc4c.html
 /content-assets/wcag-act-rules/testcases/c5a4ea/91f5189004dff8c702eefb7214486bd18868fee1.html
 /content-assets/wcag-act-rules/testcases/c5a4ea/92f8362bf7b6778410dd0a0f660918794c85df27.html
+/content-assets/wcag-act-rules/testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html
+/content-assets/wcag-act-rules/testcases/cae760/0a18c94e7b8bd8d0a54c14acbc56958918fcad2b.html
 /content-assets/wcag-act-rules/testcases/cae760/4075167ff3009336f6b8e87774a297de217a09b5.html
 /content-assets/wcag-act-rules/testcases/cae760/5090c2468b8947fdab34a7537029658f022e983b.html
 /content-assets/wcag-act-rules/testcases/cae760/555b35aa0e1cba408f86a4cc85cb5f0101627093.html
+/content-assets/wcag-act-rules/testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html
 /content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html
 /content-assets/wcag-act-rules/testcases/cae760/8d7ed640412cd827b169ef4f465faed482feaa26.html
 /content-assets/wcag-act-rules/testcases/cae760/99f10671a6d11813673cd05b0a0c82169c3ec821.html
@@ -2557,6 +2560,7 @@
 /fundamentals/fr.html
 /fundamentals/index.html
 /index.html
+/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
