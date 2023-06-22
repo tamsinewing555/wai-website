@@ -2739,6 +2739,10 @@
 /news/2023-01-25/wcag-22-cr2/index.html
 /news/2023-02-13/WCAG-21-Catalan/index.html
 /news/2023-02-20/Ukrainian-WCAG21/index.html
+/news/2023-05-17/GAAD/index.html
+/news/2023-05-17/wcag-22-cr/index.html
+/news/2023-05-25/EPUB/index.html
+/news/2023-06-06/aria-12-rec/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
@@ -2751,6 +2755,7 @@
 /news/3/index.html
 /news/30/index.html
 /news/31/index.html
+/news/32/index.html
 /news/4/index.html
 /news/5/index.html
 /news/6/index.html
