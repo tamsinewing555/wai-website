@@ -1958,6 +1958,15 @@
 /content-assets/wcag-act-rules/testcases/ffd0e9/e62fd17ec8a90b871727e871d5136fc785ca13ad.html
 /content-assets/wcag-act-rules/testcases/ffd0e9/ed1daf488ef94f266fdd2a4c6c4ed016024beb14.html
 /content-assets/wcag-act-rules/testcases/ffd0e9/f55422cabb0efc3a6491733c849306bfea1b1c9c.html
+/content-assets/wcag-act-rules/testcases/in6db8/0638090ec9e3e5bfaf95d8c38906f1bd600db7d0.html
+/content-assets/wcag-act-rules/testcases/in6db8/341bc62ae116f74ee37f215b6272043f7f7706ee.html
+/content-assets/wcag-act-rules/testcases/in6db8/46d50c448266ba7f8434e92300d4c024537c055b.html
+/content-assets/wcag-act-rules/testcases/in6db8/49adaf491d168fa320ceec321e129ad8515e16fa.html
+/content-assets/wcag-act-rules/testcases/in6db8/7cdf98178f57c1f64c1bfbe0801b7a5e2e73a89f.html
+/content-assets/wcag-act-rules/testcases/in6db8/97bd98302238b32e9131d042174502a83db2a4b2.html
+/content-assets/wcag-act-rules/testcases/in6db8/ad53952b46a372bddc3d34d82427c9ccbc6ecaa6.html
+/content-assets/wcag-act-rules/testcases/in6db8/ca835c48c5d554fbfaea6d022816e39cda25660a.html
+/content-assets/wcag-act-rules/testcases/in6db8/ee9eeebf0a0b1a514df6202443345d999d2bd575.html
 /content-assets/wcag-act-rules/testcases/m6b1q3/0edc121ac393fa9661fc1c18156e040775313779.html
 /content-assets/wcag-act-rules/testcases/m6b1q3/4eec4a33bca54e6313e0af600af41797bb7c4213.html
 /content-assets/wcag-act-rules/testcases/m6b1q3/78c41b8461997477cb7b6a9d163ba8a387ad56b8.html
@@ -2561,7 +2570,6 @@
 /fundamentals/fr.html
 /fundamentals/index.html
 /index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -3094,6 +3102,7 @@
 /standards-guidelines/act/rules/ff89c9/proposed/index.html
 /standards-guidelines/act/rules/ffbc54/proposed/index.html
 /standards-guidelines/act/rules/ffd0e9/proposed/index.html
+/standards-guidelines/act/rules/in6db8/proposed/index.html
 /standards-guidelines/act/rules/index.html
 /standards-guidelines/act/rules/m6b1q3/proposed/index.html
 /standards-guidelines/act/rules/off6ek/proposed/index.html
