@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1689043678006034309";
+      element.src = "/WAI/assets/scripts/main.js?1689358999888124557";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1689043678006034309">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1689358999888124557">
 
 <title>[Draft] Submit a tool - Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -214,7 +214,7 @@ main>header {
   margin-left: 5px;
 }
 
-#left-col legend {
+.filterLegend {
   font-size: 100%;
   display: flex;
   align-items: center;
@@ -1163,6 +1163,9 @@ input[type=checkbox]
   .toggletip-container {
      position: unset !important; 
   }
+  .toggletip-container-legend {
+     position: unset !important; 
+  }
   .toggletip-bubble {
     left: 0 !important;
     max-width: none !important;
@@ -1170,7 +1173,7 @@ input[type=checkbox]
     right: 0 !important;
     margin: 0 auto !important;
     /* overflow: hidden; */
-    margin-top: 70px !important;
+    margin-top: 30px !important;
   }
   .toggletip-bubble:before {
     left: 5px !important;
@@ -1182,6 +1185,9 @@ input[type=checkbox]
   }
   .submission-form h2 span {
     margin-left: 0rem !important;
+  }
+  .toggletip-span {
+    display: block !important;
   }
 }
 
@@ -1197,6 +1203,14 @@ input[type=checkbox]
   }
 }
 
+.filterLegend:hover {
+  cursor: pointer;
+}
+
+.toggletip-container-legend {
+  position: relative;
+  display: flex;
+}
 
 .toggletip-container {
   position: relative;
@@ -1204,6 +1218,10 @@ input[type=checkbox]
 }
 
 .toggletip-container img {
+  z-index: 2;
+}
+
+.toggletip-container-legend img {
   z-index: 2;
 }
 
@@ -3204,9 +3222,9 @@ if (submitForm) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1689043678006034309"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1689358999888124557"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1689043678006034309"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1689358999888124557"></script>
 <script>
   svg4everybody();
 </script><script>

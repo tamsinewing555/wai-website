@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1689043678006034309";
+      element.src = "/WAI/assets/scripts/main.js?1689358999888124557";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1689043678006034309">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1689358999888124557">
 
 <title>[Draft] Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -210,7 +210,7 @@ main>header {
   margin-left: 5px;
 }
 
-#left-col legend {
+.filterLegend {
   font-size: 100%;
   display: flex;
   align-items: center;
@@ -1159,6 +1159,9 @@ input[type=checkbox]
   .toggletip-container {
      position: unset !important; 
   }
+  .toggletip-container-legend {
+     position: unset !important; 
+  }
   .toggletip-bubble {
     left: 0 !important;
     max-width: none !important;
@@ -1166,7 +1169,7 @@ input[type=checkbox]
     right: 0 !important;
     margin: 0 auto !important;
     /* overflow: hidden; */
-    margin-top: 70px !important;
+    margin-top: 30px !important;
   }
   .toggletip-bubble:before {
     left: 5px !important;
@@ -1178,6 +1181,9 @@ input[type=checkbox]
   }
   .submission-form h2 span {
     margin-left: 0rem !important;
+  }
+  .toggletip-span {
+    display: block !important;
   }
 }
 
@@ -1193,6 +1199,14 @@ input[type=checkbox]
   }
 }
 
+.filterLegend:hover {
+  cursor: pointer;
+}
+
+.toggletip-container-legend {
+  position: relative;
+  display: flex;
+}
 
 .toggletip-container {
   position: relative;
@@ -1200,6 +1214,10 @@ input[type=checkbox]
 }
 
 .toggletip-container img {
+  z-index: 2;
+}
+
+.toggletip-container-legend img {
   z-index: 2;
 }
 
@@ -1446,14 +1464,15 @@ input[type=checkbox]
                 
                     <fieldset id="purpose" collapsed="false" class="default">
                 
-                <legend class="label" tabindex="0">Purpose
-                    
-                        <abbr title="Type of evaluation a tool supports" class="toggletip-container">
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Purpose</legend>
+                
+                        <abbr title="Type of evaluation a tool supports" class="toggletip-container-legend">
                             <img alt="Type of evaluation a tool supports" data-toggletip-content="Type of evaluation a tool supports" tabindex="0" src="/content-images/wai-evaluation-tools-list/info.png" />
                             <span class="toggletip-span" role="status"></span>
                         </abbr>
                     
-                </legend>
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -1484,9 +1503,10 @@ input[type=checkbox]
                 
                     <fieldset id="product" collapsed="false" class="default">
                 
-                <legend class="label" tabindex="0">Product to evaluate
-                    
-                </legend>
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Product to evaluate</legend>
+                
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -1531,14 +1551,15 @@ input[type=checkbox]
                 
                     <fieldset id="checks" collapsed="false" class="showmore custom">
                 
-                <legend class="label" tabindex="0">Accessibility checks
-                    
-                        <abbr title="Selection of common issues" class="toggletip-container">
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Accessibility checks</legend>
+                
+                        <abbr title="Selection of common issues" class="toggletip-container-legend">
                             <img alt="Selection of common issues" data-toggletip-content="Selection of common issues" tabindex="0" src="/content-images/wai-evaluation-tools-list/info.png" />
                             <span class="toggletip-span" role="status"></span>
                         </abbr>
                     
-                </legend>
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -1674,9 +1695,10 @@ input[type=checkbox]
                 
                     <fieldset id="license" collapsed="false" class="custom">
                 
-                <legend class="label" tabindex="0">Paid or free
-                    
-                </legend>
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Paid or free</legend>
+                
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -1707,14 +1729,15 @@ input[type=checkbox]
                 
                     <fieldset id="type" collapsed="false" class="custom">
                 
-                <legend class="label" tabindex="0">Type of tool
-                    
-                        <abbr title="Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and desktop application)." class="toggletip-container">
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Type of tool</legend>
+                
+                        <abbr title="Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and desktop application)." class="toggletip-container-legend">
                             <img alt="Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and desktop application)." data-toggletip-content="Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and desktop application)." tabindex="0" src="/content-images/wai-evaluation-tools-list/info.png" />
                             <span class="toggletip-span" role="status"></span>
                         </abbr>
                     
-                </legend>
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -1788,9 +1811,10 @@ input[type=checkbox]
                 
                     <fieldset id="guideline" collapsed="false" class="showmore custom">
                 
-                <legend class="label" tabindex="0">Guidelines and standards
-                    
-                </legend>
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Guidelines and standards</legend>
+                
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -1874,9 +1898,10 @@ input[type=checkbox]
                 
                     <fieldset id="technology" collapsed="false" class="default">
                 
-                <legend class="label" tabindex="0">File to evaluate
-                    
-                </legend>
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">File to evaluate</legend>
+                
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -1942,14 +1967,15 @@ input[type=checkbox]
                 
                     <fieldset id="automated" collapsed="false" class="default">
                 
-                <legend class="label" tabindex="0">Scope
-                    
-                        <abbr title="Range and depth of single evaluation" class="toggletip-container">
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Scope</legend>
+                
+                        <abbr title="Range and depth of single evaluation" class="toggletip-container-legend">
                             <img alt="Range and depth of single evaluation" data-toggletip-content="Range and depth of single evaluation" tabindex="0" src="/content-images/wai-evaluation-tools-list/info.png" />
                             <span class="toggletip-span" role="status"></span>
                         </abbr>
                     
-                </legend>
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -1994,9 +2020,10 @@ input[type=checkbox]
                 
                     <fieldset id="desktop" collapsed="true" class="default">
                 
-                <legend class="label" tabindex="0">Operating system
-                    
-                </legend>
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Operating system</legend>
+                
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -2048,9 +2075,10 @@ input[type=checkbox]
                 
                     <fieldset id="browsers" collapsed="true" class="default">
                 
-                <legend class="label" tabindex="0">Browser for plugin
-                    
-                </legend>
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Browser for plugin</legend>
+                
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -2102,14 +2130,15 @@ input[type=checkbox]
                 
                     <fieldset id="a11yloc" collapsed="false" class="default">
                 
-                <legend class="label" tabindex="0">Accessibility statement
-                    
-                        <abbr title="Vendor provided information on tool accessibility" class="toggletip-container">
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Accessibility statement</legend>
+                
+                        <abbr title="Vendor provided information on tool accessibility" class="toggletip-container-legend">
                             <img alt="Vendor provided information on tool accessibility" data-toggletip-content="Vendor provided information on tool accessibility" tabindex="0" src="/content-images/wai-evaluation-tools-list/info.png" />
                             <span class="toggletip-span" role="status"></span>
                         </abbr>
                     
-                </legend>
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -2126,14 +2155,15 @@ input[type=checkbox]
                 
                     <fieldset id="actrules" collapsed="false" class="default">
                 
-                <legend class="label" tabindex="0">ACT Implementation
-                    
-                        <abbr title="Rules for harmonized WCAG and ARIA testing" class="toggletip-container">
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">ACT Implementation</legend>
+                
+                        <abbr title="Rules for harmonized WCAG and ARIA testing" class="toggletip-container-legend">
                             <img alt="Rules for harmonized WCAG and ARIA testing" data-toggletip-content="Rules for harmonized WCAG and ARIA testing" tabindex="0" src="/content-images/wai-evaluation-tools-list/info.png" />
                             <span class="toggletip-span" role="status"></span>
                         </abbr>
                     
-                </legend>
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -2150,9 +2180,10 @@ input[type=checkbox]
                 
                     <fieldset id="assists" collapsed="true" class="default">
                 
-                <legend class="label" tabindex="0">Output
-                    
-                </legend>
+                <div class="filterLegend"> 
+                <legend class="label" tabindex="0">Output</legend>
+                
+                </div>
                     <div class="options">
                     
                     <div class="filter-options field">
@@ -26884,14 +26915,15 @@ It offers a simulation of different discromatopsia situations too.</li>
 function makeCollapsible(item){
   var label = item.querySelector('legend');
   label.classList.add("collapsible");
+  var parent = label.parentNode;
   if(item.getAttribute("collapsed") == "true"){
-    label.innerHTML += '<svg focusable="false" aria-hidden="true" class="icon-chevron-down "><use xlink:href="/WAI/assets/images/icons.svg#icon-chevron-down"></use></svg>';
+    parent.innerHTML += '<svg focusable="false" aria-hidden="true" class="icon-chevron-down "><use xlink:href="/WAI/assets/images/icons.svg#icon-chevron-down"></use></svg>';
     item.querySelector('.options').classList.add("collapsed");
   }else{
-    label.innerHTML += '<svg focusable="false" aria-hidden="true" class="icon-chevron-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-chevron-up"></use></svg>';
+    parent.innerHTML += '<svg focusable="false" aria-hidden="true" class="icon-chevron-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-chevron-up"></use></svg>';
   }
-  label.addEventListener('click', e => { toggleCollapsed(item) });
-  label.addEventListener('keyup', e => { 
+  parent.addEventListener('click', e => { toggleCollapsed(item) });
+  parent.addEventListener('keyup', e => { 
     if (e.key === "Enter") {
       e.preventDefault();
       label.click();
@@ -26937,7 +26969,7 @@ function toggleShowMore(item){
 }
 
 function toggleCollapsed(item){
-  var label = item.querySelector('legend');
+  var label = item.querySelector('legend').parentNode;
   var options = item.querySelector('.options');
   if(options.classList.contains("collapsed")){
     label.querySelector('.icon-chevron-down').remove();
@@ -27931,9 +27963,9 @@ function closeHelperOverlay(){
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1689043678006034309"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1689358999888124557"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1689043678006034309"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1689358999888124557"></script>
 <script>
   svg4everybody();
 </script><script>
