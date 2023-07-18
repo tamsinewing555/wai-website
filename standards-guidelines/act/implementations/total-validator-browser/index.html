@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1689358999888124557";
+      element.src = "/WAI/assets/scripts/main.js?1689680832638669616";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1689358999888124557">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1689680832638669616">
 
-<title> Total Validator (+Browser) ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1689358999888124557"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Total Validator (+Browser) ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1689680832638669616"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Total Validator (+Browser) ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -306,7 +306,7 @@ h2#sidebar-header {
       version 17.1.0
      is an Automated tool
       by <a href="https://www.totalvalidator.com/">Total Validator</a>.
-      The test results were last updated 16 June 2023.
+      The test results were last updated 15 July 2023.
 
     
 
@@ -331,7 +331,7 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>Proposed rules</th>
-      <td>19</td>
+      <td>20</td>
       <td>1</td>
     </tr>
   </tbody></table>
@@ -638,6 +638,16 @@ h2#sidebar-header {
       
       
       
+        <tr>
+          <td><a href="#breakdown-in6db8">
+            ARIA required ID references exist
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td>
+            Consistent </td>
+        </tr>
+      
       
       
         <tr>
@@ -864,7 +874,7 @@ h2#sidebar-header {
       
         <tr>
           <td><a href="#breakdown-0ssw9k">
-            Scrollable element is keyboard accessible
+            Scrollable element is included in the sequential focus navigation
           </a></td>
           <td> Proposed Rule
           </td>
@@ -4796,7 +4806,7 @@ h2#sidebar-header {
 <h3 id="breakdown-ff89c9">ARIA required context role</h3>
 <p>
   This rule is implemented by Total Validator (+Browser) using the
-  <code>E962</code>, and <code>E963</code> procedures.
+  <code>E963</code>, and <code>E962</code> procedures.
     Failed examples should be failed by <em>at least one</em> of these procedures.
   The implementation is 
     fully  consistent with the
@@ -4848,8 +4858,8 @@ h2#sidebar-header {
     <thead>
       <tr>
         <th></th>
-        <th>E962</th>
         <th>E963</th>
+        <th>E962</th>
       </tr>
     </thead>
 
@@ -4900,31 +4910,33 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/cd55d1d52c286ac6b342155dde8fcfa49c82ae4a.html">Failed Example 1</a>
         </th>
-        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/2fb70cb7f44a01a2d75f4ef7ca7992cf3fb4fe1d.html">Failed Example 2</a>
         </th>
         <td class="">failed</td>
-        <td class="">failed</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/52508dc0ac389108301d7cbd7f931be45a45741f.html">Failed Example 3</a>
         </th>
         <td class="">failed</td>
-        <td class="">failed</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/f8e3dbe601969ab54954447e04ae384eb52d7082.html">Failed Example 4</a>
         </th>
+        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
-        <td class="">failed</td>
       </tr>
       <tr>
         <th>
@@ -4965,10 +4977,125 @@ h2#sidebar-header {
   </table>
 </div>
 
+<h3 id="breakdown-in6db8">ARIA required ID references exist</h3>
+<p>
+  This rule is implemented by Total Validator (+Browser) using the
+  <code>E9592</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/in6db8/proposed/">ARIA required ID references exist</a>
+   proposed rule.
+    It covers all 9 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+         None 
+      </td>
+
+      <td>
+        
+          <ul>
+            <li>
+              1.3.1
+              Info and Relationships
+            </li>
+          
+            <li>
+              4.1.2
+              Name, Role, Value
+            </li>
+          </ul>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>E9592</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ad53952b46a372bddc3d34d82427c9ccbc6ecaa6.html">Passed Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/46d50c448266ba7f8434e92300d4c024537c055b.html">Passed Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/49adaf491d168fa320ceec321e129ad8515e16fa.html">Passed Example 3</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/0638090ec9e3e5bfaf95d8c38906f1bd600db7d0.html">Failed Example 1</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/7cdf98178f57c1f64c1bfbe0801b7a5e2e73a89f.html">Failed Example 2</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ee9eeebf0a0b1a514df6202443345d999d2bd575.html">Failed Example 3</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ca835c48c5d554fbfaea6d022816e39cda25660a.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/97bd98302238b32e9131d042174502a83db2a4b2.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/341bc62ae116f74ee37f215b6272043f7f7706ee.html">Inapplicable Example 3</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <h3 id="breakdown-bc4a75">ARIA required owned elements</h3>
 <p>
   This rule is implemented by Total Validator (+Browser) using the
-  <code>P963</code>, and <code>E963</code> procedures.
+  <code>E963</code>, and <code>P963</code> procedures.
     Failed examples should be failed by <em>at least one</em> of these procedures.
   The implementation is 
     fully  consistent with the
@@ -5020,8 +5147,8 @@ h2#sidebar-header {
     <thead>
       <tr>
         <th></th>
-        <th>P963</th>
         <th>E963</th>
+        <th>P963</th>
       </tr>
     </thead>
 
@@ -5073,7 +5200,8 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/dd4d60acdda2a92253d4fc09cff248e9e0e3eb74.html">Failed Example 1</a>
         </th>
         <td class="">failed</td>
-        <td class="">failed</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
@@ -5086,7 +5214,8 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/0fd4574e8dd585f4cb14c20f9966bf94f2139ea9.html">Failed Example 3</a>
         </th>
-        <td class="">failed</td>
+        <td class="
+            act-false-negative">passed</td>
         <td class="">failed</td>
       </tr>
       <tr>
@@ -5094,31 +5223,32 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/874032cb82216878366f02dd2d98e6c8047a1612.html">Failed Example 4</a>
         </th>
         <td class="">failed</td>
-        <td class="">failed</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/f656ec33b2faf9fa804c61d09102fc70e1b916d2.html">Failed Example 5</a>
         </th>
+        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
-        <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5e0e88f9ed776c89735d7db606c1381a7a1fb877.html">Failed Example 6</a>
         </th>
-        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/52c725e462af074a3559cf4bf4d4dd2386168938.html">Failed Example 7</a>
         </th>
-        <td class="">failed</td>
         <td class="
             act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
@@ -6916,13 +7046,13 @@ h2#sidebar-header {
   </table>
 </div>
 
-<h3 id="breakdown-0ssw9k">Scrollable element is keyboard accessible</h3>
+<h3 id="breakdown-0ssw9k">Scrollable element is included in the sequential focus navigation</h3>
 <p>
   This rule is implemented by Total Validator (+Browser) using the
   <code>W900</code> procedure.
   The implementation is 
     fully  consistent with the
-  <a href="/WAI/standards-guidelines/act/rules/0ssw9k/proposed/">Scrollable element is keyboard accessible</a>
+  <a href="/WAI/standards-guidelines/act/rules/0ssw9k/proposed/">Scrollable element is included in the sequential focus navigation</a>
    proposed rule.
     It covers all 10 examples.
   
@@ -7123,7 +7253,7 @@ h2#sidebar-header {
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html">Passed Example 4</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html">Passed Example 4</a>
         </th>
         <td class="">passed</td>
       </tr>
@@ -8179,9 +8309,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1689358999888124557"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1689680832638669616"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1689358999888124557"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1689680832638669616"></script>
 <script>
   svg4everybody();
 </script><script>
