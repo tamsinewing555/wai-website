@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1689880130681808136";
+      element.src = "/WAI/assets/scripts/main.js?1690209724156668477";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1689880130681808136">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1690209724156668477">
 
 <title> WCAG 3 Introduction | Web Accessibility Initiative (WAI) | W3C</title><style>#toc li {
   padding-top:0; padding-bottom:0;
@@ -153,7 +153,7 @@
       </h1></header>
     <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
 
-<p>Many aspects of W3C Accessibility Guidelines (WCAG) 3 are in an exploratory phase, and will change. The <a href="https://w3c.github.io/silver/guidelines/">WCAG 3 Editors’ Draft</a> has proposed revisions to be published in July 2023.</p>
+<p>Many aspects of W3C Accessibility Guidelines (WCAG) 3 are in an exploratory phase, and will change. We published an updated <a href="https://www.w3.org/TR/wcag-3.0/">WCAG 3 Working Draft</a> on 24 July 2023.</p>
 
 <p>WCAG 3 will have similar fundamental and specific accessibility requirements as WCAG 2. WCAG 3 will have a different structure, different conformance model, and broader scope.</p>
 
@@ -201,15 +201,15 @@
 
 <p>WCAG 3 is currently an incomplete draft. WCAG 3 is intended to develop into a W3C Standard <strong>in a few years</strong>. The current standard, Web Content Accessibility Guidelines (WCAG 2), is introduced in the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG 2 Overview</a>.</p>
 
-<p>The WCAG 3 documents explain how to make the web more accessible to people with disabilities. WCAG 3 applies to web content, apps, tools, publishing, and emerging technologies on the web.</p>
+<p>The WCAG 3 documents will explain how to make the web more accessible to people with disabilities. WCAG 3 applies to web content, apps, tools, publishing, and emerging technologies on the web.</p>
 
 <p>We will update this page regularly as work on the WCAG 3 Draft progresses.</p>
 
 <h2 id="status-exploratory-draft">Status: Exploratory Draft</h2>
 
-<p>The first draft was published in December 2021. It included a proposed structure, draft conformance model, and 5 draft example guidelines. The <a href="https://www.w3.org/TR/wcag-3.0/">published draft</a> is significantly outdated, and may be updated in July 2023 with the content from the Editors’ Draft.</p>
+<p><strong>The July 2023  <a href="https://www.w3.org/TR/wcag-3.0/">WCAG 3 Working Draft</a> better communicates that most of the content is a placeholder or exploratory. It removes the previous draft guidance to reduce confusion about whether it was ready to use.</strong></p>
 
-<p><strong>The <a href="https://w3c.github.io/silver/guidelines/">latest Editors’ Draft</a> better communicates that most of the content is a placeholder or exploratory. There are substantial open issues that are still being discussed, particularly about testing and conformance. This draft provides an updated description of a possible approach to conformance,  along with specific questions that the group is working on.</strong></p>
+<p><strong>There are substantial open issues that are still being discussed, particularly about testing and conformance. This draft provides an updated description of a possible approach to conformance,  along with specific questions that the group is working on.</strong></p>
 
 <h3 id="status-of-sections">Status of Sections</h3>
 
@@ -231,7 +231,8 @@
 
 <p>We also welcome comments on the goals and parameters in <a href="https://www.w3.org/TR/wcag-3.0-requirements/">Requirements for WCAG 3.0</a>.</p>
 
-<p>The best way to provide this feedback is by opening new <a href="https://github.com/w3c/silver/issues">GitHub issues</a>. Alternatively, e-mail public-silver@w3.org</p>
+<p>The best way to provide this feedback is by opening new <a href="https://github.com/w3c/wcag3/issues/new">GitHub issues</a>. Alternatively, e-mail public-agwg-comments@w3.org
+Please put each topic in a separate GitHub issue or e-mail.</p>
 
 <p>Additionally, we welcome comments on ways that the Accessibility Guidelines Working Group can better support your review, feedback, and inclusion in the process of creating WCAG 3. Please e-mail these to group-ag-chairs@w3.org</p>
 
@@ -274,13 +275,22 @@
   </li>
   <li><strong>Outcomes</strong>
     <ul>
-      <li>Testable statements</li>
-      <li>Similar to <strong>success criteria</strong> in WCAG 2, more granular and more focused on the desired results than the technical means for achieving them</li>
+      <li>Verifiable statements</li>
+      <li>Similar to <strong>success criteria</strong> in WCAG 2</li>
+      <li>More granular and more focused on the desired results than the technical means for achieving them<br />(More <em>granular</em> means they are more specific, instead of broad. That generally makes them simpler. It also means there will be more of WCAG 3 outcomes than WCAG 2 success criteria.)</li>
+    </ul>
+  </li>
+  <li><strong>Assertions</strong>
+    <ul>
+      <li>Formal claim of fact, attributed to a person or organization</li>
+      <li>Assertions in WCAG 3 state that an organization has completed a procedure that can improve accessibility</li>
+      <li>Example procedures include usability testing, assistive technology testing, and plain language reviews</li>
+      <li>Assertions are used when the results of the same usability would be very different between testers</li>
     </ul>
   </li>
 </ul>
 
-<p>More <em>granular</em> means they are more specific, instead of broad. That generally makes them simpler. It also means there will be more of WCAG 3 outcomes than WCAG 2 success criteria.</p>
+<!-- @@ ??? SLH needs more clarity -->
 
 <p>WCAG 3 supporting material includes:</p>
 <ul>
@@ -307,7 +317,7 @@
 
 <h3 id="model">Draft Conformance Model</h3>
 
-<p>The <em>conformance model</em> is the way to determine and communicate how well a website (or app, tool, etc.) meets WCAG. The conformance model in this draft of WCAG 3 is very different from WCAG 2. It is intended to:</p>
+<p>The <em>conformance model</em> is the way to determine and communicate how well a website (or app, tool, etc.) meets WCAG. The conformance model in this draft of WCAG 3 will be very different from WCAG 2. It is intended to:</p>
 <ul>
   <li>be more flexible for organizations (that is, owners and developers of websites, apps, tools, etc.)</li>
   <li>encourage more accessible user experiences</li>
@@ -321,11 +331,11 @@
 
 <p><img src="/WAI/content-images/wai-intro-wcag/calandara.svg" alt="" style="float: right; margin-left: 2rem; width: 20%; max-width: 111px" /></p>
 
-<p>The First Public Working Draft of WCAG 3.0 was published on 21 January 2021. We plan to publish an updated draft in July 2023, and then every 3-6 months.</p>
+<p>The First Public Working Draft of WCAG 3.0 was published on 21 January 2021. The July 2023 draft has many changes that resulted from public feedback. We plan to publish updated drafts every 3-6 months.</p>
 
 <p><strong>WCAG 3 is not expected to be a completed W3C standard for a few more years.</strong></p>
 
-<p>The Working Group will focus on refining the structure and conformance model, and will provide updated drafts for review. Once that is more stable, the Group will focus on developing the accessibility requirements (guidelines, outcomes, and support material). After WCAG 3 is more stable, we will provide material to help those wanting to transition to WCAG 3; for example, mapping between WCAG 2 and 3 requirements.</p>
+<p>The Working Group will focus on creating an initial set of guidelines and outcomes. Then will focus on refining the structure and conformance model. They will provide updated drafts for review throughout this process. Once the conformance approach is more stable, the Group will focus on refining the accessibility requirements (guidelines, outcomes, assertions, and support material). We will then provide material to help those wanting to transition to WCAG 3; for example, mapping between WCAG 2 and 3 requirements.</p>
 
 <p>WCAG 3 will not supersede WCAG 2, and WCAG 2 will not be deprecated, for at least several years after WCAG 3 is finalized.</p>
 
@@ -347,9 +357,9 @@
 
 <h3 id="who-develops-wcag-3">Who Develops WCAG 3</h3>
 
-<p>The WCAG technical documents are developed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/WAI/GL/">AG WG</a>) with the Silver Community Group. These Groups are part of the World Wide Web Consortium (<a href="http://www.w3.org">W3C</a>) Web Accessibility Initiative (<a href="https://www.w3.org/WAI/">WAI</a>). You can learn about the development process from <a href="/WAI/standards-guidelines/w3c-process/">How WAI Develops Accessibility Standards through the W3C Process: Milestones and Opportunities to Contribute</a>.</p>
+<p>The WCAG technical documents are developed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/WAI/GL/">AG WG</a>) (previously under the Silver Task Force) with the Silver Community Group. These Groups are part of the World Wide Web Consortium (<a href="http://www.w3.org">W3C</a>) Web Accessibility Initiative (<a href="https://www.w3.org/WAI/">WAI</a>). You can learn about the development process from <a href="/WAI/standards-guidelines/w3c-process/">How WAI Develops Accessibility Standards through the W3C Process: Milestones and Opportunities to Contribute</a>.</p>
 
-<p>We welcome your comments on WCAG 3 Working Drafts. The best way to provide feedback is by opening new <a href="https://github.com/w3c/silver/issues">GitHub issues</a>. Alternatively, e-mail public-silver@w3.org</p>
+<p>We welcome your comments on WCAG 3 Working Drafts. The best way to provide feedback is by opening new <a href="https://github.com/w3c/wcag3/issues">GitHub issues</a>. Alternatively, e-mail public-agwg-comments@w3.org</p>
 
 <p>Opportunities for contributing more directly to WCAG and other WAI work are introduced in <a href="/WAI/about/participating/">Participating in WAI</a>.</p>
 
@@ -370,7 +380,7 @@
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Date: </strong>Updated 20 July 2023.</p> <p><strong>Editor:</strong> <a href="http://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>. Contributors: Rachael Bradley Montgomery and Jeanne Spellman.</p> <p>Developed with input from the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>), Accessibility Guidelines Working Group (<a href="https://www.w3.org/WAI/about/groups/agwg/">AG WG</a>), Silver Task Force, and Silver Community Group.</p>
+      <p><strong>Date: </strong>Updated 24 July 2023.</p> <p><strong>Editor:</strong> <a href="http://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>. Contributors: Rachael Bradley Montgomery and Jeanne Spellman.</p> <p>Developed with input from the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>), Accessibility Guidelines Working Group (<a href="https://www.w3.org/WAI/about/groups/agwg/">AG WG</a>), Silver Task Force, and Silver Community Group.</p>
 </div>
   </footer>
   
@@ -410,9 +420,9 @@
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1689880130681808136"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1690209724156668477"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1689880130681808136"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1690209724156668477"></script>
 <script>
   svg4everybody();
 </script><script>
