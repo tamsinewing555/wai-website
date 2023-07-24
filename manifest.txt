@@ -2754,6 +2754,7 @@
 /news/2023-05-25/EPUB/index.html
 /news/2023-06-06/aria-12-rec/index.html
 /news/2023-07-20/wcag22PR/index.html
+/news/2023-07-24/wcag3/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html

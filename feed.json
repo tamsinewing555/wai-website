@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2023-07-24/wcag3/",
+            "title": "WCAG 3 Working Draft Updated July 2023",
+            "summary": null,
+            "content_text": "The updated WCAG 3 Working Draft clarifies the maturity of each section, includes new potential approaches to conformance, and lists some guidelines to be developed. Please see more about this work in an e-mail from the Working Group Chairs. To learn more and get up-to-date information, see the WCAG 3 Introduction.",
+            "content_html": "<p>The updated <a href=\"https://www.w3.org/TR/wcag-3.0/\">WCAG 3 Working Draft</a> clarifies the maturity of each section, includes new potential approaches to conformance, and lists some guidelines to be developed. Please see more about this work in an <a href=\"https://lists.w3.org/Archives/Public/public-wai-announce/2023JulSep/0001.html\">e-mail from the Working Group Chairs</a>. To learn more and get up-to-date information, see the <a href=\"https://www.w3.org/WAI/wcag3\">WCAG 3 Introduction</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-07-24/wcag3/",
+            
+            
+            
+            
+            
+            "date_published": "2023-07-24T00:00:00+00:00",
+            "date_modified": "2023-07-24T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2023-07-20/wcag22PR/",
             "title": "WCAG 2.2 final web standard expected in August 2023",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2021-06-08T00:00:00+00:00",
             "date_modified": "2021-06-08T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2021-06-01/WAI-CooP-meeting/",
-            "title": "Invitation: WAI-CooP First Open Meeting",
-            "summary": null,
-            "content_text": "You are invited to the WAI-CooP First Open Meeting, Online on 23 June 2021. We encourage participation from people interested in: digital accessibility implementation in Europe and internationally; guidance on available web accessibility training, tools, and resources; and exchanges on the European Union (EU) Web Accessibility Directive (WAD). Agenda, logistics, and registration information is in the meeting page. This meeting is free, and registration is required.",
-            "content_html": "<p>You are invited to the <a href=\"https://www.edf-feph.org/events-slug/wai-coop-first-open-meeting/\">WAI-CooP First Open Meeting, Online on 23 June 2021</a>. We encourage participation from people interested in: digital accessibility implementation in Europe and internationally; guidance on available web accessibility training, tools, and resources; and exchanges on the European Union (EU) Web Accessibility Directive (WAD). Agenda, logistics, and registration information is in the <a href=\"https://www.edf-feph.org/events-slug/wai-coop-first-open-meeting/\">meeting page</a>. This meeting is free, and registration is required.</p>",
-            "url": "https://www.w3.org/WAI/news/2021-06-01/WAI-CooP-meeting/",
-            
-            
-            
-            
-            
-            "date_published": "2021-06-01T00:00:00+00:00",
-            "date_modified": "2021-06-01T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
