@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2023-08-15/wcag2ict/",
+            "title": "For Review: Guidance on Applying WCAG 2.2 to Non-Web ICT (WCAG2ICT)",
+            "summary": null,
+            "content_text": "Guidance on Applying WCAG 2.2 to Non-Web Information and Communications Technologies (WCAG2ICT) is available as a Draft Note. This document is a first draft update to the previous WCAG2ICT Note that provided guidance on applying WCAG 2.0 to non-web documents and software. This updated draft includes guidance for WCAG 2.1 success criteria and glossary terms. We will add guidance for WCAG 2.2 success criteria in upcoming drafts. For an introduction, see the WCAG2ICT Overview.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/wcag2ict/\">Guidance on Applying WCAG 2.2 to Non-Web Information and Communications Technologies (WCAG2ICT)</a> is available as a Draft Note. This document is a first draft update to the previous WCAG2ICT Note that provided guidance on applying WCAG 2.0 to non-web documents and software. This updated draft includes guidance for WCAG 2.1 success criteria and glossary terms. We will add guidance for WCAG 2.2 success criteria in upcoming drafts. For an introduction, see the <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/\">WCAG2ICT Overview</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-08-15/wcag2ict/",
+            
+            
+            
+            
+            
+            "date_published": "2023-08-15T00:00:00+00:00",
+            "date_modified": "2023-08-15T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2023-07-24/wcag3/",
             "title": "WCAG 3 Working Draft Updated July 2023",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2021-09-28T00:00:00+00:00",
             "date_modified": "2021-09-28T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2021-06-08/wcag3/",
-            "title": "Updates In-Progress: WCAG 3.0 Working Draft",
-            "summary": null,
-            "content_text": "Some updates are available to W3C Accessibility Guidelines (WCAG) 3.0 Working Draft. For an introduction, links, and latest status, see the WCAG 3 Introduction. For specific infomation on these updates, see e-mail Updates In-Progress: WCAG 3.0 Working Draft.",
-            "content_html": "<p>Some updates are available to W3C Accessibility Guidelines (WCAG) 3.0 Working Draft. For an introduction, links, and latest status, see the <a href=\"https://www.w3.org/WAI/wcag3\">WCAG 3 Introduction</a>. For specific infomation on these updates, see e-mail <a href=\"https://lists.w3.org/Archives/Public/public-wai-announce/2021AprJun/0010.html\">Updates In-Progress: WCAG 3.0 Working Draft</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2021-06-08/wcag3/",
-            
-            
-            
-            
-            
-            "date_published": "2021-06-08T00:00:00+00:00",
-            "date_modified": "2021-06-08T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
