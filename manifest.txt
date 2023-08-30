@@ -2765,6 +2765,7 @@
 /news/2023-07-24/wcag3/index.html
 /news/2023-08-15/wcag2ict/index.html
 /news/2023-08-30/WCAG22-Aug-update/index.html
+/news/2023-08-30/ai-symposium/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
