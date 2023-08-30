@@ -216,8 +216,16 @@
 /about/projects/wai-coop/paper106.html
 /about/projects/wai-coop/paper107.html
 /about/projects/wai-coop/symposium1/index.html
+/about/projects/wai-coop/symposium1_transcript.html
+/about/projects/wai-coop/symposium2-captions/accessible_communication.vtt
+/about/projects/wai-coop/symposium2-captions/computer_vision.vtt
+/about/projects/wai-coop/symposium2-captions/do_no_harm.vtt
+/about/projects/wai-coop/symposium2-captions/machine_learning.vtt
+/about/projects/wai-coop/symposium2-captions/media_accessibility.vtt
+/about/projects/wai-coop/symposium2-captions/where_next.vtt
 /about/projects/wai-coop/symposium2/index.html
-/about/projects/wai-coop/transcript1.html
+/about/projects/wai-coop/symposium2_day1_transcript.html
+/about/projects/wai-coop/symposium2_day2_transcript.html
 /about/projects/wai-core-2015/index.html
 /about/projects/wai-core-ford/index.html
 /about/projects/wai-guide/index.html
@@ -2571,7 +2579,6 @@
 /fundamentals/fr.html
 /fundamentals/index.html
 /index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
@@ -2959,6 +2966,9 @@
 /policies/united-states/index.html
 /pronunciation/index.html
 /redirects.json
+/research/ai2023/index.html
+/research/index.html
+/research/user-requirements/index.html
 /resources/index.html
 /robots.txt
 /roles/designers/index.html
