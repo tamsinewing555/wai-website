@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1693505013141146206";
+      element.src = "/WAI/assets/scripts/main.js?1693929691275925372";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693505013141146206">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693929691275925372">
 
-<title> Text has minimum contrast[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693505013141146206"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Text has minimum contrast[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693929691275925372"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Text has minimum contrast" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -295,6 +295,8 @@ h2#sidebar-header {
                 
                 <li><a href="#implementations">Implementations</a></li>
                 
+                <li><a href="#usefullinks">Useful Links</a></li>
+                
                 </ul>
             </div>
           </nav>
@@ -377,8 +379,6 @@ h2#sidebar-header {
 
 <p>Passing this rule does not mean that the text has sufficient color contrast. If all background pixels have a low contrast with all foreground pixels, the success criterion is guaranteed to not be satisfied. When some pixels have sufficient contrast, and others do not, legibility should be considered. There is no clear method for determining legibility when some but not all pixels have sufficient contrast, which is why passing this rule does not necessarily mean the corresponding success criterion is met.</p>
 
-<p>This rule is designed specifically for <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" title="WCAG 2.1, Success criterion 1.4.3 Contrast (Minimum)">1.4.3 Contrast (Minimum)</a>, which has the expected contrast ratio of 4.5:1 (or 3:1 for large text). Because text that fails a contrast ratio of 4.5:1 also fails a contrast ratio of 7:1, this rule maps to <a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced" title="WCAG 2.1, Success criterion 1.4.6 Contrast (Enhanced)">1.4.6 Contrast (Enhanced)</a> as well. In order to adequately test the <a href="#expectation">expectation</a>, some of the passed examples do not satisfy <a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced" title="WCAG 2.1, Success criterion 1.4.6 Contrast (Enhanced)">1.4.6 Contrast (Enhanced)</a>.</p>
-
 <p>When the text color or background color is not specified in the web page, colors from other <a href="https://www.w3.org/TR/css3-cascade/#cascading-origins" title="CSS 3, origin">origins</a> will be used. Testers must ensure colors are not affected by styles from a <a href="https://www.w3.org/TR/css3-cascade/#cascade-origin-user" title="CSS 3, user origin">user origin</a>, such as a custom style sheet. Contrast issues caused by specifying the text color but not the background or vice versa, must be tested separately from this rule.</p>
 
 <h3 id="bibliography">Bibliography</h3>
@@ -407,18 +407,18 @@ h2#sidebar-header {
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>1.4.6 Contrast (Enhanced) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced">Learn more about 1.4.6 Contrast (Enhanced)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
+</ul>
+
+<h3 id="secondary-requirements">Secondary Requirements</h3>
+
+<p>This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+<a href="https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements">secondary requirements</a>
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced">1.4.6 Contrast (Enhanced) (Level AAA)</a>: This success criterion is <strong>more strict</strong> than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion.</li>
 </ul>
 
 <h2 id="input-aspects">Input Aspects</h2>
@@ -1019,12 +1019,18 @@ h2#sidebar-header {
 
 <h2 id="ruleversions">Rule Versions</h2>
 
-<p>This is the first version of this ACT rule.</p>
-
-
-
+<ol>
+  <li>
+       
+        Proposed version, 30 August 2023
+      (<a target="_blank" href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2FWAI%2Fstandards-guidelines%2Fact%2Frules%2Fafw4f7%2F&amp;doc2=https%3A%2F%2Fwww.w3.org%2FWAI%2Fstandards-guidelines%2Fact%2Frules%2Fafw4f7%2Fproposed%2F">compare</a>)
+  </li>
+  <li>
+      <a href="/WAI/standards-guidelines/act/rules/afw4f7/">
+        Latest version, 30 August 2023</a>
+  </li>
+</ol>
 <h2 id="implementations">Implementations</h2>
-
   <p>This section is not part of the official rule. It is populated dynamically and 
     not accounted for in the change history or the last modified date.</p>
   <div class="scroll-wrap">
@@ -1083,9 +1089,18 @@ h2#sidebar-header {
       </tbody>
     </table>
   </div>
-
-
-
+<h2 id="usefullinks">Useful Links</h2>
+<ul>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+is%3Aopen+afw4f7+">
+    Github issues related to this rule
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues/new?title=%20[afw4f7]">
+    Open a new issue
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/text-contrast-afw4f7.md">
+    Propose a change to the rule
+  </a></li>
+</ul>
  
 
       </main>
@@ -1112,7 +1127,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> afw4f7</p>
-<p><strong>Date:</strong> Updated 25 July 2023</p>
+<p><strong>Date:</strong> Updated 30 August 2023</p>
 <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1154,9 +1169,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1693929691275925372"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1693929691275925372"></script>
 <script>
   svg4everybody();
 </script><script>

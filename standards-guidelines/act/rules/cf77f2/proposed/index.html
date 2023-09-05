@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1693505013141146206";
+      element.src = "/WAI/assets/scripts/main.js?1693929691275925372";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693505013141146206">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693929691275925372">
 
-<title> Bypass Blocks of Repeated Content[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693505013141146206"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Bypass Blocks of Repeated Content[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693929691275925372"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Bypass Blocks of Repeated Content" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -295,6 +295,8 @@ h2#sidebar-header {
                 
                 <li><a href="#implementations">Implementations</a></li>
                 
+                <li><a href="#usefullinks">Useful Links</a></li>
+                
                 </ul>
             </div>
           </nav>
@@ -484,6 +486,75 @@ h2#sidebar-header {
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
+
+<details class="act-inline-assets">
+  <summary><span>These HTML and Javascript files are used in several examples:</span></summary>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/chapter2.html"><code class="language-plaintext highlighter-rouge">/test-assets/bypass-blocks-cf77f2/chapter2.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;title&gt;</span>The Three Kingdoms, Chapter 2<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"chapters-navigation"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;h1&gt;</span>Content<span class="nt">&lt;/h1&gt;</span>
+			<span class="nt">&lt;ol&gt;</span>
+				<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/bypass-blocks-cf77f2/chapter1.html"</span><span class="nt">&gt;</span>Chapter 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+				<span class="nt">&lt;li&gt;&lt;a&gt;</span>Chapter 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+			<span class="nt">&lt;/ol&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span>
+
+		<span class="nt">&lt;aside</span> <span class="na">id=</span><span class="s">"bio-translator"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;h1&gt;</span>About the translator<span class="nt">&lt;/h1&gt;</span>
+			<span class="nt">&lt;p&gt;</span>Yu Sumei is a professor of English at East China Normal University.<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/aside&gt;</span>
+		<span class="nt">&lt;aside</span> <span class="na">id=</span><span class="s">"about-book"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;h1&gt;</span>About the book<span class="nt">&lt;/h1&gt;</span>
+			<span class="nt">&lt;p&gt;</span>The Romance of the Three Kingdoms is a 14th century historical novel.<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/aside&gt;</span>
+
+		<span class="nt">&lt;main&gt;</span>
+			<span class="nt">&lt;h1&gt;</span>Zhang Fei Trashes the Inspector in Wrath<span class="nt">&lt;/h1&gt;</span>
+			<span class="nt">&lt;p&gt;</span>
+				Now this Dong Zhuo, also known as Dong Zhong-ying, was from Lintao in northwest China.
+			<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/main&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/toggle-display.js"><code class="language-plaintext highlighter-rouge">/test-assets/bypass-blocks-cf77f2/toggle-display.js</code></a>:</p>
+
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">toggleHidden</span><span class="p">(...</span><span class="nx">ids</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">ids</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">id</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="kd">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+		<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span> <span class="p">?</span> <span class="dl">''</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span>
+	<span class="p">})</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">hide</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+	<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">show</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+	<span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">''</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">toggleVisibility</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+	<span class="nx">element</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="nx">element</span><span class="p">.</span><span class="nx">className</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">off-screen</span><span class="dl">'</span> <span class="p">?</span> <span class="dl">''</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">off-screen</span><span class="dl">'</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">toggleAriaHidden</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+	<span class="nx">element</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-hidden</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-hidden</span><span class="dl">'</span><span class="p">)</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">true</span><span class="dl">'</span><span class="p">).</span><span class="nx">toString</span><span class="p">())</span>
+<span class="p">}</span>
+</code></pre></div>  </div>
+
+</details>
 
 <h3 id="passed">Passed</h3>
 
@@ -1114,11 +1185,7 @@ h2#sidebar-header {
 <h2 id="ruleversions">Rule Versions</h2>
 
 <p>This is the first version of this ACT rule.</p>
-
-
-
 <h2 id="implementations">Implementations</h2>
-
   <p>This section is not part of the official rule. It is populated dynamically and 
     not accounted for in the change history or the last modified date.</p>
   <div class="scroll-wrap">
@@ -1156,9 +1223,18 @@ h2#sidebar-header {
       </tbody>
     </table>
   </div>
-
-
-
+<h2 id="usefullinks">Useful Links</h2>
+<ul>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+is%3Aopen+cf77f2+">
+    Github issues related to this rule
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues/new?title=%20[cf77f2]">
+    Open a new issue
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/bypass-blocks-cf77f2.md">
+    Propose a change to the rule
+  </a></li>
+</ul>
  
 
       </main>
@@ -1185,7 +1261,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> cf77f2</p>
-<p><strong>Date:</strong> Updated 16 January 2023</p>
+<p><strong>Date:</strong> Updated 30 August 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
@@ -1229,9 +1305,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1693929691275925372"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1693929691275925372"></script>
 <script>
   svg4everybody();
 </script><script>

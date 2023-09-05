@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1693505013141146206";
+      element.src = "/WAI/assets/scripts/main.js?1693929691275925372";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693505013141146206">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693929691275925372">
 
-<title> ARIA state or property is permitted[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693505013141146206"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> ARIA state or property is permitted[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693929691275925372"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="ARIA state or property is permitted" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -297,6 +297,8 @@ h2#sidebar-header {
                 
                 <li><a href="#implementations">Implementations</a></li>
                 
+                <li><a href="#usefullinks">Useful Links</a></li>
+                
                 </ul>
             </div>
           </nav>
@@ -361,7 +363,7 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
-<p>The presence of prohibited ARIA attributes is often the result of a developer using an incorrect role, or a misunderstanding of the attribute. These attributes are ignored by browsers and other assistive technologies. This often means that a state or property which should exist is missing. This can cause issues under <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">success criterion 1.3.1 Info and Relationships</a> or <a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2 Name, Rule Value</a>.</p>
+<p>The presence of prohibited ARIA attributes is often the result of a developer using an incorrect role, or a misunderstanding of the attribute. These attributes are ignored by browsers and other assistive technologies. This often means that a state or property which should exist is missing.</p>
 
 <p>In HTML, there are language features that do not have corresponding implicit WAI-ARIA semantics. As per <a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a>, those elements can have <a href="https://www.w3.org/TR/wai-aria-1.2/#global_states" title="Definition of Global ARIA States and Properties">global states or properties</a>. Some of those elements can also have <a href="https://www.w3.org/TR/wai-aria-1.2/#inheritedattributes" title="Definition of Inherited ARIA States and Properties">inherited</a>, <a href="https://www.w3.org/TR/wai-aria-1.2/#supportedState" title="Definition of Supported ARIA States and Properties">supported</a>, or <a href="https://www.w3.org/TR/wai-aria-1.2/#requiredState" title="Definition of Required ARIA States and Properties">required</a> <a href="https://www.w3.org/TR/wai-aria-1.2/#dfn-state" title="Definition of ARIA State">states</a> or <a href="https://www.w3.org/TR/wai-aria-1.2/#dfn-property" title="Definition of ARIA Property">properties</a> that correspond to a <a href="https://www.w3.org/TR/wai-aria-1.2/#introroles">WAI-ARIA role</a>. For example, the <code class="language-plaintext highlighter-rouge">audio</code> element has no corresponding ARIA semantics but it can have <a href="https://www.w3.org/TR/wai-aria-1.2/#inheritedattributes" title="Definition of Inherited ARIA States and Properties">inherited</a>, <a href="https://www.w3.org/TR/wai-aria-1.2/#supportedState" title="Definition of Supported ARIA States and Properties">supported</a>, or <a href="https://www.w3.org/TR/wai-aria-1.2/#requiredState" title="Definition of Required ARIA States and Properties">required</a> <a href="https://www.w3.org/TR/wai-aria-1.2/#dfn-state" title="Definition of ARIA State">states</a> or <a href="https://www.w3.org/TR/wai-aria-1.2/#dfn-property" title="Definition of ARIA Property">properties</a> of the <a href="https://www.w3.org/TR/wai-aria-1.2/#application"><code class="language-plaintext highlighter-rouge">application</code> role</a>.</p>
 
@@ -400,30 +402,19 @@ h2#sidebar-header {
     </ul>
   </details></li>
   <li>This rule is <strong>not required</strong> for conformance to WCAG 2.1 at any level.</li>
-  <li><details>
-    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
+</ul>
+
+<h3 id="secondary-requirements">Secondary Requirements</h3>
+
+<p>This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+<a href="https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements">secondary requirements</a>
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 Info and Relationships (Level A)</a>: This success criterion is <strong>less strict</strong> than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion.</li>
+  <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2 Name, Role, Value (Level A)</a>: This success criterion is <strong>less strict</strong> than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion.</li>
 </ul>
 
 <h2 id="input-aspects">Input Aspects</h2>
@@ -727,11 +718,7 @@ h2#sidebar-header {
 <h2 id="ruleversions">Rule Versions</h2>
 
 <p>This is the first version of this ACT rule.</p>
-
-
-
 <h2 id="implementations">Implementations</h2>
-
   <p>This section is not part of the official rule. It is populated dynamically and 
     not accounted for in the change history or the last modified date.</p>
   <div class="scroll-wrap">
@@ -818,9 +805,18 @@ h2#sidebar-header {
       </tbody>
     </table>
   </div>
-
-
-
+<h2 id="usefullinks">Useful Links</h2>
+<ul>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+is%3Aopen+5c01ea+">
+    Github issues related to this rule
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues/new?title=%20[5c01ea]">
+    Open a new issue
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/aria-state-or-property-permitted-5c01ea.md">
+    Propose a change to the rule
+  </a></li>
+</ul>
  
 
       </main>
@@ -847,7 +843,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 5c01ea</p>
-<p><strong>Date:</strong> Updated 28 February 2023</p>
+<p><strong>Date:</strong> Updated 30 August 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
@@ -891,9 +887,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1693929691275925372"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1693929691275925372"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1693505013141146206";
+      element.src = "/WAI/assets/scripts/main.js?1693929691275925372";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693505013141146206">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693929691275925372">
 
-<title> Zoomed text node is not clipped with CSS overflow[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693505013141146206"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Zoomed text node is not clipped with CSS overflow[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693929691275925372"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Zoomed text node is not clipped with CSS overflow" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -297,6 +297,8 @@ h2#sidebar-header {
                 
                 <li><a href="#implementations">Implementations</a></li>
                 
+                <li><a href="#usefullinks">Useful Links</a></li>
+                
                 </ul>
             </div>
           </nav>
@@ -417,6 +419,164 @@ h2#sidebar-header {
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
+
+<details class="act-inline-assets">
+  <summary><span>This HTML file is used in several examples:</span></summary>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/59br37/poem.html"><code class="language-plaintext highlighter-rouge">/test-assets/59br37/poem.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;h1&gt;</span>The Raven<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;p&gt;</span>By Edgar Allan Poe<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		Once upon a midnight dreary, while I pondered, weak and weary,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Over many a quaint and curious volume of forgotten lore—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		While I nodded, nearly napping, suddenly there came a tapping,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		As of some one gently rapping, rapping at my chamber door.<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		“’Tis some visitor,” I muttered, “tapping at my chamber door—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Only this and nothing more.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		Ah, distinctly I remember it was in the bleak December;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		And each separate dying ember wrought its ghost upon the floor.<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Eagerly I wished the morrow;—vainly I had sought to borrow<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		From my books surcease of sorrow—sorrow for the lost Lenore—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		For the rare and radiant maiden whom the angels name Lenore—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Nameless here for evermore.
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		And the silken, sad, uncertain rustling of each purple curtain<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Thrilled me—filled me with fantastic terrors never felt before;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		So that now, to still the beating of my heart, I stood repeating<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		“’Tis some visitor entreating entrance at my chamber door—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Some late visitor entreating entrance at my chamber door;—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		This it is and nothing more.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		Presently my soul grew stronger; hesitating then no longer,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		“Sir,” said I, “or Madam, truly your forgiveness I implore;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		But the fact is I was napping, and so gently you came rapping,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		And so faintly you came tapping, tapping at my chamber door,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		That I scarce was sure I heard you”—here I opened wide the door;—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Darkness there and nothing more.
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		Deep into that darkness peering, long I stood there wondering, fearing,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Doubting, dreaming dreams no mortal ever dared to dream before;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		But the silence was unbroken, and the stillness gave no token,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		And the only word there spoken was the whispered word, “Lenore?”<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		This I whispered, and an echo murmured back the word, “Lenore!”—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Merely this and nothing more.
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		Back into the chamber turning, all my soul within me burning,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Soon again I heard a tapping somewhat louder than before.<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		“Surely,” said I, “surely that is something at my window lattice;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Let me see, then, what thereat is, and this mystery explore—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Let my heart be still a moment and this mystery explore;—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		’Tis the wind and nothing more!”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		Open here I flung the shutter, when, with many a flirt and flutter,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		In there stepped a stately Raven of the saintly days of yore;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Not the least obeisance made he; not a minute stopped or stayed he;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		But, with mien of lord or lady, perched above my chamber door—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Perched upon a bust of Pallas just above my chamber door—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Perched, and sat, and nothing more.
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		Then this ebony bird beguiling my sad fancy into smiling,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		By the grave and stern decorum of the countenance it wore,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		“Though thy crest be shorn and shaven, thou,” I said, “art sure no craven,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Ghastly grim and ancient Raven wandering from the Nightly shore—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Tell me what thy lordly name is on the Night’s Plutonian shore!”<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Quoth the Raven “Nevermore.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		Much I marvelled this ungainly fowl to hear discourse so plainly,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Though its answer little meaning—little relevancy bore;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		For we cannot help agreeing that no living human being<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Ever yet was blessed with seeing bird above his chamber door—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Bird or beast upon the sculptured bust above his chamber door,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		With such name as “Nevermore.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		But the Raven, sitting lonely on the placid bust, spoke only<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		That one word, as if his soul in that one word he did outpour.<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Nothing farther then he uttered—not a feather then he fluttered—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Till I scarcely more than muttered “Other friends have flown before—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		On the morrow he will leave me, as my Hopes have flown before.”<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Then the bird said “Nevermore.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		Startled at the stillness broken by reply so aptly spoken,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		“Doubtless,” said I, “what it utters is its only stock and store<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Caught from some unhappy master whom unmerciful Disaster<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Followed fast and followed faster till his songs one burden bore—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Till the dirges of his Hope that melancholy burden bore<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Of ‘Never—nevermore’.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		But the Raven still beguiling all my fancy into smiling,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Straight I wheeled a cushioned seat in front of bird, and bust and door;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Then, upon the velvet sinking, I betook myself to linking<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Fancy unto fancy, thinking what this ominous bird of yore—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		What this grim, ungainly, ghastly, gaunt, and ominous bird of yore<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Meant in croaking “Nevermore.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		This I sat engaged in guessing, but no syllable expressing<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		To the fowl whose fiery eyes now burned into my bosom’s core;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		This and more I sat divining, with my head at ease reclining<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		On the cushion’s velvet lining that the lamp-light gloated o’er,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		But whose velvet-violet lining with the lamp-light gloating o’er,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		She shall press, ah, nevermore!
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		Then, methought, the air grew denser, perfumed from an unseen censer<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Swung by Seraphim whose foot-falls tinkled on the tufted floor.<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		“Wretch,” I cried, “thy God hath lent thee—by these angels he hath sent thee<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Respite—respite and nepenthe from thy memories of Lenore;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Quoth the Raven “Nevermore.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		“Prophet!” said I, “thing of evil!—prophet still, if bird or devil!—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Whether Tempter sent, or whether tempest tossed thee here ashore,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Desolate yet all undaunted, on this desert land enchanted—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		On this home by Horror haunted—tell me truly, I implore—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Is there—is there balm in Gilead?—tell me—tell me, I implore!”<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Quoth the Raven “Nevermore.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		“Prophet!” said I, “thing of evil!—prophet still, if bird or devil!<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		By that Heaven that bends above us—by that God we both adore—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Tell this soul with sorrow laden if, within the distant Aidenn,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		It shall clasp a sainted maiden whom the angels name Lenore—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Clasp a rare and radiant maiden whom the angels name Lenore.”<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Quoth the Raven “Nevermore.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		“Be that word our sign of parting, bird or fiend!” I shrieked, upstarting—<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		“Get thee back into the tempest and the Night’s Plutonian shore!<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Leave no black plume as a token of that lie thy soul hath spoken!<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Leave my loneliness unbroken!—quit the bust above my door!<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Take thy beak from out my heart, and take thy form from off my door!”<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Quoth the Raven “Nevermore.”
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;p&gt;</span>
+		And the Raven, never flitting, still is sitting, still is sitting<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		On the pallid bust of Pallas just above my chamber door;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		And his eyes have all the seeming of a demon’s that is dreaming,<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		And the lamp-light o’er him streaming throws his shadow on the floor;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		And my soul from out that shadow that lies floating on the floor<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+		Shall be lifted—nevermore!
+	<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+</details>
 
 <h3 id="passed">Passed</h3>
 
@@ -707,11 +867,7 @@ h2#sidebar-header {
 <h2 id="ruleversions">Rule Versions</h2>
 
 <p>This is the first version of this ACT rule.</p>
-
-
-
 <h2 id="implementations">Implementations</h2>
-
   <p>This section is not part of the official rule. It is populated dynamically and 
     not accounted for in the change history or the last modified date.</p>
   <div class="scroll-wrap">
@@ -735,9 +891,18 @@ h2#sidebar-header {
       </tbody>
     </table>
   </div>
-
-
-
+<h2 id="usefullinks">Useful Links</h2>
+<ul>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+is%3Aopen+59br37+">
+    Github issues related to this rule
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues/new?title=%20[59br37]">
+    Open a new issue
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/zoom-text-no-overflow-clipping-59br37.md">
+    Propose a change to the rule
+  </a></li>
+</ul>
  
 
       </main>
@@ -764,7 +929,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 59br37</p>
-<p><strong>Date:</strong> Updated 11 July 2022</p>
+<p><strong>Date:</strong> Updated 30 August 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
@@ -808,9 +973,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1693929691275925372"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1693929691275925372"></script>
 <script>
   svg4everybody();
 </script><script>

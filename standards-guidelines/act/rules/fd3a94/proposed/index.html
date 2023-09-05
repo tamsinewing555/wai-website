@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1693505013141146206";
+      element.src = "/WAI/assets/scripts/main.js?1693929691275925372";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693505013141146206">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693929691275925372">
 
-<title> Links with identical accessible names and same context serve equivalent purpose[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693505013141146206"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Links with identical accessible names and same context serve equivalent purpose[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693929691275925372"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Links with identical accessible names and same context serve equivalent purpose" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -295,6 +295,8 @@ h2#sidebar-header {
                 
                 <li><a href="#implementations">Implementations</a></li>
                 
+                <li><a href="#usefullinks">Useful Links</a></li>
+                
                 </ul>
             </div>
           </nav>
@@ -370,8 +372,6 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
-<p>This rule is designed specifically for <a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">2.4.4 Link Purpose (In Context)</a>, which requires the purpose to be clear within the context of a link. Because links that do not have this, also are not clear without that context, this rule maps to <a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only" title="Success Criterion 2.4.9: Link Purpose (Link Only)">2.4.9 Link Purpose (Link only)</a> as well. In order to adequately test the <a href="#expectation">expectation</a>, some of the passed examples do not satisfy <a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only" title="Success Criterion 2.4.9: Link Purpose (Link Only)">2.4.9 Link Purpose (Link only)</a>.</p>
-
 <p>There is a difference between two contexts being the <em>same</em> and being <em>identical</em>. This rule specifically targets links within the <em>same</em> context. The same context means exactly the same set of DOM nodes. Identical (but not the same) contexts might have a different set of DOM nodes, but those DOM nodes have equivalent content - such as text content, attribute values, and so on. This difference is similar to the difference in some programming languages between pointer equivalence and deep object equivalence. Links with identical name that are in identical (but not the same) contexts also fail <a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">2.4.4 Link Purpose (In Context)</a>. However, defining “identical context” unambiguously has been deemed infeasible at this time, and so has been left out of this rule.</p>
 
 <h3 id="bibliography">Bibliography</h3>
@@ -396,18 +396,18 @@ h2#sidebar-header {
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>2.4.9 Link Purpose (Link Only) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
+</ul>
+
+<h3 id="secondary-requirements">Secondary Requirements</h3>
+
+<p>This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+<a href="https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements">secondary requirements</a>
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">2.4.9 Link Purpose (Link Only) (Level AAA)</a>: This success criterion is <strong>more strict</strong> than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion.</li>
 </ul>
 
 <h2 id="input-aspects">Input Aspects</h2>
@@ -421,6 +421,212 @@ h2#sidebar-header {
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
+
+<details class="act-inline-assets">
+  <summary><span>These HTML files are used in several examples:</span></summary>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"><code class="language-plaintext highlighter-rouge">/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>My University<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;h1&gt;</span>Welcome to My University<span class="nt">&lt;/h1&gt;</span>
+		<span class="nt">&lt;p&gt;</span>We are currently working on getting our website up and running.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html"><code class="language-plaintext highlighter-rouge">/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0; URL='index.html'"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Redirecting to another page<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index-copy.html"><code class="language-plaintext highlighter-rouge">/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index-copy.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>My University<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;h1&gt;</span>Welcome to My University<span class="nt">&lt;/h1&gt;</span>
+		<span class="nt">&lt;p&gt;</span>We are currently working on getting our website up and running.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html"><code class="language-plaintext highlighter-rouge">/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>About - Contact<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;nav</span> <span class="na">label=</span><span class="s">"main menu"</span> <span class="na">style=</span><span class="s">"text-align: right;"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../about.html"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../admissions.html"</span><span class="nt">&gt;</span>Admissions<span class="nt">&lt;/a&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../careers.html"</span><span class="nt">&gt;</span>Careers<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span>
+		<span class="nt">&lt;nav</span> <span class="na">label=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;p&gt;</span>You are here: <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../about.html"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span> / Contact us<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span>
+		<span class="nt">&lt;nav</span> <span class="na">label=</span><span class="s">"submenu"</span> <span class="na">style=</span><span class="s">"float:left"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;h2&gt;</span>About<span class="nt">&lt;/h2&gt;</span>
+			<span class="nt">&lt;ul&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">style=</span><span class="s">"list-style-type: none;"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"history.html"</span><span class="nt">&gt;</span>History<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">style=</span><span class="s">"list-style-type: none;"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"employees.html"</span><span class="nt">&gt;</span>Employees<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">style=</span><span class="s">"list-style-type: none;"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"contact.html"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span>
+		<span class="nt">&lt;main</span> <span class="na">style=</span><span class="s">"float:left; margin-left: 50px;"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;h1&gt;</span>Contact us<span class="nt">&lt;/h1&gt;</span>
+			<span class="nt">&lt;p&gt;</span>Phone: (541) 754-3010<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/main&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/careers/contact.html"><code class="language-plaintext highlighter-rouge">/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/careers/contact.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>About - Contact<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;nav</span> <span class="na">label=</span><span class="s">"main menu"</span> <span class="na">style=</span><span class="s">"text-align: right;"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../about.html"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../admissions.html"</span><span class="nt">&gt;</span>Admissions<span class="nt">&lt;/a&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../careers.html"</span><span class="nt">&gt;</span>Careers<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span>
+		<span class="nt">&lt;nav</span> <span class="na">label=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;p&gt;</span>You are here: <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../careers.html"</span><span class="nt">&gt;</span>Careers<span class="nt">&lt;/a&gt;</span> / Contact<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span>
+		<span class="nt">&lt;nav</span> <span class="na">label=</span><span class="s">"submenu"</span> <span class="na">style=</span><span class="s">"float:left"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;h2&gt;</span>Careers<span class="nt">&lt;/h2&gt;</span>
+			<span class="nt">&lt;ul&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">style=</span><span class="s">"list-style-type: none;"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"positions.html"</span><span class="nt">&gt;</span>Open positions<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">style=</span><span class="s">"list-style-type: none;"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"benefits.html"</span><span class="nt">&gt;</span>Benefits<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">style=</span><span class="s">"list-style-type: none;"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"contact.html"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span>
+		<span class="nt">&lt;main</span> <span class="na">style=</span><span class="s">"float:left; margin-left: 50px;"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;h1&gt;</span>Contact us<span class="nt">&lt;/h1&gt;</span>
+			<span class="nt">&lt;p&gt;</span>Phone: (541) 754-3010<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/main&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page1.html"><code class="language-plaintext highlighter-rouge">/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page1.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Get in touch<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;h1&gt;</span>Get in touch<span class="nt">&lt;/h1&gt;</span>
+		<span class="nt">&lt;p&gt;</span>Call us: (541) 754-3010<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page2.html"><code class="language-plaintext highlighter-rouge">/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page2.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Contact us<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;h1&gt;</span>Contact us<span class="nt">&lt;/h1&gt;</span>
+		<span class="nt">&lt;p&gt;</span>Phone: (541) 754-3010<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;p&gt;</span>Email: email@university.com<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;p&gt;</span>Telefax: (541) 754-3011<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page3.html"><code class="language-plaintext highlighter-rouge">/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page3.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Get in touch<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body</span> <span class="na">style=</span><span class="s">"background-color: blue; color: yellow"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h1</span> <span class="na">style=</span><span class="s">"border: 1px solid yellow"</span><span class="nt">&gt;</span>Get in touch<span class="nt">&lt;/h1&gt;</span>
+		<span class="nt">&lt;p&gt;</span>Call us: (541) 754-3010<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html"><code class="language-plaintext highlighter-rouge">/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>About - Contact<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;nav</span> <span class="na">label=</span><span class="s">"main menu"</span> <span class="na">style=</span><span class="s">"text-align: right;"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../about.html"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../admissions.html"</span><span class="nt">&gt;</span>Admissions<span class="nt">&lt;/a&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../careers.html"</span><span class="nt">&gt;</span>Careers<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span>
+		<span class="nt">&lt;nav</span> <span class="na">label=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;p&gt;</span>You are here: <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../admissions.html"</span><span class="nt">&gt;</span>Admissions<span class="nt">&lt;/a&gt;</span> / Contact<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span>
+		<span class="nt">&lt;nav</span> <span class="na">label=</span><span class="s">"submenu"</span> <span class="na">style=</span><span class="s">"float:left"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;h2&gt;</span>Admissions<span class="nt">&lt;/h2&gt;</span>
+			<span class="nt">&lt;ul&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">style=</span><span class="s">"list-style-type: none;"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"positions.html"</span><span class="nt">&gt;</span>Visit<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">style=</span><span class="s">"list-style-type: none;"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"benefits.html"</span><span class="nt">&gt;</span>Dates<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+				<span class="nt">&lt;li</span> <span class="na">style=</span><span class="s">"list-style-type: none;"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"contact.html"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+			<span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span>
+		<span class="nt">&lt;main</span> <span class="na">style=</span><span class="s">"float:left; margin-left: 50px;"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;h1&gt;</span>Contact us<span class="nt">&lt;/h1&gt;</span>
+			<span class="nt">&lt;p&gt;</span>Phone: (541) 754-3011<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;/main&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html"><code class="language-plaintext highlighter-rouge">/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html</code></a>:</p>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"30; URL='index.html'"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Redirecting to another page<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>  </div>
+
+</details>
 
 <h3 id="passed">Passed</h3>
 
@@ -965,21 +1171,25 @@ h2#sidebar-header {
 <h2 id="ruleversions">Rule Versions</h2>
 
 <p>This is the first version of this ACT rule.</p>
-
-
-
 <h2 id="implementations">Implementations</h2>
-
   <p>There are currently no known implementations for this rule.
     If you would like to contribute an implementation, please read the 
     <a href="/WAI/standards-guidelines/act/implementations/">
       ACT Implementations page
     </a> for details.
   </p>
-
-
-
-
+<h2 id="usefullinks">Useful Links</h2>
+<ul>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+is%3Aopen+fd3a94+">
+    Github issues related to this rule
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues/new?title=%20[fd3a94]">
+    Open a new issue
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/links-with-identical-names-and-context-serve-equivalent-purpose-fd3a94.md">
+    Propose a change to the rule
+  </a></li>
+</ul>
  
 
       </main>
@@ -1006,7 +1216,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> fd3a94</p>
-<p><strong>Date:</strong> Updated 28 February 2023</p>
+<p><strong>Date:</strong> Updated 30 August 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1048,9 +1258,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1693929691275925372"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1693929691275925372"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1693505013141146206";
+      element.src = "/WAI/assets/scripts/main.js?1693929691275925372";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693505013141146206">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693929691275925372">
 
-<title> Meta element has no refresh delay[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693505013141146206"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Meta element has no refresh delay[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693929691275925372"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Meta element has no refresh delay" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -295,6 +295,8 @@ h2#sidebar-header {
                 
                 <li><a href="#implementations">Implementations</a></li>
                 
+                <li><a href="#usefullinks">Useful Links</a></li>
+                
                 </ul>
             </div>
           </nav>
@@ -364,8 +366,6 @@ h2#sidebar-header {
 
 <p>Because a refresh with a timing of 0 is a redirect, it is exempt from this rule. Since this can cause rapid screen flashes it is strongly recommended to avoid this.</p>
 
-<p>This rule is designed specifically for <a href="https://www.w3.org/TR/WCAG21/#timing-adjustable" title="WCAG 2.1 Success Criterion 2.2.1 Timing Adjustable">2.2.1 Timing Adjustable</a>, which can be satisfied if the time limit is over 20 hours long. All pages that fail this because of a “refresh” <code class="language-plaintext highlighter-rouge">meta</code> element also do not satisfy <a href="https://www.w3.org/TR/WCAG21/#change-on-request" title="WCAG 2.1 Success Criterion 3.2.5 Change on Request">3.2.5 Change on Request</a>. In order to adequately test the <a href="#expectation">expectation</a>, some of the passed examples do not satisfy <a href="https://www.w3.org/TR/WCAG21/#change-on-request" title="WCAG 2.1 Success Criterion 3.2.5 Change on Request">3.2.5 Change on Request</a>.</p>
-
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
@@ -386,30 +386,6 @@ h2#sidebar-header {
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">Learn more about 2.2.1 Timing Adjustable</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>2.2.4 Interruptions (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#interruptions">Learn more about 2.2.4 Interruptions</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>3.2.5 Change on Request (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#change-on-request">Learn more about 3.2.5 Change on Request</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
         <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
@@ -441,6 +417,19 @@ h2#sidebar-header {
       </ul></li>
     </ul>
   </details></li>
+</ul>
+
+<h3 id="secondary-requirements">Secondary Requirements</h3>
+
+<p>This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+<a href="https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements">secondary requirements</a>
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG21/#interruptions">2.2.4 Interruptions (Level AAA)</a>: This success criterion is <strong>more strict</strong> than this rule. This is because the rule allows redirects longer than 20 hours. Some of the passed examples do not satisfy this success criterion.</li>
+  <li><a href="https://www.w3.org/TR/WCAG21/#change-on-request">3.2.5 Change on Request (Level AAA)</a>: This success criterion is <strong>more strict</strong> than this rule. This is because the rule allows redirects longer than 20 hours. Some of the passed examples do not satisfy this success criterion.</li>
 </ul>
 
 <h2 id="input-aspects">Input Aspects</h2>
@@ -706,11 +695,7 @@ h2#sidebar-header {
         Latest version, 25 October 2022</a>
   </li>
 </ol>
-
-
-
 <h2 id="implementations">Implementations</h2>
-
   <p>This section is not part of the official rule. It is populated dynamically and 
     not accounted for in the change history or the last modified date.</p>
   <div class="scroll-wrap">
@@ -790,9 +775,18 @@ h2#sidebar-header {
       </tbody>
     </table>
   </div>
-
-
-
+<h2 id="usefullinks">Useful Links</h2>
+<ul>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+is%3Aopen+bc659a+">
+    Github issues related to this rule
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues/new?title=%20[bc659a]">
+    Open a new issue
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/meta-refresh-no-delay-bc659a.md">
+    Propose a change to the rule
+  </a></li>
+</ul>
  
 
       </main>
@@ -819,7 +813,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> bc659a</p>
-<p><strong>Date:</strong> Updated 16 February 2023</p>
+<p><strong>Date:</strong> Updated 30 August 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -861,9 +855,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1693929691275925372"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1693929691275925372"></script>
 <script>
   svg4everybody();
 </script><script>

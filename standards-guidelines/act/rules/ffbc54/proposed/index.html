@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1693505013141146206";
+      element.src = "/WAI/assets/scripts/main.js?1693929691275925372";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693505013141146206">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1693929691275925372">
 
-<title> No keyboard shortcut uses only printable characters[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693505013141146206"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> No keyboard shortcut uses only printable characters[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1693929691275925372"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="No keyboard shortcut uses only printable characters" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -295,6 +295,8 @@ h2#sidebar-header {
                 
                 <li><a href="#implementations">Implementations</a></li>
                 
+                <li><a href="#usefullinks">Useful Links</a></li>
+                
                 </ul>
             </div>
           </nav>
@@ -407,6 +409,81 @@ This rule allows <a href="#changes-in-content" title="Definition of changes in c
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
+
+<details class="act-inline-assets">
+  <summary><span>These Javascript and CSS files are used in several examples:</span></summary>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/ffbc54/shortcut.js"><code class="language-plaintext highlighter-rouge">/test-assets/ffbc54/shortcut.js</code></a>:</p>
+
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">defaultParams</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="na">target</span><span class="p">:</span> <span class="dl">'</span><span class="s1">target</span><span class="dl">'</span><span class="p">,</span>
+	<span class="na">focusOnly</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+	<span class="na">shortcutKey</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
+	<span class="na">ctrlKey</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+	<span class="na">disabled</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">shortcutDefinitions</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">()</span>
+
+<span class="kd">function</span> <span class="nx">activateShortcuts</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keydown</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kd">const</span> <span class="nx">settings</span> <span class="k">of</span> <span class="nx">shortcutDefinitions</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">settings</span><span class="p">.</span><span class="nx">disabled</span><span class="p">)</span> <span class="p">{</span>
+				<span class="kd">const</span> <span class="nx">target</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">settings</span><span class="p">.</span><span class="nx">target</span><span class="p">)</span>
+
+				<span class="k">if</span> <span class="p">(</span>
+					<span class="nx">event</span><span class="p">.</span><span class="nx">key</span> <span class="o">===</span> <span class="nx">settings</span><span class="p">.</span><span class="nx">shortcutKey</span> <span class="o">&amp;&amp;</span>
+					<span class="p">(</span><span class="o">!</span><span class="nx">settings</span><span class="p">.</span><span class="nx">ctrlKey</span> <span class="o">||</span> <span class="nx">event</span><span class="p">.</span><span class="nx">getModifierState</span><span class="p">(</span><span class="dl">'</span><span class="s1">Control</span><span class="dl">'</span><span class="p">))</span> <span class="o">&amp;&amp;</span>
+					<span class="p">(</span><span class="o">!</span><span class="nx">settings</span><span class="p">.</span><span class="nx">focusOnly</span> <span class="o">||</span> <span class="nb">document</span><span class="p">.</span><span class="nx">activeElement</span> <span class="o">===</span> <span class="nx">target</span><span class="p">)</span>
+				<span class="p">)</span> <span class="p">{</span>
+					<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">list</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="dl">'</span><span class="s1">&lt;li&gt;</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">target</span><span class="p">.</span><span class="nx">value</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">&lt;/li&gt;</span><span class="dl">'</span>
+					<span class="nx">target</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="dl">''</span>
+					<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+	<span class="p">})</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">registerShortcut</span><span class="p">(</span><span class="nx">params</span> <span class="o">=</span> <span class="p">{})</span> <span class="p">{</span>
+	<span class="nx">shortcutDefinitions</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span> <span class="p">...</span><span class="nx">defaultParams</span><span class="p">,</span> <span class="p">...</span><span class="nx">params</span> <span class="p">})</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">changeShortcutParameter</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">param</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">shortcutDefinitions</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">shortcut</span> <span class="o">=&gt;</span> <span class="nx">shortcut</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="nx">id</span><span class="p">)[</span><span class="nx">param</span><span class="p">]</span> <span class="o">=</span> <span class="nx">value</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">toggleDisabled</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">changeShortcutParameter</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="dl">'</span><span class="s1">disabled</span><span class="dl">'</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">toggleModifier</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">changeShortcutParameter</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ctrlKey</span><span class="dl">'</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">openModal</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">overlay</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">block</span><span class="dl">'</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">closeModal</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">overlay</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span>
+<span class="p">}</span>
+</code></pre></div>  </div>
+
+  <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/ffbc54/styles.css"><code class="language-plaintext highlighter-rouge">/test-assets/ffbc54/styles.css</code></a>:</p>
+
+  <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#overlay</span> <span class="p">{</span>
+	<span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+	<span class="nl">position</span><span class="p">:</span> <span class="nb">fixed</span><span class="p">;</span>
+	<span class="nl">top</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+	<span class="nl">left</span><span class="p">:</span> <span class="m">10em</span><span class="p">;</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span class="m">#505050</span><span class="p">;</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+	<span class="nl">padding</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+	<span class="nl">padding-top</span><span class="p">:</span> <span class="m">0em</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>  </div>
+
+</details>
 
 <h3 id="passed">Passed</h3>
 
@@ -925,21 +1002,25 @@ This rule allows <a href="#changes-in-content" title="Definition of changes in c
 <h2 id="ruleversions">Rule Versions</h2>
 
 <p>This is the first version of this ACT rule.</p>
-
-
-
 <h2 id="implementations">Implementations</h2>
-
   <p>There are currently no known implementations for this rule.
     If you would like to contribute an implementation, please read the 
     <a href="/WAI/standards-guidelines/act/implementations/">
       ACT Implementations page
     </a> for details.
   </p>
-
-
-
-
+<h2 id="usefullinks">Useful Links</h2>
+<ul>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+is%3Aopen+ffbc54+">
+    Github issues related to this rule
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues/new?title=%20[ffbc54]">
+    Open a new issue
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/printable-characters-shortcut-ffbc54.md">
+    Propose a change to the rule
+  </a></li>
+</ul>
  
 
       </main>
@@ -966,7 +1047,7 @@ This rule allows <a href="#changes-in-content" title="Definition of changes in c
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> ffbc54</p>
-<p><strong>Date:</strong> Updated 11 November 2022</p>
+<p><strong>Date:</strong> Updated 30 August 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1008,9 +1089,9 @@ This rule allows <a href="#changes-in-content" title="Definition of changes in c
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1693929691275925372"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1693505013141146206"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1693929691275925372"></script>
 <script>
   svg4everybody();
 </script><script>
