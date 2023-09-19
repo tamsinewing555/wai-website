@@ -2263,6 +2263,7 @@
 /content-images/wai-components/relate.png
 /content-images/wai-components/specs.png
 /content-images/wai-conformance-eval-overview/conformance-evaluation-cc.vtt
+/content-images/wai-conformance-eval-overview/conformance-evaluation-fr.vtt
 /content-images/wai-course-list/clear.svg
 /content-images/wai-course-list/w3c.png
 /content-images/wai-easy-checks/easy-checks-accessibility-cc.vtt
@@ -2283,6 +2284,7 @@
 /content-images/wai-eval-overview/video-thumb-resources-overview.png
 /content-images/wai-eval-overview/video-thumb-tools.png
 /content-images/wai-eval-tools-overview/tools-for-evaluating-cc.vtt
+/content-images/wai-eval-tools-overview/tools-for-evaluating-fr.vtt
 /content-images/wai-fundamentals-overview/andrew.png
 /content-images/wai-fundamentals-overview/anthony.png
 /content-images/wai-fundamentals-overview/banner-with-blur.png
