@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2023-09-21/wcag21updated/",
+            "title": "Web Content Accessibility Guidelines (WCAG) 2.1 is Updated",
+            "summary": null,
+            "content_text": "Web Content Accessibility Guidelines (WCAG) 2.1 is updated to include errata and informative notes to success criteria 4.1.1 Parsing. To learn more about WCAG and these updates, see WCAG 2 Overview and WCAG 2 FAQ.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/WCAG21/\">Web Content Accessibility Guidelines (WCAG) 2.1</a> is updated to include <a href=\"https://www.w3.org/TR/WCAG21/#changelog\">errata</a> and informative notes to success criteria <a href=\"https://www.w3.org/TR/WCAG21/#parsing\">4.1.1 Parsing</a>. To learn more about WCAG and these updates, see <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG 2 Overview</a> and <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/faq/#Sept2023\">WCAG 2 FAQ</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-09-21/wcag21updated/",
+            
+            
+            
+            
+            
+            "date_published": "2023-09-21T00:00:00+00:00",
+            "date_modified": "2023-09-21T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2023-09-08/job-opening/",
             "title": "Job Opening: Accessibility Specialist",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2021-12-02T00:00:00+00:00",
             "date_modified": "2021-12-02T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2021-11-10/symposium/",
-            "title": "Invitation: 'Shape the Future: Research and Development Questions in Digital Accessibility' research symposium, online, 10 November 2021",
-            "summary": null,
-            "content_text": "You are invited contribute to the 'Shape the Future: Research and Development Questions in Digital Accessibility' research symposium 10 November 2021. Paper submissions are welcome through 6 October 2021. Researchers, academics, industry, government, and people with disabilities are encouraged to participate. Submission information, program, schedule, and registration information will be updated in the meeting page. The symposium is free, and registration is required by 7 November 2021.",
-            "content_html": "<p>You are invited contribute to the <a href=\"https://www.w3.org/WAI/about/projects/wai-coop/symposium1/\">'Shape the Future: Research and Development Questions in Digital Accessibility' research symposium 10 November 2021</a>. Paper submissions are welcome through 6 October 2021. Researchers, academics, industry, government, and people with disabilities are encouraged to participate. Submission information, program, schedule, and registration information will be updated in the <a href=\"https://www.w3.org/WAI/about/projects/wai-coop/symposium1/\">meeting page</a>. The symposium is free, and registration is required by 7 November 2021.</p>",
-            "url": "https://www.w3.org/WAI/news/2021-11-10/symposium/",
-            
-            
-            
-            
-            
-            "date_published": "2021-11-10T00:00:00+00:00",
-            "date_modified": "2021-11-10T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
