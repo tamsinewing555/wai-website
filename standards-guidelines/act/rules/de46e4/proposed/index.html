@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1695518587040985684";
+      element.src = "/WAI/assets/scripts/main.js?1695751602856194701";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1695518587040985684">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1695751602856194701">
 
-<title> Element with lang attribute has valid language tag[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1695518587040985684"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Element with lang attribute has valid language tag[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1695751602856194701"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Element with lang attribute has valid language tag" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -555,7 +555,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html">Open in a new tab</a></p>
 
-<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> does not have a valid language tag. The <code class="language-plaintext highlighter-rouge">lang</code> attribute must be valid because the content is <a href="#visible" title="Definition of visible">visible</a>.</p>
+<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> does not have a valid language tag. Even though the <code class="language-plaintext highlighter-rouge">p</code> element is not <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> due to the presence of the <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code> attribute, it is <a href="#visible" title="Definition of visible">visible</a>; therefore its content is <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">article</code> element. Hence, the lang attribute must be valid.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -572,7 +572,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8ba52b5fa5e123def1f778821219aaec20ca0fe.html">Open in a new tab</a></p>
 
-<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> does not have a valid language tag, and its <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> is not <a href="#visible" title="Definition of visible">visible</a> though it is still <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
+<p>The <code class="language-plaintext highlighter-rouge">lang</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> does not have a valid language tag. Even though the <code class="language-plaintext highlighter-rouge">p</code> element is not <a href="#visible" title="Definition of visible">visible</a> due to it being moved off-screen, it is <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>; therefore its content is <a href="#text-inheriting-language" title="Definition of Text Inheriting its Programmatic Language from an Element">text inheriting its programmatic language</a> from the <code class="language-plaintext highlighter-rouge">article</code> element. Hence, the lang attribute must be valid.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
@@ -1012,7 +1012,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> de46e4</p>
-<p><strong>Date:</strong> Updated 31 August 2023</p>
+<p><strong>Date:</strong> Updated 26 September 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1054,9 +1054,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1695518587040985684"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1695751602856194701"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1695518587040985684"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1695751602856194701"></script>
 <script>
   svg4everybody();
 </script><script>
