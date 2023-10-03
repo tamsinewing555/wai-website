@@ -1,6 +1,7 @@
 /ARIA/apg/about/acknowledgements/index.html
 /ARIA/apg/about/aria-basics/index.html
 /ARIA/apg/about/change-history/index.html
+/ARIA/apg/about/contributing/index.html
 /ARIA/apg/about/coverage-and-quality/index.html
 /ARIA/apg/about/index.html
 /ARIA/apg/about/introduction/index.html
@@ -2593,7 +2594,6 @@
 /fundamentals/fr.html
 /fundamentals/index.html
 /index.html
-/manifest.txt
 /media/av/acknowledgements/index.html
 /media/av/av-content/index.html
 /media/av/captions/index.html
