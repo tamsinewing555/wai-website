@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2023-10-05/wcag22rec/",
+            "title": "WCAG 2.2 is a Web Standard \"W3C Recommendation\"",
+            "summary": null,
+            "content_text": "Web Content Accessibility Guidelines (WCAG) 2.2 is now a “W3C Recommendation” web standard. For an introduction to WCAG, see the WCAG 2 Overview. WCAG 2.2 adds 9 requirements (called success criteria) since WCAG 2.1. To learn more about WCAG 2.2, see What’s New in WCAG 2.2.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/WCAG22/\">Web Content Accessibility Guidelines (WCAG) 2.2</a> is now a “W3C Recommendation” web standard. For an introduction to WCAG, see the <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG 2 Overview</a>. WCAG 2.2 adds 9 requirements (called success criteria) since WCAG 2.1. To learn more about WCAG 2.2, see <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/\">What’s New in WCAG 2.2</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-10-05/wcag22rec/",
+            
+            
+            
+            
+            
+            "date_published": "2023-10-05T00:00:00+00:00",
+            "date_modified": "2023-10-05T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2023-09-21/wcag21updated/",
             "title": "Web Content Accessibility Guidelines (WCAG) 2.1 is Updated",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2021-12-16T00:00:00+00:00",
             "date_modified": "2021-12-16T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2021-12-02/IDPD-18n-day-PwDs/",
-            "title": "Digital Accessibility Updates on International Day of Persons with Disabilities (IDPD)",
-            "summary": null,
-            "content_text": "Digital Accessibility Updates on International Day of Persons with Disabilities (IDPD) blog post gives you updates on:documenting user needs in MAUR, SAUR, XAUR, RAUR, NAUR translating accessibility resourcesupdating digital accessibility language on speech recognition, voice recognition, description of visual  information in videos, and more.",
-            "content_html": "<p><a href=\"https://www.w3.org/blog/2021/12/idpd/\">Digital Accessibility Updates on International Day of Persons with Disabilities (IDPD)</a> blog post gives you updates on:</p><ul><li>documenting user needs in MAUR, SAUR, XAUR, RAUR, NAUR</li><li> translating accessibility resources</li><li>updating digital accessibility language on speech recognition, voice recognition, description of visual  information in videos, and more.</li></ul>",
-            "url": "https://www.w3.org/WAI/news/2021-12-02/IDPD-18n-day-PwDs/",
-            
-            
-            
-            
-            
-            "date_published": "2021-12-02T00:00:00+00:00",
-            "date_modified": "2021-12-02T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
