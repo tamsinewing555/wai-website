@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1696539506237074860";
+      element.src = "/WAI/assets/scripts/main.js?1696644659067614653";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1696539506237074860">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1696644659067614653">
 
 <title>[Draft] Submit a tool - Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -214,6 +214,10 @@ main>header {
   margin-left: 5px;
 }
 
+#left-col legend {
+    font-size: 100%;
+}
+
 .filterLegend {
   font-size: 100%;
   display: flex;
@@ -261,7 +265,7 @@ main>header {
 }
 
 .tools-filters {
-  padding-right: 2.5em;
+  padding-right: 2em;
 }
 
 @media (min-width: 60em) {
@@ -324,7 +328,6 @@ main>header {
 
 .filter-options input[type=checkbox] {
   align-self: flex-start;
-  margin-top: 0.4rem;
 }
 
 .submission-form .field {
@@ -886,16 +889,6 @@ b {
 
 .subBox a:hover {
   cursor: pointer;
-}
-
-input[type=checkbox]
-{
-  /* Double-sized Checkboxes */
-  -ms-transform: scale(1.4); /* IE */
-  -moz-transform: scale(1.4); /* FF */
-  -webkit-transform: scale(1.4); /* Safari and Chrome */
-  -o-transform: scale(1.4); /* Opera */
-  transform: scale(1.4);
 }
 
 #help-me-choose-overlay  {
@@ -1581,8 +1574,8 @@ main > header { grid-column: 4 / span 4; }
           </div>
         
           <div class="radio-field">
-            <input type="checkbox" name="purpose[]" id="tool-purpose-simulation" value="Simulate user experience" group="purpose" required="" />
-            <label for="tool-purpose-simulation">Simulate user experience</label>
+            <input type="checkbox" name="purpose[]" id="tool-purpose-simulation" value="Simulated user experience" group="purpose" required="" />
+            <label for="tool-purpose-simulation">Simulated user experience</label>
             
           </div>
         
@@ -1591,7 +1584,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="product">
       <div class="fieldheader">
-        <legend for="tool-product" class="label-input">Product to evaluate<span class="short-sub">(Required)</span></legend>
+        <legend for="tool-product" class="label-input">Product evaluated<span class="short-sub">(Required)</span></legend>
         
       </div>
       <div class="field-group">
@@ -1631,7 +1624,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="technology">
       <div class="fieldheader">
-        <legend for="tool-technology" class="label-input">File to evaluate</legend>
+        <legend for="tool-technology" class="label-input">File type</legend>
         
       </div>
       <div class="field-group">
@@ -1689,7 +1682,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="automated">
       <div class="fieldheader">
-        <legend for="tool-automated" class="label-input">Scope of evaluation<span class="short-sub">(Required)</span></legend>
+        <legend for="tool-automated" class="label-input">Scope<span class="short-sub">(Required)</span></legend>
         <p>Range and depth of single evaluation</p>
       </div>
       <div class="field-group">
@@ -1727,127 +1720,9 @@ main > header { grid-column: 4 / span 4; }
       </div>
   </fieldset>
   
-  <fieldset class="field" id="checks">
-      <div class="fieldheader">
-        <legend for="tool-checks" class="label-input">Accessibility checks</legend>
-      </div>
-      <p>Which aspects of web accessibility can users evaluate with this tool?</p>
-      <div class="field-group">
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-colorContrast" value="Color contrast" group="checks" />
-            <label for="tool-checks-colorContrast">Color contrast</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-assistiveTechnology" value="Compatible with assistive technology" group="checks" />
-            <label for="tool-checks-assistiveTechnology">Compatible with assistive technology</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-error" value="Error (prevention)" group="checks" />
-            <label for="tool-checks-error">Error (prevention)</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-forms" value="Forms" group="checks" />
-            <label for="tool-checks-forms">Forms</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-hoverAndFocus" value="Hover and Focus" group="checks" />
-            <label for="tool-checks-hoverAndFocus">Hover and Focus</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-keyboardAccessible" value="Keyboard accessible" group="checks" />
-            <label for="tool-checks-keyboardAccessible">Keyboard accessible</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-labels" value="Labels" group="checks" />
-            <label for="tool-checks-labels">Labels</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-checksLanguage" value="Language" group="checks" />
-            <label for="tool-checks-checksLanguage">Language</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-maps" value="Maps" group="checks" />
-            <label for="tool-checks-maps">Maps</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-mediaAlternatives" value="Media alternatives" group="checks" />
-            <label for="tool-checks-mediaAlternatives">Media alternatives</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-navigationAndLinks" value="Navigation and links" group="checks" />
-            <label for="tool-checks-navigationAndLinks">Navigation and links</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-pageStructure" value="Page structure" group="checks" />
-            <label for="tool-checks-pageStructure">Page structure</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-readability" value="Readability" group="checks" />
-            <label for="tool-checks-readability">Readability</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-resizingPage" value="Resizing page" group="checks" />
-            <label for="tool-checks-resizingPage">Resizing page</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-tables" value="Tables" group="checks" />
-            <label for="tool-checks-tables">Tables</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-textAlternatives" value="Text alternatives" group="checks" />
-            <label for="tool-checks-textAlternatives">Text alternatives</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-time" value="Time (pause, adjust etc)" group="checks" />
-            <label for="tool-checks-time">Time (pause, adjust etc)</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="checks[]" id="tool-checks-waiaria" value="WAI-ARIA attributes" group="checks" />
-            <label for="tool-checks-waiaria">WAI-ARIA attributes</label>
-            
-          </div>
-        
-      </div>
-  </fieldset>
-  
   <fieldset class="field" id="guideline">
       <div class="fieldheader">
-        <legend for="tool-guideline" class="label-input">Guidelines and standards</legend>
+        <legend for="tool-guideline" class="label-input">Standards</legend>
         
       </div>
       <div class="field-group">
@@ -1875,47 +1750,8 @@ main > header { grid-column: 4 / span 4; }
           </div>
         
           <div class="radio-field">
-            <input type="checkbox" name="guideline[]" id="tool-guideline-Section508" value="Section 508" group="guideline" />
-            <label for="tool-guideline-Section508">Section 508</label>
-            
-              <abbr title="USA - Section 508 of the Rehabilitation Act" class="toggletip-container">
-                  <img alt="USA - Section 508 of the Rehabilitation Act" tabindex="0" data-toggletip-content="USA - Section 508 of the Rehabilitation Act" src="/content-images/wai-evaluation-tools-list/info.png" />
-                  <span class="toggletip-span-inline" role="status"></span>
-              </abbr>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="guideline[]" id="tool-guideline-JIS" value="JIS" group="guideline" />
-            <label for="tool-guideline-JIS">JIS</label>
-            
-              <abbr title="Japan – Japanese Industry Standard" class="toggletip-container">
-                  <img alt="Japan – Japanese Industry Standard" tabindex="0" data-toggletip-content="Japan – Japanese Industry Standard" src="/content-images/wai-evaluation-tools-list/info.png" />
-                  <span class="toggletip-span-inline" role="status"></span>
-              </abbr>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="guideline[]" id="tool-guideline-SI5568" value="SI 5568" group="guideline" />
-            <label for="tool-guideline-SI5568">SI 5568</label>
-            
-              <abbr title="Israel – Standard 5568" class="toggletip-container">
-                  <img alt="Israel – Standard 5568" tabindex="0" data-toggletip-content="Israel – Standard 5568" src="/content-images/wai-evaluation-tools-list/info.png" />
-                  <span class="toggletip-span-inline" role="status"></span>
-              </abbr>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="guideline[]" id="tool-guideline-EPUB" value="EPUB Accessibility" group="guideline" />
-            <label for="tool-guideline-EPUB">EPUB Accessibility</label>
-            
-          </div>
-        
-          <div class="radio-field">
-            <input type="checkbox" name="guideline[]" id="tool-guideline-EN301549" value="EN 301549" group="guideline" />
-            <label for="tool-guideline-EN301549">EN 301549</label>
+            <input type="checkbox" name="guideline[]" id="tool-guideline-EPUB" value="EPUB Accessibility 1.1" group="guideline" />
+            <label for="tool-guideline-EPUB">EPUB Accessibility 1.1</label>
             
           </div>
         
@@ -3222,9 +3058,9 @@ if (submitForm) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1696539506237074860"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1696644659067614653"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1696539506237074860"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1696644659067614653"></script>
 <script>
   svg4everybody();
 </script><script>
