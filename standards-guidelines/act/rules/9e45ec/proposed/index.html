@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1696923596795994596";
+      element.src = "/WAI/assets/scripts/main.js?1697830872802144486";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1696923596795994596">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1697830872802144486">
 
-<title> Word spacing in style attributes is not !important[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1696923596795994596"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Word spacing in style attributes is not !important[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1697830872802144486"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Word spacing in style attributes is not !important" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -271,6 +271,8 @@ h2#sidebar-header {
                 <ul>
                 
                 
+                <li><a href="#deprecated">Deprecated</a></li>
+                
                 <li><a href="#description">Description</a></li>
                 
                 <li><a href="#applicability">Applicability</a></li>
@@ -292,8 +294,6 @@ h2#sidebar-header {
                 <li><a href="#glossary">Glossary</a></li>
                 
                 <li><a href="#ruleversions">Rule Versions</a></li>
-                
-                <li><a href="#implementations">Implementations</a></li>
                 
                 <li><a href="#usefullinks">Useful Links</a></li>
                 
@@ -333,6 +333,9 @@ h2#sidebar-header {
   </p> 
   </div>
  </aside>
+<h2 id="deprecated">Deprecated</h2>
+<p>This rule has been deprecated and superseded by Rule <a href="https://act-rules.github.io/rules/nt4zgr">Important word spacing in style attributes is wide enough</a>. This rule is not maintained anymore and should not be used.</p>
+
 
 <h2 id="description">Description</h2>
 <p>This rule checks that the <code class="language-plaintext highlighter-rouge">style</code> attribute is not used to prevent adjusting <code class="language-plaintext highlighter-rouge">word-spacing</code> by using <code class="language-plaintext highlighter-rouge">!important</code>, except if it’s at least <code class="language-plaintext highlighter-rouge">0.16</code> times the font size.</p>
@@ -648,6 +651,19 @@ h2#sidebar-header {
 
 <p>For more details, see <a href="https://act-rules.github.io/pages/examples/visible/">examples of visible</a>.</p>
 
+<p>ra.spec.whatwg.org/#namespaces ‘HTML namespace, 2021/05/31’
+<a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>: https://www.w3.org/TR/css-cascade-4/#importance ‘CSS Cascading and Inheritance Level 4 (Working draft) - Importance’
+<a href="https://www.w3.org/TR/css-cascade-4/#inheriting" title="CSS Cascading and Inheritance Level 4 (Working draft) - Inherited Values">inherited</a>: https://www.w3.org/TR/css-cascade-4/#inheriting ‘CSS Cascading and Inheritance Level 4 (Working draft) - Inherited Values’
+<a href="https://dom.spec.whatwg.org/#dom-element-namespaceuri" title="DOM Element namespaceURI, 2021/05/31">namespaceuri</a>: https://dom.spec.whatwg.org/#dom-element-namespaceuri ‘DOM Element namespaceURI, 2021/05/31’
+<a href="https://www.w3.org/TR/css-cascade-4/#normal" title="CSS Cascading and Inheritance Level 4 (Working draft) - Normal declarations">normal</a>: https://www.w3.org/TR/css-cascade-4/#normal ‘CSS Cascading and Inheritance Level 4 (Working draft) - Normal declarations’
+<a href="https://www.w3.org/TR/WCAG21/#text-spacing" title="Success Criterion 1.4.12 Text Spacing">sc1412</a>: https://www.w3.org/TR/WCAG21/#text-spacing ‘Success Criterion 1.4.12 Text Spacing’
+<a href="https://www.w3.org/TR/WCAG21/#visual-presentation" title="Success Criterion 1.4.8 Visual Presentation">sc148</a>: https://www.w3.org/TR/WCAG21/#visual-presentation ‘Success Criterion 1.4.8 Visual Presentation’
+<a href="https://www.w3.org/TR/selectors/#specificity" title="CSS Selectors Level 4 (Working draft) - Specificity">specificity</a>: https://www.w3.org/TR/selectors/#specificity ‘CSS Selectors Level 4 (Working draft) - Specificity’
+[specified]: https://www.w3.org/TR/css-cascade-4/#specified ‘CSS Cascading and Inheritance Level 4 (Working draft) - Specified Values’
+[text node]: https://dom.spec.whatwg.org/#text
+<a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin">user agent origin</a>: https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua ‘CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin’
+<a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-user" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin">user origin</a>: https://www.w3.org/TR/css-cascade-4/#cascade-origin-user ‘CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin’
+<a href="#visible" title="Definition of visible">visible</a>: #visible ‘Definition of visible’</p>
 
 <h2 id="ruleversions">Rule Versions</h2>
 
@@ -664,86 +680,6 @@ h2#sidebar-header {
         Previous version, 28 January 2022</a>
   </li>
 </ol>
-<h2 id="implementations">Implementations</h2>
-  <p>This section is not part of the official rule. It is populated dynamically and 
-    not accounted for in the change history or the last modified date.</p>
-  <div class="scroll-wrap">
-    <table class="act-implementations">
-      <thead>
-        <tr>
-          <th>Implementation</th>
-          <th>Type</th>
-          <th>Consistency</th>
-          <th>Report</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr>
-            <td>Alfa (fully automated) 0.57.2</td>
-            <td>Automated tool</td>
-            <td>
-              Consistent </td>
-            <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-9e45ec"><img alt="Alfa (fully automated) Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-          </tr>
-          <tr>
-            <td>Alfa (semi-automated) 0.57.2</td>
-            <td>Semi-automated tool</td>
-            <td>
-              Consistent </td>
-            <td><a href="/WAI/standards-guidelines/act/implementations/alfa-assisted#breakdown-9e45ec"><img alt="Alfa (semi-automated) Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-          </tr>
-          <tr>
-            <td>Axe DevTools Pro 4.37.1</td>
-            <td>Semi-automated tool</td>
-            <td>
-              Consistent </td>
-            <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-9e45ec"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-          </tr>
-          <tr>
-            <td>Axe-core 4.8.1</td>
-            <td>Automated tool</td>
-            <td>
-              Consistent </td>
-            <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-9e45ec"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-          </tr>
-          <tr>
-            <td>Equal Access Accessibility Checker 3.1.42-rc.0</td>
-            <td>Automated tool</td>
-            <td>
-              Consistent </td>
-            <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-9e45ec"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-          </tr>
-          <tr>
-            <td>QualWeb 3.0.0</td>
-            <td>Automated tool</td>
-            <td>
-              Consistent </td>
-            <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-9e45ec"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-          </tr>
-          <tr>
-            <td>SortSite 6.45</td>
-            <td>Automated tool</td>
-            <td>
-              Consistent </td>
-            <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-9e45ec"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-          </tr>
-          <tr>
-            <td>Total Validator 17.1.0</td>
-            <td>Linter</td>
-            <td>
-              Consistent </td>
-            <td><a href="/WAI/standards-guidelines/act/implementations/total-validator#breakdown-9e45ec"><img alt="Total Validator Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-          </tr>
-          <tr>
-            <td>Total Validator (+Browser) 17.3.0</td>
-            <td>Automated tool</td>
-            <td>
-              Consistent </td>
-            <td><a href="/WAI/standards-guidelines/act/implementations/total-validator-browser#breakdown-9e45ec"><img alt="Total Validator (+Browser) Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
-          </tr>
-      </tbody>
-    </table>
-  </div>
 <h2 id="usefullinks">Useful Links</h2>
 <ul>
   <li><a href="https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+is%3Aopen+9e45ec+">
@@ -782,7 +718,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 9e45ec</p>
-<p><strong>Date:</strong> Updated 30 August 2023</p>
+<p><strong>Date:</strong> Updated 16 October 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -824,9 +760,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1696923596795994596"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1697830872802144486"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1696923596795994596"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1697830872802144486"></script>
 <script>
   svg4everybody();
 </script><script>

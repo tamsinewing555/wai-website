@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1696923596795994596";
+      element.src = "/WAI/assets/scripts/main.js?1697830872802144486";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1696923596795994596">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1697830872802144486">
 
 <title>[Draft] Submit a tool - Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -120,6 +120,16 @@
 --pseudo-backgroundcolor: lightgray;
 }
 
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.4); /* IE */
+  -moz-transform: scale(1.4); /* FF */
+  -webkit-transform: scale(1.4); /* Safari and Chrome */
+  -o-transform: scale(1.4); /* Opera */
+  transform: scale(1.4);
+}
+
 .minimal-header-container{
   display: grid !important;
   grid-column-gap: 32px;
@@ -216,6 +226,9 @@ main>header {
 
 #left-col legend {
     font-size: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .filterLegend {
@@ -1538,25 +1551,14 @@ main > header { grid-column: 4 / span 4; }
   <h2 id="tool-functionality"><span>2/3</span>Tool functionality</h2>
 
   <div class="field" id="features">
-    <label for="features" class="label specialField">Short product description (max. 350)<span>(Required)</span></label>
+    <label for="feature-desc" class="label specialField">Short product description (max. 350)<span>(Required)</span></label>
     <p>Add a description of key features and functionalities of the tool. Try to write this description in a way that tool users can understand.</p>
-    <textarea id="features" name="features" rows="5" maxlength="350"></textarea>
-<!--     <div class="line">
-      <label for="tool-feature_1" class="label-input"></label>
-      <input type="text" name="features[]" id="feature_1" class="select-form" required>
-    </div>
-    <div class="proto">
-      <label for="tool-feature_[n]" class="label-input"></label>
-      <input type="text" name="features[]" id="feature_[n]" class="select-form" disabled> 
-      <button aria-label="Remove feature" type="button" class="remove_line">Remove</button>
-    </div>
-    <button type="button" class="add_line small">Add feature</button> -->
-    <!-- <button type="button" class="remove_line small" disabled>Remove last feature</button> -->
+    <textarea id="feature-desc" name="features" rows="5" maxlength="350"></textarea>
   </div>
   
   <fieldset class="field" id="purpose">
       <div class="fieldheader">
-        <legend for="tool-purpose" class="label-input">Purpose<span class="short-sub">(Required)</span></legend>
+        <legend class="label-input">Purpose<span class="short-sub">(Required)</span></legend>
       </div>
       <p>What type of evaluations does this tool support?</p>
       <div class="field-group">
@@ -1584,7 +1586,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="product">
       <div class="fieldheader">
-        <legend for="tool-product" class="label-input">Product evaluated<span class="short-sub">(Required)</span></legend>
+        <legend class="label-input">Product evaluated<span class="short-sub">(Required)</span></legend>
         
       </div>
       <div class="field-group">
@@ -1624,7 +1626,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="technology">
       <div class="fieldheader">
-        <legend for="tool-technology" class="label-input">File type</legend>
+        <legend class="label-input">File type</legend>
         
       </div>
       <div class="field-group">
@@ -1682,7 +1684,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="automated">
       <div class="fieldheader">
-        <legend for="tool-automated" class="label-input">Scope<span class="short-sub">(Required)</span></legend>
+        <legend class="label-input">Scope<span class="short-sub">(Required)</span></legend>
         <p>Range and depth of single evaluation</p>
       </div>
       <div class="field-group">
@@ -1722,10 +1724,21 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="guideline">
       <div class="fieldheader">
-        <legend for="tool-guideline" class="label-input">Standards</legend>
+        <legend class="label-input">Standards</legend>
         
       </div>
       <div class="field-group">
+        
+          <div class="radio-field">
+            <input type="checkbox" name="guideline[]" id="tool-guideline-WCAG2.2" value="WCAG 2.2" group="guideline" />
+            <label for="tool-guideline-WCAG2.2">WCAG 2.2</label>
+            
+              <abbr title="International - Web Content Accessibility Guidelines 2.2" class="toggletip-container">
+                  <img alt="International - Web Content Accessibility Guidelines 2.2" tabindex="0" data-toggletip-content="International - Web Content Accessibility Guidelines 2.2" src="/content-images/wai-evaluation-tools-list/info.png" />
+                  <span class="toggletip-span-inline" role="status"></span>
+              </abbr>
+            
+          </div>
         
           <div class="radio-field">
             <input type="checkbox" name="guideline[]" id="tool-guideline-WCAG2.1" value="WCAG 2.1" group="guideline" />
@@ -1760,7 +1773,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="assists">
       <div class="fieldheader">
-        <legend for="tool-assists" class="label-input">Output</legend>
+        <legend class="label-input">Output</legend>
         
       </div>
       <div class="field-group">
@@ -2175,7 +2188,7 @@ main > header { grid-column: 4 / span 4; }
       </select>
     </div>
     <div class="proto">
-      <label for="tool-language_[n]" class="label-input"></label>
+      <label for="language_[n]" class="label-input"></label>
       <select name="language[]" id="language_[n]" class="select-form" disabled=""> 
           <option value=""></option>
           
@@ -2560,7 +2573,7 @@ main > header { grid-column: 4 / span 4; }
   
  <fieldset class="field" id="license">
   <div class="field-group">
-      <legend for="tool-license" class="label-input">License<span class="short-sub">(Required)</span></legend>
+      <legend class="label-input">License<span class="short-sub">(Required)</span></legend>
 <!--       
         <div class="radio-field">
           <input type="checkbox" name="license[]" id="tool-license-free" value="Free" required>
@@ -2607,7 +2620,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="type">
       <div class="fieldheader">
-        <legend for="tool-type" class="label-input">Type of tool<span class="short-sub">(Required)</span></legend>
+        <legend class="label-input">Type of tool<span class="short-sub">(Required)</span></legend>
         <p>Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and desktop application).</p>
 <!--         
           <abbr title="Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and desktop application)." class="toggletip-container">
@@ -2680,7 +2693,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="browsers">
       <div class="fieldheader">
-        <legend for="tool-browsers" class="label-input">Browser for plugin</legend>
+        <legend class="label-input">Browser for plugin</legend>
         
       </div>
       <div class="field-group">
@@ -2726,7 +2739,7 @@ main > header { grid-column: 4 / span 4; }
   
   <fieldset class="field" id="desktop">
       <div class="fieldheader">
-      <legend for="tool-desktop" class="label-input">Operating system</legend>
+      <legend class="label-input">Operating system</legend>
         
       </div>
       <div class="field-group">
@@ -3058,9 +3071,9 @@ if (submitForm) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1696923596795994596"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1697830872802144486"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1696923596795994596"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1697830872802144486"></script>
 <script>
   svg4everybody();
 </script><script>

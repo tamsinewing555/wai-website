@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1696923596795994596";
+      element.src = "/WAI/assets/scripts/main.js?1697830872802144486";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1696923596795994596">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1697830872802144486">
 
-<title> Meta viewport allows for zoom[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1696923596795994596"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Meta viewport allows for zoom[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1697830872802144486"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Meta viewport allows for zoom" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -342,24 +342,43 @@ h2#sidebar-header {
 
 <h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to each <code class="language-plaintext highlighter-rouge">content</code> attribute on a <code class="language-plaintext highlighter-rouge">meta</code> element with a <code class="language-plaintext highlighter-rouge">name</code> <a href="#attribute-value" title="Definition of attribute value">attribute value</a> of <code class="language-plaintext highlighter-rouge">viewport</code> for which at least one of the following is true:</p>
+<p>This rule applies to each <code class="language-plaintext highlighter-rouge">content</code> attribute for which all of the following are true:</p>
 
 <ul>
-  <li>the <code class="language-plaintext highlighter-rouge">content</code> <a href="#attribute-value" title="Definition of attribute value">attribute value</a> has the <code class="language-plaintext highlighter-rouge">user-scalable</code> property; or</li>
-  <li>the <code class="language-plaintext highlighter-rouge">content</code> <a href="#attribute-value" title="Definition of attribute value">attribute value</a> has the <code class="language-plaintext highlighter-rouge">maximum-scale</code> property.</li>
+  <li>the attribute is defined on a <code class="language-plaintext highlighter-rouge">meta</code> element with a <code class="language-plaintext highlighter-rouge">name</code> <a href="#attribute-value" title="Definition of attribute value">attribute value</a> of <code class="language-plaintext highlighter-rouge">viewport</code>; and</li>
+  <li>the <a href="#attribute-value" title="Definition of attribute value">attribute value</a> has at least one of the <code class="language-plaintext highlighter-rouge">maximum-scale</code> or <code class="language-plaintext highlighter-rouge">user-scalable</code> keys.</li>
 </ul>
+
+<p>For the purpose of this rule, the <a href="#attribute-value" title="Definition of attribute value">attribute value</a> of the <code class="language-plaintext highlighter-rouge">content</code> attribute is a list of key/value pairs.</p>
 
 <h2 id="expectation-1">Expectation 1</h2>
 
-<p>For each test target, the <a href="#attribute-value" title="Definition of attribute value">attribute value</a> does not have a <code class="language-plaintext highlighter-rouge">user-scalable</code> property with a value of <code class="language-plaintext highlighter-rouge">no</code>.</p>
+<p>For each test target’s <a href="#attribute-value" title="Definition of attribute value">attribute value</a>, at least one of the following is true:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">user-scalable</code> is not defined; or</li>
+  <li><code class="language-plaintext highlighter-rouge">user-scalable</code> is <code class="language-plaintext highlighter-rouge">yes</code>, <code class="language-plaintext highlighter-rouge">device-width</code> or <code class="language-plaintext highlighter-rouge">device-height</code>; or</li>
+  <li><code class="language-plaintext highlighter-rouge">user-scalable</code> is a number which is not between -1 and 1 (excluded).</li>
+</ul>
+
+<p><strong>Note:</strong> This is equivalent to applying the <a href="https://www.w3.org/TR/css-device-adapt-1/#translate-meta-to-at-viewport" title="Translations of the content attribute into @viewport descriptors">translations into a <code class="language-plaintext highlighter-rouge">@viewport</code> descriptors</a> and not obtaining a value of <code class="language-plaintext highlighter-rouge">fixed</code> for the <code class="language-plaintext highlighter-rouge">user-zoom</code> descriptor from <a href="https://www.w3.org/TR/css-device-adapt-1/#user-scalable">the translation for <code class="language-plaintext highlighter-rouge">user-scalable</code></a>.</p>
 
 <h2 id="expectation-2">Expectation 2</h2>
 
-<p>For each test target, the <a href="#attribute-value" title="Definition of attribute value">attribute value</a> does not have a <code class="language-plaintext highlighter-rouge">maximum-scale</code> property with a value less than 2.</p>
+<p>For each test target’s <a href="#attribute-value" title="Definition of attribute value">attribute value</a>, at least one of the following is true:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">maximum-scale</code> is not defined; or</li>
+  <li><code class="language-plaintext highlighter-rouge">maximum-scale</code> is <code class="language-plaintext highlighter-rouge">device-width</code> or <code class="language-plaintext highlighter-rouge">device-height</code>; or</li>
+  <li><code class="language-plaintext highlighter-rouge">maximum-scale</code> is a negative number; or</li>
+  <li><code class="language-plaintext highlighter-rouge">maximum-scale</code> is a number which is 2 or more.</li>
+</ul>
+
+<p><strong>Note:</strong> This is equivalent to applying the <a href="https://www.w3.org/TR/css-device-adapt-1/#translate-meta-to-at-viewport" title="Translations of the content attribute into @viewport descriptors">translations into a <code class="language-plaintext highlighter-rouge">@viewport</code> descriptors</a> and not obtaining a value smaller than 2 for the <code class="language-plaintext highlighter-rouge">max-zoom</code> descriptor from <a href="https://www.w3.org/TR/css-device-adapt-1/#min-scale-max-scale">the translation for <code class="language-plaintext highlighter-rouge">maximum-scale</code></a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>Pages for which any of the following is true may satisfy success criteria Success Criteria <a href="https://www.w3.org/TR/WCAG21/#resize-text" title="WCAG 2.1 Success Criterion 1.4.4 Resize text">1.4.4 Resize text</a> and <a href="https://www.w3.org/TR/WCAG21/#reflow" title="WCAG 2.1 Success Criterion 1.4.10 Reflow">1.4.10 Reflow</a>, even if the rule results in a failed outcome.</p>
+<p>Pages for which any of the following is true may satisfy Success Criteria <a href="https://www.w3.org/TR/WCAG21/#resize-text" title="WCAG 2.1 Success Criterion 1.4.4 Resize text">1.4.4 Resize text</a> and <a href="https://www.w3.org/TR/WCAG21/#reflow" title="WCAG 2.1 Success Criterion 1.4.10 Reflow">1.4.10 Reflow</a>, even if the rule results in a failed outcome.</p>
 
 <ul>
   <li>The <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s" title="Web page">page</a> has no <a href="#visible" title="Definition of visible">visible</a> <a href="https://www.w3.org/TR/WCAG21/#dfn-content" title="content (Web content)">content</a>; or</li>
@@ -370,6 +389,8 @@ h2#sidebar-header {
 <h2 id="accessibility-support">Accessibility Support</h2>
 
 <p>Desktop browsers ignore the viewport <code class="language-plaintext highlighter-rouge">meta</code> element, and most modern mobile browsers either ignore it by default or have an accessibility option which will allow zooming. This rule is not relevant for desktop browsers, nor for most modern mobile browsers. Only users with older mobile browsers can experience issues tested by this rule.</p>
+
+<p>The exact way the <code class="language-plaintext highlighter-rouge">content</code> attribute should be parsed (notably, for error handling) is not fully specified. CSS specification includes a <a href="https://www.w3.org/TR/css-device-adapt-1/#parsing-algorithm">non-normative parsing algorithm</a>. Different user agents may behave differently in some cases.</p>
 
 <h2 id="background">Background</h2>
 
@@ -445,7 +466,26 @@ not tested by the rule:</p>
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d143bfe343ecf75bceb92b6fc9807cc5f453b319.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/08e8943b849762eb7f18654c7f9e479ad33b2840.html">Open in a new tab</a></p>
+
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element does not prevent user scaling because it has <code class="language-plaintext highlighter-rouge">user-scalable</code> set to <code class="language-plaintext highlighter-rouge">5</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"user-scalable=5"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;p&gt;</span>
+			Lorem ipsum
+		<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-3">Passed Example 3</h4>
+
+<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d143bfe343ecf75bceb92b6fc9807cc5f453b319.html">Open in a new tab</a></p>
 
 <p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element allows users to scale content up to 200% because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to 2.0.</p>
 
@@ -462,16 +502,35 @@ not tested by the rule:</p>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<h4 id="passed-example-3">Passed Example 3</h4>
+<h4 id="passed-example-4">Passed Example 4</h4>
 
-<p><a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html">Open in a new tab</a></p>
 
-<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element does not prevent user scaling because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to -1 which results in this value being dropped.</p>
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element does not prevent user scaling because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to -1, a negative value.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
 		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
 		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"maximum-scale=-1"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;p&gt;</span>
+			Lorem ipsum
+		<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-5">Passed Example 5</h4>
+
+<p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/30b40365b4e59aa103ff04c369f31658fa6e2790.html">Open in a new tab</a></p>
+
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element does not prevent user scaling because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to <code class="language-plaintext highlighter-rouge">device-width</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"maximum-scale=device-width"</span> <span class="nt">/&gt;</span>
 	<span class="nt">&lt;/head&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
 		<span class="nt">&lt;p&gt;</span>
@@ -504,7 +563,45 @@ not tested by the rule:</p>
 
 <h4 id="failed-example-2">Failed Example 2</h4>
 
-<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a1240b31761f65c92a8f6d08ed7105ee822d0ebc.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/8735b02e59dd802a5a9e9a7ea1934a106d2963eb.html">Open in a new tab</a></p>
+
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element prevents user scaling because it has <code class="language-plaintext highlighter-rouge">user-scalable</code> set to <code class="language-plaintext highlighter-rouge">0.5</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"user-scalable=0.5"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;p&gt;</span>
+			Lorem ipsum
+		<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-3">Failed Example 3</h4>
+
+<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/c94a59f8c3b17d722781af36da3556ff4b418776.html">Open in a new tab</a></p>
+
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element prevents user scaling because it has <code class="language-plaintext highlighter-rouge">user-scalable</code> set to <code class="language-plaintext highlighter-rouge">invalid</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"user-scalable=invalid"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;p&gt;</span>
+			Lorem ipsum
+		<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-4">Failed Example 4</h4>
+
+<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a1240b31761f65c92a8f6d08ed7105ee822d0ebc.html">Open in a new tab</a></p>
 
 <p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element prevents users to scale content up to 200% because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to 1.5.</p>
 
@@ -521,16 +618,16 @@ not tested by the rule:</p>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<h4 id="failed-example-3">Failed Example 3</h4>
+<h4 id="failed-example-5">Failed Example 5</h4>
 
-<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/c7e4980eb42d0b138684ac1e28318a197d86ccfc.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/e5695989a43a3297cf6b78182014c7a3848ff7e1.html">Open in a new tab</a></p>
 
-<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element prevents users to scale content up to 200% because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to 1.0.</p>
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element prevents users to scale content up to 200% because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to <code class="language-plaintext highlighter-rouge">yes</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
 		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
-		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"maximum-scale=1.0"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"maximum-scale=yes"</span> <span class="nt">/&gt;</span>
 	<span class="nt">&lt;/head&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
 		<span class="nt">&lt;p&gt;</span>
@@ -540,16 +637,35 @@ not tested by the rule:</p>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<h4 id="failed-example-4">Failed Example 4</h4>
+<h4 id="failed-example-6">Failed Example 6</h4>
 
-<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/e5695989a43a3297cf6b78182014c7a3848ff7e1.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/e5695989a43a3297cf6b78182014c7a3848ff7e1.html">Open in a new tab</a></p>
 
-<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element prevents users to scale content up to 200% because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to <code class="language-plaintext highlighter-rouge">yes</code> which translates to 1.0.</p>
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element prevents users to scale content up to 200% because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to <code class="language-plaintext highlighter-rouge">yes</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
 	<span class="nt">&lt;head&gt;</span>
 		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
 		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"maximum-scale=yes"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;p&gt;</span>
+			Lorem ipsum
+		<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-7">Failed Example 7</h4>
+
+<p><a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/9f288c284df9ade53aa33e50ec50c879d5aba4ef.html">Open in a new tab</a></p>
+
+<p>This viewport <code class="language-plaintext highlighter-rouge">meta</code> element prevents users to scale content up to 200% because it has <code class="language-plaintext highlighter-rouge">maximum-scale</code> set to <code class="language-plaintext highlighter-rouge">invalid</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Simple page showing random text<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"maximum-scale=invalid"</span> <span class="nt">/&gt;</span>
 	<span class="nt">&lt;/head&gt;</span>
 	<span class="nt">&lt;body&gt;</span>
 		<span class="nt">&lt;p&gt;</span>
@@ -809,8 +925,8 @@ not tested by the rule:</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> b4f0c3</p>
-<p><strong>Date:</strong> Updated 30 August 2023</p>
-<p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+<p><strong>Date:</strong> Updated 13 October 2023</p>
+<p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Previous Authors: <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
   </footer>
@@ -851,9 +967,9 @@ not tested by the rule:</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1696923596795994596"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1697830872802144486"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1696923596795994596"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1697830872802144486"></script>
 <script>
   svg4everybody();
 </script><script>
