@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1698688247217742155";
+      element.src = "/WAI/assets/scripts/main.js?1698765581213729393";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1698688247217742155">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1698765581213729393">
 
 <title>[Draft] Submit a tool - Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -1502,7 +1502,8 @@ main > header { grid-column: 4 / span 4; }
       <input type="text" id="title" name="title" required="" />
   </div>
   <div class="field">
-      <label for="website" class="label-input">Web address (URL)<span>(Required)</span></label>
+      <label for="website" class="label-input" aria-describedby="website-desc">Web address (URL)<span>(Required)</span></label>
+      <p id="website-desc">Include 'http://' or 'https://' as appropriate.</p>
       <input type="url" id="website" name="website" required="" />
   </div>
   <div class="field">
@@ -1545,7 +1546,7 @@ main > header { grid-column: 4 / span 4; }
   <h2 id="tool-functionality"><span>2/3</span>Tool functionality</h2>
 
   <div class="field" id="features">
-    <label for="feature-desc" class="label specialField">Short product description (max. 350)<span>(Required)</span></label>
+    <label for="feature-desc" class="label specialField">Short product description (max. 350 characters)<span>(Required)</span></label>
     <p>Add a description of key features and functionalities of the tool. Try to write this description in a way that tool users can understand.</p>
     <textarea id="feature-desc" name="features" rows="5" maxlength="350"></textarea>
   </div>
@@ -2941,10 +2942,8 @@ if (submitForm) {
     submitForm.querySelector('.tool-license-other-input').addEventListener('keyup', function (event) {
         var box = document.querySelector('.tool-license-other-input');
         if(box.value == undefined || box.value == "" || box.value.length == 0){
-            console.log("empty");
             document.querySelector('.tool-license-other-check').checked = false;
         }else{
-            console.log("full");
             document.querySelector('.tool-license-other-check').checked = true;
         }
     });
@@ -2968,7 +2967,6 @@ if (submitForm) {
     submitForm.querySelectorAll('select').forEach(item => {
         item.addEventListener('keyup', e => { 
           if (e.key === "Enter") {
-            console.log("clicked");
             item.click();
           }
         })
@@ -3110,7 +3108,7 @@ if (submitForm) {
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Date:</strong> Information on specific tools is updated frequently, as we receive it. In the information for each tool there is a last updated date. The Evaluation Tools List user interface was updated on dd MON 2023. First published March 2006.</p> <p><strong>Editors:</strong> Michel Hansma and Vera Lange. Contributors: Eric Velleman, Steve Lee, Wilco Fiers, Shawn Henry, Brent Bakken, Sharron Rush, Kris Anne Kinney, Steve Lee, Daniel Montavo, Kevin White, Estella Oncins, Michele Williams, Vicki Menezes Miller, Andrew Arch, Laura Keen, Sylvie Duchateau, Jade Matos Carew, Brian Elton, Howard Kramer, Mark Palmer, Shadi Abou-Zahra, and other <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p> <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
+      <p><strong>Date:</strong> Information on specific tools is updated frequently, as we receive it. In the information for each tool there is a last updated date. The Evaluation Tools List user interface was updated on dd MON 2023. First published March 2006.</p> <p><strong>Editors:</strong> Michel Hansma and Vera Lange. Contributors: Eric Velleman, Steve Lee, Wilco Fiers, Shawn Henry, Brent Bakken, Sharron Rush, Kris Anne Kinney, Steve Lee, Daniel Montalvo, Kevin White, Estella Oncins, Michele Williams, Vicki Menezes Miller, Andrew Arch, Laura Keen, Sylvie Duchateau, Jade Matos Carew, Brian Elton, Howard Kramer, Mark Palmer, Shadi Abou-Zahra, and other <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p> <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 </div>
   </footer>
   
@@ -3150,9 +3148,9 @@ if (submitForm) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1698688247217742155"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1698765581213729393"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1698688247217742155"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1698765581213729393"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -227,6 +227,7 @@
 /about/projects/wai-coop/symposium2/index.html
 /about/projects/wai-coop/symposium2_day1_transcript.html
 /about/projects/wai-coop/symposium2_day2_transcript.html
+/about/projects/wai-coop/symposium3/index.html
 /about/projects/wai-core-2015/index.html
 /about/projects/wai-core-ford/index.html
 /about/projects/wai-guide/index.html

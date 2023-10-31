@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1698688247217742155";
+      element.src = "/WAI/assets/scripts/main.js?1698765581213729393";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1698688247217742155">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1698765581213729393">
 
-<title> Role attribute has valid value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1698688247217742155"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Role attribute has valid value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1698765581213729393"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Role attribute has valid value" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -348,7 +348,7 @@ h2#sidebar-header {
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>This rule assumes that using the <code class="language-plaintext highlighter-rouge">role</code> attribute for any purpose other than to provide an ARIA <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> to the elements is invalid. These would fail <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4">WCAG Technique: ARIA4 Using a WAI-ARIA role to expose the role of a user interface component</a>.</p>
+<p>There are no assumptions.</p>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
@@ -360,7 +360,7 @@ h2#sidebar-header {
 
 <p>The <code class="language-plaintext highlighter-rouge">role</code> attribute is a set of <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="Definition of space separated tokens">space separated tokens</a>. Having a <a href="#whitespace">whitespace</a> separated list of more than one token in the value of the role attribute is used for what is known as <em>fallback roles</em>. If the first token is not accessibility supported (or valid), the next one will be used for determining the <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of the element, and so forth. The rule applies to attributes containing at least one non-<a href="https://infra.spec.whatwg.org/#ascii-whitespace" title="Definition of ASCII whitespace">ASCII whitespace</a> character so that there is at least one token in the set.</p>
 
-<p>Not every role should be used on every element. Which ARIA roles may be used on which HTML elements is defined in <a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a>. Testing this is not part of this rule.</p>
+<p>Not every role can be used on every element. Which ARIA roles may be used on which HTML elements is defined in <a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a>. Testing this is not part of this rule.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -738,8 +738,8 @@ See [<span class="nt">&lt;span</span> <span class="na">class=</span><span class=
           <tr>
             <td>QualWeb 3.0.0</td>
             <td>Automated tool</td>
-            <td> Partial
-            </td>
+            <td>
+              Consistent </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-674b10"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
@@ -804,7 +804,7 @@ See [<span class="nt">&lt;span</span> <span class="na">class=</span><span class=
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 674b10</p>
-<p><strong>Date:</strong> Updated 30 August 2023</p>
+<p><strong>Date:</strong> Updated 25 October 2023</p>
 <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -846,9 +846,9 @@ See [<span class="nt">&lt;span</span> <span class="na">class=</span><span class=
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1698688247217742155"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1698765581213729393"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1698688247217742155"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1698765581213729393"></script>
 <script>
   svg4everybody();
 </script><script>

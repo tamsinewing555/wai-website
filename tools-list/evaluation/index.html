@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1698688247217742155";
+      element.src = "/WAI/assets/scripts/main.js?1698765581213729393";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1698688247217742155">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1698765581213729393">
 
 <title>[Draft] Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -1463,7 +1463,7 @@ b {
                     
                     <legend class="label" tabindex="0">
                         
-                            <abbr title="Type of evaluation a tool supports">Purpose</abbr>
+                            Purpose
                         
                     </legend>
                     <div class="options">
@@ -1493,6 +1493,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -1548,6 +1549,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -1587,6 +1589,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -1596,7 +1599,7 @@ b {
                     
                     <legend class="label" tabindex="0">
                         
-                            <abbr title="Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and desktop application)">Type of tool</abbr>
+                            Type of tool
                         
                     </legend>
                     <div class="options">
@@ -1658,6 +1661,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -1705,6 +1709,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -1784,6 +1789,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -1793,7 +1799,7 @@ b {
                     
                     <legend class="label" tabindex="0">
                         
-                            <abbr title="Range and depth of single evaluation">Scope</abbr>
+                            Scope
                         
                     </legend>
                     <div class="options">
@@ -1839,6 +1845,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -1902,6 +1909,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -1965,6 +1973,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -1974,7 +1983,7 @@ b {
                     
                     <legend class="label" tabindex="0">
                         
-                            <abbr title="Vendor provided information on tool accessibility">Accessibility statement</abbr>
+                            Accessibility statement
                         
                     </legend>
                     <div class="options">
@@ -1988,6 +1997,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -1997,7 +2007,7 @@ b {
                     
                     <legend class="label" tabindex="0">
                         
-                            <abbr title="Rules for harmonized WCAG and ARIA testing">ACT Implementation</abbr>
+                            ACT Implementation
                         
                     </legend>
                     <div class="options">
@@ -2011,6 +2021,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -2058,6 +2069,7 @@ b {
                     </div>
                     
                     </div>
+                    <a href="#tools-list" class="button button--skip-link">Skip to results</a>
                 </fieldset>
                 
             
@@ -23785,7 +23797,6 @@ function makeCollapsible(item){
   var label = item.querySelector('legend');
   label.classList.add("collapsible");
   var parent = label.parentNode;
-  console.log(parent);
   if(item.getAttribute("collapsed") == "true"){
     label.innerHTML += '<svg focusable="false" aria-hidden="true" class="icon-chevron-down "><use xlink:href="/WAI/assets/images/icons.svg#icon-chevron-down"></use></svg>';
     item.querySelector('.options').classList.add("collapsed");
@@ -24012,10 +24023,9 @@ const importJson = String.raw`{"moutvalid":{"title":"MoutValid","creator":"Macmo
 importJson.replace("\\","\\\\");
 
 const jsonTools = JSON.parse(importJson);
-const jsonFilters = JSON.parse(String.raw`[{"id":"purpose","name":"Purpose","info":"<abbr title='Type of evaluation a tool supports'>Purpose</abbr>","infoForm":"What type of evaluations does this tool support?","collapsed":"false","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"automated","name":"Automated testing"},{"id":"manual","name":"Manual testing"},{"id":"simulation","name":"Simulated user experience"}]},{"id":"product","name":"Product evaluated","collapsed":"false","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"website","name":"Website"},{"id":"productMobileApplication","name":"Mobile application"},{"id":"document","name":"Document"},{"id":"sourceCode","name":"Source code"},{"id":"otherProduct","name":"Other"}]},{"id":"license","name":"Paid or free","collapsed":"false","type":"checkbox","order":"custom","showfilter":true,"options":[{"id":"free","name":"Free","filtername":["Free Software","Open Source"]},{"id":"limited","name":"Limited","filtername":["Trial or Demo"]},{"id":"paid","name":"Paid","filtername":["Commercial","Enterprise"]}]},{"id":"type","name":"Type of tool","info":"<abbr title='Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and desktop application)'>Type of tool</abbr>","infoForm":"Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and desktop application).","collapsed":"false","type":"checkbox","order":"custom","showfilter":true,"options":[{"id":"browserPlugin","name":"Browser plugin"},{"id":"typeMobileApplication","name":"Mobile application"},{"id":"typeWebOnlineTool","name":"Online tool","filtername":"Web application"},{"id":"serverside","name":"Server-side integration"},{"id":"commandline","name":"Command-line / CI","filtername":"Command line tool","info":"Command-line / <abbr title='Continuous Integration'>CI</abbr>"},{"id":"programmingTool","name":"Programming tool plugin / IDE","info":"Programming tool plugin / <abbr title='Integrated Development Environment'>IDE</abbr>"},{"id":"authoringTool","name":"CMS plugin","info":"<abbr title='Content Management System'>CMS</abbr> plugin"}]},{"id":"guideline","name":"Standards","collapsed":"false","type":"checkbox","order":"custom","showfilter":true,"options":[{"id":"WCAG2.2","name":"WCAG 2.2","info":"<abbr title='Web Content Accessibility Guidelines'>WCAG</abbr> 2.2","short":"WCAG 2.2","filtername":"WCAG</abbr> 2.2"},{"id":"WCAG2.1","name":"WCAG 2.1","info":"<abbr title='Web Content Accessibility Guidelines'>WCAG</abbr> 2.1","short":"WCAG 2.1","filtername":"WCAG</abbr> 2.1"},{"id":"WCAG2.0","name":"WCAG 2.0","info":"<abbr title='Web Content Accessibility Guidelines'>WCAG</abbr> 2.0","short":"WCAG 2.0","filtername":"WCAG</abbr> 2.0"},{"id":"EPUB","name":"EPUB Accessibility 1.1","short":"EPUB 1.1","filtername":"EPUB Accessibility 1.1"}]},{"id":"technology","name":"File type","collapsed":"false","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"html","name":"HTML / XHTML","filtername":["HTML","XHTML"]},{"id":"css","name":"CSS","filtername":"CSS"},{"id":"epub","name":"EPUB","filtername":"EPUB"},{"id":"pdf","name":"PDF","filtername":"PDF"},{"id":"msodocuments","name":"Microsoft Office documents"},{"id":"smil","name":"SMIL","filtername":"SMIL"},{"id":"markdown","name":"Markdown"},{"id":"odf","name":"Open Document Format (ODF)"}]},{"id":"automated","name":"Scope","collapsed":"false","info":"<abbr title='Range and depth of single evaluation'>Scope</abbr>","infoForm":"Range and depth of single evaluation.","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"component","name":"Component","filtername":["Page component"]},{"id":"singlePageScreen","name":"Single page/screen","filtername":["Single web pages","Single page"]},{"id":"samplePagesScreens","name":"Sample of pages/screens","filtername":["Sample of pages"]},{"id":"entireProduct","name":"Entire website / software / product","filtername":["Entire product"]},{"id":"restrictedPages","name":"Restricted or password protected pages"}]},{"id":"desktop","name":"Operating system","collapsed":"true","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"android","name":"Android"},{"id":"ios","name":"iOS"},{"id":"windows","name":"Windows","filtername":"Microsoft Windows"},{"id":"macos","name":"MacOS","filtername":"Apple macOS"},{"id":"linux","name":"Linux"},{"id":"otheros","name":"Other"}]},{"id":"browsers","name":"Browser for plugin","collapsed":"true","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"chrome","name":"Chrome"},{"id":"safari","name":"Safari"},{"id":"edge","name":"Edge","filtername":"Edge / Explorer"},{"id":"firefox","name":"Firefox"},{"id":"opera","name":"Opera"},{"id":"otherbrowser","name":"Other"}]},{"id":"a11yloc","name":"Accessibility statement","collapsed":"true","info":"<abbr title='Vendor provided information on tool accessibility'>Accessibility statement</abbr>","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"yesas","name":"Accessibility statement available","filtername":"Tool providing accessibility information"}]},{"id":"actrules","name":"ACT Implementation","collapsed":"true","info":"<abbr title='Rules for harmonized WCAG and ARIA testing'>ACT Implementation</abbr>","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"yesar","name":"Documented support for ACT Rules","filtername":"test"}]},{"id":"assists","name":"Output","collapsed":"true","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"generateReport","name":"Generate report of evaluation results","filtername":"Generating reports of evaluation results"},{"id":"displayInformation","name":"Display information within pages","filtername":"Displaying information within web pages"},{"id":"modifyPresentation","name":"Modify the presentation of pages","filtername":"Modifying the presentation of web pages"},{"id":"accessibilityScore","name":"Accessibility score"}]}]`);
+const jsonFilters = JSON.parse(String.raw`[{"id":"purpose","name":"Purpose","infoForm":"What type of evaluations does this tool support?","collapsed":"false","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"automated","name":"Automated testing"},{"id":"manual","name":"Manual testing"},{"id":"simulation","name":"Simulated user experience"}]},{"id":"product","name":"Product evaluated","collapsed":"false","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"website","name":"Website"},{"id":"productMobileApplication","name":"Mobile application"},{"id":"document","name":"Document"},{"id":"sourceCode","name":"Source code"},{"id":"otherProduct","name":"Other"}]},{"id":"license","name":"Paid or free","collapsed":"false","type":"checkbox","order":"custom","showfilter":true,"options":[{"id":"free","name":"Free","filtername":["Free Software","Open Source"]},{"id":"limited","name":"Limited","filtername":["Trial or Demo"]},{"id":"paid","name":"Paid","filtername":["Commercial","Enterprise"]}]},{"id":"type","name":"Type of tool","infoForm":"Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and desktop application).","collapsed":"false","type":"checkbox","order":"custom","showfilter":true,"options":[{"id":"browserPlugin","name":"Browser plugin"},{"id":"typeMobileApplication","name":"Mobile application"},{"id":"typeWebOnlineTool","name":"Online tool","filtername":"Web application"},{"id":"serverside","name":"Server-side integration"},{"id":"commandline","name":"Command-line / CI","filtername":"Command line tool","info":"Command-line / <abbr title='Continuous Integration'>CI</abbr>"},{"id":"programmingTool","name":"Programming tool plugin / IDE","info":"Programming tool plugin / <abbr title='Integrated Development Environment'>IDE</abbr>"},{"id":"authoringTool","name":"CMS plugin","info":"<abbr title='Content Management System'>CMS</abbr> plugin"}]},{"id":"guideline","name":"Standards","collapsed":"false","type":"checkbox","order":"custom","showfilter":true,"options":[{"id":"WCAG2.2","name":"WCAG 2.2","info":"<abbr title='Web Content Accessibility Guidelines'>WCAG</abbr> 2.2","short":"WCAG 2.2","filtername":"WCAG</abbr> 2.2"},{"id":"WCAG2.1","name":"WCAG 2.1","info":"<abbr title='Web Content Accessibility Guidelines'>WCAG</abbr> 2.1","short":"WCAG 2.1","filtername":"WCAG</abbr> 2.1"},{"id":"WCAG2.0","name":"WCAG 2.0","info":"<abbr title='Web Content Accessibility Guidelines'>WCAG</abbr> 2.0","short":"WCAG 2.0","filtername":"WCAG</abbr> 2.0"},{"id":"EPUB","name":"EPUB Accessibility 1.1","short":"EPUB 1.1","filtername":"EPUB Accessibility 1.1"}]},{"id":"technology","name":"File type","collapsed":"false","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"html","name":"HTML / XHTML","filtername":["HTML","XHTML"]},{"id":"css","name":"CSS","filtername":"CSS"},{"id":"epub","name":"EPUB","filtername":"EPUB"},{"id":"pdf","name":"PDF","filtername":"PDF"},{"id":"msodocuments","name":"Microsoft Office documents"},{"id":"smil","name":"SMIL","filtername":"SMIL"},{"id":"markdown","name":"Markdown"},{"id":"odf","name":"Open Document Format (ODF)"}]},{"id":"automated","name":"Scope","collapsed":"false","infoForm":"Range and depth of single evaluation.","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"component","name":"Component","filtername":["Page component"]},{"id":"singlePageScreen","name":"Single page/screen","filtername":["Single web pages","Single page"]},{"id":"samplePagesScreens","name":"Sample of pages/screens","filtername":["Sample of pages"]},{"id":"entireProduct","name":"Entire website / software / product","filtername":["Entire product"]},{"id":"restrictedPages","name":"Restricted or password protected pages"}]},{"id":"desktop","name":"Operating system","collapsed":"true","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"android","name":"Android"},{"id":"ios","name":"iOS"},{"id":"windows","name":"Windows","filtername":"Microsoft Windows"},{"id":"macos","name":"MacOS","filtername":"Apple macOS"},{"id":"linux","name":"Linux"},{"id":"otheros","name":"Other"}]},{"id":"browsers","name":"Browser for plugin","collapsed":"true","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"chrome","name":"Chrome"},{"id":"safari","name":"Safari"},{"id":"edge","name":"Edge","filtername":"Edge / Explorer"},{"id":"firefox","name":"Firefox"},{"id":"opera","name":"Opera"},{"id":"otherbrowser","name":"Other"}]},{"id":"a11yloc","name":"Accessibility statement","collapsed":"true","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"yesas","name":"Accessibility statement available","filtername":"Tool providing accessibility information"}]},{"id":"actrules","name":"ACT Implementation","collapsed":"true","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"yesar","name":"Documented support for ACT Rules","filtername":"test"}]},{"id":"assists","name":"Output","collapsed":"true","type":"checkbox","order":"default","showfilter":true,"options":[{"id":"generateReport","name":"Generate report of evaluation results","filtername":"Generating reports of evaluation results"},{"id":"displayInformation","name":"Display information within pages","filtername":"Displaying information within web pages"},{"id":"modifyPresentation","name":"Modify the presentation of pages","filtername":"Modifying the presentation of web pages"},{"id":"accessibilityScore","name":"Accessibility score"}]}]`);
 const jsonLang = JSON.parse('null');
 const jsonCountry = JSON.parse('null');
-console.log(jsonFilters);
 
 var toolsList = document.getElementById('tools-list');
 var toolsListContent = document.querySelector('.tools-list');
@@ -24131,18 +24141,15 @@ if (filterForm && sortForm && search) {
 
     // selecting filters on
     var filtersOn = getActiveFiltersList(form);
-    console.log(filtersOn);
 
     // filtering results
     var newResults = [];
 
     newResults = filterNewResultsList(filtersOn);
-    console.log(newResults);
 
     //Filter on search term
     var searchedResults = [];
     searchedResults = filterSearchList(newResults);
-    console.log(searchedResults);
 
     //rebuild document
     rebuildList(searchedResults, filtersOn);
@@ -24338,7 +24345,6 @@ if (filterForm && sortForm && search) {
       document.getElementsByClassName('searchbox')[0].getElementsByTagName("svg")[0].style.display = "";
     }
 
-    console.log(newResults);
     updateActiveFilters();
     showFilterCounters(filterForm, false);
   }
@@ -24541,9 +24547,9 @@ function updateDetail(e){
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1698688247217742155"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1698765581213729393"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1698688247217742155"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1698765581213729393"></script>
 <script>
   svg4everybody();
 </script><script>
