@@ -3268,8 +3268,11 @@
 /test-evaluate/tools/selecting/index.html
 /tips/acknowledgements/index.html
 /tips/css/tips.css
+/tips/designing/fr.html
 /tips/designing/index.html
+/tips/developing/fr.html
 /tips/developing/index.html
+/tips/fr.html
 /tips/img/arrow-down.png
 /tips/img/arrow-right.png
 /tips/img/audio-description.svg
@@ -3287,6 +3290,7 @@
 /tips/img/pointer.png
 /tips/img/trainer.png
 /tips/index.html
+/tips/writing/fr.html
 /tips/writing/index.html
 /tools-list/authoring/index.html
 /tools-list/authoring/submit-a-tool/failure.html
