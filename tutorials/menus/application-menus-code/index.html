@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1699380834610686501";
+      element.src = "/WAI/assets/scripts/main.js?1699390255560242196";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1699380834610686501">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1699390255560242196">
 
 <title> Application Menu Example &amp; Code | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -343,7 +343,7 @@ Array.prototype.forEach.call(appsMenuItems, function(el, i){
 		el.addEventListener("click",  function(event){
 			if (this.getAttribute('aria-expanded') == 'false' || this.getAttribute('aria-expanded') ==  null) {
 				this.setAttribute('aria-expanded', "true");
-				subindex = 0;
+				subIndex = 0;
 				gotoSubIndex(this.querySelector('ul'), 0);
 			} else {
 				this.setAttribute('aria-expanded', "false");
@@ -375,15 +375,15 @@ Array.prototype.forEach.call(appsMenuItems, function(el, i){
 				case keys.down:
 				case keys.space:
 					this.click();
-					subindex = 0;
+					subIndex = 0;
 					gotoSubIndex(this.querySelector('ul'), 0);
 					prevdef = true;
 					break;
 				case keys.up:
 					this.click();
 					var submenu = this.querySelector('ul');
-					subindex = submenu.querySelectorAll('li').length - 1;
-					gotoSubIndex(submenu, subindex);
+					subIndex = submenu.querySelectorAll('li').length - 1;
+					gotoSubIndex(submenu, subIndex);
 					prevdef = true;
 					break;
 				case keys.esc:
@@ -653,15 +653,15 @@ appsMenu.addEventListener("click", function( event ) {
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">enter</span><span class="p">:</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">down</span><span class="p">:</span>
 					<span class="k">this</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
-					<span class="nx">subindex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+					<span class="nx">subIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">ul</span><span class="dl">'</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">up</span><span class="p">:</span>
 					<span class="k">this</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
 					<span class="kd">var</span> <span class="nx">submenu</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">ul</span><span class="dl">'</span><span class="p">);</span>
-					<span class="nx">subindex</span> <span class="o">=</span> <span class="nx">submenu</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">li</span><span class="dl">'</span><span class="p">).</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="nx">submenu</span><span class="p">,</span> <span class="nx">subindex</span><span class="p">);</span>
+					<span class="nx">subIndex</span> <span class="o">=</span> <span class="nx">submenu</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">li</span><span class="dl">'</span><span class="p">).</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="nx">submenu</span><span class="p">,</span> <span class="nx">subIndex</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">esc</span><span class="p">:</span>
@@ -854,9 +854,9 @@ appsMenu.addEventListener("click", function( event ) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1699380834610686501"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1699390255560242196"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1699380834610686501"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1699390255560242196"></script>
 <script>
   svg4everybody();
 </script><script>
