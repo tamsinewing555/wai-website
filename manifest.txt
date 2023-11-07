@@ -3047,6 +3047,7 @@
 /planning/es.html
 /planning/fr.html
 /planning/index.html
+/planning/interim-repairs/fr.html
 /planning/interim-repairs/index.html
 /planning/involving-users/index.html
 /planning/org-policies/example/index.html
@@ -3280,6 +3281,7 @@
 /standards-guidelines/ar.html
 /standards-guidelines/aria/index.html
 /standards-guidelines/atag/education/index.html
+/standards-guidelines/atag/glance/fr.html
 /standards-guidelines/atag/glance/index.html
 /standards-guidelines/atag/index.html
 /standards-guidelines/atag/no-code/index.html
