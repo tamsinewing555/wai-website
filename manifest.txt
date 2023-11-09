@@ -244,7 +244,6 @@
 /about/projects/wai-tools/symposium/record/index.html
 /about/projects/wai-tools/third-open-meeting/index.html
 /about/sponsoring/index.html
-/about/translating/getting-started/index.html
 /about/translating/guides/index.html
 /about/translating/guides/new-translation/index.html
 /about/translating/guides/review-translation/index.html
@@ -258,6 +257,7 @@
 /about/translating/sitemaps/sitemap-fr/index.html
 /about/translating/sitemaps/sitemap-ru/index.html
 /about/translating/sitemaps/sitemap-zh-hans/index.html
+/about/translating/step-by-step/index.html
 /about/using-wai-material/index.html
 /adapt/index.html
 /assets/ableplayer/.gitattributes
