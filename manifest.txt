@@ -2511,12 +2511,15 @@
 /content-images/wai-tutorials/tables/img-simple.svg
 /content-images/wai-tutorials/tables/table-text-resize.png
 /content-images/wai-video-standards-and-benefits/show-cc.png
+/content-images/wai-video-standards-and-benefits/show-language.cs.png
 /content-images/wai-video-standards-and-benefits/show-language.de.png
 /content-images/wai-video-standards-and-benefits/show-language.es.png
 /content-images/wai-video-standards-and-benefits/show-language.fr.png
+/content-images/wai-video-standards-and-benefits/show-language.id.png
 /content-images/wai-video-standards-and-benefits/show-language.ja.png
 /content-images/wai-video-standards-and-benefits/show-language.nl.png
 /content-images/wai-video-standards-and-benefits/show-language.png
+/content-images/wai-video-standards-and-benefits/show-language.pt-BR.png
 /content-images/wai-video-standards-and-benefits/show-transcript.png
 /content-images/wai-wcag-em-overview/video-thumb-conformance.png
 /content-images/wai-wcag-supplemental/README.md
