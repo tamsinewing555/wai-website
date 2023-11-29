@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1701197560433993844";
+      element.src = "/WAI/assets/scripts/main.js?1701269789567057067";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1701197560433993844">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1701269789567057067">
 
 <title> Submit a tool - Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -1475,16 +1475,21 @@ main > header { grid-column: 4 / span 4; }
     <li>Checklists of accessibility requirements or Success Criteria.</li>
     <li>Recommendations, best practices, or methodologies about digital accessibility.</li>
   </ul>
-</div><form name="submission" method="post" action="/.netlify/functions/form-action" data-wai-form="checkbox-required-group">
+</div>
+
+
+
+
+  <form name="submission" method="post" action="https://wai-website.netlify.app/.netlify/functions/list-submission" data-wai-form="checkbox-required-group">
     <input type="hidden" name="form_name" value="submission" />
         
         <input type="hidden" name="form_version" value="1" />
       
         
-        <input type="hidden" name="success" value="/success.html" />
+        <input type="hidden" name="success" value="/WAI/test-evaluate/tools/submit-a-tool/success.html" />
       
         
-        <input type="hidden" name="failure" value="/failure.html" />
+        <input type="hidden" name="failure" value="/WAI/test-evaluate/tools/submit-a-tool/failure.html" />
       
         
         <input type="hidden" name="repository" value="wai-evaluation-tools-list" />
@@ -2922,6 +2927,8 @@ main > header { grid-column: 4 / span 4; }
           }
         })
       })
+    
+      form.onsubmit = onSubmit
     </script>
   
 
@@ -3148,9 +3155,9 @@ if (submitForm) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1701197560433993844"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1701269789567057067"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1701197560433993844"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1701269789567057067"></script>
 <script>
   svg4everybody();
 </script><script>
