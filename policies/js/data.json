@@ -1,5 +1,19 @@
 [
 {
+    "title": "Åland",
+    "countryhref": "/WAI/policies/aland/",
+    "policyname": "",
+    "policyhref": "/WAI/policies/aland/#",
+    "url": "",
+    "enactdate": "2019",
+    "type": "Accessibility law",
+    "scope": [
+      
+    ],
+    "webonly": "Yes",
+    "wcagver": "None"
+  },
+{
     "title": "Argentina",
     "countryhref": "/WAI/policies/argentina/",
     "policyname": "",
@@ -56,6 +70,76 @@
     "wcagver": "WCAG 2.0"
   },
 {
+    "title": "Austria",
+    "countryhref": "/WAI/policies/austria/",
+    "policyname": "Federal law on barrier-free access to federal websites and mobile applications",
+    "policyhref": "/WAI/policies/austria/#federal-law-on-barrier-free-access-to-federal-websites-and-mobile-applications",
+    "url": "",
+    "enactdate": "2019",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Austria",
+    "countryhref": "/WAI/policies/austria/",
+    "policyname": "Federal law on barrier-free access to federal websites and mobile applications",
+    "policyhref": "/WAI/policies/austria/#federal-law-on-barrier-free-access-to-federal-websites-and-mobile-applications",
+    "url": "",
+    "enactdate": "2017",
+    "type": "Non-discrimination law",
+    "scope": [
+      "Government"
+    ],
+    "webonly": "No",
+    "wcagver": "None"
+  },
+{
+    "title": "Belgium",
+    "countryhref": "/WAI/policies/belgium/",
+    "policyname": "Law regarding the accessibility of websites and mobile applications for public bodies",
+    "policyhref": "/WAI/policies/belgium/#law-regarding-the-accessibility-of-websites-and-mobile-applications-for-public-bodies",
+    "url": "",
+    "enactdate": "2018",
+    "type": "Accessibility law",
+    "scope": [
+      "Public sector"
+    ],
+    "webonly": "Yes",
+    "wcagver": "WCAG 2.1"
+  },
+{
+    "title": "Brazil",
+    "countryhref": "/WAI/policies/brazil/",
+    "policyname": "Brazilian Law of inclusion for the Persons with Disabilities",
+    "policyhref": "/WAI/policies/brazil/#brazilian-law-of-inclusion-for-the-persons-with-disabilities",
+    "url": "",
+    "enactdate": "2015",
+    "type": "Mandatory policy",
+    "scope": [
+      
+    ],
+    "webonly": "No",
+    "wcagver": "none"
+  },
+{
+    "title": "Brazil",
+    "countryhref": "/WAI/policies/brazil/",
+    "policyname": "eMAG - e-government accessibility model",
+    "policyhref": "/WAI/policies/brazil/#emag-e-government-accessibility-model",
+    "url": "",
+    "enactdate": "2014",
+    "type": "Non-discrimination law, Mandatory policy",
+    "scope": [
+      
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
     "title": "Canada",
     "countryhref": "/WAI/policies/canada/",
     "policyname": "The Accessible Canada Act (The Act to Ensure a Barrier Free Canada)",
@@ -98,6 +182,62 @@
     "wcagver": "WCAG 2.0 derivative"
   },
 {
+    "title": "Colombia",
+    "countryhref": "/WAI/policies/colombia/",
+    "policyname": "Web accessibility guidelines",
+    "policyhref": "/WAI/policies/colombia/#web-accessibility-guidelines",
+    "url": "",
+    "enactdate": "2020",
+    "type": "Accessibility law",
+    "scope": [
+      
+    ],
+    "webonly": "Yes",
+    "wcagver": "WCAG 2.1"
+  },
+{
+    "title": "Croatia",
+    "countryhref": "/WAI/policies/croatia/",
+    "policyname": "Law on accessibility of websites and software solutions for mobile devices of public sector bodies",
+    "policyhref": "/WAI/policies/croatia/#law-on-accessibility-of-websites-and-software-solutions-for-mobile-devices-of-public-sector-bodies",
+    "url": "",
+    "enactdate": "2019",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Cyprus",
+    "countryhref": "/WAI/policies/cyprus/",
+    "policyname": "The Accessibility of Public Sector Organizations Websites and Mobile Applications Act 2019.",
+    "policyhref": "/WAI/policies/cyprus/#the-accessibility-of-public-sector-organizations-websites-and-mobile-applications-act-2019",
+    "url": "",
+    "enactdate": "2019",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "Yes",
+    "wcagver": "WCAG 2.0"
+  },
+{
+    "title": "Czech Republic",
+    "countryhref": "/WAI/policies/czech-republic/",
+    "policyname": "Act No. 99/2019 Coll., on the accessibility of websites and mobile applications and on the amendment of Act No. 365/2000 Coll., on public administration information systems and on the amendment of certain other laws",
+    "policyhref": "/WAI/policies/czech-republic/#act-no-99-2019-coll-on-the-accessibility-of-websites-and-mobile-applications-and-on-the-amendment-of-act-no-365-2000-coll-on-public-administration-information-systems-and-on-the-amendment-of-certain-other-laws",
+    "url": "",
+    "enactdate": "2019",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
     "title": "Denmark",
     "countryhref": "/WAI/policies/denmark/",
     "policyname": "Agreement on the use of open standards for software in the public sector",
@@ -138,6 +278,34 @@
     ],
     "webonly": "Yes",
     "wcagver": "WCAG 2.1"
+  },
+{
+    "title": "Estonia",
+    "countryhref": "/WAI/policies/estonia/",
+    "policyname": "Veebilehe ja mobiilirakenduse ligipääsetavuse nõuded ning ligipääsetavust kirjeldava teabe avaldamise kord",
+    "policyhref": "/WAI/policies/estonia/#veebilehe-ja-mobiilirakenduse-ligipääsetavuse-nõuded-ning-ligipääsetavust-kirjeldava-teabe-avaldamise-kord",
+    "url": "https://www.riigiteataja.ee/en/eli/512042019003/consolide",
+    "enactdate": "2019",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "Yes",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Estonia",
+    "countryhref": "/WAI/policies/estonia/",
+    "policyname": "Public Information Act",
+    "policyhref": "/WAI/policies/estonia/#public-information-act",
+    "url": "https://www.riigiteataja.ee/en/eli/ee/503012019004/consolide/current",
+    "enactdate": "2001",
+    "type": "Mandatory policy",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2.0 derivate"
   },
 {
     "title": "European Union",
@@ -280,6 +448,20 @@
     "wcagver": "WCAG 2.0 derivative"
   },
 {
+    "title": "Greece",
+    "countryhref": "/WAI/policies/greece/",
+    "policyname": "Digital Governance (Incorporation into Greek Legislation of Directive (EU) 2016/2102",
+    "policyhref": "/WAI/policies/greece/#digital-governance-incorporation-into-greek-legislation-of-directive-eu-2016-2102",
+    "url": "",
+    "enactdate": "2020",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
     "title": "Hong Kong Special Administrative Region of the People&#39;s Republic of China",
     "countryhref": "/WAI/policies/hong-kong-hksar/",
     "policyname": "Guidelines on Dissemination of Information through Government Websites",
@@ -294,11 +476,25 @@
     "wcagver": "WCAG 2.0"
   },
 {
+    "title": "Hungary",
+    "countryhref": "/WAI/policies/hungary/",
+    "policyname": "Act on the accessibility of websites and mobile applications of public sector organizations",
+    "policyhref": "/WAI/policies/hungary/#act-on-the-accessibility-of-websites-and-mobile-applications-of-public-sector-organizations",
+    "url": "",
+    "enactdate": "2018",
+    "type": "Accessibility law",
+    "scope": [
+      "Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "None"
+  },
+{
     "title": "India",
     "countryhref": "/WAI/policies/india/",
     "policyname": "Rights of Persons with Disabilities Act, 2016 (RPD)",
     "policyhref": "/WAI/policies/india/#rights-of-persons-with-disabilities-act-2016-rpd",
-    "url": "http://www.disabilityaffairs.gov.in/upload/uploadfiles/files/RPWD%20ACT%202016.pdf",
+    "url": "https://www.indiacode.nic.in/bitstream/123456789/15939/1/the_rights_of_persons_with_disabilities_act%2C_2016.pdf",
     "enactdate": "2016",
     "type": "Non-discrimination law",
     "scope": [
@@ -312,7 +508,7 @@
     "countryhref": "/WAI/policies/india/",
     "policyname": "Guidelines for Indian Government Websites",
     "policyhref": "/WAI/policies/india/#guidelines-for-indian-government-websites",
-    "url": "https://www.indiacode.nic.in/bitstream/123456789/15939/1/the_rights_of_persons_with_disabilities_act%2C_2016.pdf",
+    "url": "https://guidelines.india.gov.in",
     "enactdate": "2009",
     "type": "Mandatory policy",
     "scope": [
@@ -406,6 +602,20 @@
     "wcagver": "WCAG 2.0"
   },
 {
+    "title": "Italy",
+    "countryhref": "/WAI/policies/italy/",
+    "policyname": "Law 10 August 2018, n. 106 &quot;Reform of the implementation of Directive (EU) 2016/2102 on the accessibility of websites and mobile applications of public bodies&quot;",
+    "policyhref": "/WAI/policies/italy/#law-10-august-2018-n-106-reform-of-the-implementation-of-directive-eu-2016-2102-on-the-accessibility-of-websites-and-mobile-applications-of-public-bodies",
+    "url": "",
+    "enactdate": "2004",
+    "type": "Accessibility law",
+    "scope": [
+      "Public sector","Government"
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2 derivative"
+  },
+{
     "title": "Japan",
     "countryhref": "/WAI/policies/japan/",
     "policyname": "Everyone’s Public Website Operational Guidelines (2016)",
@@ -418,6 +628,90 @@
     ],
     "webonly": "Yes",
     "wcagver": "WCAG 2.0 derivative"
+  },
+{
+    "title": "Latvia",
+    "countryhref": "/WAI/policies/latvia/",
+    "policyname": "Procedure in which institutions post information on the Internet",
+    "policyhref": "/WAI/policies/latvia/#procedure-in-which-institutions-post-information-on-the-internet",
+    "url": "",
+    "enactdate": "2020",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "Yes",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Lithuania",
+    "countryhref": "/WAI/policies/lithuania/",
+    "policyname": "Law of the Republic of Lithuania on the right to receive information from state and municipal institutions and bodies no. VIII-1524 (Summary version)",
+    "policyhref": "/WAI/policies/lithuania/#law-of-the-republic-of-lithuania-on-the-right-to-receive-information-from-state-and-municipal-institutions-and-bodies-no-viii-1524-summary-version",
+    "url": "",
+    "enactdate": "2000",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "Yes",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Lithuania",
+    "countryhref": "/WAI/policies/lithuania/",
+    "policyname": "Law of the Republic of Lithuania on the right to receive information from state and municipal institutions and bodies no. VIII-1524 Amendment of Articles 1, 2, 3, 5, 6, 7, 12, 22 and Appendix Law No. XIII-1590",
+    "policyhref": "/WAI/policies/lithuania/#law-of-the-republic-of-lithuania-on-the-right-to-receive-information-from-state-and-municipal-institutions-and-bodies-no-viii-1524-amendment-of-articles-1-2-3-5-6-7-12-22-and-appendix-law-no-xiii-1590",
+    "url": "",
+    "enactdate": "2018",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "Yes",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Lithuania",
+    "countryhref": "/WAI/policies/lithuania/",
+    "policyname": "Due to the Government of the Republic of Lithuania in 2003 April 18 resolution no. 480 of the amendment &quot;On the approval of the description of the general requirements for the websites of state and municipal institutions and bodies&quot;",
+    "policyhref": "/WAI/policies/lithuania/#due-to-the-government-of-the-republic-of-lithuania-in-2003-april-18-resolution-no-480-of-the-amendment-on-the-approval-of-the-description-of-the-general-requirements-for-the-websites-of-state-and-municipal-institutions-and-bodies",
+    "url": "",
+    "enactdate": "2018",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "Yes",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Luxembourg",
+    "countryhref": "/WAI/policies/luxembourg/",
+    "policyname": "",
+    "policyhref": "/WAI/policies/luxembourg/#",
+    "url": "",
+    "enactdate": "2019",
+    "type": "Accessibility law",
+    "scope": [
+      "Public sector"
+    ],
+    "webonly": "Yes",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Malta",
+    "countryhref": "/WAI/policies/malta/",
+    "policyname": "Accessibility of the Websites and Mobile Applications of Public Sector Bodies Regulations",
+    "policyhref": "/WAI/policies/malta/#accessibility-of-the-websites-and-mobile-applications-of-public-sector-bodies-regulations",
+    "url": "https://legislation.mt/eli/sl/418.3/20190520/eng",
+    "enactdate": "2019",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2.0 derivate"
   },
 {
     "title": "Netherlands",
@@ -543,7 +837,35 @@
       "Government","Public sector","Private sector"
     ],
     "webonly": "No",
-    "wcagver": "WCAG 2.0, WCAG 2 derivative"
+    "wcagver": "WCAG 2 derivative"
+  },
+{
+    "title": "Poland",
+    "countryhref": "/WAI/policies/poland/",
+    "policyname": "Act of 4 April 2019 on the digital accessibility of websites and mobile applications of public entities",
+    "policyhref": "/WAI/policies/poland/#act-of-4-april-2019-on-the-digital-accessibility-of-websites-and-mobile-applications-of-public-entities",
+    "url": "",
+    "enactdate": "2019",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Portugal",
+    "countryhref": "/WAI/policies/portugal/",
+    "policyname": "Decreto-Lei n.º 83/2018 de 19 de outubro - Define os requisitos de acessibilidade dos sítios web e das aplicações móveis de organismos públicos, transpondo a Diretiva (UE) 2016/2102",
+    "policyhref": "/WAI/policies/portugal/#decreto-lei-n-º-83-2018-de-19-de-outubro-define-os-requisitos-de-acessibilidade-dos-sítios-web-e-das-aplicações-móveis-de-organismos-públicos-transpondo-a-diretiva-ue-2016-2102",
+    "url": "https://diariodarepublica.pt/dr/en/detail/decree-law/83-2018-116734769?_ts=1700554617645",
+    "enactdate": "2018",
+    "type": "Accessibility law",
+    "scope": [
+      
+    ],
+    "webonly": "Yes",
+    "wcagver": "None"
   },
 {
     "title": "Republic of Korea",
@@ -557,6 +879,90 @@
       "Public sector","Private sector"
     ],
     "webonly": "No",
+    "wcagver": "WCAG 2.0 derivative"
+  },
+{
+    "title": "Romania",
+    "countryhref": "/WAI/policies/romania/",
+    "policyname": "Emergency ordinance no. 112/2018 regarding the accessibility of websites and mobile applications of public sector bodies",
+    "policyhref": "/WAI/policies/romania/#emergency-ordinance-no-112-2018-regarding-the-accessibility-of-websites-and-mobile-applications-of-public-sector-bodies",
+    "url": "",
+    "enactdate": "2018",
+    "type": "Accessibility law",
+    "scope": [
+      "Government","Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Russia",
+    "countryhref": "/WAI/policies/russia/",
+    "policyname": "GOST R 52872-2012 Internet resources. Accessibility requirements for the visually impaired",
+    "policyhref": "/WAI/policies/russia/#gost-r-52872-2012-internet-resources-accessibility-requirements-for-the-visually-impaired",
+    "url": "",
+    "enactdate": "2014",
+    "type": "Voluntary standard",
+    "scope": [
+      
+    ],
+    "webonly": "Yes",
+    "wcagver": "WCAG 2.0 derivate"
+  },
+{
+    "title": "Slovenia",
+    "countryhref": "/WAI/policies/slovenia/",
+    "policyname": "Accessibility of Websites and Mobile Applications Act",
+    "policyhref": "/WAI/policies/slovenia/#accessibility-of-websites-and-mobile-applications-act",
+    "url": "",
+    "enactdate": "2018",
+    "type": "Accessibility law",
+    "scope": [
+      "Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "WCAG 2.1"
+  },
+{
+    "title": "Spain",
+    "countryhref": "/WAI/policies/spain/",
+    "policyname": "Royal Decree 1112/2018, of September 7, on accessibility of websites and applications for mobile devices in the public sector.",
+    "policyhref": "/WAI/policies/spain/#royal-decree-1112-2018-of-september-7-on-accessibility-of-websites-and-applications-for-mobile-devices-in-the-public-sector",
+    "url": "",
+    "enactdate": "2008",
+    "type": "Accessibility policy law, Non-discrimination law, Accessibility law, Accessibility policy",
+    "scope": [
+      "Public sector"
+    ],
+    "webonly": "No",
+    "wcagver": "None"
+  },
+{
+    "title": "Spain",
+    "countryhref": "/WAI/policies/spain/",
+    "policyname": "Guidance on software accessibility",
+    "policyhref": "/WAI/policies/spain/#guidance-on-software-accessibility",
+    "url": "",
+    "enactdate": "2009",
+    "type": "Accessibility policy law, Non-discrimination law, Accessibility law, Accessibility policy",
+    "scope": [
+      "Public sector","Private sector"
+    ],
+    "webonly": "No",
+    "wcagver": "None"
+  },
+{
+    "title": "Spain",
+    "countryhref": "/WAI/policies/spain/",
+    "policyname": "Web content accessibility requirements.",
+    "policyhref": "/WAI/policies/spain/#web-content-accessibility-requirements",
+    "url": "",
+    "enactdate": "2012",
+    "type": "Accessibility policy",
+    "scope": [
+      "Public sector","Private sector"
+    ],
+    "webonly": "Yes",
     "wcagver": "WCAG 2.0 derivative"
   },
 {
