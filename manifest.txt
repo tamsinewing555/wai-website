@@ -253,8 +253,12 @@
 /about/translating/index.html
 /about/translating/sitemaps/index.html
 /about/translating/sitemaps/sitemap-ar/index.html
+/about/translating/sitemaps/sitemap-cs/index.html
+/about/translating/sitemaps/sitemap-de/index.html
+/about/translating/sitemaps/sitemap-el/index.html
 /about/translating/sitemaps/sitemap-es/index.html
 /about/translating/sitemaps/sitemap-fr/index.html
+/about/translating/sitemaps/sitemap-id/index.html
 /about/translating/sitemaps/sitemap-ru/index.html
 /about/translating/sitemaps/sitemap-zh-hans/index.html
 /about/translating/step-by-step/index.html

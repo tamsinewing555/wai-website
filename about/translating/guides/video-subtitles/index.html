@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1701875451459828221";
+      element.src = "/WAI/assets/scripts/main.js?1701881417586208908";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1701875451459828221">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1701881417586208908">
 
 <title> Translating Video Subtitles and Descriptions | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -29,14 +29,14 @@
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
 <meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-about-wai/social-translations.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-12-06T15:10:51+00:00" />
+<meta property="article:published_time" content="2023-12-06T16:50:17+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-about-wai/social-translations.png" />
 <meta property="twitter:title" content="Translating Video Subtitles and Descriptions" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"dateModified":"2023-12-06T15:10:51+00:00","datePublished":"2023-12-06T15:10:51+00:00","description":"Help make the Web accessible to people with disabilities around the world. We appreciate your contributions to translating W3C WAI accessibility resources.","headline":"Translating Video Subtitles and Descriptions","image":"https://www.w3.org/WAI/content-images/wai-about-wai/social-translations.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/about/translating/guides/video-subtitles/"},"url":"https://www.w3.org/WAI/about/translating/guides/video-subtitles/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"dateModified":"2023-12-06T16:50:17+00:00","datePublished":"2023-12-06T16:50:17+00:00","description":"Help make the Web accessible to people with disabilities around the world. We appreciate your contributions to translating W3C WAI accessibility resources.","headline":"Translating Video Subtitles and Descriptions","image":"https://www.w3.org/WAI/content-images/wai-about-wai/social-translations.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/about/translating/guides/video-subtitles/"},"url":"https://www.w3.org/WAI/about/translating/guides/video-subtitles/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -180,9 +180,11 @@
 
 
 <ul id="markdown-toc">
-  <li><a href="#step-1-create-the-subtitles-file" id="markdown-toc-step-1-create-the-subtitles-file">Step 1: Create the subtitles file</a></li>
-  <li><a href="#step-2-translate-the-file" id="markdown-toc-step-2-translate-the-file">Step 2: Translate the file</a></li>
-  <li><a href="#step-3-add-the-new-subtitles-to-the-video-player" id="markdown-toc-step-3-add-the-new-subtitles-to-the-video-player">Step 3: Add the new subtitles to the video player</a></li>
+  <li><a href="#find-video-id" id="markdown-toc-find-video-id">Step 1: Find the related video identifier</a></li>
+  <li><a href="#video-metadata" id="markdown-toc-video-metadata">Step 2: Edit video-metadata.yml</a></li>
+  <li><a href="#create-vtt" id="markdown-toc-create-vtt">Step 3: Create the subtitles/descriptions file(s)</a></li>
+  <li><a href="#translate-vtt" id="markdown-toc-translate-vtt">Step 3: Translate the VTT file(s)</a></li>
+  <li><a href="#commit-changes" id="markdown-toc-commit-changes">Step 4: Commit your changes</a></li>
 </ul>
 
 
@@ -192,22 +194,168 @@
 
 
 
-<h2 id="step-1-create-the-subtitles-file">Step 1: Create the subtitles file</h2>
+<h2 id="find-video-id">Step 1: Find the related video identifier</h2>
 
-<p>Captions, subtitles and descriptions of WAI videos are stored in WebVTT (<code class="language-plaintext highlighter-rouge">.vtt</code>) files.</p>
+<p>If you want to create new subtitles/translated descriptions for a video, you have probably seen the video in a W3C WAI resource.</p>
 
-<p>To create the subtitles file, duplicate the English captions file, with language shortcode added to the middle of the filename, as follows:</p>
+<p>You now need to find the video identifier.</p>
+
+<p>Look for the embedded video player <strong>in the code of the English version of the page</strong>. It looks similar to this:</p>
+
+<aside class="box"><header class="box-h "> Video player example</header><div class="box-i">
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>video-player-data.html<span class="err">
+</span><span class="w">   </span><span class="na">yt-id</span><span class="o">=</span><span class="s2">"20SHvU2PKsM"</span><span class="err">
+</span><span class="w">   </span><span class="na">video-id</span><span class="o">=</span><span class="s2">"keyboard"</span><span class="err">
+</span><span class="p">%}</span>
+</code></pre></div></div>
+
+</div></aside>
+
+<p><strong>The value of <code class="language-plaintext highlighter-rouge">video-id</code> is the video identifier you need.</strong></p>
+
+<h2 id="video-metadata">Step 2: Edit video-metadata.yml</h2>
+
+<p>WAI videos captions, subtitles and descriptions metadata are stored in “video-metadata.yml” in <a href="https://github.com/w3c/wai-website-data/">“wai-website-data” repository <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a></p>
+
+<aside class="box"><header class="box-h "> Video-metadata.yml example</header><div class="box-i">
+<details id="optional-id"><summary>
+
+    <p>Show example</p>
+
+  </summary>
+  <div>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">keyboard</span>
+  <span class="na">name</span><span class="pi">:</span>
+    <span class="na">en</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Web</span><span class="nv"> </span><span class="s">Accessibility</span><span class="nv"> </span><span class="s">Perspectives:</span><span class="nv"> </span><span class="s">Keyboard</span><span class="nv"> </span><span class="s">Compatibility"</span>
+    <span class="na">fr</span><span class="pi">:</span> <span class="s2">"</span><span class="s">L'accessibilité</span><span class="nv"> </span><span class="s">Web</span><span class="nv"> </span><span class="s">illustrée</span><span class="nv"> </span><span class="s">:</span><span class="nv"> </span><span class="s">Compatibilité</span><span class="nv"> </span><span class="s">avec</span><span class="nv"> </span><span class="s">le</span><span class="nv"> </span><span class="s">clavier"</span>
+  <span class="na">main-page</span><span class="pi">:</span> <span class="s">/perspective-videos/keyboard/</span>
+  <span class="na">path</span><span class="pi">:</span> <span class="s">perspective-videos</span>
+  <span class="na">lang-folder</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">captions</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">en</span>
+  <span class="na">captions-ad</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">en</span>
+  <span class="na">subtitles</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">fr</span>
+    <span class="pi">-</span> <span class="s">zh-hans</span>
+  <span class="na">subtitles-ad</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">fr</span>
+    <span class="pi">-</span> <span class="s">zh-hans</span>
+  <span class="na">descriptions-ad</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">en</span>
+    <span class="pi">-</span> <span class="s">fr</span>
+    <span class="pi">-</span> <span class="s">zh-hans</span>
+</code></pre></div>    </div>
+  </div>
+</details>
+</div></aside>
+
+<ol>
+  <li>
+<p>Navigate to the <a href="https://github.com/w3c/wai-website-data/">wai-website-data repository <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>.
+
+    </li>
+    <li>
+
+  In “video-metadata.yml”, look for the <code class="language-plaintext highlighter-rouge">id</code> that matches the <code class="language-plaintext highlighter-rouge">video-id</code> found in previous step.
+
+    </li>
+    <li>
+
+Update the following video attributes</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">name</code>: name of the video.<br />
+Add your translated version to the list.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">subtitles</code>: available subtitles languages.<br />
+Add your language subtag to the list.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">subtitles-ad</code>: available subtitles languages for the audio-described version of the video.<br />
+Add your language subtag to the list.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">descriptions-ad</code>: available descriptions languages for the audio-described version of the video.<br />
+Add your language subtag to the list.</p>
+  </li>
+</ul>
+
+  </li>
+  <li>
+
+<p>Do not change the following attributes</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">main-page</code></li>
+  <li><code class="language-plaintext highlighter-rouge">path</code></li>
+  <li><code class="language-plaintext highlighter-rouge">lang-folder</code></li>
+  <li><code class="language-plaintext highlighter-rouge">captions</code></li>
+  <li><code class="language-plaintext highlighter-rouge">captions-ad</code></li>
+</ul>
+
+  </li>
+</ol>
+
+<h2 id="create-vtt">Step 3: Create the subtitles/descriptions file(s)</h2>
+
+<p>Captions, subtitles and descriptions are stored in WebVTT (<code class="language-plaintext highlighter-rouge">.vtt</code>) files. VTT files are located in “wai-videos” folder, in <a href="https://github.com/w3c/wai-website-data/">“wai-website-data” repository <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>.</p>
+
+<ol>
+  <li>
+<p>To find the path to the VTT files to translate, look at <code class="language-plaintext highlighter-rouge">path</code> and <code class="language-plaintext highlighter-rouge">lang-folder</code> attributes in <a href="#video-metadata">“video-metadata.yml”</a>.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">path</code>: path to VTT files, from “wai-videos” folder.</li>
+  <li><code class="language-plaintext highlighter-rouge">lang-folder</code> (not always present): when set to <code class="language-plaintext highlighter-rouge">true</code>, means VTT files for a language are located in a subfolder named after the language shortcode.</li>
+</ul>
+
+<aside class="box"><header class="box-h "> Example</header><div class="box-i">
+<p>In this example, English VTT files are located into “/wai-folders/perspective-videos/en/”</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">id</span><span class="pi">:</span> <span class="s">keyboard</span>
+  <span class="s">(...)</span>
+  <span class="na">path</span><span class="pi">:</span> <span class="s">perspective-videos</span>
+  <span class="na">lang-folder</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+</div></aside>
+
+</li>
+<li>
+<p>Duplicate the English VTT file, with language shortcode added to the middle of the filename.</p>
 
 <aside class="box"><header class="box-h "> Example for a translation into Arabic</header><div class="box-i">
 
 <ul>
-  <li>Original English file: <code class="language-plaintext highlighter-rouge">VTT_FILE_NAME.vtt</code></li>
-  <li>New Arabic file: <code class="language-plaintext highlighter-rouge">VTT_FILE_NAME.ar.vtt</code></li>
+  <li>Original English files:
+    <ul>
+      <li>Captions: <code class="language-plaintext highlighter-rouge">keyboard.en.vtt</code></li>
+      <li>Captions (audio-described version): <code class="language-plaintext highlighter-rouge">keyboard_ad.en.vtt</code></li>
+      <li>Description (audio-described version): <code class="language-plaintext highlighter-rouge">keyboard_ad_desc.en.vtt</code></li>
+    </ul>
+  </li>
+  <li>New files translated into Arabic:
+    <ul>
+      <li>Subtitles: <code class="language-plaintext highlighter-rouge">keyboard.ar.vtt</code></li>
+      <li>Subtitles (audio-described version): <code class="language-plaintext highlighter-rouge">keyboard_ad.ar.vtt</code></li>
+      <li>Description (audio-described version): <code class="language-plaintext highlighter-rouge">keyboard_ad_desc.ar.vtt</code></li>
+    </ul>
+  </li>
 </ul>
 
 </div></aside>
 
-<h2 id="step-2-translate-the-file">Step 2: Translate the file</h2>
+<p>If files are stored into lang subfolders, create a subfolder for your language.
+
+  </li>
+</ol>
+</p>
+
+<h2 id="translate-vtt">Step 3: Translate the VTT file(s)</h2>
 
 <ol>
   <li>Translate all text segments</li>
@@ -236,75 +384,9 @@ new accessibility barriers.
 </code></pre></div></div>
 </div></aside>
 
-<h2 id="step-3-add-the-new-subtitles-to-the-video-player">Step 3: Add the new subtitles to the video player</h2>
+<h2 id="commit-changes">Step 4: Commit your changes</h2>
 
-<p>In the English version of the page, the embedded video player looks similar to this:</p>
-
-<aside class="box"><header class="box-h "> Video player example</header><div class="box-i">
-
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>video-player.html<span class="err">
-</span><span class="w">   </span><span class="na">yt-id</span><span class="o">=</span><span class="s2">"20SHvU2PKsM"</span><span class="err">
-</span><span class="w">   </span><span class="na">path</span><span class="o">=</span><span class="s2">"/path/to/vtt/files/"</span><span class="err">
-</span><span class="w">   </span><span class="na">captions</span><span class="o">=</span><span class="s2">"VTT_FILE_NAME.vtt|en|default"</span><span class="err">
-</span><span class="w">   </span><span class="na">subtitles</span><span class="o">=</span><span class="s2">"VTT_FILE_NAME.es.vtt|es"</span><span class="err">
-</span><span class="p">%}</span>
-</code></pre></div></div>
-
-</div></aside>
-
-<h3 id="actions-needed-in-the-translated-page">Actions needed in the translated page</h3>
-
-<ol>
-  <li>
-    <p>Delete <code class="language-plaintext highlighter-rouge">|default</code> from: <code class="language-plaintext highlighter-rouge">captions="VTT_FILE_NAME.vtt|en|default"</code> <br />so it’s:
-<code class="language-plaintext highlighter-rouge">captions="VTT_FILE_NAME.vtt|en"</code></p>
-  </li>
-  <li>
-    <p>Add your subtitles file name in <code class="language-plaintext highlighter-rouge">subtitles</code> parameter, along with the translated language shortcode.<br />
-Add <code class="language-plaintext highlighter-rouge">|default</code>, so that subtitle will be the default selected one when opening the translated page.</p>
-  </li>
-</ol>
-
-<p>If no subtitles have been added yet, you may have to create the <code class="language-plaintext highlighter-rouge">subtitles</code> parameter.</p>
-
-<aside class="box"><header class="box-h "> Example (snippet): Arabic translation added</header><div class="box-i">
-
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   captions="VTT_FILE_NAME.vtt|en"
-   subtitles="VTT_FILE_NAME.es.vtt|es,VTT_FILE_NAME.ar.vtt|ar|default"
-</code></pre></div></div>
-
-</div></aside>
-
-<h4 id="more-information">More information</h4>
-
-<p>The video player may contain additional parameters:</p>
-
-<ul>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">subtitles-ad</code> <br />
-Audio described version of the subtitles.</p>
-  </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">descriptions-ad</code> <br />
-Text of the audio description.</p>
-  </li>
-</ul>
-
-<p>In that case, apply the same logic as described above:</p>
-<ul>
-  <li>Delete <code class="language-plaintext highlighter-rouge">|default</code> when specified next to the English version.</li>
-  <li>Add your translated file in the parameter, along with the translated language shortcode and <code class="language-plaintext highlighter-rouge">|default</code>.</li>
-</ul>
-
-<aside class="box"><header class="box-h "> Example (snippet): Arabic translation added</header><div class="box-i">
-
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   captions="VTT_FILE_NAME.vtt|en"
-   subtitles="VTT_FILE_NAME.ar.vtt|ar|default"
-   subtitles-ad="VTT_FILE_NAME_ad.en.vtt|en,VTT_FILE_NAME_ad.ar.vtt|ar|default"
-   descriptions-ad="VTT_FILE_NAME_ad_desc.en|en,TT_FILE_NAME_ad_desc.ar.vtt|ar|default"
-</code></pre></div></div>
-
-</div></aside>
+<p>Include the updated “video-metadata.yml” and the new translated VTT files.</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20Translating%20Video%20Subtitles%20and%20Descriptions">wai@w3.org</a> or via GitHub.</p>
@@ -323,7 +405,7 @@ Text of the audio description.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Date:</strong> Updated 9 November 2023.</p>
+      <p><strong>Date:</strong> Updated 6 December 2023.</p>
 <p><strong>Editors:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a> and Rémi Bétin.</p>
 <p>Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 </div>
@@ -365,9 +447,9 @@ Text of the audio description.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1701875451459828221"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1701881417586208908"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1701875451459828221"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1701881417586208908"></script>
 <script>
   svg4everybody();
 </script><script>
