@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1702311206717746499";
+      element.src = "/WAI/assets/scripts/main.js?1702359662653239851";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1702311206717746499">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1702359662653239851">
 
 <title> Landmark Regions | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -427,10 +427,13 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
 
         <ul>
           <li>Assign landmark roles based on the type of content in the area.</li>
-
           <li><code>banner</code>, <code>main</code>, <code>complementary</code> and <code>contentinfo</code> landmarks should be top level landmarks.</li>
-
           <li>Landmark roles can be nested to identify parent/child relationships of the information being presented.</li>
+          <li>
+            Note that wrapping  the content  of a modal dialog in a landmark region is unnecessary.
+            A landmark that wraps modal content cannot provide any benefit to users because it is not perceivable unless the modal is open.
+            In addition, when a modal is open, a landmark containing its content is superfluous because the modal itself is a container that provides both a name and boundaries.
+          </li>
         </ul>
 
         <p id="aria_lh_step3"><strong>Step 3: Label areas</strong></p>
@@ -810,9 +813,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1702311206717746499"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1702359662653239851"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1702311206717746499"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1702359662653239851"></script>
 <script>
   svg4everybody();
 </script><script>
