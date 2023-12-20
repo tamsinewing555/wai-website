@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1702505454755577912";
+      element.src = "/WAI/assets/scripts/main.js?1703087561853426600";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1702505454755577912">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1703087561853426600">
 
-<title> Orientation of the page is not restricted using CSS transforms[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1702505454755577912"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Orientation of the page is not restricted using CSS transforms[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1703087561853426600"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Orientation of the page is not restricted using CSS transforms" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -506,7 +506,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html">Open in a new tab</a></p>
 
 <p>A page where CSS <a href="https://www.w3.org/TR/css-transforms/#propdef-transform">transform</a> property has <a href="https://www.w3.org/TR/css-transforms/#funcdef-transform-rotate">rotate</a> <a href="https://www.w3.org/TR/css-transforms/#transform-functions">transform function</a> conditionally applied on the <a href="https://www.w3.org/TR/css3-mediaqueries/#orientation">orientation</a> <a href="https://www.w3.org/TR/css3-mediaqueries/#media1">media feature</a> which restricts the element to <code class="language-plaintext highlighter-rouge">landscape</code> orientation.</p>
 
@@ -517,6 +517,8 @@ h2#sidebar-header {
 			<span class="k">@media</span> <span class="p">(</span><span class="n">orientation</span><span class="p">:</span> <span class="nb">portrait</span><span class="p">)</span> <span class="p">{</span>
 				<span class="nt">html</span> <span class="p">{</span>
 					<span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">1.5708rad</span><span class="p">);</span>
+					<span class="nl">width</span><span class="p">:</span> <span class="n">min</span><span class="p">(</span><span class="m">100vw</span><span class="p">,</span> <span class="m">100vh</span><span class="p">);</span>
+					<span class="nl">height</span><span class="p">:</span> <span class="n">min</span><span class="p">(</span><span class="m">100vw</span><span class="p">,</span> <span class="m">100vh</span><span class="p">);</span>
 				<span class="p">}</span>
 			<span class="p">}</span>
 		<span class="nt">&lt;/style&gt;</span>
@@ -552,7 +554,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-3">Failed Example 3</h4>
 
-<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html">Open in a new tab</a></p>
 
 <p>This page appears rotated at a slight angle of 2.5 degrees for stylistic purposes, but is locked in portrait orientation by applying a 92.5 degree rotation when in landscape orientation:</p>
 
@@ -562,11 +564,16 @@ h2#sidebar-header {
 		<span class="nt">&lt;style&gt;</span>
 			<span class="nt">body</span> <span class="p">{</span>
 				<span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">2.5deg</span><span class="p">);</span>
+				<span class="nl">padding</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+				<span class="nl">width</span><span class="p">:</span> <span class="n">min</span><span class="p">(</span><span class="m">100vw</span><span class="p">,</span> <span class="m">100vh</span><span class="p">);</span>
+				<span class="nl">height</span><span class="p">:</span> <span class="n">min</span><span class="p">(</span><span class="m">100vw</span><span class="p">,</span> <span class="m">100vh</span><span class="p">);</span>
 			<span class="p">}</span>
 
 			<span class="k">@media</span> <span class="p">(</span><span class="n">orientation</span><span class="p">:</span> <span class="nb">landscape</span><span class="p">)</span> <span class="p">{</span>
 				<span class="nt">body</span> <span class="p">{</span>
 					<span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">92.5deg</span><span class="p">);</span>
+					<span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+					<span class="nl">right</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
 				<span class="p">}</span>
 			<span class="p">}</span>
 		<span class="nt">&lt;/style&gt;</span>
@@ -579,7 +586,7 @@ h2#sidebar-header {
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html">Open in a new tab</a></p>
 
 <p>A page where the CSS <a href="https://www.w3.org/TR/css-transforms-2/#individual-transforms">rotate</a> property has a 90 degree rotation conditionally applied on the <a href="https://www.w3.org/TR/css3-mediaqueries/#orientation">orientation</a> <a href="https://www.w3.org/TR/css3-mediaqueries/#media1">media feature</a> which restricts the element to <code class="language-plaintext highlighter-rouge">landscape</code> orientation.</p>
 
@@ -590,6 +597,8 @@ h2#sidebar-header {
 			<span class="k">@media</span> <span class="p">(</span><span class="n">orientation</span><span class="p">:</span> <span class="nb">portrait</span><span class="p">)</span> <span class="p">{</span>
 				<span class="nt">html</span> <span class="p">{</span>
 					<span class="py">rotate</span><span class="p">:</span> <span class="m">90deg</span><span class="p">;</span>
+					<span class="nl">width</span><span class="p">:</span> <span class="n">min</span><span class="p">(</span><span class="m">100vw</span><span class="p">,</span> <span class="m">100vh</span><span class="p">);</span>
+					<span class="nl">height</span><span class="p">:</span> <span class="n">min</span><span class="p">(</span><span class="m">100vw</span><span class="p">,</span> <span class="m">100vh</span><span class="p">);</span>
 				<span class="p">}</span>
 			<span class="p">}</span>
 		<span class="nt">&lt;/style&gt;</span>
@@ -669,7 +678,7 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-4">Inapplicable Example 4</h4>
 
-<p><a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/65f069d9d7d5a75562917c80ab7334b2914f42f4.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html">Open in a new tab</a></p>
 
 <p>A page where CSS <a href="https://www.w3.org/TR/css-transforms/#propdef-transform">transform</a> property is not applied conditionally on the <a href="https://www.w3.org/TR/css3-mediaqueries/#orientation">orientation</a> <a href="https://www.w3.org/TR/css3-mediaqueries/#media1">media feature</a>.</p>
 
@@ -679,6 +688,9 @@ h2#sidebar-header {
 		<span class="nt">&lt;style&gt;</span>
 			<span class="nt">body</span> <span class="p">{</span>
 				<span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">90deg</span><span class="p">);</span>
+				<span class="nl">width</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">min</span><span class="p">(</span><span class="m">100vw</span><span class="p">,</span> <span class="m">100vh</span><span class="p">)</span> <span class="n">-</span> <span class="m">2rem</span><span class="p">);</span>
+				<span class="nl">height</span><span class="p">:</span> <span class="n">calc</span><span class="p">(</span><span class="n">min</span><span class="p">(</span><span class="m">100vw</span><span class="p">,</span> <span class="m">100vh</span><span class="p">)</span> <span class="n">-</span> <span class="m">2rem</span><span class="p">);</span>
+				<span class="nl">padding</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
 			<span class="p">}</span>
 		<span class="nt">&lt;/style&gt;</span>
 	<span class="nt">&lt;/head&gt;</span>
@@ -768,15 +780,15 @@ h2#sidebar-header {
           <tr>
             <td>Alfa (fully automated) 0.57.2</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/alfa#breakdown-b33eff"><img alt="Alfa (fully automated) Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>Alfa (semi-automated) 0.57.2</td>
             <td>Semi-automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/alfa-assisted#breakdown-b33eff"><img alt="Alfa (semi-automated) Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
@@ -796,8 +808,8 @@ h2#sidebar-header {
           <tr>
             <td>SortSite 6.45</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-b33eff"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
       </tbody>
@@ -841,8 +853,8 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> b33eff</p>
-<p><strong>Date:</strong> Updated 30 August 2023</p>
-<p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+<p><strong>Date:</strong> Updated 14 December 2023</p>
+<p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
   </footer>
@@ -883,9 +895,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1702505454755577912"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1703087561853426600"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1702505454755577912"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1703087561853426600"></script>
 <script>
   svg4everybody();
 </script><script>
