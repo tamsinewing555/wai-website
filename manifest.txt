@@ -3056,6 +3056,7 @@
 /standards-guidelines/act/rules/09o5cg/proposed/index.html
 /standards-guidelines/act/rules/0ssw9k/index.html
 /standards-guidelines/act/rules/0ssw9k/proposed/index.html
+/standards-guidelines/act/rules/0va7u6/index.html
 /standards-guidelines/act/rules/0va7u6/proposed/index.html
 /standards-guidelines/act/rules/1a02b0/proposed/index.html
 /standards-guidelines/act/rules/1ea59c/proposed/index.html
@@ -3090,12 +3091,14 @@
 /standards-guidelines/act/rules/59796f/index.html
 /standards-guidelines/act/rules/59796f/proposed/index.html
 /standards-guidelines/act/rules/59br37/proposed/index.html
-/standards-guidelines/act/rules/5b7ae0/index.html
 /standards-guidelines/act/rules/5b7ae0/proposed/index.html
 /standards-guidelines/act/rules/5c01ea/proposed/index.html
 /standards-guidelines/act/rules/5effbb/proposed/index.html
+/standards-guidelines/act/rules/5f99a7/index.html
 /standards-guidelines/act/rules/5f99a7/proposed/index.html
+/standards-guidelines/act/rules/674b10/index.html
 /standards-guidelines/act/rules/674b10/proposed/index.html
+/standards-guidelines/act/rules/6a7281/index.html
 /standards-guidelines/act/rules/6a7281/proposed/index.html
 /standards-guidelines/act/rules/6cfa84/index.html
 /standards-guidelines/act/rules/6cfa84/proposed/index.html
@@ -3151,6 +3154,7 @@
 /standards-guidelines/act/rules/bc659a/proposed/index.html
 /standards-guidelines/act/rules/bf051a/index.html
 /standards-guidelines/act/rules/bf051a/proposed/index.html
+/standards-guidelines/act/rules/bisz58/index.html
 /standards-guidelines/act/rules/bisz58/proposed/index.html
 /standards-guidelines/act/rules/c249d5/proposed/index.html
 /standards-guidelines/act/rules/c3232f/proposed/index.html
