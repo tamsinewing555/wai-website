@@ -3066,6 +3066,7 @@
 /standards-guidelines/act/rules/23a2a8/index.html
 /standards-guidelines/act/rules/23a2a8/proposed/index.html
 /standards-guidelines/act/rules/24afc2/2022-01-28/index.html
+/standards-guidelines/act/rules/24afc2/2022-06-23/index.html
 /standards-guidelines/act/rules/24afc2/index.html
 /standards-guidelines/act/rules/24afc2/proposed/index.html
 /standards-guidelines/act/rules/2779a5/2022-01-28/index.html
@@ -3079,7 +3080,7 @@
 /standards-guidelines/act/rules/36b590/proposed/index.html
 /standards-guidelines/act/rules/3e12e1/proposed/index.html
 /standards-guidelines/act/rules/3ea0c8/proposed/index.html
-/standards-guidelines/act/rules/46ca7f/2022-01-28.md/index.html
+/standards-guidelines/act/rules/46ca7f/2022-01-28/index.html
 /standards-guidelines/act/rules/46ca7f/2022-06-23/index.html
 /standards-guidelines/act/rules/46ca7f/index.html
 /standards-guidelines/act/rules/46ca7f/proposed/index.html
@@ -3107,6 +3108,7 @@
 /standards-guidelines/act/rules/73f2c2/index.html
 /standards-guidelines/act/rules/73f2c2/proposed/index.html
 /standards-guidelines/act/rules/7677a9/proposed/index.html
+/standards-guidelines/act/rules/78fd32/2022-10-25/index.html
 /standards-guidelines/act/rules/78fd32/index.html
 /standards-guidelines/act/rules/78fd32/proposed/index.html
 /standards-guidelines/act/rules/7d6734/2022-06-23/index.html
@@ -3122,7 +3124,8 @@
 /standards-guidelines/act/rules/97a4e1/index.html
 /standards-guidelines/act/rules/97a4e1/proposed/index.html
 /standards-guidelines/act/rules/9bd38c/proposed/index.html
-/standards-guidelines/act/rules/9e45ec/2022-01-28.md/index.html
+/standards-guidelines/act/rules/9e45ec/2022-01-28/index.html
+/standards-guidelines/act/rules/9e45ec/2022-06-23/index.html
 /standards-guidelines/act/rules/9e45ec/index.html
 /standards-guidelines/act/rules/9e45ec/proposed/index.html
 /standards-guidelines/act/rules/9eb3f6/proposed/index.html
@@ -3138,6 +3141,7 @@
 /standards-guidelines/act/rules/afw4f7/index.html
 /standards-guidelines/act/rules/afw4f7/proposed/index.html
 /standards-guidelines/act/rules/aizyf1/proposed/index.html
+/standards-guidelines/act/rules/akn7bn/2023-08-30/index.html
 /standards-guidelines/act/rules/akn7bn/index.html
 /standards-guidelines/act/rules/akn7bn/proposed/index.html
 /standards-guidelines/act/rules/b20e66/proposed/index.html
@@ -3171,6 +3175,7 @@
 /standards-guidelines/act/rules/d0f69e/proposed/index.html
 /standards-guidelines/act/rules/d7ba54/proposed/index.html
 /standards-guidelines/act/rules/de46e4/2022-01-28/index.html
+/standards-guidelines/act/rules/de46e4/2022-06-23/index.html
 /standards-guidelines/act/rules/de46e4/index.html
 /standards-guidelines/act/rules/de46e4/proposed/index.html
 /standards-guidelines/act/rules/e086e5/2022-01-28/index.html
@@ -3193,6 +3198,7 @@
 /standards-guidelines/act/rules/ffd0e9/proposed/index.html
 /standards-guidelines/act/rules/in6db8/proposed/index.html
 /standards-guidelines/act/rules/index.html
+/standards-guidelines/act/rules/m6b1q3/2023-08-30/index.html
 /standards-guidelines/act/rules/m6b1q3/index.html
 /standards-guidelines/act/rules/m6b1q3/proposed/index.html
 /standards-guidelines/act/rules/off6ek/proposed/index.html
