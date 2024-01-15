@@ -3211,6 +3211,7 @@
 /standards-guidelines/ar.html
 /standards-guidelines/aria/index.html
 /standards-guidelines/atag/education/index.html
+/standards-guidelines/atag/fr.html
 /standards-guidelines/atag/glance/fr.html
 /standards-guidelines/atag/glance/index.html
 /standards-guidelines/atag/index.html

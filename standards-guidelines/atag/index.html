@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1705022654157538284";
+      element.src = "/WAI/assets/scripts/main.js?1705353536830341981";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1705022654157538284">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1705353536830341981">
 
 <title> Authoring Tool Accessibility Guidelines (ATAG) Overview | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -43,14 +43,19 @@
   <body id="top" class="page-authoring-tool-accessibility-guidelines-atag-overview ">
     <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
   <ul>
-        <li><a href="#main">Skip to Content</a></li>
-        <li class="opt">
-          <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
+      <li><a href="#main">Skip to Content</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">Change Text Size or Colors</a></li>
+      <li class="opt languagelist">
+          <strong>This&nbsp;page&nbsp;in:</strong>
+          <ul class="languagelistul"><li><strong style="text-transform: capitalize;">English</strong></li><li><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/atag/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          </ul>
         </li>
         <li class="opt">
-            <a href="/WAI/translations/">All Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+          <a href="/WAI/translations/">All&nbsp;Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
         </li>
-      </ul></nav>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations' data-hidetext='Hide Options'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Show Customization, Languages, Translations</button></li>
+      </ul>
+    </nav>
 <header id="site-header" class="default-grid with-gap">
   <div class="logos">
     <a lang="en" class="home w3c" href="https://www.w3.org/">
@@ -124,7 +129,13 @@
   <a lang="en" href="/WAI/standards-guidelines/w3c-process/" class="page-link"><span>W3C Process for Developing Standards</span></a></li><li>
   <a lang="en" href="/WAI/standards-guidelines/linking/" class="page-link"><span>Referencing and Linking to Standards</span></a></li><li>
   <a lang="en" href="/WAI/cognitive/" class="page-link"><span>Cognitive Accessibility at W3C</span></a></li><li>
-  <a lang="en" href="/WAI/standards-guidelines/mobile/" class="page-link"><span>Mobile Accessibility at W3C</span></a></li></ul></nav>
+  <a lang="en" href="/WAI/standards-guidelines/mobile/" class="page-link"><span>Mobile Accessibility at W3C</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">Languages/Translations</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">English (original)</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/atag/fr" dir="auto" translate="no" lang="fr">français</a></li></ul>
+        <p><a href="/WAI/translations/">All&nbsp;Translations</a></p>
+        <p><a href="/WAI/about/translating/">Translating WAI Resources</a></p>
+      </nav>
 </div>
 
 
@@ -149,9 +160,9 @@
 
 <p>Quick links to resources:</p>
 <ul>
-  <li><a href="http://www.w3.org/WAI/intro/atag-glance">ATAG at a Glance</a></li>
-  <li><a href="http://www.w3.org/TR/ATAG20/">ATAG 2.0 Standard</a></li>
-  <li><a href="http://www.w3.org/TR/IMPLEMENTING-ATAG20/">Implementing ATAG 2.0</a></li>
+  <li><a href="/WAI/standards-guidelines/atag/glance/">ATAG at a Glance</a></li>
+  <li><a href="https://www.w3.org/TR/ATAG20/">ATAG 2.0 Standard</a></li>
+  <li><a href="https://www.w3.org/TR/IMPLEMENTING-ATAG20/">Implementing ATAG 2.0</a></li>
   <li><a href="https://www.w3.org/WAI/atag/report-tool/">ATAG Report Tool</a></li>
 </ul>
 
@@ -198,7 +209,7 @@ disabilities can create web content, <strong><em>and</em></strong></li>
   <li>help authors create more accessible web content — specifically:
 enable, support, and promote the production of content that conforms
 to Web Content Accessibility Guidelines
-(<a href="/WAI/standards-guidelines/wcag/">WCAG</a>).</li>
+(<a href="/WAI/standards-guidelines/wcag/">WCAG</a>.</li>
 </ul>
 
 <p>ATAG is part of a series of accessibility guidelines, including Web
@@ -226,7 +237,7 @@ HTML or EPUB</li>
   <li>multimedia authoring tools</li>
   <li>websites that let users add content, such as blogs, wikis, photo
 sharing sites, online forums, and social networking sites</li>
-  <li>other types of tools listed in the glossary definition of <a href="http://www.w3.org/TR/ATAG20/#def-Authoring-Tool">authoring
+  <li>other types of tools listed in the glossary definition of <a href="https://www.w3.org/TR/ATAG20/#def-Authoring-Tool">authoring
 tools</a></li>
 </ul>
 
@@ -254,7 +265,7 @@ tool vendor to ATAG.</li>
 accessible content.</li>
 </ul>
 
-<p><a href="http://www.w3.org/WAI/intro/atag-glance"><strong>ATAG at a Glance</strong></a> provides a short summary of the accessibility principles and guidelines in ATAG.</p>
+<p><a href="/WAI/standards-guidelines/atag/glance/">ATAG at a Glance</a> provides a short summary of the accessibility principles and guidelines in ATAG.</p>
 
 <p><strong>ATAG</strong> is organized in layers:</p>
 
@@ -263,14 +274,14 @@ accessible content.</li>
   <li><strong>Guidelines</strong> provide the framework and objectives for the success
 criteria.</li>
   <li><strong>Success criteria are the accessibility requirements</strong>, which are
-written as testable statements, at <a href="http://www.w3.org/TR/ATAG20/#intro_understand_levels_conformance">three
+written as testable statements, at <a href="https://www.w3.org/TR/ATAG20/#intro_understand_levels_conformance">three
 levels</a>:
 A, AA, AAA.</li>
 </ul>
 
-<p><a href="http://www.w3.org/TR/ATAG20/"><strong>ATAG 2.0</strong></a> is a <em>W3C Recommendation</em>, which is a technical standard.</p>
+<p><a href="https://www.w3.org/TR/ATAG20/"><strong>ATAG 2.0</strong></a> is a <em>W3C Recommendation</em>, which is a technical standard.</p>
 
-<p><a href="http://www.w3.org/TR/IMPLEMENTING-ATAG20/"><strong>Implementing ATAG 2.0</strong></a>
+<p><a href="https://www.w3.org/TR/IMPLEMENTING-ATAG20/"><strong>Implementing ATAG 2.0</strong></a>
 is a supporting informative document that helps readers understand and
 use ATAG. Implementing ATAG provides the rationale for each
 guideline. For each success criterion, it provides explanation of the intent of the success criteria, examples, and links
@@ -287,12 +298,12 @@ to resources.</p>
 <h2 id="who-developed-atag">Who developed ATAG</h2>
 
 <p>ATAG was developed by the Authoring Tool Accessibility Guidelines
-Working Group (<a href="http://www.w3.org/WAI/AU/">ATAG WG</a>) as part of
-the World Wide Web Consortium (<a href="http://www.w3.org/">W3C</a>) Web
-Accessibility Initiative (<a href="http://www.w3.org/WAI/">WAI</a>).</p>
+Working Group (<a href="https://www.w3.org/WAI/AU/">ATAG WG</a>) as part of
+the World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a>) Web
+Accessibility Initiative (<a href="https://www.w3.org/WAI/">WAI</a>).</p>
 
 <p>Opportunities for contributing to WAI work is explained
-in <a href="http://www.w3.org/WAI/participation">Participating in WAI</a>.</p>
+in <a href="/WAI/about/participating/">Participating in WAI</a>.</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20Authoring%20Tool%20Accessibility%20Guidelines%20(ATAG)%20Overview">wai@w3.org</a> or via GitHub.</p>
@@ -311,9 +322,9 @@ in <a href="http://www.w3.org/WAI/participation">Participating in WAI</a>.</p>
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Date:</strong> Updated 1 December 2022. First published July 2005.</p>
-<p><strong>Editor:</strong> <a href="http://www.w3.org/People/shawn">Shawn Lawton Henry</a>.</p>
-<p>Developed with input from the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>) and the Authoring Tool Accessibility Working Group (<a href="https://www.w3.org/WAI/AU/">AUWG</a>).</p>
+      <p><strong>Date:</strong> Updated 7 December 2023. First published July 2005.</p>
+<p><strong>Editor:</strong> <a href="https://www.w3.org/People/shawn">Shawn Lawton Henry</a>.</p>
+<p>Developed with input from the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>) and the Authoring Tool Accessibility Working Group (<a href="https://www.w3.org/WAI/AU/">AUWG</a>).</p>
 </div>
   </footer>
   
@@ -353,9 +364,9 @@ in <a href="http://www.w3.org/WAI/participation">Participating in WAI</a>.</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1705022654157538284"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1705353536830341981"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1705022654157538284"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1705353536830341981"></script>
 <script>
   svg4everybody();
 </script><script>
