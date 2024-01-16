@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1705353536830341981";
+      element.src = "/WAI/assets/scripts/main.js?1705405018851449686";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1705353536830341981">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1705405018851449686">
 
-<title> Visible label is part of accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1705353536830341981"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Visible label is part of accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1705405018851449686"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Visible label is part of accessible name" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -350,7 +350,7 @@ h2#sidebar-header {
 
 <h2 id="expectation">Expectation</h2>
 
-<p>For each target element, all <a href="https://dom.spec.whatwg.org/#text" title="DOM text, 2020/08/18">text nodes</a> in the <a href="#visible-text-content" title="Definition of Visible text content">visible text content</a> either match or are contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> of this target element, except for characters in the <a href="https://dom.spec.whatwg.org/#text" title="DOM text, 2020/08/18">text nodes</a> used to express <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>. Leading and trailing <a href="#whitespace" title="Definition of Whitespace">whitespace</a> and difference in case sensitivity should be ignored.</p>
+<p>For each target element, all <a href="https://dom.spec.whatwg.org/#text" title="DOM text, 2020/08/18">text nodes</a> in the <a href="#visible-text-content" title="Definition of Visible text content">visible text content</a> <a href="#matching-characters" title="Definition of matching characters">match characters</a> and are contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> of this target element, except for characters in the <a href="https://dom.spec.whatwg.org/#text" title="DOM text, 2020/08/18">text nodes</a> used to express <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>. Leading and trailing <a href="#whitespace" title="Definition of Whitespace">whitespace</a> and difference in case sensitivity should be ignored.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -454,11 +454,11 @@ h2#sidebar-header {
 
 <h4 id="passed-example-5">Passed Example 5</h4>
 
-<p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html">Open in a new tab</a></p>
 
-<p>This button has <a href="#visible" title="Definition of visible">visible</a> text that does not need to be contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>, because the “x” text node is <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>.</p>
+<p>This button has <a href="#visible" title="Definition of visible">visible</a> text that does not need to be contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>, because the “x” text node is <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>. Note: this would need to meet SC 1.1.1 Non text content.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"close"</span><span class="nt">&gt;</span>X<span class="nt">&lt;/button&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"anything"</span><span class="nt">&gt;</span>X<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-6">Passed Example 6</h4>
@@ -503,6 +503,24 @@ h2#sidebar-header {
 <p>This link has <a href="#visible" title="Definition of visible">visible</a> text with mathematical symbols, that does not match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> because the mathematical symbols were written out in the accessible name. This is <a href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name#mathematical-expressions-and-formulae">explicitly mentioned in WCAG</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">aria-label=</span><span class="s">"Proof of two multiplied by two is four"</span><span class="nt">&gt;</span>Proof of 2<span class="ni">&amp;times;</span>2=4<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-4">Failed Example 4</h4>
+
+<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html">Open in a new tab</a></p>
+
+<p>This link has <a href="#visible" title="Definition of visible">visible</a> text does not match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> because there is a hyphen in the accessible name.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"non-standard"</span><span class="nt">&gt;</span>nonstandard<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-5">Failed Example 5</h4>
+
+<p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html">Open in a new tab</a></p>
+
+<p>This link has <a href="#visible" title="Definition of visible">visible</a> text does not match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> because there are extra spaces in the accessible name.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">aria-label=</span><span class="s">"1 2 3. 4 5 6. 7 8 9 0"</span> <span class="na">href=</span><span class="s">"tel:1234567890"</span><span class="nt">&gt;</span>123.456.7890<span class="nt">&lt;/a&gt;</span>
 </code></pre></div></div>
 
 <h3 id="inapplicable">Inapplicable</h3>
@@ -617,6 +635,10 @@ h2#sidebar-header {
 
 <p>Elements can also be ignored by assistive technologies if they are <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a>. This is different from marking the element as decorative and does not convey the same intention. Notably, being <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a> may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.</p>
 
+<h3 id="matching-characters">Matching characters</h3>
+
+<p>A sequence of characters is considered to <em>match</em> another if, after removing leading and trailing <a href="#whitespace" title="Definition of Whitespace">whitespace characters</a> and replacing remaining occurrences of one or more whitespace characters with a single space, the two sequences of characters are equal character-by-character, ignoring any differences in letter casing.</p>
+
 <h3 id="outcome">Outcome</h3>
 
 <p>An <em>outcome</em> is a conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> or one of its constituent <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. An outcome can be one of the three following types:</p>
@@ -725,47 +747,47 @@ h2#sidebar-header {
           <tr>
             <td>Axe DevTools Pro 4.37.1</td>
             <td>Semi-automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/axe-devtools-pro#breakdown-2ee8b8"><img alt="Axe DevTools Pro Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
-            <td>Axe-core 4.8.1</td>
+            <td>Axe-core 4.8.3</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-2ee8b8"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>Equal Access Accessibility Checker 3.1.42-rc.0</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-2ee8b8"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>QualWeb 3.0.0</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-2ee8b8"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>SortSite 6.45</td>
             <td>Automated tool</td>
-            <td>
-              Consistent </td>
+            <td> Partial
+            </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/sortsite#breakdown-2ee8b8"><img alt="SortSite Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
-            <td>Total Validator 17.1.0</td>
+            <td>Total Validator 17.4.0</td>
             <td>Linter</td>
             <td>
               Consistent </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/total-validator#breakdown-2ee8b8"><img alt="Total Validator Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
-            <td>Total Validator (+Browser) 17.3.0</td>
+            <td>Total Validator (+Browser) 17.4.0</td>
             <td>Automated tool</td>
             <td>
               Consistent </td>
@@ -812,7 +834,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 2ee8b8</p>
-<p><strong>Date:</strong> Updated 30 August 2023</p>
+<p><strong>Date:</strong> Updated 12 January 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -854,9 +876,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1705353536830341981"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1705405018851449686"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1705353536830341981"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1705405018851449686"></script>
 <script>
   svg4everybody();
 </script><script>
