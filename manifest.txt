@@ -251,6 +251,7 @@
 /about/translating/guides/translation-guidance/index.html
 /about/translating/guides/using-github/index.html
 /about/translating/guides/video-subtitles/index.html
+/about/translating/guides/wcag/index.html
 /about/translating/index.html
 /about/translating/sitemaps/index.html
 /about/translating/sitemaps/sitemap-ar/index.html
