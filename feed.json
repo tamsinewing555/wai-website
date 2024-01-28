@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2024-01-23/for-review-wai-aria-1-3-FPWD/",
+            "title": "For Review: WAI-ARIA 1.3 First Public Working Draft",
+            "summary": null,
+            "content_text": "Accessible Rich Internet Applications (WAI-ARIA) 1.3 Working Draft is available for review. WAI-ARIA provides an ontology of roles, states, and properties that define accessible user interface elements. These semantics allow authors to convey user interface behaviors and structural information to assistive technologies. Changes from ARIA 1.2 include: new roles (suggestion, comment, mark), new attributes (aria-description, aria-braillelabel, aria-brailleroledescription) and updates to aria-details to allow multiple IDREFS. Additional changes are in the changelog. Please submit any comments by 21 February 2024. For an introduction to WAI-ARIA and related resources, see the WAI-ARIA Overview.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/wai-aria-1.3/\">Accessible Rich Internet Applications (WAI-ARIA) 1.3</a> Working Draft is available for review. WAI-ARIA provides an ontology of roles, states, and properties that define accessible user interface elements. These semantics allow authors to convey user interface behaviors and structural information to assistive technologies. Changes from ARIA 1.2 include: new roles (suggestion, comment, mark), new attributes (aria-description, aria-braillelabel, aria-brailleroledescription) and updates to aria-details to allow multiple IDREFS. Additional changes are in the <a href=\"https://www.w3.org/TR/wai-aria-1.3/#changelog\">changelog</a>. Please submit any comments by 21 February 2024. For an introduction to WAI-ARIA and related resources, see the <a href=\"https://www.w3.org/WAI/standards-guidelines/aria/\">WAI-ARIA Overview</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-01-23/for-review-wai-aria-1-3-FPWD/",
+            
+            
+            
+            
+            
+            "date_published": "2024-01-23T00:00:00+00:00",
+            "date_modified": "2024-01-23T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2023-12-05/Italian-WCAG22/",
             "title": "WCAG 2.2 in Italian: Authorized Translation Published",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2022-04-04T00:00:00+00:00",
             "date_modified": "2022-04-04T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-03-31/new-format-coga-patterns/",
-            "title": "Cognitive Accessibility Design Patterns - New User Interface",
-            "summary": null,
-            "content_text": "Cognitive accessibility objectives and design patterns are now available as a set of web pages from Cognitive Accessibility Guidance list. The objectives and design patterns are “supplemental guidance” to WCAG 2 as explained in About Supplemental Guidance. They are part of W3C work on accessibility for people with cognitive and learning disabilities introduced in Cognitive Accessibility at W3C.",
-            "content_html": "<p>Cognitive accessibility objectives and design patterns are now available as a set of web pages from <a href=\"https://www.w3.org/WAI/WCAG2/supplemental/#cognitiveaccessibilityguidance\">Cognitive Accessibility Guidance list</a>. The objectives and design patterns are “supplemental guidance” to WCAG 2 as explained in <a href=\"https://www.w3.org/WAI/WCAG2/supplemental/about/\">About Supplemental Guidance</a>. They are part of W3C work on accessibility for people with cognitive and learning disabilities introduced in <a href=\"https://www.w3.org/WAI/cognitive/\">Cognitive Accessibility at W3C</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-03-31/new-format-coga-patterns/",
-            
-            
-            
-            
-            
-            "date_published": "2022-03-31T00:00:00+00:00",
-            "date_modified": "2022-03-31T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
