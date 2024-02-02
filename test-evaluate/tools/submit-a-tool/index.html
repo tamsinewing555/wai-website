@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1706838644949407260";
+      element.src = "/WAI/assets/scripts/main.js?1706890511086240937";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1706838644949407260">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1706890511086240937">
 
 <title> Submit a tool - Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -1544,7 +1544,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="field">
     <label for="actrules" class="label-input">ACT Rules (URL)</label>
-    <input type="url" id="actrules" name="actrules" value="https://www.w3.org/WAI/standards-guidelines/act/implementations/" />
+    <input type="url" id="actrules" name="actrules" placeholder="https://www.w3.org/WAI/standards-guidelines/act/implementations/..." />
     <p class="subfieldtext">
       Tools that have a documented implementation of Accessibility Conformance Testing (ACT) Rules can include a link to their ACT implementation report. To learn more about ACT Rules, read <a href="https://www.w3.org/WAI/standards-guidelines/act/implementations/" target="_blank">ACT Rules Implementation in Test Tools and Methodologies</a>. See also <a href="https://www.w3.org/WAI/standards-guidelines/act/implementations/#add-a-tool-or-methodology" target="_blank">Add a Test Tool or Methodology</a> for information on how to submit a new ACT implementation.
     </p>
@@ -2705,6 +2705,15 @@ main > header { grid-column: 4 / span 4; }
           </div>
         
           <div class="radio-field">
+            <input type="checkbox" name="type[]" id="tool-type-bookmarklet" value="Bookmarklet" group="type" required="" />
+            <label for="tool-type-bookmarklet">
+            
+                Bookmarklet
+              
+            </label>
+          </div>
+        
+          <div class="radio-field">
             <input type="checkbox" name="type[]" id="tool-type-typeDesktopApplication" value="Desktop application" group="type" required="" />
             <label for="tool-type-typeDesktopApplication">
             
@@ -3159,9 +3168,9 @@ if (submitForm) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1706838644949407260"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1706890511086240937"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1706838644949407260"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1706890511086240937"></script>
 <script>
   svg4everybody();
 </script><script>
