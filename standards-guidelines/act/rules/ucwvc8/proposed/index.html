@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1707223241822989421";
+      element.src = "/WAI/assets/scripts/main.js?1707235864276565568";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707223241822989421">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707235864276565568">
 
-<title> HTML page language subtag matches default language[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707223241822989421"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> HTML page language subtag matches default language[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707235864276565568"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="HTML page language subtag matches default language" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -357,16 +357,16 @@ h2#sidebar-header {
 
 <ul>
   <li>
-    <p>This rule assumes that the default human language of a page, as described in WCAG 2, can be determined by counting the number of words used in each language. If the default language needs to be derived in some other way (such as frequency analysis, mutual information based distance, …), this rule may fail while <a href="https://www.w3.org/TR/WCAG21/#language-of-page">Success Criterion 3.1.1: Language of Page</a> is still satisfied.</p>
+    <p>This rule assumes that the default human language of a page, as described in WCAG 2, can be determined by counting the number of words used in each language. If the default language needs to be derived in some other way (such as frequency analysis, mutual information based distance, …), this rule may fail while <a href="https://www.w3.org/TR/WCAG22/#language-of-page">Success Criterion 3.1.1: Language of Page</a> is still satisfied.</p>
   </li>
   <li>
-    <p>The language of the page can be set by other methods than the <code class="language-plaintext highlighter-rouge">lang</code> attribute, for example using HTTP headers or the <code class="language-plaintext highlighter-rouge">meta</code> element. These methods are not supported by all assistive technologies. This rule assumes that these other methods are insufficient to satisfying <a href="https://www.w3.org/TR/WCAG21/#language-of-page">Success Criterion 3.1.1: Language of Page</a>.</p>
+    <p>The language of the page can be set by other methods than the <code class="language-plaintext highlighter-rouge">lang</code> attribute, for example using HTTP headers or the <code class="language-plaintext highlighter-rouge">meta</code> element. These methods are not supported by all assistive technologies. This rule assumes that these other methods are insufficient to satisfying <a href="https://www.w3.org/TR/WCAG22/#language-of-page">Success Criterion 3.1.1: Language of Page</a>.</p>
   </li>
   <li>
     <p>This rule assumes that user agents and assistive technologies can programmatically determine <a href="#known-primary-language-tag">known primary language tags</a> even if these do not conform to the <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">RFC 5646</a> syntax.</p>
   </li>
   <li>
-    <p>This rule assumes that only <a href="#known-primary-language-tag">known primary language tags</a> are enough to satisfy <a href="https://www.w3.org/TR/WCAG21/#language-of-page" title="Success Criterion 3.1.1 Language of Page">Success Criterion 3.1.1 Language of Page</a>; this notably excludes <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> and <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2: Codes for the Representation of Names of Languages">ISO 639.2</a> three-letters codes, both having poor support in assistive technologies.</p>
+    <p>This rule assumes that only <a href="#known-primary-language-tag">known primary language tags</a> are enough to satisfy <a href="https://www.w3.org/TR/WCAG22/#language-of-page" title="Success Criterion 3.1.1 Language of Page">Success Criterion 3.1.1 Language of Page</a>; this notably excludes <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> and <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2: Codes for the Representation of Names of Languages">ISO 639.2</a> three-letters codes, both having poor support in assistive technologies.</p>
   </li>
   <li>
     <p>This rule assumes that <code class="language-plaintext highlighter-rouge">iframe</code> title elements are not exposed to assistive technologies and so does not consider them as part of the <a href="#default-page-language">default page language</a>.</p>
@@ -389,8 +389,8 @@ h2#sidebar-header {
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">Understanding Success Criterion 3.1.1: Language of Page</a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">H57: Using language attributes on the html element</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html">Understanding Success Criterion 3.1.1: Language of Page</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H57">H57: Using language attributes on the html element</a></li>
   <li><a href="https://www.rfc-editor.org/rfc/rfc5646.html">RFC 5646: Tags for Identifying Languages</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/dom.html#the-lang-and-xml:lang-attributes">The <code class="language-plaintext highlighter-rouge">lang</code> and <code class="language-plaintext highlighter-rouge">xml:lang</code> attributes</a></li>
 </ul>
@@ -725,7 +725,7 @@ h2#sidebar-header {
   <li>For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.</li>
   <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
   <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
-  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
 </ul>
 
 <p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
@@ -835,17 +835,17 @@ h2#sidebar-header {
 
 <p>Content is considered <em>visible</em> if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>
 
-<p><a href="https://www.w3.org/TR/WCAG21/#dfn-content">Content is defined in WCAG</a>.</p>
+<p><a href="https://www.w3.org/TR/WCAG22/#dfn-content">Content is defined in WCAG</a>.</p>
 
 <p>For more details, see <a href="https://act-rules.github.io/pages/examples/visible/">examples of visible</a>.</p>
 
 <h3 id="web-page-html">Web page (HTML)</h3>
 
-<p>An <em>HTML <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web page</a></em> is the set of all <a href="https://html.spec.whatwg.org/#fully-active">fully active</a> <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> which share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context">top-level browsing context</a>.</p>
+<p>An <em>HTML <a href="https://www.w3.org/TR/WCAG22/#dfn-web-page-s">web page</a></em> is the set of all <a href="https://html.spec.whatwg.org/#fully-active">fully active</a> <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> which share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context">top-level browsing context</a>.</p>
 
 <p><strong>Note:</strong> Nesting of browsing context mostly happens with <code class="language-plaintext highlighter-rouge">iframe</code> and <code class="language-plaintext highlighter-rouge">object</code>. Thus a web page will most of the time be a “top-level” document and all its <code class="language-plaintext highlighter-rouge">iframe</code> and <code class="language-plaintext highlighter-rouge">object</code> (recursively).</p>
 
-<p><strong>Note:</strong> <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">Web pages</a> as defined by WCAG are not restricted to the HTML technology but can also include, <em>e.g.</em>, PDF or DOCX documents.</p>
+<p><strong>Note:</strong> <a href="https://www.w3.org/TR/WCAG22/#dfn-web-page-s">Web pages</a> as defined by WCAG are not restricted to the HTML technology but can also include, <em>e.g.</em>, PDF or DOCX documents.</p>
 
 <p><strong>Note:</strong> Although web pages as defined here are sets of <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> (and do not contain other kind of nodes), one can abusively write that any node is “in a web page” if it is a <a href="https://dom.spec.whatwg.org/#concept-shadow-including-descendant">shadow-including descendant</a> of a <a href="https://dom.spec.whatwg.org/#concept-document">document</a> that is part of that web page.</p>
 
@@ -915,7 +915,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> ucwvc8</p>
-<p><strong>Date:</strong> Updated 13 October 2023</p>
+<p><strong>Date:</strong> Updated 25 January 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -957,9 +957,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1707235864276565568"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1707235864276565568"></script>
 <script>
   svg4everybody();
 </script><script>

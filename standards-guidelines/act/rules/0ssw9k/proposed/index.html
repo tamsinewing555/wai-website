@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1707223241822989421";
+      element.src = "/WAI/assets/scripts/main.js?1707235864276565568";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707223241822989421">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707235864276565568">
 
-<title> Scrollable content can be reached with sequential focus navigation[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707223241822989421"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Scrollable content can be reached with sequential focus navigation[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707235864276565568"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Scrollable content can be reached with sequential focus navigation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -355,7 +355,7 @@ h2#sidebar-header {
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>This rule assumes that all <a href="#scrollable-element">scrollable elements</a> with visible content need to be keyboard accessible. <a href="#scrollable-element">Scrollable elements</a> that do not need to be keyboard accessible, perhaps because their content is <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration">purely decorative</a>, the scroll area is whitespace, or because scroll can be controlled in some other keyboard accessible way such as through a button or custom scrollbar, may fail this rule but still satisfy <a href="https://www.w3.org/TR/WCAG21/#keyboard">success criterion 2.1.1 Keyboard</a>.</p>
+<p>This rule assumes that all <a href="#scrollable-element">scrollable elements</a> with visible content need to be keyboard accessible. <a href="#scrollable-element">Scrollable elements</a> that do not need to be keyboard accessible, perhaps because their content is <a href="https://www.w3.org/TR/WCAG22/#dfn-pure-decoration">purely decorative</a>, the scroll area is whitespace, or because scroll can be controlled in some other keyboard accessible way such as through a button or custom scrollbar, may fail this rule but still satisfy <a href="https://www.w3.org/TR/WCAG22/#keyboard">success criterion 2.1.1 Keyboard</a>.</p>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
@@ -372,8 +372,8 @@ h2#sidebar-header {
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html">Understanding Success Criterion 2.1.1: Keyboard</a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G202">G202: Ensuring keyboard control for all functionality</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html">Understanding Success Criterion 2.1.1: Keyboard</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G202">G202: Ensuring keyboard control for all functionality</a></li>
 </ul>
 
 <h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
@@ -452,13 +452,13 @@ h2#sidebar-header {
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/305891f137b5927d99e74aa1efe9997e4a8a2803.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/270a22a8e4ce4d9f073e1484a0d807705207a1d7.html">Open in a new tab</a></p>
 
 <p>This <a href="#scrollable-element">scrollable</a> <code class="language-plaintext highlighter-rouge">section</code> element contains a link that is included in <a href="https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/04/03">sequential focus navigation</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;section</span> <span class="na">style=</span><span class="s">"height: 100px; width: 500px; overflow: scroll;"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;h1&gt;</span>
-		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3.org/TR/WCAG21/#abstract"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3.org/TR/WCAG22/#abstract"</span><span class="nt">&gt;</span>
 			WCAG 2.1 Abstract
 		<span class="nt">&lt;/a&gt;</span>
 	<span class="nt">&lt;/h1&gt;</span>
@@ -550,13 +550,13 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-2">Inapplicable Example 2</h4>
 
-<p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/a7da5f9dbc260d633787386b6041c70cb9fbdc32.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">section</code> element has a <a href="#scrollable-element">scroll distance</a> of 0 in both directions.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;section</span> <span class="na">style=</span><span class="s">"height: 95px; width: 500px; overflow: auto;"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;p&gt;</span>
-		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3.org/TR/WCAG21/#abstract"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3.org/TR/WCAG22/#abstract"</span><span class="nt">&gt;</span>
 			WCAG 2.1 Abstract
 		<span class="nt">&lt;/a&gt;</span>
 	<span class="nt">&lt;/p&gt;</span>
@@ -565,12 +565,12 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-3">Inapplicable Example 3</h4>
 
-<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/d7f9b0ca63b41bfc560c867696744a14f8590394.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/345fec9a44fb17add404996fe985e87d884f55d0.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">section</code> element is not <a href="#scrollable-element">scrollable</a> because it has a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/CSS22/visufx.html#overflow">overflow</a> of <code class="language-plaintext highlighter-rouge">hidden</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>
-	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3.org/TR/WCAG21/#abstract"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.w3.org/TR/WCAG22/#abstract"</span><span class="nt">&gt;</span>
 		WCAG 2.1 Abstract
 	<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/h1&gt;</span>
@@ -621,11 +621,11 @@ h2#sidebar-header {
 
 <h4 id="inapplicable-example-6">Inapplicable Example 6</h4>
 
-<p><a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/349a8b4b881ab5380ed63e4e0d8e26d8bd1ad025.html">Open in a new tab</a></p>
 
 <p>This <code class="language-plaintext highlighter-rouge">iframe</code> element is not a scrollable element, but instead contains a nested browsing context that is scrollable. These must be tested separately.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"https://www.w3.org/TR/WCAG21/#abstract"</span> <span class="na">width=</span><span class="s">"500"</span> <span class="na">height=</span><span class="s">"200"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"https://www.w3.org/TR/WCAG22/#abstract"</span> <span class="na">width=</span><span class="s">"500"</span> <span class="na">height=</span><span class="s">"200"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
 </code></pre></div></div>
 
 <h2 id="glossary">Glossary</h2>
@@ -642,7 +642,7 @@ h2#sidebar-header {
   <li>For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.</li>
   <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
   <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
-  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
 </ul>
 
 <p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
@@ -690,7 +690,7 @@ h2#sidebar-header {
 
 <p>Content is considered <em>visible</em> if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>
 
-<p><a href="https://www.w3.org/TR/WCAG21/#dfn-content">Content is defined in WCAG</a>.</p>
+<p><a href="https://www.w3.org/TR/WCAG22/#dfn-content">Content is defined in WCAG</a>.</p>
 
 <p>For more details, see <a href="https://act-rules.github.io/pages/examples/visible/">examples of visible</a>.</p>
 
@@ -735,6 +735,13 @@ h2#sidebar-header {
             <td>
               Consistent </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/axe-core#breakdown-0ssw9k"><img alt="Axe-core Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+          </tr>
+          <tr>
+            <td>Equal Access Accessibility Checker 3.1.42-rc.0</td>
+            <td>Automated tool</td>
+            <td> Partial
+            </td>
+            <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-0ssw9k"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>QualWeb 3.0.0</td>
@@ -798,7 +805,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 0ssw9k</p>
-<p><strong>Date:</strong> Updated 13 October 2023</p>
+<p><strong>Date:</strong> Updated 25 January 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -840,9 +847,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1707235864276565568"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1707235864276565568"></script>
 <script>
   svg4everybody();
 </script><script>

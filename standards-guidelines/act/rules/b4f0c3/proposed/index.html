@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1707223241822989421";
+      element.src = "/WAI/assets/scripts/main.js?1707235864276565568";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707223241822989421">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707235864276565568">
 
-<title> Meta viewport allows for zoom[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707223241822989421"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Meta viewport allows for zoom[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707235864276565568"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Meta viewport allows for zoom" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -378,12 +378,12 @@ h2#sidebar-header {
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>Pages for which any of the following is true may satisfy Success Criteria <a href="https://www.w3.org/TR/WCAG21/#resize-text" title="WCAG 2.1 Success Criterion 1.4.4 Resize text">1.4.4 Resize text</a> and <a href="https://www.w3.org/TR/WCAG21/#reflow" title="WCAG 2.1 Success Criterion 1.4.10 Reflow">1.4.10 Reflow</a>, even if the rule results in a failed outcome.</p>
+<p>Pages for which any of the following is true may satisfy Success Criteria <a href="https://www.w3.org/TR/WCAG22/#resize-text" title="WCAG 2.2 Success Criterion 1.4.4 Resize text">1.4.4 Resize text</a> and <a href="https://www.w3.org/TR/WCAG22/#reflow" title="WCAG 2.2 Success Criterion 1.4.10 Reflow">1.4.10 Reflow</a>, even if the rule results in a failed outcome.</p>
 
 <ul>
-  <li>The <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s" title="Web page">page</a> has no <a href="#visible" title="Definition of visible">visible</a> <a href="https://www.w3.org/TR/WCAG21/#dfn-content" title="content (Web content)">content</a>; or</li>
-  <li>There is another <a href="https://www.w3.org/TR/WCAG21/#dfn-mechanism">mechanism</a> available to resize the text content; or</li>
-  <li>The <a href="https://www.w3.org/TR/WCAG21/#dfn-content" title="content (Web content)">content</a> does not need to reflow in order to fit in an area of 320 by 256 <a href="https://www.w3.org/TR/css3-values/#reference-pixel" title="CSS 3 definition, reference pixel">CSS pixels</a>.</li>
+  <li>The <a href="https://www.w3.org/TR/WCAG22/#dfn-web-page-s" title="Web page">page</a> has no <a href="#visible" title="Definition of visible">visible</a> <a href="https://www.w3.org/TR/WCAG22/#dfn-content" title="content (Web content)">content</a>; or</li>
+  <li>There is another <a href="https://www.w3.org/TR/WCAG22/#dfn-mechanism">mechanism</a> available to resize the text content; or</li>
+  <li>The <a href="https://www.w3.org/TR/WCAG22/#dfn-content" title="content (Web content)">content</a> does not need to reflow in order to fit in an area of 320 by 256 <a href="https://www.w3.org/TR/css3-values/#reference-pixel" title="CSS 3 definition, reference pixel">CSS pixels</a>.</li>
 </ul>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
@@ -397,8 +397,8 @@ h2#sidebar-header {
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text">Understanding Success Criterion 1.4.4: Resize text</a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow">Understanding Success Criterion 1.4.10: Reflow</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text">Understanding Success Criterion 1.4.4: Resize text</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow">Understanding Success Criterion 1.4.10: Reflow</a></li>
   <li><a href="https://html.spec.whatwg.org/#the-meta-element" title="The meta element">HTML Specification - The <code class="language-plaintext highlighter-rouge">meta</code> element</a></li>
   <li><a href="https://www.w3.org/TR/css-device-adapt-1/#min-scale-max-scale" title="The initial-scale, minimum-scale, and maximum-scale properties">The initial-scale, minimum-scale, and maximum-scale properties</a></li>
   <li><a href="https://www.w3.org/TR/css-device-adapt-1/#user-scalable" title="The user-scalable property">The user-scalable property</a></li>
@@ -767,7 +767,7 @@ not tested by the rule:</p>
   <li>For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.</li>
   <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
   <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
-  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
 </ul>
 
 <p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
@@ -794,7 +794,7 @@ not tested by the rule:</p>
 
 <p>Content is considered <em>visible</em> if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>
 
-<p><a href="https://www.w3.org/TR/WCAG21/#dfn-content">Content is defined in WCAG</a>.</p>
+<p><a href="https://www.w3.org/TR/WCAG22/#dfn-content">Content is defined in WCAG</a>.</p>
 
 <p>For more details, see <a href="https://act-rules.github.io/pages/examples/visible/">examples of visible</a>.</p>
 
@@ -925,7 +925,7 @@ not tested by the rule:</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> b4f0c3</p>
-<p><strong>Date:</strong> Updated 13 October 2023</p>
+<p><strong>Date:</strong> Updated 25 January 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Previous Authors: <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -967,9 +967,9 @@ not tested by the rule:</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1707235864276565568"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1707235864276565568"></script>
 <script>
   svg4everybody();
 </script><script>

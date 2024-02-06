@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1707223241822989421";
+      element.src = "/WAI/assets/scripts/main.js?1707235864276565568";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707223241822989421">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707235864276565568">
 
-<title> Audio or video element avoids automatically playing audio[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707223241822989421"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Audio or video element avoids automatically playing audio[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707235864276565568"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Audio or video element avoids automatically playing audio" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -361,9 +361,9 @@ h2#sidebar-header {
 <h2 id="assumptions">Assumptions</h2>
 
 <ul>
-  <li>This rule assumes that it is not possible to satisfy <a href="https://www.w3.org/TR/WCAG21/#audio-control" title="Success Criterion 1.4.2 Audio Control">Success Criterion 1.4.2 Audio Control</a> if the total length of the automatically playing audio is more than 3 seconds, even if there are pauses in the sound and no more than 3 seconds in a row with actual sound.</li>
-  <li>This rule assumes that the <a href="https://www.w3.org/TR/WCAG21/#dfn-mechanism">mechanism</a> to control the sound must be located in the same <a href="#web-page-html" title="Definition of HTML web page">web page</a>. Mechanisms located on other pages can still create accessibility issues for users relying on sound to navigate (e.g. screen readers users) since the autoplaying sound will interfere with their ability to find and activate the mechanism. If a <a href="https://www.w3.org/TR/WCAG21/#dfn-mechanism">mechanism</a> external to the <a href="#web-page-html" title="Definition of HTML web page">web page</a> is provided, it is possible to fail this rule but still satisfy <a href="https://www.w3.org/TR/WCAG21/#audio-control" title="Success Criterion 1.4.2 Audio Control">Success Criterion 1.4.2 Audio Control</a>.</li>
-  <li>This rule assumes that the <a href="https://www.w3.org/TR/WCAG21/#dfn-mechanism">mechanism</a> to control the sound must be visible and accessible in order to be effective and usable by all kinds of users. If the mechanism is hidden to some users, it is possible to fail this rule but still satisfy <a href="https://www.w3.org/TR/WCAG21/#audio-control" title="Success Criterion 1.4.2 Audio Control">Success Criterion 1.4.2 Audio Control</a>.</li>
+  <li>This rule assumes that it is not possible to satisfy <a href="https://www.w3.org/TR/WCAG22/#audio-control" title="Success Criterion 1.4.2 Audio Control">Success Criterion 1.4.2 Audio Control</a> if the total length of the automatically playing audio is more than 3 seconds, even if there are pauses in the sound and no more than 3 seconds in a row with actual sound.</li>
+  <li>This rule assumes that the <a href="https://www.w3.org/TR/WCAG22/#dfn-mechanism">mechanism</a> to control the sound must be located in the same <a href="#web-page-html" title="Definition of HTML web page">web page</a>. Mechanisms located on other pages can still create accessibility issues for users relying on sound to navigate (e.g. screen readers users) since the autoplaying sound will interfere with their ability to find and activate the mechanism. If a <a href="https://www.w3.org/TR/WCAG22/#dfn-mechanism">mechanism</a> external to the <a href="#web-page-html" title="Definition of HTML web page">web page</a> is provided, it is possible to fail this rule but still satisfy <a href="https://www.w3.org/TR/WCAG22/#audio-control" title="Success Criterion 1.4.2 Audio Control">Success Criterion 1.4.2 Audio Control</a>.</li>
+  <li>This rule assumes that the <a href="https://www.w3.org/TR/WCAG22/#dfn-mechanism">mechanism</a> to control the sound must be visible and accessible in order to be effective and usable by all kinds of users. If the mechanism is hidden to some users, it is possible to fail this rule but still satisfy <a href="https://www.w3.org/TR/WCAG22/#audio-control" title="Success Criterion 1.4.2 Audio Control">Success Criterion 1.4.2 Audio Control</a>.</li>
 </ul>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
@@ -372,12 +372,12 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
-<p>The <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy <a href="https://www.w3.org/TR/WCAG21/#audio-control" title="Success Criterion 1.4.2 Audio Control">Success Criterion 1.4.2 Audio Control</a>. These extra requirements are left out of this rule, and should be tested separately.</p>
+<p>The <a href="#instrument-to-achieve-an-objective" title="Definition of Instrument to Achieve an Objective">instruments</a> used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy <a href="https://www.w3.org/TR/WCAG22/#audio-control" title="Success Criterion 1.4.2 Audio Control">Success Criterion 1.4.2 Audio Control</a>. These extra requirements are left out of this rule, and should be tested separately.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html">Understanding Success Criterion 1.4.2: Audio Control</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html">Understanding Success Criterion 1.4.2: Audio Control</a></li>
   <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia">Accessible Multimedia</a></li>
 </ul>
 
@@ -639,7 +639,7 @@ h2#sidebar-header {
   <li>For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.</li>
   <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
   <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
-  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
 </ul>
 
 <p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
@@ -668,11 +668,11 @@ h2#sidebar-header {
 
 <h3 id="web-page-html">Web page (HTML)</h3>
 
-<p>An <em>HTML <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web page</a></em> is the set of all <a href="https://html.spec.whatwg.org/#fully-active">fully active</a> <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> which share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context">top-level browsing context</a>.</p>
+<p>An <em>HTML <a href="https://www.w3.org/TR/WCAG22/#dfn-web-page-s">web page</a></em> is the set of all <a href="https://html.spec.whatwg.org/#fully-active">fully active</a> <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> which share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context">top-level browsing context</a>.</p>
 
 <p><strong>Note:</strong> Nesting of browsing context mostly happens with <code class="language-plaintext highlighter-rouge">iframe</code> and <code class="language-plaintext highlighter-rouge">object</code>. Thus a web page will most of the time be a “top-level” document and all its <code class="language-plaintext highlighter-rouge">iframe</code> and <code class="language-plaintext highlighter-rouge">object</code> (recursively).</p>
 
-<p><strong>Note:</strong> <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">Web pages</a> as defined by WCAG are not restricted to the HTML technology but can also include, <em>e.g.</em>, PDF or DOCX documents.</p>
+<p><strong>Note:</strong> <a href="https://www.w3.org/TR/WCAG22/#dfn-web-page-s">Web pages</a> as defined by WCAG are not restricted to the HTML technology but can also include, <em>e.g.</em>, PDF or DOCX documents.</p>
 
 <p><strong>Note:</strong> Although web pages as defined here are sets of <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> (and do not contain other kind of nodes), one can abusively write that any node is “in a web page” if it is a <a href="https://dom.spec.whatwg.org/#concept-shadow-including-descendant">shadow-including descendant</a> of a <a href="https://dom.spec.whatwg.org/#concept-document">document</a> that is part of that web page.</p>
 
@@ -700,6 +700,13 @@ h2#sidebar-header {
             <td>
               Consistent </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/alfa-assisted#breakdown-80f0bf"><img alt="Alfa (semi-automated) Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
+          </tr>
+          <tr>
+            <td>QualWeb 3.0.0</td>
+            <td>Automated tool</td>
+            <td>
+              Consistent </td>
+            <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-80f0bf"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>SortSite 6.45</td>
@@ -749,7 +756,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 80f0bf</p>
-<p><strong>Date:</strong> Updated 13 October 2023</p>
+<p><strong>Date:</strong> Updated 25 January 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
@@ -793,9 +800,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1707235864276565568"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1707235864276565568"></script>
 <script>
   svg4everybody();
 </script><script>

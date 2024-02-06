@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1707223241822989421";
+      element.src = "/WAI/assets/scripts/main.js?1707235864276565568";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707223241822989421">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707235864276565568">
 
-<title> QualWeb ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707223241822989421"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> QualWeb ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707235864276565568"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="QualWeb ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -306,7 +306,7 @@ h2#sidebar-header {
       version 3.0.0
      is an Automated tool
       by <a href="https://www.lasige.pt/">LASIGE, Faculdade de Ciências da Universidade de Lisboa</a>.
-      The test results were last updated 15 January 2024.
+      The test results were last updated 5 February 2024.
 
     
 
@@ -326,13 +326,13 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>WCAG 2 rules</th>
-      <td>27</td>
-      <td>1</td>
+      <td>28</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>Proposed rules</th>
-      <td>7</td>
-      <td>14</td>
+      <td>10</td>
+      <td>18</td>
     </tr>
   </tbody></table>
 </div>
@@ -409,6 +409,16 @@ h2#sidebar-header {
         </tr>
       
       
+      
+        <tr>
+          <td><a href="#breakdown-akn7bn">
+            Iframe with interactive elements is not excluded from tab-order
+          </a></td>
+          <td>
+            WCAG 2 Rule </td>
+          <td>
+            Consistent </td>
+        </tr>
       
       
       
@@ -604,6 +614,16 @@ h2#sidebar-header {
       
       
       
+        <tr>
+          <td><a href="#breakdown-bc659a">
+            Meta element has no refresh delay
+          </a></td>
+          <td>
+            WCAG 2 Rule </td>
+          <td> Partial
+          </td>
+        </tr>
+      
       
       
         <tr>
@@ -696,6 +716,16 @@ h2#sidebar-header {
       
       
       
+        <tr>
+          <td><a href="#breakdown-bisz58">
+            Meta element has no refresh delay (no exception)
+          </a></td>
+          <td>
+            WCAG 2 Rule </td>
+          <td> Partial
+          </td>
+        </tr>
+      
       
       
         <tr>
@@ -736,7 +766,27 @@ h2#sidebar-header {
       
       
       
+        <tr>
+          <td><a href="#breakdown-afb423">
+            Audio element content is media alternative for text
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td> Partial
+          </td>
+        </tr>
       
+      
+      
+        <tr>
+          <td><a href="#breakdown-80f0bf">
+            Audio or video element avoids automatically playing audio
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td>
+            Consistent </td>
+        </tr>
       
       
       
@@ -752,7 +802,27 @@ h2#sidebar-header {
       
       
       
+        <tr>
+          <td><a href="#breakdown-2eb176">
+            Audio element content has transcript
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td> Partial
+          </td>
+        </tr>
       
+      
+      
+        <tr>
+          <td><a href="#breakdown-aaa1bf">
+            Audio or video element that plays automatically has no audio that lasts more than 3 seconds
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td>
+            Consistent </td>
+        </tr>
       
       
       
@@ -790,8 +860,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -928,8 +998,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td>
-            Consistent </td>
+          <td> Partial
+          </td>
         </tr>
       
       
@@ -968,9 +1038,39 @@ h2#sidebar-header {
       
       
       
+        <tr>
+          <td><a href="#breakdown-fd26cf">
+            Video element visual-only content is media alternative for text
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td> Partial
+          </td>
+        </tr>
       
       
       
+        <tr>
+          <td><a href="#breakdown-d7ba54">
+            Video element visual-only content has audio track alternative
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td> Partial
+          </td>
+        </tr>
+      
+      
+      
+        <tr>
+          <td><a href="#breakdown-ee13b5">
+            Video element visual-only content has transcript
+          </a></td>
+          <td> Proposed Rule
+          </td>
+          <td> Partial
+          </td>
+        </tr>
       
       
       
@@ -994,8 +1094,8 @@ h2#sidebar-header {
           </a></td>
           <td> Proposed Rule
           </td>
-          <td> Partial
-          </td>
+          <td>
+            Consistent </td>
         </tr>
       
       
@@ -1693,6 +1793,134 @@ h2#sidebar-header {
     </tbody>
   </table>
 </div>
+
+<h3 id="breakdown-akn7bn">Iframe with interactive elements is not excluded from tab-order</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>iframe with negative tabindex has no interactive elements</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/akn7bn">Iframe with interactive elements is not excluded from tab-order</a>
+  WCAG 2 rule. 
+    It covers all 9 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+        
+          <ul>
+            <li>
+              2.1.1
+              Keyboard
+            </li>
+          </ul>
+        
+      </td>
+
+      <td>
+        
+          <ul>
+            <li>
+              2.1.1
+              Keyboard
+            </li>
+          </ul>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>iframe with negative tabindex has no interactive elements</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/1e3939d9f8e0f78f9c564ec6feb12cc5635c0acb.html">Passed Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html">Passed Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/62673162e22ee1e95e962522b1d1c3b549dbfc49.html">Failed Example 1</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html">Inapplicable Example 3</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html">Inapplicable Example 4</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/17a371c470316dc29e424101065ebfe9f7b2e990.html">Inapplicable Example 5</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c88fcaf4d90e2156de75a1cdad8734a3d75c49e4.html">Inapplicable Example 6</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/a13349ef619df6256bd52acb8008760c3711f5dd.html">Inapplicable Example 6</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-24afc2">Important letter spacing in style attributes is wide enough</h3>
 <p>
@@ -2482,9 +2710,27 @@ h2#sidebar-header {
         </th>
         <td class="">inapplicable</td>
       </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/cd80cea25465f393871872ab3cc202d765e5d11d.html">Inapplicable Example 8</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/87773383afa97f86ca5a0811cbe77c4f14ec1524.html">Inapplicable Example 9</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
     </tbody>
   </table>
 </div>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-97a4e1">Button has non-empty accessible name</h3>
 <p>
@@ -2933,9 +3179,20 @@ h2#sidebar-header {
         </th>
         <td class="">failed</td>
       </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/cfb1790405bb1ff793ed15a73372d53e79d2d7e0.html">Passed Example 8</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
     </tbody>
   </table>
 </div>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-bf051a">HTML page lang attribute has valid language tag</h3>
 <p>
@@ -4127,7 +4384,7 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html">Inapplicable Example 6</a>
             <abbr title="Proposed example">*</abbr>
         </th>
-        <td class="">failed</td>
+        <td class="">inapplicable</td>
       </tr>
     </tbody>
   </table>
@@ -4290,6 +4547,173 @@ h2#sidebar-header {
   </table>
 </div>
 
+<h3 id="breakdown-bc659a">Meta element has no refresh delay</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>Meta-refresh no delay</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/bc659a">Meta element has no refresh delay</a>
+  WCAG 2 rule. 
+    It covers 13 of the 15 examples.
+  
+    For 2 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+        
+          <ul>
+            <li>
+              2.2.1
+              Timing Adjustable
+            </li>
+          </ul>
+        
+      </td>
+
+      <td>
+        
+          <ul>
+            <li>
+              2.2.1
+              Timing Adjustable
+            </li>
+          
+            <li>
+              2.2.4
+              Interruptions
+            </li>
+          
+            <li>
+              3.2.5
+              Change on Request
+            </li>
+          </ul>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Meta-refresh no delay</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/49d79a4e4e4a994a8eb7cf2eaf59c99d2251cac5.html">Passed Example 1</a>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/d48be8e9b638b9c27714cb3118a335376ed65f0f.html">Passed Example 2</a>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b5ca868de7980f6944142ecdb849f47ad2cdfb5c.html">Passed Example 3</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/56857820788db21498e95a5cbba65d59a9a2b892.html">Failed Example 1</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/96c7657d21888cd05edd297d44a8fd554b21c908.html">Failed Example 2</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b2e7f3e00ffce0a2a1078f860452814e6445445d.html">Failed Example 3</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/5d4d5b214459c8a0779600ab39a5668003271c62.html">Failed Example 4</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/48a600254c0883cd5a72471420b1ac5a532ca6c3.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/4dffd30573a924ad0158d813733e029aac160194.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a05aeffa53890c3ed9fd9cefa544eb1071497de5.html">Inapplicable Example 3</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a8c47bb26867342e83342645507fb766648799d7.html">Inapplicable Example 4</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ca4a053f47b6e322ad6de680fdabd05f651bf49b.html">Inapplicable Example 5</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b42a3a108d5d0f65258cd8157eb0011b78ce9253.html">Inapplicable Example 6</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/0bf30cdf02ff26dfca5aa705b7023227da221e05.html">Inapplicable Example 7</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/8ce8198a1e6907ae25eb957eb0a5a99e719131a1.html">Inapplicable Example 8</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <h3 id="breakdown-b4f0c3">Meta viewport allows for zoom</h3>
 <p>
   This rule is implemented by QualWeb using the
@@ -4407,13 +4831,13 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html">Inapplicable Example 3</a>
         </th>
-        <td class="">passed</td>
+        <td class="">inapplicable</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html">Inapplicable Example 4</a>
         </th>
-        <td class="">passed</td>
+        <td class="">inapplicable</td>
       </tr>
       <tr>
         <th>
@@ -4434,24 +4858,21 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/8735b02e59dd802a5a9e9a7ea1934a106d2963eb.html">Failed Example 2</a>
             <abbr title="Proposed example">*</abbr>
         </th>
-        <td class="
-            act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/c94a59f8c3b17d722781af36da3556ff4b418776.html">Failed Example 3</a>
             <abbr title="Proposed example">*</abbr>
         </th>
-        <td class="
-            act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/9f288c284df9ade53aa33e50ec50c879d5aba4ef.html">Failed Example 7</a>
             <abbr title="Proposed example">*</abbr>
         </th>
-        <td class="
-            act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
     </tbody>
   </table>
@@ -4866,9 +5287,41 @@ h2#sidebar-header {
         </th>
         <td class="">inapplicable</td>
       </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/270a22a8e4ce4d9f073e1484a0d807705207a1d7.html">Passed Example 2</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/a7da5f9dbc260d633787386b6041c70cb9fbdc32.html">Inapplicable Example 2</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/345fec9a44fb17add404996fe985e87d884f55d0.html">Inapplicable Example 3</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/349a8b4b881ab5380ed63e4e0d8e26d8bd1ad025.html">Inapplicable Example 6</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
     </tbody>
   </table>
 </div>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-oj04fd">Element in sequential focus order has visible focus</h3>
 <p>
@@ -4975,9 +5428,27 @@ h2#sidebar-header {
         </th>
         <td class="">inapplicable</td>
       </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/8f296b7a417523e9c769761dd41b703c75d90019.html">Passed Example 4</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/eb4f387bfa2459fb12dc5b0cbda478238b3eeeda.html">Inapplicable Example 2</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
     </tbody>
   </table>
 </div>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
 
 <h3 id="breakdown-afw4f7">Text has minimum contrast</h3>
 <p>
@@ -5509,6 +5980,161 @@ h2#sidebar-header {
   </table>
 </div>
 
+<h3 id="breakdown-bisz58">Meta element has no refresh delay (no exception)</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>`meta` element has no refresh delay (no exception)</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/bisz58">Meta element has no refresh delay (no exception)</a>
+  WCAG 2 rule. 
+    It covers 11 of the 13 examples.
+  
+    For 2 examples
+    no results were reported. This can happen when examples are newer then the
+    test results.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+        
+          <ul>
+            <li>
+              2.2.4
+              Interruptions
+            </li>
+          
+            <li>
+              3.2.5
+              Change on Request
+            </li>
+          </ul>
+        
+      </td>
+
+      <td>
+        
+          <ul>
+            <li>
+              2.2.4
+              Interruptions
+            </li>
+          
+            <li>
+              3.2.5
+              Change on Request
+            </li>
+          </ul>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>`meta` element has no refresh delay (no exception)</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/6a414a1455a58e4505d7c550486d628f0fd80fdd.html">Passed Example 1</a>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html">Passed Example 2</a>
+        </th>
+        <td class="act-untested">untested</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html">Failed Example 1</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html">Failed Example 2</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html">Failed Example 3</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/3761ce87e64549073f62df26071fbde9850e649e.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/31864b9243c7565e802c6b4f36faed5861a631d3.html">Inapplicable Example 3</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/e6e51895cab42ee6adf2ade5b654808d830e673b.html">Inapplicable Example 4</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html">Inapplicable Example 5</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html">Inapplicable Example 6</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html">Inapplicable Example 7</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html">Inapplicable Example 8</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <h3 id="breakdown-ff89c9">ARIA required context role</h3>
 <p>
   This rule is implemented by QualWeb using the
@@ -5972,6 +6598,212 @@ h2#sidebar-header {
   </table>
 </div>
 
+<h3 id="breakdown-afb423">Audio element content is media alternative for text</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>audio element content is media alternative for text</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/afb423/proposed/">Audio element content is media alternative for text</a>
+   proposed rule.
+    It covers 2 of the 7 examples.
+    On 5 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
+  
+  
+    The implementation correctly reports no success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+         None 
+      </td>
+
+      <td>
+         None 
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>audio element content is media alternative for text</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/dedfb667190bd564527247550565cdea8ccefd3f.html">Passed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/e76fd82b8a71085be3a7a2ad96c1ce12522116e2.html">Failed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/6f9ab7a874b2d555e94957abaec5f6e908b6c206.html">Failed Example 2</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/6e390dfbb555a5b422c6fa516ff7883c177450c9.html">Failed Example 3</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/c2b5ac193eb620f96e6f08e80e34c7d8dbda94de.html">Failed Example 4</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/1c9dada7fa918fd9cffdd6d4c3443107aee373f5.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/bd4a3ee5bbdd3da989ce69c081b90f69f5be2045.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="breakdown-80f0bf">Audio or video element avoids automatically playing audio</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>audio or video has no audio that plays automatically</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/80f0bf/proposed/">Audio or video element avoids automatically playing audio</a>
+   proposed rule.
+    It covers all 8 examples.
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+        
+          <ul>
+            <li>
+              1.4.2
+              Audio Control
+            </li>
+          </ul>
+        
+      </td>
+
+      <td>
+        
+          <ul>
+            <li>
+              1.4.2
+              Audio Control
+            </li>
+          </ul>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>audio or video has no audio that plays automatically</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/0d2dcde8931a9083e590034768ae2e0af747491c.html">Passed Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/e4d78b5074773ab0cbd8c72732e948c4608f5c9d.html">Passed Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/29ea904ef03f14401a7b43a5ffc9b30271697bc7.html">Passed Example 3</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/968b12b14eb008b424f050ab74277426b2ea81bf.html">Failed Example 1</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/b712209d068fff2878cceadf40efe21a3ec4f6d8.html">Failed Example 2</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/7d3d7214d9fca81a8a09a819665871a474f85548.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/b5c74f9ddba668623e33e33e3b8f773776f3177f.html">Inapplicable Example 3</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <h3 id="breakdown-e7aa44">Audio element content has text alternative</h3>
 <p>
   This rule is implemented by QualWeb using the
@@ -5981,8 +6813,8 @@ h2#sidebar-header {
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/e7aa44/proposed/">Audio element content has text alternative</a>
    proposed rule.
-    It covers 5 of the 8 examples.
-    On 2 examples
+    It covers 3 of the 8 examples.
+    On 5 examples
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   
@@ -6042,17 +6874,17 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html">Passed Example 1</a>
         </th>
-        <td class="">inapplicable</td>
-        <td class="">inapplicable</td>
-        <td class="">inapplicable</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/dedfb667190bd564527247550565cdea8ccefd3f.html">Passed Example 2</a>
         </th>
-        <td class="">inapplicable</td>
-        <td class="">inapplicable</td>
-        <td class="">inapplicable</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
@@ -6066,12 +6898,9 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/97850b2083474a9c7b9585c2a1cb16b85b370032.html">Failed Example 1</a>
         </th>
-        <td class="
-            act-false-negative">inapplicable</td>
-        <td class="
-            act-false-negative">inapplicable</td>
-        <td class="
-            act-false-negative">inapplicable</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
@@ -6103,6 +6932,216 @@ h2#sidebar-header {
         </th>
         <td class="">inapplicable</td>
         <td class="">inapplicable</td>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="breakdown-2eb176">Audio element content has transcript</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>audio element content has transcript</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/2eb176/proposed/">Audio element content has transcript</a>
+   proposed rule.
+    It covers 2 of the 11 examples.
+    On 9 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
+  
+  
+    The implementation correctly reports no success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+         None 
+      </td>
+
+      <td>
+         None 
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>audio element content has transcript</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html">Passed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/d24c583b4697496be0aba15c259714da93ac209c.html">Passed Example 2</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3d78bf5e3f2b717595db4df064b0ec542bae0d9b.html">Passed Example 3</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7cdf59c28089794dbbd75d81f29fb9adb9327cb2.html">Failed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html">Failed Example 2</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3a018f7d638bd2993d176f341edaee79fda3d55a.html">Failed Example 3</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/ff5548c1341eb4edc32a87d9a018d425a5a065e3.html">Failed Example 4</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/06b6ada6383efa2ffeaf67370b177090dfcdf5e1.html">Failed Example 5</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/d58c6252f96771666f71a65d199316108e709edd.html">Failed Example 6</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/eba170767ac1de0092d33a9bee2c0ecf2ebdfd46.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/381f800e41c8f1e72f1164ff0877bbb8446dc55d.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="breakdown-aaa1bf">Audio or video element that plays automatically has no audio that lasts more than 3 seconds</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>Audio or video that plays automatically has no audio that lasts more than 3 seconds</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/aaa1bf/proposed/">Audio or video element that plays automatically has no audio that lasts more than 3 seconds</a>
+   proposed rule.
+    It covers all 7 examples.
+  
+  
+    The implementation correctly reports no success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+         None 
+      </td>
+
+      <td>
+         None 
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Audio or video that plays automatically has no audio that lasts more than 3 seconds</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/2b0af09bd403a24ec65f43c1483c1ecee7107d60.html">Passed Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/e4d78b5074773ab0cbd8c72732e948c4608f5c9d.html">Passed Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/0d2dcde8931a9083e590034768ae2e0af747491c.html">Failed Example 1</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/b712209d068fff2878cceadf40efe21a3ec4f6d8.html">Failed Example 2</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/7d3d7214d9fca81a8a09a819665871a474f85548.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/b5c74f9ddba668623e33e33e3b8f773776f3177f.html">Inapplicable Example 3</a>
+        </th>
         <td class="">inapplicable</td>
       </tr>
     </tbody>
@@ -6426,11 +7465,11 @@ h2#sidebar-header {
 <p>
   This rule is implemented by QualWeb using the
   <code>Orientation of the page is not restricted using CSS transform property</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/b33eff/proposed/">Orientation of the page is not restricted using CSS transforms</a>
    proposed rule.
-    It covers 11 of the 12 examples.
+    It covers all 12 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -6497,7 +7536,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html">Passed Example 3</a>
         </th>
-        <td class="">inapplicable</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -6521,8 +7560,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html">Failed Example 4</a>
         </th>
-        <td class="
-            act-false-negative">inapplicable</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
@@ -7712,11 +8750,15 @@ h2#sidebar-header {
 <p>
   This rule is implemented by QualWeb using the
   <code>Element with role attribute has required states and properties</code> procedure.
-  The implementation is 
-    fully  consistent with the
+  The implementation is  partially 
+   consistent with the
   <a href="/WAI/standards-guidelines/act/rules/4e8ab6/proposed/">Element with role attribute has required states and properties</a>
    proposed rule.
-    It covers all 15 examples.
+    It covers 14 of the 15 examples.
+  
+    For 1 example
+    no results were reported. This can happen when examples are newer then the
+    test results.
   
   
     The implementation correctly reports no success criteria are failed by this rule.
@@ -7761,9 +8803,9 @@ h2#sidebar-header {
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f3c5ba4e097be5eee694024808a962972f037670.html">Passed Example 2</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html">Passed Example 2</a>
         </th>
-        <td class="">passed</td>
+        <td class="act-untested">untested</td>
       </tr>
       <tr>
         <th>
@@ -8009,19 +9051,20 @@ h2#sidebar-header {
 <h3 id="breakdown-c3232f">Video element visual-only content has accessible alternative</h3>
 <p>
   This rule is implemented by QualWeb using the
-  <code>video element visual-only content has description track</code> procedure.
+  <code>video element visual-only content is media alternative for text</code>, <code>video element visual-only content has transcript</code>, <code>video element visual-only content has audio track alternative</code>, and <code>Video element visual-only content has accessible alternative</code> procedures.
+    Failed examples should be failed by <em>at least one</em> of these procedures.
   The implementation is  partially 
    consistent with the
   <a href="/WAI/standards-guidelines/act/rules/c3232f/proposed/">Video element visual-only content has accessible alternative</a>
    proposed rule.
-    It covers 5 of the 9 examples.
-    On 1 example
+    It covers 2 of the 9 examples.
+    On 7 examples
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   
   
   
-    The implementation reports different success criteria as failed from what is expected by this rule.
+    The implementation correctly reports which success criteria are failed by this rule.
   
   See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
 </p>
@@ -8044,6 +9087,150 @@ h2#sidebar-header {
       </td>
 
       <td>
+        
+          <ul>
+            <li>
+              1.2.1
+              Audio-only and Video-only (Prerecorded)
+            </li>
+          </ul>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>video element visual-only content is media alternative for text</th>
+        <th>video element visual-only content has transcript</th>
+        <th>video element visual-only content has audio track alternative</th>
+        <th>Video element visual-only content has accessible alternative</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/ce350e33e78f587703aa35b78fa319b9efe9291d.html">Passed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/634bb07611c5d126e49caf4bfce8b6d50c872fce.html">Passed Example 2</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/481e55b81376491b363aab5c622e58fe6b63bace.html">Passed Example 3</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/5ed3a98f771c2069c1d4581ff5f85cc38d9b5ec0.html">Failed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/2e9bff37ba69e76a995b6339748eaad2f7a30aca.html">Failed Example 2</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/0f884e5935b0e6b1bd809d550738772e32f439c5.html">Failed Example 3</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/91f0cca7d0cc5c6a757f72dbeed84bcc1b79625b.html">Failed Example 4</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/91f5189004dff8c702eefb7214486bd18868fee1.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+        <td class="">inapplicable</td>
+        <td class="">inapplicable</td>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/dc2a0bf420d21c386d9a7027a888276c07271988.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+        <td class="">inapplicable</td>
+        <td class="">inapplicable</td>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="breakdown-fd26cf">Video element visual-only content is media alternative for text</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>video element visual-only content is media alternative for text</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/fd26cf/proposed/">Video element visual-only content is media alternative for text</a>
+   proposed rule.
+    It covers 2 of the 7 examples.
+    On 5 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
+  
+  
+    The implementation correctly reports no success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+         None 
+      </td>
+
+      <td>
          None 
       </td>
     </tr>
@@ -8057,65 +9244,234 @@ h2#sidebar-header {
     <thead>
       <tr>
         <th></th>
-        <th>video element visual-only content has description track</th>
+        <th>video element visual-only content is media alternative for text</th>
       </tr>
     </thead>
 
     <tbody>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/ce350e33e78f587703aa35b78fa319b9efe9291d.html">Passed Example 1</a>
-        </th>
-        <td class="">inapplicable</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/634bb07611c5d126e49caf4bfce8b6d50c872fce.html">Passed Example 2</a>
-        </th>
-        <td class="">inapplicable</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/481e55b81376491b363aab5c622e58fe6b63bace.html">Passed Example 3</a>
-        </th>
-        <td class="">inapplicable</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/5ed3a98f771c2069c1d4581ff5f85cc38d9b5ec0.html">Failed Example 1</a>
-        </th>
-        <td class="
-            act-false-negative">inapplicable</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/2e9bff37ba69e76a995b6339748eaad2f7a30aca.html">Failed Example 2</a>
-        </th>
-        <td class="
-            act-false-negative">inapplicable</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/0f884e5935b0e6b1bd809d550738772e32f439c5.html">Failed Example 3</a>
-        </th>
-        <td class="
-            act-false-negative">inapplicable</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/91f0cca7d0cc5c6a757f72dbeed84bcc1b79625b.html">Failed Example 4</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/481e55b81376491b363aab5c622e58fe6b63bace.html">Passed Example 1</a>
         </th>
         <td class="act-cannot-tell">cannot tell</td>
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/91f5189004dff8c702eefb7214486bd18868fee1.html">Inapplicable Example 1</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/095d586472a567660c95d2954f9fc65275c159fe.html">Failed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/cc09b4256a230ce3b1c7992316e2adb405f88de6.html">Failed Example 2</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/0f884e5935b0e6b1bd809d550738772e32f439c5.html">Failed Example 3</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/10ce0d34bb2e94f7cf3551d566d10e8f5e21c9f3.html">Failed Example 4</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/91f5189004dff8c702eefb7214486bd18868fee1.html">Inapplicable Example 1</a>
         </th>
         <td class="">inapplicable</td>
       </tr>
       <tr>
         <th>
-          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/dc2a0bf420d21c386d9a7027a888276c07271988.html">Inapplicable Example 2</a>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/410798f8a3fb14f6dd3f6a47c50f52d7bb7ff739.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="breakdown-d7ba54">Video element visual-only content has audio track alternative</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>video element visual-only content has audio track alternative</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/d7ba54/proposed/">Video element visual-only content has audio track alternative</a>
+   proposed rule.
+    It covers 2 of the 5 examples.
+    On 3 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
+  
+  
+    The implementation correctly reports no success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+         None 
+      </td>
+
+      <td>
+         None 
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>video element visual-only content has audio track alternative</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/634bb07611c5d126e49caf4bfce8b6d50c872fce.html">Passed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/8664da01669e891e6f0aa73cd85e71277961cc4c.html">Failed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/2e9bff37ba69e76a995b6339748eaad2f7a30aca.html">Failed Example 2</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/58393298a3a4c89033f09be47ec2aefb45be193e.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="breakdown-ee13b5">Video element visual-only content has transcript</h3>
+<p>
+  This rule is implemented by QualWeb using the
+  <code>video element visual-only content has transcript</code> procedure.
+  The implementation is  partially 
+   consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/ee13b5/proposed/">Video element visual-only content has transcript</a>
+   proposed rule.
+    It covers 2 of the 8 examples.
+    On 6 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
+  
+  
+    The implementation correctly reports no success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+         None 
+      </td>
+
+      <td>
+         None 
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>video element visual-only content has transcript</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/ce350e33e78f587703aa35b78fa319b9efe9291d.html">Passed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/6c6ed7e366a868cd4f7b7a9189d5c9d42a7860d3.html">Passed Example 2</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/85f2613e6d1b419d8677126efa09efb26f31c34e.html">Failed Example 1</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/5ed3a98f771c2069c1d4581ff5f85cc38d9b5ec0.html">Failed Example 2</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/2c65fa349cb946546f44966db62c0664cf94fffd.html">Failed Example 3</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/2f30ed0681d28bdd6f5535c844b7747880beb5e7.html">Failed Example 4</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/c2b01e0d7fd2bfa875d2f3395f57f831745f03de.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">inapplicable</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/413a36ac05a2f6d50722a7614a86184c664053b4.html">Inapplicable Example 2</a>
         </th>
         <td class="">inapplicable</td>
       </tr>
@@ -8224,15 +9580,11 @@ h2#sidebar-header {
 <p>
   This rule is implemented by QualWeb using the
   <code>Visible label is part of accessible name</code> procedure.
-  The implementation is  partially 
-   consistent with the
+  The implementation is 
+    fully  consistent with the
   <a href="/WAI/standards-guidelines/act/rules/2ee8b8/proposed/">Visible label is part of accessible name</a>
    proposed rule.
-    It covers 12 of the 15 examples.
-  
-    For 3 examples
-    no results were reported. This can happen when examples are newer then the
-    test results.
+    It covers all 15 examples.
   
   
     The implementation correctly reports which success criteria are failed by this rule.
@@ -8311,7 +9663,7 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html">Passed Example 5</a>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -8341,13 +9693,13 @@ h2#sidebar-header {
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html">Failed Example 4</a>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html">Failed Example 5</a>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="">failed</td>
       </tr>
       <tr>
         <th>
@@ -8591,9 +9943,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1707235864276565568"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1707235864276565568"></script>
 <script>
   svg4everybody();
 </script><script>

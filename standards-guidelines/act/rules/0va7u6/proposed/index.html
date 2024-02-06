@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1707223241822989421";
+      element.src = "/WAI/assets/scripts/main.js?1707235864276565568";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707223241822989421">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707235864276565568">
 
-<title> HTML images contain no text[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707223241822989421"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> HTML images contain no text[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707235864276565568"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="HTML images contain no text" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -346,10 +346,10 @@ h2#sidebar-header {
 
 <h2 id="expectation">Expectation</h2>
 
-<p>Each test target has no <a href="#visible" title="Definition of visible">visible</a> <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-human-language" title="WCAG 2.1, Definition of human language">text</a>, except if at least one of the following is true:</p>
+<p>Each test target has no <a href="#visible" title="Definition of visible">visible</a> <a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html#dfn-human-language" title="WCAG 2.2, Definition of human language">text</a>, except if at least one of the following is true:</p>
 
 <ul>
-  <li><dfn id="0va7u6:decorative">decorative</dfn>: The image with text is <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG 2.1, Purely decorative">purely decorative</a>; or</li>
+  <li><dfn id="0va7u6:decorative">decorative</dfn>: The image with text is <a href="https://www.w3.org/TR/WCAG22/#dfn-pure-decoration" title="WCAG 2.2, Purely decorative">purely decorative</a>; or</li>
   <li><dfn id="0va7u6:incidental">incidental</dfn>: The text is not a <a href="#insignificant" title="Definition of Insignificant">significant</a> part of the image; or</li>
   <li><dfn id="0va7u6:essential">essential</dfn>: The presentation of the text is <a href="#essential-text-presentation" title="Definition of Essential (Text Presentation)">essential</a>.</li>
 </ul>
@@ -357,7 +357,7 @@ h2#sidebar-header {
 <h2 id="assumptions">Assumptions</h2>
 
 <ul>
-  <li>This rule assumes that there is no mechanism to change the rendering of text within image resources on the page. For pages that <em>do</em> provide such a mechanism, this rule might fail even if <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text">SC 1.4.5 Images of Text</a> is satisfied.</li>
+  <li>This rule assumes that there is no mechanism to change the rendering of text within image resources on the page. For pages that <em>do</em> provide such a mechanism, this rule might fail even if <a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">SC 1.4.5 Images of Text</a> is satisfied.</li>
   <li>When used in HTML, the SVG <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code> element is not considered to be an image of text. This is because like any other element in HTML, SVG <code class="language-plaintext highlighter-rouge">&lt;text&gt;</code> can be adjusted through custom style sheets. This does not apply for SVG text that is in a separate file, and displayed through, for example, the <code class="language-plaintext highlighter-rouge">img</code> element.</li>
 </ul>
 
@@ -367,13 +367,13 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
-<p>This rule is designed specifically for <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text">SC 1.4.5 Images of Text</a>. There are however only minimal differences between this criterion and <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text-no-exception">SC 1.4.9 Images of Text (No Exception)</a>. The two differences are that customizable images of text are allowed, and that images of text are allowed when the presentation cannot otherwise be achieved. These scenarios are so rare the rule ignores them as part of the assumptions, and so the <a href="#accessibility-requirements-mapping">accessibility requirements mapping</a> of these two criteria is the same.</p>
+<p>This rule is designed specifically for <a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">SC 1.4.5 Images of Text</a>. There are however only minimal differences between this criterion and <a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text-no-exception">SC 1.4.9 Images of Text (No Exception)</a>. The two differences are that customizable images of text are allowed, and that images of text are allowed when the presentation cannot otherwise be achieved. These scenarios are so rare the rule ignores them as part of the assumptions, and so the <a href="#accessibility-requirements-mapping">accessibility requirements mapping</a> of these two criteria is the same.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text">Understanding Success Criterion 1.4.5: Images of Text</a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text-no-exception">Understanding Success Criterion 1.4.9: Images of Text (No Exception)</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">Understanding Success Criterion 1.4.5: Images of Text</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text-no-exception">Understanding Success Criterion 1.4.9: Images of Text (No Exception)</a></li>
 </ul>
 
 <h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
@@ -507,7 +507,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/671c8b76af94397191ae1ed8b6fdeacb3658509b.html">Open in a new tab</a></p>
 
-<p>These image resources referenced by the <code class="language-plaintext highlighter-rouge">input</code> elements are images of text (the letter “A”), but they are not expressing anything in a <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-human-language" title="WCAG 2.1, Definition of human language">human language</a>. The image is only used to indicate how the font size can be controlled.</p>
+<p>These image resources referenced by the <code class="language-plaintext highlighter-rouge">input</code> elements are images of text (the letter “A”), but they are not expressing anything in a <a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html#dfn-human-language" title="WCAG 2.2, Definition of human language">human language</a>. The image is only used to indicate how the font size can be controlled.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span>
 	<span class="na">type=</span><span class="s">"image"</span>
@@ -623,7 +623,7 @@ h2#sidebar-header {
   <li>For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.</li>
   <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
   <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
-  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
 </ul>
 
 <p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
@@ -664,11 +664,11 @@ h2#sidebar-header {
   <li>An image showing a font, or showing the difference between font-weights</li>
 </ol>
 
-<p><strong>Note:</strong> WCAG includes a generic definition of “<a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-essential">essential</a>”.</p>
+<p><strong>Note:</strong> WCAG includes a generic definition of “<a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html#dfn-essential">essential</a>”.</p>
 
 <h3 id="insignificant">Insignificant</h3>
 
-<p>Content that is neither <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG 2.1, Purely decorative">purely decorative</a>, nor required for understanding the purpose of certain pieces of information or functionality. Insignificant content is often used to provide context.</p>
+<p>Content that is neither <a href="https://www.w3.org/TR/WCAG22/#dfn-pure-decoration" title="WCAG 2.2, Purely decorative">purely decorative</a>, nor required for understanding the purpose of certain pieces of information or functionality. Insignificant content is often used to provide context.</p>
 
 <p><strong>Example</strong>: A picture of New York’s Time Square may include taxis, a famous pizza restaurant, and theater advertisements, etc. None of these are purely decorative. They provide clues as to where the picture was taken. But neither are any of these required to understand the picture as a whole. Even if the picture itself is significant, the taxis in the picture are not.</p>
 
@@ -696,17 +696,17 @@ h2#sidebar-header {
 
 <p>Content is considered <em>visible</em> if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>
 
-<p><a href="https://www.w3.org/TR/WCAG21/#dfn-content">Content is defined in WCAG</a>.</p>
+<p><a href="https://www.w3.org/TR/WCAG22/#dfn-content">Content is defined in WCAG</a>.</p>
 
 <p>For more details, see <a href="https://act-rules.github.io/pages/examples/visible/">examples of visible</a>.</p>
 
 <h3 id="web-page-html">Web page (HTML)</h3>
 
-<p>An <em>HTML <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web page</a></em> is the set of all <a href="https://html.spec.whatwg.org/#fully-active">fully active</a> <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> which share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context">top-level browsing context</a>.</p>
+<p>An <em>HTML <a href="https://www.w3.org/TR/WCAG22/#dfn-web-page-s">web page</a></em> is the set of all <a href="https://html.spec.whatwg.org/#fully-active">fully active</a> <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> which share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context">top-level browsing context</a>.</p>
 
 <p><strong>Note:</strong> Nesting of browsing context mostly happens with <code class="language-plaintext highlighter-rouge">iframe</code> and <code class="language-plaintext highlighter-rouge">object</code>. Thus a web page will most of the time be a “top-level” document and all its <code class="language-plaintext highlighter-rouge">iframe</code> and <code class="language-plaintext highlighter-rouge">object</code> (recursively).</p>
 
-<p><strong>Note:</strong> <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">Web pages</a> as defined by WCAG are not restricted to the HTML technology but can also include, <em>e.g.</em>, PDF or DOCX documents.</p>
+<p><strong>Note:</strong> <a href="https://www.w3.org/TR/WCAG22/#dfn-web-page-s">Web pages</a> as defined by WCAG are not restricted to the HTML technology but can also include, <em>e.g.</em>, PDF or DOCX documents.</p>
 
 <p><strong>Note:</strong> Although web pages as defined here are sets of <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> (and do not contain other kind of nodes), one can abusively write that any node is “in a web page” if it is a <a href="https://dom.spec.whatwg.org/#concept-shadow-including-descendant">shadow-including descendant</a> of a <a href="https://dom.spec.whatwg.org/#concept-document">document</a> that is part of that web page.</p>
 
@@ -781,7 +781,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 0va7u6</p>
-<p><strong>Date:</strong> Updated 18 December 2023</p>
+<p><strong>Date:</strong> Updated 25 January 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
@@ -825,9 +825,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1707235864276565568"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1707235864276565568"></script>
 <script>
   svg4everybody();
 </script><script>

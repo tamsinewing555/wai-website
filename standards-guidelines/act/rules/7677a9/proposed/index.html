@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1707223241822989421";
+      element.src = "/WAI/assets/scripts/main.js?1707235864276565568";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707223241822989421">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707235864276565568">
 
-<title> Device motion based changes to the content can also be created from the user interface[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707223241822989421"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Device motion based changes to the content can also be created from the user interface[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707235864276565568"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Device motion based changes to the content can also be created from the user interface" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -354,10 +354,10 @@ h2#sidebar-header {
 <h2 id="assumptions">Assumptions</h2>
 
 <ul>
-  <li>The motion to operate the device is not used through an <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation#dfn-accessibility-supported">accessibility supported</a> interface, which is listed as a valid exception to <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a>.</li>
-  <li>The motion is not <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html#dfn-essential">essential</a> for the functionality it triggers, which is listed as a valid exception to <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a>.</li>
-  <li>This rule assumes that there are no changes in the content of the <a href="#web-page-html" title="Definition of web page">web page</a> caused by another <a href="https://dom.spec.whatwg.org/#concept-event" title="Definition of event">event</a>. If this is not the case, changes may be attributed to the wrong <a href="https://dom.spec.whatwg.org/#concept-event" title="Definition of event">event</a> and the rule may fail while <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a> is still satisfied.</li>
-  <li>This rule assumes that the changes happen within a 1 minute time span after the <a href="https://dom.spec.whatwg.org/#concept-event" title="Definition of event">event</a> <a href="https://dom.spec.whatwg.org/#concept-event-fire" title="Definition of event firing">firing</a> and therefore the comparison between the page before and after the <a href="https://dom.spec.whatwg.org/#concept-event" title="Definition of event">event</a> <a href="https://dom.spec.whatwg.org/#concept-event-fire" title="Definition of event firing">firing</a> can be made at any time after that time span elapses. If there are changes after this time span, they may not be detected as <a href="#changes-in-content" title="Definition of changes in content">changes in content</a> and the rule may pass but <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a> is not satisfied. The arbitrary 1 minute time span, selected so that testing this rule would not be impractical, is not included in WCAG.</li>
+  <li>The motion to operate the device is not used through an <a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation#dfn-accessibility-supported">accessibility supported</a> interface, which is listed as a valid exception to <a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a>.</li>
+  <li>The motion is not <a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html#dfn-essential">essential</a> for the functionality it triggers, which is listed as a valid exception to <a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a>.</li>
+  <li>This rule assumes that there are no changes in the content of the <a href="#web-page-html" title="Definition of web page">web page</a> caused by another <a href="https://dom.spec.whatwg.org/#concept-event" title="Definition of event">event</a>. If this is not the case, changes may be attributed to the wrong <a href="https://dom.spec.whatwg.org/#concept-event" title="Definition of event">event</a> and the rule may fail while <a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a> is still satisfied.</li>
+  <li>This rule assumes that the changes happen within a 1 minute time span after the <a href="https://dom.spec.whatwg.org/#concept-event" title="Definition of event">event</a> <a href="https://dom.spec.whatwg.org/#concept-event-fire" title="Definition of event firing">firing</a> and therefore the comparison between the page before and after the <a href="https://dom.spec.whatwg.org/#concept-event" title="Definition of event">event</a> <a href="https://dom.spec.whatwg.org/#concept-event-fire" title="Definition of event firing">firing</a> can be made at any time after that time span elapses. If there are changes after this time span, they may not be detected as <a href="#changes-in-content" title="Definition of changes in content">changes in content</a> and the rule may pass but <a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a> is not satisfied. The arbitrary 1 minute time span, selected so that testing this rule would not be impractical, is not included in WCAG.</li>
 </ul>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
@@ -366,13 +366,13 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
-<p>The <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instruments</a> used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a>. These extra requirements are left out of this rule, and should be tested separately.</p>
+<p>The <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instruments</a> used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy <a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html">Success Criterion 2.5.4: Motion Actuation</a>. These extra requirements are left out of this rule, and should be tested separately.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html">Understanding Success Criterion 2.5.4: Motion Actuation</a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G213.html">G213: Provide conventional controls and an application setting for motion activated input</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html">Understanding Success Criterion 2.5.4: Motion Actuation</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G213.html">G213: Provide conventional controls and an application setting for motion activated input</a></li>
   <li><a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification</a></li>
 </ul>
 
@@ -704,7 +704,7 @@ h2#sidebar-header {
 
 <p>Whether or not the content is “clearly labeled” depends on the starting point of the search. If page A has a link which clearly “identifies” some piece of content, then the location of the content is clearly labeled. Page B, which can be in the same website, may not have such a link or may have a link with a link text that does not “identify” target content or which can be interpreted to “identify” more than one target, and so the location of the content starting from page B is not clearly labeled.</p>
 
-<p>For the purpose of this definition, an <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instrument</a> is <em>identifiable</em> if any text or other content with a <a href="https://www.w3.org/TR/WCAG21/#dfn-text-alternative" title="Definition of text alternative">text alternative</a>, allows any user to identify an element with a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> that inherits from <code class="language-plaintext highlighter-rouge">widget</code>.</p>
+<p>For the purpose of this definition, an <a href="#instrument-to-achieve-an-objective" title="Definition of instrument to achieve an objective">instrument</a> is <em>identifiable</em> if any text or other content with a <a href="https://www.w3.org/TR/WCAG22/#dfn-text-alternative" title="Definition of text alternative">text alternative</a>, allows any user to identify an element with a <a href="#semantic-role" title="Definition of semantic role">semantic role</a> that inherits from <code class="language-plaintext highlighter-rouge">widget</code>.</p>
 
 <p>A <a href="#web-page-html" title="Definition of web page">web page</a> changes state when the <a href="https://html.spec.whatwg.org/#dom-document-body">document’s body</a> changes without a change in the <a href="https://url.spec.whatwg.org/#concept-url">document’s URL</a>.</p>
 
@@ -765,7 +765,7 @@ h2#sidebar-header {
   <li>it is an <code class="language-plaintext highlighter-rouge">img</code> element with an <code class="language-plaintext highlighter-rouge">alt</code> attribute whose value is the empty string (<code class="language-plaintext highlighter-rouge">alt=""</code>), and with no <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>.</li>
 </ul>
 
-<p>Elements are marked as decorative as a way to convey the intention of the author that they are <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a>. It is different from the element actually being <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a> as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a> may overwrite this intention.</p>
+<p>Elements are marked as decorative as a way to convey the intention of the author that they are <a href="https://www.w3.org/TR/WCAG22/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a>. It is different from the element actually being <a href="https://www.w3.org/TR/WCAG22/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a> as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as <a href="https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a> may overwrite this intention.</p>
 
 <p>Elements can also be ignored by assistive technologies if they are <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a>. This is different from marking the element as decorative and does not convey the same intention. Notably, being <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a> may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.</p>
 
@@ -822,11 +822,11 @@ h2#sidebar-header {
 
 <h3 id="web-page-html">Web page (HTML)</h3>
 
-<p>An <em>HTML <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web page</a></em> is the set of all <a href="https://html.spec.whatwg.org/#fully-active">fully active</a> <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> which share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context">top-level browsing context</a>.</p>
+<p>An <em>HTML <a href="https://www.w3.org/TR/WCAG22/#dfn-web-page-s">web page</a></em> is the set of all <a href="https://html.spec.whatwg.org/#fully-active">fully active</a> <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> which share the same <a href="https://html.spec.whatwg.org/#top-level-browsing-context">top-level browsing context</a>.</p>
 
 <p><strong>Note:</strong> Nesting of browsing context mostly happens with <code class="language-plaintext highlighter-rouge">iframe</code> and <code class="language-plaintext highlighter-rouge">object</code>. Thus a web page will most of the time be a “top-level” document and all its <code class="language-plaintext highlighter-rouge">iframe</code> and <code class="language-plaintext highlighter-rouge">object</code> (recursively).</p>
 
-<p><strong>Note:</strong> <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">Web pages</a> as defined by WCAG are not restricted to the HTML technology but can also include, <em>e.g.</em>, PDF or DOCX documents.</p>
+<p><strong>Note:</strong> <a href="https://www.w3.org/TR/WCAG22/#dfn-web-page-s">Web pages</a> as defined by WCAG are not restricted to the HTML technology but can also include, <em>e.g.</em>, PDF or DOCX documents.</p>
 
 <p><strong>Note:</strong> Although web pages as defined here are sets of <a href="https://dom.spec.whatwg.org/#concept-document">documents</a> (and do not contain other kind of nodes), one can abusively write that any node is “in a web page” if it is a <a href="https://dom.spec.whatwg.org/#concept-shadow-including-descendant">shadow-including descendant</a> of a <a href="https://dom.spec.whatwg.org/#concept-document">document</a> that is part of that web page.</p>
 
@@ -879,7 +879,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 7677a9</p>
-<p><strong>Date:</strong> Updated 30 August 2023</p>
+<p><strong>Date:</strong> Updated 25 January 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -921,9 +921,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1707235864276565568"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1707235864276565568"></script>
 <script>
   svg4everybody();
 </script><script>

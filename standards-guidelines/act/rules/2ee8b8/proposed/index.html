@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1707223241822989421";
+      element.src = "/WAI/assets/scripts/main.js?1707235864276565568";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707223241822989421">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707235864276565568">
 
-<title> Visible label is part of accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707223241822989421"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Visible label is part of accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707235864276565568"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Visible label is part of accessible name" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -343,14 +343,14 @@ h2#sidebar-header {
 <p>This rule applies to any element for which all the following is true:</p>
 
 <ul>
-  <li>The element has a <a href="#semantic-role" title="Definition of Semantic role">semantic role</a> that is a <a href="https://www.w3.org/TR/wai-aria-1.1/#widget_roles" title="Definition of Widget role">widget</a> that <a href="https://www.w3.org/TR/wai-aria-1.1/#namefromcontent" title="Definition of Supports name from contents">supports name from content</a>; and</li>
+  <li>The element has a <a href="#semantic-role" title="Definition of Semantic role">semantic role</a> that is a <a href="https://www.w3.org/TR/wai-aria-1.2/#widget_roles" title="Definition of Widget role">widget</a> that <a href="https://www.w3.org/TR/wai-aria-1.2/#namefromcontent" title="Definition of Supports name from contents">supports name from content</a>; and</li>
   <li>The element has <a href="#visible-text-content" title="Definition of Visible text content">visible text content</a>; and</li>
   <li>The element has an <code class="language-plaintext highlighter-rouge">aria-label</code> or <code class="language-plaintext highlighter-rouge">aria-labelledby</code> attribute.</li>
 </ul>
 
 <h2 id="expectation">Expectation</h2>
 
-<p>For each target element, all <a href="https://dom.spec.whatwg.org/#text" title="DOM text, 2020/08/18">text nodes</a> in the <a href="#visible-text-content" title="Definition of Visible text content">visible text content</a> <a href="#matching-characters" title="Definition of matching characters">match characters</a> and are contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> of this target element, except for characters in the <a href="https://dom.spec.whatwg.org/#text" title="DOM text, 2020/08/18">text nodes</a> used to express <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>. Leading and trailing <a href="#whitespace" title="Definition of Whitespace">whitespace</a> and difference in case sensitivity should be ignored.</p>
+<p>For each target element, all <a href="https://dom.spec.whatwg.org/#text" title="DOM text, 2020/08/18">text nodes</a> in the <a href="#visible-text-content" title="Definition of Visible text content">visible text content</a> <a href="#matching-characters" title="Definition of matching characters">match characters</a> and are contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> of this target element, except for characters in the <a href="https://dom.spec.whatwg.org/#text" title="DOM text, 2020/08/18">text nodes</a> used to express <a href="https://www.w3.org/TR/WCAG22/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>. Leading and trailing <a href="#whitespace" title="Definition of Whitespace">whitespace</a> and difference in case sensitivity should be ignored.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -358,19 +358,19 @@ h2#sidebar-header {
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
-<p>Implementation of <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">Presentational Roles Conflict Resolution</a> varies from one browser or assistive technology to another. Depending on this, some elements can have one of the applicable <a href="#semantic-role" title="Definition of Semantic role">semantic roles</a> and fail this rule with some technology but users of other technologies would not experience any accessibility issue.</p>
+<p>Implementation of <a href="https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">Presentational Roles Conflict Resolution</a> varies from one browser or assistive technology to another. Depending on this, some elements can have one of the applicable <a href="#semantic-role" title="Definition of Semantic role">semantic roles</a> and fail this rule with some technology but users of other technologies would not experience any accessibility issue.</p>
 
 <h2 id="background">Background</h2>
 
-<p>This rule applies to elements with a <a href="https://www.w3.org/TR/wai-aria-1.1/#widget_roles" title="Definition of Widget role">widget role</a> that <a href="https://www.w3.org/TR/wai-aria-1.1/#namefromcontent" title="Definition of Supports name from contents">support name from content</a>. This includes the following: <code class="language-plaintext highlighter-rouge">button</code>, <code class="language-plaintext highlighter-rouge">checkbox</code>, <code class="language-plaintext highlighter-rouge">gridcell</code>, <code class="language-plaintext highlighter-rouge">link</code>, <code class="language-plaintext highlighter-rouge">menuitem</code>, <code class="language-plaintext highlighter-rouge">menuitemcheckbox</code>, <code class="language-plaintext highlighter-rouge">menuitemradio</code>, <code class="language-plaintext highlighter-rouge">option</code>, <code class="language-plaintext highlighter-rouge">radio</code>, <code class="language-plaintext highlighter-rouge">searchbox</code>, <code class="language-plaintext highlighter-rouge">switch</code>, <code class="language-plaintext highlighter-rouge">tab</code>, <code class="language-plaintext highlighter-rouge">treeitem</code>.</p>
+<p>This rule applies to elements with a <a href="https://www.w3.org/TR/wai-aria-1.2/#widget_roles" title="Definition of Widget role">widget role</a> that <a href="https://www.w3.org/TR/wai-aria-1.2/#namefromcontent" title="Definition of Supports name from contents">support name from content</a>. This includes the following: <code class="language-plaintext highlighter-rouge">button</code>, <code class="language-plaintext highlighter-rouge">checkbox</code>, <code class="language-plaintext highlighter-rouge">gridcell</code>, <code class="language-plaintext highlighter-rouge">link</code>, <code class="language-plaintext highlighter-rouge">menuitem</code>, <code class="language-plaintext highlighter-rouge">menuitemcheckbox</code>, <code class="language-plaintext highlighter-rouge">menuitemradio</code>, <code class="language-plaintext highlighter-rouge">option</code>, <code class="language-plaintext highlighter-rouge">radio</code>, <code class="language-plaintext highlighter-rouge">searchbox</code>, <code class="language-plaintext highlighter-rouge">switch</code>, <code class="language-plaintext highlighter-rouge">tab</code>, <code class="language-plaintext highlighter-rouge">treeitem</code>.</p>
 
-<p>The understanding document of <a href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html">2.5.3 Label in Name</a> use the term “symbolic text characters” to refer to a type of <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a> that uses text characters as symbols, such as using “x” to mean “close”. This rule considers them as “characters expressing non-text content”. Unicode emojis are another example of characters expressing non-text content, although these are not “symbolic text characters”.</p>
+<p>The understanding document of <a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html">2.5.3 Label in Name</a> use the term “symbolic text characters” to refer to a type of <a href="https://www.w3.org/TR/WCAG22/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a> that uses text characters as symbols, such as using “x” to mean “close”. This rule considers them as “characters expressing non-text content”. Unicode emojis are another example of characters expressing non-text content, although these are not “symbolic text characters”.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html">Understanding Success Criterion 2.5.3: Label in Name</a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G208">G208: Including the text of the visible label as part of the accessible name</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html">Understanding Success Criterion 2.5.3: Label in Name</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G208">G208: Including the text of the visible label as part of the accessible name</a></li>
 </ul>
 
 <h2 id="accessibility-requirements-mapping">Accessibility Requirements Mapping</h2>
@@ -456,7 +456,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html">Open in a new tab</a></p>
 
-<p>This button has <a href="#visible" title="Definition of visible">visible</a> text that does not need to be contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>, because the “x” text node is <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>. Note: this would need to meet SC 1.1.1 Non text content.</p>
+<p>This button has <a href="#visible" title="Definition of visible">visible</a> text that does not need to be contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>, because the “x” text node is <a href="https://www.w3.org/TR/WCAG22/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>. Note: this would need to meet SC 1.1.1 Non text content.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"anything"</span><span class="nt">&gt;</span>X<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
@@ -465,7 +465,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/efa9543339cdad5412c7719b266a633a29ce149e.html">Open in a new tab</a></p>
 
-<p>This <code class="language-plaintext highlighter-rouge">button</code> element has the text “search” rendered as an magnifying glass icon by the font. Because the text is rendered as <a href="https://www.w3.org/TR/WCAG21/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>, the text does not need to be contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
+<p>This <code class="language-plaintext highlighter-rouge">button</code> element has the text “search” rendered as an magnifying glass icon by the font. Because the text is rendered as <a href="https://www.w3.org/TR/WCAG22/#dfn-non-text-content" title="WCAG Definition of Non-text content">non-text content</a>, the text does not need to be contained within the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://fonts.googleapis.com/icon?family=Material+Icons"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;style&gt;</span>
@@ -500,7 +500,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html">Open in a new tab</a></p>
 
-<p>This link has <a href="#visible" title="Definition of visible">visible</a> text with mathematical symbols, that does not match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> because the mathematical symbols were written out in the accessible name. This is <a href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name#mathematical-expressions-and-formulae">explicitly mentioned in WCAG</a>.</p>
+<p>This link has <a href="#visible" title="Definition of visible">visible</a> text with mathematical symbols, that does not match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> because the mathematical symbols were written out in the accessible name. This is <a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name#mathematical-expressions-and-formulae">explicitly mentioned in WCAG</a>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">aria-label=</span><span class="s">"Proof of two multiplied by two is four"</span><span class="nt">&gt;</span>Proof of 2<span class="ni">&amp;times;</span>2=4<span class="nt">&lt;/a&gt;</span>
 </code></pre></div></div>
@@ -538,7 +538,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/87e3c42fdc98d63d89a6a0d984f44f00adf02015.html">Open in a new tab</a></p>
 
-<p>This email text field does not need to have its <a href="#visible" title="Definition of visible">visible</a> text match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>. The content of a textfield shows its value instead of its label; it does not <a href="https://www.w3.org/TR/wai-aria-1.1/#namefromcontent" title="Definition of Supports name from contents">support name from content</a>. The label is usually adjacent to the textfield instead.</p>
+<p>This email text field does not need to have its <a href="#visible" title="Definition of visible">visible</a> text match the <a href="#accessible-name" title="Definition of accessible name">accessible name</a>. The content of a textfield shows its value instead of its label; it does not <a href="https://www.w3.org/TR/wai-aria-1.2/#namefromcontent" title="Definition of Supports name from contents">support name from content</a>. The label is usually adjacent to the textfield instead.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>E-mail<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">aria-label=</span><span class="s">"E-mail"</span> <span class="na">value=</span><span class="s">"Contact"</span> <span class="nt">/&gt;</span>
@@ -631,7 +631,7 @@ h2#sidebar-header {
   <li>it is an <code class="language-plaintext highlighter-rouge">img</code> element with an <code class="language-plaintext highlighter-rouge">alt</code> attribute whose value is the empty string (<code class="language-plaintext highlighter-rouge">alt=""</code>), and with no <a href="#explicit-role" title="Definition of Explicit Role">explicit role</a>.</li>
 </ul>
 
-<p>Elements are marked as decorative as a way to convey the intention of the author that they are <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a>. It is different from the element actually being <a href="https://www.w3.org/TR/WCAG21/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a> as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as <a href="https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a> may overwrite this intention.</p>
+<p>Elements are marked as decorative as a way to convey the intention of the author that they are <a href="https://www.w3.org/TR/WCAG22/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a>. It is different from the element actually being <a href="https://www.w3.org/TR/WCAG22/#dfn-pure-decoration" title="WCAG definition of Pure Decoration">pure decoration</a> as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as <a href="https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">presentational roles conflict resolution</a> may overwrite this intention.</p>
 
 <p>Elements can also be ignored by assistive technologies if they are <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a>. This is different from marking the element as decorative and does not convey the same intention. Notably, being <a href="#programmatically-hidden" title="Definition of Programmatically Hidden">programmatically hidden</a> may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.</p>
 
@@ -684,7 +684,7 @@ h2#sidebar-header {
 
 <p>Content is considered <em>visible</em> if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>
 
-<p><a href="https://www.w3.org/TR/WCAG21/#dfn-content">Content is defined in WCAG</a>.</p>
+<p><a href="https://www.w3.org/TR/WCAG22/#dfn-content">Content is defined in WCAG</a>.</p>
 
 <p>For more details, see <a href="https://act-rules.github.io/pages/examples/visible/">examples of visible</a>.</p>
 
@@ -761,15 +761,15 @@ h2#sidebar-header {
           <tr>
             <td>Equal Access Accessibility Checker 3.1.42-rc.0</td>
             <td>Automated tool</td>
-            <td> Partial
-            </td>
+            <td>
+              Consistent </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/equal-access#breakdown-2ee8b8"><img alt="Equal Access Accessibility Checker Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
             <td>QualWeb 3.0.0</td>
             <td>Automated tool</td>
-            <td> Partial
-            </td>
+            <td>
+              Consistent </td>
             <td><a href="/WAI/standards-guidelines/act/implementations/qualweb#breakdown-2ee8b8"><img alt="QualWeb Report" src="/WAI/content-assets/wcag-act-rules/bar-chart-fill.svg"></a></td>
           </tr>
           <tr>
@@ -834,7 +834,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 2ee8b8</p>
-<p><strong>Date:</strong> Updated 12 January 2024</p>
+<p><strong>Date:</strong> Updated 25 January 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -876,9 +876,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1707235864276565568"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1707235864276565568"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1707223241822989421";
+      element.src = "/WAI/assets/scripts/main.js?1707235864276565568";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707223241822989421">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707235864276565568">
 
-<title> HTML page lang attribute has valid language tag[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707223241822989421"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> HTML page lang attribute has valid language tag[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1707235864276565568"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="HTML page lang attribute has valid language tag" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -356,13 +356,13 @@ h2#sidebar-header {
 
 <ul>
   <li>
-    <p>The language of the page can be set by other methods than the <code class="language-plaintext highlighter-rouge">lang</code> attribute, for example using HTTP headers or the <code class="language-plaintext highlighter-rouge">meta</code> element. These methods are not supported by all assistive technologies. This rule assumes that these other methods are insufficient to satisfying <a href="https://www.w3.org/TR/WCAG21/#language-of-page">Success Criterion 3.1.1: Language of Page</a>.</p>
+    <p>The language of the page can be set by other methods than the <code class="language-plaintext highlighter-rouge">lang</code> attribute, for example using HTTP headers or the <code class="language-plaintext highlighter-rouge">meta</code> element. These methods are not supported by all assistive technologies. This rule assumes that these other methods are insufficient to satisfying <a href="https://www.w3.org/TR/WCAG22/#language-of-page">Success Criterion 3.1.1: Language of Page</a>.</p>
   </li>
   <li>
     <p>This rule assumes that user agents and assistive technologies can programmatically determine <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tags</a> even if these do not conform to the <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1">RFC 5646</a> syntax.</p>
   </li>
   <li>
-    <p>This rule assumes that only <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tags</a> are enough to satisfy <a href="https://www.w3.org/TR/WCAG21/#language-of-page" title="Success Criterion 3.1.1 Language of Page">Success Criterion 3.1.1 Language of Page</a>; this notably excludes <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> and <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2: Codes for the Representation of Names of Languages">ISO 639.2</a> three-letters codes, both having poor support in assistive technologies.</p>
+    <p>This rule assumes that only <a href="#known-primary-language-tag" title="Definition of Known Primary Language Tag">known primary language tags</a> are enough to satisfy <a href="https://www.w3.org/TR/WCAG22/#language-of-page" title="Success Criterion 3.1.1 Language of Page">Success Criterion 3.1.1 Language of Page</a>; this notably excludes <a href="https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8">grandfathered tags</a> and <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639.2: Codes for the Representation of Names of Languages">ISO 639.2</a> three-letters codes, both having poor support in assistive technologies.</p>
   </li>
 </ul>
 
@@ -372,7 +372,7 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
-<p>This rule is only applicable to non-embedded HTML pages. HTML pages embedded into other documents, such as through <code class="language-plaintext highlighter-rouge">iframe</code> or <code class="language-plaintext highlighter-rouge">object</code> elements are not applicable because they are not <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page-s">web pages</a> according to the definition in WCAG.</p>
+<p>This rule is only applicable to non-embedded HTML pages. HTML pages embedded into other documents, such as through <code class="language-plaintext highlighter-rouge">iframe</code> or <code class="language-plaintext highlighter-rouge">object</code> elements are not applicable because they are not <a href="https://www.w3.org/TR/WCAG22/#dfn-web-page-s">web pages</a> according to the definition in WCAG.</p>
 
 <h3 id="related-rules">Related rules</h3>
 
@@ -384,8 +384,8 @@ h2#sidebar-header {
 <h3 id="bibliography">Bibliography</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">Understanding Success Criterion 3.1.1: Language of Page</a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">H57: Using language attributes on the html element</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html">Understanding Success Criterion 3.1.1: Language of Page</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H57">H57: Using language attributes on the html element</a></li>
   <li><a href="https://www.rfc-editor.org/rfc/rfc5646.html">RFC 5646: Tags for Identifying Languages</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/dom.html#the-lang-and-xml:lang-attributes">The <code class="language-plaintext highlighter-rouge">lang</code> and <code class="language-plaintext highlighter-rouge">xml:lang</code> attributes</a></li>
 </ul>
@@ -666,7 +666,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> bf051a</p>
-<p><strong>Date:</strong> Updated 13 October 2023</p>
+<p><strong>Date:</strong> Updated 25 January 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Previous Authors: <a href="https://github.com/annika-FTB">Annika Nietzio</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -708,9 +708,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1707235864276565568"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1707223241822989421"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1707235864276565568"></script>
 <script>
   svg4everybody();
 </script><script>
