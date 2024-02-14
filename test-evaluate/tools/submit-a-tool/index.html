@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1707844365087685659";
+      element.src = "/WAI/assets/scripts/main.js?1707919339912508098";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707844365087685659">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1707919339912508098">
 
 <title> Submit a tool - Web Accessibility Evaluation Tools List | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -1528,13 +1528,6 @@ main > header { grid-column: 4 / span 4; }
       <label for="release" class="label-input">Release date<span>(Required)</span></label>
       <input type="date" id="release" name="release" required="" />
   </div>
-  <div class="field" style="display: none;">
-      <legend for="update" class="label-input">Date of most recent update<span>Required</span></legend>
-  </div>
-  <div class="field" style="display: none;">
-      <label for="update" class="label-input">Date of most recent update<span>(Required)</span></label>
-      <input type="date" id="update" name="update" required="" />
-  </div>
   <div class="field">
       <label for="a11yloc" class="label-input">Accessibility statement (URL)</label>
       <input type="url" id="a11yloc" name="a11yloc" />
@@ -1555,13 +1548,11 @@ main > header { grid-column: 4 / span 4; }
   <div class="field" id="features">
     <label for="feature-desc" class="label specialField">Short product description (max. 350 characters)<span>(Required)</span></label>
     <p>Add a description of key features and functionalities of the tool. Try to write this description in a way that tool users can understand.</p>
-    <textarea id="feature-desc" name="features" rows="5" maxlength="350"></textarea>
+    <textarea id="feature-desc" name="features" rows="5" maxlength="350" required=""></textarea>
   </div>
   
   <fieldset class="field" id="purpose">
-      <!-- <div class="fieldheader"> -->
-        <legend class="label-input">Purpose<span class="short-sub">(Required)</span></legend>
-      <!-- </div> -->
+      <legend class="label-input">Purpose<span class="short-sub">(Required)</span></legend>
       <p>What type of evaluations does this tool support?</p>
       <div class="field-group">
         
@@ -1596,9 +1587,7 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
   
   <fieldset class="field" id="product">
-      <!-- <div class="fieldheader"> -->
-        <legend class="label-input">Product evaluated<span class="short-sub">(Required)</span></legend>
-      <!-- </div> -->
+      <legend class="label-input">Product evaluated<span class="short-sub">(Required)</span></legend>
       <div class="field-group">
         
           <div class="radio-field">
@@ -1650,9 +1639,7 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
   
   <fieldset class="field" id="technology">
-      <!-- <div class="fieldheader"> -->
-        <legend class="label-input">File type</legend>
-      <!-- </div> -->
+      <legend class="label-input">File type</legend>
       <div class="field-group">
         
           <div class="radio-field">
@@ -1731,10 +1718,8 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
   
   <fieldset class="field" id="automated">
-      <!-- <div class="fieldheader"> -->
-        <legend class="label-input">Scope<span class="short-sub">(Required)</span></legend>
-        <p>Range and depth of single evaluation.</p>
-      <!-- </div> -->
+      <legend class="label-input">Scope<span class="short-sub">(Required)</span></legend>
+      <p>Range and depth of single evaluation.</p>
       <div class="field-group">
         
           <div class="radio-field">
@@ -1786,9 +1771,7 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
   
   <fieldset class="field" id="guideline">
-      <!-- <div class="fieldheader"> -->
-        <legend class="label-input">Standards</legend>
-      <!-- </div> -->
+      <legend class="label-input">Standards</legend>
       <div class="field-group">
         
           <div class="radio-field">
@@ -1831,9 +1814,7 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
   
   <fieldset class="field" id="assists">
-      <!-- <div class="fieldheader"> -->
-        <legend class="label-input">Assists by</legend>
-      <!-- </div> -->
+      <legend class="label-input">Assists by</legend>
       <div class="field-group">
         
           <div class="radio-field">
@@ -2638,35 +2619,34 @@ main > header { grid-column: 4 / span 4; }
       <button type="button" aria-label="Remove" class="remove_line">Remove</button>
       </div>
     <button type="button" class="add_line small">Add language</button>
-    <!-- <button type="button" class="remove_line small" disabled>Remove last language</button> -->
   </div>
   
- <fieldset class="field" id="license">
-  <div class="field-group">
-      <legend class="label-input">License<span class="short-sub">(Required)</span></legend>
+  <fieldset class="field" id="license">
+    <legend class="label-input">License<span class="short-sub">(Required)</span></legend>
+    <div class="field-group">
       
         <div class="radio-field">
-          <input type="checkbox" name="license[]" id="tool-license-free" value="Free" required="" />
+          <input type="checkbox" name="license[]" id="tool-license-free" value="Free" group="license" required="" />
           <label for="tool-license-free">Free</label>
         </div>
       
         <div class="radio-field">
-          <input type="checkbox" name="license[]" id="tool-license-limited" value="Limited free functionality" required="" />
+          <input type="checkbox" name="license[]" id="tool-license-limited" value="Limited free functionality" group="license" required="" />
           <label for="tool-license-limited">Limited free functionality</label>
         </div>
       
         <div class="radio-field">
-          <input type="checkbox" name="license[]" id="tool-license-time" value="Time-limited trial" required="" />
+          <input type="checkbox" name="license[]" id="tool-license-time" value="Time-limited trial" group="license" required="" />
           <label for="tool-license-time">Time-limited trial</label>
         </div>
       
         <div class="radio-field">
-          <input type="checkbox" name="license[]" id="tool-license-subscription" value="Subscription" required="" />
+          <input type="checkbox" name="license[]" id="tool-license-subscription" value="Subscription" group="license" required="" />
           <label for="tool-license-subscription">Subscription</label>
         </div>
       
         <div class="radio-field">
-          <input type="checkbox" name="license[]" id="tool-license-purchase" value="One-time purchase" required="" />
+          <input type="checkbox" name="license[]" id="tool-license-purchase" value="One-time purchase" group="license" required="" />
           <label for="tool-license-purchase">One-time purchase</label>
         </div>
       
@@ -2679,10 +2659,8 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
   
   <fieldset class="field" id="type">
-      <!-- <div class="fieldheader"> -->
-        <legend class="label-input">Type of tool<span class="short-sub">(Required)</span></legend>
+      <legend class="label-input">Type of tool<span class="short-sub">(Required)</span></legend>
         <p>Check all that apply when submitting multiple types of the tool (e.g. both browser plugin and online tool).</p>
-      <!-- </div> -->
       <div class="field-group">
         
           <div class="radio-field">
@@ -2770,9 +2748,7 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
   
   <fieldset class="field" id="browsers">
-      <!-- <div class="fieldheader"> -->
-        <legend class="label-input">Browser for plugin</legend>
-      <!-- </div> -->
+      <legend class="label-input">Browser for plugin</legend>
       <div class="field-group">
         
           <div class="radio-field">
@@ -2833,9 +2809,7 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
   
   <fieldset class="field" id="desktop">
-      <!-- <div class="fieldheader"> -->
       <legend class="label-input">Operating system</legend>
-      <!-- </div> -->
       <div class="field-group">
         
           <div class="radio-field">
@@ -3158,9 +3132,9 @@ if (submitForm) {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1707844365087685659"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1707919339912508098"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1707844365087685659"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1707919339912508098"></script>
 <script>
   svg4everybody();
 </script><script>
