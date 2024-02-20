@@ -430,6 +430,7 @@
 /assets/scripts/details4everybody.js
 /assets/scripts/jquery.min.js
 /assets/scripts/lang/ar.js
+/assets/scripts/lang/cs.js
 /assets/scripts/lang/de.js
 /assets/scripts/lang/el.js
 /assets/scripts/lang/es.js
@@ -1622,6 +1623,7 @@
 /content-assets/wcag-act-rules/testcases/bc4a75/5e0e88f9ed776c89735d7db606c1381a7a1fb877.html
 /content-assets/wcag-act-rules/testcases/bc4a75/837f92d0ac41c14e55782991cbab75975b492702.html
 /content-assets/wcag-act-rules/testcases/bc4a75/83d80bc34891ae13f05150c8c677028591f1d199.html
+/content-assets/wcag-act-rules/testcases/bc4a75/854ec3db8780fe5be957fc1c29f279a3e5fc7969.html
 /content-assets/wcag-act-rules/testcases/bc4a75/874032cb82216878366f02dd2d98e6c8047a1612.html
 /content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html
 /content-assets/wcag-act-rules/testcases/bc4a75/a1826280426b6a76f0c871084146983b6f0faa9b.html
