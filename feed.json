@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2024-02-27/dpub/",
+            "title": "Call for Implementations: Digital Publishing Accessibility Candidate Recommendations",
+            "summary": null,
+            "content_text": "Digital Publishing WAI-ARIA Module 1.1 (DPUB-ARIA) and Digital Publishing Accessibility API Mappings 1.1 (DPUB-AAM) are now Candidate Recommendation Snapshots. That means we’re seeking example implementations. These specifications help assistive technology users navigate through structural divisions in documents, for example, in ebooks. To learn more, see the e-mail announcement. Please submit implementations and any comments by 27 April 2024.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/dpub-aria/\">Digital Publishing WAI-ARIA Module 1.1 (DPUB-ARIA)</a> and <a href=\"https://www.w3.org/TR/dpub-aam/\">Digital Publishing Accessibility API Mappings 1.1 (DPUB-AAM)</a> are now Candidate Recommendation Snapshots. That means we’re seeking example implementations. These specifications help assistive technology users navigate through structural divisions in documents, for example, in ebooks. To learn more, see the <a href=\"https://lists.w3.org/Archives/Public/public-wai-announce/2024JanMar/0001.html\">e-mail announcement</a>. Please submit implementations and any comments by 27 April 2024.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-02-27/dpub/",
+            
+            
+            
+            
+            
+            "date_published": "2024-02-27T00:00:00+00:00",
+            "date_modified": "2024-02-27T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2024-01-23/for-review-wai-aria-1-3-FPWD/",
             "title": "For Review: WAI-ARIA 1.3 First Public Working Draft",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2022-04-13T00:00:00+00:00",
             "date_modified": "2022-04-13T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-04-04/WAI-CooP-meeting/",
-            "title": "Invitation: WAI-CooP Meeting, Online, 19 April 2022",
-            "summary": null,
-            "content_text": "You are invited to the WAI-CooP Open Meeting, Online  on 19 April 2022. We encourage participation from people interested in: digital  accessibility implementation in Europe and internationally; guidance on  available web accessibility training, tools, and resources; and exchanges on  the European Union (EU) Web Accessibility Directive (WAD). Agenda, logistics,  and registration information is in the meeting page. This meeting is free, and  registration is required.",
-            "content_html": "<p>You are invited to the <a href=\"https://www.edf-feph.org/events-slug/wai-coop-online-meeting/\">WAI-CooP Open Meeting, Online  on 19 April 2022</a>. We encourage participation from people interested in: digital  accessibility implementation in Europe and internationally; guidance on  available web accessibility training, tools, and resources; and exchanges on  the European Union (EU) Web Accessibility Directive (WAD). Agenda, logistics,  and registration information is in the <a href=\"https://www.edf-feph.org/events-slug/wai-coop-online-meeting/\">meeting page</a>. This meeting is free, and  registration is required.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-04-04/WAI-CooP-meeting/",
-            
-            
-            
-            
-            
-            "date_published": "2022-04-04T00:00:00+00:00",
-            "date_modified": "2022-04-04T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
