@@ -1,1 +1,1 @@
-var translationStrings = {"Expand All Sections": "","Collapse All Sections": "","to footnote": "","back to footnote": "","in text": "",};
+var translationStrings = {"Expand All Sections": "すべてのセクションを展開する","Collapse All Sections": "すべてのセクションを折りたたむ","to footnote": "注釈","back to footnote": "に戻る","in text": "本文中の注釈",};

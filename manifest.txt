@@ -261,6 +261,9 @@
 /about/translating/sitemaps/sitemap-es/index.html
 /about/translating/sitemaps/sitemap-fr/index.html
 /about/translating/sitemaps/sitemap-id/index.html
+/about/translating/sitemaps/sitemap-ja/index.html
+/about/translating/sitemaps/sitemap-ko/index.html
+/about/translating/sitemaps/sitemap-pl/index.html
 /about/translating/sitemaps/sitemap-ru/index.html
 /about/translating/sitemaps/sitemap-zh-hans/index.html
 /about/translating/step-by-step/index.html
@@ -2658,6 +2661,7 @@
 /fundamentals/accessibility-intro/ar.html
 /fundamentals/accessibility-intro/changelog/index.html
 /fundamentals/accessibility-intro/cs.html
+/fundamentals/accessibility-intro/de.html
 /fundamentals/accessibility-intro/es.html
 /fundamentals/accessibility-intro/fr.html
 /fundamentals/accessibility-intro/id.html
