@@ -3286,8 +3286,10 @@
 /standards-guidelines/atag/fr.html
 /standards-guidelines/atag/glance/fr.html
 /standards-guidelines/atag/glance/index.html
+/standards-guidelines/atag/glance/pl.html
 /standards-guidelines/atag/index.html
 /standards-guidelines/atag/no-code/index.html
+/standards-guidelines/atag/pl.html
 /standards-guidelines/atag/social-media/index.html
 /standards-guidelines/changelog/index.html
 /standards-guidelines/cs.html
