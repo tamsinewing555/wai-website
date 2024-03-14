@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1710392922553626646";
+      element.src = "/WAI/assets/scripts/main.js?1710425672952020522";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1710392922553626646">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1710425672952020522">
 
 <title> Tables Tutorial | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -182,23 +182,40 @@
 
 <p>This tutorial shows you how to apply appropriate structural markup to tables. It includes the following pages:</p>
 
-<ul class="nolist withicons" style="--img-width: 120px">
-  <li class="left">
-    <p><strong><a href="/WAI/tutorials/tables/one-header/">Tables with one header<img src="/WAI/content-images/wai-tutorials/tables/img-simple.png" alt="" class=" small" /></a></strong> for rows or columns: For tables with content that is easy to distinguish, mark up header cells with <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code> and data cells with <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> elements.</p>
-  </li>
-  <li class="left">
-    <p><strong><a href="/WAI/tutorials/tables/two-headers/">Tables with two headers<img src="/WAI/content-images/wai-tutorials/tables/img-multidir.png" alt="" class=" small" /></a></strong> have a simple row header and a simple column header: For tables with unclear header directions, define the direction of each header by setting the <code class="language-plaintext highlighter-rouge">scope</code> attribute to <code class="language-plaintext highlighter-rouge">col</code> or <code class="language-plaintext highlighter-rouge">row</code>.</p>
-  </li>
-  <li class="left">
-    <p><strong><a href="/WAI/tutorials/tables/irregular/">Tables with irregular headers<img src="/WAI/content-images/wai-tutorials/tables/img-irreg.png" alt="" class=" small" /></a></strong> have header cells that span multiple columns and/or rows: For these tables, define column and row groups and set the range of the header cells using the <code class="language-plaintext highlighter-rouge">colgroup</code> and <code class="language-plaintext highlighter-rouge">rowgroup</code> values of the scope attribute.</p>
-  </li>
-  <li class="left">
-    <p><strong><a href="/WAI/tutorials/tables/multi-level/">Tables with multi-level headers<img src="/WAI/content-images/wai-tutorials/tables/img-multi.png" alt="" class=" small" /></a></strong>  have multiple header cells associated per data cell:  For tables that are so complex that header cells can’t be associated in a strictly horizontal or vertical way, use <code class="language-plaintext highlighter-rouge">id</code> and <code class="language-plaintext highlighter-rouge">headers</code> attributes to associate header and data cells explicitly.</p>
-  </li>
-  <li class="left">
-    <p><strong><a href="/WAI/tutorials/tables/caption-summary/">Caption &amp; Summary<img src="/WAI/content-images/wai-tutorials/tables/img-caption.png" alt="" class=" small" /></a>:</strong> A caption identifies the overall topic of a table and is useful in most situations. A summary provides orientation or navigation hints in complex tables.</p>
-  </li>
+<ul>
+  <li class="left">**[Tables with one header
+<img src="/WAI/content-images/wai-tutorials/tables/img-simple.png" alt="" class=" small" /></li>
 </ul>
+
+<p>](/WAI/tutorials/tables/one-header/)** for rows or columns: For tables with content that is easy to distinguish, mark up header cells with <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code> and data cells with <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> elements.</p>
+
+<ul>
+  <li class="left">**[Tables with two headers
+<img src="/WAI/content-images/wai-tutorials/tables/img-multidir.png" alt="" class=" small" /></li>
+</ul>
+
+<p>](/WAI/tutorials/tables/two-headers/)** have a simple row header and a simple column header: For tables with unclear header directions, define the direction of each header by setting the <code class="language-plaintext highlighter-rouge">scope</code> attribute to <code class="language-plaintext highlighter-rouge">col</code> or <code class="language-plaintext highlighter-rouge">row</code>.</p>
+
+<ul>
+  <li class="left">**[Tables with irregular headers
+<img src="/WAI/content-images/wai-tutorials/tables/img-irreg.png" alt="" class=" small" /></li>
+</ul>
+
+<p>](/WAI/tutorials/tables/irregular/)** have header cells that span multiple columns and/or rows: For these tables, define column and row groups and set the range of the header cells using the <code class="language-plaintext highlighter-rouge">colgroup</code> and <code class="language-plaintext highlighter-rouge">rowgroup</code> values of the scope attribute.</p>
+
+<ul>
+  <li class="left">**[Tables with multi-level headers
+<img src="/WAI/content-images/wai-tutorials/tables/img-multi.png" alt="" class=" small" /></li>
+</ul>
+
+<p>](/WAI/tutorials/tables/multi-level/)**  have multiple header cells associated per data cell:  For tables that are so complex that header cells can’t be associated in a strictly horizontal or vertical way, use <code class="language-plaintext highlighter-rouge">id</code> and <code class="language-plaintext highlighter-rouge">headers</code> attributes to associate header and data cells explicitly.</p>
+
+<ul>
+  <li class="left">**[Caption &amp; Summary
+<img src="/WAI/content-images/wai-tutorials/tables/img-caption.png" alt="" class=" small" /></li>
+</ul>
+
+<p class="nolist withicons" style="--img-width: 120px">](/WAI/tutorials/tables/caption-summary/):** A caption identifies the overall topic of a table and is useful in most situations. A summary provides orientation or navigation hints in complex tables.</p>
 
 <p>Some document formats other than HTML, such as PDF, provide similar mechanisms to markup table structures. Word processing applications may also provide mechanisms to markup tables. Tables markup is often lost when converting from one format to another, though some programs may provide functionality to assist converting table markup.</p>
 
@@ -358,9 +375,9 @@
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1710392922553626646"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1710425672952020522"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1710392922553626646"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1710425672952020522"></script>
 <script>
   svg4everybody();
 </script><script>
