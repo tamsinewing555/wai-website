@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1710425672952020522";
+      element.src = "/WAI/assets/scripts/main.js?1710440220018967146";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1710425672952020522">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1710440220018967146">
 
 <title> The WCAG 2 Documents | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -169,12 +169,12 @@
   <li><a href="#supporting-documents" id="markdown-toc-supporting-documents">Supporting Documents</a>    <ul>
       <li><a href="#understanding" id="markdown-toc-understanding">Understanding</a></li>
       <li><a href="#techniques" id="markdown-toc-techniques">Techniques</a></li>
-      <li><a href="#test-rules" id="markdown-toc-test-rules">Test Rules</a></li>
+      <li><a href="#accessibility-conformance-testing-act-rules" id="markdown-toc-accessibility-conformance-testing-act-rules">Accessibility Conformance Testing (ACT) Rules</a></li>
     </ul>
   </li>
   <li><a href="#supplement" id="markdown-toc-supplement">Supplemental Guidance</a></li>
   <li><a href="#additional-resources" id="markdown-toc-additional-resources">Additional Resources</a></li>
-  <li><a href="#diagram" id="markdown-toc-diagram">Diagram</a></li>
+  <li><a href="#old-diagram" id="markdown-toc-old-diagram">Old Diagram</a></li>
 </ul>
 
 
@@ -192,9 +192,9 @@
 
 <h2 id="quick-reference--how-to-meet-wcag-2--wcag-2-checklist">Quick Reference / How to Meet WCAG 2 / WCAG 2 Checklist</h2>
 
-<p><strong>A key resource for designers and developers using WCAG 2 is <a href="http://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG 2 (Quick Reference): A customizable quick reference to WCAG 2 requirements (Success Criteria) and techniques</a>.</strong> It includes all the WCAG 2 guidelines and success criteria. It is essentially the <a href="http://www.w3.org/WAI/WCAG21/quickref/">WCAG 2 checklist</a>.</p>
+<p><strong>A key resource for designers and developers using WCAG 2 is <a href="https://www.w3.org/WAI/WCAG22/quickref/">How to Meet WCAG 2 (Quick Reference): A customizable quick reference to WCAG 2 requirements (Success Criteria) and techniques</a>.</strong> It includes all the WCAG 2 guidelines and success criteria. It is essentially the WCAG 2 checklist.</p>
 
-<p>You can customize it so it shows what you are interested in at the time. There are “filters” for different roles, topics, and technologies (such as HTML, CSS, ARIA). And filers for <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#levels">Level A, AA, or AAA success criteria</a>.</p>
+<p>You can customize it so it shows what you are interested in at the time. There are “filters” for different roles, topics, and technologies (such as HTML, CSS, ARIA). And filters for <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels">Level A, AA, or AAA success criteria</a>.</p>
 
 <h2 id="supporting-documents">Supporting Documents</h2>
 
@@ -238,13 +238,13 @@
   <li><a href="https://www.w3.org/TR/WCAG20-TECHS/">2.0 Techniques List</a></li>
 </ul>
 
-<h3 id="test-rules">Test Rules</h3>
+<h3 id="accessibility-conformance-testing-act-rules">Accessibility Conformance Testing (ACT) Rules</h3>
 
-<p>Test Rules describe how to test conformance to WCAG success criteria. They are primarily for developing evaluation tools and test methodologies. (They are more robust than the tests in the techniques.)</p>
+<p><cite>Accessibility Conformance Testing (ACT) Rules</cite> describe how to test conformance to WCAG success criteria. They are primarily for developing evaluation tools and test methodologies. (They are more robust than the tests in the techniques.)</p>
 
 <ul>
-  <li><a href="/WAI/standards-guidelines/act/rules/about/">About WCAG 2 Test Rules</a></li>
-  <li><a href="/WAI/standards-guidelines/act/rules/">All WCAG 2 Test Rules List</a></li>
+  <li><a href="/WAI/standards-guidelines/act/rules/about/">About WCAG 2 ACT Rules</a></li>
+  <li><a href="/WAI/standards-guidelines/act/rules/">All WCAG 2 ACT Rules List</a></li>
 </ul>
 
 <h2 id="supplement">Supplemental Guidance</h2>
@@ -267,7 +267,7 @@
 
 <p>Other resources cover specific topics, for example:</p>
 <ul>
-  <li><a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials</a> cover page structure, menus, images, tables, carousels, forms</li>
+  <li><a href="/WAI/tutorials/">Web Accessibility Tutorials</a> cover page structure, menus, images, tables, carousels, forms</li>
   <li><a href="/WAI/media/av/">Making Audio and Video Media Accessible</a> covers multimedia</li>
 </ul>
 
@@ -275,7 +275,7 @@
 
 <details id="diagram"><summary>
 
-    <h2 id="diagram">Diagram</h2>
+    <h2 id="old-diagram">Old Diagram</h2>
 
   </summary>
   <div>
@@ -286,7 +286,7 @@
 
     <p>Not included in the old diagram:</p>
     <ul>
-      <li>Test Rules</li>
+      <li>ACT Rules</li>
       <li>Supplemental Guidance</li>
     </ul>
 
@@ -321,7 +321,7 @@
           <li>Conformance</li>
         </ul>
       </li>
-      <li>Left: <em>Instructions for Developers</em> ; <strong>Techniques for WCAG 2.0</strong> _ ; (HTML, CSS, scripting, …)_
+      <li>Left: <em>Instructions for Developers</em> ; <strong>Techniques for WCAG 2.0</strong> ; (HTML, CSS, scripting, …)_
         <ul>
           <li>Browser and assistive technology support notes</li>
           <li>Examples, code</li>
@@ -333,7 +333,7 @@
         <ul>
           <li>Intent</li>
           <li>Benefits to people with disabilities</li>
-          <li>Examples scenarios</li>
+          <li>Example scenarios</li>
           <li>Resources</li>
           <li>Techniques</li>
         </ul>
@@ -369,7 +369,7 @@
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Date:</strong> Updated 5 October 2023. First published July 2005.</p> <p><strong>Editor:</strong> <a href="http://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>. Contributors: <a href="http://www.w3.org/People/hidde/">Hidde de Vries</a> and <a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>.</p> <p>Developed with input from the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>).</p>
+      <p><strong>Date:</strong> Updated 14 March 2024. First published July 2005.</p> <p><strong>Editor:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>. Contributors: <a href="https://www.w3.org/People/hidde/">Hidde de Vries</a> and <a href="https://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>.</p> <p>Developed with input from the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>).</p>
 </div>
   </footer>
   
@@ -409,9 +409,9 @@
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1710425672952020522"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1710440220018967146"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1710425672952020522"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1710440220018967146"></script>
 <script>
   svg4everybody();
 </script><script>

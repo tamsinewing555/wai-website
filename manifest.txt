@@ -438,9 +438,11 @@
 /assets/scripts/lang/el.js
 /assets/scripts/lang/es.js
 /assets/scripts/lang/fr.js
+/assets/scripts/lang/id.js
 /assets/scripts/lang/ja.js
 /assets/scripts/lang/ko.js
 /assets/scripts/lang/nl.js
+/assets/scripts/lang/pl.js
 /assets/scripts/lang/pt-BR.js
 /assets/scripts/lang/ru.js
 /assets/scripts/lang/zh-hans.js
@@ -2286,6 +2288,10 @@
 /content-images/wai-components/cycle.png
 /content-images/wai-components/relate-example.jpg
 /content-images/wai-components/relate.png
+/content-images/wai-components/source/bridge.svg
+/content-images/wai-components/source/cycle.svg
+/content-images/wai-components/source/relate.svg
+/content-images/wai-components/source/specs.svg
 /content-images/wai-components/specs.png
 /content-images/wai-course-list/clear.svg
 /content-images/wai-course-list/w3c.png
@@ -2935,6 +2941,10 @@
 /pages/wai-components/content-images/wai-components/cycle.png
 /pages/wai-components/content-images/wai-components/relate-example.jpg
 /pages/wai-components/content-images/wai-components/relate.png
+/pages/wai-components/content-images/wai-components/source/bridge.svg
+/pages/wai-components/content-images/wai-components/source/cycle.svg
+/pages/wai-components/content-images/wai-components/source/relate.svg
+/pages/wai-components/content-images/wai-components/source/specs.svg
 /pages/wai-components/content-images/wai-components/specs.png
 /pages/wai-components/netlify.toml
 /pages/wai-components/w3c.json
