@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1710440220018967146";
+      element.src = "/WAI/assets/scripts/main.js?1710600900709915168";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1710440220018967146">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1710600900709915168">
 
 <title> Page Regions | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -209,12 +209,9 @@
 
 <h2 id="page-header">Page header</h2>
 
-<img src="/WAI/content-images/wai-tutorials/page-structure/page-structure-header.png" srcset="/WAI/content-images/wai-tutorials/page-structure/page-structure-header.png, /WAI/content-images/wai-tutorials/page-structure/page-structure-header@2x.png 2x, /WAI/content-images/wai-tutorials/page-structure/page-structure-header@3x.png 3x"  alt="" class=" small right">
+<p><img src="/WAI/content-images/wai-tutorials/page-structure/page-structure-header.png" srcset="/WAI/content-images/wai-tutorials/page-structure/page-structure-header.png, /WAI/content-images/wai-tutorials/page-structure/page-structure-header@2x.png 2x, /WAI/content-images/wai-tutorials/page-structure/page-structure-header@3x.png 3x"  alt="" class=" small right">
+ Most websites have a region at the top of every page that contains site-wide information, such as the website logo, search function, and navigation options. HTML5 provides the <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code> element, which can be used to define such a region.</p>
 
-
-{:/nomarkdown} Most websites have a region at the top of every page that contains site-wide information, such as the website logo, search function, and navigation options. HTML5 provides the `<header>` element, which can be used to define such a region.
-
-{::nomarkdown}
 <aside class="box box-simple box-notes"><header class="box-h  box-h-simple box-h-notes"> Note</header><div class="box-i">
 
 <p><strong>Note:</strong> If the <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code> element is used inside <code class="language-plaintext highlighter-rouge">&lt;article&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> elements, it is not associated to those elements. It does not get the WAI-ARIA <code class="language-plaintext highlighter-rouge">banner</code> role and does not have special behavior in assistive technologies.</p>
@@ -236,12 +233,9 @@
 
 <h2 id="page-footer">Page footer</h2>
 
-<img src="/WAI/content-images/wai-tutorials/page-structure/page-structure-footer.png" srcset="/WAI/content-images/wai-tutorials/page-structure/page-structure-footer.png, /WAI/content-images/wai-tutorials/page-structure/page-structure-footer@2x.png 2x, /WAI/content-images/wai-tutorials/page-structure/page-structure-footer@3x.png 3x"  alt="" class=" small right">
+<p><img src="/WAI/content-images/wai-tutorials/page-structure/page-structure-footer.png" srcset="/WAI/content-images/wai-tutorials/page-structure/page-structure-footer.png, /WAI/content-images/wai-tutorials/page-structure/page-structure-footer@2x.png 2x, /WAI/content-images/wai-tutorials/page-structure/page-structure-footer@3x.png 3x"  alt="" class=" small right">
+ Similar to the page header, most websites also have a region at the bottom of every page that contains site-wide information, such as copyright information, privacy statements, or disclaimers. HTML5 provides the <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code> element, which can be used to define such a region.</p>
 
-
-{:/nomarkdown} Similar to the page header, most websites also have a region at the bottom of every page that contains site-wide information, such as copyright information, privacy statements, or disclaimers. HTML5 provides the `<footer>` element, which can be used to define such a region.
-
-{::nomarkdown}
 <aside class="box box-simple box-notes"><header class="box-h  box-h-simple box-h-notes"> Note</header><div class="box-i">
 
 <p><strong>Note:</strong> If the <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code> element is used inside <code class="language-plaintext highlighter-rouge">&lt;article&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> elements, it is not associated to those elements. It does not get the WAI-ARIA <code class="language-plaintext highlighter-rouge">contentinfo</code> role and does not have special behavior in assistive technologies.</p>
@@ -261,12 +255,9 @@
 
 <h2 id="navigation">Navigation</h2>
 
-<img src="/WAI/content-images/wai-tutorials/page-structure/page-structure-navigation.png" srcset="/WAI/content-images/wai-tutorials/page-structure/page-structure-navigation.png, /WAI/content-images/wai-tutorials/page-structure/page-structure-navigation@2x.png 2x, /WAI/content-images/wai-tutorials/page-structure/page-structure-navigation@3x.png 3x"  alt="" class=" small right">
+<p><img src="/WAI/content-images/wai-tutorials/page-structure/page-structure-navigation.png" srcset="/WAI/content-images/wai-tutorials/page-structure/page-structure-navigation.png, /WAI/content-images/wai-tutorials/page-structure/page-structure-navigation@2x.png 2x, /WAI/content-images/wai-tutorials/page-structure/page-structure-navigation@3x.png 3x"  alt="" class=" small right">
+ The HTML5 <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> element can be used to identify a navigation menu. A web page can have any number of navigation menus. Use <a href="/WAI/tutorials/page-structure/labels/">labels</a> to identify each navigation menu.</p>
 
-
-{:/nomarkdown} The HTML5 `<nav>` element can be used to identify a navigation menu. A web page can have any number of navigation menus. Use [labels](/WAI/tutorials/page-structure/labels/) to identify each navigation menu.
-
-{::nomarkdown}
 <aside class="box box-example"><header class="box-h  box-h-example"> Code Snippet</header><div class="box-i">
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"Main"</span><span class="nt">&gt;</span>
@@ -285,12 +276,9 @@
 
 <h2 id="main-content">Main content</h2>
 
-<img src="/WAI/content-images/wai-tutorials/page-structure/page-structure-main.png" srcset="/WAI/content-images/wai-tutorials/page-structure/page-structure-main.png, /WAI/content-images/wai-tutorials/page-structure/page-structure-main@2x.png 2x, /WAI/content-images/wai-tutorials/page-structure/page-structure-main@3x.png 3x"  alt="" class=" small right">
+<p><img src="/WAI/content-images/wai-tutorials/page-structure/page-structure-main.png" srcset="/WAI/content-images/wai-tutorials/page-structure/page-structure-main.png, /WAI/content-images/wai-tutorials/page-structure/page-structure-main@2x.png 2x, /WAI/content-images/wai-tutorials/page-structure/page-structure-main@3x.png 3x"  alt="" class=" small right">
+ Use the HTML5 <code class="language-plaintext highlighter-rouge">&lt;main&gt;</code> element to identify the main content region of a web page or application.</p>
 
-
-{:/nomarkdown} Use the HTML5 `<main>` element to identify the main content region of a web page or application.
-
-{::nomarkdown}
 <aside class="box box-example"><header class="box-h  box-h-example"> Code Snippet</header><div class="box-i">
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;main&gt;</span>
@@ -303,12 +291,9 @@
 
 <h2 id="complementary-content">Complementary content</h2>
 
-<img src="/WAI/content-images/wai-tutorials/page-structure/page-structure-aside.png" srcset="/WAI/content-images/wai-tutorials/page-structure/page-structure-aside.png, /WAI/content-images/wai-tutorials/page-structure/page-structure-aside@2x.png 2x, /WAI/content-images/wai-tutorials/page-structure/page-structure-aside@3x.png 3x"  alt="" class=" small right">
+<p><img src="/WAI/content-images/wai-tutorials/page-structure/page-structure-aside.png" srcset="/WAI/content-images/wai-tutorials/page-structure/page-structure-aside.png, /WAI/content-images/wai-tutorials/page-structure/page-structure-aside@2x.png 2x, /WAI/content-images/wai-tutorials/page-structure/page-structure-aside@3x.png 3x"  alt="" class=" small right">
+ Use the HTML5 <code class="language-plaintext highlighter-rouge">&lt;aside&gt;</code> element to identify regions that support the main content, yet are separate and meaningful sections on their own; For example, a side note explaining or annotating the main content.</p>
 
-
-{:/nomarkdown} Use the HTML5 `<aside>` element to identify regions that support the main content, yet are separate and meaningful sections on their own; For example, a side note explaining or annotating the main content.
-
-{::nomarkdown}
 <aside class="box box-example"><header class="box-h  box-h-example"> Code Snippet</header><div class="box-i">
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;aside&gt;</span>
@@ -500,9 +485,9 @@
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1710440220018967146"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1710600900709915168"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1710440220018967146"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1710600900709915168"></script>
 <script>
   svg4everybody();
 </script><script>

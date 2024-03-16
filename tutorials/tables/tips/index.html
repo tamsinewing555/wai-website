@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1710440220018967146";
+      element.src = "/WAI/assets/scripts/main.js?1710600900709915168";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1710440220018967146">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1710600900709915168">
 
 <title> Tips and Tricks | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -188,19 +188,18 @@
     <p><strong>Data separation:</strong></p>
 
     <ul>
-      <li>Make sure that each separate piece of data has its cell. Don’t use headers in one column and all data in a second column, as this will make it almost impossible for screen readers to work out the relationships between data across columns.</li>
+      <li>
+        <p>Make sure that each separate piece of data has its cell. Don’t use headers in one column and all data in a second column, as this will make it almost impossible for screen readers to work out the relationships between data across columns.</p>
+
+        <p><img src="/WAI/content-images/wai-tutorials/tables/headers-in-one-column-all-data-in-second.png" alt="On the left, a table with two columns is shown. The header for the first column reads “Shirt” and the header for the second column reads “Sizes and amount in stock”. The second row reads “Blue” in the first column and “S: 6; M: 13, XL: 10”. In the second row, Sizes for a “Red” shirt are “M: 2; L: 9; XL: 10; XXL: 1”. On the right, the table is split up in “Shirt”, “Size” and “Stock” columns." class="" /></p>
+      </li>
+      <li>
+        <p>Don’t use line breaks (<code class="language-plaintext highlighter-rouge">&lt;br&gt;</code> elements) to create table rows as the data in the pseudo-rows may no longer align correctly when text is resized.</p>
+
+        <p><img src="/WAI/content-images/wai-tutorials/tables/table-text-resize.png" alt="On the top there is a table where the content and header cells are not marked up correctly. Line breaks are used to make items look like they align correctly. When resizing the text (bottom) the items don’t line up anymore" class="" /></p>
+      </li>
     </ul>
   </li>
-</ul>
-
-<p><img src="/WAI/content-images/wai-tutorials/tables/headers-in-one-column-all-data-in-second.png" alt="On the left, a table with two columns is shown. The header for the first column reads “Shirt” and the header for the second column reads “Sizes and amount in stock”. The second row reads “Blue” in the first column and “S: 6; M: 13, XL: 10”. In the second row, Sizes for a “Red” shirt are “M: 2; L: 9; XL: 10; XXL: 1”. On the right, the table is split up in “Shirt”, “Size” and “Stock” columns." class="" /></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Don't use line breaks (`&lt;br&gt;` elements) to create table rows as the data in the pseudo-rows may no longer align correctly when text is resized.
-</code></pre></div></div>
-
-<p><img src="/WAI/content-images/wai-tutorials/tables/table-text-resize.png" alt="On the top there is a table where the content and header cells are not marked up correctly. Line breaks are used to make items look like they align correctly. When resizing the text (bottom) the items don’t line up anymore" class="" /></p>
-
-<ul>
   <li>
     <p><strong>Alignment:</strong> Align text to the left and numeric data to the right (in left-to-right languages), so that people using larger text sizes or smaller screens will be able to find it. This is especially useful if a cell spans more than one column. It’s  helpful to give column headers the same alignment as the data in the cells below.</p>
   </li>
@@ -348,9 +347,9 @@
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1710440220018967146"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1710600900709915168"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1710440220018967146"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1710600900709915168"></script>
 <script>
   svg4everybody();
 </script><script>
