@@ -2356,6 +2356,7 @@
 /content-images/wai-easy-checks/example-correct-label.png
 /content-images/wai-easy-checks/example-decorative-image.png
 /content-images/wai-easy-checks/example-form-field-names.png
+/content-images/wai-easy-checks/example-headings.png
 /content-images/wai-easy-checks/example-keyboard-focus.png
 /content-images/wai-easy-checks/example-language-de.png
 /content-images/wai-easy-checks/example-language-jp.png
@@ -2366,7 +2367,6 @@
 /content-images/wai-easy-checks/example-skip-link.png
 /content-images/wai-easy-checks/example-zoom-nozoom.png
 /content-images/wai-easy-checks/example-zoom-zoomed.png
-/content-images/wai-easy-checks/headings-example.png
 /content-images/wai-easy-checks/icon-alt-text.svg
 /content-images/wai-easy-checks/icon-captions.svg
 /content-images/wai-easy-checks/icon-color-contrast.svg
@@ -2379,7 +2379,7 @@
 /content-images/wai-easy-checks/icon-required.svg
 /content-images/wai-easy-checks/icon-skip-link.svg
 /content-images/wai-easy-checks/icon-transcripts.svg
-/content-images/wai-easy-checks/icon-zoom-levels.svg
+/content-images/wai-easy-checks/icon-zoom.svg
 /content-images/wai-easy-checks/image-alt_text2.png
 /content-images/wai-easy-checks/image-picture.png
 /content-images/wai-eval-overview/conformance-evaluation.en.vtt
@@ -3375,7 +3375,7 @@
 /test-evaluate/easy-checks/skip-link/index.html
 /test-evaluate/easy-checks/title/index.html
 /test-evaluate/easy-checks/transcripts/index.html
-/test-evaluate/easy-checks/zoom-levels/index.html
+/test-evaluate/easy-checks/zoom/index.html
 /test-evaluate/es.html
 /test-evaluate/fr.html
 /test-evaluate/index.html
