@@ -3462,6 +3462,7 @@
 /tutorials/forms/notifications/index.html
 /tutorials/forms/validation/index.html
 /tutorials/images/complex/index.html
+/tutorials/images/decision-tree/id.html
 /tutorials/images/decision-tree/index.html
 /tutorials/images/decision-tree/ja.html
 /tutorials/images/decorative/index.html
