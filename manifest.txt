@@ -245,6 +245,7 @@
 /about/projects/wai-tools/symposium/record/index.html
 /about/projects/wai-tools/third-open-meeting/index.html
 /about/sponsoring/index.html
+/about/translating/guides/images/index.html
 /about/translating/guides/index.html
 /about/translating/guides/new-translation/index.html
 /about/translating/guides/review-translation/index.html
@@ -2167,6 +2168,9 @@
 /content-images/wai-about-wai/translating/expand-file-tree.jpg
 /content-images/wai-about-wai/translating/fork-edit-link.jpg
 /content-images/wai-about-wai/translating/fork-repo.jpg
+/content-images/wai-about-wai/translating/inkscape-export-png.jpg
+/content-images/wai-about-wai/translating/inkscape-language-subtag.jpg
+/content-images/wai-about-wai/translating/inkscape-text-tool.jpg
 /content-images/wai-about-wai/translating/name-new-file.jpg
 /content-images/wai-about-wai/translating/new-file.jpg
 /content-images/wai-about-wai/translating/preview-processing.jpg
