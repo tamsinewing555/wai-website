@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2024-03-19/job-openings/",
+            "title": "Job Openings: Content Specialist, Technical Specialist",
+            "summary": null,
+            "content_text": "W3C is seeking candidates from diverse backgrounds for two open positions in accessibility: 1. Accessibility Content Specialist for full-time remote work on accessibility materials. 2. Web Technical Specialist for full-time remote work in the USA on a project developing the technical infrastructure to support digital accessibility materials development and delivery. We welcome applications by 2 April 2024.",
+            "content_html": "<p>W3C is seeking candidates from diverse backgrounds for two open positions in accessibility: 1. <a href=\"https://www.w3.org/careers/2024-accessibility-content-specialist-job-posting/\">Accessibility Content Specialist</a> for full-time remote work on accessibility materials. 2. <a href=\"https://www.w3.org/careers/2024-web-technical-specialist/\">Web Technical Specialist</a> for full-time remote work in the USA on a project developing the technical infrastructure to support digital accessibility materials development and delivery. We welcome applications by 2 April 2024.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-03-19/job-openings/",
+            
+            
+            
+            
+            
+            "date_published": "2024-03-19T00:00:00+00:00",
+            "date_modified": "2024-03-19T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2024-02-27/dpub/",
             "title": "Call for Implementations: Digital Publishing Accessibility Candidate Recommendations",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2022-05-17T00:00:00+00:00",
             "date_modified": "2022-05-17T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-04-13/saur/",
-            "title": "For Wide Review: Synchronization Accessibility User Requirements (SAUR)",
-            "summary": null,
-            "content_text": "Synchronization Accessibility User Requirements (SAUR) is ready for wide review before finalizing and publishing it as a W3C Note. SAUR describes accessibility user needs and requirements for audio and visual media synchronization. It discusses synchronization of accessibility-related components of multimedia, such as captions, sign language interpretation, and description. Additional information is in the 13 April 2022 review e-mail. Please submit any comments by 13 May 2022.",
-            "content_html": "<p><a href=\"https://www.w3.org/TR/saur/\">Synchronization Accessibility User Requirements</a> (SAUR) is ready for wide review before finalizing and publishing it as a W3C Note. SAUR describes accessibility user needs and requirements for audio and visual media synchronization. It discusses synchronization of accessibility-related components of multimedia, such as captions, sign language interpretation, and description. Additional information is in the <a href=\"https://lists.w3.org/Archives/Public/public-wai-announce/2022AprJun/0001.html\">13 April 2022 review e-mail</a>. Please submit any comments by <strong>13 May 2022</strong>.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-04-13/saur/",
-            
-            
-            
-            
-            
-            "date_published": "2022-04-13T00:00:00+00:00",
-            "date_modified": "2022-04-13T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
