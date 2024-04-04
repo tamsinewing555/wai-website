@@ -2539,6 +2539,8 @@
 /content-images/wai-statements/accordion.js
 /content-images/wai-statements/generator.css
 /content-images/wai-statements/generator.js
+/content-images/wai-std-gl-overview/source/specs.fr.svg
+/content-images/wai-std-gl-overview/source/specs.svg
 /content-images/wai-std-gl-overview/specs.fr.png
 /content-images/wai-std-gl-overview/specs.png
 /content-images/wai-tutorials/carousels/carousels-paging-buttons.png
