@@ -3375,6 +3375,7 @@
 /standards-guidelines/wcag/glance/fr.html
 /standards-guidelines/wcag/glance/index.html
 /standards-guidelines/wcag/index.html
+/standards-guidelines/wcag/ja.html
 /standards-guidelines/wcag/new-in-21/es.html
 /standards-guidelines/wcag/new-in-21/index.html
 /standards-guidelines/wcag/new-in-22/index.html
@@ -3433,6 +3434,7 @@
 /tips/designing/fr.html
 /tips/designing/id.html
 /tips/designing/index.html
+/tips/designing/ja.html
 /tips/developing/fr.html
 /tips/developing/id.html
 /tips/developing/index.html
@@ -3482,11 +3484,12 @@
 /tutorials/forms/notifications/index.html
 /tutorials/forms/validation/index.html
 /tutorials/images/complex/index.html
+/tutorials/images/decision-tree/de.html
 /tutorials/images/decision-tree/fr.html
 /tutorials/images/decision-tree/id.html
 /tutorials/images/decision-tree/index.html
 /tutorials/images/decision-tree/ja.html
-/tutorials/images/decision-tree/kr.html
+/tutorials/images/decision-tree/ko.html
 /tutorials/images/decorative/index.html
 /tutorials/images/examples/2014-first-qtr/index.html
 /tutorials/images/examples/imagemap/index.html
