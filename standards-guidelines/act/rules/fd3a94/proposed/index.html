@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1712591053722583599";
+      element.src = "/WAI/assets/scripts/main.js?1712668096387287904";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1712591053722583599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1712668096387287904">
 
-<title> Links with identical accessible names and same context serve equivalent purpose[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1712591053722583599"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Links with identical accessible names and same context serve equivalent purpose[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1712668096387287904"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Links with identical accessible names and same context serve equivalent purpose" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -766,13 +766,21 @@ not tested by the rule:</p>
 
 <h4 id="failed-example-1">Failed Example 1</h4>
 
-<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/35fffc5189dce0022ebb0795bf3fa5a26735b5c2.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9ceacbea5df44a14dc17df2089edb134f22decd3.html">Open in a new tab</a></p>
 
 <p>These two HTML <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and are nested within the same <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">context</a>, but go to different resources.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;p&gt;</span>
-		To get in touch with us, you can either <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1"</span><span class="nt">&gt;</span>contact us<span class="nt">&lt;/a&gt;</span> via chat or <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2"</span><span class="nt">&gt;</span>contact us<span class="nt">&lt;/a&gt;</span> by phone.
+		To get in touch with us, you can either
+		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1"</span>
+			<span class="nt">&gt;</span>contact us<span class="nt">&lt;/a</span>
+		<span class="nt">&gt;</span>
+		via chat or
+		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2"</span>
+			<span class="nt">&gt;</span>contact us<span class="nt">&lt;/a</span>
+		<span class="nt">&gt;</span>
+		by phone.
 	<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
@@ -808,7 +816,7 @@ not tested by the rule:</p>
 
 <h4 id="failed-example-4">Failed Example 4</h4>
 
-<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/ea34f740055ca12e4363bdd3046536a0016b6f1d.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/7f585ec08b99c103759f23ea36fe0ee263a7a1b4.html">Open in a new tab</a></p>
 
 <p>These two HTML <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">context</a>, but go to different resources. Their purpose is disambiguated for sighted users by the alignment of the links with the images above.</p>
 
@@ -816,12 +824,18 @@ not tested by the rule:</p>
 	<span class="nt">&lt;div&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"text-align:center;"</span><span class="nt">&gt;</span>Contact us<span class="nt">&lt;/span&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"display:flex; justify-content:space-around;"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/chat.png"</span> <span class="na">alt=</span><span class="s">"Chat"</span> <span class="na">style=</span><span class="s">"width:50%;"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/phone.png"</span> <span class="na">alt=</span><span class="s">"Phone"</span> <span class="na">style=</span><span class="s">"width:50%;"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/chat.png"</span> <span class="na">alt=</span><span class="s">"Chat"</span> <span class="na">style=</span><span class="s">"width:50%;"</span> <span class="nt">/&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/phone.png"</span> <span class="na">alt=</span><span class="s">"Phone"</span> <span class="na">style=</span><span class="s">"width:50%;"</span> <span class="nt">/&gt;</span>
 		<span class="nt">&lt;/span&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"display:flex; justify-content:space-around;"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=60e950cff70bf1ec60a702086748ab4dec361514"</span><span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/a&gt;</span>
-			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=c1d4e0f067462f4b28716f028d9213a25eb82f28"</span><span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/a&gt;</span>
+			<span class="nt">&lt;a</span>
+				<span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=60e950cff70bf1ec60a702086748ab4dec361514"</span>
+				<span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/a</span>
+			<span class="nt">&gt;</span>
+			<span class="nt">&lt;a</span>
+				<span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=c1d4e0f067462f4b28716f028d9213a25eb82f28"</span>
+				<span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/a</span>
+			<span class="nt">&gt;</span>
 		<span class="nt">&lt;/span&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
@@ -829,7 +843,7 @@ not tested by the rule:</p>
 
 <h4 id="failed-example-5">Failed Example 5</h4>
 
-<p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/b54ab4d7e7e33c3224ea0a94ab1d77a9cbc5b719.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9c4840c9caed7d6f2d8f585d6fe36ea2218998b0.html">Open in a new tab</a></p>
 
 <p>These two HTML <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">context</a>. They link to web pages that are similar, but have different information in their content. Their purpose is disambiguated for sighted users by the alignment of the links with the images above.</p>
 
@@ -837,12 +851,16 @@ not tested by the rule:</p>
 	<span class="nt">&lt;div&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"text-align:center;"</span><span class="nt">&gt;</span>Contact us<span class="nt">&lt;/span&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"display:flex; justify-content:space-around;"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/chat.png"</span> <span class="na">alt=</span><span class="s">"Chat"</span> <span class="na">style=</span><span class="s">"width:50%;"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/phone.png"</span> <span class="na">alt=</span><span class="s">"Phone"</span> <span class="na">style=</span><span class="s">"width:50%;"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/chat.png"</span> <span class="na">alt=</span><span class="s">"Chat"</span> <span class="na">style=</span><span class="s">"width:50%;"</span> <span class="nt">/&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/phone.png"</span> <span class="na">alt=</span><span class="s">"Phone"</span> <span class="na">style=</span><span class="s">"width:50%;"</span> <span class="nt">/&gt;</span>
 		<span class="nt">&lt;/span&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"display:flex; justify-content:space-around;"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=3"</span><span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/a&gt;</span>
-			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=4"</span><span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/a&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=3"</span>
+				<span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/a</span>
+			<span class="nt">&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=4"</span>
+				<span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/a</span>
+			<span class="nt">&gt;</span>
 		<span class="nt">&lt;/span&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
@@ -850,7 +868,7 @@ not tested by the rule:</p>
 
 <h4 id="failed-example-6">Failed Example 6</h4>
 
-<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/d6722285d2064d636b867302b2cf5177f29283d0.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/07d22448c8eee64414dd9444263ae4039a0a2d79.html">Open in a new tab</a></p>
 
 <p>These two HTML <code class="language-plaintext highlighter-rouge">span</code> elements have an <a href="#explicit-role" title="Definition of explicit role">explicit role</a> of link, same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">context</a>, but link to resources that offer different content. Their purpose is disambiguated for sighted users by the alignment of the links with the images above.</p>
 
@@ -858,18 +876,22 @@ not tested by the rule:</p>
 	<span class="nt">&lt;div&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"text-align:center;"</span><span class="nt">&gt;</span>Contact us<span class="nt">&lt;/span&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"display:flex; justify-content:space-around;"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/chat.png"</span> <span class="na">alt=</span><span class="s">"Chat"</span> <span class="na">style=</span><span class="s">"width:50%;"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/phone.png"</span> <span class="na">alt=</span><span class="s">"Phone"</span> <span class="na">style=</span><span class="s">"width:50%;"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/chat.png"</span> <span class="na">alt=</span><span class="s">"Chat"</span> <span class="na">style=</span><span class="s">"width:50%;"</span> <span class="nt">/&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/phone.png"</span> <span class="na">alt=</span><span class="s">"Phone"</span> <span class="na">style=</span><span class="s">"width:50%;"</span> <span class="nt">/&gt;</span>
 		<span class="nt">&lt;/span&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"display:flex; justify-content:space-around;"</span><span class="nt">&gt;</span>
 			<span class="nt">&lt;span</span>
-			<span class="na">role=</span><span class="s">"link"</span>
-			<span class="na">tabindex=</span><span class="s">"0"</span>
-			<span class="na">onclick=</span><span class="s">"location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1'"</span><span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/span&gt;</span>
+				<span class="na">role=</span><span class="s">"link"</span>
+				<span class="na">tabindex=</span><span class="s">"0"</span>
+				<span class="na">onclick=</span><span class="s">"location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1'"</span>
+				<span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/span</span>
+			<span class="nt">&gt;</span>
 			<span class="nt">&lt;span</span>
-			<span class="na">role=</span><span class="s">"link"</span>
-			<span class="na">tabindex=</span><span class="s">"0"</span>
-			<span class="na">onclick=</span><span class="s">"location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2'"</span><span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/span&gt;</span>
+				<span class="na">role=</span><span class="s">"link"</span>
+				<span class="na">tabindex=</span><span class="s">"0"</span>
+				<span class="na">onclick=</span><span class="s">"location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2'"</span>
+				<span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/span</span>
+			<span class="nt">&gt;</span>
 		<span class="nt">&lt;/span&gt;</span>
 	<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
@@ -877,7 +899,7 @@ not tested by the rule:</p>
 
 <h4 id="failed-example-7">Failed Example 7</h4>
 
-<p><a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/e46aa0c92537c59e62c17ea1a66085ab04add68f.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/f4ba39778eac51bcbf787a9f173a11504abbfb71.html">Open in a new tab</a></p>
 
 <p>These two SVG <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">context</a> but link to different resources.</p>
 
@@ -885,11 +907,21 @@ not tested by the rule:</p>
 	<span class="nt">&lt;p&gt;</span>
 		<span class="nt">&lt;svg</span> <span class="na">enable-background=</span><span class="s">"new 0 0 264 120"</span> <span class="na">viewBox=</span><span class="s">"0 -20 264 140"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;</span>
 			<span class="nt">&lt;text&gt;</span>Contact us<span class="nt">&lt;/text&gt;</span>
-			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1"</span> <span class="na">aria-label=</span><span class="s">"Contact Us"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"m212.0806 68.0717c-10.3917 10.3852-22.4311 20.3239-27.1905 15.5646-6.8075-6.8075-11.0088-12.7418-26.0285-.6696-15.0132 12.0657-3.4792 20.1139 3.1182 26.7047 7.6149 7.6149 36.0001.407 64.0571-27.6434 28.0504-28.057 35.2386-56.4422 27.6172-64.0571-6.5974-6.604-14.6062-18.1314-26.6719-3.1182-12.0723 15.0132-6.1444 19.2145.6761 26.0285 4.7397 4.7593-5.1925 16.7988-15.5777 27.1905z"</span><span class="nt">/&gt;</span>
+			<span class="nt">&lt;a</span>
+				<span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1"</span>
+				<span class="na">aria-label=</span><span class="s">"Contact Us"</span>
+			<span class="nt">&gt;</span>
+				<span class="nt">&lt;path</span>
+					<span class="na">d=</span><span class="s">"m212.0806 68.0717c-10.3917 10.3852-22.4311 20.3239-27.1905 15.5646-6.8075-6.8075-11.0088-12.7418-26.0285-.6696-15.0132 12.0657-3.4792 20.1139 3.1182 26.7047 7.6149 7.6149 36.0001.407 64.0571-27.6434 28.0504-28.057 35.2386-56.4422 27.6172-64.0571-6.5974-6.604-14.6062-18.1314-26.6719-3.1182-12.0723 15.0132-6.1444 19.2145.6761 26.0285 4.7397 4.7593-5.1925 16.7988-15.5777 27.1905z"</span>
+				<span class="nt">/&gt;</span>
 			<span class="nt">&lt;/a&gt;</span>
-			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2"</span> <span class="na">aria-label=</span><span class="s">"Contact Us"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"m105 7.5h-90c-8.2576 0-15 6.7497-15 15v52.5c0 8.2498 6.7424 15 15 15h30l30 22.5v-22.5h30c8.2498 0 15-6.7502 15-15v-52.5c0-8.2503-6.7502-15-15-15zm-80.7903 52.5c-6.2132 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0418-11.25 11.255-11.25 6.2128 0 11.245 5.0418 11.245 11.25 0 6.2077-5.0322 11.25-11.245 11.25zm35.7953 0c-6.2128 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0423-11.25 11.255-11.25 6.2132 0 11.245 5.0368 11.245 11.25 0 6.2128-5.0317 11.25-11.245 11.25zm35.7958 0c-6.2132 0-11.2555-5.0372-11.2555-11.25 0-6.2132 5.0423-11.25 11.2555-11.25 6.2128 0 11.2445 5.0368 11.2445 11.25 0 6.2128-5.0318 11.25-11.2445 11.25z"</span><span class="nt">/&gt;</span>
+			<span class="nt">&lt;a</span>
+				<span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2"</span>
+				<span class="na">aria-label=</span><span class="s">"Contact Us"</span>
+			<span class="nt">&gt;</span>
+				<span class="nt">&lt;path</span>
+					<span class="na">d=</span><span class="s">"m105 7.5h-90c-8.2576 0-15 6.7497-15 15v52.5c0 8.2498 6.7424 15 15 15h30l30 22.5v-22.5h30c8.2498 0 15-6.7502 15-15v-52.5c0-8.2503-6.7502-15-15-15zm-80.7903 52.5c-6.2132 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0418-11.25 11.255-11.25 6.2128 0 11.245 5.0418 11.245 11.25 0 6.2077-5.0322 11.25-11.245 11.25zm35.7953 0c-6.2128 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0423-11.25 11.255-11.25 6.2132 0 11.245 5.0368 11.245 11.25 0 6.2128-5.0317 11.25-11.245 11.25zm35.7958 0c-6.2132 0-11.2555-5.0372-11.2555-11.25 0-6.2132 5.0423-11.25 11.2555-11.25 6.2128 0 11.2445 5.0368 11.2445 11.25 0 6.2128-5.0318 11.25-11.2445 11.25z"</span>
+				<span class="nt">/&gt;</span>
 			<span class="nt">&lt;/a&gt;</span>
 		<span class="nt">&lt;/svg&gt;</span>
 	<span class="nt">&lt;/p&gt;</span>
@@ -898,7 +930,7 @@ not tested by the rule:</p>
 
 <h4 id="failed-example-8">Failed Example 8</h4>
 
-<p><a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/0747261988867c23323b93f2c2a3f48db0f38f7e.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/b016056025da8b4c5a08c0b72adc7cd2ab65a545.html">Open in a new tab</a></p>
 
 <p>These two HTML <code class="language-plaintext highlighter-rouge">a</code> elements with the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">context</a> resolve to the <a href="#same-resource" title="Definition of same resource">same resource</a> after redirect, but the redirect is not instant.</p>
 
@@ -906,8 +938,8 @@ not tested by the rule:</p>
 	<span class="nt">&lt;p&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"text-align:center;"</span><span class="nt">&gt;</span>Contact us<span class="nt">&lt;/span&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"display:flex; justify-content:space-around;"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/chat.png"</span> <span class="na">alt=</span><span class="s">"Chat"</span> <span class="na">style=</span><span class="s">"width:50%;"</span><span class="nt">&gt;</span>
-			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/phone.png"</span> <span class="na">alt=</span><span class="s">"Phone"</span> <span class="na">style=</span><span class="s">"width:50%;"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/chat.png"</span> <span class="na">alt=</span><span class="s">"Chat"</span> <span class="na">style=</span><span class="s">"width:50%;"</span> <span class="nt">/&gt;</span>
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/test-assets/shared/phone.png"</span> <span class="na">alt=</span><span class="s">"Phone"</span> <span class="na">style=</span><span class="s">"width:50%;"</span> <span class="nt">/&gt;</span>
 		<span class="nt">&lt;/span&gt;</span>
 		<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"display:flex; justify-content:space-around;"</span><span class="nt">&gt;</span>
 			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"</span><span class="nt">&gt;</span>Contact Us<span class="nt">&lt;/a&gt;</span>
@@ -1297,7 +1329,7 @@ not tested by the rule:</p>
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> fd3a94</p>
-<p><strong>Date:</strong> Updated 22 March 2024</p>
+<p><strong>Date:</strong> Updated 3 April 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, Giacomo Petri. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1339,9 +1371,9 @@ not tested by the rule:</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1712591053722583599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1712668096387287904"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1712591053722583599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1712668096387287904"></script>
 <script>
   svg4everybody();
 </script><script>
