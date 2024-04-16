@@ -3462,6 +3462,7 @@
 /tips/developing/fr.html
 /tips/developing/id.html
 /tips/developing/index.html
+/tips/developing/ja.html
 /tips/fr.html
 /tips/id.html
 /tips/img/arrow-down.png
@@ -3484,6 +3485,7 @@
 /tips/writing/fr.html
 /tips/writing/id.html
 /tips/writing/index.html
+/tips/writing/ja.html
 /tools-list/authoring/index.html
 /tools-list/authoring/submit-a-tool/failure.html
 /tools-list/authoring/submit-a-tool/index.html
