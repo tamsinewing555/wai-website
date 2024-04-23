@@ -2168,6 +2168,7 @@
 /content-assets/wcag-act-rules/testcases/ye5d6e/f75c1d3e3e4d3ef33020e90c115c6f4245170486.html
 /content-images/home/wcag21-release.png
 /content-images/social-translations.png
+/content-images/test-eval/video-thumb-conformance.png
 /content-images/wai-InvolveUsersAll/video-thumb-involving-users.png
 /content-images/wai-InvolveUsersEval/video-thumb-involving-users.png
 /content-images/wai-about-w3c-process/cr.gif
@@ -2645,7 +2646,6 @@
 /content-images/wai-video-standards-and-benefits/show-language.png
 /content-images/wai-video-standards-and-benefits/show-language.pt-BR.png
 /content-images/wai-video-standards-and-benefits/show-transcript.png
-/content-images/wai-wcag-em-overview/video-thumb-conformance.png
 /content-images/wai-wcag-supplemental/README.md
 /content-images/wai-wcag-supplemental/StartHere.svg
 /content-images/wai-wcag-supplemental/brain.svg
