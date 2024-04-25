@@ -2167,6 +2167,7 @@
 /content-assets/wcag-act-rules/testcases/ye5d6e/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg
 /content-assets/wcag-act-rules/testcases/ye5d6e/f75c1d3e3e4d3ef33020e90c115c6f4245170486.html
 /content-images/home/wcag21-release.png
+/content-images/involving-users/video-thumb-involving-users.png
 /content-images/social-translations.png
 /content-images/test-eval/video-thumb-conformance.png
 /content-images/wai-InvolveUsersAll/video-thumb-involving-users.png
@@ -2478,7 +2479,6 @@
 /content-images/wai-fundamentals-overview/wcag2.1AAA-blue-v.svg
 /content-images/wai-intro-accessibility/video-still-accessibility-intro-16-9.jpg
 /content-images/wai-intro-accessibility/video-still-accessibility-perspectives-16-9.jpg
-/content-images/wai-intro-aria/tree-nav.png
 /content-images/wai-intro-wcag/brain-icon.svg
 /content-images/wai-intro-wcag/calandara.svg
 /content-images/wai-intro-wcag/conformance-logos-social.png
@@ -2548,7 +2548,6 @@
 /content-images/wai-news/2019-09-10-making-audio-and-video-media-accessible.png
 /content-images/wai-news/2019-12-03-w3cx-accessibility-intro.jpg
 /content-images/wai-people-use-web/social.png
-/content-images/wai-plan-policies-overview/video-thumb-involving-users.png
 /content-images/wai-selecting-eval-tools/tools-for-evaluating-cc.vtt
 /content-images/wai-selecting-eval-tools/video-thumb-tools.png
 /content-images/wai-statements/accordion.js
