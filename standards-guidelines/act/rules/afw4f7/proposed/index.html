@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1714474388810319025";
+      element.src = "/WAI/assets/scripts/main.js?1714483314688346975";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1714474388810319025">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1714483314688346975">
 
-<title> Text has minimum contrast[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1714474388810319025"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Text has minimum contrast[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1714483314688346975"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Text has minimum contrast" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -922,11 +922,11 @@ not tested by the rule:</p>
 
 <h3 id="large-scale-text">Large Scale Text</h3>
 
-<p>Text nodes with a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/css-fonts-3/#propdef-font-size">font-size</a> of:</p>
+<p>A text node is large scale text if at least one of the following is true:</p>
 
 <ul>
-  <li>at least 18 <a href="https://www.w3.org/TR/css-values/#pt">points</a>, or</li>
-  <li>at least 14 <a href="https://www.w3.org/TR/css-values/#pt">points</a> and a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/css-fonts-3/#font-weight-prop">font weight</a> CSS property of 700 or higher.</li>
+  <li>the text node <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/css-fonts-3/#propdef-font-size">font-size</a> is at least 18 <a href="https://www.w3.org/TR/css-values/#pt">points</a>, or</li>
+  <li>the text node <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/css-fonts-3/#propdef-font-size">font-size</a> is at least 14 <a href="https://www.w3.org/TR/css-values/#pt">points</a> and has a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> <a href="https://www.w3.org/TR/css-fonts-3/#font-weight-prop">font weight</a> of 700 or higher.</li>
 </ul>
 
 <h3 id="marked-as-decorative">Marked as decorative</h3>
@@ -964,10 +964,10 @@ not tested by the rule:</p>
 
 <h3 id="programmatically-hidden">Programmatically Hidden</h3>
 
-<p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/07/23">flat tree</a>:</p>
+<p>An HTML element is <em>programmatically hidden</em> if either it has a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">visibility</code> whose value is not <code class="language-plaintext highlighter-rouge">visible</code>; or at least one of the following is true for any of its <a href="https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor" title="DOM Definition of Inclusive Ancestor">inclusive ancestors</a> in the <a href="https://drafts.csswg.org/css-scoping/#flat-tree" title="CSS draft, flat tree, 2020/07/23">flat tree</a>:</p>
 
 <ul>
-  <li>has a <a href="https://www.w3.org/TR/css-cascade/#computed-value" title="CSS definition of computed value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
+  <li>has a <a href="https://www.w3.org/TR/css-cascade-3/#computed-value">computed</a> CSS property <code class="language-plaintext highlighter-rouge">display</code> of <code class="language-plaintext highlighter-rouge">none</code>; or</li>
   <li>has an <code class="language-plaintext highlighter-rouge">aria-hidden</code> attribute set to <code class="language-plaintext highlighter-rouge">true</code></li>
 </ul>
 
@@ -1119,7 +1119,7 @@ https://github.com/w3c/wcag-act-rules/edit/master/content/rules/afw4f7/proposed.
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> afw4f7</p>
-<p><strong>Date:</strong> Updated 1 March 2024</p>
+<p><strong>Date:</strong> Updated 25 April 2024</p>
 <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1161,9 +1161,9 @@ https://github.com/w3c/wcag-act-rules/edit/master/content/rules/afw4f7/proposed.
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1714474388810319025"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1714483314688346975"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1714474388810319025"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1714483314688346975"></script>
 <script>
   svg4everybody();
 </script><script>

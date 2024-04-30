@@ -1046,6 +1046,7 @@
 /content-assets/wcag-act-rules/testcases/4c31df/53b7029c408c7c90f96555b1380dc40c01b8065e.html
 /content-assets/wcag-act-rules/testcases/4c31df/7304f139186bd32c195aac6201d64174c0063c64.html
 /content-assets/wcag-act-rules/testcases/4c31df/7c96453dfa5053b4a1b9ee1ed1270167522b1c37.html
+/content-assets/wcag-act-rules/testcases/4c31df/7d3d7214d9fca81a8a09a819665871a474f85548.html
 /content-assets/wcag-act-rules/testcases/4c31df/968b12b14eb008b424f050ab74277426b2ea81bf.html
 /content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html
 /content-assets/wcag-act-rules/testcases/4c31df/b5c74f9ddba668623e33e33e3b8f773776f3177f.html
