@@ -2737,6 +2737,7 @@
 /fundamentals/es.html
 /fundamentals/fr.html
 /fundamentals/index.html
+/fundamentals/pl.html
 /index.html
 /manifest.txt
 /media/av/acknowledgements/index.html
@@ -3566,6 +3567,7 @@
 /videos/standards-and-benefits/ja.html
 /videos/standards-and-benefits/ko.html
 /videos/standards-and-benefits/nl.html
+/videos/standards-and-benefits/pl.html
 /videos/standards-and-benefits/pt-BR.html
 /videos/standards-and-benefits/ru.html
 /videos/standards-and-benefits/zh-hans.html
