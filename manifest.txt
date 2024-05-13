@@ -3346,6 +3346,7 @@
 /standards-guidelines/mobile/cs.html
 /standards-guidelines/mobile/es.html
 /standards-guidelines/mobile/fr.html
+/standards-guidelines/mobile/id.html
 /standards-guidelines/mobile/index.html
 /standards-guidelines/mobile/ko.html
 /standards-guidelines/mobile/ru.html
