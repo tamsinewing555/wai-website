@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1715066343365967270";
+      element.src = "/WAI/assets/scripts/main.js?1715599810301858404";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1715066343365967270">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1715599810301858404">
 
 <title> Multi-page Forms | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -286,9 +286,11 @@ progress {
 }
 
 progress::-webkit-progress-bar {
-	background-color:#036;
+	background-color:#FFF;
 }
-
+progress::-webkit-progress-value {
+	background-color: #036;
+}
 progress::-moz-progress-bar {
 	background-color:#036;
 }
@@ -323,6 +325,9 @@ Survey <span class="nt">&lt;progress</span> <span class="na">max=</span><span cl
 
 <span class="c">/* Apple Safari and Google Chrome */</span>
 <span class="nt">progress</span><span class="nd">::-webkit-progress-bar</span> <span class="p">{</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span class="m">#FFF</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">progress</span><span class="nd">::-webkit-progress-value</span> <span class="p">{</span>
 	<span class="nl">background-color</span><span class="p">:</span> <span class="m">#036</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -617,9 +622,9 @@ https://github.com/w3c/wai-tutorials/edit/master-2.0/content/forms/multi-page.md
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1715066343365967270"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1715599810301858404"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1715066343365967270"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1715599810301858404"></script>
 <script>
   svg4everybody();
 </script><script>
