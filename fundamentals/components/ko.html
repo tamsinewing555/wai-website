@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1715863948502062586";
+      element.src = "/WAI/assets/scripts/main.js?1715871555713515535";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1715863948502062586">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1715871555713515535">
 
 <title> 웹 접근성 필수 요소 | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -165,14 +165,14 @@
   <p>이 자원 번역자는 <a href="/WAI/fundamentals/components/">영어 원문</a>의 의도를 정확하게 나타내지 않았을 수 있습니다.</p>
   
   
-  <p><svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> 영문 버전이 다음 번역 이후로 업데이트되었습니다.: <a href="$1">변경 기록</a>
-    <br>영문 업데이트: <span dir="auto">2024-03-14</span>. 번역 업데이트: <span dir="auto">2024-03-05</span>.
-  </p>
+  <p><svg focusable="false" aria-hidden="true" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> 최근 영어 버전과 함께 업데이트되었습니다.
+    <br>번역 업데이트: <span dir="auto">2024-05-16</span>. 영문 업데이트: <span dir="auto">2024-03-14</span>.
+   </p>
   
   
   <p>
     <strong>번역한 사람</strong> <a href="https://twitter.com/yongui9" rel="nofollow noopener" target="_blank">Yong Ui Lee <svg focusable="false" aria-label="new tab/window" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>. 
-    기여한 사람 Jun Ho Lee. <br>WAI는 번역자에게 감사의 마음을 전하고, 다른 <a href="/WAI/about/translating/">번역</a>에도 참여하는 것을 환영합니다.</p>
+    기여한 사람 Jun Ho Lee, hwahyeon. <br>WAI는 번역자에게 감사의 마음을 전하고, 다른 <a href="/WAI/about/translating/">번역</a>에도 참여하는 것을 환영합니다.</p>
 </section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
 
 <p>이 페이지는 웹 접근성이 다른 요소들과 상호작용할 때 어떤 관계가 있고, 특정 요소들의 개선으로 웹 접근성을 크게 향상시킬 수 있는 방법들을 살펴봅니다.</p>
@@ -191,8 +191,8 @@
 
 
 <ul id="markdown-toc">
-  <li><a href="#relate" id="markdown-toc-relate">요소간 관계</a></li>
-  <li><a href="#depend" id="markdown-toc-depend">요소간 상호의존성</a></li>
+  <li><a href="#relate" id="markdown-toc-relate">요소 간 관계</a></li>
+  <li><a href="#depend" id="markdown-toc-depend">요소 간 상호의존성</a></li>
   <li><a href="#guidelines" id="markdown-toc-guidelines">지침과 다른 표준</a></li>
 </ul>
 
@@ -207,52 +207,52 @@
 <p>장애가 있는 사용자가 웹에 접근 가능하도록 하기 위해 웹 개발, 상호작용의 여러 요소들이 함께 동작하는 것은 필수적입니다. 다음 요소들이 포함됩니다 :</p>
 
 <ul>
-  <li><strong>콘텐츠</strong> - 웹 페이지나 웹 어플리케이션에 있는 정보. 예시 :
+  <li><strong>콘텐츠</strong> - 웹 페이지나 웹 애플리케이션에 있는 정보. 예시 :
     <ul>
       <li>텍스트, 이미지, 소리와 같은 기본 정보</li>
       <li>구조나 표현 방법 등을 정의한 코드나 마크업 등</li>
     </ul>
   </li>
   <li><strong>웹 브라우저, 미디어 플레이어</strong>, 그리고 다른 “사용자 에이전트”</li>
-  <li><strong>보조 기술</strong>, 스크린 리더, 대체 키보드, 스위치, 스캐닝 소프트웨어 등</li>
-  <li><strong>사용자</strong>의 지식, 경험, 웹 사용시 적응 전략</li>
+  <li><strong>보조 기술</strong>, 경우에 따라, 스크린 리더, 대체 키보드, 스위치, 스캐닝 소프트웨어 등</li>
+  <li><strong>사용자</strong>의 지식, 경험 그리고 경우에 따라, 웹 사용 시 적응 전략</li>
   <li><strong>개발자</strong> - 디자이너, 코더, 저자 등 콘텐츠에 기여한 사용자와 장애가 있는 개발자 포함</li>
   <li><strong>저작 도구</strong> - 웹 사이트를 만드는 소프트웨어</li>
   <li><strong>평가 도구</strong> - 웹 접근성 평가 도구, HTML 유효성 검사, CSS 유효성 검사 등</li>
 </ul>
 
-<h2 id="relate">요소간 관계</h2>
+<h2 id="relate">요소 간 관계</h2>
 
-<p><img src="/WAI/content-images/wai-components/relate.png" alt="요소간 관계를 보여주는 삽화. 자세한 설명은 다음 링크 참고 : /WAI/fundamentals/components/examples/#relate" longdesc="/WAI/fundamentals/components/examples/#relate" /></p>
+<div class="img-card"><img src="/WAI/content-images/components/relate.ko.png" alt="요소 간 관계를 보여주는 삽화" /><p><a href="/WAI/fundamentals/components/examples/ko#relate">이미지에 대한 긴 설명</a></p></div>
 
-<p>웹 <strong>개발자</strong>는 웹 <strong>콘텐츠</strong>를 만들기 위해 <strong>저작 도구</strong>와 평가 도구를 사용합니다.</p>
+<p>웹 <strong>개발자</strong>는 웹 <strong>콘텐츠</strong>를 만들기 위해 대개 <strong>저작 도구</strong>와 평가 도구를 사용합니다.</p>
 
 <p><strong>사람들</strong>(“<strong>사용자</strong>“)은 <strong>콘텐츠</strong>에 접근하고 사용하기 위해 웹 <strong>브라우저, 미디어 플레이어, 보조 기술</strong> 과 여러 “<strong>사용자 에이전트</strong>“를 사용합니다.</p>
 
-<h2 id="depend">요소간 상호의존성</h2>
+<h2 id="depend">요소 간 상호의존성</h2>
 
-<p>요소간 분명한 상호의존성이 있습니다. 웹이 접근 가능하도록 하기 위해서는 요소들이 함께 동작해야 합니다. 예를 들어, 이미지의 대체 텍스트가 있습니다. :</p>
+<p>요소 간 분명한 상호의존성이 있습니다. 웹이 접근 가능하도록 하기 위해서는 요소들이 함께 동작해야 합니다. 예를 들어, 이미지의 대체 텍스트가 있습니다 :</p>
 
 <ul>
   <li><strong>기술 명세</strong>는 대체 텍스트에 대해 말하고 있습니다. (예를 들어, HTML은 이미지 요소 (<code class="language-plaintext highlighter-rouge">img</code>)의 대체 텍스트 속성 (<code class="language-plaintext highlighter-rouge">alt</code>)을 정의합니다.)</li>
   <li><strong>WAI 지침</strong> (<a href="#guidelines">WCAG, ATAG, UAAG는 아래를 참고하세요.</a>) - 여러 요소들에서 접근성을 위한 대체 텍스트를 어떻게 사용할지 정의합니다.</li>
   <li><strong>개발자</strong>는 적절한 대체 텍스트 내용을 작성합니다.</li>
-  <li><strong>저작 도구</strong>는 웹 페이지에서 대체 텍스트 제공을 가능하게 합니다.</li>
+  <li><strong>저작 도구</strong>는 웹 페이지에서 대체 텍스트 제공을 가능하게 하고, 용이하게 하며, 장려합니다.</li>
   <li><strong>평가 도구</strong>는 대체 텍스트의 유무를 확인하는 데에 사용됩니다.</li>
-  <li><strong>사용자 에이전트</strong>는 인간 기계 인터페이스에 대체 텍스트를 제공합니다.</li>
-  <li><strong>보조 기술</strong>은 인간 인터페이스에 다양한 양식의 대체 텍스트를 제공합니다.</li>
-  <li><strong>사용자</strong>는 필요에 따라 그들의 사용자 에이전트나 보조 기술로부터 대체 텍스트를 제공받는 방법을 압니다.</li>
+  <li><strong>사용자 에이전트</strong>는 대체 텍스트에 대한 인적 및 기계 인터페이스를 제공합니다.</li>
+  <li><strong>보조 기술</strong>은 다양한 양식으로 대체 텍스트에 대한 인간 인터페이스를 제공합니다.</li>
+  <li><strong>사용자</strong>는 필요에 따라 그들의 사용자 에이전트나 보조 기술로부터 대체 텍스트를 제공받는 방법을 알고 있습니다.</li>
 </ul>
 
 <h3 id="실행-사이클">실행 사이클</h3>
 
 <p>접근성 기능이 한 요소에서 효과적으로 실행된다면, 다른 요소들도 해당 기능을 실행할 수 있을 것입니다.</p>
 
-<p><img src="/WAI/content-images/wai-components/cycle.png" alt="실행 사이클을 보여주는 삽화. 자세한 설명은 다음 링크 참고 : /WAI/fundamentals/components/examples/#cycle" longdesc="/WAI/fundamentals/components/examples/#cycle" /></p>
+<p><img src="/WAI/content-images/components/cycle.ko.png" alt="" /></p>
 
 <ul>
   <li><strong>웹 브라우저, 미디어 플레이어, 보조 기술, 사용자 에이전트</strong>가 접근성 기능을 지원할 때 사용자는 해당 기능을 더 요구할 것이고, 개발자들은 더 쉽게 그들의 <strong>콘텐츠</strong>에  해당 기능을 적용할 수 있을 것입니다.</li>
-  <li>개발자가 그들의 <strong>콘텐츠</strong>에 접근성 기능을 적용하고 싶을 때 그들의 <strong>사용자 에이전트</strong>에 해당 기능을 더 쉽게 이용할 수 있도록 요구할 수 있습니다.</li>
+  <li>개발자들이 콘텐츠에 접근성 기능을 구현하고자 할 때, 그들은 이를 더 쉽게 구현할 수 있는 <strong>저작도구</strong>를 요구할 가능성이 높습니다.</li>
   <li><strong>저작도구</strong>가 접근성 기능을 잘 실행할 수 있도록 해주었을 때 개발자들은 그들의 <strong>콘텐츠</strong>에 해당 기능을 더 잘 적용할 수 있을 것입니다.</li>
   <li>접근성 기능이 <strong>주요 콘텐츠</strong>에 적용되었을 때 개발자와 사용자는 <strong>사용자 에이전트</strong>가 지원하도록 요구하기 쉬워집니다.</li>
 </ul>
@@ -261,20 +261,20 @@
 
 <p>만약 접근성 기능이 한 요소에 잘 실행되지 않는다면 접근 가능한 사용자 경험을 야기하지 않게 되고, 다른 요소들이 접근성을 실행할 이유가 없어집니다. 예를 들어, 개발자는 저작 도구가 지원하지 않고, 대부분의 브라우저와 보조 기술이 계속해서 적용하지 않는 접근성 기능은 사용하지 않으려 할 것입니다.</p>
 
-<p><img src="/WAI/content-images/wai-components/bridge.png" alt="한 요소가 약할 경우에 대한 삽화. 자세한 설명은 다음 링크 참고 : /WAI/fundamentals/components/examples/#weak" longdesc="/WAI/fundamentals/components/examples/#weak" /></p>
+<div class="img-card"><img src="/WAI/content-images/components/bridge.ko.png" alt="한 요소가 약할 경우에 대한 삽화" /><p><a href="/WAI/fundamentals/components/examples/ko#weak">이미지에 대한 긴 설명</a></p></div>
 
-<p>만약 한 요소가 접근성 지원이 제대로 이루어지지 않는다면, 다른 요소들이 더 많은 노력을 해야 하고 접근성 측면에서 전반적으로 좋지 않은 “차선책”을 통해 보완하고자 할 것입니다.</p>
+<p>만약 한 요소가 접근성 지원이 제대로 이루어지지 않는다면, 다른 요소들이 더 많은 노력을 해야 하고 접근성 측면에서 전반적으로 좋지 않은 “차선책”을 통해 보완하고자 할 것입니다. 예를 들어,</p>
 
 <ul>
   <li>개발자는 저작도구의 부족한 접근성 지원을 보완하기 위해 더 많은 작업이 필요합니다. 예를 들어, 저작 도구를 사용하지 않고 코딩하고 마크업할 것입니다.</li>
   <li>사용자는 콘텐츠의 부족한 접근성과 브라우저, 미디어 플레이어, 보조 기술의 부족한 접근성 지원을 보완하기 위해 더 많은 작업이 필요합니다. 예를 들어, 여러 접근성 문제를 해결하기 위해 다른 브라우저와 보조 기술을 사용할 것입니다.</li>
 </ul>
 
-<p>그러나 대부분의 경우 차선책은 사용되지 않고, 낮은 접근성이 결과로 나타납니다. 게다가 가끔 한 요소에서의 낮은 접근성 지원은 다른 요소들로 보완하기 어렵기에 결국 낮은 접근성으로 이어지게 됩니다. 낮은 접근성은 장애가 있는 사용자가 특정 웹 사이트, 페이지, 기능에 접근하기 어렵게 만듭니다.</p>
+<p>그러나 대부분의 경우 해결 방법이 구현되지 않아 여전히 접근성이 열악합니다. 또한, 때때로 한 요소의 열악한 접근성 지원을 다른 요소들로 보완하기 어렵기에 결과적으로 열악한 접근성은 장애가 있는 사용자가 특정 웹 사이트, 페이지, 또는 기능에 접근하기 어렵게 만듭니다.</p>
 
 <h2 id="guidelines">지침과 다른 표준</h2>
 
-<p>월드 와이드 웹 컨소시움 (<a href="https://www.w3.org/">W3C</a>) 웹 접근성 이니셔티브 (<a href="https://www.w3.org/WAI/">WAI</a>)는 여러 요소들을 위한 <strong>웹 접근성 표준</strong>을 만들었습니다. :</p>
+<p>월드 와이드 웹 컨소시엄 (<a href="https://www.w3.org/">W3C</a>) 웹 접근성 이니셔티브 (<a href="https://www.w3.org/WAI/">WAI</a>)는 여러 요소들을 위한 <strong>웹 접근성 표준</strong>을 만들었습니다. :</p>
 
 <ul>
   <li><a href="/WAI/standards-guidelines/atag/" hreflang="en">웹 저작 도구 접근성 지침 (ATAG) (영어)</a>은 저작 도구에 대해 설명합니다.</li>
@@ -282,13 +282,13 @@
   <li><a href="/WAI/standards-guidelines/uaag/" hreflang="en">사용자 에이전트 접근성 지침 (UAAG) (영어)</a>은 보조 기술의 몇 가지 부분을 포함하여, 웹 브라우저와 미디어 플레이어에 대해 설명합니다.</li>
 </ul>
 
-<p>이러한 접근성 지침들은 웹의 기술 명세를 기본으로 하고, 모든 <a href="https://www.w3.org/TR/">W3C 기술 명세</a> (HTML, CSS, SVG, SMIL 등)를 참고하여 만들어졌습니다. 또한 W3C는 접근성을 주제로 한 기술 명세도 만들었습니다. 다음을 포함합니다. :</p>
+<p>이러한 접근성 지침들은 웹의 기술 명세를 기본으로 하고, 모든 <a href="https://www.w3.org/TR/">W3C 기술 명세</a> (HTML, CSS, SVG, SMIL 등)를 참고하여 만들어졌습니다. 또한 W3C는 접근성을 주제로 한 기술 명세도 만들었습니다. 다음을 포함합니다 :</p>
 
 <ul>
-  <li><a href="/WAI/standards-guidelines/aria/" hreflang="en">ARIA, 접근 가능한 리치 인터넷 어플리케이션  (영어)</a>은 장애가 있는 사용자가 접근하기 쉬운 웹 어플리케이션을 만들기 위한 방법을 정의하고 있습니다. Ajax, HTML, JavaScript와 관련 기술들로 만들어진 동적 콘텐츠나 고차원 사용자 인터페이스 제어에 특히 도움이 될 것입니다.</li>
+  <li><a href="/WAI/standards-guidelines/aria/" hreflang="en">ARIA, 접근 가능한 리치 인터넷 애플리케이션  (영어)</a>은 장애가 있는 사용자가 접근하기 쉬운 웹 애플리케이션을 만들기 위한 방법을 정의하고 있습니다. Ajax, HTML, JavaScript와 관련 기술들로 만들어진 동적 콘텐츠나 고차원 사용자 인터페이스 제어에 특히 도움이 될 것입니다.</li>
 </ul>
 
-<p><img src="/WAI/content-images/wai-components/specs.png" alt="여러 요소에 대한 지침들을 보여주는 삽화, 자세한 설명은 다음 링크 참고 : /WAI/fundamentals/components/examples/#guide" longdesc="/WAI/fundamentals/components/examples/#guide" /></p>
+<div class="img-card"><img src="/WAI/content-images/components/specs.ko.png" alt="여러 요소에 대한 지침들을 보여주는 삽화" /><p><a href="/WAI/fundamentals/components/examples/ko#guide">이미지에 대한 긴 설명</a></p></div>
 
 <p>더 많은 정보는 <a href="/WAI/standards-guidelines/ko">W3C 접근성 기준 개요</a>에서 확인하세요.</p>
 
@@ -315,7 +315,7 @@ https://github.com/w3c/wai-website/edit/master/pages/fundamentals/components/ind
   2. 작성한 자료나 발행물에 작가, 편집자, 저작권 정보를 추가하세요 :<br>
   <cite>작가 : Michael Duffy, 출처: Essential Components of Web  Accessibility. S.L. Henry, ed. Copyright W3C <sup>®</sup> (MIT, ERCIM, Keio, Beihang). w3.org/WAI/fundamentals/components/</cite><br>
   더 많은 정보를 원하시면, <a href="https://www.w3.org/WAI/about/usingWAImaterial.html">Using WAI Materials</a>를 참고하세요.
-</p> <p><strong>날짜: </strong>2018년 2월 27일 업데이트됨. <!-- [<a href="@@">변경 기록</a>] --></p> <p><strong>편집자:</strong> <a href="http://www.w3.org/People/Shawn">Shawn Lawton Henry</a>. 그래픽 디자이너: Michael Duffy.</p>
+</p> <p><strong>날짜: </strong>2024년 3월 14일 업데이트됨. <!-- [<a href="@@">변경 기록</a>] --></p> <p><strong>편집자:</strong> <a href="https://www.w3.org/People/Shawn">Shawn Lawton Henry</a>. 그래픽 디자이너: Michael Duffy.</p>
 </div>
   </footer>
   
@@ -355,13 +355,13 @@ https://github.com/w3c/wai-website/edit/master/pages/fundamentals/components/ind
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1715863948502062586"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1715871555713515535"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1715863948502062586"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1715871555713515535"></script>
 <script>
   svg4everybody();
 </script>
-<script src="/WAI/assets/scripts/lang/ko.js?1715863948502062586"></script>
+<script src="/WAI/assets/scripts/lang/ko.js?1715871555713515535"></script>
 
   </body>
 </html>
