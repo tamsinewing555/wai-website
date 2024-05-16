@@ -2943,6 +2943,7 @@
 /news/2024-01-23/for-review-wai-aria-1-3-FPWD/index.html
 /news/2024-02-27/dpub/index.html
 /news/2024-03-19/job-openings/index.html
+/news/2024-05-16/wcag3/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html

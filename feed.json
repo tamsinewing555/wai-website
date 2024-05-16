@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2024-05-16/wcag3/",
+            "title": "For Review: WCAG 3 Working Draft Outcomes",
+            "summary": null,
+            "content_text": "An updated WCAG 3 Working Draft is ready for review. This draft includes potential outcomes that we are exploring. The purpose of this draft is to:  better understand the scope of user needs and how they could be addressed in an accessibility standard,  request assistance in identifying gaps, and  request assistance locating and conducting research to validate or invalidate the drafted outcomes.To learn more about this draft and review questions, please see the WCAG 3 Introduction.",
+            "content_html": "<p>An updated <a href=\"https://www.w3.org/TR/wcag-3.0/\">WCAG 3 Working Draft</a> is ready for review. This draft includes potential outcomes that we are exploring. The purpose of this draft is to:</p><ul>  <li>better understand the scope of user needs and how they could be addressed in an accessibility standard,</li>  <li>request assistance in identifying gaps, and</li>  <li>request assistance locating and conducting research to validate or invalidate the drafted outcomes.</li></ul><p>To learn more about this draft and review questions, please see the <a href=\"https://www.w3.org/WAI/wcag3\">WCAG 3 Introduction</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-05-16/wcag3/",
+            
+            
+            
+            
+            
+            "date_published": "2024-05-16T00:00:00+00:00",
+            "date_modified": "2024-05-16T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2024-03-19/job-openings/",
             "title": "Job Openings: Content Specialist, Technical Specialist",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2022-05-19T00:00:00+00:00",
             "date_modified": "2022-05-19T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-05-17/remote-meetings/",
-            "title": "For Review: Accessibility of Remote Meetings - Updated Draft",
-            "summary": null,
-            "content_text": "An updated Working Draft of Accessibility of Remote Meetings is available for review and comment. This potential resource relates to How to Make Your Presentations Accessible to All and Making Audio and Video Media Accessible. We welcome input on how this information can better help vendors, organizations, and individuals make remote meetings more accessible to people with disabilities. For more information, see: e-mail on Remote Meetings and blog on Remote Meetings.",
-            "content_html": "<p>An updated <a href=\"https://www.w3.org/TR/remote-meetings/\">Working Draft of Accessibility of Remote Meetings</a> is available for review and comment. This potential resource relates to <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">How to Make Your Presentations Accessible to All</a> and <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>. We welcome input on how this information can better help vendors, organizations, and individuals make remote meetings more accessible to people with disabilities. For more information, see: <a href=\"https://lists.w3.org/Archives/Public/public-wai-announce/2022AprJun/0002.html\">e-mail on Remote Meetings</a> and <a href=\"https://www.w3.org/blog/2021/10/accessibility-of-remote-meetings-call-for-review/\">blog on Remote Meetings</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-05-17/remote-meetings/",
-            
-            
-            
-            
-            
-            "date_published": "2022-05-17T00:00:00+00:00",
-            "date_modified": "2022-05-17T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
