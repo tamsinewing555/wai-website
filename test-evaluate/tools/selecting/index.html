@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1715834238877654863";
+      element.src = "/WAI/assets/scripts/main.js?1715863948502062586";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1715834238877654863">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1715863948502062586">
 
 <title> Selecting Web Accessibility Evaluation Tools | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -143,7 +143,7 @@
       </h1></header>
     <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Introduction </h2></header><div class="box-i">
 
-<p>Web accessibility evaluation tools are software programs or online services that help determine if web content meets accessibility guidelines. This document highlights features of evaluation tools, and discusses different aspects to consider when selecting these tools. Links to different tools are provided in the <a href="https://www.w3.org/WAI/ER/tools/">Web Accessibility Evaluation Tools List</a>. That page also offers a filter assistant to help you make a first selection to find the tool that may best help you.</p>
+<p>Web accessibility evaluation tools are software programs or online services that help determine if web content meets accessibility guidelines. This document highlights features of evaluation tools, and discusses different aspects to consider when selecting these tools. Links to different tools are provided in the <a href="/WAI/test-evaluate/tools/list/">Web Accessibility Evaluation Tools List</a>. That page also offers a filter assistant to help you make a first selection to find the tool that may best help you.</p>
 
 </div></aside>
 
@@ -173,7 +173,7 @@
 <h2 id="video">Video: Evaluation Tools Overview</h2>
 
 <div class="video-container" data-video-type="" dir="ltr">
-  <video preload="metadata" data-youtube-id="bn1XJSjc_qM" data-youtube-nocookie="true" data-description-audible="false"><track src="/WAI/content-images/wai-selecting-eval-tools/tools-for-evaluating-cc.vtt" label="English" kind="captions" srclang="en" /></video>
+    <video preload="metadata" data-youtube-id="bn1XJSjc_qM" data-youtube-nocookie="true" data-description-audible="false"><track src="/WAI/wai-videos/evaluating/tools-for-evaluating.en.vtt" label="English" kind="captions" srclang="en" default="" /><track src="/WAI/wai-videos/evaluating/tools-for-evaluating.fr.vtt" label="français" kind="subtitles" srclang="fr" /></video>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -183,91 +183,62 @@
 <script src="/WAI/assets/ableplayer/build/ableplayer.min.js"></script>
 
 <script>
-  var youTubeDataAPIKey = "AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI";
-  var googleApiReady = false;
-  function initGoogleClientApi() {
-    googleApiReady = true;
-  }
+    var youTubeDataAPIKey = "AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI";
+    var googleApiReady = false;
+    function initGoogleClientApi() {
+        googleApiReady = true;
+    }
 </script>
 
 <script src="//apis.google.com/js/client.js?onload=initGoogleClientApi"></script>
 
 <script>
-(function () {
-  'use strict';
+    (function () {
+        'use strict';
 
-  var player1 = new AblePlayer($('[data-video-type=""] video'));
-  var player2 = new AblePlayer($('[data-video-type="audio-described"] video'));
+        let player1 = new AblePlayer($('[data-video-type=""] video'));
+        const audiodescribed = document.querySelectorAll('[data-video-type="audio-described"]');
+        const nonaudiodescribed = document.querySelectorAll('[data-video-type=""]');
 
-  function addclass(el, className) {
-    if (el.classList) {
-      el.classList.add(className);
-    } else {
-      if(! hasclass(el, className)){
-        el.className += ' ' + className;
-      }
-    }
-  }
+        if (audiodescribed.length > 0) {
+            let player2 = new AblePlayer($('[data-video-type="audio-described"] video'));
 
-  function removeclass(el, className) {
-    if (el.classList) {
-      el.classList.remove(className);
-    } else {
-      el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-    }
-  }
+            Array.prototype.forEach.call(audiodescribed, function(el, i){
+                el.setAttribute('hidden', true);
+            });
 
-  function hasclass(el, className) {
-    if (el.classList) {
-      return el.classList.contains(className);
-    } else {
-      return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
-    }
-  }
+            const adbutton = document.querySelector('#audio_description_button');
+            adbutton.addEventListener('click', function(e){
+                player1.pauseMedia();
+                player2.pauseMedia();
 
-  var audiodescribed = document.querySelectorAll('[data-video-type="audio-described"]');
+                if (e.currentTarget.getAttribute('data-status') === "audio-described") {
+                    Array.prototype.forEach.call(nonaudiodescribed, function(el, i){
+                        el.removeAttribute("hidden");
+                    });
+                    Array.prototype.forEach.call(audiodescribed, function(el, i){
+                        el.setAttribute('hidden', true);
+                    });
+                    e.currentTarget.setAttribute('data-status', 'non-audio-described');
+                    e.currentTarget.querySelector('span').textContent = 'Enable Audio Description';
+                } else {
+                    Array.prototype.forEach.call(nonaudiodescribed, function(el, i){
+                        el.setAttribute('hidden', true);
+                    });
+                    Array.prototype.forEach.call(audiodescribed, function(el, i){
+                        el.removeAttribute("hidden");
+                    });
+                    e.currentTarget.setAttribute('data-status', 'audio-described');
+                    e.currentTarget.querySelector('span').textContent = 'Disable Audio Description';
+                }
+            });
 
-  if (audiodescribed) {
+        }
 
-  Array.prototype.forEach.call(audiodescribed, function(el, i){
-    el.setAttribute('hidden', true);
-  });
-
-  var adbutton = document.querySelector('#audio_description_button');
-  adbutton.addEventListener('click', function(e){
-    player1.pauseMedia();
-    player2.pauseMedia();
-    if (e.target.getAttribute('data-status') == "audio-described") {
-      var videos = document.querySelectorAll('.video-container');
-      Array.prototype.forEach.call(videos, function(el, i){
-        el.removeAttribute("hidden");
-      });
-      var nonaudiodescribed = document.querySelectorAll('[data-video-type="audio-described"]');
-      Array.prototype.forEach.call(nonaudiodescribed, function(el, i){
-        el.setAttribute('hidden', true);
-      });
-      e.target.setAttribute('data-status', 'non-audio-described');
-      e.target.querySelector('span').innerHTML = 'Enable Audio Description';
-    } else {
-      var videos = document.querySelectorAll('.video-container');
-      Array.prototype.forEach.call(videos, function(el, i){
-        el.setAttribute('hidden', true);
-      });
-      var nonaudiodescribed = document.querySelectorAll('[data-video-type="audio-described"]');
-      Array.prototype.forEach.call(nonaudiodescribed, function(el, i){
-        el.removeAttribute("hidden");
-      });
-      e.target.setAttribute('data-status', 'audio-described');
-      e.target.querySelector('span').innerHTML = 'Disable Audio Description';
-    }
-  });
-
-  }
-
-}());
+    }());
 </script>
 
-<p><em>This video is also available on a W3C server: <a href="http://media.w3.org/wai/evaluation-intros/tools-for-evaluating.mp4">Video: Evaluation Tools Overview (file format: MP4, file size: 51MB)</a>.</em></p>
+<p><em>This video is also available on a W3C server: <a href="https://media.w3.org/wai/evaluation-intros/tools-for-evaluating.mp4">Video: Evaluation Tools Overview (file format: MP4, file size: 51MB)</a>.</em></p>
 
 <details id="video-intro-transcript"><summary>
 
@@ -363,7 +334,7 @@
 
 <h3 id="main-features">Main Features</h3>
 
-<p>The following features describe tools found on the <a href="https://www.w3.org/WAI/ER/tools/">Web Accessibility Evaluation Tools List</a>. These can be used as filters to reduce the number of tools shown.</p>
+<p>The following features describe tools found on the <a href="/WAI/test-evaluate/tools/list/">Web Accessibility Evaluation Tools List</a>. These can be used as filters to reduce the number of tools shown.</p>
 
 <dl>
   <dt><strong>Purpose</strong></dt>
@@ -433,7 +404,7 @@
     <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai-eo-editors@w3.org?subject=%5Ben%5D%20Selecting%20Web%20Accessibility%20Evaluation%20Tools&amp;body=%5Bput%20comment%20here...%5D%0A%0A">wai-eo-editors@w3.org</a> or via GitHub.</p>
 <div class="button-group">
     <a href="mailto:wai-eo-editors@w3.org?subject=%5Ben%5D%20Selecting%20Web%20Accessibility%20Evaluation%20Tools&body=%5Bput%20comment%20here...%5D%0A%0A" class="button"><span>E-mail</span></a><a href="
-https://github.com/w3c/wai-selecting-eval-tools/edit/master/content/index.md" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-selecting-eval-tools/issues/new?template=content-issue.yml&wai-url=https://www.w3.org/WAI/test-evaluate/tools/selecting/" class="button"><span>New GitHub Issue</span></a></div></div></aside>
+https://github.com/w3c/wai-website/edit/master/pages/test-eval/evaluation-tools/selecting-eval-tools.md" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&wai-resource-id=wai-selecting-eval-tools&wai-url=https://www.w3.org/WAI/test-evaluate/tools/selecting/" class="button"><span>New GitHub Issue</span></a></div></div></aside>
 
 
     <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
@@ -445,7 +416,7 @@ https://github.com/w3c/wai-selecting-eval-tools/edit/master/content/index.md" cl
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Date:</strong> Information on specific tools is updated frequently, as we receive it. In the information for each tool there is a last updated date. The Evaluation Tools List user interface was updated in December 2023. First published in March 2006.</p> <p><strong>Latest editors and developers:</strong> <a href="https://www.w3.org/People/kevin/">Kevin White</a>, Eric Velleman, Michel Hansma, and Vera Lange. <strong>Content maintainer:</strong> José Ramón Hilera González. <a href="https://www.w3.org/WAI/ER/tools/acknowledgements">Acknowledgements</a> lists contributors and previous editors, including <a href="https://www.w3.org/groups/wg/eowg/participants/">EOWG participants</a>, Eric Eggert, and Shadi Abou-Zahra.</p> <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>) Developed with support from the <a href="https://www.w3.org/WAI/TIES/">WAI-TIES Project</a> in 2006, updated with support from the <a href="https://www.w3.org/WAI/ACT/">WAI-ACT Project</a> in 2014, and revised in 2023 as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.
+      <p><strong>Date:</strong> Information on specific tools is updated frequently, as we receive it. In the information for each tool there is a last updated date. The Evaluation Tools List user interface was updated in December 2023. First published in March 2006.</p> <p><strong>Latest editors and developers:</strong> <a href="https://www.w3.org/People/kevin/">Kevin White</a>, Eric Velleman, Michel Hansma, and Vera Lange. <strong>Content maintainer:</strong> José Ramón Hilera González. <a href="https://www.w3.org/WAI/ER/tools/acknowledgements">Acknowledgements</a> lists contributors and previous editors, including <a href="https://www.w3.org/groups/wg/eowg/participants/">EOWG participants</a>, Eric Eggert, and Shadi Abou-Zahra.</p> <p>Developed by the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>) Developed with support from the <a href="https://www.w3.org/WAI/TIES/">WAI-TIES Project</a> in 2006, updated with support from the <a href="https://www.w3.org/WAI/ACT/">WAI-ACT Project</a> in 2014, and revised in 2023 as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.
 </div>
   </footer>
   
@@ -485,9 +456,9 @@ https://github.com/w3c/wai-selecting-eval-tools/edit/master/content/index.md" cl
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1715834238877654863"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1715863948502062586"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1715834238877654863"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1715863948502062586"></script>
 <script>
   svg4everybody();
 </script><script>
