@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2024-05-22/wcag-22-catalan/",
+            "title": "WCAG 2.2 in Catalan: Authorized Translation Published",
+            "summary": null,
+            "content_text": "Directrius per a l’accessibilitat del contingut web (WCAG) 2.2, the Catalan Authorized Translation of Web Content Accessibility Guidelines (WCAG) 2.2, is now available, following completion of the W3C Authorized Translations process. Other translations of WAI resources are listed in All WAI Translations. WAI encourages translations in all languages. If you might be interesting in translating resources, see Translating WAI Resources. Thank you to all who contribute to translations.",
+            "content_html": "<p><a href=\"https://www.w3.org/Translations/WCAG22-ca/\">Directrius per a l’accessibilitat del contingut web (WCAG) 2.2</a>, the Catalan Authorized Translation of <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">Web Content Accessibility Guidelines (WCAG) 2.2</a>, is now available, following completion of the <a href=\"https://www.w3.org/2005/02/TranslationPolicy\">W3C Authorized Translations process</a>. Other translations of WAI resources are listed in <a href=\"https://www.w3.org/WAI/translations/\">All WAI Translations</a>. WAI encourages translations in all languages. If you might be interesting in translating resources, see <a href=\"https://www.w3.org/WAI/about/translating/\">Translating WAI Resources</a>. Thank you to all who contribute to translations.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-05-22/wcag-22-catalan/",
+            
+            
+            
+            
+            
+            "date_published": "2024-05-22T00:00:00+00:00",
+            "date_modified": "2024-05-22T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2024-05-16/wcag3/",
             "title": "For Review: WCAG 3 Working Draft Outcomes",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2022-06-09T00:00:00+00:00",
             "date_modified": "2022-06-09T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-05-19/ARIA-APG-redesign/",
-            "title": "ARIA Authoring Practices Guide (APG) - New User Interface",
-            "summary": null,
-            "content_text": "ARIA Authoring Practices Guide (APG) is redesigned as a multi-page resource. WAI-ARIA is the Accessible Rich Internet Applications suite of web standards. ARIA Authoring Practices Guide (APG) provides guidance on how to correctly use ARIA semantics.",
-            "content_html": "<p><a href=\"https://www.w3.org/WAI/ARIA/apg\">ARIA Authoring Practices Guide (APG)</a> is redesigned as a multi-page resource. <a href=\"https://www.w3.org/WAI/standards-guidelines/aria/\">WAI-ARIA</a> is the Accessible Rich Internet Applications suite of web standards. ARIA Authoring Practices Guide (APG) provides guidance on how to correctly use ARIA semantics.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-05-19/ARIA-APG-redesign/",
-            
-            
-            
-            
-            
-            "date_published": "2022-05-19T00:00:00+00:00",
-            "date_modified": "2022-05-19T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
