@@ -254,6 +254,13 @@
 /about/translating/guides/video-subtitles/index.html
 /about/translating/guides/wcag/index.html
 /about/translating/index.html
+/about/translating/resources/images/index.html
+/about/translating/resources/index.html
+/about/translating/resources/resource-specific-instructions/index.html
+/about/translating/resources/subtitles/index.html
+/about/translating/resources/technical-steps/index.html
+/about/translating/resources/using-github/index.html
+/about/translating/reviewing/index.html
 /about/translating/sitemaps/index.html
 /about/translating/sitemaps/sitemap-ar/index.html
 /about/translating/sitemaps/sitemap-cs/index.html
@@ -268,6 +275,7 @@
 /about/translating/sitemaps/sitemap-ru/index.html
 /about/translating/sitemaps/sitemap-zh-hans/index.html
 /about/translating/step-by-step/index.html
+/about/translating/wcag/index.html
 /about/using-wai-material/index.html
 /adapt/index.html
 /assets/ableplayer/.gitattributes
