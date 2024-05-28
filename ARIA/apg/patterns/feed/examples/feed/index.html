@@ -9,17 +9,17 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1716889045655986765";
+      element.src = "/WAI/assets/scripts/main.js?1716920477975541895";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1716889045655986765">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1716920477975541895">
 
-<title> Feed Example | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Infinite Scrolling Feed Example | APG | WAI | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
-<meta property="og:title" content="Feed Example" />
+<meta property="og:title" content="Infinite Scrolling Feed Example" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
@@ -29,18 +29,18 @@
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Feed Example" />
+<meta property="twitter:title" content="Infinite Scrolling Feed Example" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Feed Example","url":"https://www.w3.org/WAI/ARIA/apg/patterns/feed/examples/feed/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Infinite Scrolling Feed Example","url":"https://www.w3.org/WAI/ARIA/apg/patterns/feed/examples/feed/"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
   <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
 </head>
 
-  <body id="top" class="page-feed-example ">
+  <body id="top" class="page-infinite-scrolling-feed-example ">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
    <div class="minimal-header-container default-grid">
@@ -279,6 +279,8 @@ h2#sidebar-header {
                 
                 <li><a href="#aboutthisexample">About This Example</a></li>
                 
+                <li><a href="#exampleusageoption">Example Usage Option</a></li>
+                
                 <li><a href="#ex_label">Example</a></li>
                 
                 <li><a href="#kbd_label">Keyboard Support</a></li>
@@ -303,7 +305,7 @@ h2#sidebar-header {
                 
               </span>
               
-              Feed Example
+              Infinite Scrolling Feed Example
             </h1>
         </header>
 
@@ -311,7 +313,7 @@ h2#sidebar-header {
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Feed Example</title>
+<title>Infinite Scrolling Feed Example</title>
 
 <script src="../../../../../../content-assets/wai-aria-practices/shared/js/examples.js"></script>
 
@@ -374,24 +376,37 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
         <h2 id="aboutthisexample">About This Example</h2>
         <img alt="" class="example-page-example-icon" src="../../../../../../content-images/wai-aria-practices/images/pattern-feed.svg">
         <p>
-          <strong>NOTE:</strong> The feed role is a new WAI-ARIA feature, introduced by WAI-ARIA 1.1.
-          This page provides a proposed implementation of a feed component.
-          This proposal does not yet have ARIA Practices Task Force consensus.
+          <strong>NOTE:</strong> The feed role was introduced by WAI-ARIA 1.1.
+          Since native desktop operating systems offer only a few conventions that are applicable to the feed pattern, the implementation of a feed illustrated by this example is intended to serve as as a proposal.
           Feedback is welcome in <a href="https://github.com/w3c/aria-practices/issues/565">issue 565.</a>
         </p>
         <p>
           The example below implements the <a href="../../">Feed Pattern</a> for a restaurant review site.
           To imitate an infinitely scrolling set of data, information about ten restaurants is repeatedly loaded as the user reads the feed.
-          Outside of the feed, an article load time selector is available for simulating data fetch delays.
+          This example includes an article load time selector that simulates data fetch delays.
         </p>
-        <p>Unlike other examples in the WAI-ARIA Authoring Practices, the example experience has its own page separate from this documentation page.</p>
+      </section>
+
+      <section>
+        <h2 id="exampleusageoption">Example Usage Option</h2>
+        <p id="feed-controls-desc">
+          The following article loading delay time selector enables simulation of different amounts of latency introduced by data fetches.
+          Such latency can affect assistive technology behavior when using assistive technology functions for navigating by article.
+        </p>
+        <label for="delay-time-select"> Loading delay</label>
+        <select id="delay-time-select" name="delay_time" aria-describedby="feed-controls-desc">
+          <option value="200">200 ms</option>
+          <option value="400">400 ms</option>
+        </select>
       </section>
 
       <section>
         <h2 id="ex_label">Example</h2>
         <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
         <div id="ex1">
-          <p>The example feed experience is presented on a separate <a href="../feed-display.html">feed display page.</a></p>
+          <p>The example feed experience below is presented in an iframe in order not to obstruct from the rest of the content of the page.</p>
+          <iframe id="feed_frame" src="../feed-display.html" height="500" title="Feed example" style="width: 100%"></iframe>
+          <button id="terms-of-use" onclick="alert('This is just for demo purposes')">Terms of use</button>
         </div>
         <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
       </section>
@@ -420,7 +435,7 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
             </tr>
             <tr data-test-id="key-control-home">
               <th><kbd>Control + Home</kbd></th>
-              <td>Move focus to the first focusable element before the feed.</td>
+              <td>Move focus to the first focusable element in the feed.</td>
             </tr>
           </tbody>
         </table></div>
@@ -561,9 +576,9 @@ if (enableSidebar) document.body.classList.add('has-sidebar');
   </div>
 
     <div class="default-grid with-gap leftcol">
-      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-aria-practices@w3.org?subject=%5Ben%5D%20Feed%20Example&amp;body=%5Bput%20comment%20here...%5D%0A%0A">public-aria-practices@w3.org</a> or via GitHub.</p>
+      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:public-aria-practices@w3.org?subject=%5Ben%5D%20Infinite%20Scrolling%20Feed%20Example&amp;body=%5Bput%20comment%20here...%5D%0A%0A">public-aria-practices@w3.org</a> or via GitHub.</p>
 <div class="button-group">
-    <a href="mailto:public-aria-practices@w3.org?subject=%5Ben%5D%20Feed%20Example&body=%5Bput%20comment%20here...%5D%0A%0A" class="button"><span>E-mail</span></a><a href="
+    <a href="mailto:public-aria-practices@w3.org?subject=%5Ben%5D%20Infinite%20Scrolling%20Feed%20Example&body=%5Bput%20comment%20here...%5D%0A%0A" class="button"><span>E-mail</span></a><a href="
 https://github.com/w3c/aria-practices/edit/main/content/patterns/feed/examples/feed.html" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/aria-practices/issues/new?template=content-issue.yml&wai-url=https://www.w3.org/WAI/ARIA/apg/patterns/feed/examples/feed/" class="button"><span>New GitHub Issue</span></a></div></div></aside>
       </div>
     </div>
@@ -578,7 +593,7 @@ https://github.com/w3c/aria-practices/edit/main/content/patterns/feed/examples/f
       
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
-            <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 13 February 2024</p>      </div>    </div>
+            <div class='example-page-footer'>        <p><a href='https://github.com/w3c/aria-practices/projects/19'>View issues related to this example</a></p>        <p>Page last updated: 22 May 2024</p>      </div>    </div>
   </footer>
   
 
@@ -617,9 +632,9 @@ https://github.com/w3c/aria-practices/edit/main/content/patterns/feed/examples/f
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1716889045655986765"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1716920477975541895"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1716889045655986765"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1716920477975541895"></script>
 <script>
   svg4everybody();
 </script><script>

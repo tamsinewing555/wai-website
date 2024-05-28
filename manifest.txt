@@ -1,5 +1,6 @@
 /ARIA/apg/about/acknowledgements/index.html
 /ARIA/apg/about/aria-basics/index.html
+/ARIA/apg/about/at-support-tables/index.html
 /ARIA/apg/about/change-history/index.html
 /ARIA/apg/about/contributing/index.html
 /ARIA/apg/about/coverage-and-quality/index.html
