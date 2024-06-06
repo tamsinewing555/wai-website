@@ -2727,6 +2727,7 @@
 /fundamentals/accessibility-intro/id.html
 /fundamentals/accessibility-intro/index.html
 /fundamentals/accessibility-intro/ko.html
+/fundamentals/accessibility-intro/pl.html
 /fundamentals/accessibility-intro/ru.html
 /fundamentals/accessibility-intro/zh-hans.html
 /fundamentals/accessibility-principles/ar.html
