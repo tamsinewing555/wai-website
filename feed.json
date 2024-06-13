@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2024-06-13/wcag-22-dutch/",
+            "title": "WCAG 2.2 in Dutch: Authorized Translation Published",
+            "summary": null,
+            "content_text": "Richtlijnen voor Toegankelijkheid van Webcontent (WCAG) 2.2, the Dutch Authorized Translation of Web Content Accessibility Guidelines (WCAG) 2.2, is now available, following completion of the W3C Authorized Translations process. Other translations of WAI resources are listed in All WAI Translations. WAI encourages translations in all languages. If you might be interesting in translating resources, see Translating WAI Resources. Thank you to all who contribute to translations.",
+            "content_html": "<p><a href=\"https://www.w3.org/Translations/WCAG22-nl/\">Richtlijnen voor Toegankelijkheid van Webcontent (WCAG) 2.2</a>, the Dutch Authorized Translation of <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">Web Content Accessibility Guidelines (WCAG) 2.2</a>, is now available, following completion of the <a href=\"https://www.w3.org/2005/02/TranslationPolicy\">W3C Authorized Translations process</a>. Other translations of WAI resources are listed in <a href=\"https://www.w3.org/WAI/translations/\">All WAI Translations</a>. WAI encourages translations in all languages. If you might be interesting in translating resources, see <a href=\"https://www.w3.org/WAI/about/translating/\">Translating WAI Resources</a>. Thank you to all who contribute to translations.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-06-13/wcag-22-dutch/",
+            
+            
+            
+            
+            
+            "date_published": "2024-06-13T00:00:00+00:00",
+            "date_modified": "2024-06-13T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2024-05-22/wcag-22-catalan/",
             "title": "WCAG 2.2 in Catalan: Authorized Translation Published",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2022-07-05T00:00:00+00:00",
             "date_modified": "2022-07-05T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-06-09/course-submission/",
-            "title": "Accessibility Course List – Submit a course, training, or certification",
-            "summary": null,
-            "content_text": "W3C Web Accessibility Initiative (WAI) is compiling a list of courses, trainings, and certifications on digital accessibility. We invite instructors to submit details on their courses for the list: Submit a course, training, or certification on digital accessibility.",
-            "content_html": "<p>W3C Web Accessibility Initiative (WAI) is compiling a list of courses, trainings, and certifications on digital accessibility. We invite instructors to submit details on their courses for the list: <a href=\"https://www.w3.org/WAI/courses/submission/\">Submit a course, training, or certification on digital accessibility</a>.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-06-09/course-submission/",
-            
-            
-            
-            
-            
-            "date_published": "2022-06-09T00:00:00+00:00",
-            "date_modified": "2022-06-09T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
