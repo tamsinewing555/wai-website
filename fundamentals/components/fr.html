@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1718296692900222506";
+      element.src = "/WAI/assets/scripts/main.js?1718633848055335499";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1718296692900222506">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1718633848055335499">
 
 <title> Composantes essentielles de l’accessibilité du Web | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -130,7 +130,7 @@
   <a lang="fr" href="/WAI/fundamentals/accessibility-principles/fr" class="page-link"><span>Principes d’accessibilité</span></a></li><li>
   <a lang="en" href="/WAI/research/" class="page-link"><span>Research</span></a><ul><li>
   <a lang="en" href="/WAI/research/user-requirements/" class="page-link"><span>User Requirements</span></a></li><li>
-  <a lang="en" href="/WAI/research/ai2023/" class="page-link"><span>AI and Acessibility</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/research/ai2023/" class="page-link"><span>AI and Accessibility</span></a></li></ul></li><li>
   <a lang="en" href="/WAI/courses/" class="page-link"><span>Digital Accessibility Courses</span></a><ul><li>
   <a lang="en" href="/WAI/courses/foundations-course/" class="page-link"><span>W3C Foundations Online Course</span></a></li><li>
   <a lang="en" href="/WAI/courses/list/" class="page-link"><span>Course List</span></a></li></ul></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
@@ -208,9 +208,12 @@
 <p>Il est essentiel que des composantes distinctes et multiples du développement web et de l’interaction utilisateur s’articulent convenablement pour que le Web soit accessible aux personnes handicapées. Ces composantes incluent :</p>
 
 <ul>
-  <li><strong>du contenu</strong> – l’information contenue dans une page web ou une application web, y compris :</li>
-  <li>de l’information primaire telle que du texte, des images et des sons,</li>
-  <li>du code ou du balisage qui définit la structure, la présentation…  ;</li>
+  <li><strong>du contenu</strong> – l’information contenue dans une page web ou une application web, y compris :
+    <ul>
+      <li>de l’information primaire telle que du texte, des images et des sons,</li>
+      <li>du code ou du balisage qui définit la structure, la présentation…  ;</li>
+    </ul>
+  </li>
   <li><strong>des navigateurs web, des lecteurs de média</strong>, et d’autres « agents utilisateurs » ;</li>
   <li><strong>une technologie d’assistance</strong>, dans certains cas – lecteurs d’écran, claviers alternatifs, contacteurs, logiciel de numérisation…  ;</li>
   <li>les connaissances, l’expérience et dans certains cas les stratégies d’adaptation <strong>des utilisateurs</strong> pour l’utilisation du Web ;</li>
@@ -221,7 +224,7 @@
 
 <h2 id="relate">Comment les composantes s’articulent</h2>
 
-<div class="img-card"><img src="/WAI/content-images/components/relate.fr.png" alt="Illustration montrant comment les composantes s’articulent" /><p><a href="/WAI/fundamentals/components/examples/fr#relate">Description longue de l'image</a></p></div>
+<div class="img-card"><img src="/WAI/content-images//components/relate.fr.png" alt="Illustration montrant comment les composantes s’articulent" /><p><a href="/WAI/fundamentals/components/examples/fr#relate">Description longue de l'image</a></p></div>
 
 <p>Les <strong>créateurs</strong> web utilisent généralement <strong>des outils de création</strong> et des outils d’évaluation pour créer du <strong>contenu</strong> web.</p>
 
@@ -246,7 +249,7 @@
 
 <p>Quand les fonctionnalités d’accessibilité sont effectivement mises en œuvre dans une composante, les autres composantes sont plus susceptibles de les mettre en œuvre elles aussi.</p>
 
-<p><img src="/WAI/content-images/components/cycle.fr.png" alt="" /></p>
+<p><img src="/WAI/content-images//components/cycle.fr.png" alt="" /></p>
 
 <ul>
   <li>Quand <strong>les navigateurs web, les lecteurs de média, les technologies d’assistance, et les autres agents utilisateurs</strong> fournissent une fonctionnalité d’accessibilité, les utilisateurs sont plus susceptibles de l’exiger  et les créateurs sont plus susceptibles de l’implémenter dans leur <strong>contenu</strong> ;</li>
@@ -259,7 +262,7 @@
 
 <p>Si une fonctionnalité d’accessibilité n’est pas mise en œuvre dans une composante, il y a peu de motivation pour les autres composantes pour l’implémenter s’il n’en résulte pas une expérience utilisateur accessible. Par exemple les créateurs n’implémenteront probablement pas une fonctionnalité d’accessibilité que les outils de création ne fournissent pas et que la plupart des navigateurs et des technologies d’assistance ne mettent pas en œuvre systématiquement.</p>
 
-<div class="img-card"><img src="/WAI/content-images/components/bridge.fr.png" alt="Illustration de ce qui arrive quand une composante est déficiente" /><p><a href="/WAI/fundamentals/components/examples/fr#weak">Description longue de l'image</a></p></div>
+<div class="img-card"><img src="/WAI/content-images//components/bridge.fr.png" alt="Illustration de ce qui arrive quand une composante est déficiente" /><p><a href="/WAI/fundamentals/components/examples/fr#weak">Description longue de l'image</a></p></div>
 
 <p>Si une composante a une faible prise en compte de l’accessibilité, d’autres composantes peuvent parfois compenser cela au travers de « contournements » qui nécessitent beaucoup plus d’effort et ne sont pas positifs pour l’accessibilité en général. Par exemple :</p>
 
@@ -286,7 +289,7 @@
   <li>la suite des spécifications <a href="/WAI/standards-guidelines/aria/" hreflang="en"><abbr lang="en" title="Accessible Rich Internet Applications">ARIA</abbr>, les applications Internet riches accessibles (en anglais)</a>, qui définit une façon de créer des applications web plus accessibles aux personnes handicapées. Elle facilite notamment le développement de contenu dynamique et de contrôles d’interface utilisateur avancés avec Ajax, HTML, JavaScript et les technologies associées.</li>
 </ul>
 
-<div class="img-card"><img src="/WAI/content-images/components/specs.fr.png" alt="Illustration montrant les règles pour les différentes composantes" /><p><a href="/WAI/fundamentals/components/examples/fr#guide">Description longue de l'image</a></p></div>
+<div class="img-card"><img src="/WAI/content-images//components/specs.fr.png" alt="Illustration montrant les règles pour les différentes composantes" /><p><a href="/WAI/fundamentals/components/examples/fr#guide">Description longue de l'image</a></p></div>
 
 <p>Pour plus d’informations, consultez <a href="/WAI/standards-guidelines/fr">Standards d’accessibilité du W3C – Vue d’ensemble</a>.</p>
 
@@ -353,13 +356,13 @@ https://github.com/w3c/wai-website/edit/master/pages/fundamentals/components/ind
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1718296692900222506"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1718633848055335499"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1718296692900222506"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1718633848055335499"></script>
 <script>
   svg4everybody();
 </script>
-<script src="/WAI/assets/scripts/lang/fr.js?1718296692900222506"></script>
+<script src="/WAI/assets/scripts/lang/fr.js?1718633848055335499"></script>
 
   </body>
 </html>
