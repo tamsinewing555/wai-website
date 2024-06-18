@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2024-06-18/act-rules-format/",
+            "title": "For Review: ACT Rules Format 1.1 - First Public Working Draft",
+            "summary": null,
+            "content_text": "Accessibility Conformance Testing (ACT) Rules Format 1.1 Working Draft is available for review. The ACT Rules Format defines a format for writing accessibility test rules. It helps developers of automated testing tools and manual testing methodologies to write, share, and implement test rules. The test rules contribute to consistent testing for accessibility standards compliance. Changes from ACT Rules Format 1.0 include: new secondary accessibility requirements and allowing subjective applicability statements. For an introduction to ACT resources, see the ACT Overview. Please submit any comments by 18 August 2024.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/act-rules-format-1.1/\">Accessibility Conformance Testing (ACT) Rules Format 1.1</a> Working Draft is available for review. The ACT Rules Format defines a format for writing accessibility test rules. It helps developers of automated testing tools and manual testing methodologies to write, share, and implement test rules. The test rules contribute to consistent testing for accessibility standards compliance. Changes from ACT Rules Format 1.0 include: new secondary accessibility requirements and allowing subjective applicability statements. For an introduction to ACT resources, see the <a href=\"https://www.w3.org/WAI/standards-guidelines/act/\">ACT Overview</a>. Please submit any comments by 18 August 2024.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-06-18/act-rules-format/",
+            
+            
+            
+            
+            
+            "date_published": "2024-06-18T00:00:00+00:00",
+            "date_modified": "2024-06-18T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2024-06-13/wcag-22-dutch/",
             "title": "WCAG 2.2 in Dutch: Authorized Translation Published",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2022-07-22T00:00:00+00:00",
             "date_modified": "2022-07-22T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-07-05/SAUR/",
-            "title": "Multimedia Synchronization Accessibility User Requirements - Note Published",
-            "summary": null,
-            "content_text": "Synchronization Accessibility User Requirements (\"SAUR\") describes accessibility-related user needs and requirements for audio and visual media synchronization. It covers synchronization of captions, sign language interpretation, and description. The requirements are applicable to multimedia content in general, as well as to real-time communication applications and to media in immersive environments.",
-            "content_html": "<p><a href=\"https://www.w3.org/TR/saur/\">Synchronization Accessibility User Requirements</a> (\"SAUR\") describes accessibility-related user needs and requirements for audio and visual media synchronization. It covers synchronization of captions, sign language interpretation, and description. The requirements are applicable to multimedia content in general, as well as to real-time communication applications and to media in immersive environments.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-07-05/SAUR/",
-            
-            
-            
-            
-            
-            "date_published": "2022-07-05T00:00:00+00:00",
-            "date_modified": "2022-07-05T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
