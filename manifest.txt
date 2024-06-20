@@ -121,6 +121,8 @@
 /ARIA/apg/practices/range-related-properties/index.html
 /ARIA/apg/practices/read-me-first/index.html
 /ARIA/apg/practices/structural-roles/index.html
+/CODE_OF_CONDUCT.md
+/LICENSE.md
 /WCAG2/supplemental/about/index.html
 /WCAG2/supplemental/index.html
 /WCAG2/supplemental/objectives/README.md
@@ -3109,6 +3111,7 @@
 /planning/index.html
 /planning/interim-repairs/fr.html
 /planning/interim-repairs/index.html
+/planning/involving-users/fr.html
 /planning/involving-users/index.html
 /planning/org-policies/example/index.html
 /planning/org-policies/index.html
