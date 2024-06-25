@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2024-06-24/people-use-web/",
+            "title": "Updated Resource: How People with Disabilities Use the Web",
+            "summary": null,
+            "content_text": "How People with Disabilities Use the Web is updated with new user stories (personas) and new videos highlighting “Accessibility: It’s about people”. It describes tools and approaches that disabled people use to interact with technology and it covers barriers that people experience because of inaccessible digital technology. The resource helps developers, designers, content creators, and others understand the reasons behind creating accessible digital products. To quote the new videos: Whatever your role, “You can help make technology accessible to me.”",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/people-use-web/\">How People with Disabilities Use the Web</a> is updated with new user stories (personas) and new videos highlighting “Accessibility: It’s about people”. It describes tools and approaches that disabled people use to interact with technology and it covers barriers that people experience because of inaccessible digital technology. The resource helps developers, designers, content creators, and others understand the reasons behind creating accessible digital products. To quote the new videos: Whatever your role, “You can help make technology accessible to me.”</p>",
+            "url": "https://www.w3.org/WAI/news/2024-06-24/people-use-web/",
+            
+            
+            
+            
+            
+            "date_published": "2024-06-24T00:00:00+00:00",
+            "date_modified": "2024-06-24T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2024-06-18/act-rules-format/",
             "title": "For Review: ACT Rules Format 1.1 - First Public Working Draft",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2022-08-31T00:00:00+00:00",
             "date_modified": "2022-08-31T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-07-22/remote-meetings/",
-            "title": "Accessibility of Remote Meetings - Note Published",
-            "summary": null,
-            "content_text": "Making Events Accessible:Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid now has a more detailed companion resource: Accessibility of Remote Meetings. Accessibility of Remote Meetings provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participating in remote meetings and hybrid meetings.",
-            "content_html": "<p><a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">Making Events Accessible:Checklist for meetings, conferences, training, and presentations that are remote/virtual, in-person, or hybrid</a> now has a more detailed companion resource: <a href=\"https://www.w3.org/TR/remote-meetings/\">Accessibility of Remote Meetings</a>. <cite>Accessibility of Remote Meetings</cite> provides guidance on selecting an accessible remote meeting platform and creating accessible remote meeting platforms. It addresses issues for hosting and participating in remote meetings and hybrid meetings.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-07-22/remote-meetings/",
-            
-            
-            
-            
-            
-            "date_published": "2022-07-22T00:00:00+00:00",
-            "date_modified": "2022-07-22T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
