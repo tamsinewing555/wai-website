@@ -2561,6 +2561,7 @@
 /content-images/wai-evaluation-tools-list/scope.png
 /content-images/wai-evaluation-tools-list/tooltype.png
 /content-images/wai-evaluation-tools-list/type.png
+/content-images/wai-intro-accessibility/social.png
 /content-images/wai-intro-accessibility/video-still-accessibility-intro-16-9.jpg
 /content-images/wai-intro-accessibility/video-still-accessibility-perspectives-16-9.jpg
 /content-images/wai-intro-wcag/brain-icon.svg
