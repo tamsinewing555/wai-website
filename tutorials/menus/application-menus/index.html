@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1719916510820508599";
+      element.src = "/WAI/assets/scripts/main.js?1719936293094156954";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719916510820508599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719936293094156954">
 
 <title> Application Menus | Web Accessibility Initiative (WAI) | W3C</title><style>kbd {
   display: inline-block;
@@ -32,7 +32,7 @@
   white-space:nowrap
 }
 </style><!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.1" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Application Menus" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
@@ -267,19 +267,19 @@
 
 <aside class="box box-example"><header class="box-h  box-h-example"> Code: </header><div class="box-i">
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">appsMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
-		<span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">==</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
-			<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
-			<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">focus</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="nx">appsMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
+		<span class="k">if </span><span class="p">(</span><span class="mi">0</span> <span class="o">==</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">el</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
+			<span class="nx">el</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">focus</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 				<span class="nx">currentIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 			<span class="p">});</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-			<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">-1</span><span class="dl">'</span><span class="p">);</span>
+			<span class="nx">el</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">-1</span><span class="dl">'</span><span class="p">);</span>
 		<span class="p">}</span>
 <span class="p">});</span>
 
-<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">subMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
-	<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">-1</span><span class="dl">'</span><span class="p">);</span>
+<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="nx">subMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
+	<span class="nx">el</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">-1</span><span class="dl">'</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div></div>
 
@@ -537,9 +537,9 @@ https://github.com/w3c/wai-tutorials/edit/master-2.0/content/menus/application-m
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1719936293094156954"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1719936293094156954"></script>
 <script>
   svg4everybody();
 </script><script>

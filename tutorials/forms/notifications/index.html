@@ -9,16 +9,16 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1719916510820508599";
+      element.src = "/WAI/assets/scripts/main.js?1719936293094156954";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719916510820508599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719936293094156954">
 
 <title> User Notification | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.1" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="User Notification" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
@@ -282,10 +282,10 @@
 </div></aside>
 
 <aside class="box box-example"><header class="box-h  box-h-example"> Code: JavaScript</header><div class="box-i">
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">alertconfirm</span><span class="dl">'</span><span class="p">)</span>
-	<span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">alertconfirm</span><span class="dl">'</span><span class="p">)</span>
+	<span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 		<span class="cm">/* [… code saving data …] */</span>
-		<span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">Thanks for submitting the form!</span><span class="dl">'</span><span class="p">);</span>
+		<span class="nf">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">Thanks for submitting the form!</span><span class="dl">'</span><span class="p">);</span>
 	<span class="p">});</span>
 </code></pre></div></div>
 </div></aside>
@@ -530,29 +530,29 @@ document.getElementById('ex3').addEventListener('submit', function(event){
 
 <aside class="box box-example"><header class="box-h  box-h-example"> Code: JavaScript</header><div class="box-i">
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">username</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keyup</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
-	<span class="kd">function</span> <span class="nx">setError</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
-		<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Error:</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">username</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keyup</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+	<span class="kd">function</span> <span class="nf">setError</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Error:</span><span class="dl">"</span><span class="p">;</span>
 		<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">className</span><span class="o">=</span><span class="dl">'</span><span class="s1">error</span><span class="dl">'</span><span class="p">;</span>
-		<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">span</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">;</span>
+		<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">span</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">;</span>
 	<span class="p">}</span>
-	<span class="kd">function</span> <span class="nx">setSuccess</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span> <span class="p">{</span>
-		<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">OK:</span><span class="dl">"</span><span class="p">;</span>
+	<span class="kd">function</span> <span class="nf">setSuccess</span><span class="p">(</span><span class="nx">el</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">strong</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">OK:</span><span class="dl">"</span><span class="p">;</span>
 		<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">className</span><span class="o">=</span><span class="dl">'</span><span class="s1">success</span><span class="dl">'</span><span class="p">;</span>
-		<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">span</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">&amp;check;</span><span class="dl">"</span><span class="p">;</span>
+		<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">span</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">&amp;check;</span><span class="dl">"</span><span class="p">;</span>
 	<span class="p">}</span>
 	<span class="kd">var</span> <span class="nx">val</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
-	<span class="k">if</span> <span class="p">(</span><span class="nx">val</span> <span class="o">!==</span> <span class="dl">""</span><span class="p">)</span> <span class="p">{</span>
-		<span class="k">if</span> <span class="p">(</span><span class="nx">taken_usernames</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">val</span><span class="p">.</span><span class="nx">trim</span><span class="p">()))</span> <span class="p">{</span>
-			<span class="nx">setError</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="dl">'</span><span class="s1">&amp;cross; Sorry, this username is taken.</span><span class="dl">'</span><span class="p">);</span>
+	<span class="k">if </span><span class="p">(</span><span class="nx">val</span> <span class="o">!==</span> <span class="dl">""</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if </span><span class="p">(</span><span class="nx">taken_usernames</span><span class="p">.</span><span class="nf">includes</span><span class="p">(</span><span class="nx">val</span><span class="p">.</span><span class="nf">trim</span><span class="p">()))</span> <span class="p">{</span>
+			<span class="nf">setError</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="dl">'</span><span class="s1">&amp;cross; Sorry, this username is taken.</span><span class="dl">'</span><span class="p">);</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-			<span class="nx">setSuccess</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="dl">'</span><span class="s1">&amp;check; You can use this username.</span><span class="dl">'</span><span class="p">);</span>
+			<span class="nf">setSuccess</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="dl">'</span><span class="s1">&amp;check; You can use this username.</span><span class="dl">'</span><span class="p">);</span>
 		<span class="p">}</span>
 	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-		<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">username_feedback</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
-		<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">username_feedback</span><span class="dl">'</span><span class="p">)</span>
+		<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">username_feedback</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
+		<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">username_feedback</span><span class="dl">'</span><span class="p">)</span>
 			<span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
-		<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">[for="username"] strong</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
+		<span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">[for="username"] strong</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
 	<span class="p">}</span>
 <span class="p">});</span>
 </code></pre></div></div>
@@ -851,9 +851,9 @@ https://github.com/w3c/wai-tutorials/edit/master-2.0/content/forms/notifications
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1719936293094156954"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1719936293094156954"></script>
 <script>
   svg4everybody();
 </script><script>

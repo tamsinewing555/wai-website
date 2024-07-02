@@ -9,16 +9,16 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1719916510820508599";
+      element.src = "/WAI/assets/scripts/main.js?1719936293094156954";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719916510820508599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719936293094156954">
 
 <title> Animations | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.1" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Animations" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
@@ -209,20 +209,20 @@
 
 <aside class="box box-example"><header class="box-h  box-h-example"> Code: </header><div class="box-i">
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">carousel</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">mouseenter</span><span class="dl">'</span><span class="p">,</span> <span class="nx">suspendAnimation</span><span class="p">);</span>
-<span class="nx">carousel</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">mouseleave</span><span class="dl">'</span><span class="p">,</span> <span class="nx">startAnimation</span><span class="p">);</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">carousel</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">mouseenter</span><span class="dl">'</span><span class="p">,</span> <span class="nx">suspendAnimation</span><span class="p">);</span>
+<span class="nx">carousel</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">mouseleave</span><span class="dl">'</span><span class="p">,</span> <span class="nx">startAnimation</span><span class="p">);</span>
 
-<span class="nx">carousel</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">focusin</span><span class="dl">'</span><span class="p">,</span>
+<span class="nx">carousel</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">focusin</span><span class="dl">'</span><span class="p">,</span>
   <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">hasClass</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">,</span> <span class="dl">'</span><span class="s1">slide</span><span class="dl">'</span><span class="p">))</span> <span class="p">{</span>
-      <span class="nx">suspendAnimation</span><span class="p">();</span>
+    <span class="k">if </span><span class="p">(</span><span class="o">!</span><span class="nf">hasClass</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">,</span> <span class="dl">'</span><span class="s1">slide</span><span class="dl">'</span><span class="p">))</span> <span class="p">{</span>
+      <span class="nf">suspendAnimation</span><span class="p">();</span>
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">);</span>
-<span class="nx">carousel</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">focusout</span><span class="dl">'</span><span class="p">,</span>
+<span class="nx">carousel</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">focusout</span><span class="dl">'</span><span class="p">,</span>
   <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">hasClass</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">,</span> <span class="dl">'</span><span class="s1">slide</span><span class="dl">'</span><span class="p">))</span> <span class="p">{</span>
-      <span class="nx">startAnimation</span><span class="p">();</span>
+    <span class="k">if </span><span class="p">(</span><span class="o">!</span><span class="nf">hasClass</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">,</span> <span class="dl">'</span><span class="s1">slide</span><span class="dl">'</span><span class="p">))</span> <span class="p">{</span>
+      <span class="nf">startAnimation</span><span class="p">();</span>
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">);</span>
@@ -246,14 +246,14 @@
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">slides</span><span class="p">[</span><span class="nx">new_next</span><span class="p">].</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">next slide</span><span class="dl">'</span>
   <span class="o">+</span> <span class="p">((</span><span class="nx">transition</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">next</span><span class="dl">'</span><span class="p">)</span> <span class="p">?</span> <span class="dl">'</span><span class="s1"> in-transition</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">''</span><span class="p">);</span>
-<span class="nx">slides</span><span class="p">[</span><span class="nx">new_next</span><span class="p">].</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-hidden</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">true</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">slides</span><span class="p">[</span><span class="nx">new_next</span><span class="p">].</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-hidden</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">true</span><span class="dl">'</span><span class="p">);</span>
 
 <span class="nx">slides</span><span class="p">[</span><span class="nx">new_prev</span><span class="p">].</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">prev slide</span><span class="dl">'</span>
   <span class="o">+</span> <span class="p">((</span><span class="nx">transition</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">prev</span><span class="dl">'</span><span class="p">)</span> <span class="p">?</span> <span class="dl">'</span><span class="s1"> in-transition</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">''</span><span class="p">);</span>
-<span class="nx">slides</span><span class="p">[</span><span class="nx">new_prev</span><span class="p">].</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-hidden</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">true</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">slides</span><span class="p">[</span><span class="nx">new_prev</span><span class="p">].</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-hidden</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">true</span><span class="dl">'</span><span class="p">);</span>
 
 <span class="nx">slides</span><span class="p">[</span><span class="nx">new_current</span><span class="p">].</span><span class="nx">className</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">current slide</span><span class="dl">'</span><span class="p">;</span>
-<span class="nx">slides</span><span class="p">[</span><span class="nx">new_current</span><span class="p">].</span><span class="nx">removeAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-hidden</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">slides</span><span class="p">[</span><span class="nx">new_current</span><span class="p">].</span><span class="nf">removeAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-hidden</span><span class="dl">'</span><span class="p">);</span>
 </code></pre></div></div>
 
 </div></aside>
@@ -403,9 +403,9 @@ https://github.com/w3c/wai-tutorials/edit/master-2.0/content/carousels/animation
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1719936293094156954"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1719936293094156954"></script>
 <script>
   svg4everybody();
 </script><script>

@@ -9,16 +9,16 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1719916510820508599";
+      element.src = "/WAI/assets/scripts/main.js?1719936293094156954";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719916510820508599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719936293094156954">
 
-<title> Audio or video element that plays automatically has a control mechanism[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1719916510820508599"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.1" />
+<title> Audio or video element that plays automatically has a control mechanism[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1719936293094156954"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Audio or video element that plays automatically has a control mechanism" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
@@ -407,23 +407,23 @@ h2#sidebar-header {
 
   <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 	<span class="c1">// Video</span>
-	<span class="kd">var</span> <span class="nx">video</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">video</span><span class="dl">'</span><span class="p">)</span>
+	<span class="kd">var</span> <span class="nx">video</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">video</span><span class="dl">'</span><span class="p">)</span>
 
 	<span class="c1">// Buttons</span>
-	<span class="kd">var</span> <span class="nx">playButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">play-pause</span><span class="dl">'</span><span class="p">)</span>
-	<span class="kd">var</span> <span class="nx">muteButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">mute</span><span class="dl">'</span><span class="p">)</span>
+	<span class="kd">var</span> <span class="nx">playButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">play-pause</span><span class="dl">'</span><span class="p">)</span>
+	<span class="kd">var</span> <span class="nx">muteButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">mute</span><span class="dl">'</span><span class="p">)</span>
 
 	<span class="c1">// Event listener for the play/pause button</span>
-	<span class="nx">playButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-		<span class="k">if</span> <span class="p">(</span><span class="nx">video</span><span class="p">.</span><span class="nx">paused</span> <span class="o">==</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">playButton</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">if </span><span class="p">(</span><span class="nx">video</span><span class="p">.</span><span class="nx">paused</span> <span class="o">==</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
 			<span class="c1">// Play the video</span>
-			<span class="nx">video</span><span class="p">.</span><span class="nx">play</span><span class="p">()</span>
+			<span class="nx">video</span><span class="p">.</span><span class="nf">play</span><span class="p">()</span>
 
 			<span class="c1">// Update the button text to 'Pause'</span>
 			<span class="nx">playButton</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Pause</span><span class="dl">'</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 			<span class="c1">// Pause the video</span>
-			<span class="nx">video</span><span class="p">.</span><span class="nx">pause</span><span class="p">()</span>
+			<span class="nx">video</span><span class="p">.</span><span class="nf">pause</span><span class="p">()</span>
 
 			<span class="c1">// Update the button text to 'Play'</span>
 			<span class="nx">playButton</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Play</span><span class="dl">'</span>
@@ -431,8 +431,8 @@ h2#sidebar-header {
 	<span class="p">})</span>
 
 	<span class="c1">// Event listener for the mute button</span>
-	<span class="nx">muteButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-		<span class="k">if</span> <span class="p">(</span><span class="nx">video</span><span class="p">.</span><span class="nx">muted</span> <span class="o">==</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">muteButton</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">if </span><span class="p">(</span><span class="nx">video</span><span class="p">.</span><span class="nx">muted</span> <span class="o">==</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
 			<span class="c1">// Mute the video</span>
 			<span class="nx">video</span><span class="p">.</span><span class="nx">muted</span> <span class="o">=</span> <span class="kc">true</span>
 
@@ -932,9 +932,9 @@ https://github.com/w3c/wcag-act-rules/edit/master/content/rules/4c31df/proposed.
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1719936293094156954"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1719936293094156954"></script>
 <script>
   svg4everybody();
 </script><script>

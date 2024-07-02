@@ -9,16 +9,16 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1719916510820508599";
+      element.src = "/WAI/assets/scripts/main.js?1719936293094156954";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719916510820508599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719936293094156954">
 
 <title> Complete Password Example | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.1" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Complete Password Example" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
@@ -203,14 +203,14 @@ document.getElementById('ex2_password').addEventListener('keyup',
 
 <aside class="box box-example"><header class="box-h  box-h-example"> Code:  'JavaScript</header><div class="box-i">
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">password</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keyup</span><span class="dl">'</span><span class="p">,</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">password</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keyup</span><span class="dl">'</span><span class="p">,</span>
 		<span class="kd">function</span><span class="p">(){</span>
 			<span class="c1">// (1) Select the password meter and message elements.</span>
-			<span class="kd">var</span> <span class="nx">meter</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#passwordmeter span</span><span class="dl">'</span><span class="p">);</span>
-			<span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">passwordmessage</span><span class="dl">'</span><span class="p">);</span>
+			<span class="kd">var</span> <span class="nx">meter</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#passwordmeter span</span><span class="dl">'</span><span class="p">);</span>
+			<span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">passwordmessage</span><span class="dl">'</span><span class="p">);</span>
 
 			<span class="c1">// (2) Calculate the strength of the password.</span>
-			<span class="kd">var</span> <span class="nx">pw</span> <span class="o">=</span> <span class="nx">get_pw_strength</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+			<span class="kd">var</span> <span class="nx">pw</span> <span class="o">=</span> <span class="nf">get_pw_strength</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
 
 			<span class="c1">// (3) Set the with of the password meter to a multiple of the score.</span>
 			<span class="nx">meter</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="p">(</span><span class="nx">pw</span><span class="p">.</span><span class="nx">score</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">25</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">px</span><span class="dl">'</span><span class="p">;</span>
@@ -221,13 +221,13 @@ document.getElementById('ex2_password').addEventListener('keyup',
 						 c) green if the score = 4
 
 				(5) Change the text of the password message element accordingly. */</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nx">pw</span><span class="p">.</span><span class="nx">score</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if </span><span class="p">(</span><span class="nx">pw</span><span class="p">.</span><span class="nx">score</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
           <span class="nx">meter</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">red</span><span class="dl">'</span><span class="p">;</span>
           <span class="nx">msg</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">&lt;strong&gt;Really Weak&lt;/strong&gt; Password</span><span class="dl">'</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">pw</span><span class="p">.</span><span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if </span><span class="p">(</span><span class="nx">pw</span><span class="p">.</span><span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
           <span class="nx">meter</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">red</span><span class="dl">'</span><span class="p">;</span>
           <span class="nx">msg</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">&lt;strong&gt;Weak&lt;/strong&gt; Password (cracked in </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">pw</span><span class="p">.</span><span class="nx">crack_time_display</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">)</span><span class="dl">'</span><span class="p">;</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">pw</span><span class="p">.</span><span class="nx">score</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if </span><span class="p">(</span><span class="nx">pw</span><span class="p">.</span><span class="nx">score</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
           <span class="nx">meter</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">yellow</span><span class="dl">'</span><span class="p">;</span>
           <span class="nx">msg</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">&lt;strong&gt;Good&lt;/strong&gt; Password (cracked in </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">pw</span><span class="p">.</span><span class="nx">crack_time_display</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">)</span><span class="dl">'</span><span class="p">;</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
@@ -237,7 +237,7 @@ document.getElementById('ex2_password').addEventListener('keyup',
 
 			<span class="cm">/* (6) If the input is empty, there is no text output
 						 and the color of the meter is set to gray. */</span>
-			<span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span> <span class="o">==</span> <span class="dl">""</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">if </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span> <span class="o">==</span> <span class="dl">""</span><span class="p">)</span> <span class="p">{</span>
 				<span class="nx">meter</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">gray</span><span class="dl">'</span><span class="p">;</span>
 				<span class="nx">msg</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">;</span>
 			<span class="p">}</span>
@@ -296,9 +296,9 @@ https://github.com/w3c/wai-tutorials/edit/master-2.0/content/forms/examples/pass
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1719936293094156954"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1719936293094156954"></script>
 <script>
   svg4everybody();
 </script><script>

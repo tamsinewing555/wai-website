@@ -9,16 +9,16 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1719916510820508599";
+      element.src = "/WAI/assets/scripts/main.js?1719936293094156954";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719916510820508599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719936293094156954">
 
-<title> Developing for Web Accessibility – Tips for Getting Started | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/tips/css/tips.css?1719916510820508599"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.1" />
+<title> Developing for Web Accessibility – Tips for Getting Started | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/tips/css/tips.css?1719936293094156954"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Developing for Web Accessibility – Tips for Getting Started" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
@@ -28,13 +28,13 @@
 <meta property="og:url" content="https://www.w3.org/WAI/tips/developing/" />
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-07-02T10:35:10+00:00" />
+<meta property="article:published_time" content="2024-07-02T16:04:53+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content="Developing for Web Accessibility – Tips for Getting Started" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"dateModified":"2024-07-02T10:35:10+00:00","datePublished":"2024-07-02T10:35:10+00:00","description":"Summary","headline":"Developing for Web Accessibility – Tips for Getting Started","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/tips/developing/"},"url":"https://www.w3.org/WAI/tips/developing/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"dateModified":"2024-07-02T16:04:53+00:00","datePublished":"2024-07-02T16:04:53+00:00","description":"Summary","headline":"Developing for Web Accessibility – Tips for Getting Started","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/tips/developing/"},"url":"https://www.w3.org/WAI/tips/developing/"}</script>
 <!-- End Jekyll SEO tag -->
 <meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
 
@@ -724,18 +724,18 @@
 <figure>
 <figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> Code Snippet</figcaption>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">buttonExample</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button</span><span class="dl">'</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">buttonExample</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button</span><span class="dl">'</span><span class="p">);</span>
 
-<span class="nx">buttonExample</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keydown</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">buttonExample</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keydown</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
   <span class="c1">// Toggle the menu when RETURN is pressed</span>
   <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">&amp;&amp;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">==</span> <span class="mi">13</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button-menu</span><span class="dl">'</span><span class="p">));</span>
+    <span class="nf">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button-menu</span><span class="dl">'</span><span class="p">));</span>
   <span class="p">}</span>
 <span class="p">});</span>
 
-<span class="nx">buttonExample</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">buttonExample</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
 <span class="c1">// Toggle the menu on mouse click</span>
-  <span class="nx">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button-menu</span><span class="dl">'</span><span class="p">));</span>
+  <span class="nf">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button-menu</span><span class="dl">'</span><span class="p">));</span>
 <span class="p">});</span>
 </code></pre></div></div>
 
@@ -872,9 +872,9 @@ https://github.com/w3c/wai-quick-start/edit/master/_tips/developing.md
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1719936293094156954"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1719936293094156954"></script>
 <script>
   svg4everybody();
 </script><script>

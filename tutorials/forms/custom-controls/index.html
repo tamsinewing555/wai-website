@@ -9,16 +9,16 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1719916510820508599";
+      element.src = "/WAI/assets/scripts/main.js?1719936293094156954";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719916510820508599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719936293094156954">
 
 <title> Custom Controls | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.1" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Custom Controls" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
@@ -282,17 +282,17 @@ document.getElementById('share-btn').addEventListener('click', function(event){
 
 <aside class="box box-example"><header class="box-h  box-h-example"> Code: JavaScript</header><div class="box-i">
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">share-btn</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
-	<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-	<span class="nx">event</span><span class="p">.</span><span class="nx">stopImmediatePropagation</span><span class="p">();</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">share-btn</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+	<span class="nx">event</span><span class="p">.</span><span class="nf">preventDefault</span><span class="p">();</span>
+	<span class="nx">event</span><span class="p">.</span><span class="nf">stopImmediatePropagation</span><span class="p">();</span>
 
-	<span class="kd">var</span> <span class="nx">count</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.count</span><span class="dl">'</span><span class="p">);</span>
-	<span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.text</span><span class="dl">'</span><span class="p">);</span>
+	<span class="kd">var</span> <span class="nx">count</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.count</span><span class="dl">'</span><span class="p">);</span>
+	<span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.text</span><span class="dl">'</span><span class="p">);</span>
 
-	<span class="nx">count</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">count</span><span class="p">.</span><span class="nx">textContent</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="nx">count</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nf">parseInt</span><span class="p">(</span><span class="nx">count</span><span class="p">.</span><span class="nx">textContent</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
 	<span class="nx">text</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Shared ✓</span><span class="dl">"</span><span class="p">;</span>
 
-	<span class="k">this</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">disabled</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">true</span><span class="dl">"</span><span class="p">);</span>
+	<span class="k">this</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">disabled</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">true</span><span class="dl">"</span><span class="p">);</span>
 <span class="p">});</span>
 </code></pre></div></div>
 
@@ -543,8 +543,8 @@ document.querySelector('#star_rating').addEventListener('submit', function(event
 
 <aside class="box box-example"><header class="box-h  box-h-example"> Code: JavaScript</header><div class="box-i">
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">radios</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating input[type=radio]</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating output</span><span class="dl">'</span><span class="p">);</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">radios</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating input[type=radio]</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating output</span><span class="dl">'</span><span class="p">);</span>
 
 <span class="kd">var</span> <span class="nx">do_something</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">stars</span><span class="p">)</span> <span class="p">{</span>
 	<span class="c1">// An AJAX request could send the data to the server</span>
@@ -553,18 +553,18 @@ document.querySelector('#star_rating').addEventListener('submit', function(event
 
 <span class="c1">// Iterate through all radio buttons and add a click</span>
 <span class="c1">// event listener to the labels</span>
-<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">radios</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
+<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="nx">radios</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
 	<span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="nx">el</span><span class="p">.</span><span class="nx">nextSibling</span><span class="p">.</span><span class="nx">nextSibling</span><span class="p">;</span>
-	<span class="nx">label</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
-		<span class="nx">do_something</span><span class="p">(</span><span class="nx">label</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">span</span><span class="dl">'</span><span class="p">).</span><span class="nx">textContent</span><span class="p">);</span>
+	<span class="nx">label</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+		<span class="nf">do_something</span><span class="p">(</span><span class="nx">label</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">span</span><span class="dl">'</span><span class="p">).</span><span class="nx">textContent</span><span class="p">);</span>
 	<span class="p">});</span>
 <span class="p">});</span>
 
 <span class="c1">// If the form gets submitted, do_something</span>
-<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
-	<span class="nx">do_something</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating :checked ~ label span</span><span class="dl">'</span><span class="p">).</span><span class="nx">textContent</span><span class="p">);</span>
-	<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-	<span class="nx">event</span><span class="p">.</span><span class="nx">stopImmediatePropagation</span><span class="p">();</span>
+<span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+	<span class="nf">do_something</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating :checked ~ label span</span><span class="dl">'</span><span class="p">).</span><span class="nx">textContent</span><span class="p">);</span>
+	<span class="nx">event</span><span class="p">.</span><span class="nf">preventDefault</span><span class="p">();</span>
+	<span class="nx">event</span><span class="p">.</span><span class="nf">stopImmediatePropagation</span><span class="p">();</span>
 <span class="p">});</span>
 </code></pre></div></div>
 
@@ -694,9 +694,9 @@ https://github.com/w3c/wai-tutorials/edit/master-2.0/content/forms/custom-contro
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1719936293094156954"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1719936293094156954"></script>
 <script>
   svg4everybody();
 </script><script>

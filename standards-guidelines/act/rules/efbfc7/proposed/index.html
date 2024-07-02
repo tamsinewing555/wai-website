@@ -9,16 +9,16 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1719916510820508599";
+      element.src = "/WAI/assets/scripts/main.js?1719936293094156954";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719916510820508599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719936293094156954">
 
-<title> Text content that changes automatically can be paused, stopped or hidden[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1719916510820508599"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.1" />
+<title> Text content that changes automatically can be paused, stopped or hidden[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1719936293094156954"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Text content that changes automatically can be paused, stopped or hidden" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
@@ -431,45 +431,45 @@ h2#sidebar-header {
 
   <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/efbfc7/script.js"><code class="language-plaintext highlighter-rouge">/test-assets/efbfc7/script.js</code></a>:</p>
 
-  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">change</span><span class="p">()</span> <span class="p">{</span>
-	<span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">target</span><span class="dl">'</span><span class="p">)</span>
-	<span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">change</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">target</span><span class="dl">'</span><span class="p">)</span>
+	<span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nf">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
 	<span class="nx">target</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">number</span>
 <span class="p">}</span>
 
 <span class="kd">var</span> <span class="nx">updates</span>
 <span class="kd">var</span> <span class="nx">updating</span> <span class="o">=</span> <span class="kc">false</span>
 
-<span class="kd">function</span> <span class="nx">startUpdates</span><span class="p">(</span><span class="nx">interval</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">function</span> <span class="nf">startUpdates</span><span class="p">(</span><span class="nx">interval</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">)</span> <span class="p">{</span>
 	<span class="nx">updating</span> <span class="o">=</span> <span class="kc">true</span>
-	<span class="nx">updates</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(</span><span class="nx">change</span><span class="p">,</span> <span class="nx">interval</span><span class="p">)</span>
+	<span class="nx">updates</span> <span class="o">=</span> <span class="nf">setInterval</span><span class="p">(</span><span class="nx">change</span><span class="p">,</span> <span class="nx">interval</span><span class="p">)</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">stopUpdates</span><span class="p">()</span> <span class="p">{</span>
+<span class="kd">function</span> <span class="nf">stopUpdates</span><span class="p">()</span> <span class="p">{</span>
 	<span class="nx">updating</span> <span class="o">=</span> <span class="kc">false</span>
-	<span class="nx">clearInterval</span><span class="p">(</span><span class="nx">updates</span><span class="p">)</span>
+	<span class="nf">clearInterval</span><span class="p">(</span><span class="nx">updates</span><span class="p">)</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">changeFrequency</span><span class="p">(</span><span class="nx">interval</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-	<span class="nx">clearInterval</span><span class="p">(</span><span class="nx">updates</span><span class="p">)</span>
-	<span class="nx">updates</span> <span class="o">=</span> <span class="nx">startUpdates</span><span class="p">(</span><span class="nx">interval</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nf">changeFrequency</span><span class="p">(</span><span class="nx">interval</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nf">clearInterval</span><span class="p">(</span><span class="nx">updates</span><span class="p">)</span>
+	<span class="nx">updates</span> <span class="o">=</span> <span class="nf">startUpdates</span><span class="p">(</span><span class="nx">interval</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">toggleUpdates</span><span class="p">()</span> <span class="p">{</span>
-	<span class="kd">var</span> <span class="nx">control</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">control</span><span class="dl">'</span><span class="p">)</span>
-	<span class="k">if</span> <span class="p">(</span><span class="nx">updating</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">function</span> <span class="nf">toggleUpdates</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">control</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">control</span><span class="dl">'</span><span class="p">)</span>
+	<span class="k">if </span><span class="p">(</span><span class="nx">updating</span><span class="p">)</span> <span class="p">{</span>
 		<span class="nx">control</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Resume changes</span><span class="dl">'</span>
 		<span class="nx">updating</span> <span class="o">=</span> <span class="kc">false</span>
-		<span class="nx">clearInterval</span><span class="p">(</span><span class="nx">updates</span><span class="p">)</span>
+		<span class="nf">clearInterval</span><span class="p">(</span><span class="nx">updates</span><span class="p">)</span>
 	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 		<span class="nx">control</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Pause changes</span><span class="dl">'</span>
 		<span class="nx">updating</span> <span class="o">=</span> <span class="kc">true</span>
-		<span class="nx">updates</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(</span><span class="nx">change</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+		<span class="nx">updates</span> <span class="o">=</span> <span class="nf">setInterval</span><span class="p">(</span><span class="nx">change</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 	<span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">hide</span><span class="p">()</span> <span class="p">{</span>
-	<span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">target</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nf">hide</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">target</span><span class="dl">'</span><span class="p">)</span>
 	<span class="nx">target</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">visibility</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">hidden</span><span class="dl">'</span>
 <span class="p">}</span>
 </code></pre></div>  </div>
@@ -592,11 +592,11 @@ h2#sidebar-header {
 	<span class="nt">&lt;/div&gt;</span>
 
 	<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-		<span class="kd">function</span> <span class="nx">openModal</span><span class="p">()</span> <span class="p">{</span>
-			<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">overlay</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">block</span><span class="dl">'</span>
+		<span class="kd">function</span> <span class="nf">openModal</span><span class="p">()</span> <span class="p">{</span>
+			<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">overlay</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">block</span><span class="dl">'</span>
 		<span class="p">}</span>
-		<span class="kd">function</span> <span class="nx">closeModal</span><span class="p">()</span> <span class="p">{</span>
-			<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">overlay</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span>
+		<span class="kd">function</span> <span class="nf">closeModal</span><span class="p">()</span> <span class="p">{</span>
+			<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">overlay</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span>
 		<span class="p">}</span>
 	<span class="nt">&lt;/script&gt;</span>
 	<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/test-assets/efbfc7/script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
@@ -669,18 +669,18 @@ h2#sidebar-header {
 		<span class="kd">const</span> <span class="nx">myColors</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">red</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">green</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">blue</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">black</span><span class="dl">'</span><span class="p">]</span>
 		<span class="kd">let</span> <span class="nx">updates</span>
 
-		<span class="kd">function</span> <span class="nx">startColorUpdates</span><span class="p">()</span> <span class="p">{</span>
-			<span class="nx">updates</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(</span><span class="nx">change</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+		<span class="kd">function</span> <span class="nf">startColorUpdates</span><span class="p">()</span> <span class="p">{</span>
+			<span class="nx">updates</span> <span class="o">=</span> <span class="nf">setInterval</span><span class="p">(</span><span class="nx">change</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 		<span class="p">}</span>
 
-		<span class="kd">function</span> <span class="nx">change</span><span class="p">()</span> <span class="p">{</span>
-			<span class="kd">let</span> <span class="nx">randomColor</span> <span class="o">=</span> <span class="nx">myColors</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">myColors</span><span class="p">.</span><span class="nx">length</span><span class="p">)]</span>
-			<span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">target</span><span class="dl">'</span><span class="p">)</span>
+		<span class="kd">function</span> <span class="nf">change</span><span class="p">()</span> <span class="p">{</span>
+			<span class="kd">let</span> <span class="nx">randomColor</span> <span class="o">=</span> <span class="nx">myColors</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nf">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nf">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">myColors</span><span class="p">.</span><span class="nx">length</span><span class="p">)]</span>
+			<span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">target</span><span class="dl">'</span><span class="p">)</span>
 			<span class="nx">target</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="nx">randomColor</span>
 		<span class="p">}</span>
 
-		<span class="kd">function</span> <span class="nx">stop</span><span class="p">()</span> <span class="p">{</span>
-			<span class="nx">clearInterval</span><span class="p">(</span><span class="nx">updates</span><span class="p">)</span>
+		<span class="kd">function</span> <span class="nf">stop</span><span class="p">()</span> <span class="p">{</span>
+			<span class="nf">clearInterval</span><span class="p">(</span><span class="nx">updates</span><span class="p">)</span>
 		<span class="p">}</span>
 	<span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
@@ -1008,9 +1008,9 @@ https://github.com/w3c/wcag-act-rules/edit/master/content/rules/efbfc7/proposed.
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1719936293094156954"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1719936293094156954"></script>
 <script>
   svg4everybody();
 </script><script>

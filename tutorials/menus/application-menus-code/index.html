@@ -9,16 +9,16 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1719916510820508599";
+      element.src = "/WAI/assets/scripts/main.js?1719936293094156954";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719916510820508599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719936293094156954">
 
 <title> Application Menu Example &amp; Code | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.1" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Application Menu Example &amp; Code" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
@@ -574,8 +574,8 @@ appsMenu.addEventListener("click", function( event ) {
 
 <aside class="box box-example"><header class="box-h  box-h-example"> Code: JavaScript</header><div class="box-i">
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">appsMenuItems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">#appmenu &gt; li</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">subMenuItems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">#appmenu &gt; li li</span><span class="dl">'</span><span class="p">);</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">appsMenuItems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">#appmenu &gt; li</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">subMenuItems</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">#appmenu &gt; li li</span><span class="dl">'</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">keys</span> <span class="o">=</span> <span class="p">{</span>
 	<span class="na">tab</span><span class="p">:</span>    <span class="mi">9</span><span class="p">,</span>
 	<span class="na">enter</span><span class="p">:</span>  <span class="mi">13</span><span class="p">,</span>
@@ -589,142 +589,142 @@ appsMenu.addEventListener("click", function( event ) {
 <span class="kd">var</span> <span class="nx">currentIndex</span><span class="p">,</span> <span class="nx">subIndex</span><span class="p">;</span>
 
 <span class="kd">var</span> <span class="nx">gotoIndex</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">idx</span><span class="p">)</span> <span class="p">{</span>
-	<span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">==</span> <span class="nx">appsMenuItems</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if </span><span class="p">(</span><span class="nx">idx</span> <span class="o">==</span> <span class="nx">appsMenuItems</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
 		<span class="nx">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if </span><span class="p">(</span><span class="nx">idx</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
 		<span class="nx">idx</span> <span class="o">=</span> <span class="nx">appsMenuItems</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
 	<span class="p">}</span>
-	<span class="nx">appsMenuItems</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nx">focus</span><span class="p">();</span>
+	<span class="nx">appsMenuItems</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nf">focus</span><span class="p">();</span>
 	<span class="nx">currentIndex</span> <span class="o">=</span> <span class="nx">idx</span><span class="p">;</span>
 <span class="p">};</span>
 
-<span class="kd">var</span> <span class="nx">gotoSubIndex</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="nx">idx</span><span class="p">)</span> <span class="p">{</span>
-	<span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="nx">menu</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">li</span><span class="dl">'</span><span class="p">);</span>
-	<span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">==</span> <span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">gotoSubIndex</span> <span class="o">=</span> <span class="nf">function </span><span class="p">(</span><span class="nx">menu</span><span class="p">,</span> <span class="nx">idx</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">items</span> <span class="o">=</span> <span class="nx">menu</span><span class="p">.</span><span class="nf">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">li</span><span class="dl">'</span><span class="p">);</span>
+	<span class="k">if </span><span class="p">(</span><span class="nx">idx</span> <span class="o">==</span> <span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
 		<span class="nx">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if </span><span class="p">(</span><span class="nx">idx</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
 		<span class="nx">idx</span> <span class="o">=</span> <span class="nx">items</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
 	<span class="p">}</span>
-	<span class="nx">items</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nx">focus</span><span class="p">();</span>
+	<span class="nx">items</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nf">focus</span><span class="p">();</span>
 	<span class="nx">subIndex</span> <span class="o">=</span> <span class="nx">idx</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">appsMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
-		<span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">==</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
-			<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
-			<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">focus</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="nx">appsMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
+		<span class="k">if </span><span class="p">(</span><span class="mi">0</span> <span class="o">==</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">el</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
+			<span class="nx">el</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">focus</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 				<span class="nx">currentIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 			<span class="p">});</span>
 		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-			<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">-1</span><span class="dl">'</span><span class="p">);</span>
+			<span class="nx">el</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">-1</span><span class="dl">'</span><span class="p">);</span>
 		<span class="p">}</span>
-		<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">focus</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+		<span class="nx">el</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">focus</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 			<span class="nx">subIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-			<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">appsMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
-				<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-expanded</span><span class="dl">'</span><span class="p">,</span> <span class="dl">"</span><span class="s2">false</span><span class="dl">"</span><span class="p">);</span>
+			<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="nx">appsMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
+				<span class="nx">el</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-expanded</span><span class="dl">'</span><span class="p">,</span> <span class="dl">"</span><span class="s2">false</span><span class="dl">"</span><span class="p">);</span>
 			<span class="p">});</span>
 		<span class="p">});</span>
-		<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span>  <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
-			<span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-expanded</span><span class="dl">'</span><span class="p">)</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">false</span><span class="dl">'</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-expanded</span><span class="dl">'</span><span class="p">)</span> <span class="o">==</span>  <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
-				<span class="k">this</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-expanded</span><span class="dl">'</span><span class="p">,</span> <span class="dl">"</span><span class="s2">true</span><span class="dl">"</span><span class="p">);</span>
+		<span class="nx">el</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span>  <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+			<span class="k">if </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nf">getAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-expanded</span><span class="dl">'</span><span class="p">)</span> <span class="o">==</span> <span class="dl">'</span><span class="s1">false</span><span class="dl">'</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nf">getAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-expanded</span><span class="dl">'</span><span class="p">)</span> <span class="o">==</span>  <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+				<span class="k">this</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-expanded</span><span class="dl">'</span><span class="p">,</span> <span class="dl">"</span><span class="s2">true</span><span class="dl">"</span><span class="p">);</span>
 			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-				<span class="k">this</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-expanded</span><span class="dl">'</span><span class="p">,</span> <span class="dl">"</span><span class="s2">false</span><span class="dl">"</span><span class="p">);</span>
+				<span class="k">this</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">aria-expanded</span><span class="dl">'</span><span class="p">,</span> <span class="dl">"</span><span class="s2">false</span><span class="dl">"</span><span class="p">);</span>
 			<span class="p">}</span>
-			<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+			<span class="nx">event</span><span class="p">.</span><span class="nf">preventDefault</span><span class="p">();</span>
 			<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
 		<span class="p">});</span>
-		<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">keydown</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">el</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">keydown</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
 			<span class="kd">var</span> <span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-			<span class="k">switch</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">switch </span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">)</span> <span class="p">{</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">right</span><span class="p">:</span>
-					<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+					<span class="nf">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">left</span><span class="p">:</span>
-					<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+					<span class="nf">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">tab</span><span class="p">:</span>
-					<span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">shiftKey</span><span class="p">)</span> <span class="p">{</span>
-						<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+					<span class="k">if </span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">shiftKey</span><span class="p">)</span> <span class="p">{</span>
+						<span class="nf">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
 					<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-						<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+						<span class="nf">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
 					<span class="p">}</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">enter</span><span class="p">:</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">down</span><span class="p">:</span>
-					<span class="k">this</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
+					<span class="k">this</span><span class="p">.</span><span class="nf">click</span><span class="p">();</span>
 					<span class="nx">subIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">ul</span><span class="dl">'</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
+					<span class="nf">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">ul</span><span class="dl">'</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">up</span><span class="p">:</span>
-					<span class="k">this</span><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
-					<span class="kd">var</span> <span class="nx">submenu</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">ul</span><span class="dl">'</span><span class="p">);</span>
-					<span class="nx">subIndex</span> <span class="o">=</span> <span class="nx">submenu</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">li</span><span class="dl">'</span><span class="p">).</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="nx">submenu</span><span class="p">,</span> <span class="nx">subIndex</span><span class="p">);</span>
+					<span class="k">this</span><span class="p">.</span><span class="nf">click</span><span class="p">();</span>
+					<span class="kd">var</span> <span class="nx">submenu</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">ul</span><span class="dl">'</span><span class="p">);</span>
+					<span class="nx">subIndex</span> <span class="o">=</span> <span class="nx">submenu</span><span class="p">.</span><span class="nf">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">li</span><span class="dl">'</span><span class="p">).</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+					<span class="nf">gotoSubIndex</span><span class="p">(</span><span class="nx">submenu</span><span class="p">,</span> <span class="nx">subIndex</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">esc</span><span class="p">:</span>
-					<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#escape</span><span class="dl">'</span><span class="p">).</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">-1</span><span class="dl">'</span><span class="p">);</span>
-					<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#escape</span><span class="dl">'</span><span class="p">).</span><span class="nx">focus</span><span class="p">();</span>
+					<span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#escape</span><span class="dl">'</span><span class="p">).</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">-1</span><span class="dl">'</span><span class="p">);</span>
+					<span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#escape</span><span class="dl">'</span><span class="p">).</span><span class="nf">focus</span><span class="p">();</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 			<span class="p">}</span>
-			<span class="k">if</span> <span class="p">(</span><span class="nx">prevdef</span><span class="p">)</span> <span class="p">{</span>
-				<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+			<span class="k">if </span><span class="p">(</span><span class="nx">prevdef</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">event</span><span class="p">.</span><span class="nf">preventDefault</span><span class="p">();</span>
 			<span class="p">}</span>
 		<span class="p">});</span>
 <span class="p">});</span>
 
-<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">subMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
-	<span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">-1</span><span class="dl">'</span><span class="p">);</span>
-	<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">keydown</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-			<span class="k">switch</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">)</span> <span class="p">{</span>
+<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="nx">subMenuItems</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
+	<span class="nx">el</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">'</span><span class="s1">tabindex</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">-1</span><span class="dl">'</span><span class="p">);</span>
+	<span class="nx">el</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">keydown</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">switch </span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span><span class="p">)</span> <span class="p">{</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">tab</span><span class="p">:</span>
-					<span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">shiftKey</span><span class="p">)</span> <span class="p">{</span>
-						<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+					<span class="k">if </span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">shiftKey</span><span class="p">)</span> <span class="p">{</span>
+						<span class="nf">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
 					<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-						<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+						<span class="nf">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
 					<span class="p">}</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">right</span><span class="p">:</span>
-					<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+					<span class="nf">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">left</span><span class="p">:</span>
-					<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+					<span class="nf">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">esc</span><span class="p">:</span>
-					<span class="nx">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span><span class="p">);</span>
+					<span class="nf">gotoIndex</span><span class="p">(</span><span class="nx">currentIndex</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">down</span><span class="p">:</span>
-					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="nx">subIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+					<span class="nf">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="nx">subIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">up</span><span class="p">:</span>
-					<span class="nx">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="nx">subIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+					<span class="nf">gotoSubIndex</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">,</span> <span class="nx">subIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">enter</span><span class="p">:</span>
 				<span class="k">case</span> <span class="nx">keys</span><span class="p">.</span><span class="nx">space</span><span class="p">:</span>
-					<span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">innerText</span><span class="p">);</span>
+					<span class="nf">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">innerText</span><span class="p">);</span>
 					<span class="nx">prevdef</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 					<span class="k">break</span><span class="p">;</span>
 			<span class="p">}</span>
-			<span class="k">if</span> <span class="p">(</span><span class="nx">prevdef</span><span class="p">)</span> <span class="p">{</span>
-				<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-				<span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+			<span class="k">if </span><span class="p">(</span><span class="nx">prevdef</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">event</span><span class="p">.</span><span class="nf">preventDefault</span><span class="p">();</span>
+				<span class="nx">event</span><span class="p">.</span><span class="nf">stopPropagation</span><span class="p">();</span>
 			<span class="p">}</span>
 			<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
 		<span class="p">});</span>
-	<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-			<span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">);</span>
-			<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-			<span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+	<span class="nx">el</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nf">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">);</span>
+			<span class="nx">event</span><span class="p">.</span><span class="nf">preventDefault</span><span class="p">();</span>
+			<span class="nx">event</span><span class="p">.</span><span class="nf">stopPropagation</span><span class="p">();</span>
 			<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
 		<span class="p">});</span>
 <span class="p">});</span>
@@ -856,9 +856,9 @@ https://github.com/w3c/wai-tutorials/edit/master-2.0/content/menus/application-m
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1719936293094156954"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1719936293094156954"></script>
 <script>
   svg4everybody();
 </script><script>

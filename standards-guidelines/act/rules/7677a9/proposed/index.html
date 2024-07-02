@@ -9,16 +9,16 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1719916510820508599";
+      element.src = "/WAI/assets/scripts/main.js?1719936293094156954";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719916510820508599">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1719936293094156954">
 
-<title> Device motion based changes to the content can also be created from the user interface[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1719916510820508599"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.1" />
+<title> Device motion based changes to the content can also be created from the user interface[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1719936293094156954"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Device motion based changes to the content can also be created from the user interface" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
 <meta property="og:locale" content="en" />
@@ -405,46 +405,46 @@ h2#sidebar-header {
 
   <p>File <a href="https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/7677a9/slider.js"><code class="language-plaintext highlighter-rouge">/test-assets/7677a9/slider.js</code></a>:</p>
 
-  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">changeSlider</span><span class="p">(</span><span class="nx">amount</span><span class="p">)</span> <span class="p">{</span>
-	<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">motionSlider</span><span class="dl">'</span><span class="p">).</span><span class="nx">value</span> <span class="o">+=</span> <span class="nx">amount</span>
-	<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">output</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">motionSlider</span><span class="dl">'</span><span class="p">).</span><span class="nx">value</span>
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">changeSlider</span><span class="p">(</span><span class="nx">amount</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">motionSlider</span><span class="dl">'</span><span class="p">).</span><span class="nx">value</span> <span class="o">+=</span> <span class="nx">amount</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">output</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">motionSlider</span><span class="dl">'</span><span class="p">).</span><span class="nx">value</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">increaseSlider</span><span class="p">()</span> <span class="p">{</span>
-	<span class="nx">changeSlider</span><span class="p">(</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nf">increaseSlider</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nf">changeSlider</span><span class="p">(</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">decreaseSlider</span><span class="p">()</span> <span class="p">{</span>
-	<span class="nx">changeSlider</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nf">decreaseSlider</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nf">changeSlider</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">applyChange</span><span class="p">(</span><span class="nx">gamma</span><span class="p">,</span> <span class="nx">threshold</span><span class="p">)</span> <span class="p">{</span>
-	<span class="k">if</span> <span class="p">(</span><span class="nx">gamma</span> <span class="o">&gt;</span> <span class="nx">threshold</span><span class="p">)</span> <span class="p">{</span>
-		<span class="nx">increaseSlider</span><span class="p">()</span>
-	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">gamma</span> <span class="o">&lt;</span> <span class="o">-</span><span class="nx">threshold</span><span class="p">)</span> <span class="p">{</span>
-		<span class="nx">decreaseSlider</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nf">applyChange</span><span class="p">(</span><span class="nx">gamma</span><span class="p">,</span> <span class="nx">threshold</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if </span><span class="p">(</span><span class="nx">gamma</span> <span class="o">&gt;</span> <span class="nx">threshold</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nf">increaseSlider</span><span class="p">()</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if </span><span class="p">(</span><span class="nx">gamma</span> <span class="o">&lt;</span> <span class="o">-</span><span class="nx">threshold</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nf">decreaseSlider</span><span class="p">()</span>
 	<span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">handleOrientation</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-	<span class="nx">applyChange</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">gamma</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nf">handleOrientation</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nf">applyChange</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">gamma</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">handleOrientationCanBeDisabled</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-	<span class="kd">const</span> <span class="nx">disableMotion</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">disableMotion</span><span class="dl">'</span><span class="p">)</span>
-	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">disableMotion</span><span class="p">.</span><span class="nx">checked</span><span class="p">)</span> <span class="p">{</span>
-		<span class="nx">applyChange</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">gamma</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nf">handleOrientationCanBeDisabled</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="nx">disableMotion</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">disableMotion</span><span class="dl">'</span><span class="p">)</span>
+	<span class="k">if </span><span class="p">(</span><span class="o">!</span><span class="nx">disableMotion</span><span class="p">.</span><span class="nx">checked</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nf">applyChange</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">gamma</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 	<span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">handleMotion</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-	<span class="nx">applyChange</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">rotationRate</span><span class="p">.</span><span class="nx">gamma</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nf">handleMotion</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nf">applyChange</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">rotationRate</span><span class="p">.</span><span class="nx">gamma</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="p">}</span>
 
-<span class="kd">function</span> <span class="nx">handleMotionCanBeDisabled</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-	<span class="kd">const</span> <span class="nx">disableMotion</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">disableMotion</span><span class="dl">'</span><span class="p">)</span>
-	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">disableMotion</span><span class="p">.</span><span class="nx">checked</span><span class="p">)</span> <span class="p">{</span>
-		<span class="nx">applyChange</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">rotationRate</span><span class="p">.</span><span class="nx">gamma</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="kd">function</span> <span class="nf">handleMotionCanBeDisabled</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kd">const</span> <span class="nx">disableMotion</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">disableMotion</span><span class="dl">'</span><span class="p">)</span>
+	<span class="k">if </span><span class="p">(</span><span class="o">!</span><span class="nx">disableMotion</span><span class="p">.</span><span class="nx">checked</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nf">applyChange</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">rotationRate</span><span class="p">.</span><span class="nx">gamma</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 	<span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>  </div>
@@ -463,9 +463,9 @@ h2#sidebar-header {
 	<span class="nt">&lt;head&gt;</span>
 		<span class="nt">&lt;title&gt;</span>Passed Example 1<span class="nt">&lt;/title&gt;</span>
 		<span class="nt">&lt;script&gt;</span>
-			<span class="kd">function</span> <span class="nx">activateEvent</span><span class="p">()</span> <span class="p">{</span>
+			<span class="kd">function</span> <span class="nf">activateEvent</span><span class="p">()</span> <span class="p">{</span>
 				<span class="kd">let</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">0</span>
-				<span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">deviceorientation</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+				<span class="nb">window</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">deviceorientation</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
 					<span class="nx">counter</span><span class="o">++</span>
 				<span class="p">})</span>
 			<span class="p">}</span>
@@ -490,10 +490,10 @@ h2#sidebar-header {
 		<span class="nt">&lt;title&gt;</span>Passed Example 2<span class="nt">&lt;/title&gt;</span>
 		<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/test-assets/7677a9/slider.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 		<span class="nt">&lt;script&gt;</span>
-			<span class="kd">function</span> <span class="nx">activateSlider</span><span class="p">()</span> <span class="p">{</span>
-				<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">decreaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">decreaseSlider</span><span class="p">)</span>
-				<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">increaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">increaseSlider</span><span class="p">)</span>
-				<span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">deviceorientation</span><span class="dl">'</span><span class="p">,</span> <span class="nx">handleOrientation</span><span class="p">)</span>
+			<span class="kd">function</span> <span class="nf">activateSlider</span><span class="p">()</span> <span class="p">{</span>
+				<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">decreaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">decreaseSlider</span><span class="p">)</span>
+				<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">increaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">increaseSlider</span><span class="p">)</span>
+				<span class="nb">window</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">deviceorientation</span><span class="dl">'</span><span class="p">,</span> <span class="nx">handleOrientation</span><span class="p">)</span>
 			<span class="p">}</span>
 		<span class="nt">&lt;/script&gt;</span>
 	<span class="nt">&lt;/head&gt;</span>
@@ -530,10 +530,10 @@ h2#sidebar-header {
 		<span class="nt">&lt;title&gt;</span>Passed Example 3<span class="nt">&lt;/title&gt;</span>
 		<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/test-assets/7677a9/slider.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 		<span class="nt">&lt;script&gt;</span>
-			<span class="kd">function</span> <span class="nx">activateSlider</span><span class="p">()</span> <span class="p">{</span>
-				<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">decreaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">decreaseSlider</span><span class="p">)</span>
-				<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">increaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">increaseSlider</span><span class="p">)</span>
-				<span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">devicemotion</span><span class="dl">'</span><span class="p">,</span> <span class="nx">handleMotion</span><span class="p">)</span>
+			<span class="kd">function</span> <span class="nf">activateSlider</span><span class="p">()</span> <span class="p">{</span>
+				<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">decreaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">decreaseSlider</span><span class="p">)</span>
+				<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">increaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">increaseSlider</span><span class="p">)</span>
+				<span class="nb">window</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">devicemotion</span><span class="dl">'</span><span class="p">,</span> <span class="nx">handleMotion</span><span class="p">)</span>
 			<span class="p">}</span>
 		<span class="nt">&lt;/script&gt;</span>
 	<span class="nt">&lt;/head&gt;</span>
@@ -570,16 +570,16 @@ h2#sidebar-header {
 		<span class="nt">&lt;title&gt;</span>Passed Example 4<span class="nt">&lt;/title&gt;</span>
 		<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/test-assets/7677a9/slider.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 		<span class="nt">&lt;script&gt;</span>
-			<span class="kd">function</span> <span class="nx">activateSlider</span><span class="p">()</span> <span class="p">{</span>
-				<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">decreaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">decreaseSlider</span><span class="p">)</span>
-				<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">increaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">increaseSlider</span><span class="p">)</span>
-				<span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">devicemotion</span><span class="dl">'</span><span class="p">,</span> <span class="nx">handleMotion</span><span class="p">)</span>
+			<span class="kd">function</span> <span class="nf">activateSlider</span><span class="p">()</span> <span class="p">{</span>
+				<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">decreaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">decreaseSlider</span><span class="p">)</span>
+				<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">increaseSlider</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">increaseSlider</span><span class="p">)</span>
+				<span class="nb">window</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">devicemotion</span><span class="dl">'</span><span class="p">,</span> <span class="nx">handleMotion</span><span class="p">)</span>
 			<span class="p">}</span>
-			<span class="kd">function</span> <span class="nx">openModal</span><span class="p">()</span> <span class="p">{</span>
-				<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">overlay</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">block</span><span class="dl">'</span>
+			<span class="kd">function</span> <span class="nf">openModal</span><span class="p">()</span> <span class="p">{</span>
+				<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">overlay</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">block</span><span class="dl">'</span>
 			<span class="p">}</span>
-			<span class="kd">function</span> <span class="nx">closeModal</span><span class="p">()</span> <span class="p">{</span>
-				<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">overlay</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span>
+			<span class="kd">function</span> <span class="nf">closeModal</span><span class="p">()</span> <span class="p">{</span>
+				<span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">overlay</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span>
 			<span class="p">}</span>
 		<span class="nt">&lt;/script&gt;</span>
 	<span class="nt">&lt;/head&gt;</span>
@@ -632,8 +632,8 @@ h2#sidebar-header {
 		<span class="nt">&lt;title&gt;</span>Failed Example 1<span class="nt">&lt;/title&gt;</span>
 		<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/test-assets/7677a9/slider.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 		<span class="nt">&lt;script&gt;</span>
-			<span class="kd">function</span> <span class="nx">activateSlider</span><span class="p">()</span> <span class="p">{</span>
-				<span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">deviceorientation</span><span class="dl">'</span><span class="p">,</span> <span class="nx">handleOrientation</span><span class="p">)</span>
+			<span class="kd">function</span> <span class="nf">activateSlider</span><span class="p">()</span> <span class="p">{</span>
+				<span class="nb">window</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">deviceorientation</span><span class="dl">'</span><span class="p">,</span> <span class="nx">handleOrientation</span><span class="p">)</span>
 			<span class="p">}</span>
 		<span class="nt">&lt;/script&gt;</span>
 	<span class="nt">&lt;/head&gt;</span>
@@ -916,9 +916,9 @@ https://github.com/w3c/wcag-act-rules/edit/master/content/rules/7677a9/proposed.
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1719936293094156954"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1719916510820508599"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1719936293094156954"></script>
 <script>
   svg4everybody();
 </script><script>
