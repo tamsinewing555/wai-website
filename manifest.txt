@@ -3020,6 +3020,7 @@
 /news/2024-06-13/wcag-22-dutch/index.html
 /news/2024-06-18/act-rules-format/index.html
 /news/2024-06-24/people-use-web/index.html
+/news/2024-07-02/wcag2ict/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
