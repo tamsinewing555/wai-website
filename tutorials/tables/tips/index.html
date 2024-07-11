@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1720528418107798959";
+      element.src = "/WAI/assets/scripts/main.js?1720714174492930435";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1720528418107798959">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1720714174492930435">
 
 <title> Tips and Tricks | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
@@ -27,15 +27,15 @@
 <link rel="canonical" href="https://www.w3.org/WAI/tutorials/tables/tips/" />
 <meta property="og:url" content="https://www.w3.org/WAI/tutorials/tables/tips/" />
 <meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
-<meta property="og:image" content="https://www.w3.org/WAI/content-images/wai-tutorials/tables/social.png" />
+<meta property="og:image" content="https://www.w3.org/WAI/content-images/tutorials/tables/social.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wai-tutorials/tables/social.png" />
+<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/tutorials/tables/social.png" />
 <meta property="twitter:title" content="Tips and Tricks" />
 <meta name="twitter:site" content="@w3c_wai" />
 <meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Tips and Tricks","image":"https://www.w3.org/WAI/content-images/wai-tutorials/tables/social.png","url":"https://www.w3.org/WAI/tutorials/tables/tips/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Tips and Tricks","image":"https://www.w3.org/WAI/content-images/tutorials/tables/social.png","url":"https://www.w3.org/WAI/tutorials/tables/tips/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -194,12 +194,12 @@
       <li>
         <p>Make sure that each separate piece of data has its cell. Don’t use headers in one column and all data in a second column, as this will make it almost impossible for screen readers to work out the relationships between data across columns.</p>
 
-        <p><img src="/WAI/content-images/wai-tutorials/tables/headers-in-one-column-all-data-in-second.png" alt="On the left, a table with two columns is shown. The header for the first column reads “Shirt” and the header for the second column reads “Sizes and amount in stock”. The second row reads “Blue” in the first column and “S: 6; M: 13, XL: 10”. In the second row, Sizes for a “Red” shirt are “M: 2; L: 9; XL: 10; XXL: 1”. On the right, the table is split up in “Shirt”, “Size” and “Stock” columns." class="" /></p>
+        <p><img src="/WAI/content-images//tutorials/tables/headers-in-one-column-all-data-in-second.png" alt="On the left, a table with two columns is shown. The header for the first column reads “Shirt” and the header for the second column reads “Sizes and amount in stock”. The second row reads “Blue” in the first column and “S: 6; M: 13, XL: 10”. In the second row, Sizes for a “Red” shirt are “M: 2; L: 9; XL: 10; XXL: 1”. On the right, the table is split up in “Shirt”, “Size” and “Stock” columns." class="" /></p>
       </li>
       <li>
         <p>Don’t use line breaks (<code class="language-plaintext highlighter-rouge">&lt;br&gt;</code> elements) to create table rows as the data in the pseudo-rows may no longer align correctly when text is resized.</p>
 
-        <p><img src="/WAI/content-images/wai-tutorials/tables/table-text-resize.png" alt="On the top there is a table where the content and header cells are not marked up correctly. Line breaks are used to make items look like they align correctly. When resizing the text (bottom) the items don’t line up anymore" class="" /></p>
+        <p><img src="/WAI/content-images//tutorials/tables/table-text-resize.png" alt="On the top there is a table where the content and header cells are not marked up correctly. Line breaks are used to make items look like they align correctly. When resizing the text (bottom) the items don’t line up anymore" class="" /></p>
       </li>
     </ul>
   </li>
@@ -210,7 +210,7 @@
     <p><strong>Styling header cells:</strong> <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code> elements are used for header cells, using <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> elements with different styling will make tables less accessible if not inaccessible. It is also helpful to differentiate <code class="language-plaintext highlighter-rouge">&lt;th&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;td&gt;</code> cells visually. For example, on these tutorial pages, header cells have a dark gray background.</p>
   </li>
   <li>
-    <p><strong>Zebra tables:</strong> Styling even and odd rows in a different way can be helpful to people who have reading difficulties or who enlarge text. It acts as a visual guide. Highlighting the cell (and row/column) on mouseover and keyboard focus to support people to see where they are. Make sure that the contrast ratio between the text and background is good for both headers and data cells. <a href="https://www.w3.org/WAI/eval/preliminary#contrast">Here is how to check the contrast ratio.</a></p>
+    <p><strong>Zebra tables:</strong> Styling even and odd rows in a different way can be helpful to people who have reading difficulties or who enlarge text. It acts as a visual guide. Highlighting the cell (and row/column) on mouseover and keyboard focus to support people to see where they are. Make sure that the contrast ratio between the text and background is good for both headers and data cells. <a href="/WAI/test-evaluate/preliminary/#contrast">Here is how to check the contrast ratio.</a></p>
   </li>
   <li>
     <p><strong>Flexibility:</strong> Due to the layout model of tables, they sometimes don’t fit on small screens small or are too wide if the user is zooming in. In such circumstances, it’s important that the table isn’t cut off (for example by using <code class="language-plaintext highlighter-rouge">overflow: hidden</code> in CSS). In these tutorials <code class="language-plaintext highlighter-rouge">overflow: scroll</code> is applied to an element wrapping the table so users can scroll through the table horizontally but there are much more options to display table in such circumstances.</p>
@@ -223,7 +223,7 @@
 <h2 id="other-w3c-resources">Other W3C Resources</h2>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/intro/people-use-web/principles#adaptable">Content can be presented in different ways</a> section of Accessibility Principles in How People with Disabilities Use the Web.</li>
+  <li><a href="/WAI/fundamentals/accessibility-principles/#adaptable">Content can be presented in different ways</a> section of Accessibility Principles in How People with Disabilities Use the Web.</li>
 </ul>
 
 
@@ -241,8 +241,8 @@
     </li></nav><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=%5Ben%5D%20Tips%20and%20Tricks&amp;body=%5Bput%20comment%20here...%5D%0A%0AI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.">wai@w3.org</a> or via GitHub.</p>
 <div class="button-group">
     <a href="mailto:wai@w3.org?subject=%5Ben%5D%20Tips%20and%20Tricks&body=%5Bput%20comment%20here...%5D%0A%0AI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list." class="button"><span>E-mail</span></a><a href="
-https://github.com/w3c/wai-tutorials/edit/master-2.0/content/tables/tips.md
-" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-tutorials/issues/new?template=content-issue.yml&wai-url=https://www.w3.org/WAI/tutorials/tables/tips/" class="button"><span>New GitHub Issue</span></a></div></div></aside>
+https://github.com/w3c/wai-website/edit/master/pages/design-develop/tutorials/tables/tips.md
+" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&wai-resource-id=wai-tutorials&wai-url=https://www.w3.org/WAI/tutorials/tables/tips/" class="button"><span>New GitHub Issue</span></a></div></div></aside>
 
 
     <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
@@ -350,9 +350,9 @@ https://github.com/w3c/wai-tutorials/edit/master-2.0/content/tables/tips.md
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1720528418107798959"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1720714174492930435"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1720528418107798959"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1720714174492930435"></script>
 <script>
   svg4everybody();
 </script><script>
