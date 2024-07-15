@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1721042792854250493";
+      element.src = "/WAI/assets/scripts/main.js?1721066505502942286";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1721042792854250493">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1721066505502942286">
 
 <title> 3: Images in Developer Modules | Curricula | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
@@ -277,7 +277,7 @@
     <ul>
       <li>Explain that the HTML attribute <code class="language-plaintext highlighter-rouge">alt</code> should contain concise and clear information about the image. State why it is not necessary to include the word “image” in the text alternative because the HTML element <code class="language-plaintext highlighter-rouge">img</code> is already announced by assistive technologies. Mention that decorative images should have empty (“”) values in the <code class="language-plaintext highlighter-rouge">alt</code> attributes, or that they should be included in the web page using CSS instead, so that they are ignored by assistive technologies. Examples of how to use <code class="language-plaintext highlighter-rouge">alt</code> to code text alternatives are provided in techniques <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a> and <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H37">H37: Using alt attributes on <code class="language-plaintext highlighter-rouge">img</code> elements</a>.</li>
       <li>Demonstrate other ways to provide text alternatives, such as the HTML attribute <code class="language-plaintext highlighter-rouge">title</code> and WAI-ARIA attributes <code class="language-plaintext highlighter-rouge">aria-label</code> and <code class="language-plaintext highlighter-rouge">aria-labelledby</code>. Explain that these may not be well supported by older browsers and assistive technologies. Examples of how to use <code class="language-plaintext highlighter-rouge">aria-label</code> and <code class="language-plaintext highlighter-rouge">aria-labelledby</code> to provide descriptions for images are provided in techniques <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA6.html">ARIA6: Using aria-label to provide labels for objects</a> and <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA10.html">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>.</li>
-      <li>Show different examples of informative images (including images of text) and contrast them with decorative images. Explain how context can affect the meaning of the same image. Emphasize how each context may require a different text alternative, including an empty text alternative when the image is decorative. Descriptions of informative and decorative images are provided in the WAI tutorials on <a href="https://www.w3.org/WAI/tutorials/images/decorative/">Decorative Images</a> and <a href="https://www.w3.org/WAI/tutorials/images/informative/">Informative Images</a>.</li>
+      <li>Show different examples of informative images (including images of text) and contrast them with decorative images. Explain how context can affect the meaning of the same image. Emphasize how each context may require a different text alternative, including an empty text alternative when the image is decorative. Descriptions of informative and decorative images are provided in the WAI tutorials on <a href="/WAI/tutorials/images/decorative/">Decorative Images</a> and <a href="/WAI/tutorials/images/informative/">Informative Images</a>.</li>
     </ul>
 
     <h4 id="ideas-to-assess-knowledge-for-topic">Ideas to Assess Knowledge for Topic</h4>
@@ -318,8 +318,8 @@
     <p>Optional ideas to teach the learning outcomes:</p>
 
     <ul>
-      <li>Explain that functional images serve to initiate an action, rather than to convey information. An explanation of functional images is provided in the WAI tutorials on <a href="https://www.w3.org/WAI/tutorials/images/">Images Concepts</a>.</li>
-      <li>Show examples of button and image input types, such as those for printing and saving a document. Explain that their text alternatives need to refer to the action that the image conveys. Examples of several text alternatives for functional images are provided in the WAI tutorials on <a href="https://www.w3.org/WAI/tutorials/images/functional/">Functional Images</a>.</li>
+      <li>Explain that functional images serve to initiate an action, rather than to convey information. An explanation of functional images is provided in the WAI tutorials on <a href="/WAI/tutorials/images/">Images Concepts</a>.</li>
+      <li>Show examples of button and image input types, such as those for printing and saving a document. Explain that their text alternatives need to refer to the action that the image conveys. Examples of several text alternatives for functional images are provided in the WAI tutorials on <a href="/WAI/tutorials/images/functional/">Functional Images</a>.</li>
       <li>Show examples of adjacent link and button texts that may influence the text alternative for a functional image. Explain that when the adjacent text conveys the action performed by the image, a null text alternative should be provided.</li>
     </ul>
 
@@ -369,11 +369,11 @@
     <p>Optional ideas to teach the learning outcomes:</p>
 
     <ul>
-      <li>Explain ways to provide additional descriptions for complex images and groups of images such as charts, diagrams, and screen shots of materials that are intended to be read as text. For example, the HTML elements <code class="language-plaintext highlighter-rouge">figure</code> and <code class="language-plaintext highlighter-rouge">figcaption</code>, the WAI-ARIA attribute <code class="language-plaintext highlighter-rouge">aria-describedby</code> and the HTML attribute <code class="language-plaintext highlighter-rouge">longdesc</code>. Explain that the <code class="language-plaintext highlighter-rouge">alt</code> attribute may be also advised if there are individual images within those groups of images that require specific descriptions. Mention that <code class="language-plaintext highlighter-rouge">longdesc</code> may not be well supported by some browsers and assistive technologies. Examples of how to describe complex images are provided in the WAI tutorials on <a href="https://www.w3.org/WAI/tutorials/images/complex/">Complex images</a> and <a href="https://www.w3.org/WAI/tutorials/images/textual/">images of Text</a>.</li>
+      <li>Explain ways to provide additional descriptions for complex images and groups of images such as charts, diagrams, and screen shots of materials that are intended to be read as text. For example, the HTML elements <code class="language-plaintext highlighter-rouge">figure</code> and <code class="language-plaintext highlighter-rouge">figcaption</code>, the WAI-ARIA attribute <code class="language-plaintext highlighter-rouge">aria-describedby</code> and the HTML attribute <code class="language-plaintext highlighter-rouge">longdesc</code>. Explain that the <code class="language-plaintext highlighter-rouge">alt</code> attribute may be also advised if there are individual images within those groups of images that require specific descriptions. Mention that <code class="language-plaintext highlighter-rouge">longdesc</code> may not be well supported by some browsers and assistive technologies. Examples of how to describe complex images are provided in the WAI tutorials on <a href="/WAI/tutorials/images/complex/">Complex images</a> and <a href="/WAI/tutorials/images/textual/">images of Text</a>.</li>
       <li>Discuss how working with the content authors and designers can often lead to simpler ways of communicating the information for everyone. Also discuss how descriptions for complex images benefit many people, so that providing these descriptions directly in the content is often more beneficial than providing these as text alternatives for users of assistive technologies only.</li>
       <li>Demonstrate how SVG can be used to provide graphics, including animations. Discuss the support for SVG in browsers and assistive technologies, as well as authoring tools to create such graphics. Explain the benefits of graphics provided as SVG, which allows them to be resized without pixelating, allows text and objects within the image to be accessed by assistive technologies, and allows the presentation to be customized.</li>
-      <li>Demonstrate how MathML can be used to code mathematical expressions. Emphasize that screen reader support for MathML is growing, but others may need additional browser extensions to access contents in MathML. Examples of how to use the MathML language to code mathematical expressions are provided in the WAI tutorials on <a href="https://www.w3.org/WAI/tutorials/images/textual/#mathematical-expressions">mathematical expressions</a>.</li>
-      <li>Demonstrate that many visual effects can now be achieved by using CSS Transforms and CSS Fonts, instead of using images of text. Explain the benefits of using real text, which can be resized and adapted, as opposed to images that do not support such uses. Examples of how to use CSS3 properties to style text decorations are provided in the WAI tutorials on <a href="https://www.w3.org/WAI/tutorials/images/textual/#using-css3">Using CSS</a>.</li>
+      <li>Demonstrate how MathML can be used to code mathematical expressions. Emphasize that screen reader support for MathML is growing, but others may need additional browser extensions to access contents in MathML. Examples of how to use the MathML language to code mathematical expressions are provided in the WAI tutorials on <a href="/WAI/tutorials/images/textual/#mathematical-expressions">mathematical expressions</a>.</li>
+      <li>Demonstrate that many visual effects can now be achieved by using CSS Transforms and CSS Fonts, instead of using images of text. Explain the benefits of using real text, which can be resized and adapted, as opposed to images that do not support such uses. Examples of how to use CSS3 properties to style text decorations are provided in the WAI tutorials on <a href="/WAI/tutorials/images/textual/#using-css3">Using CSS</a>.</li>
     </ul>
 
     <h4 id="ideas-to-assess-knowledge-for-topic-2">Ideas to Assess Knowledge for Topic</h4>
@@ -406,11 +406,11 @@
 <p>Suggested resources to support your teaching:</p>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/tutorials/images/">Images (WAI Web Accessibility Tutorials)</a> — Shows how to provide alternatives to images that are accessible to people with disabilities.</li>
+  <li><a href="/WAI/tutorials/images/">Images (WAI Web Accessibility Tutorials)</a> — Shows how to provide alternatives to images that are accessible to people with disabilities.</li>
   <li><a href="/WAI/people-use-web/">How People with Disabilities Use the Web</a> — Provides stories of people with disabilities using the Web; describes types of disabilities and some of the barriers that people encounter using the Web; and introduces types of assistive technologies and adaptive strategies that some people use.</li>
-  <li><a href="https://www.w3.org/WAI/perspective-videos/captions/">Video Captions (Web Accessibility Perspectives)</a> — Is one of the Web accessibility perspectives videos that show accessibility features and how they impact people with disabilities.</li>
-  <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a> — Address accessibility of web content on desktops, laptops, tablets, and mobile devices.</li>
-  <li><a href="https://www.w3.org/WAI/standards-guidelines/aria/">WAI-ARIA</a> — Describes the roles, states, and properties that define accessible user interface elements and can be used to improve the accessibility and interoperability of web content and applications.</li>
+  <li><a href="/WAI/perspective-videos/captions/">Video Captions (Web Accessibility Perspectives)</a> — Is one of the Web accessibility perspectives videos that show accessibility features and how they impact people with disabilities.</li>
+  <li><a href="/WAI/standards-guidelines/wcag/">WCAG</a> — Address accessibility of web content on desktops, laptops, tablets, and mobile devices.</li>
+  <li><a href="/WAI/standards-guidelines/aria/">WAI-ARIA</a> — Describes the roles, states, and properties that define accessible user interface elements and can be used to improve the accessibility and interoperability of web content and applications.</li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML5 living standard <svg focusable="false" aria-hidden="true" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> — The core markup language for the web.</li>
   <li><a href="https://www.w3.org/TR/CSS">CSS Specifications</a>.</li>
   <li><a href="https://www.w3.org/TR/SVG2/">SVG</a></li>
@@ -440,8 +440,8 @@
   </ul></nav><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=%5Ben%5D%203%3A%20Images%20in%20Developer%20Modules%20%7C%20Curricula&amp;body=%5Bput%20comment%20here...%5D%0A%0AI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.">wai@w3.org</a> or via GitHub.</p>
 <div class="button-group">
     <a href="mailto:wai@w3.org?subject=%5Ben%5D%203%3A%20Images%20in%20Developer%20Modules%20%7C%20Curricula&body=%5Bput%20comment%20here...%5D%0A%0AI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list." class="button"><span>E-mail</span></a><a href="
-https://github.com/w3c/wai-curricula/edit/master/content/developer/images.md
-" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-curricula/issues/new?template=content-issue.yml&wai-url=https://www.w3.org/WAI/curricula/developer-modules/images/" class="button"><span>New GitHub Issue</span></a></div></div></aside>
+https://github.com/w3c/wai-website/edit/master/pages/teach-advocate/curricula/developer/images.md
+" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&wai-resource-id=wai-curricula&wai-url=https://www.w3.org/WAI/curricula/developer-modules/images/" class="button"><span>New GitHub Issue</span></a></div></div></aside>
 
 
     <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
@@ -453,7 +453,7 @@ https://github.com/w3c/wai-curricula/edit/master/content/developer/images.md
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Date:</strong> Updated 4 March 2021. First published December 2019.</p> <p><strong>Editors:</strong> Daniel Montalvo and <a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>. Contributors: <a href="https://www.w3.org/WAI/EO/EOWG-members">EOWG Participants</a>. <a href="/WAI/curricula/acknowledgements/">Acknowledgements</a> lists contributors and credits.</p> <p>Developed by the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed with support from the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide Project</a> funded by the European Commission (EC) under the Horizon 2020 program (Grant Agreement 822245).</p>
+      <p><strong>Date:</strong> Updated 4 March 2021. First published December 2019.</p> <p><strong>Editors:</strong> Daniel Montalvo and <a href="https://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>. Contributors: <a href="https://www.w3.org/WAI/EO/EOWG-members">EOWG Participants</a>. <a href="/WAI/curricula/acknowledgements/">Acknowledgements</a> lists contributors and credits.</p> <p>Developed by the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>). Developed with support from the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide Project</a> funded by the European Commission (EC) under the Horizon 2020 program (Grant Agreement 822245).</p>
 <p><svg focusable="false" aria-hidden="true" class="icon-creative-commons "><use xlink:href="/WAI/assets/images/icons.svg#icon-creative-commons"></use></svg> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p></div>
   </footer>
   
@@ -493,9 +493,9 @@ https://github.com/w3c/wai-curricula/edit/master/content/developer/images.md
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1721042792854250493"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1721066505502942286"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1721042792854250493"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1721066505502942286"></script>
 <script>
   svg4everybody();
 </script><script>
